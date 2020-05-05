@@ -1,0 +1,8 @@
+<?php
+$dalTableq_000_control_informes = array();
+$dalTableq_000_control_informes["id_cont"] = array("type"=>3,"varname"=>"id_cont", "name" => "id_cont");
+$dalTableq_000_control_informes["qty_informes_actuales"] = array("type"=>20,"varname"=>"qty_informes_actuales", "name" => "qty_informes_actuales");
+$dalTableq_000_control_informes["csc_id"] = array("type"=>20,"varname"=>"csc_id", "name" => "csc_id");
+
+$dal_info["dbct_at_localhost__q_000_control_informes"] = &$dalTableq_000_control_informes;
+?>

@@ -1,0 +1,848 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-print" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="left"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c2" data-pageid="{$pageid}"	{$cell_top_c2}
+	class=" r-ori-vert			col-md-12
+	
+">
+		 
+		<h2 data-itemtype="print_header" data-itemid="print_header" {$item_print_header} data-pageid="{$pageid}" >{$pagetitlelabel interventor_interno print}</h2>
+	 
+		{BEGIN printtabheader}
+<span data-itemtype="print_subheader" data-itemid="print_subheader" {$item_print_subheader} data-pageid="{$pageid}" >
+{$printtabheader_text}
+</span>
+{END printtabheader}
+		</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<span data-itemtype="print_pages" data-itemid="print_pages" {$item_print_pages} data-pageid="{$pageid}" data-small >
+	{$print_pages_labelprint_pages}
+</span>	 
+		{BEGIN inline_cancel}
+<span data-itemtype="grid_inline_cancel" data-itemid="grid_inline_cancel" {$item_grid_inline_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Cancelar" class="btn-link   
+	 glyphicon glyphicon-remove" {$inlinerevertlink_attrs} title="Cancelar" >		
+				
+								</a>
+</span>
+{END inline_cancel}
+	 
+		{BEGIN inlineadd_link}
+<span data-itemtype="inline_add" data-itemid="inline_add" {$item_inline_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$inlineaddlink_attrs} >
+							Añadir nuevo			</a>
+</span>
+{END inlineadd_link}
+			{END firstAboveGridCell}	
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<table data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$idusrglobal_fk_class}
+			"
+
+			data-field="idusrglobal_fk"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN idusrglobal_fk_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="idusrglobal_fk">
+	{$label interventor_interno idusrglobal_fk }	</span>
+{END idusrglobal_fk_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sys_date_class}
+			"
+
+			data-field="sys_date"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_date_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_date">
+	{$label interventor_interno sys_date }	</span>
+{END sys_date_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sys_user_class}
+			"
+
+			data-field="sys_user"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_user_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_user">
+	{$label interventor_interno sys_user }	</span>
+{END sys_user_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sup_status_class}
+			"
+
+			data-field="sup_status"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sup_status_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sup_status">
+	{$label interventor_interno sup_status }	</span>
+{END sup_status_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sup_fechanot_class}
+			"
+
+			data-field="sup_fechanot"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sup_fechanot_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sup_fechanot">
+	{$label interventor_interno sup_fechanot }	</span>
+{END sup_fechanot_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sup_mailnot_class}
+			"
+
+			data-field="sup_mailnot"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sup_mailnot_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sup_mailnot">
+	{$label interventor_interno sup_mailnot }	</span>
+{END sup_mailnot_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documento_id_class}
+			"
+
+			data-field="documento_id"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documento_id_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documento_id">
+	{$label interventor_interno documento_id }	</span>
+{END documento_id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nombres_class}
+			"
+
+			data-field="nombres"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nombres_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombres">
+	{$label interventor_interno nombres }	</span>
+{END nombres_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$apellidos_class}
+			"
+
+			data-field="apellidos"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN apellidos_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="apellidos">
+	{$label interventor_interno apellidos }	</span>
+{END apellidos_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+				 
+					{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cargo_id_class}
+			"
+
+			data-field="cargo_id"
+	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cargo_id_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cargo_id">
+	{$label interventor_interno cargo_id }	</span>
+{END cargo_id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field9}
+				 
+					{BEGIN cellblock_grid_headcell_field10}
+	<th
+	
+	{$cell_grid_headcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dependencia_id_class}
+			"
+
+			data-field="dependencia_id"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dependencia_id_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dependencia_id">
+	{$label interventor_interno dependencia_id }	</span>
+{END dependencia_id_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															{BEGIN grid_row}
+					<tbody>
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$idusrglobal_fk_class}
+			"
+
+			data-field="idusrglobal_fk"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN idusrglobal_fk_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="idusrglobal_fk" data-default-width >
+{$idusrglobal_fk_value}
+</span>
+{END idusrglobal_fk_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sys_date_class}
+			"
+
+			data-field="sys_date"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_date_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_date" data-default-width >
+{$sys_date_value}
+</span>
+{END sys_date_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sys_user_class}
+			"
+
+			data-field="sys_user"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sys_user_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sys_user" data-default-width >
+{$sys_user_value}
+</span>
+{END sys_user_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sup_status_class}
+			"
+
+			data-field="sup_status"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sup_status_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sup_status" data-default-width >
+{$sup_status_value}
+</span>
+{END sup_status_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sup_fechanot_class}
+			"
+
+			data-field="sup_fechanot"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sup_fechanot_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sup_fechanot" data-default-width >
+{$sup_fechanot_value}
+</span>
+{END sup_fechanot_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$sup_mailnot_class}
+			"
+
+			data-field="sup_mailnot"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN sup_mailnot_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="sup_mailnot" data-default-width >
+{$sup_mailnot_value}
+</span>
+{END sup_mailnot_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documento_id_class}
+			"
+
+			data-field="documento_id"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documento_id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documento_id" data-default-width >
+{$documento_id_value}
+</span>
+{END documento_id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$nombres_class}
+			"
+
+			data-field="nombres"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN nombres_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombres" data-default-width >
+{$nombres_value}
+</span>
+{END nombres_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$apellidos_class}
+			"
+
+			data-field="apellidos"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN apellidos_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="apellidos" data-default-width >
+{$apellidos_value}
+</span>
+{END apellidos_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+				 
+					{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cargo_id_class}
+			"
+
+			data-field="cargo_id"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cargo_id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cargo_id" data-default-width >
+{$cargo_id_value}
+</span>
+{END cargo_id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+				 
+					{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$dependencia_id_class}
+			"
+
+			data-field="dependencia_id"
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN dependencia_id_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dependencia_id" data-default-width >
+{$dependencia_id_value}
+</span>
+{END dependencia_id_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field10}
+							</tr>
+					 
+					
+											</tbody>
+					{END grid_row}
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="interventor_interno_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="interventor_interno_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="interventor_interno_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="interventor_interno_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="interventor_interno_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="interventor_interno_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="interventor_interno_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="interventor_interno_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="interventor_interno_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+				 
+					{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="interventor_interno_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
+				 
+					{BEGIN cellblock_grid_footcell_field10}
+	<td
+	
+	{$cell_grid_footcell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="interventor_interno_print"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field10}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

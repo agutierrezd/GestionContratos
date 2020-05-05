@@ -1,0 +1,1250 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+			},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+		{BEGIN body}
+		{BEGIN embedded_grid}
+		{
+			text: '{$jscaption contrato}',
+		},
+		{END embedded_grid}
+		{ 
+			{BEGIN standalone_page}
+			pageBreak: 'before',
+			{END standalone_page}
+			{BEGIN embedded_grid}
+			embeddedPage: true,
+			{END embedded_grid}
+			layout: {
+				hLineWidth: function(i, node) { return 0; },
+				vLineWidth: function(i, node) { 
+					if( node.table.embeddedPage ) {
+						return (i === 0 || i === node.table.widths.length) ? 0 : 0;
+					} else  {
+						return 0; 
+					}
+				},
+				hLineColor: function(i, node) { return 'gray'; },
+				vLineColor: function(i, node) { return 'gray'; },
+			},
+			table: {
+				{BEGIN embedded_grid}
+				embeddedPage: true,
+				{END embedded_grid}
+				
+				tableForm: true,
+				headerRows: 0 + 1 {BEGIN embedded_grid} -1 {END embedded_grid} ,
+
+				widths: [
+														"*",
+															],
+							
+				body: [
+				{BEGIN standalone_page}
+					[
+						{
+							colSpan: 1,
+							border:[false, false,false,false],
+							stack: [
+
+																										
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+				
+			{"text":"{$jspagetitlelabel contrato masterlist}","hidden":"{$item_hide_masterlist_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+								
+																										
+''
+,
+															]
+						},
+					],
+				{END standalone_page}
+
+																	
+	{BEGIN grid_row}
+	[ 
+	
+	{BEGIN grid_record}
+	{BEGIN grid_vrecord}
+	
+		{ 
+			layout: 'vrecord',
+			table: {
+				widths: ['*'],
+				body: [[
+					{
+						
+						table: {
+							tableForm: true,
+							widths: [
+																{BEGIN col_grid_0}
+								"%",
+								{END col_grid_0}
+																{BEGIN col_grid_1}
+								"%",
+								{END col_grid_1}
+																{BEGIN col_grid_2}
+								"%",
+								{END col_grid_2}
+																{BEGIN col_grid_3}
+								"%",
+								{END col_grid_3}
+															],
+													heights: [
+															{BEGIN row_grid_0}			
+								"%",
+								{END row_grid_0}
+															{BEGIN row_grid_1}			
+								"%",
+								{END row_grid_1}
+															{BEGIN row_grid_2}			
+								"%",
+								{END row_grid_2}
+															{BEGIN row_grid_3}			
+								"%",
+								{END row_grid_3}
+															{BEGIN row_grid_4}			
+								"%",
+								{END row_grid_4}
+															{BEGIN row_grid_5}			
+								"%",
+								{END row_grid_5}
+															{BEGIN row_grid_6}			
+								"%",
+								{END row_grid_6}
+															{BEGIN row_grid_7}			
+								"%",
+								{END row_grid_7}
+															{BEGIN row_grid_8}			
+								"%",
+								{END row_grid_8}
+															{BEGIN row_grid_9}			
+								"%",
+								{END row_grid_9}
+															{BEGIN row_grid_10}			
+								"%",
+								{END row_grid_10}
+														],
+													
+							body: [
+									
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_cell_top}
+{
+	cellId: 'cell_top',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_top}
+			colSpan: {$colspan_grid_cell_top},
+			{END colspan_grid_cell_top}
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_top}
+																		{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+							],
+				{END row_grid_0}
+								{BEGIN row_grid_1}
+				[
+												{BEGIN cellblock_grid_cell_field30}
+{
+	cellId: 'cell_field30',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field3}","text":"{$jslabel contrato cont_ano }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field30}
+																			{BEGIN cellblock_grid_cell_field31}
+{
+	cellId: 'cell_field31',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field2}","text":{$cont_ano_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_ano_align}',
+  },
+
+{END cellblock_grid_cell_field31}
+																			{BEGIN cellblock_grid_cell_field32}
+{
+	cellId: 'cell_field32',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label1}","text":"{$jslabel contrato cont_obligaciones }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field32}
+																			{BEGIN cellblock_grid_cell_field33}
+{
+	cellId: 'cell_field33',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field1}","text":{$cont_obligaciones_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_obligaciones_align}',
+  },
+
+{END cellblock_grid_cell_field33}
+											],
+				{END row_grid_1}
+								{BEGIN row_grid_2}
+				[
+												{BEGIN cellblock_grid_cell_field14}
+{
+	cellId: 'cell_field14',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field12}","text":"{$jslabel contrato pre_contnumero }","bold":true},
+				
+				
+			{"hidden":"{$item_hide_grid_field_label2}","text":"{$jslabel contrato cont_plazo }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field14}
+																			{BEGIN cellblock_grid_cell_field15}
+{
+	cellId: 'cell_field15',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field9}","text":{$pre_contnumero_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_grid_field2}","text":{$cont_plazo_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field15}
+																			{BEGIN cellblock_grid_cell_field16}
+{
+	cellId: 'cell_field16',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field13}","text":"{$jslabel contrato contnumero }","bold":true},
+				
+				
+			{"hidden":"{$item_hide_grid_field_label3}","text":"{$jslabel contrato cont_vigencias_futuras }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field16}
+																			{BEGIN cellblock_grid_cell_field17}
+{
+	cellId: 'cell_field17',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field10}","text":{$contnumero_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_grid_field3}","text":{$cont_vigencias_futuras_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field17}
+											],
+				{END row_grid_2}
+								{BEGIN row_grid_3}
+				[
+												{BEGIN cellblock_grid_cell_field18}
+{
+	cellId: 'cell_field18',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field7}","text":"{$jslabel contrato cont_nit_contra_ta }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field18}
+																			{BEGIN cellblock_grid_cell_field19}
+{
+	cellId: 'cell_field19',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field4}","text":{$cont_nit_contra_ta_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_nit_contra_ta_align}',
+  },
+
+{END cellblock_grid_cell_field19}
+																			{BEGIN cellblock_grid_cell_field20}
+{
+	cellId: 'cell_field20',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field8}","text":"{$jslabel contrato nombre_cont }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field20}
+																			{BEGIN cellblock_grid_cell_field21}
+{
+	cellId: 'cell_field21',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field5}","text":{$nombre_cont_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$nombre_cont_align}',
+  },
+
+{END cellblock_grid_cell_field21}
+											],
+				{END row_grid_3}
+								{BEGIN row_grid_4}
+				[
+												{BEGIN cellblock_grid_cell_field26}
+{
+	cellId: 'cell_field26',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field19}","text":"{$jslabel contrato cont_fecha_inicio }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field26}
+																			{BEGIN cellblock_grid_cell_field27}
+{
+	cellId: 'cell_field27',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field17}","text":{$cont_fecha_inicio_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_fecha_inicio_align}',
+  },
+
+{END cellblock_grid_cell_field27}
+																			{BEGIN cellblock_grid_cell_field28}
+{
+	cellId: 'cell_field28',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field21}","text":"{$jslabel contrato cont_fechafinal }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field28}
+																			{BEGIN cellblock_grid_cell_field29}
+{
+	cellId: 'cell_field29',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field18}","text":{$cont_fechafinal_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_fechafinal_align}',
+  },
+
+{END cellblock_grid_cell_field29}
+											],
+				{END row_grid_4}
+								{BEGIN row_grid_5}
+				[
+												{BEGIN cellblock_grid_cell_field22}
+{
+	cellId: 'cell_field22',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field25}","text":"{$jslabel contrato cont_valorinicial }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field22}
+																			{BEGIN cellblock_grid_cell_field23}
+{
+	cellId: 'cell_field23',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field23}","text":{$cont_valorinicial_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_valorinicial_align}',
+  },
+
+{END cellblock_grid_cell_field23}
+																			{BEGIN cellblock_grid_cell_field24}
+{
+	cellId: 'cell_field24',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field26}","text":"{$jslabel contrato cont_valormensual }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_field24}
+																			{BEGIN cellblock_grid_cell_field25}
+{
+	cellId: 'cell_field25',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field24}","text":{$cont_valormensual_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_valormensual_align}',
+  },
+
+{END cellblock_grid_cell_field25}
+											],
+				{END row_grid_5}
+								{BEGIN row_grid_6}
+				[
+												{BEGIN cellblock_grid_cell_label}
+{
+	cellId: 'cell_label',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field31}","text":"{$jslabel contrato cont_formapago }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label}
+																			{BEGIN cellblock_grid_cell_field}
+{
+	cellId: 'cell_field',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field30}","text":{$cont_formapago_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_formapago_align}',
+  },
+
+{END cellblock_grid_cell_field}
+																			{BEGIN cellblock_grid_cell_label1}
+{
+	cellId: 'cell_label1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field22}","text":"{$jslabel contrato cont_periodicidad }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label1}
+																			{BEGIN cellblock_grid_cell_field1}
+{
+	cellId: 'cell_field1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field20}","text":{$cont_periodicidad_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_periodicidad_align}',
+  },
+
+{END cellblock_grid_cell_field1}
+											],
+				{END row_grid_6}
+								{BEGIN row_grid_7}
+				[
+												{BEGIN cellblock_grid_cell_label2}
+{
+	cellId: 'cell_label2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field11}","text":"{$jslabel contrato cont_estado }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label2}
+																			{BEGIN cellblock_grid_cell_field2}
+{
+	cellId: 'cell_field2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field6}","text":{$cont_estado_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_estado_align}',
+  },
+
+{END cellblock_grid_cell_field2}
+																			{BEGIN cellblock_grid_cell_label3}
+{
+	cellId: 'cell_label3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label3}
+																			{BEGIN cellblock_grid_cell_field3}
+{
+	cellId: 'cell_field3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field3}
+											],
+				{END row_grid_7}
+								{BEGIN row_grid_8}
+				[
+												{BEGIN cellblock_grid_cell_label4}
+{
+	cellId: 'cell_label4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label}","text":"{$jslabel contrato cont_objeto }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label4}
+																			{BEGIN cellblock_grid_cell_field4}
+{
+	cellId: 'cell_field4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_field4}
+			colSpan: {$colspan_grid_cell_field4},
+			{END colspan_grid_cell_field4}
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field}","text":{$cont_objeto_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_objeto_align}',
+  },
+
+{END cellblock_grid_cell_field4}
+																		{ 
+				cellId: 'cell_field4',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_field4',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+							],
+				{END row_grid_8}
+								{BEGIN row_grid_9}
+				[
+												{BEGIN cellblock_grid_cell_label5}
+{
+	cellId: 'cell_label5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label4}","text":"{$jslabel contrato cont_unspsc }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label5}
+																			{BEGIN cellblock_grid_cell_field5}
+{
+	cellId: 'cell_field5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field4}","text":{$cont_unspsc_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_unspsc_align}',
+  },
+
+{END cellblock_grid_cell_field5}
+																			{BEGIN cellblock_grid_cell_label6}
+{
+	cellId: 'cell_label6',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label6}
+																			{BEGIN cellblock_grid_cell_field6}
+{
+	cellId: 'cell_field6',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field6}
+											],
+				{END row_grid_9}
+								{BEGIN row_grid_10}
+				[
+												{BEGIN cellblock_grid_cell_dpreview}
+{
+	cellId: 'cell_dpreview',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_dpreview}
+			colSpan: {$colspan_grid_cell_dpreview},
+			{END colspan_grid_cell_dpreview}
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_dpreview}
+																		{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+							],
+				{END row_grid_10}
+										]
+						}
+					}
+				]]
+			}
+		},
+	{END grid_vrecord}
+	{END grid_record}
+	]
+,
+	{END grid_row}
+	
+									]
+			
+			}
+		},
+		{END body}
+	]
+}

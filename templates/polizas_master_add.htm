@@ -1,0 +1,688 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-add" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="add_header" data-itemid="add_header" {$item_add_header} data-pageid="{$pageid}" >{$pagetitlelabel polizas_master add}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		{BEGIN message_block}
+<div data-itemtype="add_message" data-itemid="add_message" {$item_add_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+		
+	<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+{BEGIN edit_page_button}
+	<button class="btn btn-sm btn-default" {$edit_page_button_attrs}>Editar</button>
+{END edit_page_button}
+</div>
+</div>
+{END message_block}	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+		
+					<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+						<tr>
+						
+
+{BEGIN cellblock_grid_c4}
+<td
+	{$cell_grid_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c4}
+			 
+																
+
+{BEGIN cellblock_grid_c5}
+<td
+	{$cell_grid_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_cont_fk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_cont_fk}  r-vertical-field" 
+	data-fieldname="id_cont_fk" 
+	data-signal-error-for="id_cont_fk{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_cont_fk" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_cont_fk}">
+		{BEGIN id_cont_fk_label}{$label polizas_master id_cont_fk }{END id_cont_fk_label}
+	</label>
+	<div class="r-edit-field">
+		{$id_cont_fk_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_cont_fk">
+		<div class="text-muted" >
+		{$tooltip polizas_master id_cont_fk }		</div>
+	</div>
+</div>
+
+
+{END id_cont_fk_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c5}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c6}
+<td
+	{$cell_grid_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN poli_numero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_poli_numero}  r-vertical-field" 
+	data-fieldname="poli_numero" 
+	data-signal-error-for="poli_numero{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="poli_numero" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_poli_numero}">
+		{BEGIN poli_numero_label}{$label polizas_master poli_numero }{END poli_numero_label}
+	</label>
+	<div class="r-edit-field">
+		{$poli_numero_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="poli_numero">
+		<div class="text-muted" >
+		{$tooltip polizas_master poli_numero }		</div>
+	</div>
+</div>
+
+
+{END poli_numero_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c6}
+			 
+																
+
+{BEGIN cellblock_grid_c7}
+<td
+	{$cell_grid_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN poli_compania_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_poli_compania}  r-vertical-field" 
+	data-fieldname="poli_compania" 
+	data-signal-error-for="poli_compania{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="poli_compania" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_poli_compania}">
+		{BEGIN poli_compania_label}{$label polizas_master poli_compania }{END poli_compania_label}
+	</label>
+	<div class="r-edit-field">
+		{$poli_compania_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="poli_compania">
+		<div class="text-muted" >
+		{$tooltip polizas_master poli_compania }		</div>
+	</div>
+</div>
+
+
+{END poli_compania_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c7}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c8}
+<td
+	{$cell_grid_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN poli_fechaexpedicion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_poli_fechaexpedicion}  r-vertical-field" 
+	data-fieldname="poli_fechaexpedicion" 
+	data-signal-error-for="poli_fechaexpedicion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="poli_fechaexpedicion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_poli_fechaexpedicion}">
+		{BEGIN poli_fechaexpedicion_label}{$label polizas_master poli_fechaexpedicion }{END poli_fechaexpedicion_label}
+	</label>
+	<div class="r-edit-field">
+		{$poli_fechaexpedicion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="poli_fechaexpedicion">
+		<div class="text-muted" >
+		{$tooltip polizas_master poli_fechaexpedicion }		</div>
+	</div>
+</div>
+
+
+{END poli_fechaexpedicion_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c8}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c9}
+<td
+	{$cell_grid_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c9}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c10}
+<td
+	{$cell_grid_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c10" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN poli_codamparo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_poli_codamparo}  r-vertical-field" 
+	data-fieldname="poli_codamparo" 
+	data-signal-error-for="poli_codamparo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="poli_codamparo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_poli_codamparo}">
+		{BEGIN poli_codamparo_label}{$label polizas_master poli_codamparo }{END poli_codamparo_label}
+	</label>
+	<div class="r-edit-field">
+		{$poli_codamparo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="poli_codamparo">
+		<div class="text-muted" >
+		{$tooltip polizas_master poli_codamparo }		</div>
+	</div>
+</div>
+
+
+{END poli_codamparo_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c10}
+			 
+																
+
+{BEGIN cellblock_grid_c11}
+<td
+	{$cell_grid_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c11" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN poli_fechaaprobacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_poli_fechaaprobacion}  r-vertical-field" 
+	data-fieldname="poli_fechaaprobacion" 
+	data-signal-error-for="poli_fechaaprobacion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="poli_fechaaprobacion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_poli_fechaaprobacion}">
+		{BEGIN poli_fechaaprobacion_label}{$label polizas_master poli_fechaaprobacion }{END poli_fechaaprobacion_label}
+	</label>
+	<div class="r-edit-field">
+		{$poli_fechaaprobacion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="poli_fechaaprobacion">
+		<div class="text-muted" >
+		{$tooltip polizas_master poli_fechaaprobacion }		</div>
+	</div>
+</div>
+
+
+{END poli_fechaaprobacion_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c11}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c12}
+<td
+	{$cell_grid_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c12" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN poli_porcentaje_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_poli_porcentaje}  r-vertical-field" 
+	data-fieldname="poli_porcentaje" 
+	data-signal-error-for="poli_porcentaje{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="poli_porcentaje" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_poli_porcentaje}">
+		{BEGIN poli_porcentaje_label}{$label polizas_master poli_porcentaje }{END poli_porcentaje_label}
+	</label>
+	<div class="r-edit-field">
+		{$poli_porcentaje_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="poli_porcentaje">
+		<div class="text-muted" >
+		{$tooltip polizas_master poli_porcentaje }		</div>
+	</div>
+</div>
+
+
+{END poli_porcentaje_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c12}
+			 
+																
+
+{BEGIN cellblock_grid_c13}
+<td
+	{$cell_grid_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c13" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN poli_valor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_poli_valor}  r-vertical-field" 
+	data-fieldname="poli_valor" 
+	data-signal-error-for="poli_valor{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="poli_valor" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_poli_valor}">
+		{BEGIN poli_valor_label}{$label polizas_master poli_valor }{END poli_valor_label}
+	</label>
+	<div class="r-edit-field">
+		{$poli_valor_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="poli_valor">
+		<div class="text-muted" >
+		{$tooltip polizas_master poli_valor }		</div>
+	</div>
+</div>
+
+
+{END poli_valor_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c13}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c14}
+<td
+	{$cell_grid_c14}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c14" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN poli_vigenciadesde_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_poli_vigenciadesde}  r-vertical-field" 
+	data-fieldname="poli_vigenciadesde" 
+	data-signal-error-for="poli_vigenciadesde{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="poli_vigenciadesde" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_poli_vigenciadesde}">
+		{BEGIN poli_vigenciadesde_label}{$label polizas_master poli_vigenciadesde }{END poli_vigenciadesde_label}
+	</label>
+	<div class="r-edit-field">
+		{$poli_vigenciadesde_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="poli_vigenciadesde">
+		<div class="text-muted" >
+		{$tooltip polizas_master poli_vigenciadesde }		</div>
+	</div>
+</div>
+
+
+{END poli_vigenciadesde_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c14}
+			 
+																
+
+{BEGIN cellblock_grid_c15}
+<td
+	{$cell_grid_c15}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c15" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN poli_vigenciahasta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_poli_vigenciahasta}  r-vertical-field" 
+	data-fieldname="poli_vigenciahasta" 
+	data-signal-error-for="poli_vigenciahasta{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="poli_vigenciahasta" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_poli_vigenciahasta}">
+		{BEGIN poli_vigenciahasta_label}{$label polizas_master poli_vigenciahasta }{END poli_vigenciahasta_label}
+	</label>
+	<div class="r-edit-field">
+		{$poli_vigenciahasta_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="poli_vigenciahasta">
+		<div class="text-muted" >
+		{$tooltip polizas_master poli_vigenciahasta }		</div>
+	</div>
+</div>
+
+
+{END poli_vigenciahasta_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c15}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c16}
+<td
+	{$cell_grid_c16}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c16" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sys_user_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_user}  r-vertical-field" 
+	data-fieldname="sys_user" 
+	data-signal-error-for="sys_user{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="sys_user" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_user}">
+		{BEGIN sys_user_label}{$label polizas_master sys_user }{END sys_user_label}
+	</label>
+	<div class="r-edit-field">
+		{$sys_user_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_user">
+		<div class="text-muted" >
+		{$tooltip polizas_master sys_user }		</div>
+	</div>
+</div>
+
+
+{END sys_user_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c16}
+			 
+																
+
+{BEGIN cellblock_grid_c17}
+<td
+	{$cell_grid_c17}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c17" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sys_time_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_time}  r-vertical-field" 
+	data-fieldname="sys_time" 
+	data-signal-error-for="sys_time{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="sys_time" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_time}">
+		{BEGIN sys_time_label}{$label polizas_master sys_time }{END sys_time_label}
+	</label>
+	<div class="r-edit-field">
+		{$sys_time_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_time">
+		<div class="text-muted" >
+		{$tooltip polizas_master sys_time }		</div>
+	</div>
+</div>
+
+
+{END sys_time_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c17}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="add_save" data-itemid="add_save" {$item_add_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="add_back_list" data-itemid="add_back_list" {$item_add_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="backButton{$id}" >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="add_cancel" data-itemid="add_cancel" {$item_add_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

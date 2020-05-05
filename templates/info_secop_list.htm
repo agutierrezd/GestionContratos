@@ -1,0 +1,1869 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-list" {$bodyattrs}>
+	{BEGIN body}
+		<style>
+		{$containerCss}
+		</style>
+		<div class="r-vbar-page">
+			<div data-width="" data-fixed class="r-left clearfix {$leftbar_class}" >
+								<div data-location="left" id="form_left_{$pageid}" data-makeup="leftbar" {$form_left} data-pageid="{$pageid}">
+{BEGIN left_block}
+ 
+     
+         
+
+			<div data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell class="clearfix " data-itemid="logo1" {$item_logo1}>
+				{BEGIN logo_block}
+	<A data-itemtype="logo" data-itemid="logo1" {$item_logo1} data-pageid="{$pageid}" class="navbar-brand" href="{$home_link}" data-pageid="{$pageid}" {$logo_hiddenattr}>
+		{$logo}
+	</A>
+{END logo_block}
+				<button data-pageid="1" type="button" class="navbar-toggle collapsed" data-runner-toggle="collapse" data-target="[data-mobile-controlled]">	
+					<span class="sr-only">Toggle navigation</span>	
+					<span class="icon-bar"></span>					
+				</button>				
+			</div>
+		
+ 
+
+			<div class="clearfix " data-cellId="left_c0" data-pageid="{$pageid}" data-logo-cell data-itemid="expand_button" {$item_expand_button} data-topcell-item-type="expand_button" >
+				<span data-itemtype="expand_button" data-itemid="expand_button" {$item_expand_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Expand" class="btn btn-link   
+	" href="#" >
+					<span class="glyphicon glyphicon-triangle-right"></span>
+										</a>
+</span>
+			</div>
+		
+     
+     
+         
+
+			<div data-cellId="left_c1" data-pageid="{$pageid}" class="clearfix  r-ori-vert " data-itemtype="menu" data-itemid="menu" {$item_menu} data-pageid="{$pageid}">
+				{$menu main}			</div>
+		
+ 
+
+			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
+				<!-- Begin Search panel content -->
+<div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
+
+	<div class="panel-heading">
+		<div class="btn-group" id="addSearchFieldButton{$id}">
+			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			Búsqueda			<span class="caret"></span>
+			</button>
+		</div>
+
+
+		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
+			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
+			</button>
+			<ul class="dropdown-menu dropdown-left">
+				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Mostrar opciones</a></li>
+				<li role="separator" class="divider"></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>todas las condiciones</label></a></li>
+				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>cualquier condición</label></a></li>
+				<li role="separator" class="divider"></li>
+				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>esconder</a></li>
+			</ul>
+		</div>
+
+
+		</div>
+	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
+
+
+		
+		{BEGIN searchCtrlBlock}
+		<div class="srchPanelRow form-group" {$filterRow_attrs}>
+			<label>{$fLabel}</label>	{$delCtrlButt}
+				<span class="rnr-searchtype">{$searchtype}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol}</span>
+				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
+		</div>
+		{END searchCtrlBlock}
+																		{BEGIN searchCtrlBlock_anno_bpin}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_anno_bpin}" {$filterRow_attrs_anno_bpin}>
+			<label>{$label info_secop anno_bpin }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_anno_bpin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_anno_bpin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_anno_bpin}</span>
+						</div>
+		{END searchCtrlBlock_anno_bpin}
+																{BEGIN searchCtrlBlock_valor_pendiente_de_pago}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_valor_pendiente_de_pago}" {$filterRow_attrs_valor_pendiente_de_pago}>
+			<label>{$label info_secop valor_pendiente_de_pago }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_valor_pendiente_de_pago}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_valor_pendiente_de_pago}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_valor_pendiente_de_pago}</span>
+						</div>
+		{END searchCtrlBlock_valor_pendiente_de_pago}
+																{BEGIN searchCtrlBlock_valor_pendiente_de_ejecucion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_valor_pendiente_de_ejecucion}" {$filterRow_attrs_valor_pendiente_de_ejecucion}>
+			<label>{$label info_secop valor_pendiente_de_ejecucion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_valor_pendiente_de_ejecucion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_valor_pendiente_de_ejecucion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_valor_pendiente_de_ejecucion}</span>
+						</div>
+		{END searchCtrlBlock_valor_pendiente_de_ejecucion}
+																{BEGIN searchCtrlBlock_valor_pendiente_de}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_valor_pendiente_de}" {$filterRow_attrs_valor_pendiente_de}>
+			<label>{$label info_secop valor_pendiente_de }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_valor_pendiente_de}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_valor_pendiente_de}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_valor_pendiente_de}</span>
+						</div>
+		{END searchCtrlBlock_valor_pendiente_de}
+																{BEGIN searchCtrlBlock_valor_pagado}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_valor_pagado}" {$filterRow_attrs_valor_pagado}>
+			<label>{$label info_secop valor_pagado }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_valor_pagado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_valor_pagado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_valor_pagado}</span>
+						</div>
+		{END searchCtrlBlock_valor_pagado}
+																{BEGIN searchCtrlBlock_valor_facturado}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_valor_facturado}" {$filterRow_attrs_valor_facturado}>
+			<label>{$label info_secop valor_facturado }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_valor_facturado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_valor_facturado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_valor_facturado}</span>
+						</div>
+		{END searchCtrlBlock_valor_facturado}
+																{BEGIN searchCtrlBlock_valor_del_contrato}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_valor_del_contrato}" {$filterRow_attrs_valor_del_contrato}>
+			<label>{$label info_secop valor_del_contrato }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_valor_del_contrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_valor_del_contrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_valor_del_contrato}</span>
+						</div>
+		{END searchCtrlBlock_valor_del_contrato}
+																{BEGIN searchCtrlBlock_valor_de_pago_adelantado}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_valor_de_pago_adelantado}" {$filterRow_attrs_valor_de_pago_adelantado}>
+			<label>{$label info_secop valor_de_pago_adelantado }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_valor_de_pago_adelantado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_valor_de_pago_adelantado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_valor_de_pago_adelantado}</span>
+						</div>
+		{END searchCtrlBlock_valor_de_pago_adelantado}
+																{BEGIN searchCtrlBlock_valor_amortizado}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_valor_amortizado}" {$filterRow_attrs_valor_amortizado}>
+			<label>{$label info_secop valor_amortizado }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_valor_amortizado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_valor_amortizado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_valor_amortizado}</span>
+						</div>
+		{END searchCtrlBlock_valor_amortizado}
+																{BEGIN searchCtrlBlock_urlproceso}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_urlproceso}" {$filterRow_attrs_urlproceso}>
+			<label>{$label info_secop urlproceso }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_urlproceso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_urlproceso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_urlproceso}</span>
+						</div>
+		{END searchCtrlBlock_urlproceso}
+																{BEGIN searchCtrlBlock_tipodocproveedor}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tipodocproveedor}" {$filterRow_attrs_tipodocproveedor}>
+			<label>{$label info_secop tipodocproveedor }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tipodocproveedor}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tipodocproveedor}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tipodocproveedor}</span>
+						</div>
+		{END searchCtrlBlock_tipodocproveedor}
+																{BEGIN searchCtrlBlock_tipo_de_contrato}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_tipo_de_contrato}" {$filterRow_attrs_tipo_de_contrato}>
+			<label>{$label info_secop tipo_de_contrato }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_tipo_de_contrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_tipo_de_contrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_tipo_de_contrato}</span>
+						</div>
+		{END searchCtrlBlock_tipo_de_contrato}
+																{BEGIN searchCtrlBlock_saldo_vigencia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_saldo_vigencia}" {$filterRow_attrs_saldo_vigencia}>
+			<label>{$label info_secop saldo_vigencia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_saldo_vigencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_saldo_vigencia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_saldo_vigencia}</span>
+						</div>
+		{END searchCtrlBlock_saldo_vigencia}
+																{BEGIN searchCtrlBlock_saldo_cdp}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_saldo_cdp}" {$filterRow_attrs_saldo_cdp}>
+			<label>{$label info_secop saldo_cdp }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_saldo_cdp}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_saldo_cdp}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_saldo_cdp}</span>
+						</div>
+		{END searchCtrlBlock_saldo_cdp}
+																{BEGIN searchCtrlBlock_reversion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_reversion}" {$filterRow_attrs_reversion}>
+			<label>{$label info_secop reversion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_reversion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_reversion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_reversion}</span>
+						</div>
+		{END searchCtrlBlock_reversion}
+																{BEGIN searchCtrlBlock_referencia_del_contrato}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_referencia_del_contrato}" {$filterRow_attrs_referencia_del_contrato}>
+			<label>{$label info_secop referencia_del_contrato }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_referencia_del_contrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_referencia_del_contrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_referencia_del_contrato}</span>
+						</div>
+		{END searchCtrlBlock_referencia_del_contrato}
+																{BEGIN searchCtrlBlock_puntos_del_acuerdo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_puntos_del_acuerdo}" {$filterRow_attrs_puntos_del_acuerdo}>
+			<label>{$label info_secop puntos_del_acuerdo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_puntos_del_acuerdo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_puntos_del_acuerdo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_puntos_del_acuerdo}</span>
+						</div>
+		{END searchCtrlBlock_puntos_del_acuerdo}
+																{BEGIN searchCtrlBlock_proveedor_adjudicado}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_proveedor_adjudicado}" {$filterRow_attrs_proveedor_adjudicado}>
+			<label>{$label info_secop proveedor_adjudicado }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_proveedor_adjudicado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_proveedor_adjudicado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_proveedor_adjudicado}</span>
+						</div>
+		{END searchCtrlBlock_proveedor_adjudicado}
+																{BEGIN searchCtrlBlock_proceso_de_compra}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_proceso_de_compra}" {$filterRow_attrs_proceso_de_compra}>
+			<label>{$label info_secop proceso_de_compra }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_proceso_de_compra}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_proceso_de_compra}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_proceso_de_compra}</span>
+						</div>
+		{END searchCtrlBlock_proceso_de_compra}
+																{BEGIN searchCtrlBlock_pilares_del_acuerdo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_pilares_del_acuerdo}" {$filterRow_attrs_pilares_del_acuerdo}>
+			<label>{$label info_secop pilares_del_acuerdo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_pilares_del_acuerdo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_pilares_del_acuerdo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_pilares_del_acuerdo}</span>
+						</div>
+		{END searchCtrlBlock_pilares_del_acuerdo}
+																{BEGIN searchCtrlBlock_origen_de_los_recursos}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_origen_de_los_recursos}" {$filterRow_attrs_origen_de_los_recursos}>
+			<label>{$label info_secop origen_de_los_recursos }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_origen_de_los_recursos}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_origen_de_los_recursos}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_origen_de_los_recursos}</span>
+						</div>
+		{END searchCtrlBlock_origen_de_los_recursos}
+																{BEGIN searchCtrlBlock_obligaciones_postconsumo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_obligaciones_postconsumo}" {$filterRow_attrs_obligaciones_postconsumo}>
+			<label>{$label info_secop obligaciones_postconsumo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_obligaciones_postconsumo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_obligaciones_postconsumo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_obligaciones_postconsumo}</span>
+						</div>
+		{END searchCtrlBlock_obligaciones_postconsumo}
+																{BEGIN searchCtrlBlock_obligaci_n_ambiental}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_obligaci_n_ambiental}" {$filterRow_attrs_obligaci_n_ambiental}>
+			<label>{$label info_secop obligaci_n_ambiental }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_obligaci_n_ambiental}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_obligaci_n_ambiental}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_obligaci_n_ambiental}</span>
+						</div>
+		{END searchCtrlBlock_obligaci_n_ambiental}
+																{BEGIN searchCtrlBlock_nit_entidad}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_nit_entidad}" {$filterRow_attrs_nit_entidad}>
+			<label>{$label info_secop nit_entidad }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_nit_entidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_nit_entidad}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_nit_entidad}</span>
+						</div>
+		{END searchCtrlBlock_nit_entidad}
+																{BEGIN searchCtrlBlock_modalidad_de_contratacion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_modalidad_de_contratacion}" {$filterRow_attrs_modalidad_de_contratacion}>
+			<label>{$label info_secop modalidad_de_contratacion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_modalidad_de_contratacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_modalidad_de_contratacion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_modalidad_de_contratacion}</span>
+						</div>
+		{END searchCtrlBlock_modalidad_de_contratacion}
+																{BEGIN searchCtrlBlock_liquidaci_n}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_liquidaci_n}" {$filterRow_attrs_liquidaci_n}>
+			<label>{$label info_secop liquidaci_n }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_liquidaci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_liquidaci_n}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_liquidaci_n}</span>
+						</div>
+		{END searchCtrlBlock_liquidaci_n}
+																{BEGIN searchCtrlBlock_justificacion_modalidad_de}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_justificacion_modalidad_de}" {$filterRow_attrs_justificacion_modalidad_de}>
+			<label>{$label info_secop justificacion_modalidad_de }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_justificacion_modalidad_de}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_justificacion_modalidad_de}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_justificacion_modalidad_de}</span>
+						</div>
+		{END searchCtrlBlock_justificacion_modalidad_de}
+																{BEGIN searchCtrlBlock_id_contrato}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_contrato}" {$filterRow_attrs_id_contrato}>
+			<label>{$label info_secop id_contrato }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_contrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_contrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_contrato}</span>
+						</div>
+		{END searchCtrlBlock_id_contrato}
+																{BEGIN searchCtrlBlock_id}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id}" {$filterRow_attrs_id}>
+			<label>{$label info_secop id }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id}</span>
+						</div>
+		{END searchCtrlBlock_id}
+																{BEGIN searchCtrlBlock_habilita_pago_adelantado}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_habilita_pago_adelantado}" {$filterRow_attrs_habilita_pago_adelantado}>
+			<label>{$label info_secop habilita_pago_adelantado }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_habilita_pago_adelantado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_habilita_pago_adelantado}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_habilita_pago_adelantado}</span>
+						</div>
+		{END searchCtrlBlock_habilita_pago_adelantado}
+																{BEGIN searchCtrlBlock_fecha_de_inicio_del_contrato}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_de_inicio_del_contrato}" {$filterRow_attrs_fecha_de_inicio_del_contrato}>
+			<label>{$label info_secop fecha_de_inicio_del_contrato }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_de_inicio_del_contrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_de_inicio_del_contrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_de_inicio_del_contrato}</span>
+						</div>
+		{END searchCtrlBlock_fecha_de_inicio_del_contrato}
+																{BEGIN searchCtrlBlock_fecha_de_inicio_de_ejecucion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_de_inicio_de_ejecucion}" {$filterRow_attrs_fecha_de_inicio_de_ejecucion}>
+			<label>{$label info_secop fecha_de_inicio_de_ejecucion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_de_inicio_de_ejecucion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_de_inicio_de_ejecucion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_de_inicio_de_ejecucion}</span>
+						</div>
+		{END searchCtrlBlock_fecha_de_inicio_de_ejecucion}
+																{BEGIN searchCtrlBlock_fecha_de_firma}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_de_firma}" {$filterRow_attrs_fecha_de_firma}>
+			<label>{$label info_secop fecha_de_firma }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_de_firma}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_de_firma}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_de_firma}</span>
+						</div>
+		{END searchCtrlBlock_fecha_de_firma}
+																{BEGIN searchCtrlBlock_fecha_de_fin_del_contrato}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_de_fin_del_contrato}" {$filterRow_attrs_fecha_de_fin_del_contrato}>
+			<label>{$label info_secop fecha_de_fin_del_contrato }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_de_fin_del_contrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_de_fin_del_contrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_de_fin_del_contrato}</span>
+						</div>
+		{END searchCtrlBlock_fecha_de_fin_del_contrato}
+																{BEGIN searchCtrlBlock_fecha_de_fin_de_ejecucion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_de_fin_de_ejecucion}" {$filterRow_attrs_fecha_de_fin_de_ejecucion}>
+			<label>{$label info_secop fecha_de_fin_de_ejecucion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_de_fin_de_ejecucion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_de_fin_de_ejecucion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_de_fin_de_ejecucion}</span>
+						</div>
+		{END searchCtrlBlock_fecha_de_fin_de_ejecucion}
+																{BEGIN searchCtrlBlock_estado_contrato}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_estado_contrato}" {$filterRow_attrs_estado_contrato}>
+			<label>{$label info_secop estado_contrato }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_estado_contrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_estado_contrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_estado_contrato}</span>
+						</div>
+		{END searchCtrlBlock_estado_contrato}
+																{BEGIN searchCtrlBlock_estado_bpin}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_estado_bpin}" {$filterRow_attrs_estado_bpin}>
+			<label>{$label info_secop estado_bpin }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_estado_bpin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_estado_bpin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_estado_bpin}</span>
+						</div>
+		{END searchCtrlBlock_estado_bpin}
+																{BEGIN searchCtrlBlock_espostconflicto}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_espostconflicto}" {$filterRow_attrs_espostconflicto}>
+			<label>{$label info_secop espostconflicto }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_espostconflicto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_espostconflicto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_espostconflicto}</span>
+						</div>
+		{END searchCtrlBlock_espostconflicto}
+																{BEGIN searchCtrlBlock_es_pyme}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_es_pyme}" {$filterRow_attrs_es_pyme}>
+			<label>{$label info_secop es_pyme }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_es_pyme}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_es_pyme}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_es_pyme}</span>
+						</div>
+		{END searchCtrlBlock_es_pyme}
+																{BEGIN searchCtrlBlock_es_grupo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_es_grupo}" {$filterRow_attrs_es_grupo}>
+			<label>{$label info_secop es_grupo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_es_grupo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_es_grupo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_es_grupo}</span>
+						</div>
+		{END searchCtrlBlock_es_grupo}
+																{BEGIN searchCtrlBlock_documento_proveedor}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_documento_proveedor}" {$filterRow_attrs_documento_proveedor}>
+			<label>{$label info_secop documento_proveedor }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_documento_proveedor}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_documento_proveedor}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_documento_proveedor}</span>
+						</div>
+		{END searchCtrlBlock_documento_proveedor}
+																{BEGIN searchCtrlBlock_destino_gasto}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_destino_gasto}" {$filterRow_attrs_destino_gasto}>
+			<label>{$label info_secop destino_gasto }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_destino_gasto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_destino_gasto}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_destino_gasto}</span>
+						</div>
+		{END searchCtrlBlock_destino_gasto}
+																{BEGIN searchCtrlBlock_descripcion_del_proceso}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_descripcion_del_proceso}" {$filterRow_attrs_descripcion_del_proceso}>
+			<label>{$label info_secop descripcion_del_proceso }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_descripcion_del_proceso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_descripcion_del_proceso}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_descripcion_del_proceso}</span>
+						</div>
+		{END searchCtrlBlock_descripcion_del_proceso}
+																{BEGIN searchCtrlBlock_d_as_adicionados}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_d_as_adicionados}" {$filterRow_attrs_d_as_adicionados}>
+			<label>{$label info_secop d_as_adicionados }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_d_as_adicionados}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_d_as_adicionados}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_d_as_adicionados}</span>
+						</div>
+		{END searchCtrlBlock_d_as_adicionados}
+																{BEGIN searchCtrlBlock_condiciones_de_entrega}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_condiciones_de_entrega}" {$filterRow_attrs_condiciones_de_entrega}>
+			<label>{$label info_secop condiciones_de_entrega }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_condiciones_de_entrega}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_condiciones_de_entrega}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_condiciones_de_entrega}</span>
+						</div>
+		{END searchCtrlBlock_condiciones_de_entrega}
+																{BEGIN searchCtrlBlock_codigo_de_categoria_principal}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_codigo_de_categoria_principal}" {$filterRow_attrs_codigo_de_categoria_principal}>
+			<label>{$label info_secop codigo_de_categoria_principal }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_codigo_de_categoria_principal}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_codigo_de_categoria_principal}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_codigo_de_categoria_principal}</span>
+						</div>
+		{END searchCtrlBlock_codigo_de_categoria_principal}
+																{BEGIN searchCtrlBlock_c_digo_bpin}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_c_digo_bpin}" {$filterRow_attrs_c_digo_bpin}>
+			<label>{$label info_secop c_digo_bpin }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_c_digo_bpin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_c_digo_bpin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_c_digo_bpin}</span>
+						</div>
+		{END searchCtrlBlock_c_digo_bpin}
+		
+
+	</div>
+
+	<div class="panel-footer bottomSearchButt" {$bottomSearchButt_attrs}>
+		<button class="btn btn-primary" id="searchButton{$id}" {$searchbutton_attrs}>Buscar</button>
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs}>Mostrar todo</button>
+	</div>
+</div>
+<!-- End Search panel content -->
+			</div>
+		
+    {END left_block}
+</div>				</div>	
+			<div class="r-content-col" data-resize-left="leftbar">
+				<div  class="r-topheader" data-resize-name="topbar">
+									{BEGIN supertop_block}
+<nav class="navbar navbar-default" 
+	data-location="supertop" id="form_supertop_{$pageid}" data-makeup="leftbar" {$form_supertop} data-pageid="{$pageid}" >
+			 
+							 
+				<span class="navbar-form  navbar-header" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="collapse_button" {$item_collapse_button} data-topcell-item-type="collapse_button" >
+				<span data-itemtype="collapse_button" data-itemid="collapse_button" {$item_collapse_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="Collapse" class="btn-link   
+	 glyphicon glyphicon-triangle-left" href="#" >		
+				
+								</a>
+</span>
+			</span>
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="breadcrumb" {$item_breadcrumb} data-topcell-item-type="breadcrumb" >
+				{BEGIN breadcrumb}
+<ol class="breadcrumb" data-itemtype="breadcrumb" data-itemid="breadcrumb" {$item_breadcrumb} data-pageid="{$pageid}">
+<li ><a href="{$crumb_home_link}"><span class="glyphicon glyphicon-home"></span></a>{$crumb_dropdown}</li>
+{BEGIN crumb}
+  <li class="{$crumb_item_class}">
+{BEGIN crumb_title_link}
+	<a {$crumb_attrs}>{$crumb_title}</a>
+{END crumb_title_link}
+{BEGIN crumb_title_span}
+	<span {$crumb_attrs}>{$crumb_title}</span>
+{END crumb_title_span}	
+	{$crumb_dropdown}
+  </li>
+{END crumb}
+</ol>
+{END breadcrumb}			</span>
+							 
+							 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
+
+<div  class="input-group">
+{BEGIN searchform_text}
+	<input type="search" class="form-control" {$searchfor_attrs} size="25">
+{END searchform_text}
+	<span class="input-group-btn">
+	{BEGIN searchform_showall}
+		<button class="btn btn-default" {$showAllCont_attrs} {$showallbutton_attrs} title="Mostrar todo">
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+	{END searchform_showall}
+	{BEGIN searchform_search}
+	<button {$searchbutton_attrs} class="btn btn-primary" >
+		<span class="glyphicon glyphicon-search"></span>
+	</button>
+	{END searchform_search}
+	</span>
+</div>
+		
+</span>			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
+				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-cog"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN exportselected_link}
+	<li data-itemtype="export_selected" data-itemid="export_selected" {$item_export_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportselectedlink_attrs} {$exportselectedlink_span}  title="" >
+				
+		Exportar seleccionados		
+		</a>
+	</li>
+{END exportselected_link}
+							{BEGIN deleteselected_link}
+	<li data-itemtype="delete_selected" data-itemid="delete_selected" {$item_delete_selected} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$deleteselectedlink_attrs} {$deleteselectedlink_span}  title="" >
+				
+		Borrar articulos seleccionados		
+		</a>
+	</li>
+{END deleteselected_link}
+							<li role="separator" class="divider"></li>								<li data-itemtype="advsearch_link" data-itemid="advsearch_link" {$item_advsearch_link} data-pageid="{$pageid}" data-small >
+				<a   href="info_secop_search.php" {$advsearchlink_attrs}  title="" >
+				
+		Búsqueda avanzada		
+		</a>
+	</li>
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="show_search_panel" data-itemid="show_search_panel" {$item_show_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="showOptPanel{$id}"  title="" >
+				
+		Mostrar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							{BEGIN searchPanelTopButtons}
+	<li data-itemtype="hide_search_panel" data-itemid="hide_search_panel" {$item_hide_search_panel} data-pageid="{$pageid}" data-small >
+				<a  id="hideOptPanel{$id}"  title="" >
+				
+		Ocultar panel de búsqueda		
+		</a>
+	</li>
+{END searchPanelTopButtons}
+							<li role="separator" class="divider"></li>							{BEGIN export_link}
+	<li data-itemtype="export" data-itemid="export" {$item_export} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$exportlink_attrs}  title="" >
+				
+		Exportar resultados		
+		</a>
+	</li>
+{END export_link}
+							<li role="separator" class="divider"></li>							{BEGIN import_link}
+	<li data-itemtype="import" data-itemid="import" {$item_import} data-pageid="{$pageid}" data-small >
+				<a  {$importlink_attrs} href="info_secop_import.php?{$crosstable_attrs}"  title="" >
+				
+		Importar		
+		</a>
+	</li>
+{END import_link}
+					</ul>
+	</span>
+</span>
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
+				{BEGIN guestloginbutton}
+<span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" href="#" {$guestloginlink_attrs} >
+							Conectar			</a>
+</span>
+{END guestloginbutton}
+			</span>
+		 
+				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="username_button" {$item_username_button} data-topcell-item-type="username_button" >
+				{BEGIN loggedas_message}
+<span data-itemtype="username_button" data-itemid="username_button" {$item_username_button} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-user"></span>
+						{$username}			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN logoutbutton}
+	<li data-itemtype="logout_link" data-itemid="logout_link" {$item_logout_link} data-pageid="{$pageid}" data-small >
+				<a  href="#" {$logoutlink_attrs}  title="" >
+				
+		Desconectarse		
+		</a>
+	</li>
+{END logoutbutton}
+							{BEGIN adminarea_link}
+	<li data-itemtype="adminarea_link" data-itemid="adminarea_link" {$item_adminarea_link} data-pageid="{$pageid}" data-small >
+				<a  href="admin_rights_list.php"  title="" >
+				
+		Area Admin		
+		</a>
+	</li>
+{END adminarea_link}
+					</ul>
+	</span>
+</span>
+{END loggedas_message}
+			</span>
+								</nav>
+{END supertop_block}
+						{$locking}
+				</div>	
+				<div class="r-body" data-resize-top="topbar" data-body-width="standard">
+					{$header}
+					<div class="r-top">
+									{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="leftbar" {$form_top} data-pageid="{$pageid}" >		
+	</div>		
+{END top_block}
+						</div>
+					<div class="r-above">
+										{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class="			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		{BEGIN add_link}
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$addlink_attrs} href="info_secop_add.php" >
+							Añadir nuevo			</a>
+</span>
+{END add_link}
+	 
+		{BEGIN deleteselected_link}
+<span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
+							Borrar artículos seleccionados			</a>
+</span>
+{END deleteselected_link}
+			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class="r-align-right			col-md-6
+	
+">
+		 
+		<span data-itemtype="details_found" data-itemid="details_found" {$item_details_found} data-pageid="{$pageid}" data-small >
+{$details_found_labeldetails_found}
+</span>	 
+		<span data-itemtype="page_size" data-itemid="page_size" {$item_page_size} data-pageid="{$pageid}" >
+		{$recsPerPage}
+</span>	 
+		{BEGIN print_friendly}
+<span id="printpanelblock{$id}"  data-pageid="{$pageid}" {$printpanel_hiddenattr} data-itemtype="print_panel" data-itemid="print_panel" {$item_print_panel} data-pageid="{$pageid}">
+	<button title="Página para imprimir" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					<span class="glyphicon glyphicon-print"></span>
+				<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu pull-right">
+										 
+				 
+					<li class="container-fluid 
+										">
+									<div id="print_friendly_scope{$id}">
+	<div class="row">
+		<div class="col-md-4">
+			Rango:		</div>
+
+		{BEGIN print_friendly_all}
+		<div class="col-md-8">
+			<label for="printAll{$id}">
+				<input type="radio" id="printAll{$id}" data-href="info_secop_print.php?all=1&amp;{$crosstable_attrs}" name="printScope">
+									Imprimir todas las páginas							</label>
+		</div>
+		{END print_friendly_all}
+	</div>
+	<div class="row">
+		<div class="col-md-4">&nbsp;</div>
+		<div class="col-md-8">
+			<label for="printPage{$id}">
+				<input name="printScope" id="printPage{$id}" type="radio" checked data-href="info_secop_print.php?{$crosstable_attrs}">
+				Imprimir esta página			</label>
+		</div>
+	</div>
+	
+		<div class="row">
+		<div class="col-md-4">
+			&nbsp;
+		</div>
+		<div class="col-md-8">
+			<label style="color: gray;" for="printSelection{$id}">
+			<input name="printScope" disabled="disabled" id="printSelection{$id}" type="radio">
+			Imprimir la selección			</label>
+		</div>
+	</div>
+	</div>				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
+									<div>
+	<label for="printPerPage{$id}">
+					Resultados por página							
+	</label>
+	<input type="number" id="printPerPage{$id}" value="{$print_recspp}" class="rnr-printrecspp">		
+</div>
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+					 text-center 					">
+									<span data-itemtype="print_button" data-itemid="print_button" {$item_print_button} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" id="print_friendly_button{$id}" >
+							Imprimir			</a>
+</span>
+				 
+					</li>
+															</ul>
+</span>
+{END print_friendly}
+		</div>					</div>
+	</div>		
+{END above-grid_block}
+						</div>
+					<div class="r-grid">
+										{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}	<style>
+@media screen and (max-width: 767px) {
+													[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="fecha_de_firma"]:before {
+		content: "{$label info_secop fecha_de_firma}";
+	}
+					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="fecha_de_inicio_de_ejecucion"]:before {
+		content: "{$label info_secop fecha_de_inicio_de_ejecucion}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="fecha_de_fin_de_ejecucion"]:before {
+		content: "{$label info_secop fecha_de_fin_de_ejecucion}";
+	}
+					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="documento_proveedor"]:before {
+		content: "{$label info_secop documento_proveedor}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="proveedor_adjudicado"]:before {
+		content: "{$label info_secop proveedor_adjudicado}";
+	}
+										[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="valor_del_contrato"]:before {
+		content: "{$label info_secop valor_del_contrato}";
+	}
+											[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="c_digo_bpin"]:before {
+		content: "{$label info_secop c_digo_bpin}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="anno_bpin"]:before {
+		content: "{$label info_secop anno_bpin}";
+	}
+						[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="urlproceso"]:before {
+		content: "{$label info_secop urlproceso}";
+	}
+						}
+</style>
+<table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
+	cellpadding="0" 
+	data-body-height="1"
+>
+						<thead>
+			{BEGIN grid_header}
+					
+		 
+						<tr {$rowattrs} {$row_grid_0} class="{$rowclass} 
+									{$gridHeader_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_headcell_icons}
+	<th
+	
+	{$cell_grid_headcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="info_secop_list"		data-control-cell
+	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_icons}
+				 
+					{BEGIN cellblock_grid_headcell_checkbox}
+	<th
+	
+	{$cell_grid_headcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="info_secop_list"	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox_head" data-itemid="grid_checkbox_head" {$item_grid_checkbox_head} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkboxheader_attrs}>
+</span>
+{END checkbox_column}
+	
+	</th>
+	{END cellblock_grid_headcell_checkbox}
+				 
+					{BEGIN cellblock_grid_headcell_field}
+	<th
+	
+	{$cell_grid_headcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documento_proveedor_class}
+			"
+
+			data-field="documento_proveedor"
+	
+	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documento_proveedor_fieldheadercolumn}
+	{BEGIN documento_proveedor_fieldheader}
+	<SPAN {$documento_proveedor_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documento_proveedor">
+	{$label info_secop documento_proveedor }	{$arrow_icon_documento_proveedor}
+	</SPAN>
+	{END documento_proveedor_fieldheader}
+{END documento_proveedor_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field}
+				 
+					{BEGIN cellblock_grid_headcell_field1}
+	<th
+	
+	{$cell_grid_headcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$proveedor_adjudicado_class}
+			"
+
+			data-field="proveedor_adjudicado"
+	
+	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN proveedor_adjudicado_fieldheadercolumn}
+	{BEGIN proveedor_adjudicado_fieldheader}
+	<SPAN {$proveedor_adjudicado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="proveedor_adjudicado">
+	{$label info_secop proveedor_adjudicado }	{$arrow_icon_proveedor_adjudicado}
+	</SPAN>
+	{END proveedor_adjudicado_fieldheader}
+{END proveedor_adjudicado_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+				 
+					{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_de_firma_class}
+			"
+
+			data-field="fecha_de_firma"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_de_firma_fieldheadercolumn}
+	{BEGIN fecha_de_firma_fieldheader}
+	<SPAN {$fecha_de_firma_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_de_firma">
+	{$label info_secop fecha_de_firma }	{$arrow_icon_fecha_de_firma}
+	</SPAN>
+	{END fecha_de_firma_fieldheader}
+{END fecha_de_firma_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field2}
+				 
+					{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_de_inicio_de_ejecucion_class}
+			"
+
+			data-field="fecha_de_inicio_de_ejecucion"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_de_inicio_de_ejecucion_fieldheadercolumn}
+	{BEGIN fecha_de_inicio_de_ejecucion_fieldheader}
+	<SPAN {$fecha_de_inicio_de_ejecucion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_de_inicio_de_ejecucion">
+	{$label info_secop fecha_de_inicio_de_ejecucion }	{$arrow_icon_fecha_de_inicio_de_ejecucion}
+	</SPAN>
+	{END fecha_de_inicio_de_ejecucion_fieldheader}
+{END fecha_de_inicio_de_ejecucion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+				 
+					{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_de_fin_de_ejecucion_class}
+			"
+
+			data-field="fecha_de_fin_de_ejecucion"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_de_fin_de_ejecucion_fieldheadercolumn}
+	{BEGIN fecha_de_fin_de_ejecucion_fieldheader}
+	<SPAN {$fecha_de_fin_de_ejecucion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_de_fin_de_ejecucion">
+	{$label info_secop fecha_de_fin_de_ejecucion }	{$arrow_icon_fecha_de_fin_de_ejecucion}
+	</SPAN>
+	{END fecha_de_fin_de_ejecucion_fieldheader}
+{END fecha_de_fin_de_ejecucion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field4}
+				 
+					{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$valor_del_contrato_class}
+			"
+
+			data-field="valor_del_contrato"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN valor_del_contrato_fieldheadercolumn}
+	{BEGIN valor_del_contrato_fieldheader}
+	<SPAN {$valor_del_contrato_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field36" {$item_simple_grid_field36} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="valor_del_contrato">
+	{$label info_secop valor_del_contrato }	{$arrow_icon_valor_del_contrato}
+	</SPAN>
+	{END valor_del_contrato_fieldheader}
+{END valor_del_contrato_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$c_digo_bpin_class}
+			"
+
+			data-field="c_digo_bpin"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN c_digo_bpin_fieldheadercolumn}
+	{BEGIN c_digo_bpin_fieldheader}
+	<SPAN {$c_digo_bpin_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field46" {$item_simple_grid_field46} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="c_digo_bpin">
+	{$label info_secop c_digo_bpin }	{$arrow_icon_c_digo_bpin}
+	</SPAN>
+	{END c_digo_bpin_fieldheader}
+{END c_digo_bpin_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$anno_bpin_class}
+			"
+
+			data-field="anno_bpin"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN anno_bpin_fieldheadercolumn}
+	{BEGIN anno_bpin_fieldheader}
+	<SPAN {$anno_bpin_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field47" {$item_simple_grid_field47} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="anno_bpin">
+	{$label info_secop anno_bpin }	{$arrow_icon_anno_bpin}
+	</SPAN>
+	{END anno_bpin_fieldheader}
+{END anno_bpin_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
+				 
+					{BEGIN cellblock_grid_headcell_field8}
+	<th
+	
+	{$cell_grid_headcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$urlproceso_class}
+			"
+
+			data-field="urlproceso"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN urlproceso_fieldheadercolumn}
+	{BEGIN urlproceso_fieldheader}
+	<SPAN {$urlproceso_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field50" {$item_simple_grid_field50} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="urlproceso">
+	{$label info_secop urlproceso }	{$arrow_icon_urlproceso}
+	</SPAN>
+	{END urlproceso_fieldheader}
+{END urlproceso_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+							</tr>
+					 
+					 
+					
+					{END grid_header}
+			</thead>
+															<tbody>
+					{BEGIN grid_row}
+									
+		 
+					 
+						<tr {$rowattrs} {$row_grid_1} class="{$rowclass} 
+								
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_cell_icons}
+	<td
+	
+	{$cell_grid_cell_icons}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="info_secop_list"		data-control-cell
+	
+	>
+
+	 
+		{BEGIN edit_column}
+{BEGIN edit_link}
+<span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Editar" class="btn-link   
+	 glyphicon glyphicon-pencil" href="info_secop_edit.php?{$editlink}" {$editlink_attrs} title="Editar" >		
+				
+								</a>
+</span>
+{END edit_link}
+{END edit_column}
+	 
+		{BEGIN view_column}
+{BEGIN view_link}
+<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Ver registro" class="btn-link   
+	 glyphicon glyphicon-search" href="info_secop_view.php?{$editlink}" {$viewlink_attrs} title="Ver" >		
+				
+								</a>
+</span>
+{END view_link}
+{END view_column}
+	
+	</td>
+	{END cellblock_grid_cell_icons}
+				 
+					{BEGIN cellblock_grid_cell_checkbox}
+	<td
+	
+	{$cell_grid_cell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
+		data-checkbox-cell
+	>
+
+	 
+		{BEGIN checkbox_column}
+<span data-itemtype="grid_checkbox" data-itemid="grid_checkbox" {$item_grid_checkbox} data-pageid="{$pageid}" data-record-id="{$recId}" >
+	<input type="checkbox" {$checkbox_attrs}>
+</span>	
+{END checkbox_column}
+	
+	</td>
+	{END cellblock_grid_cell_checkbox}
+				 
+					{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$documento_proveedor_class}
+			"
+
+			data-field="documento_proveedor"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN documento_proveedor_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="documento_proveedor" data-default-width >
+{$documento_proveedor_value}
+</span>
+{END documento_proveedor_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+				 
+					{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$proveedor_adjudicado_class}
+			"
+
+			data-field="proveedor_adjudicado"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN proveedor_adjudicado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="proveedor_adjudicado" data-default-width >
+{$proveedor_adjudicado_value}
+</span>
+{END proveedor_adjudicado_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+				 
+					{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_de_firma_class}
+			"
+
+			data-field="fecha_de_firma"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_de_firma_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_de_firma" data-default-width >
+{$fecha_de_firma_value}
+</span>
+{END fecha_de_firma_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+				 
+					{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_de_inicio_de_ejecucion_class}
+			"
+
+			data-field="fecha_de_inicio_de_ejecucion"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_de_inicio_de_ejecucion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_de_inicio_de_ejecucion" data-default-width >
+{$fecha_de_inicio_de_ejecucion_value}
+</span>
+{END fecha_de_inicio_de_ejecucion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+				 
+					{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_de_fin_de_ejecucion_class}
+			"
+
+			data-field="fecha_de_fin_de_ejecucion"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_de_fin_de_ejecucion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_de_fin_de_ejecucion" data-default-width >
+{$fecha_de_fin_de_ejecucion_value}
+</span>
+{END fecha_de_fin_de_ejecucion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field4}
+				 
+					{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$valor_del_contrato_class}
+			"
+
+			data-field="valor_del_contrato"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN valor_del_contrato_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="valor_del_contrato" data-default-width >
+{$valor_del_contrato_value}
+</span>
+{END valor_del_contrato_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$c_digo_bpin_class}
+			"
+
+			data-field="c_digo_bpin"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN c_digo_bpin_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field44" {$item_simple_grid_field44} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="c_digo_bpin" data-default-width >
+{$c_digo_bpin_value}
+</span>
+{END c_digo_bpin_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$anno_bpin_class}
+			"
+
+			data-field="anno_bpin"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN anno_bpin_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field45" {$item_simple_grid_field45} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="anno_bpin" data-default-width >
+{$anno_bpin_value}
+</span>
+{END anno_bpin_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+				 
+					{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$urlproceso_class}
+			"
+
+			data-field="urlproceso"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN urlproceso_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field49" {$item_simple_grid_field49} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="urlproceso" data-default-width >
+{$urlproceso_value}
+</span>
+{END urlproceso_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+							</tr>
+					 
+					
+											{END grid_row}
+					</tbody>
+													<tfoot>
+					
+		 
+					 
+					 
+						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
+									{$gridFooter_class}
+									
+								r-gridrow
+							">
+				 
+					{BEGIN cellblock_grid_footcell_icons}
+	<td
+	
+	{$cell_grid_footcell_icons}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_icons" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_icons}
+				 
+					{BEGIN cellblock_grid_footcell_checkbox}
+	<td
+	
+	{$cell_grid_footcell_checkbox}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_checkbox}
+				 
+					{BEGIN cellblock_grid_footcell_field}
+	<td
+	
+	{$cell_grid_footcell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="info_secop_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field}
+				 
+					{BEGIN cellblock_grid_footcell_field1}
+	<td
+	
+	{$cell_grid_footcell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="info_secop_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field1}
+				 
+					{BEGIN cellblock_grid_footcell_field2}
+	<td
+	
+	{$cell_grid_footcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="info_secop_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field2}
+				 
+					{BEGIN cellblock_grid_footcell_field3}
+	<td
+	
+	{$cell_grid_footcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="info_secop_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field3}
+				 
+					{BEGIN cellblock_grid_footcell_field4}
+	<td
+	
+	{$cell_grid_footcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="info_secop_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field4}
+				 
+					{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="info_secop_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="info_secop_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="info_secop_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
+				 
+					{BEGIN cellblock_grid_footcell_field8}
+	<td
+	
+	{$cell_grid_footcell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="info_secop_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field8}
+							</tr>
+					
+					</tfoot>
+				</table>
+{END grid_block}
+						</div>
+					<div class="r-below">
+										{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="leftbar" {$form_below-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="r-align-center r-ori-vert			col-md-12
+	
+">
+		 
+		{BEGIN pagination_block}
+<span data-itemtype="pagination" data-itemid="pagination" {$item_pagination} data-pageid="{$pageid}" >
+{$pagination}
+</span>
+{END pagination_block}
+		</div>					</div>
+	</div>		
+{END below-grid_block}
+						</div>
+					{$footer}
+				</div>	
+			</div>	
+		</div>
+	{END body}
+	</body>
+</html>

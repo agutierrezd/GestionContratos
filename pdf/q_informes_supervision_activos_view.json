@@ -1,0 +1,906 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel q_informes_supervision_activos view}","hidden":"{$item_hide_view_header}","fontSize":30},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field10}","text":{$contnumero_pdfvalue}},
+				
+				
+			{"text":"de","hidden":"{$item_hide_text}","isHtml":true},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field4}","text":{$cont_ano_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+''
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+								{BEGIN row_grid_1}
+						
+			"%",
+						{END row_grid_1}
+			 
+								{BEGIN row_grid_2}
+						
+			"%",
+						{END row_grid_2}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section1',
+			widths: ['*'],
+			body: [
+				[{text: 'Información básica', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section1_0}
+								'*', 
+								{END col_section1_0}
+							 
+								{BEGIN col_section1_1}
+								'*', 
+								{END col_section1_1}
+													],
+						body: [
+								
+					{BEGIN row_section1_0}
+				[
+												{BEGIN cellblock_section1_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel q_informes_supervision_activos documento }","bold":true},{"text":{$documento_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c4}
+																			{BEGIN cellblock_section1_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel q_informes_supervision_activos nombre_razon }","bold":true},{"text":{$nombre_razon_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c5}
+											],
+				{END row_section1_0}
+								{BEGIN row_section1_1}
+				[
+												{BEGIN cellblock_section1_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field11}","stack":[{"text":"{$jslabel q_informes_supervision_activos cont_fecha_inicio }","bold":true},{"text":{$cont_fecha_inicio_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c8}
+																			{BEGIN cellblock_section1_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel q_informes_supervision_activos cont_fechafinal }","bold":true},{"text":{$cont_fechafinal_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c9}
+											],
+				{END row_section1_1}
+								{BEGIN row_section1_2}
+				[
+												{BEGIN cellblock_section1_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field16}","stack":[{"text":"{$jslabel q_informes_supervision_activos cont_periodicidad }","bold":true},{"text":{$cont_periodicidad_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c6}
+																			{BEGIN cellblock_section1_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel q_informes_supervision_activos cont_informessug }","bold":true},{"text":{$cont_informessug_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c7}
+											],
+				{END row_section1_2}
+								{BEGIN row_section1_3}
+				[
+												{BEGIN cellblock_section1_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field19}","stack":[{"text":"{$jslabel q_informes_supervision_activos cont_acta_liquidacion }","bold":true},{"text":{$cont_acta_liquidacion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c2}
+																			{BEGIN cellblock_section1_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c3}
+											],
+				{END row_section1_3}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c}
+											],
+				{END row_grid_0}
+								{BEGIN row_grid_1}
+				[
+												{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section2',
+			widths: ['*'],
+			body: [
+				[{text: 'Información presupuestal', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section2_0}
+								'*', 
+								{END col_section2_0}
+							 
+								{BEGIN col_section2_1}
+								'*', 
+								{END col_section2_1}
+													],
+						body: [
+								
+					{BEGIN row_section2_0}
+				[
+												{BEGIN cellblock_section2_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field18}","stack":[{"text":"{$jslabel q_informes_supervision_activos cont_valorinicial }","bold":true},{"text":{$cont_valorinicial_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c8}
+																			{BEGIN cellblock_section2_c9}
+{
+	cellId: 'c9',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c9}
+											],
+				{END row_section2_0}
+								{BEGIN row_section2_1}
+				[
+												{BEGIN cellblock_section2_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel q_informes_supervision_activos prenumero }","bold":true},{"text":{$prenumero_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c1}
+																			{BEGIN cellblock_section2_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel q_informes_supervision_activos numregistro }","bold":true},{"text":{$numregistro_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c}
+											],
+				{END row_section2_1}
+								{BEGIN row_section2_2}
+				[
+												{BEGIN cellblock_section2_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field13}","stack":[{"text":"{$jslabel q_informes_supervision_activos cont_valormensual_base }","bold":true},{"text":{$cont_valormensual_base_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c4}
+																			{BEGIN cellblock_section2_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field14}","stack":[{"text":"{$jslabel q_informes_supervision_activos cont_valormensual_iva }","bold":true},{"text":{$cont_valormensual_iva_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c5}
+											],
+				{END row_section2_2}
+								{BEGIN row_section2_3}
+				[
+												{BEGIN cellblock_section2_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field15}","stack":[{"text":"{$jslabel q_informes_supervision_activos cont_valormensual }","bold":true},{"text":{$cont_valormensual_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c2}
+																			{BEGIN cellblock_section2_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel q_informes_supervision_activos cont_estado }","bold":true},{"text":{$cont_estado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section2_c3}
+											],
+				{END row_section2_3}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_1}
+								{BEGIN row_grid_2}
+				[
+												{BEGIN cellblock_grid_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+						 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
+			location: 'section',
+			widths: ['*'],
+			body: [
+				[{text: 'Objeto / Obligaciones / Plazo', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section_0}
+								'*', 
+								{END col_section_0}
+													],
+						body: [
+								
+					{BEGIN row_section_0}
+				[
+												{BEGIN cellblock_section_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field20}","stack":[{"text":"{$jslabel q_informes_supervision_activos cont_objeto }","bold":true},{"text":{$cont_objeto_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c1}
+											],
+				{END row_section_0}
+								{BEGIN row_section_1}
+				[
+												{BEGIN cellblock_section_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field21}","stack":[{"text":"{$jslabel q_informes_supervision_activos cont_obligaciones }","bold":true},{"text":{$cont_obligaciones_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c2}
+											],
+				{END row_section_1}
+								{BEGIN row_section_2}
+				[
+												{BEGIN cellblock_section_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel q_informes_supervision_activos cont_plazo }","bold":true},{"text":{$cont_plazo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c}
+											],
+				{END row_section_2}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c4}
+											],
+				{END row_grid_2}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_view_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_view_close}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

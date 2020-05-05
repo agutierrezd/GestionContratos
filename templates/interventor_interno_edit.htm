@@ -1,0 +1,698 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel interventor_interno edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c4}
+<td
+	{$cell_grid_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_cont_fk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_cont_fk}  r-vertical-field" 
+	data-fieldname="id_cont_fk" 
+	data-signal-error-for="id_cont_fk{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_cont_fk" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_id_cont_fk}">
+		{BEGIN id_cont_fk_label}{$label interventor_interno id_cont_fk }{END id_cont_fk_label}
+	</label>
+	<div class="r-edit-field">
+		{$id_cont_fk_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="id_cont_fk">
+		<div class="text-muted" >
+		{$tooltip interventor_interno id_cont_fk }		</div>
+	</div>
+</div>
+
+
+{END id_cont_fk_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c4}
+			 
+																
+
+{BEGIN cellblock_grid_c5}
+<td
+	{$cell_grid_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sup_fechanot_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sup_fechanot}  r-vertical-field" 
+	data-fieldname="sup_fechanot" 
+	data-signal-error-for="sup_fechanot{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="sup_fechanot" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sup_fechanot}">
+		{BEGIN sup_fechanot_label}{$label interventor_interno sup_fechanot }{END sup_fechanot_label}
+	</label>
+	<div class="r-edit-field">
+		{$sup_fechanot_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sup_fechanot">
+		<div class="text-muted" >
+		{$tooltip interventor_interno sup_fechanot }		</div>
+	</div>
+</div>
+
+
+{END sup_fechanot_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c5}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c6}
+<td
+	{$cell_grid_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN idusrglobal_fk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_idusrglobal_fk}  r-vertical-field" 
+	data-fieldname="idusrglobal_fk" 
+	data-signal-error-for="idusrglobal_fk{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="idusrglobal_fk" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_idusrglobal_fk}">
+		{BEGIN idusrglobal_fk_label}{$label interventor_interno idusrglobal_fk }{END idusrglobal_fk_label}
+	</label>
+	<div class="r-edit-field">
+		{$idusrglobal_fk_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="idusrglobal_fk">
+		<div class="text-muted" >
+		{$tooltip interventor_interno idusrglobal_fk }		</div>
+	</div>
+</div>
+
+
+{END idusrglobal_fk_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c6}
+			 
+																
+
+{BEGIN cellblock_grid_c7}
+<td
+	{$cell_grid_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN documento_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_documento_id}  r-vertical-field" 
+	data-fieldname="documento_id" 
+	data-signal-error-for="documento_id{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="documento_id" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_documento_id}">
+		{BEGIN documento_id_label}{$label interventor_interno documento_id }{END documento_id_label}
+	</label>
+	<div class="r-edit-field">
+		{$documento_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="documento_id">
+		<div class="text-muted" >
+		{$tooltip interventor_interno documento_id }		</div>
+	</div>
+</div>
+
+
+{END documento_id_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c7}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c8}
+<td
+	{$cell_grid_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN nombres_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_nombres}  r-vertical-field" 
+	data-fieldname="nombres" 
+	data-signal-error-for="nombres{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="nombres" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_nombres}">
+		{BEGIN nombres_label}{$label interventor_interno nombres }{END nombres_label}
+	</label>
+	<div class="r-edit-field">
+		{$nombres_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="nombres">
+		<div class="text-muted" >
+		{$tooltip interventor_interno nombres }		</div>
+	</div>
+</div>
+
+
+{END nombres_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c8}
+			 
+																
+
+{BEGIN cellblock_grid_c9}
+<td
+	{$cell_grid_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN apellidos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_apellidos}  r-vertical-field" 
+	data-fieldname="apellidos" 
+	data-signal-error-for="apellidos{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="apellidos" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_apellidos}">
+		{BEGIN apellidos_label}{$label interventor_interno apellidos }{END apellidos_label}
+	</label>
+	<div class="r-edit-field">
+		{$apellidos_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="apellidos">
+		<div class="text-muted" >
+		{$tooltip interventor_interno apellidos }		</div>
+	</div>
+</div>
+
+
+{END apellidos_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c9}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c10}
+<td
+	{$cell_grid_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c10" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sup_mailnot_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sup_mailnot}  r-vertical-field" 
+	data-fieldname="sup_mailnot" 
+	data-signal-error-for="sup_mailnot{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="sup_mailnot" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sup_mailnot}">
+		{BEGIN sup_mailnot_label}{$label interventor_interno sup_mailnot }{END sup_mailnot_label}
+	</label>
+	<div class="r-edit-field">
+		{$sup_mailnot_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sup_mailnot">
+		<div class="text-muted" >
+		{$tooltip interventor_interno sup_mailnot }		</div>
+	</div>
+</div>
+
+
+{END sup_mailnot_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c10}
+			 
+																
+
+{BEGIN cellblock_grid_c11}
+<td
+	{$cell_grid_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c11" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sup_status_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sup_status}  r-vertical-field" 
+	data-fieldname="sup_status" 
+	data-signal-error-for="sup_status{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="sup_status" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sup_status}">
+		{BEGIN sup_status_label}{$label interventor_interno sup_status }{END sup_status_label}
+	</label>
+	<div class="r-edit-field">
+		{$sup_status_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sup_status">
+		<div class="text-muted" >
+		{$tooltip interventor_interno sup_status }		</div>
+	</div>
+</div>
+
+
+{END sup_status_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c11}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c16}
+<td
+	{$cell_grid_c16}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c16" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cargo_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cargo_id}  r-vertical-field" 
+	data-fieldname="cargo_id" 
+	data-signal-error-for="cargo_id{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="cargo_id" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cargo_id}">
+		{BEGIN cargo_id_label}{$label interventor_interno cargo_id }{END cargo_id_label}
+	</label>
+	<div class="r-edit-field">
+		{$cargo_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cargo_id">
+		<div class="text-muted" >
+		{$tooltip interventor_interno cargo_id }		</div>
+	</div>
+</div>
+
+
+{END cargo_id_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c16}
+			 
+																
+
+{BEGIN cellblock_grid_c17}
+<td
+	{$cell_grid_c17}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c17" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN dependencia_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_dependencia_id}  r-vertical-field" 
+	data-fieldname="dependencia_id" 
+	data-signal-error-for="dependencia_id{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="dependencia_id" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_dependencia_id}">
+		{BEGIN dependencia_id_label}{$label interventor_interno dependencia_id }{END dependencia_id_label}
+	</label>
+	<div class="r-edit-field">
+		{$dependencia_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="dependencia_id">
+		<div class="text-muted" >
+		{$tooltip interventor_interno dependencia_id }		</div>
+	</div>
+</div>
+
+
+{END dependencia_id_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c17}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c12}
+<td
+	{$cell_grid_c12}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="grid_c12" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sys_date_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_date}  r-vertical-field" 
+	data-fieldname="sys_date" 
+	data-signal-error-for="sys_date{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="sys_date" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_date}">
+		{BEGIN sys_date_label}{$label interventor_interno sys_date }{END sys_date_label}
+	</label>
+	<div class="r-edit-field">
+		{$sys_date_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_date">
+		<div class="text-muted" >
+		{$tooltip interventor_interno sys_date }		</div>
+	</div>
+</div>
+
+
+{END sys_date_fieldblock}
+											
+{BEGIN cont_hash_fk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_hash_fk}  r-vertical-field" 
+	data-fieldname="cont_hash_fk" 
+	data-signal-error-for="cont_hash_fk{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="cont_hash_fk" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_hash_fk}">
+		{BEGIN cont_hash_fk_label}{$label interventor_interno cont_hash_fk }{END cont_hash_fk_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_hash_fk_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_hash_fk">
+		<div class="text-muted" >
+		{$tooltip interventor_interno cont_hash_fk }		</div>
+	</div>
+</div>
+
+
+{END cont_hash_fk_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c12}
+			 
+																
+
+{BEGIN cellblock_grid_c13}
+<td
+	{$cell_grid_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c13" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sys_user_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_user}  r-vertical-field" 
+	data-fieldname="sys_user" 
+	data-signal-error-for="sys_user{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="sys_user" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sys_user}">
+		{BEGIN sys_user_label}{$label interventor_interno sys_user }{END sys_user_label}
+	</label>
+	<div class="r-edit-field">
+		{$sys_user_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sys_user">
+		<div class="text-muted" >
+		{$tooltip interventor_interno sys_user }		</div>
+	</div>
+</div>
+
+
+{END sys_user_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c13}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$savebutton_attrs} >
+							Guardar			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$closebutton_attrs} >
+							Cancelar			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reiniciar		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  {$view_page_button_attrs}  title="" >
+				
+		Ver		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>
