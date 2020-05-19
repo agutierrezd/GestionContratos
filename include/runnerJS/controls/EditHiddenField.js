@@ -1,4 +1,0 @@
-
-Runner.controls.EditHiddenField=Runner.extend(Runner.controls.Control,{required:false,myVal:"value of my Field: ",constructor:function(cfg){this.addEvent(["change","keyup"]);Runner.controls.EditHiddenField.superclass.constructor.call(this,cfg);this.required=this.getFieldSetting("required");this.myVal=this.getFieldSetting("myVal");if(this.required)
-this.addValidation("IsRequired");$("input[class^='PLEASE_HIDE_ME']").hide();$("input[class^='PLEASE_HIDE_ME']").parent().hide();$("input[class^='PLEASE_HIDE_ME']").parent().parent().hide();$("input[class^='PLEASE_HIDE_ME']").parent().parent().parent().hide();},isEmpty:function(){return this.getValue().toString()=="";},getForSubmit:function(){if(!this.appearOnPage()){return[this.valueElem.clone().val(this.getValue())];}
-return[this.valueElem.clone().val(this.getValue())];},setFocus:function(){return false;}});Runner.controls.constants["EditHiddenField"]="EditHiddenField";
