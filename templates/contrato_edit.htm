@@ -1,0 +1,1732 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel contrato edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+		
+					<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="2"
+	>
+	<tbody>
+						<tr>
+						
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c3}
+			 
+		
+							
+
+{BEGIN cellblock_grid_c}
+<td
+	{$cell_grid_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c" data-pageid="{$pageid}"
+		data-v-cell="1"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c}
+								</tr>
+	 
+	 
+																</tbody></table>
+				<div class="panel with-tabs panel-default form-tabs" data-itemtype="tabs" data-itemid="tabs" {$item_tabs} data-pageid="{$pageid}">
+	<div class="panel-heading">
+		<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section{$pageid}">
+					Información del contrato				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section1{$pageid}">
+					Modalidad y fechas				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section4{$pageid}">
+					Secop				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section2{$pageid}">
+					Objeto, Obligaciones y Plazo				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section3{$pageid}">
+					Valor y Pago				</a>
+			</li>
+									</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="tab_section{$pageid}"> 
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section" id="form_section_{$pageid}" data-makeup="small" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_nit_contra_ta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_nit_contra_ta}  r-vertical-field" 
+	data-fieldname="cont_nit_contra_ta" 
+	data-signal-error-for="cont_nit_contra_ta{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="cont_nit_contra_ta" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_nit_contra_ta}">
+		{BEGIN cont_nit_contra_ta_label}{$label contrato cont_nit_contra_ta }{END cont_nit_contra_ta_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_nit_contra_ta_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_nit_contra_ta">
+		<div class="text-muted" >
+		{$tooltip contrato cont_nit_contra_ta }		</div>
+	</div>
+</div>
+
+
+{END cont_nit_contra_ta_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+			 
+																
+
+{BEGIN cellblock_section_c}
+<td
+	{$cell_section_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_ano_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_ano}  r-vertical-field" 
+	data-fieldname="cont_ano" 
+	data-signal-error-for="cont_ano{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="cont_ano" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_ano}">
+		{BEGIN cont_ano_label}{$label contrato cont_ano }{END cont_ano_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_ano_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_ano">
+		<div class="text-muted" >
+		{$tooltip contrato cont_ano }		</div>
+	</div>
+</div>
+
+
+{END cont_ano_fieldblock}
+	
+								</td>
+			{END cellblock_section_c}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c8}
+<td
+	{$cell_section_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_paa_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_paa_id}  r-vertical-field" 
+	data-fieldname="cont_paa_id" 
+	data-signal-error-for="cont_paa_id{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="cont_paa_id" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_paa_id}">
+		{BEGIN cont_paa_id_label}{$label contrato cont_paa_id }{END cont_paa_id_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_paa_id_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_paa_id">
+		<div class="text-muted" >
+		{$tooltip contrato cont_paa_id }		</div>
+	</div>
+</div>
+
+
+{END cont_paa_id_fieldblock}
+	
+								</td>
+			{END cellblock_section_c8}
+			 
+																
+
+{BEGIN cellblock_section_c9}
+<td
+	{$cell_section_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_unspsc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_unspsc}  r-vertical-field" 
+	data-fieldname="cont_unspsc" 
+	data-signal-error-for="cont_unspsc{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field14" {$item_integrated_edit_field14} data-pageid="{$pageid}" data-field="cont_unspsc" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_unspsc}">
+		{BEGIN cont_unspsc_label}{$label contrato cont_unspsc }{END cont_unspsc_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_unspsc_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_unspsc">
+		<div class="text-muted" >
+		{$tooltip contrato cont_unspsc }		</div>
+	</div>
+</div>
+
+
+{END cont_unspsc_fieldblock}
+	
+								</td>
+			{END cellblock_section_c9}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c6}
+<td
+	{$cell_section_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN pre_contnumero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_pre_contnumero}  r-vertical-field" 
+	data-fieldname="pre_contnumero" 
+	data-signal-error-for="pre_contnumero{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="pre_contnumero" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_pre_contnumero}">
+		{BEGIN pre_contnumero_label}{$label contrato pre_contnumero }{END pre_contnumero_label}
+	</label>
+	<div class="r-edit-field">
+		{$pre_contnumero_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="pre_contnumero">
+		<div class="text-muted" >
+		{$tooltip contrato pre_contnumero }		</div>
+	</div>
+</div>
+
+
+{END pre_contnumero_fieldblock}
+	
+								</td>
+			{END cellblock_section_c6}
+			 
+																
+
+{BEGIN cellblock_section_c7}
+<td
+	{$cell_section_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN contnumero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_contnumero}  r-vertical-field" 
+	data-fieldname="contnumero" 
+	data-signal-error-for="contnumero{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="contnumero" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_contnumero}">
+		{BEGIN contnumero_label}{$label contrato contnumero }{END contnumero_label}
+	</label>
+	<div class="r-edit-field">
+		{$contnumero_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="contnumero">
+		<div class="text-muted" >
+		{$tooltip contrato contnumero }		</div>
+	</div>
+</div>
+
+
+{END contnumero_fieldblock}
+	
+								</td>
+			{END cellblock_section_c7}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c4}
+<td
+	{$cell_section_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_estado}  r-vertical-field" 
+	data-fieldname="cont_estado" 
+	data-signal-error-for="cont_estado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="cont_estado" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_estado}">
+		{BEGIN cont_estado_label}{$label contrato cont_estado }{END cont_estado_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_estado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_estado">
+		<div class="text-muted" >
+		{$tooltip contrato cont_estado }		</div>
+	</div>
+</div>
+
+
+{END cont_estado_fieldblock}
+	
+								</td>
+			{END cellblock_section_c4}
+			 
+																
+
+{BEGIN cellblock_section_c5}
+<td
+	{$cell_section_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_tipo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_tipo}  r-vertical-field" 
+	data-fieldname="cont_tipo" 
+	data-signal-error-for="cont_tipo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="cont_tipo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_tipo}">
+		{BEGIN cont_tipo_label}{$label contrato cont_tipo }{END cont_tipo_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_tipo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_tipo">
+		<div class="text-muted" >
+		{$tooltip contrato cont_tipo }		</div>
+	</div>
+</div>
+
+
+{END cont_tipo_fieldblock}
+	
+								</td>
+			{END cellblock_section_c5}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c2}
+<td
+	{$cell_section_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_tipopre_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_tipopre}  r-vertical-field" 
+	data-fieldname="cont_tipopre" 
+	data-signal-error-for="cont_tipopre{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field13" {$item_integrated_edit_field13} data-pageid="{$pageid}" data-field="cont_tipopre" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_tipopre}">
+		{BEGIN cont_tipopre_label}{$label contrato cont_tipopre }{END cont_tipopre_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_tipopre_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_tipopre">
+		<div class="text-muted" >
+		{$tooltip contrato cont_tipopre }		</div>
+	</div>
+</div>
+
+
+{END cont_tipopre_fieldblock}
+	
+								</td>
+			{END cellblock_section_c2}
+			 
+																
+
+{BEGIN cellblock_section_c3}
+<td
+	{$cell_section_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_vigencias_futuras_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_vigencias_futuras}  r-vertical-field" 
+	data-fieldname="cont_vigencias_futuras" 
+	data-signal-error-for="cont_vigencias_futuras{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field17" {$item_integrated_edit_field17} data-pageid="{$pageid}" data-field="cont_vigencias_futuras" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_vigencias_futuras}">
+		{BEGIN cont_vigencias_futuras_label}{$label contrato cont_vigencias_futuras }{END cont_vigencias_futuras_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_vigencias_futuras_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_vigencias_futuras">
+		<div class="text-muted" >
+		{$tooltip contrato cont_vigencias_futuras }		</div>
+	</div>
+</div>
+
+
+{END cont_vigencias_futuras_fieldblock}
+	
+								</td>
+			{END cellblock_section_c3}
+								</tr>
+			</tbody></table>
+{END section_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section1{$pageid}"> 
+			{BEGIN section1_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section1" id="form_section1_{$pageid}" data-makeup="small" {$form_section1} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section1_c1}
+<td
+	{$cell_section1_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_tipoc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_tipoc}  r-vertical-field" 
+	data-fieldname="cont_tipoc" 
+	data-signal-error-for="cont_tipoc{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="cont_tipoc" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_tipoc}">
+		{BEGIN cont_tipoc_label}{$label contrato cont_tipoc }{END cont_tipoc_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_tipoc_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_tipoc">
+		<div class="text-muted" >
+		{$tooltip contrato cont_tipoc }		</div>
+	</div>
+</div>
+
+
+{END cont_tipoc_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c1}
+			 
+																
+
+{BEGIN cellblock_section1_c}
+<td
+	{$cell_section1_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_modalidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_modalidad}  r-vertical-field" 
+	data-fieldname="cont_modalidad" 
+	data-signal-error-for="cont_modalidad{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field34" {$item_integrated_edit_field34} data-pageid="{$pageid}" data-field="cont_modalidad" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_modalidad}">
+		{BEGIN cont_modalidad_label}{$label contrato cont_modalidad }{END cont_modalidad_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_modalidad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_modalidad">
+		<div class="text-muted" >
+		{$tooltip contrato cont_modalidad }		</div>
+	</div>
+</div>
+
+
+{END cont_modalidad_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c9}
+<td
+	{$cell_section1_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section1_c9" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_causalc_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_causalc}  r-vertical-field" 
+	data-fieldname="cont_causalc" 
+	data-signal-error-for="cont_causalc{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="cont_causalc" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_causalc}">
+		{BEGIN cont_causalc_label}{$label contrato cont_causalc }{END cont_causalc_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_causalc_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_causalc">
+		<div class="text-muted" >
+		{$tooltip contrato cont_causalc }		</div>
+	</div>
+</div>
+
+
+{END cont_causalc_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c9}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c4}
+<td
+	{$cell_section1_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_acta_liquidacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_acta_liquidacion}  r-vertical-field" 
+	data-fieldname="cont_acta_liquidacion" 
+	data-signal-error-for="cont_acta_liquidacion{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field48" {$item_integrated_edit_field48} data-pageid="{$pageid}" data-field="cont_acta_liquidacion" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_acta_liquidacion}">
+		{BEGIN cont_acta_liquidacion_label}{$label contrato cont_acta_liquidacion }{END cont_acta_liquidacion_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_acta_liquidacion_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_acta_liquidacion">
+		<div class="text-muted" >
+		{$tooltip contrato cont_acta_liquidacion }		</div>
+	</div>
+</div>
+
+
+{END cont_acta_liquidacion_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c4}
+			 
+																
+
+{BEGIN cellblock_section1_c5}
+<td
+	{$cell_section1_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_fechaapertura_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fechaapertura}  r-vertical-field" 
+	data-fieldname="cont_fechaapertura" 
+	data-signal-error-for="cont_fechaapertura{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="cont_fechaapertura" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_fechaapertura}">
+		{BEGIN cont_fechaapertura_label}{$label contrato cont_fechaapertura }{END cont_fechaapertura_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_fechaapertura_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_fechaapertura">
+		<div class="text-muted" >
+		{$tooltip contrato cont_fechaapertura }		</div>
+	</div>
+</div>
+
+
+{END cont_fechaapertura_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c5}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section1_c6}
+<td
+	{$cell_section1_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_fecha_inicio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fecha_inicio}  r-vertical-field" 
+	data-fieldname="cont_fecha_inicio" 
+	data-signal-error-for="cont_fecha_inicio{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field29" {$item_integrated_edit_field29} data-pageid="{$pageid}" data-field="cont_fecha_inicio" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_fecha_inicio}">
+		{BEGIN cont_fecha_inicio_label}{$label contrato cont_fecha_inicio }{END cont_fecha_inicio_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_fecha_inicio_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_fecha_inicio">
+		<div class="text-muted" >
+		{$tooltip contrato cont_fecha_inicio }		</div>
+	</div>
+</div>
+
+
+{END cont_fecha_inicio_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c6}
+			 
+																
+
+{BEGIN cellblock_section1_c7}
+<td
+	{$cell_section1_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section1_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_fechafinal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fechafinal}  r-vertical-field" 
+	data-fieldname="cont_fechafinal" 
+	data-signal-error-for="cont_fechafinal{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="cont_fechafinal" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_fechafinal}">
+		{BEGIN cont_fechafinal_label}{$label contrato cont_fechafinal }{END cont_fechafinal_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_fechafinal_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_fechafinal">
+		<div class="text-muted" >
+		{$tooltip contrato cont_fechafinal }		</div>
+	</div>
+</div>
+
+
+{END cont_fechafinal_fieldblock}
+	
+								</td>
+			{END cellblock_section1_c7}
+								</tr>
+			</tbody></table>
+{END section1_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section4{$pageid}"> 
+			{BEGIN section4_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section4" id="form_section4_{$pageid}" data-makeup="small" {$form_section4} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section4_c1}
+<td
+	{$cell_section4_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_secop_proceso_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_secop_proceso}  r-vertical-field" 
+	data-fieldname="cont_secop_proceso" 
+	data-signal-error-for="cont_secop_proceso{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field18" {$item_integrated_edit_field18} data-pageid="{$pageid}" data-field="cont_secop_proceso" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_secop_proceso}">
+		{BEGIN cont_secop_proceso_label}{$label contrato cont_secop_proceso }{END cont_secop_proceso_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_secop_proceso_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_secop_proceso">
+		<div class="text-muted" >
+		{$tooltip contrato cont_secop_proceso }		</div>
+	</div>
+</div>
+
+
+{END cont_secop_proceso_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c1}
+			 
+		
+							
+
+{BEGIN cellblock_section4_c}
+<td
+	{$cell_section4_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section4_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section4_c}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section4_c2}
+<td
+	{$cell_section4_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section4_c2" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_secop_enlace_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_secop_enlace}  r-vertical-field" 
+	data-fieldname="cont_secop_enlace" 
+	data-signal-error-for="cont_secop_enlace{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field19" {$item_integrated_edit_field19} data-pageid="{$pageid}" data-field="cont_secop_enlace" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_secop_enlace}">
+		{BEGIN cont_secop_enlace_label}{$label contrato cont_secop_enlace }{END cont_secop_enlace_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_secop_enlace_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_secop_enlace">
+		<div class="text-muted" >
+		{$tooltip contrato cont_secop_enlace }		</div>
+	</div>
+</div>
+
+
+{END cont_secop_enlace_fieldblock}
+	
+								</td>
+			{END cellblock_section4_c2}
+								</tr>
+			</tbody></table>
+{END section4_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section2{$pageid}"> 
+			{BEGIN section2_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section2" id="form_section2_{$pageid}" data-makeup="small" {$form_section2} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section2_c1}
+<td
+	{$cell_section2_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c1" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_objeto_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_objeto}  r-vertical-field" 
+	data-fieldname="cont_objeto" 
+	data-signal-error-for="cont_objeto{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field35" {$item_integrated_edit_field35} data-pageid="{$pageid}" data-field="cont_objeto" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_objeto}">
+		{BEGIN cont_objeto_label}{$label contrato cont_objeto }{END cont_objeto_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_objeto_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_objeto">
+		<div class="text-muted" >
+		{$tooltip contrato cont_objeto }		</div>
+	</div>
+</div>
+
+
+{END cont_objeto_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c1}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section2_c2}
+<td
+	{$cell_section2_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c2" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_obligaciones_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_obligaciones}  r-vertical-field" 
+	data-fieldname="cont_obligaciones" 
+	data-signal-error-for="cont_obligaciones{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="cont_obligaciones" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_obligaciones}">
+		{BEGIN cont_obligaciones_label}{$label contrato cont_obligaciones }{END cont_obligaciones_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_obligaciones_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_obligaciones">
+		<div class="text-muted" >
+		{$tooltip contrato cont_obligaciones }		</div>
+	</div>
+</div>
+
+
+{END cont_obligaciones_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c2}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section2_c}
+<td
+	{$cell_section2_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_plazo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_plazo}  r-vertical-field" 
+	data-fieldname="cont_plazo" 
+	data-signal-error-for="cont_plazo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field15" {$item_integrated_edit_field15} data-pageid="{$pageid}" data-field="cont_plazo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_plazo}">
+		{BEGIN cont_plazo_label}{$label contrato cont_plazo }{END cont_plazo_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_plazo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_plazo">
+		<div class="text-muted" >
+		{$tooltip contrato cont_plazo }		</div>
+	</div>
+</div>
+
+
+{END cont_plazo_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c}
+								</tr>
+			</tbody></table>
+{END section2_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section3{$pageid}"> 
+			{BEGIN section3_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section3" id="form_section3_{$pageid}" data-makeup="small" {$form_section3} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section3_c10}
+<td
+	{$cell_section3_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c10" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN prenumero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_prenumero}  r-vertical-field" 
+	data-fieldname="prenumero" 
+	data-signal-error-for="prenumero{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="prenumero" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_prenumero}">
+		{BEGIN prenumero_label}{$label contrato prenumero }{END prenumero_label}
+	</label>
+	<div class="r-edit-field">
+		{$prenumero_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="prenumero">
+		<div class="text-muted" >
+		{$tooltip contrato prenumero }		</div>
+	</div>
+</div>
+
+
+{END prenumero_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c10}
+			 
+																
+
+{BEGIN cellblock_section3_c11}
+<td
+	{$cell_section3_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c11" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN numregistro_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_numregistro}  r-vertical-field" 
+	data-fieldname="numregistro" 
+	data-signal-error-for="numregistro{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="numregistro" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_numregistro}">
+		{BEGIN numregistro_label}{$label contrato numregistro }{END numregistro_label}
+	</label>
+	<div class="r-edit-field">
+		{$numregistro_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="numregistro">
+		<div class="text-muted" >
+		{$tooltip contrato numregistro }		</div>
+	</div>
+</div>
+
+
+{END numregistro_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c11}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section3_c8}
+<td
+	{$cell_section3_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_codrubro_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_codrubro}  r-vertical-field" 
+	data-fieldname="cont_codrubro" 
+	data-signal-error-for="cont_codrubro{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="cont_codrubro" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_codrubro}">
+		{BEGIN cont_codrubro_label}{$label contrato cont_codrubro }{END cont_codrubro_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_codrubro_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_codrubro">
+		<div class="text-muted" >
+		{$tooltip contrato cont_codrubro }		</div>
+	</div>
+</div>
+
+
+{END cont_codrubro_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c8}
+			 
+																
+
+{BEGIN cellblock_section3_c9}
+<td
+	{$cell_section3_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_catalogo_presupuestal_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_catalogo_presupuestal}  r-vertical-field" 
+	data-fieldname="cont_catalogo_presupuestal" 
+	data-signal-error-for="cont_catalogo_presupuestal{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="cont_catalogo_presupuestal" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_catalogo_presupuestal}">
+		{BEGIN cont_catalogo_presupuestal_label}{$label contrato cont_catalogo_presupuestal }{END cont_catalogo_presupuestal_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_catalogo_presupuestal_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_catalogo_presupuestal">
+		<div class="text-muted" >
+		{$tooltip contrato cont_catalogo_presupuestal }		</div>
+	</div>
+</div>
+
+
+{END cont_catalogo_presupuestal_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c9}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section3_c1}
+<td
+	{$cell_section3_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_valorinicial_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valorinicial}  r-vertical-field" 
+	data-fieldname="cont_valorinicial" 
+	data-signal-error-for="cont_valorinicial{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="cont_valorinicial" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_valorinicial}">
+		{BEGIN cont_valorinicial_label}{$label contrato cont_valorinicial }{END cont_valorinicial_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_valorinicial_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_valorinicial">
+		<div class="text-muted" >
+		{$tooltip contrato cont_valorinicial }		</div>
+	</div>
+</div>
+
+
+{END cont_valorinicial_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c1}
+			 
+																
+
+{BEGIN cellblock_section3_c}
+<td
+	{$cell_section3_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_valormensual_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valormensual}  r-vertical-field" 
+	data-fieldname="cont_valormensual" 
+	data-signal-error-for="cont_valormensual{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="cont_valormensual" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_valormensual}">
+		{BEGIN cont_valormensual_label}{$label contrato cont_valormensual }{END cont_valormensual_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_valormensual_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_valormensual">
+		<div class="text-muted" >
+		{$tooltip contrato cont_valormensual }		</div>
+	</div>
+</div>
+
+
+{END cont_valormensual_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section3_c6}
+<td
+	{$cell_section3_c6}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c6" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_formapago_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_formapago}  r-vertical-field" 
+	data-fieldname="cont_formapago" 
+	data-signal-error-for="cont_formapago{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field40" {$item_integrated_edit_field40} data-pageid="{$pageid}" data-field="cont_formapago" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_formapago}">
+		{BEGIN cont_formapago_label}{$label contrato cont_formapago }{END cont_formapago_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_formapago_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_formapago">
+		<div class="text-muted" >
+		{$tooltip contrato cont_formapago }		</div>
+	</div>
+</div>
+
+
+{END cont_formapago_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c6}
+			 
+																
+
+{BEGIN cellblock_section3_c7}
+<td
+	{$cell_section3_c7}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c7" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_periodicidad_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_periodicidad}  r-vertical-field" 
+	data-fieldname="cont_periodicidad" 
+	data-signal-error-for="cont_periodicidad{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field20" {$item_integrated_edit_field20} data-pageid="{$pageid}" data-field="cont_periodicidad" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_periodicidad}">
+		{BEGIN cont_periodicidad_label}{$label contrato cont_periodicidad }{END cont_periodicidad_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_periodicidad_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_periodicidad">
+		<div class="text-muted" >
+		{$tooltip contrato cont_periodicidad }		</div>
+	</div>
+</div>
+
+
+{END cont_periodicidad_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c7}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section3_c12}
+<td
+	{$cell_section3_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c12" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_fechasistema_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fechasistema}  r-vertical-field" 
+	data-fieldname="cont_fechasistema" 
+	data-signal-error-for="cont_fechasistema{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field46" {$item_integrated_edit_field46} data-pageid="{$pageid}" data-field="cont_fechasistema" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_fechasistema}">
+		{BEGIN cont_fechasistema_label}{$label contrato cont_fechasistema }{END cont_fechasistema_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_fechasistema_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_fechasistema">
+		<div class="text-muted" >
+		{$tooltip contrato cont_fechasistema }		</div>
+	</div>
+</div>
+
+
+{END cont_fechasistema_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c12}
+			 
+		
+							
+
+{BEGIN cellblock_section3_c13}
+<td
+	{$cell_section3_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c13" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section3_c13}
+								</tr>
+			</tbody></table>
+{END section3_block}
+						</div>
+				</div>
+	</div>
+</div>  	
+				 
+	 
+		
+					<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="2"
+	>
+	<tbody>
+						<tr>
+						
+
+{BEGIN cellblock_grid_c5}
+<td
+	{$cell_grid_c5}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+	ocolspan="2"		data-cellId="grid_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c5}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="2"
+	data-v-margin="0"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary  btn-xs 
+	" {$savebutton_attrs} >
+					<img src="{$file_url images/menuicons/Save%20as-WF.png}" />
+							Guardar cambios			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-info  btn-xs 
+	" {$backbutton_attrs} >
+					<img src="{$file_url images/menuicons/In-WF.png}" />
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-info  btn-xs 
+	" {$closebutton_attrs} >
+					<img src="{$file_url images/menuicons/Cross%20Close.png}" />
+							Cancelar			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reiniciar		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  {$view_page_button_attrs}  title="" >
+				
+		Ver		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

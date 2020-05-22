@@ -1,0 +1,47 @@
+<?php
+$dalTableep_obligaciones = array();
+$dalTableep_obligaciones["OID"] = array("type"=>3,"varname"=>"OID", "name" => "OID");
+$dalTableep_obligaciones["Numero Documento"] = array("type"=>200,"varname"=>"Numero_Documento", "name" => "Numero Documento");
+$dalTableep_obligaciones["Fecha de Registro"] = array("type"=>7,"varname"=>"Fecha_de_Registro", "name" => "Fecha de Registro");
+$dalTableep_obligaciones["Fecha de Creacion"] = array("type"=>135,"varname"=>"Fecha_de_Creacion", "name" => "Fecha de Creacion");
+$dalTableep_obligaciones["Estado"] = array("type"=>200,"varname"=>"Estado", "name" => "Estado");
+$dalTableep_obligaciones["Valor Actual"] = array("type"=>5,"varname"=>"Valor_Actual", "name" => "Valor Actual");
+$dalTableep_obligaciones["Valor Deducciones"] = array("type"=>5,"varname"=>"Valor_Deducciones", "name" => "Valor Deducciones");
+$dalTableep_obligaciones["Valor Oblig no Orden"] = array("type"=>5,"varname"=>"Valor_Oblig_no_Orden", "name" => "Valor Oblig no Orden");
+$dalTableep_obligaciones["Tipo Identificacion"] = array("type"=>200,"varname"=>"Tipo_Identificacion", "name" => "Tipo Identificacion");
+$dalTableep_obligaciones["Identificacion"] = array("type"=>200,"varname"=>"Identificacion", "name" => "Identificacion");
+$dalTableep_obligaciones["Nombre Razon Social"] = array("type"=>200,"varname"=>"Nombre_Razon_Social", "name" => "Nombre Razon Social");
+$dalTableep_obligaciones["Medio de Pago"] = array("type"=>200,"varname"=>"Medio_de_Pago", "name" => "Medio de Pago");
+$dalTableep_obligaciones["Tipo Cuenta"] = array("type"=>200,"varname"=>"Tipo_Cuenta", "name" => "Tipo Cuenta");
+$dalTableep_obligaciones["Numero Cuenta"] = array("type"=>200,"varname"=>"Numero_Cuenta", "name" => "Numero Cuenta");
+$dalTableep_obligaciones["Estado Cuenta"] = array("type"=>200,"varname"=>"Estado_Cuenta", "name" => "Estado Cuenta");
+$dalTableep_obligaciones["Entidad Nit"] = array("type"=>200,"varname"=>"Entidad_Nit", "name" => "Entidad Nit");
+$dalTableep_obligaciones["Entidad Descripcion"] = array("type"=>200,"varname"=>"Entidad_Descripcion", "name" => "Entidad Descripcion");
+$dalTableep_obligaciones["Dependencia"] = array("type"=>200,"varname"=>"Dependencia", "name" => "Dependencia");
+$dalTableep_obligaciones["Dependencia Descripcion"] = array("type"=>200,"varname"=>"Dependencia_Descripcion", "name" => "Dependencia Descripcion");
+$dalTableep_obligaciones["Rubro"] = array("type"=>200,"varname"=>"Rubro", "name" => "Rubro");
+$dalTableep_obligaciones["Descripcion"] = array("type"=>200,"varname"=>"Descripcion", "name" => "Descripcion");
+$dalTableep_obligaciones["Valor Inicial"] = array("type"=>5,"varname"=>"Valor_Inicial", "name" => "Valor Inicial");
+$dalTableep_obligaciones["Valor Operaciones"] = array("type"=>5,"varname"=>"Valor_Operaciones", "name" => "Valor Operaciones");
+$dalTableep_obligaciones["Valor Actual1"] = array("type"=>5,"varname"=>"Valor_Actual1", "name" => "Valor Actual1");
+$dalTableep_obligaciones["Saldo por Utilizar"] = array("type"=>5,"varname"=>"Saldo_por_Utilizar", "name" => "Saldo por Utilizar");
+$dalTableep_obligaciones["Fuente"] = array("type"=>200,"varname"=>"Fuente", "name" => "Fuente");
+$dalTableep_obligaciones["Situacion"] = array("type"=>200,"varname"=>"Situacion", "name" => "Situacion");
+$dalTableep_obligaciones["Recurso"] = array("type"=>200,"varname"=>"Recurso", "name" => "Recurso");
+$dalTableep_obligaciones["Concepto"] = array("type"=>200,"varname"=>"Concepto", "name" => "Concepto");
+$dalTableep_obligaciones["Solicitud CDP"] = array("type"=>200,"varname"=>"Solicitud_CDP", "name" => "Solicitud CDP");
+$dalTableep_obligaciones["CDP"] = array("type"=>200,"varname"=>"CDP", "name" => "CDP");
+$dalTableep_obligaciones["Compromisos"] = array("type"=>200,"varname"=>"Compromisos", "name" => "Compromisos");
+$dalTableep_obligaciones["Cuentas por Pagar"] = array("type"=>200,"varname"=>"Cuentas_por_Pagar", "name" => "Cuentas por Pagar");
+$dalTableep_obligaciones["Fecha Cuentas por Pagar"] = array("type"=>7,"varname"=>"Fecha_Cuentas_por_Pagar", "name" => "Fecha Cuentas por Pagar");
+$dalTableep_obligaciones["Obligaciones"] = array("type"=>200,"varname"=>"Obligaciones", "name" => "Obligaciones");
+$dalTableep_obligaciones["Ordenes de Pago"] = array("type"=>200,"varname"=>"Ordenes_de_Pago", "name" => "Ordenes de Pago");
+$dalTableep_obligaciones["Reintegros"] = array("type"=>200,"varname"=>"Reintegros", "name" => "Reintegros");
+$dalTableep_obligaciones["Fecha Doc Soporte Compromiso"] = array("type"=>7,"varname"=>"Fecha_Doc_Soporte_Compromiso", "name" => "Fecha Doc Soporte Compromiso");
+$dalTableep_obligaciones["Tipo Doc Soporte Compromiso"] = array("type"=>200,"varname"=>"Tipo_Doc_Soporte_Compromiso", "name" => "Tipo Doc Soporte Compromiso");
+$dalTableep_obligaciones["Num Doc Soporte Compromiso"] = array("type"=>200,"varname"=>"Num_Doc_Soporte_Compromiso", "name" => "Num Doc Soporte Compromiso");
+$dalTableep_obligaciones["Objeto del Compromiso"] = array("type"=>200,"varname"=>"Objeto_del_Compromiso", "name" => "Objeto del Compromiso");
+	$dalTableep_obligaciones["OID"]["key"]=true;
+
+$dal_info["sep2_at_localhost__ep_obligaciones"] = &$dalTableep_obligaciones;
+?>

@@ -1,0 +1,141 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel informe_intersup_plan_pagos export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_export_field2}","text":{$inf_consecutivo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field3}","text":{$inf_fecharep_i_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field4}","text":{$inf_fecharep_f_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field6}","text":{$inf_valor_pago_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field}","text":{$dias_calculados_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field1}","text":{$dias_fiscales_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field5}","text":{$valor_a_pagar_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  

@@ -1,0 +1,3924 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+			},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+		{BEGIN body}
+		{BEGIN embedded_grid}
+		{
+			text: '{$jscaption info_secop}',
+		},
+		{END embedded_grid}
+		{ 
+			{BEGIN standalone_page}
+			pageBreak: 'before',
+			{END standalone_page}
+			{BEGIN embedded_grid}
+			embeddedPage: true,
+			{END embedded_grid}
+			layout: {
+				hLineWidth: function(i, node) { return 0.1; },
+				vLineWidth: function(i, node) { 
+					if( node.table.embeddedPage ) {
+						return (i === 0 || i === node.table.widths.length) ? 0.1 : 0;
+					} else  {
+						return 0.1; 
+					}
+				},
+				hLineColor: function(i, node) { return 'gray'; },
+				vLineColor: function(i, node) { return 'gray'; },
+			},
+			table: {
+				{BEGIN embedded_grid}
+				embeddedPage: true,
+				{END embedded_grid}
+				
+				tableForm: true,
+				headerRows: 1 + 1 {BEGIN embedded_grid} -1 {END embedded_grid} ,
+
+				widths: [
+														{BEGIN col_grid_0}
+					"%",
+					{END col_grid_0}
+										{BEGIN col_grid_1}
+					"%",
+					{END col_grid_1}
+										{BEGIN col_grid_2}
+					"%",
+					{END col_grid_2}
+										{BEGIN col_grid_3}
+					"%",
+					{END col_grid_3}
+										{BEGIN col_grid_4}
+					"%",
+					{END col_grid_4}
+										{BEGIN col_grid_5}
+					"%",
+					{END col_grid_5}
+										{BEGIN col_grid_6}
+					"%",
+					{END col_grid_6}
+										{BEGIN col_grid_7}
+					"%",
+					{END col_grid_7}
+										{BEGIN col_grid_8}
+					"%",
+					{END col_grid_8}
+										{BEGIN col_grid_9}
+					"%",
+					{END col_grid_9}
+										{BEGIN col_grid_10}
+					"%",
+					{END col_grid_10}
+										{BEGIN col_grid_11}
+					"%",
+					{END col_grid_11}
+										{BEGIN col_grid_12}
+					"%",
+					{END col_grid_12}
+										{BEGIN col_grid_13}
+					"%",
+					{END col_grid_13}
+										{BEGIN col_grid_14}
+					"%",
+					{END col_grid_14}
+										{BEGIN col_grid_15}
+					"%",
+					{END col_grid_15}
+										{BEGIN col_grid_16}
+					"%",
+					{END col_grid_16}
+										{BEGIN col_grid_17}
+					"%",
+					{END col_grid_17}
+										{BEGIN col_grid_18}
+					"%",
+					{END col_grid_18}
+										{BEGIN col_grid_19}
+					"%",
+					{END col_grid_19}
+										{BEGIN col_grid_20}
+					"%",
+					{END col_grid_20}
+										{BEGIN col_grid_21}
+					"%",
+					{END col_grid_21}
+										{BEGIN col_grid_22}
+					"%",
+					{END col_grid_22}
+										{BEGIN col_grid_23}
+					"%",
+					{END col_grid_23}
+										{BEGIN col_grid_24}
+					"%",
+					{END col_grid_24}
+										{BEGIN col_grid_25}
+					"%",
+					{END col_grid_25}
+										{BEGIN col_grid_26}
+					"%",
+					{END col_grid_26}
+										{BEGIN col_grid_27}
+					"%",
+					{END col_grid_27}
+										{BEGIN col_grid_28}
+					"%",
+					{END col_grid_28}
+										{BEGIN col_grid_29}
+					"%",
+					{END col_grid_29}
+										{BEGIN col_grid_30}
+					"%",
+					{END col_grid_30}
+										{BEGIN col_grid_31}
+					"%",
+					{END col_grid_31}
+										{BEGIN col_grid_32}
+					"%",
+					{END col_grid_32}
+										{BEGIN col_grid_33}
+					"%",
+					{END col_grid_33}
+										{BEGIN col_grid_34}
+					"%",
+					{END col_grid_34}
+										{BEGIN col_grid_35}
+					"%",
+					{END col_grid_35}
+										{BEGIN col_grid_36}
+					"%",
+					{END col_grid_36}
+										{BEGIN col_grid_37}
+					"%",
+					{END col_grid_37}
+										{BEGIN col_grid_38}
+					"%",
+					{END col_grid_38}
+										{BEGIN col_grid_39}
+					"%",
+					{END col_grid_39}
+										{BEGIN col_grid_40}
+					"%",
+					{END col_grid_40}
+										{BEGIN col_grid_41}
+					"%",
+					{END col_grid_41}
+										{BEGIN col_grid_42}
+					"%",
+					{END col_grid_42}
+										{BEGIN col_grid_43}
+					"%",
+					{END col_grid_43}
+										{BEGIN col_grid_44}
+					"%",
+					{END col_grid_44}
+										{BEGIN col_grid_45}
+					"%",
+					{END col_grid_45}
+										{BEGIN col_grid_46}
+					"%",
+					{END col_grid_46}
+															],
+							heights: [ // first height for header part
+					"%",
+					
+					{BEGIN row_grid_0}		
+					"%",
+					{END row_grid_0}
+					
+					{BEGIN row_grid_1}		
+					"%",
+					{END row_grid_1}
+					
+					{BEGIN row_grid_2}		
+					"%",
+					{END row_grid_2}
+								],
+							
+				body: [
+				{BEGIN standalone_page}
+					[
+						{
+							colSpan: {$formwidth_grid},
+							border:[false, false,false,false],
+							stack: [
+
+																										
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"stack": [
+		
+				
+			{"text":"{$jspagetitlelabel info_secop print}","hidden":"{$item_hide_print_header}","fontSize":30},
+				
+				
+			{"text":"{$printtabheader_text}","hidden":"{$item_hide_print_subheader}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+								
+																										
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"Página %current% / %total%","hidden":"{$item_hide_print_pages}","isHtml":true,"page_indicator":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+															]
+						},
+					],
+				{END standalone_page}
+
+																	
+
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_headcell_field}
+{
+	cellId: 'headcell_field',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field1}","text":"{$jslabel info_secop id }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$id_align}',
+  },
+
+{END cellblock_grid_headcell_field}
+																			{BEGIN cellblock_grid_headcell_field1}
+{
+	cellId: 'headcell_field1',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field3}","text":"{$jslabel info_secop nit_entidad }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$nit_entidad_align}',
+  },
+
+{END cellblock_grid_headcell_field1}
+																			{BEGIN cellblock_grid_headcell_field2}
+{
+	cellId: 'headcell_field2',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field55}","text":"{$jslabel info_secop proceso_de_compra }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$proceso_de_compra_align}',
+  },
+
+{END cellblock_grid_headcell_field2}
+																			{BEGIN cellblock_grid_headcell_field3}
+{
+	cellId: 'headcell_field3',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field56}","text":"{$jslabel info_secop id_contrato }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$id_contrato_align}',
+  },
+
+{END cellblock_grid_headcell_field3}
+																			{BEGIN cellblock_grid_headcell_field4}
+{
+	cellId: 'headcell_field4',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field57}","text":"{$jslabel info_secop referencia_del_contrato }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$referencia_del_contrato_align}',
+  },
+
+{END cellblock_grid_headcell_field4}
+																			{BEGIN cellblock_grid_headcell_field5}
+{
+	cellId: 'headcell_field5',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field58}","text":"{$jslabel info_secop estado_contrato }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$estado_contrato_align}',
+  },
+
+{END cellblock_grid_headcell_field5}
+																			{BEGIN cellblock_grid_headcell_field6}
+{
+	cellId: 'headcell_field6',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field59}","text":"{$jslabel info_secop codigo_de_categoria_principal }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$codigo_de_categoria_principal_align}',
+  },
+
+{END cellblock_grid_headcell_field6}
+																			{BEGIN cellblock_grid_headcell_field7}
+{
+	cellId: 'headcell_field7',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field60}","text":"{$jslabel info_secop descripcion_del_proceso }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$descripcion_del_proceso_align}',
+  },
+
+{END cellblock_grid_headcell_field7}
+																			{BEGIN cellblock_grid_headcell_field8}
+{
+	cellId: 'headcell_field8',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field61}","text":"{$jslabel info_secop tipo_de_contrato }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$tipo_de_contrato_align}',
+  },
+
+{END cellblock_grid_headcell_field8}
+																			{BEGIN cellblock_grid_headcell_field9}
+{
+	cellId: 'headcell_field9',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field62}","text":"{$jslabel info_secop modalidad_de_contratacion }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$modalidad_de_contratacion_align}',
+  },
+
+{END cellblock_grid_headcell_field9}
+																			{BEGIN cellblock_grid_headcell_field10}
+{
+	cellId: 'headcell_field10',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field63}","text":"{$jslabel info_secop justificacion_modalidad_de }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$justificacion_modalidad_de_align}',
+  },
+
+{END cellblock_grid_headcell_field10}
+																			{BEGIN cellblock_grid_headcell_field11}
+{
+	cellId: 'headcell_field11',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field64}","text":"{$jslabel info_secop fecha_de_firma }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$fecha_de_firma_align}',
+  },
+
+{END cellblock_grid_headcell_field11}
+																			{BEGIN cellblock_grid_headcell_field12}
+{
+	cellId: 'headcell_field12',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field65}","text":"{$jslabel info_secop fecha_de_inicio_del_contrato }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$fecha_de_inicio_del_contrato_align}',
+  },
+
+{END cellblock_grid_headcell_field12}
+																			{BEGIN cellblock_grid_headcell_field13}
+{
+	cellId: 'headcell_field13',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field66}","text":"{$jslabel info_secop fecha_de_fin_del_contrato }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$fecha_de_fin_del_contrato_align}',
+  },
+
+{END cellblock_grid_headcell_field13}
+																			{BEGIN cellblock_grid_headcell_field14}
+{
+	cellId: 'headcell_field14',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field67}","text":"{$jslabel info_secop fecha_de_inicio_de_ejecucion }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$fecha_de_inicio_de_ejecucion_align}',
+  },
+
+{END cellblock_grid_headcell_field14}
+																			{BEGIN cellblock_grid_headcell_field15}
+{
+	cellId: 'headcell_field15',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field68}","text":"{$jslabel info_secop fecha_de_fin_de_ejecucion }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$fecha_de_fin_de_ejecucion_align}',
+  },
+
+{END cellblock_grid_headcell_field15}
+																			{BEGIN cellblock_grid_headcell_field16}
+{
+	cellId: 'headcell_field16',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field69}","text":"{$jslabel info_secop condiciones_de_entrega }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$condiciones_de_entrega_align}',
+  },
+
+{END cellblock_grid_headcell_field16}
+																			{BEGIN cellblock_grid_headcell_field17}
+{
+	cellId: 'headcell_field17',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field70}","text":"{$jslabel info_secop tipodocproveedor }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$tipodocproveedor_align}',
+  },
+
+{END cellblock_grid_headcell_field17}
+																			{BEGIN cellblock_grid_headcell_field18}
+{
+	cellId: 'headcell_field18',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field71}","text":"{$jslabel info_secop documento_proveedor }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documento_proveedor_align}',
+  },
+
+{END cellblock_grid_headcell_field18}
+																			{BEGIN cellblock_grid_headcell_field19}
+{
+	cellId: 'headcell_field19',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field72}","text":"{$jslabel info_secop proveedor_adjudicado }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$proveedor_adjudicado_align}',
+  },
+
+{END cellblock_grid_headcell_field19}
+																			{BEGIN cellblock_grid_headcell_field20}
+{
+	cellId: 'headcell_field20',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field73}","text":"{$jslabel info_secop es_grupo }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$es_grupo_align}',
+  },
+
+{END cellblock_grid_headcell_field20}
+																			{BEGIN cellblock_grid_headcell_field21}
+{
+	cellId: 'headcell_field21',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field74}","text":"{$jslabel info_secop es_pyme }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$es_pyme_align}',
+  },
+
+{END cellblock_grid_headcell_field21}
+																			{BEGIN cellblock_grid_headcell_field22}
+{
+	cellId: 'headcell_field22',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field75}","text":"{$jslabel info_secop habilita_pago_adelantado }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$habilita_pago_adelantado_align}',
+  },
+
+{END cellblock_grid_headcell_field22}
+																			{BEGIN cellblock_grid_headcell_field23}
+{
+	cellId: 'headcell_field23',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field76}","text":"{$jslabel info_secop liquidaci_n }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$liquidaci_n_align}',
+  },
+
+{END cellblock_grid_headcell_field23}
+																			{BEGIN cellblock_grid_headcell_field24}
+{
+	cellId: 'headcell_field24',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field77}","text":"{$jslabel info_secop obligaci_n_ambiental }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$obligaci_n_ambiental_align}',
+  },
+
+{END cellblock_grid_headcell_field24}
+																			{BEGIN cellblock_grid_headcell_field25}
+{
+	cellId: 'headcell_field25',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field78}","text":"{$jslabel info_secop obligaciones_postconsumo }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$obligaciones_postconsumo_align}',
+  },
+
+{END cellblock_grid_headcell_field25}
+																			{BEGIN cellblock_grid_headcell_field26}
+{
+	cellId: 'headcell_field26',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field79}","text":"{$jslabel info_secop reversion }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$reversion_align}',
+  },
+
+{END cellblock_grid_headcell_field26}
+																			{BEGIN cellblock_grid_headcell_field27}
+{
+	cellId: 'headcell_field27',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field80}","text":"{$jslabel info_secop valor_del_contrato }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_del_contrato_align}',
+  },
+
+{END cellblock_grid_headcell_field27}
+																			{BEGIN cellblock_grid_headcell_field28}
+{
+	cellId: 'headcell_field28',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field81}","text":"{$jslabel info_secop valor_de_pago_adelantado }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_de_pago_adelantado_align}',
+  },
+
+{END cellblock_grid_headcell_field28}
+																			{BEGIN cellblock_grid_headcell_field29}
+{
+	cellId: 'headcell_field29',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field82}","text":"{$jslabel info_secop valor_facturado }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_facturado_align}',
+  },
+
+{END cellblock_grid_headcell_field29}
+																			{BEGIN cellblock_grid_headcell_field30}
+{
+	cellId: 'headcell_field30',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field83}","text":"{$jslabel info_secop valor_pendiente_de_pago }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_pendiente_de_pago_align}',
+  },
+
+{END cellblock_grid_headcell_field30}
+																			{BEGIN cellblock_grid_headcell_field31}
+{
+	cellId: 'headcell_field31',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field84}","text":"{$jslabel info_secop valor_pagado }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_pagado_align}',
+  },
+
+{END cellblock_grid_headcell_field31}
+																			{BEGIN cellblock_grid_headcell_field32}
+{
+	cellId: 'headcell_field32',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field85}","text":"{$jslabel info_secop valor_amortizado }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_amortizado_align}',
+  },
+
+{END cellblock_grid_headcell_field32}
+																			{BEGIN cellblock_grid_headcell_field33}
+{
+	cellId: 'headcell_field33',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field86}","text":"{$jslabel info_secop valor_pendiente_de }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_pendiente_de_align}',
+  },
+
+{END cellblock_grid_headcell_field33}
+																			{BEGIN cellblock_grid_headcell_field34}
+{
+	cellId: 'headcell_field34',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field87}","text":"{$jslabel info_secop valor_pendiente_de_ejecucion }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_pendiente_de_ejecucion_align}',
+  },
+
+{END cellblock_grid_headcell_field34}
+																			{BEGIN cellblock_grid_headcell_field35}
+{
+	cellId: 'headcell_field35',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field88}","text":"{$jslabel info_secop estado_bpin }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$estado_bpin_align}',
+  },
+
+{END cellblock_grid_headcell_field35}
+																			{BEGIN cellblock_grid_headcell_field36}
+{
+	cellId: 'headcell_field36',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field89}","text":"{$jslabel info_secop c_digo_bpin }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$c_digo_bpin_align}',
+  },
+
+{END cellblock_grid_headcell_field36}
+																			{BEGIN cellblock_grid_headcell_field37}
+{
+	cellId: 'headcell_field37',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field90}","text":"{$jslabel info_secop anno_bpin }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$anno_bpin_align}',
+  },
+
+{END cellblock_grid_headcell_field37}
+																			{BEGIN cellblock_grid_headcell_field38}
+{
+	cellId: 'headcell_field38',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field91}","text":"{$jslabel info_secop saldo_cdp }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$saldo_cdp_align}',
+  },
+
+{END cellblock_grid_headcell_field38}
+																			{BEGIN cellblock_grid_headcell_field39}
+{
+	cellId: 'headcell_field39',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field92}","text":"{$jslabel info_secop saldo_vigencia }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$saldo_vigencia_align}',
+  },
+
+{END cellblock_grid_headcell_field39}
+																			{BEGIN cellblock_grid_headcell_field40}
+{
+	cellId: 'headcell_field40',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field93}","text":"{$jslabel info_secop espostconflicto }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$espostconflicto_align}',
+  },
+
+{END cellblock_grid_headcell_field40}
+																			{BEGIN cellblock_grid_headcell_field41}
+{
+	cellId: 'headcell_field41',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field94}","text":"{$jslabel info_secop urlproceso }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$urlproceso_align}',
+  },
+
+{END cellblock_grid_headcell_field41}
+																			{BEGIN cellblock_grid_headcell_field42}
+{
+	cellId: 'headcell_field42',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field95}","text":"{$jslabel info_secop destino_gasto }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$destino_gasto_align}',
+  },
+
+{END cellblock_grid_headcell_field42}
+																			{BEGIN cellblock_grid_headcell_field43}
+{
+	cellId: 'headcell_field43',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field96}","text":"{$jslabel info_secop origen_de_los_recursos }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$origen_de_los_recursos_align}',
+  },
+
+{END cellblock_grid_headcell_field43}
+																			{BEGIN cellblock_grid_headcell_field44}
+{
+	cellId: 'headcell_field44',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field97}","text":"{$jslabel info_secop d_as_adicionados }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$d_as_adicionados_align}',
+  },
+
+{END cellblock_grid_headcell_field44}
+																			{BEGIN cellblock_grid_headcell_field45}
+{
+	cellId: 'headcell_field45',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field98}","text":"{$jslabel info_secop puntos_del_acuerdo }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$puntos_del_acuerdo_align}',
+  },
+
+{END cellblock_grid_headcell_field45}
+																			{BEGIN cellblock_grid_headcell_field46}
+{
+	cellId: 'headcell_field46',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field99}","text":"{$jslabel info_secop pilares_del_acuerdo }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$pilares_del_acuerdo_align}',
+  },
+
+{END cellblock_grid_headcell_field46}
+											],
+				{END row_grid_0}
+								
+		{BEGIN grid_row}
+	{BEGIN grid_record}
+				
+						{BEGIN row_grid_1}
+				[
+												{BEGIN cellblock_grid_cell_field}
+{
+	cellId: 'cell_field',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field}","text":{$id_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$id_align}',
+  },
+
+{END cellblock_grid_cell_field}
+																			{BEGIN cellblock_grid_cell_field1}
+{
+	cellId: 'cell_field1',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field2}","text":{$nit_entidad_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$nit_entidad_align}',
+  },
+
+{END cellblock_grid_cell_field1}
+																			{BEGIN cellblock_grid_cell_field2}
+{
+	cellId: 'cell_field2',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field10}","text":{$proceso_de_compra_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$proceso_de_compra_align}',
+  },
+
+{END cellblock_grid_cell_field2}
+																			{BEGIN cellblock_grid_cell_field3}
+{
+	cellId: 'cell_field3',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field11}","text":{$id_contrato_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$id_contrato_align}',
+  },
+
+{END cellblock_grid_cell_field3}
+																			{BEGIN cellblock_grid_cell_field4}
+{
+	cellId: 'cell_field4',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field12}","text":{$referencia_del_contrato_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$referencia_del_contrato_align}',
+  },
+
+{END cellblock_grid_cell_field4}
+																			{BEGIN cellblock_grid_cell_field5}
+{
+	cellId: 'cell_field5',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field13}","text":{$estado_contrato_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$estado_contrato_align}',
+  },
+
+{END cellblock_grid_cell_field5}
+																			{BEGIN cellblock_grid_cell_field6}
+{
+	cellId: 'cell_field6',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field14}","text":{$codigo_de_categoria_principal_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$codigo_de_categoria_principal_align}',
+  },
+
+{END cellblock_grid_cell_field6}
+																			{BEGIN cellblock_grid_cell_field7}
+{
+	cellId: 'cell_field7',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field15}","text":{$descripcion_del_proceso_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$descripcion_del_proceso_align}',
+  },
+
+{END cellblock_grid_cell_field7}
+																			{BEGIN cellblock_grid_cell_field8}
+{
+	cellId: 'cell_field8',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field16}","text":{$tipo_de_contrato_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$tipo_de_contrato_align}',
+  },
+
+{END cellblock_grid_cell_field8}
+																			{BEGIN cellblock_grid_cell_field9}
+{
+	cellId: 'cell_field9',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field17}","text":{$modalidad_de_contratacion_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$modalidad_de_contratacion_align}',
+  },
+
+{END cellblock_grid_cell_field9}
+																			{BEGIN cellblock_grid_cell_field10}
+{
+	cellId: 'cell_field10',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field18}","text":{$justificacion_modalidad_de_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$justificacion_modalidad_de_align}',
+  },
+
+{END cellblock_grid_cell_field10}
+																			{BEGIN cellblock_grid_cell_field11}
+{
+	cellId: 'cell_field11',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field19}","text":{$fecha_de_firma_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$fecha_de_firma_align}',
+  },
+
+{END cellblock_grid_cell_field11}
+																			{BEGIN cellblock_grid_cell_field12}
+{
+	cellId: 'cell_field12',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field20}","text":{$fecha_de_inicio_del_contrato_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$fecha_de_inicio_del_contrato_align}',
+  },
+
+{END cellblock_grid_cell_field12}
+																			{BEGIN cellblock_grid_cell_field13}
+{
+	cellId: 'cell_field13',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field21}","text":{$fecha_de_fin_del_contrato_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$fecha_de_fin_del_contrato_align}',
+  },
+
+{END cellblock_grid_cell_field13}
+																			{BEGIN cellblock_grid_cell_field14}
+{
+	cellId: 'cell_field14',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field22}","text":{$fecha_de_inicio_de_ejecucion_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$fecha_de_inicio_de_ejecucion_align}',
+  },
+
+{END cellblock_grid_cell_field14}
+																			{BEGIN cellblock_grid_cell_field15}
+{
+	cellId: 'cell_field15',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field23}","text":{$fecha_de_fin_de_ejecucion_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$fecha_de_fin_de_ejecucion_align}',
+  },
+
+{END cellblock_grid_cell_field15}
+																			{BEGIN cellblock_grid_cell_field16}
+{
+	cellId: 'cell_field16',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field24}","text":{$condiciones_de_entrega_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$condiciones_de_entrega_align}',
+  },
+
+{END cellblock_grid_cell_field16}
+																			{BEGIN cellblock_grid_cell_field17}
+{
+	cellId: 'cell_field17',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field25}","text":{$tipodocproveedor_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$tipodocproveedor_align}',
+  },
+
+{END cellblock_grid_cell_field17}
+																			{BEGIN cellblock_grid_cell_field18}
+{
+	cellId: 'cell_field18',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field26}","text":{$documento_proveedor_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$documento_proveedor_align}',
+  },
+
+{END cellblock_grid_cell_field18}
+																			{BEGIN cellblock_grid_cell_field19}
+{
+	cellId: 'cell_field19',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field27}","text":{$proveedor_adjudicado_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$proveedor_adjudicado_align}',
+  },
+
+{END cellblock_grid_cell_field19}
+																			{BEGIN cellblock_grid_cell_field20}
+{
+	cellId: 'cell_field20',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field28}","text":{$es_grupo_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$es_grupo_align}',
+  },
+
+{END cellblock_grid_cell_field20}
+																			{BEGIN cellblock_grid_cell_field21}
+{
+	cellId: 'cell_field21',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field29}","text":{$es_pyme_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$es_pyme_align}',
+  },
+
+{END cellblock_grid_cell_field21}
+																			{BEGIN cellblock_grid_cell_field22}
+{
+	cellId: 'cell_field22',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field30}","text":{$habilita_pago_adelantado_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$habilita_pago_adelantado_align}',
+  },
+
+{END cellblock_grid_cell_field22}
+																			{BEGIN cellblock_grid_cell_field23}
+{
+	cellId: 'cell_field23',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field31}","text":{$liquidaci_n_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$liquidaci_n_align}',
+  },
+
+{END cellblock_grid_cell_field23}
+																			{BEGIN cellblock_grid_cell_field24}
+{
+	cellId: 'cell_field24',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field32}","text":{$obligaci_n_ambiental_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$obligaci_n_ambiental_align}',
+  },
+
+{END cellblock_grid_cell_field24}
+																			{BEGIN cellblock_grid_cell_field25}
+{
+	cellId: 'cell_field25',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field33}","text":{$obligaciones_postconsumo_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$obligaciones_postconsumo_align}',
+  },
+
+{END cellblock_grid_cell_field25}
+																			{BEGIN cellblock_grid_cell_field26}
+{
+	cellId: 'cell_field26',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field34}","text":{$reversion_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$reversion_align}',
+  },
+
+{END cellblock_grid_cell_field26}
+																			{BEGIN cellblock_grid_cell_field27}
+{
+	cellId: 'cell_field27',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field35}","text":{$valor_del_contrato_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_del_contrato_align}',
+  },
+
+{END cellblock_grid_cell_field27}
+																			{BEGIN cellblock_grid_cell_field28}
+{
+	cellId: 'cell_field28',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field36}","text":{$valor_de_pago_adelantado_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_de_pago_adelantado_align}',
+  },
+
+{END cellblock_grid_cell_field28}
+																			{BEGIN cellblock_grid_cell_field29}
+{
+	cellId: 'cell_field29',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field37}","text":{$valor_facturado_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_facturado_align}',
+  },
+
+{END cellblock_grid_cell_field29}
+																			{BEGIN cellblock_grid_cell_field30}
+{
+	cellId: 'cell_field30',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field38}","text":{$valor_pendiente_de_pago_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_pendiente_de_pago_align}',
+  },
+
+{END cellblock_grid_cell_field30}
+																			{BEGIN cellblock_grid_cell_field31}
+{
+	cellId: 'cell_field31',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field39}","text":{$valor_pagado_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_pagado_align}',
+  },
+
+{END cellblock_grid_cell_field31}
+																			{BEGIN cellblock_grid_cell_field32}
+{
+	cellId: 'cell_field32',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field40}","text":{$valor_amortizado_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_amortizado_align}',
+  },
+
+{END cellblock_grid_cell_field32}
+																			{BEGIN cellblock_grid_cell_field33}
+{
+	cellId: 'cell_field33',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field41}","text":{$valor_pendiente_de_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_pendiente_de_align}',
+  },
+
+{END cellblock_grid_cell_field33}
+																			{BEGIN cellblock_grid_cell_field34}
+{
+	cellId: 'cell_field34',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field42}","text":{$valor_pendiente_de_ejecucion_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$valor_pendiente_de_ejecucion_align}',
+  },
+
+{END cellblock_grid_cell_field34}
+																			{BEGIN cellblock_grid_cell_field35}
+{
+	cellId: 'cell_field35',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field43}","text":{$estado_bpin_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$estado_bpin_align}',
+  },
+
+{END cellblock_grid_cell_field35}
+																			{BEGIN cellblock_grid_cell_field36}
+{
+	cellId: 'cell_field36',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field44}","text":{$c_digo_bpin_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$c_digo_bpin_align}',
+  },
+
+{END cellblock_grid_cell_field36}
+																			{BEGIN cellblock_grid_cell_field37}
+{
+	cellId: 'cell_field37',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field45}","text":{$anno_bpin_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$anno_bpin_align}',
+  },
+
+{END cellblock_grid_cell_field37}
+																			{BEGIN cellblock_grid_cell_field38}
+{
+	cellId: 'cell_field38',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field46}","text":{$saldo_cdp_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$saldo_cdp_align}',
+  },
+
+{END cellblock_grid_cell_field38}
+																			{BEGIN cellblock_grid_cell_field39}
+{
+	cellId: 'cell_field39',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field47}","text":{$saldo_vigencia_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$saldo_vigencia_align}',
+  },
+
+{END cellblock_grid_cell_field39}
+																			{BEGIN cellblock_grid_cell_field40}
+{
+	cellId: 'cell_field40',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field48}","text":{$espostconflicto_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$espostconflicto_align}',
+  },
+
+{END cellblock_grid_cell_field40}
+																			{BEGIN cellblock_grid_cell_field41}
+{
+	cellId: 'cell_field41',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field49}","text":{$urlproceso_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$urlproceso_align}',
+  },
+
+{END cellblock_grid_cell_field41}
+																			{BEGIN cellblock_grid_cell_field42}
+{
+	cellId: 'cell_field42',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field50}","text":{$destino_gasto_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$destino_gasto_align}',
+  },
+
+{END cellblock_grid_cell_field42}
+																			{BEGIN cellblock_grid_cell_field43}
+{
+	cellId: 'cell_field43',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field51}","text":{$origen_de_los_recursos_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$origen_de_los_recursos_align}',
+  },
+
+{END cellblock_grid_cell_field43}
+																			{BEGIN cellblock_grid_cell_field44}
+{
+	cellId: 'cell_field44',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field52}","text":{$d_as_adicionados_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$d_as_adicionados_align}',
+  },
+
+{END cellblock_grid_cell_field44}
+																			{BEGIN cellblock_grid_cell_field45}
+{
+	cellId: 'cell_field45',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field53}","text":{$puntos_del_acuerdo_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$puntos_del_acuerdo_align}',
+  },
+
+{END cellblock_grid_cell_field45}
+																			{BEGIN cellblock_grid_cell_field46}
+{
+	cellId: 'cell_field46',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field54}","text":{$pilares_del_acuerdo_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$pilares_del_acuerdo_align}',
+  },
+
+{END cellblock_grid_cell_field46}
+											],
+				{END row_grid_1}
+						{END grid_record}
+	{END grid_row}
+			
+					
+							{BEGIN row_grid_2}
+				[
+												{BEGIN cellblock_grid_footcell_field}
+{
+	cellId: 'footcell_field',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field}
+																			{BEGIN cellblock_grid_footcell_field1}
+{
+	cellId: 'footcell_field1',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field1}
+																			{BEGIN cellblock_grid_footcell_field2}
+{
+	cellId: 'footcell_field2',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field2}
+																			{BEGIN cellblock_grid_footcell_field3}
+{
+	cellId: 'footcell_field3',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field3}
+																			{BEGIN cellblock_grid_footcell_field4}
+{
+	cellId: 'footcell_field4',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field4}
+																			{BEGIN cellblock_grid_footcell_field5}
+{
+	cellId: 'footcell_field5',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field5}
+																			{BEGIN cellblock_grid_footcell_field6}
+{
+	cellId: 'footcell_field6',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field6}
+																			{BEGIN cellblock_grid_footcell_field7}
+{
+	cellId: 'footcell_field7',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field7}
+																			{BEGIN cellblock_grid_footcell_field8}
+{
+	cellId: 'footcell_field8',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field8}
+																			{BEGIN cellblock_grid_footcell_field9}
+{
+	cellId: 'footcell_field9',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field9}
+																			{BEGIN cellblock_grid_footcell_field10}
+{
+	cellId: 'footcell_field10',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field10}
+																			{BEGIN cellblock_grid_footcell_field11}
+{
+	cellId: 'footcell_field11',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field11}
+																			{BEGIN cellblock_grid_footcell_field12}
+{
+	cellId: 'footcell_field12',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field12}
+																			{BEGIN cellblock_grid_footcell_field13}
+{
+	cellId: 'footcell_field13',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field13}
+																			{BEGIN cellblock_grid_footcell_field14}
+{
+	cellId: 'footcell_field14',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field14}
+																			{BEGIN cellblock_grid_footcell_field15}
+{
+	cellId: 'footcell_field15',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field15}
+																			{BEGIN cellblock_grid_footcell_field16}
+{
+	cellId: 'footcell_field16',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field16}
+																			{BEGIN cellblock_grid_footcell_field17}
+{
+	cellId: 'footcell_field17',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field17}
+																			{BEGIN cellblock_grid_footcell_field18}
+{
+	cellId: 'footcell_field18',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field18}
+																			{BEGIN cellblock_grid_footcell_field19}
+{
+	cellId: 'footcell_field19',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field19}
+																			{BEGIN cellblock_grid_footcell_field20}
+{
+	cellId: 'footcell_field20',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field20}
+																			{BEGIN cellblock_grid_footcell_field21}
+{
+	cellId: 'footcell_field21',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field21}
+																			{BEGIN cellblock_grid_footcell_field22}
+{
+	cellId: 'footcell_field22',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field22}
+																			{BEGIN cellblock_grid_footcell_field23}
+{
+	cellId: 'footcell_field23',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field23}
+																			{BEGIN cellblock_grid_footcell_field24}
+{
+	cellId: 'footcell_field24',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field24}
+																			{BEGIN cellblock_grid_footcell_field25}
+{
+	cellId: 'footcell_field25',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field25}
+																			{BEGIN cellblock_grid_footcell_field26}
+{
+	cellId: 'footcell_field26',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field26}
+																			{BEGIN cellblock_grid_footcell_field27}
+{
+	cellId: 'footcell_field27',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field27}
+																			{BEGIN cellblock_grid_footcell_field28}
+{
+	cellId: 'footcell_field28',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field28}
+																			{BEGIN cellblock_grid_footcell_field29}
+{
+	cellId: 'footcell_field29',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field29}
+																			{BEGIN cellblock_grid_footcell_field30}
+{
+	cellId: 'footcell_field30',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field30}
+																			{BEGIN cellblock_grid_footcell_field31}
+{
+	cellId: 'footcell_field31',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field31}
+																			{BEGIN cellblock_grid_footcell_field32}
+{
+	cellId: 'footcell_field32',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field32}
+																			{BEGIN cellblock_grid_footcell_field33}
+{
+	cellId: 'footcell_field33',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field33}
+																			{BEGIN cellblock_grid_footcell_field34}
+{
+	cellId: 'footcell_field34',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field34}
+																			{BEGIN cellblock_grid_footcell_field35}
+{
+	cellId: 'footcell_field35',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field35}
+																			{BEGIN cellblock_grid_footcell_field36}
+{
+	cellId: 'footcell_field36',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field36}
+																			{BEGIN cellblock_grid_footcell_field37}
+{
+	cellId: 'footcell_field37',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field37}
+																			{BEGIN cellblock_grid_footcell_field38}
+{
+	cellId: 'footcell_field38',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field38}
+																			{BEGIN cellblock_grid_footcell_field39}
+{
+	cellId: 'footcell_field39',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field39}
+																			{BEGIN cellblock_grid_footcell_field40}
+{
+	cellId: 'footcell_field40',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field40}
+																			{BEGIN cellblock_grid_footcell_field41}
+{
+	cellId: 'footcell_field41',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field41}
+																			{BEGIN cellblock_grid_footcell_field42}
+{
+	cellId: 'footcell_field42',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field42}
+																			{BEGIN cellblock_grid_footcell_field43}
+{
+	cellId: 'footcell_field43',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field43}
+																			{BEGIN cellblock_grid_footcell_field44}
+{
+	cellId: 'footcell_field44',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field44}
+																			{BEGIN cellblock_grid_footcell_field45}
+{
+	cellId: 'footcell_field45',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field45}
+																			{BEGIN cellblock_grid_footcell_field46}
+{
+	cellId: 'footcell_field46',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field46}
+											],
+				{END row_grid_2}
+							
+									]
+			
+			}
+		},
+		{END body}
+	]
+}

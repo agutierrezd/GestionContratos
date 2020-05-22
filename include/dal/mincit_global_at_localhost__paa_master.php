@@ -1,0 +1,41 @@
+<?php
+$dalTablepaa_master = array();
+$dalTablepaa_master["PAA_ID"] = array("type"=>3,"varname"=>"PAA_ID", "name" => "PAA_ID");
+$dalTablepaa_master["COD_UNSPSC"] = array("type"=>200,"varname"=>"COD_UNSPSC", "name" => "COD_UNSPSC");
+$dalTablepaa_master["DESCRIPCION"] = array("type"=>201,"varname"=>"DESCRIPCION", "name" => "DESCRIPCION");
+$dalTablepaa_master["DESCRIPCION_NEW"] = array("type"=>201,"varname"=>"DESCRIPCION_NEW", "name" => "DESCRIPCION_NEW");
+$dalTablepaa_master["MES_INICIO"] = array("type"=>16,"varname"=>"MES_INICIO", "name" => "MES_INICIO");
+$dalTablepaa_master["MES_PRESENTA"] = array("type"=>16,"varname"=>"MES_PRESENTA", "name" => "MES_PRESENTA");
+$dalTablepaa_master["DURACION_CONTRATO"] = array("type"=>5,"varname"=>"DURACION_CONTRATO", "name" => "DURACION_CONTRATO");
+$dalTablepaa_master["DURACION_ESTIMADA_DMA"] = array("type"=>16,"varname"=>"DURACION_ESTIMADA_DMA", "name" => "DURACION_ESTIMADA_DMA");
+$dalTablepaa_master["MODALIDAD"] = array("type"=>200,"varname"=>"MODALIDAD", "name" => "MODALIDAD");
+$dalTablepaa_master["FUENTE_RECURSOS"] = array("type"=>16,"varname"=>"FUENTE_RECURSOS", "name" => "FUENTE_RECURSOS");
+$dalTablepaa_master["VALOR"] = array("type"=>5,"varname"=>"VALOR", "name" => "VALOR");
+$dalTablepaa_master["VALOR_VIGENCIA"] = array("type"=>5,"varname"=>"VALOR_VIGENCIA", "name" => "VALOR_VIGENCIA");
+$dalTablepaa_master["VALOR_VIGENCIA_FUTURA"] = array("type"=>5,"varname"=>"VALOR_VIGENCIA_FUTURA", "name" => "VALOR_VIGENCIA_FUTURA");
+$dalTablepaa_master["VF"] = array("type"=>16,"varname"=>"VF", "name" => "VF");
+$dalTablepaa_master["ESTADO_VF"] = array("type"=>16,"varname"=>"ESTADO_VF", "name" => "ESTADO_VF");
+$dalTablepaa_master["UNIDAD_CONTRATACION"] = array("type"=>200,"varname"=>"UNIDAD_CONTRATACION", "name" => "UNIDAD_CONTRATACION");
+$dalTablepaa_master["COD_UBICACION"] = array("type"=>200,"varname"=>"COD_UBICACION", "name" => "COD_UBICACION");
+$dalTablepaa_master["RESPONSABLE_NOMBRE"] = array("type"=>200,"varname"=>"RESPONSABLE_NOMBRE", "name" => "RESPONSABLE_NOMBRE");
+$dalTablepaa_master["RESPONSABLE_TELEFONO"] = array("type"=>200,"varname"=>"RESPONSABLE_TELEFONO", "name" => "RESPONSABLE_TELEFONO");
+$dalTablepaa_master["RESPONSABLE_EMAIL"] = array("type"=>200,"varname"=>"RESPONSABLE_EMAIL", "name" => "RESPONSABLE_EMAIL");
+$dalTablepaa_master["responsable"] = array("type"=>200,"varname"=>"responsable", "name" => "responsable");
+$dalTablepaa_master["vigencia"] = array("type"=>2,"varname"=>"vigencia", "name" => "vigencia");
+$dalTablepaa_master["sys_user"] = array("type"=>3,"varname"=>"sys_user", "name" => "sys_user");
+$dalTablepaa_master["sys_date"] = array("type"=>135,"varname"=>"sys_date", "name" => "sys_date");
+$dalTablepaa_master["sys_status"] = array("type"=>16,"varname"=>"sys_status", "name" => "sys_status");
+$dalTablepaa_master["REQ_OBS"] = array("type"=>200,"varname"=>"REQ_OBS", "name" => "REQ_OBS");
+$dalTablepaa_master["REQ_DATE"] = array("type"=>7,"varname"=>"REQ_DATE", "name" => "REQ_DATE");
+$dalTablepaa_master["REQ_MAILNOT"] = array("type"=>200,"varname"=>"REQ_MAILNOT", "name" => "REQ_MAILNOT");
+$dalTablepaa_master["SolModifica"] = array("type"=>200,"varname"=>"SolModifica", "name" => "SolModifica");
+$dalTablepaa_master["ContIdFK"] = array("type"=>3,"varname"=>"ContIdFK", "name" => "ContIdFK");
+$dalTablepaa_master["OBS_anulacion"] = array("type"=>200,"varname"=>"OBS_anulacion", "name" => "OBS_anulacion");
+$dalTablepaa_master["TIPOSOL"] = array("type"=>16,"varname"=>"TIPOSOL", "name" => "TIPOSOL");
+$dalTablepaa_master["USOS_TOTAL"] = array("type"=>5,"varname"=>"USOS_TOTAL", "name" => "USOS_TOTAL");
+$dalTablepaa_master["responsable_dep"] = array("type"=>3,"varname"=>"responsable_dep", "name" => "responsable_dep");
+$dalTablepaa_master["responsable_depsup"] = array("type"=>3,"varname"=>"responsable_depsup", "name" => "responsable_depsup");
+	$dalTablepaa_master["PAA_ID"]["key"]=true;
+
+$dal_info["mincit_global_at_localhost__paa_master"] = &$dalTablepaa_master;
+?>

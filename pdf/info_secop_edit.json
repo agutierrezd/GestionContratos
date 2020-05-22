@@ -1,0 +1,387 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel info_secop edit}","hidden":"{$item_hide_edit_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_edit_message}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				tableForm: true,
+				
+		location: 'grid',
+		
+		
+		widths: [
+									{BEGIN col_grid_0}
+						"*", 
+							{END col_grid_0}
+					 ],	
+		
+			heights: [
+								{BEGIN row_grid_0}
+						
+			"%",
+						{END row_grid_0}
+			 
+				],
+	
+		body: [
+				
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel info_secop id }","bold":true},{"text":{$id_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel info_secop nit_entidad }","bold":true},{"text":{$nit_entidad_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field10}","stack":[{"text":"{$jslabel info_secop proceso_de_compra }","bold":true},{"text":{$proceso_de_compra_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field11}","stack":[{"text":"{$jslabel info_secop id_contrato }","bold":true},{"text":{$id_contrato_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel info_secop referencia_del_contrato }","bold":true},{"text":{$referencia_del_contrato_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field13}","stack":[{"text":"{$jslabel info_secop estado_contrato }","bold":true},{"text":{$estado_contrato_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field14}","stack":[{"text":"{$jslabel info_secop codigo_de_categoria_principal }","bold":true},{"text":{$codigo_de_categoria_principal_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field15}","stack":[{"text":"{$jslabel info_secop descripcion_del_proceso }","bold":true},{"text":{$descripcion_del_proceso_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field16}","stack":[{"text":"{$jslabel info_secop tipo_de_contrato }","bold":true},{"text":{$tipo_de_contrato_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel info_secop modalidad_de_contratacion }","bold":true},{"text":{$modalidad_de_contratacion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field18}","stack":[{"text":"{$jslabel info_secop justificacion_modalidad_de }","bold":true},{"text":{$justificacion_modalidad_de_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field19}","stack":[{"text":"{$jslabel info_secop fecha_de_firma }","bold":true},{"text":{$fecha_de_firma_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field20}","stack":[{"text":"{$jslabel info_secop fecha_de_inicio_del_contrato }","bold":true},{"text":{$fecha_de_inicio_del_contrato_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field21}","stack":[{"text":"{$jslabel info_secop fecha_de_fin_del_contrato }","bold":true},{"text":{$fecha_de_fin_del_contrato_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel info_secop fecha_de_inicio_de_ejecucion }","bold":true},{"text":{$fecha_de_inicio_de_ejecucion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field23}","stack":[{"text":"{$jslabel info_secop fecha_de_fin_de_ejecucion }","bold":true},{"text":{$fecha_de_fin_de_ejecucion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field24}","stack":[{"text":"{$jslabel info_secop condiciones_de_entrega }","bold":true},{"text":{$condiciones_de_entrega_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field25}","stack":[{"text":"{$jslabel info_secop tipodocproveedor }","bold":true},{"text":{$tipodocproveedor_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field26}","stack":[{"text":"{$jslabel info_secop documento_proveedor }","bold":true},{"text":{$documento_proveedor_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field27}","stack":[{"text":"{$jslabel info_secop proveedor_adjudicado }","bold":true},{"text":{$proveedor_adjudicado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field28}","stack":[{"text":"{$jslabel info_secop es_grupo }","bold":true},{"text":{$es_grupo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field29}","stack":[{"text":"{$jslabel info_secop es_pyme }","bold":true},{"text":{$es_pyme_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field30}","stack":[{"text":"{$jslabel info_secop habilita_pago_adelantado }","bold":true},{"text":{$habilita_pago_adelantado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field31}","stack":[{"text":"{$jslabel info_secop liquidaci_n }","bold":true},{"text":{$liquidaci_n_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field32}","stack":[{"text":"{$jslabel info_secop obligaci_n_ambiental }","bold":true},{"text":{$obligaci_n_ambiental_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field33}","stack":[{"text":"{$jslabel info_secop obligaciones_postconsumo }","bold":true},{"text":{$obligaciones_postconsumo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field34}","stack":[{"text":"{$jslabel info_secop reversion }","bold":true},{"text":{$reversion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field35}","stack":[{"text":"{$jslabel info_secop valor_del_contrato }","bold":true},{"text":{$valor_del_contrato_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field36}","stack":[{"text":"{$jslabel info_secop valor_de_pago_adelantado }","bold":true},{"text":{$valor_de_pago_adelantado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field37}","stack":[{"text":"{$jslabel info_secop valor_facturado }","bold":true},{"text":{$valor_facturado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field38}","stack":[{"text":"{$jslabel info_secop valor_pendiente_de_pago }","bold":true},{"text":{$valor_pendiente_de_pago_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field39}","stack":[{"text":"{$jslabel info_secop valor_pagado }","bold":true},{"text":{$valor_pagado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field40}","stack":[{"text":"{$jslabel info_secop valor_amortizado }","bold":true},{"text":{$valor_amortizado_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field41}","stack":[{"text":"{$jslabel info_secop valor_pendiente_de }","bold":true},{"text":{$valor_pendiente_de_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field42}","stack":[{"text":"{$jslabel info_secop valor_pendiente_de_ejecucion }","bold":true},{"text":{$valor_pendiente_de_ejecucion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field43}","stack":[{"text":"{$jslabel info_secop estado_bpin }","bold":true},{"text":{$estado_bpin_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field44}","stack":[{"text":"{$jslabel info_secop c_digo_bpin }","bold":true},{"text":{$c_digo_bpin_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field45}","stack":[{"text":"{$jslabel info_secop anno_bpin }","bold":true},{"text":{$anno_bpin_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field46}","stack":[{"text":"{$jslabel info_secop saldo_cdp }","bold":true},{"text":{$saldo_cdp_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field47}","stack":[{"text":"{$jslabel info_secop saldo_vigencia }","bold":true},{"text":{$saldo_vigencia_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field48}","stack":[{"text":"{$jslabel info_secop espostconflicto }","bold":true},{"text":{$espostconflicto_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field49}","stack":[{"text":"{$jslabel info_secop urlproceso }","bold":true},{"text":{$urlproceso_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field50}","stack":[{"text":"{$jslabel info_secop destino_gasto }","bold":true},{"text":{$destino_gasto_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field51}","stack":[{"text":"{$jslabel info_secop origen_de_los_recursos }","bold":true},{"text":{$origen_de_los_recursos_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field52}","stack":[{"text":"{$jslabel info_secop d_as_adicionados }","bold":true},{"text":{$d_as_adicionados_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field53}","stack":[{"text":"{$jslabel info_secop puntos_del_acuerdo }","bold":true},{"text":{$puntos_del_acuerdo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field54}","stack":[{"text":"{$jslabel info_secop pilares_del_acuerdo }","bold":true},{"text":{$pilares_del_acuerdo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+											],
+				{END row_grid_0}
+					]
+	}
+}
+,
+		
+								
+{
+	table: {
+	
+				
+		location: 'below-grid',
+		
+		
+		widths: [
+								"*", 
+											"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"","hidden":"{$item_hide_edit_save}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_edit_back_list}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_edit_close}"},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+											],
+					]
+	}
+}
+,
+			]
+}
+  

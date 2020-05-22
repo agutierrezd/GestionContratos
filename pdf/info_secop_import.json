@@ -1,0 +1,261 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel info_secop import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_import_field}","text":{$id_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field2}","text":{$nit_entidad_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field10}","text":{$proceso_de_compra_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field11}","text":{$id_contrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field12}","text":{$referencia_del_contrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field13}","text":{$estado_contrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field14}","text":{$codigo_de_categoria_principal_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field15}","text":{$descripcion_del_proceso_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field16}","text":{$tipo_de_contrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field17}","text":{$modalidad_de_contratacion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field18}","text":{$justificacion_modalidad_de_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field19}","text":{$fecha_de_firma_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field20}","text":{$fecha_de_inicio_del_contrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field21}","text":{$fecha_de_fin_del_contrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field22}","text":{$fecha_de_inicio_de_ejecucion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field23}","text":{$fecha_de_fin_de_ejecucion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field24}","text":{$condiciones_de_entrega_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field25}","text":{$tipodocproveedor_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field26}","text":{$documento_proveedor_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field27}","text":{$proveedor_adjudicado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field28}","text":{$es_grupo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field29}","text":{$es_pyme_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field30}","text":{$habilita_pago_adelantado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field31}","text":{$liquidaci_n_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field32}","text":{$obligaci_n_ambiental_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field33}","text":{$obligaciones_postconsumo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field34}","text":{$reversion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field35}","text":{$valor_del_contrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field36}","text":{$valor_de_pago_adelantado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field37}","text":{$valor_facturado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field38}","text":{$valor_pendiente_de_pago_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field39}","text":{$valor_pagado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field40}","text":{$valor_amortizado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field41}","text":{$valor_pendiente_de_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field42}","text":{$valor_pendiente_de_ejecucion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field43}","text":{$estado_bpin_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field44}","text":{$c_digo_bpin_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field45}","text":{$anno_bpin_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field46}","text":{$saldo_cdp_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field47}","text":{$saldo_vigencia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field48}","text":{$espostconflicto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field49}","text":{$urlproceso_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field50}","text":{$destino_gasto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field51}","text":{$origen_de_los_recursos_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field52}","text":{$d_as_adicionados_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field53}","text":{$puntos_del_acuerdo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field54}","text":{$pilares_del_acuerdo_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  
