@@ -113,6 +113,32 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_usr_personalid}</span>
 						</div>
 		{END searchCtrlBlock_usr_personalid}
+																{BEGIN searchCtrlBlock_usr_dep_sup}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_dep_sup}" {$filterRow_attrs_usr_dep_sup}>
+			<label>{$label global_users usr_dep_sup }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_dep_sup}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_dep_sup}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_dep_sup}</span>
+						</div>
+		{END searchCtrlBlock_usr_dep_sup}
+																{BEGIN searchCtrlBlock_usr_directivo}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_usr_directivo}" {$filterRow_attrs_usr_directivo}>
+			<label>{$label global_users usr_directivo }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_usr_directivo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_usr_directivo}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_usr_directivo}</span>
+						</div>
+		{END searchCtrlBlock_usr_directivo}
 																{BEGIN searchCtrlBlock_phone1}
 
 
@@ -1380,8 +1406,14 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_personalid"]:before {
 		content: "{$label global_users usr_personalid}";
 	}
-																																																											[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_dep"]:before {
+																																																											[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_directivo"]:before {
+		content: "{$label global_users usr_directivo}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_dep"]:before {
 		content: "{$label global_users usr_dep}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_dep_sup"]:before {
+		content: "{$label global_users usr_dep_sup}";
 	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_cargo"]:before {
 		content: "{$label global_users usr_cargo}";
@@ -1442,7 +1474,7 @@
 	 
 		{BEGIN Username_fieldheadercolumn}
 	{BEGIN Username_fieldheader}
-	<SPAN {$Username_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Username">
+	<SPAN {$Username_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Username">
 	{$label global_users Username }	{$arrow_icon_Username}
 	</SPAN>
 	{END Username_fieldheader}
@@ -1586,6 +1618,60 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$usr_directivo_class}
+			"
+
+			data-field="usr_directivo"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_directivo_fieldheadercolumn}
+	{BEGIN usr_directivo_fieldheader}
+	<SPAN {$usr_directivo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_directivo">
+	{$label global_users usr_directivo }	{$arrow_icon_usr_directivo}
+	</SPAN>
+	{END usr_directivo_fieldheader}
+{END usr_directivo_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$usr_dep_sup_class}
+			"
+
+			data-field="usr_dep_sup"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_dep_sup_fieldheadercolumn}
+	{BEGIN usr_dep_sup_fieldheader}
+	<SPAN {$usr_dep_sup_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_dep_sup">
+	{$label global_users usr_dep_sup }	{$arrow_icon_usr_dep_sup}
+	</SPAN>
+	{END usr_dep_sup_fieldheader}
+{END usr_dep_sup_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
 							</tr>
 					 
 					 
@@ -1763,6 +1849,52 @@
 {END usr_cargo_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$usr_directivo_class}
+			"
+
+			data-field="usr_directivo"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_directivo_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_directivo" data-default-width >
+{$usr_directivo_value}
+</span>
+{END usr_directivo_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$usr_dep_sup_class}
+			"
+
+			data-field="usr_dep_sup"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN usr_dep_sup_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_dep_sup" data-default-width >
+{$usr_dep_sup_value}
+</span>
+{END usr_dep_sup_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
 							</tr>
 					 
 					
@@ -1890,6 +2022,38 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
 							</tr>
 					
 					</tfoot>

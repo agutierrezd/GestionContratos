@@ -59,6 +59,16 @@ $nonAdminTablesArr[] = "global_unspsc";
 $nonAdminTablesArr[] = "cargo";
 $nonAdminTablesArr[] = "tparam_sn";
 $nonAdminTablesArr[] = "informe_intersup_plan_pagos";
+$nonAdminTablesArr[] = "informe_intersup_admin";
+$nonAdminTablesArr[] = "q_001_dashboard";
+$nonAdminTablesArr[] = "informe_intersup_estado";
+$nonAdminTablesArr[] = "informe_tipo";
+$nonAdminTablesArr[] = "informe_intersup_admin_copia";
+$nonAdminTablesArr[] = "contrato_chart_tiporubro";
+$nonAdminTablesArr[] = "contrato_chart_estado";
+$nonAdminTablesArr[] = "contrato_chart_tipocont";
+$nonAdminTablesArr[] = "contrato_chart_dependencia";
+$nonAdminTablesArr[] = "contrato_chart_supjer";
 
 $ug_connection = $cman->getForUserGroups();
 

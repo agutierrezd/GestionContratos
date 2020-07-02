@@ -9,11 +9,11 @@ $tdatacontrato_tipo[".OwnerID"] = "";
 $tdatacontrato_tipo[".OriginalTable"] = "contrato_tipo";
 
 
-$tdatacontrato_tipo[".pagesByType"] = my_json_decode( "{\"search\":[\"search\"]}" );
+$tdatacontrato_tipo[".pagesByType"] = my_json_decode( "{\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"search\":[\"search\"]}" );
 $tdatacontrato_tipo[".originalPagesByType"] = $tdatacontrato_tipo[".pagesByType"];
-$tdatacontrato_tipo[".pages"] = types2pages( my_json_decode( "{\"search\":[\"search\"]}" ) );
+$tdatacontrato_tipo[".pages"] = types2pages( my_json_decode( "{\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"search\":[\"search\"]}" ) );
 $tdatacontrato_tipo[".originalPages"] = $tdatacontrato_tipo[".pages"];
-$tdatacontrato_tipo[".defaultPages"] = my_json_decode( "{\"search\":\"search\"}" );
+$tdatacontrato_tipo[".defaultPages"] = my_json_decode( "{\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\",\"search\":\"search\"}" );
 $tdatacontrato_tipo[".originalDefaultPages"] = $tdatacontrato_tipo[".defaultPages"];
 
 //	field labels

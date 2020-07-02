@@ -396,6 +396,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_edit_field79}","stack":[{"text":"{$jslabel admin_users phone1 }","bold":true},{"text":{$phone1_pdfvalue}}],"margin":[0,0,0,15]},
 				
+				
+			{"hidden":"{$item_hide_integrated_edit_field80}","stack":[{"text":"{$jslabel admin_users usr_directivo }","bold":true},{"text":{$usr_directivo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field81}","stack":[{"text":"{$jslabel admin_users usr_dep_sup }","bold":true},{"text":{$usr_dep_sup_pdfvalue}}],"margin":[0,0,0,15]},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

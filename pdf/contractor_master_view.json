@@ -294,60 +294,6 @@ pdfDocument = {
 				{END row_section_2}
 								{BEGIN row_section_3}
 				[
-												{BEGIN cellblock_section_c9}
-{
-	cellId: 'c9',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				
-			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel contractor_master ct_fecha_nacimiento }","bold":true},{"text":{$ct_fecha_nacimiento_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_section_c9}
-																			{BEGIN cellblock_section_c10}
-{
-	cellId: 'c10',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				'',
-	  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_section_c10}
-											],
-				{END row_section_3}
-								{BEGIN row_section_4}
-				[
 												{BEGIN cellblock_section_c8}
 {
 	cellId: 'c8',
@@ -384,7 +330,7 @@ pdfDocument = {
 				text: ''
 			},
 							],
-				{END row_section_4}
+				{END row_section_3}
 									]
 					}
 				}]
@@ -720,10 +666,8 @@ pdfDocument = {
 	
 			"stack": [
 		
-				
-			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel contractor_master iva_regimen }","bold":true},{"text":{$iva_regimen_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },

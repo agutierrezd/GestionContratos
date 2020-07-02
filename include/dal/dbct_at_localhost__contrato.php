@@ -69,6 +69,7 @@ $dalTablecontrato["vf_fecha"] = array("type"=>7,"varname"=>"vf_fecha", "name" =>
 $dalTablecontrato["vf_valor"] = array("type"=>5,"varname"=>"vf_valor", "name" => "vf_valor");
 $dalTablecontrato["cont_fechasistema"] = array("type"=>135,"varname"=>"cont_fechasistema", "name" => "cont_fechasistema");
 $dalTablecontrato["cont_cesion"] = array("type"=>16,"varname"=>"cont_cesion", "name" => "cont_cesion");
+$dalTablecontrato["cont_fase"] = array("type"=>200,"varname"=>"cont_fase", "name" => "cont_fase");
 	$dalTablecontrato["id_cont"]["key"]=true;
 
 $dal_info["dbct_at_localhost__contrato"] = &$dalTablecontrato;

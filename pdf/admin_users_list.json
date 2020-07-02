@@ -307,6 +307,12 @@ pdfDocument = {
 										{BEGIN col_grid_82}
 					"%",
 					{END col_grid_82}
+										{BEGIN col_grid_83}
+					"%",
+					{END col_grid_83}
+										{BEGIN col_grid_84}
+					"%",
+					{END col_grid_84}
 															],
 							heights: [ // first height for header part
 					"%",
@@ -489,7 +495,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field81}","text":"{$jslabel admin_users idusrglobal }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field83}","text":"{$jslabel admin_users idusrglobal }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -515,7 +521,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field82}","text":"{$jslabel admin_users id_fk }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field84}","text":"{$jslabel admin_users id_fk }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -541,7 +547,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field83}","text":"{$jslabel admin_users Username }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field85}","text":"{$jslabel admin_users Username }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -567,7 +573,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field84}","text":"{$jslabel admin_users Password }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field86}","text":"{$jslabel admin_users Password }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -593,7 +599,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field85}","text":"{$jslabel admin_users usr_email }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field87}","text":"{$jslabel admin_users usr_email }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -619,7 +625,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field86}","text":"{$jslabel admin_users usr_name }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field88}","text":"{$jslabel admin_users usr_name }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -645,7 +651,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field87}","text":"{$jslabel admin_users usr_lname }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field89}","text":"{$jslabel admin_users usr_lname }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -671,7 +677,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field88}","text":"{$jslabel admin_users usr_nombresfull }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field90}","text":"{$jslabel admin_users usr_nombresfull }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -697,7 +703,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field89}","text":"{$jslabel admin_users usr_personalid }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field91}","text":"{$jslabel admin_users usr_personalid }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -723,7 +729,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field90}","text":"{$jslabel admin_users usr_inicial }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field92}","text":"{$jslabel admin_users usr_inicial }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -749,7 +755,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field91}","text":"{$jslabel admin_users usr_sessini }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field93}","text":"{$jslabel admin_users usr_sessini }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -775,7 +781,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field92}","text":"{$jslabel admin_users usr_image }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field94}","text":"{$jslabel admin_users usr_image }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -801,7 +807,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field93}","text":"{$jslabel admin_users usr_status_nomina }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field95}","text":"{$jslabel admin_users usr_status_nomina }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -827,7 +833,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field94}","text":"{$jslabel admin_users usr_status }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field96}","text":"{$jslabel admin_users usr_status }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -853,7 +859,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field95}","text":"{$jslabel admin_users usr_rdnkey }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field97}","text":"{$jslabel admin_users usr_rdnkey }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -879,7 +885,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field96}","text":"{$jslabel admin_users usr_type_vinc }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field98}","text":"{$jslabel admin_users usr_type_vinc }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -905,7 +911,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field97}","text":"{$jslabel admin_users usr_type_vinculacion }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field99}","text":"{$jslabel admin_users usr_type_vinculacion }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -931,7 +937,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field98}","text":"{$jslabel admin_users usr_status_sol }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field100}","text":"{$jslabel admin_users usr_status_sol }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -957,7 +963,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field99}","text":"{$jslabel admin_users usr_dependencia }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field101}","text":"{$jslabel admin_users usr_dependencia }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -983,7 +989,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field100}","text":"{$jslabel admin_users user_dep }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field102}","text":"{$jslabel admin_users user_dep }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1009,7 +1015,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field101}","text":"{$jslabel admin_users usr_entidad }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field103}","text":"{$jslabel admin_users usr_entidad }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1035,7 +1041,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field102}","text":"{$jslabel admin_users usr_not }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field104}","text":"{$jslabel admin_users usr_not }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1061,7 +1067,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field103}","text":"{$jslabel admin_users usr_not_msj }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field105}","text":"{$jslabel admin_users usr_not_msj }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1087,7 +1093,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field104}","text":"{$jslabel admin_users usr_jefe }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field106}","text":"{$jslabel admin_users usr_jefe }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1113,7 +1119,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field105}","text":"{$jslabel admin_users usr_minequipo_lider }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field107}","text":"{$jslabel admin_users usr_minequipo_lider }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1139,7 +1145,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field106}","text":"{$jslabel admin_users usr_minequipo_grupo }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field108}","text":"{$jslabel admin_users usr_minequipo_grupo }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1165,7 +1171,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field107}","text":"{$jslabel admin_users global_rol_me }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field109}","text":"{$jslabel admin_users global_rol_me }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1191,7 +1197,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field108}","text":"{$jslabel admin_users global_rol_gh }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field110}","text":"{$jslabel admin_users global_rol_gh }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1217,7 +1223,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field109}","text":"{$jslabel admin_users global_rol_almacen }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field111}","text":"{$jslabel admin_users global_rol_almacen }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1243,7 +1249,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field110}","text":"{$jslabel admin_users global_rol_ci }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field112}","text":"{$jslabel admin_users global_rol_ci }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1269,7 +1275,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field111}","text":"{$jslabel admin_users global_rol_contratos }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field113}","text":"{$jslabel admin_users global_rol_contratos }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1295,7 +1301,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field112}","text":"{$jslabel admin_users global_rol_hojar }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field114}","text":"{$jslabel admin_users global_rol_hojar }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1321,7 +1327,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field113}","text":"{$jslabel admin_users global_rol_inmuebles }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field115}","text":"{$jslabel admin_users global_rol_inmuebles }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1347,7 +1353,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field114}","text":"{$jslabel admin_users global_rol_siis }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field116}","text":"{$jslabel admin_users global_rol_siis }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1373,7 +1379,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field115}","text":"{$jslabel admin_users global_rol_cpanel }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field117}","text":"{$jslabel admin_users global_rol_cpanel }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1399,7 +1405,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field116}","text":"{$jslabel admin_users global_rol_dashboard }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field118}","text":"{$jslabel admin_users global_rol_dashboard }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1425,7 +1431,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field117}","text":"{$jslabel admin_users global_rol_zf }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field119}","text":"{$jslabel admin_users global_rol_zf }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1451,7 +1457,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field118}","text":"{$jslabel admin_users global_rol_sipi }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field120}","text":"{$jslabel admin_users global_rol_sipi }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1477,7 +1483,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field119}","text":"{$jslabel admin_users global_rol_cej }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field121}","text":"{$jslabel admin_users global_rol_cej }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1503,7 +1509,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field120}","text":"{$jslabel admin_users global_rol_jc3 }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field122}","text":"{$jslabel admin_users global_rol_jc3 }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1529,7 +1535,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field121}","text":"{$jslabel admin_users global_rol_th }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field123}","text":"{$jslabel admin_users global_rol_th }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1555,7 +1561,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field122}","text":"{$jslabel admin_users global_rol_sid }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field124}","text":"{$jslabel admin_users global_rol_sid }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1581,7 +1587,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field123}","text":"{$jslabel admin_users global_rol }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field125}","text":"{$jslabel admin_users global_rol }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1607,7 +1613,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field124}","text":"{$jslabel admin_users global_rol_cont }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field126}","text":"{$jslabel admin_users global_rol_cont }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1633,7 +1639,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field125}","text":"{$jslabel admin_users globla_rol_ct }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field127}","text":"{$jslabel admin_users globla_rol_ct }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1659,7 +1665,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field126}","text":"{$jslabel admin_users global_rol_procjur }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field128}","text":"{$jslabel admin_users global_rol_procjur }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1685,7 +1691,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field127}","text":"{$jslabel admin_users global_rol_comacc }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field129}","text":"{$jslabel admin_users global_rol_comacc }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1711,7 +1717,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field128}","text":"{$jslabel admin_users global_rol_gestion }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field130}","text":"{$jslabel admin_users global_rol_gestion }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1737,7 +1743,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field129}","text":"{$jslabel admin_users global_rol_ciudadano }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field131}","text":"{$jslabel admin_users global_rol_ciudadano }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1763,7 +1769,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field130}","text":"{$jslabel admin_users global_rol_ciudadano_dep }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field132}","text":"{$jslabel admin_users global_rol_ciudadano_dep }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1789,7 +1795,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field131}","text":"{$jslabel admin_users sys_user }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field133}","text":"{$jslabel admin_users sys_user }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1815,7 +1821,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field132}","text":"{$jslabel admin_users sys_date }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field134}","text":"{$jslabel admin_users sys_date }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1841,7 +1847,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field133}","text":"{$jslabel admin_users sys_time }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field135}","text":"{$jslabel admin_users sys_time }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1867,7 +1873,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field134}","text":"{$jslabel admin_users sys_ntries_usr }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field136}","text":"{$jslabel admin_users sys_ntries_usr }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1893,7 +1899,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field135}","text":"{$jslabel admin_users sys_registrationdate_usr }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field137}","text":"{$jslabel admin_users sys_registrationdate_usr }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1919,7 +1925,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field136}","text":"{$jslabel admin_users sys_expiration_usr }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field138}","text":"{$jslabel admin_users sys_expiration_usr }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1945,7 +1951,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field137}","text":"{$jslabel admin_users sys_disabledate_usr }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field139}","text":"{$jslabel admin_users sys_disabledate_usr }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1971,7 +1977,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field138}","text":"{$jslabel admin_users sys_upd_fecha }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field140}","text":"{$jslabel admin_users sys_upd_fecha }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1997,7 +2003,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field139}","text":"{$jslabel admin_users sys_upd_user }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field141}","text":"{$jslabel admin_users sys_upd_user }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2023,7 +2029,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field140}","text":"{$jslabel admin_users sys_upd_time }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field142}","text":"{$jslabel admin_users sys_upd_time }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2049,7 +2055,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field141}","text":"{$jslabel admin_users sys_update_info }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field143}","text":"{$jslabel admin_users sys_update_info }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2075,7 +2081,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field142}","text":"{$jslabel admin_users sys_update_family_info }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field144}","text":"{$jslabel admin_users sys_update_family_info }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2101,7 +2107,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field143}","text":"{$jslabel admin_users usr_update_almacen }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field145}","text":"{$jslabel admin_users usr_update_almacen }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2127,7 +2133,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field144}","text":"{$jslabel admin_users sys_anio }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field146}","text":"{$jslabel admin_users sys_anio }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2153,7 +2159,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field145}","text":"{$jslabel admin_users ctrl }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field147}","text":"{$jslabel admin_users ctrl }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2179,7 +2185,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field146}","text":"{$jslabel admin_users usr_dep }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field148}","text":"{$jslabel admin_users usr_dep }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2205,7 +2211,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field147}","text":"{$jslabel admin_users usr_cargo }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field149}","text":"{$jslabel admin_users usr_cargo }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2231,7 +2237,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field148}","text":"{$jslabel admin_users usr_regpago }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field150}","text":"{$jslabel admin_users usr_regpago }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2257,7 +2263,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field149}","text":"{$jslabel admin_users usr_extension }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field151}","text":"{$jslabel admin_users usr_extension }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2283,7 +2289,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field150}","text":"{$jslabel admin_users usr_piso }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field152}","text":"{$jslabel admin_users usr_piso }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2309,7 +2315,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field151}","text":"{$jslabel admin_users usr_datebirth }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field153}","text":"{$jslabel admin_users usr_datebirth }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2335,7 +2341,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field152}","text":"{$jslabel admin_users ctrl_pedidoalmacen }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field154}","text":"{$jslabel admin_users ctrl_pedidoalmacen }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2361,7 +2367,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field153}","text":"{$jslabel admin_users ctrl_contacto }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field155}","text":"{$jslabel admin_users ctrl_contacto }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2387,7 +2393,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field154}","text":"{$jslabel admin_users usr_emergencia }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field156}","text":"{$jslabel admin_users usr_emergencia }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2413,7 +2419,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field155}","text":"{$jslabel admin_users active }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field157}","text":"{$jslabel admin_users active }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2439,7 +2445,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field156}","text":"{$jslabel admin_users groupid }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field158}","text":"{$jslabel admin_users groupid }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2465,7 +2471,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field157}","text":"{$jslabel admin_users habilita_almacen }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field159}","text":"{$jslabel admin_users habilita_almacen }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2491,7 +2497,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field158}","text":"{$jslabel admin_users estado_vinculacion_mincit }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field160}","text":"{$jslabel admin_users estado_vinculacion_mincit }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2517,7 +2523,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field159}","text":"{$jslabel admin_users upd_date }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field161}","text":"{$jslabel admin_users upd_date }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2543,7 +2549,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field160}","text":"{$jslabel admin_users phone }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field162}","text":"{$jslabel admin_users phone }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2569,7 +2575,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field161}","text":"{$jslabel admin_users phone1 }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field163}","text":"{$jslabel admin_users phone1 }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -2577,6 +2583,58 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_field80}
+																			{BEGIN cellblock_grid_headcell_field81}
+{
+	cellId: 'headcell_field81',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field164}","text":"{$jslabel admin_users usr_directivo }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$usr_directivo_align}',
+  },
+
+{END cellblock_grid_headcell_field81}
+																			{BEGIN cellblock_grid_headcell_field82}
+{
+	cellId: 'headcell_field82',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field165}","text":"{$jslabel admin_users usr_dep_sup }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$usr_dep_sup_align}',
+  },
+
+{END cellblock_grid_headcell_field82}
 											],
 				{END row_grid_0}
 								
@@ -4743,6 +4801,58 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_field80}
+																			{BEGIN cellblock_grid_cell_field81}
+{
+	cellId: 'cell_field81',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field81}","text":{$usr_directivo_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$usr_directivo_align}',
+  },
+
+{END cellblock_grid_cell_field81}
+																			{BEGIN cellblock_grid_cell_field82}
+{
+	cellId: 'cell_field82',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field82}","text":{$usr_dep_sup_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$usr_dep_sup_align}',
+  },
+
+{END cellblock_grid_cell_field82}
 											],
 				{END row_grid_1}
 						{END grid_record}
@@ -6743,6 +6853,54 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field80}
+																			{BEGIN cellblock_grid_footcell_field81}
+{
+	cellId: 'footcell_field81',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field81}
+																			{BEGIN cellblock_grid_footcell_field82}
+{
+	cellId: 'footcell_field82',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field82}
 											],
 				{END row_grid_2}
 							

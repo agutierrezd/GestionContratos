@@ -636,7 +636,7 @@ $arrCustomPages = array();
 																					$cUserNameFieldType	= 200;
 												$cPasswordFieldType	= 200;
 												$cEmailFieldType = 200;
-																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																												
+																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																														
 $gPermissionsRefreshTime = 0;
 $gPermissionsRead = false;
 
@@ -646,9 +646,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "240_1586810418";
+$projectBuildKey = "268_1593177038";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "240";
+$projectBuildNumber = "268";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -699,7 +699,7 @@ $tableCaptions["Spanish"]["contrato_estados"] = "Contrato Estados";
 $tableCaptions["Spanish"]["contrato_pre"] = "Contrato Pre";
 $tableCaptions["Spanish"]["contrato_attached"] = "ANEXOS";
 $tableCaptions["Spanish"]["contrato_attached_type"] = "Contrato Attached Type";
-$tableCaptions["Spanish"]["polizas_master"] = "Amparos (Pólizas)";
+$tableCaptions["Spanish"]["polizas_master"] = "PÓLIZAS";
 $tableCaptions["Spanish"]["polizas_tipo"] = "Polizas Tipo";
 $tableCaptions["Spanish"]["polizas_aseguradoras"] = "Polizas Aseguradoras";
 $tableCaptions["Spanish"]["info_secop"] = "Info Secop";
@@ -716,6 +716,16 @@ $tableCaptions["Spanish"]["global_unspsc"] = "Global Unspsc";
 $tableCaptions["Spanish"]["cargo"] = "Cargo";
 $tableCaptions["Spanish"]["tparam_sn"] = "Tparam Sn";
 $tableCaptions["Spanish"]["informe_intersup_plan_pagos"] = "Plan de pago";
+$tableCaptions["Spanish"]["informe_intersup_admin"] = "Informe Intersup Admin";
+$tableCaptions["Spanish"]["q_001_dashboard"] = "Q 001 Dashboard";
+$tableCaptions["Spanish"]["informe_intersup_estado"] = "Informe Intersup Estado";
+$tableCaptions["Spanish"]["informe_tipo"] = "Informe Tipo";
+$tableCaptions["Spanish"]["informe_intersup_admin_copia"] = "Informe Intersup Admin Copia";
+$tableCaptions["Spanish"]["contrato_chart_tiporubro"] = "Contrato Chart Tiporubro";
+$tableCaptions["Spanish"]["contrato_chart_estado"] = "Contrato Chart Estado";
+$tableCaptions["Spanish"]["contrato_chart_tipocont"] = "Contrato Chart Tipocont";
+$tableCaptions["Spanish"]["contrato_chart_dependencia"] = "Contrato Chart Dependencia";
+$tableCaptions["Spanish"]["contrato_chart_supjer"] = "Contrato Chart Supjer";
 
 
 $globalEvents = new class_GlobalEvents;
@@ -756,6 +766,8 @@ $mediaType = $mediaType ? $mediaType : 0;
 $page_titles[".global"] = array();
 if(mlang_getcurrentlang()=="Spanish")
 {
+				$page_titles[".global"]["Spanish"] = array();
+	$page_titles[".global"]["Spanish"]["login"] = "CONTRATOS";
 }
 
 $globalSettings["showDetailedError"] = true;

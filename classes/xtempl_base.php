@@ -125,6 +125,31 @@ class XTempl_Base
 		
 		if( !$hideAddedCharts ) //#9607 1. Temporary fix
 		{
+			$this->assign_function("contrato_chart_tiporubro_chart","xt_showchart",
+			array(
+				"chartName"=>"contrato_chart_tiporubro",
+				"table"=>"contrato_chart_tiporubro",
+				"ctype"=>"2DDoughnut"));
+			$this->assign_function("contrato_chart_estado_chart","xt_showchart",
+			array(
+				"chartName"=>"contrato_chart_estado",
+				"table"=>"contrato_chart_estado",
+				"ctype"=>"2DDoughnut"));
+			$this->assign_function("contrato_chart_tipocont_chart","xt_showchart",
+			array(
+				"chartName"=>"contrato_chart_tipocont",
+				"table"=>"contrato_chart_tipocont",
+				"ctype"=>"2DColumn"));
+			$this->assign_function("contrato_chart_dependencia_chart","xt_showchart",
+			array(
+				"chartName"=>"contrato_chart_dependencia",
+				"table"=>"contrato_chart_dependencia",
+				"ctype"=>"2DBar"));
+			$this->assign_function("contrato_chart_supjer_chart","xt_showchart",
+			array(
+				"chartName"=>"contrato_chart_supjer",
+				"table"=>"contrato_chart_supjer",
+				"ctype"=>"2DColumn"));
 		}
 		
 

@@ -9,11 +9,11 @@ $tdatacontrato_forma_pago[".OwnerID"] = "";
 $tdatacontrato_forma_pago[".OriginalTable"] = "contrato_forma_pago";
 
 
-$tdatacontrato_forma_pago[".pagesByType"] = my_json_decode( "{\"search\":[\"search\"]}" );
+$tdatacontrato_forma_pago[".pagesByType"] = my_json_decode( "{\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"search\":[\"search\"]}" );
 $tdatacontrato_forma_pago[".originalPagesByType"] = $tdatacontrato_forma_pago[".pagesByType"];
-$tdatacontrato_forma_pago[".pages"] = types2pages( my_json_decode( "{\"search\":[\"search\"]}" ) );
+$tdatacontrato_forma_pago[".pages"] = types2pages( my_json_decode( "{\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"search\":[\"search\"]}" ) );
 $tdatacontrato_forma_pago[".originalPages"] = $tdatacontrato_forma_pago[".pages"];
-$tdatacontrato_forma_pago[".defaultPages"] = my_json_decode( "{\"search\":\"search\"}" );
+$tdatacontrato_forma_pago[".defaultPages"] = my_json_decode( "{\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\",\"search\":\"search\"}" );
 $tdatacontrato_forma_pago[".originalDefaultPages"] = $tdatacontrato_forma_pago[".defaultPages"];
 
 //	field labels

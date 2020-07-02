@@ -100,6 +100,54 @@
 						
 										{BEGIN above-grid_block}
 <div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="topbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-6
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+		<div data-itemtype="chart" data-itemid="chart" {$item_chart} data-pageid="{$pageid}" data-page=".global_menu" >
+{$chart contrato_chart_estado 530px}
+</div>
+  			{END firstAboveGridCell}	
+	</div>			 
+				<div 
+	data-cellId="above-grid_c" data-pageid="{$pageid}"	{$cell_above-grid_c}
+	class=" r-ori-vert			col-md-6
+	
+">
+		 
+		<div data-itemtype="chart" data-itemid="chart1" {$item_chart1} data-pageid="{$pageid}" data-page=".global_menu" >
+{$chart contrato_chart_dependencia 530px}
+</div>
+  		</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
+	class=" r-ori-vert			col-md-6
+	
+">
+		 
+		<div data-itemtype="chart" data-itemid="chart2" {$item_chart2} data-pageid="{$pageid}" data-page=".global_menu" >
+{$chart contrato_chart_tipocont 530px}
+</div>
+  		</div>			 
+				<div 
+	data-cellId="above-grid_c3" data-pageid="{$pageid}"	{$cell_above-grid_c3}
+	class=" r-ori-vert			col-md-6
+	
+">
+		 
+		<div data-itemtype="chart" data-itemid="chart3" {$item_chart3} data-pageid="{$pageid}" data-page=".global_menu" >
+{$chart contrato_chart_tiporubro 530px}
+</div>
+  		</div>					</div>
 	</div>		
 {END above-grid_block}
 							
@@ -112,7 +160,7 @@
 									<td 
 	class=" r-ori-vert			"
 			 
-	data-cellId="grid_c1" data-pageid="{$pageid}">
+	data-cellId="grid_c2" data-pageid="{$pageid}">
 </td>
 							</tr>
 					

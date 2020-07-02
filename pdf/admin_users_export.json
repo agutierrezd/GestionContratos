@@ -347,6 +347,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_export_field80}","text":{$phone1_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_export_field81}","text":{$usr_directivo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field82}","text":{$usr_dep_sup_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

@@ -7578,6 +7578,7 @@ $proto91["m_columns"][] = "vf_fecha";
 $proto91["m_columns"][] = "vf_valor";
 $proto91["m_columns"][] = "cont_fechasistema";
 $proto91["m_columns"][] = "cont_cesion";
+$proto91["m_columns"][] = "cont_fase";
 $obj = new SQLTable($proto91);
 
 $proto90["m_table"] = $obj;

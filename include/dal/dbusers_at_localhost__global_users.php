@@ -8,7 +8,7 @@ $dalTableglobal_users["usr_email"] = array("type"=>200,"varname"=>"usr_email", "
 $dalTableglobal_users["usr_name"] = array("type"=>200,"varname"=>"usr_name", "name" => "usr_name");
 $dalTableglobal_users["usr_lname"] = array("type"=>200,"varname"=>"usr_lname", "name" => "usr_lname");
 $dalTableglobal_users["usr_nombresfull"] = array("type"=>200,"varname"=>"usr_nombresfull", "name" => "usr_nombresfull");
-$dalTableglobal_users["usr_personalid"] = array("type"=>200,"varname"=>"usr_personalid", "name" => "usr_personalid");
+$dalTableglobal_users["usr_personalid"] = array("type"=>3,"varname"=>"usr_personalid", "name" => "usr_personalid");
 $dalTableglobal_users["usr_inicial"] = array("type"=>200,"varname"=>"usr_inicial", "name" => "usr_inicial");
 $dalTableglobal_users["usr_sessini"] = array("type"=>16,"varname"=>"usr_sessini", "name" => "usr_sessini");
 $dalTableglobal_users["usr_image"] = array("type"=>200,"varname"=>"usr_image", "name" => "usr_image");
@@ -65,7 +65,9 @@ $dalTableglobal_users["sys_update_family_info"] = array("type"=>16,"varname"=>"s
 $dalTableglobal_users["usr_update_almacen"] = array("type"=>16,"varname"=>"usr_update_almacen", "name" => "usr_update_almacen");
 $dalTableglobal_users["sys_anio"] = array("type"=>2,"varname"=>"sys_anio", "name" => "sys_anio");
 $dalTableglobal_users["ctrl"] = array("type"=>200,"varname"=>"ctrl", "name" => "ctrl");
+$dalTableglobal_users["usr_directivo"] = array("type"=>3,"varname"=>"usr_directivo", "name" => "usr_directivo");
 $dalTableglobal_users["usr_dep"] = array("type"=>3,"varname"=>"usr_dep", "name" => "usr_dep");
+$dalTableglobal_users["usr_dep_sup"] = array("type"=>3,"varname"=>"usr_dep_sup", "name" => "usr_dep_sup");
 $dalTableglobal_users["usr_cargo"] = array("type"=>3,"varname"=>"usr_cargo", "name" => "usr_cargo");
 $dalTableglobal_users["usr_regpago"] = array("type"=>16,"varname"=>"usr_regpago", "name" => "usr_regpago");
 $dalTableglobal_users["usr_extension"] = array("type"=>200,"varname"=>"usr_extension", "name" => "usr_extension");

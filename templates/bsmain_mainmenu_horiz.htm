@@ -59,7 +59,7 @@
 	
 	
 	{BEGIN item5_menulink}
-	<li class="  {$item5_current}">
+	<li class="  dropdown  {$item5_current}">
 		
 <a {$item5_menulink_attrs} title="{$item5_tooltip}" >
 	<span class="
@@ -68,34 +68,124 @@
 		<span class="r-menu-collapsed">{$item5_collicon}{$item5_firstcap}</span>
 </a>
 
+		
+				<ul class="dropdown-menu">
+		
+			{BEGIN item6_menulink}
+			<li class="  {$item6_current}">
+				
+<a {$item6_menulink_attrs} title="{$item6_tooltip}" >
+	<span class="
+		"> {$item6_icon} {$item6_title}</span>
+	</a>
+
+			</li>
+			{END item6_menulink}
+				</ul>
 	</li>
 	{END item5_menulink}
 	
 	
-	{BEGIN item6_menulink}
-	<li class="  dropdown  {$item6_current}">
+	{BEGIN item7_menulink}
+	<li class="  dropdown  {$item7_current}">
 		
-<a {$item6_menulink_attrs} title="{$item6_tooltip}" >
+<a {$item7_menulink_attrs} title="{$item7_tooltip}" >
 	<span class="
 		r-menu-expanded
-	"> {$item6_icon} {$item6_title}</span>
-		<span class="r-menu-collapsed">{$item6_collicon}{$item6_firstcap}</span>
+	"> {$item7_icon} {$item7_title}</span>
+		<span class="r-menu-collapsed">{$item7_collicon}{$item7_firstcap}</span>
 </a>
 
 		
 				<ul class="dropdown-menu">
 		
-			{BEGIN item7_menulink}
-			<li class="  {$item7_current}">
+			{BEGIN item8_menulink}
+			<li class="  {$item8_current}">
 				
-<a {$item7_menulink_attrs} title="{$item7_tooltip}" >
+<a {$item8_menulink_attrs} title="{$item8_tooltip}" >
 	<span class="
-		"> {$item7_icon} {$item7_title}</span>
+		"> {$item8_icon} {$item8_title}</span>
 	</a>
 
 			</li>
-			{END item7_menulink}
+			{END item8_menulink}
 				</ul>
 	</li>
-	{END item6_menulink}
+	{END item7_menulink}
+	
+	
+	{BEGIN item9_menulink}
+	<li class="  dropdown  {$item9_current}">
+		
+<a {$item9_menulink_attrs} title="{$item9_tooltip}" >
+	<span class="
+		r-menu-expanded
+	"> {$item9_icon} {$item9_title}</span>
+		<span class="r-menu-collapsed">{$item9_collicon}{$item9_firstcap}</span>
+</a>
+
+		
+				<ul class="dropdown-menu">
+		
+			{BEGIN item10_menulink}
+			<li class="  {$item10_current}">
+				
+<a {$item10_menulink_attrs} title="{$item10_tooltip}" >
+	<span class="
+		"> {$item10_icon} {$item10_title}</span>
+	</a>
+
+			</li>
+			{END item10_menulink}
+				
+				
+			{BEGIN item11_menulink}
+			<li class="  {$item11_current}">
+				
+<a {$item11_menulink_attrs} title="{$item11_tooltip}" >
+	<span class="
+		"> {$item11_icon} {$item11_title}</span>
+	</a>
+
+			</li>
+			{END item11_menulink}
+				
+				
+			{BEGIN item12_menulink}
+			<li class="  {$item12_current}">
+				
+<a {$item12_menulink_attrs} title="{$item12_tooltip}" >
+	<span class="
+		"> {$item12_icon} {$item12_title}</span>
+	</a>
+
+			</li>
+			{END item12_menulink}
+				
+				
+			{BEGIN item13_menulink}
+			<li class="  {$item13_current}">
+				
+<a {$item13_menulink_attrs} title="{$item13_tooltip}" >
+	<span class="
+		"> {$item13_icon} {$item13_title}</span>
+	</a>
+
+			</li>
+			{END item13_menulink}
+				
+				
+			{BEGIN item14_menulink}
+			<li class="  {$item14_current}">
+				
+<a {$item14_menulink_attrs} title="{$item14_tooltip}" >
+	<span class="
+		"> {$item14_icon} {$item14_title}</span>
+	</a>
+
+			</li>
+			{END item14_menulink}
+				</ul>
+	</li>
+	{END item9_menulink}
 </ul>

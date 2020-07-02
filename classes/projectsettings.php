@@ -3193,6 +3193,26 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "tparam_sn" ] = "tparam_sn";
 	$projectEntities[ "informe_intersup_plan_pagos" ] = array( "url" => "informe_intersup_plan_pagos", "type" => 0 );
 	$projectEntitiesReverse[ "informe_intersup_plan_pagos" ] = "informe_intersup_plan_pagos";
+	$projectEntities[ "informe_intersup_admin" ] = array( "url" => "informe_intersup_admin", "type" => 1 );
+	$projectEntitiesReverse[ "informe_intersup_admin" ] = "informe_intersup_admin";
+	$projectEntities[ "q_001_dashboard" ] = array( "url" => "q_001_dashboard", "type" => 0 );
+	$projectEntitiesReverse[ "q_001_dashboard" ] = "q_001_dashboard";
+	$projectEntities[ "informe_intersup_estado" ] = array( "url" => "informe_intersup_estado", "type" => 0 );
+	$projectEntitiesReverse[ "informe_intersup_estado" ] = "informe_intersup_estado";
+	$projectEntities[ "informe_tipo" ] = array( "url" => "informe_tipo", "type" => 0 );
+	$projectEntitiesReverse[ "informe_tipo" ] = "informe_tipo";
+	$projectEntities[ "informe_intersup_admin_copia" ] = array( "url" => "informe_intersup_admin_copia", "type" => 1 );
+	$projectEntitiesReverse[ "informe_intersup_admin_copia" ] = "informe_intersup_admin_copia";
+	$projectEntities[ "contrato_chart_tiporubro" ] = array( "url" => "contrato_chart_tiporubro", "type" => 3 );
+	$projectEntitiesReverse[ "contrato_chart_tiporubro" ] = "contrato_chart_tiporubro";
+	$projectEntities[ "contrato_chart_estado" ] = array( "url" => "contrato_chart_estado", "type" => 3 );
+	$projectEntitiesReverse[ "contrato_chart_estado" ] = "contrato_chart_estado";
+	$projectEntities[ "contrato_chart_tipocont" ] = array( "url" => "contrato_chart_tipocont", "type" => 3 );
+	$projectEntitiesReverse[ "contrato_chart_tipocont" ] = "contrato_chart_tipocont";
+	$projectEntities[ "contrato_chart_dependencia" ] = array( "url" => "contrato_chart_dependencia", "type" => 3 );
+	$projectEntitiesReverse[ "contrato_chart_dependencia" ] = "contrato_chart_dependencia";
+	$projectEntities[ "contrato_chart_supjer" ] = array( "url" => "contrato_chart_supjer", "type" => 3 );
+	$projectEntitiesReverse[ "contrato_chart_supjer" ] = "contrato_chart_supjer";
 }
 
 function findTable( $table ) {

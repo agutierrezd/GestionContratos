@@ -298,7 +298,7 @@ class ConnectionManager
 		$data["connInfo"][4] = "dbct";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=dbct;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 8.0 Unicode Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=dbct;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
@@ -331,7 +331,7 @@ class ConnectionManager
 		$data["connInfo"][4] = "dbusers";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=dbusers;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 8.0 Unicode Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=dbusers;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
@@ -364,7 +364,7 @@ class ConnectionManager
 		$data["connInfo"][4] = "mincit_global";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=mincit_global;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 8.0 Unicode Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=mincit_global;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
@@ -397,7 +397,7 @@ class ConnectionManager
 		$data["connInfo"][4] = "sep2";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=sep2;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 8.0 Unicode Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=sep2;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
@@ -430,7 +430,7 @@ class ConnectionManager
 		$data["connInfo"][4] = "edl";
 		$data["connInfo"][5] = ""; //currently unused
 		$data["connInfo"][6] = "1"; //currently unused
-		$data["ODBCString"] = "DRIVER={MySQL ODBC 3.51 Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=edl;OPTION=3";
+		$data["ODBCString"] = "DRIVER={MySQL ODBC 8.0 Unicode Driver};Server=localhost;Uid=root;Pwd=1qaz2wsx;Database=edl;OPTION=3";
 		// encription set
 		$data["EncryptInfo"] = array();
 		$data["EncryptInfo"]["mode"] = 0;
@@ -495,6 +495,16 @@ class ConnectionManager
 		$connectionsIds["cargo"] = "edl_at_localhost";
 		$connectionsIds["tparam_sn"] = "edl_at_localhost";
 		$connectionsIds["informe_intersup_plan_pagos"] = "dbct_at_localhost";
+		$connectionsIds["informe_intersup_admin"] = "dbct_at_localhost";
+		$connectionsIds["q_001_dashboard"] = "dbct_at_localhost";
+		$connectionsIds["informe_intersup_estado"] = "dbct_at_localhost";
+		$connectionsIds["informe_tipo"] = "dbct_at_localhost";
+		$connectionsIds["informe_intersup_admin_copia"] = "dbct_at_localhost";
+		$connectionsIds["contrato_chart_tiporubro"] = "dbct_at_localhost";
+		$connectionsIds["contrato_chart_estado"] = "dbct_at_localhost";
+		$connectionsIds["contrato_chart_tipocont"] = "dbct_at_localhost";
+		$connectionsIds["contrato_chart_dependencia"] = "dbct_at_localhost";
+		$connectionsIds["contrato_chart_supjer"] = "dbct_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

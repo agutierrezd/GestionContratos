@@ -584,6 +584,26 @@ class Chart
 			return true;
 		if("informe_intersup_plan_pagos" == $this->chrt_array['tables'][0])
 			return true;
+		if("informe_intersup" == $this->chrt_array['tables'][0])
+			return true;
+		if("q_001_dashboard" == $this->chrt_array['tables'][0])
+			return true;
+		if("informe_intersup_estado" == $this->chrt_array['tables'][0])
+			return true;
+		if("informe_tipo" == $this->chrt_array['tables'][0])
+			return true;
+		if("informe_intersup" == $this->chrt_array['tables'][0])
+			return true;
+		if("contrato" == $this->chrt_array['tables'][0])
+			return true;
+		if("cert_status" == $this->chrt_array['tables'][0])
+			return true;
+		if("cert_status" == $this->chrt_array['tables'][0])
+			return true;
+		if("cert_status" == $this->chrt_array['tables'][0])
+			return true;
+		if("cert_status" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

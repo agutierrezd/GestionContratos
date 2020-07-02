@@ -20,6 +20,7 @@ $dalTablefuncionario["estado_funcionario"] = array("type"=>16,"varname"=>"estado
 $dalTablefuncionario["CargoProp"] = array("type"=>200,"varname"=>"CargoProp", "name" => "CargoProp");
 $dalTablefuncionario["GradoProp"] = array("type"=>200,"varname"=>"GradoProp", "name" => "GradoProp");
 $dalTablefuncionario["signpad"] = array("type"=>200,"varname"=>"signpad", "name" => "signpad");
+$dalTablefuncionario["photo"] = array("type"=>200,"varname"=>"photo", "name" => "photo");
 	$dalTablefuncionario["id"]["key"]=true;
 
 $dal_info["dbusers_at_localhost_edl_funcionario"] = &$dalTablefuncionario;

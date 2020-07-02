@@ -1365,8 +1365,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1391,8 +1390,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
 				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Email");
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-			$edata["validateAs"]["basicValidate"][] = "DenyDuplicated";
+								$edata["validateAs"]["basicValidate"][] = "DenyDuplicated";
 	$edata["validateAs"]["customMessages"]["DenyDuplicated"] = array("message" => "Correo %value% ya existe", "messageType" => "Text");
 
 	
@@ -1506,8 +1504,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1531,8 +1528,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 	//	End validation
 
@@ -1778,8 +1774,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1803,8 +1798,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 	//	End validation
 
@@ -1942,8 +1936,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 // End Lookup Settings
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1964,8 +1957,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 	//	End validation
 
@@ -2104,8 +2096,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 // End Lookup Settings
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -2126,8 +2117,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+							
 	
 	//	End validation
 
@@ -2266,8 +2256,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 // End Lookup Settings
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -2288,8 +2277,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+							
 	
 	//	End validation
 
@@ -2400,8 +2388,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -2425,8 +2412,7 @@ $tdatacontractor_master[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 	//	End validation
 
@@ -3432,6 +3418,8 @@ $proto45["m_columns"][] = "contractor_address";
 $proto45["m_columns"][] = "contractor_phone";
 $proto45["m_columns"][] = "contractor_mobile";
 $proto45["m_columns"][] = "contractor_city";
+$proto45["m_columns"][] = "contractor_sup_jerarquico";
+$proto45["m_columns"][] = "contractor_dependencia";
 $proto45["m_columns"][] = "bank_name";
 $proto45["m_columns"][] = "bank_cta_type";
 $proto45["m_columns"][] = "bank_cta_number";
@@ -3439,21 +3427,15 @@ $proto45["m_columns"][] = "iva_regimen";
 $proto45["m_columns"][] = "sys_update";
 $proto45["m_columns"][] = "sys_user";
 $proto45["m_columns"][] = "sys_date";
-$proto45["m_columns"][] = "sys_time";
 $proto45["m_columns"][] = "sys_level";
 $proto45["m_columns"][] = "sys_status";
-$proto45["m_columns"][] = "sys_rdn";
 $proto45["m_columns"][] = "sys_last_upd";
 $proto45["m_columns"][] = "groupid";
 $proto45["m_columns"][] = "active";
-$proto45["m_columns"][] = "contractor_medicinapre";
-$proto45["m_columns"][] = "contractor_picmonetaria";
 $proto45["m_columns"][] = "contractor_dependientes";
 $proto45["m_columns"][] = "contractor_medicinapre_file";
 $proto45["m_columns"][] = "contractor_picmonetaria_file";
 $proto45["m_columns"][] = "contractor_decljur";
-$proto45["m_columns"][] = "milmillas_reg";
-$proto45["m_columns"][] = "milmillas_date";
 $proto45["m_columns"][] = "contractor_eps";
 $proto45["m_columns"][] = "contractor_fondopensiones";
 $proto45["m_columns"][] = "contractor_cajacompensacion";
@@ -3462,16 +3444,17 @@ $proto45["m_columns"][] = "ubica_dep";
 $proto45["m_columns"][] = "ubica_extension";
 $proto45["m_columns"][] = "dem_genero";
 $proto45["m_columns"][] = "dem_ocupacion";
+$proto45["m_columns"][] = "dem_profesion";
 $proto45["m_columns"][] = "ct_fecha_nacimiento";
 $proto45["m_columns"][] = "ct_nacionalidad";
-$proto45["m_columns"][] = "contractor_dpto";
 $proto45["m_columns"][] = "dem_edad";
 $proto45["m_columns"][] = "dem_educacion";
 $proto45["m_columns"][] = "dem_discapacidad";
 $proto45["m_columns"][] = "emergencia";
-$proto45["m_columns"][] = "vigencia";
 $proto45["m_columns"][] = "terms_msj";
 $proto45["m_columns"][] = "terms_acepta";
+$proto45["m_columns"][] = "signature";
+$proto45["m_columns"][] = "pin";
 $obj = new SQLTable($proto45);
 
 $proto44["m_table"] = $obj;

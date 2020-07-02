@@ -149,12 +149,6 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_export_field3}","text":{$enlace_sigep_pdfvalue}},
 				
-				
-			{"hidden":"{$item_hide_export_field4}","text":{$iva_regimen_pdfvalue}},
-				
-				
-			{"hidden":"{$item_hide_export_field5}","text":{$ct_fecha_nacimiento_pdfvalue}},
-				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

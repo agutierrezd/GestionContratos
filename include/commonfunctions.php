@@ -297,6 +297,26 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("informe_intersup_plan_pagos" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
+	if ("informe_intersup_admin" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("q_001_dashboard" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("informe_intersup_estado" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("informe_tipo" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("informe_intersup_admin_copia" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("contrato_chart_tiporubro" == $shortTName && ($type===false || ($type!==false && $type == 3)))
+		return true;
+	if ("contrato_chart_estado" == $shortTName && ($type===false || ($type!==false && $type == 3)))
+		return true;
+	if ("contrato_chart_tipocont" == $shortTName && ($type===false || ($type!==false && $type == 3)))
+		return true;
+	if ("contrato_chart_dependencia" == $shortTName && ($type===false || ($type!==false && $type == 3)))
+		return true;
+	if ("contrato_chart_supjer" == $shortTName && ($type===false || ($type!==false && $type == 3)))
+		return true;
 	return false;
 }
 
@@ -770,6 +790,96 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="informe_intersup_plan_pagos";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("informe_intersup_admin");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="informe_intersup_admin";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_001_dashboard");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_001_dashboard";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("informe_intersup_estado");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="informe_intersup_estado";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("informe_tipo");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="informe_tipo";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("informe_intersup_admin_copia");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="informe_intersup_admin_copia";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contrato_chart_tiporubro");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contrato_chart_tiporubro";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contrato_chart_estado");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contrato_chart_estado";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contrato_chart_tipocont");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contrato_chart_tipocont";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contrato_chart_dependencia");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contrato_chart_dependencia";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contrato_chart_supjer");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contrato_chart_supjer";
+	}
 	return $arr;
 }
 
@@ -826,6 +936,16 @@ function GetTablesListWithoutSecurity()
 	$arr[]="cargo";
 	$arr[]="tparam_sn";
 	$arr[]="informe_intersup_plan_pagos";
+	$arr[]="informe_intersup_admin";
+	$arr[]="q_001_dashboard";
+	$arr[]="informe_intersup_estado";
+	$arr[]="informe_tipo";
+	$arr[]="informe_intersup_admin_copia";
+	$arr[]="contrato_chart_tiporubro";
+	$arr[]="contrato_chart_estado";
+	$arr[]="contrato_chart_tipocont";
+	$arr[]="contrato_chart_dependencia";
+	$arr[]="contrato_chart_supjer";
 	return $arr;
 }
 
@@ -869,6 +989,16 @@ function GetFullFieldName($field, $table = "", $addAs = true, $connection = null
  */
 function GetChartType($shorttable)
 {
+	if($shorttable=="contrato_chart_tiporubro")
+		return "2DDoughnut";
+	if($shorttable=="contrato_chart_estado")
+		return "2DDoughnut";
+	if($shorttable=="contrato_chart_tipocont")
+		return "2DColumn";
+	if($shorttable=="contrato_chart_dependencia")
+		return "2DBar";
+	if($shorttable=="contrato_chart_supjer")
+		return "2DColumn";
 	return "";
 }
 
@@ -1821,6 +1951,56 @@ function GetUserPermissionsStatic( $table )
 	{
 //	default permissions
 		return "ADESPI".$extraPerm;
+	}
+	if( $table=="informe_intersup_admin" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="q_001_dashboard" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="informe_intersup_estado" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="informe_tipo" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="informe_intersup_admin_copia" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="contrato_chart_tiporubro" )
+	{
+//	default permissions
+		return "S".$extraPerm;
+	}
+	if( $table=="contrato_chart_estado" )
+	{
+//	default permissions
+		return "S".$extraPerm;
+	}
+	if( $table=="contrato_chart_tipocont" )
+	{
+//	default permissions
+		return "S".$extraPerm;
+	}
+	if( $table=="contrato_chart_dependencia" )
+	{
+//	default permissions
+		return "S".$extraPerm;
+	}
+	if( $table=="contrato_chart_supjer" )
+	{
+//	default permissions
+		return "S".$extraPerm;
 	}
 	// grant nothing by default
 	return "";

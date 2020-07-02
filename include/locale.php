@@ -66,7 +66,7 @@ $locale_info["LOCALE_S2359"]="p. m.";
 $locale_info["LOCALE_STIME"]=":";
 $locale_info["LOCALE_STIMEFORMAT"]="h:mm:ss tt";
 //	currency settings
-$locale_info["LOCALE_ICURRDIGITS"]="0";
+$locale_info["LOCALE_ICURRDIGITS"]="2";
 $locale_info["LOCALE_ICURRENCY"]="2";
 $locale_info["LOCALE_INEGCURR"]="9";
 $locale_info["LOCALE_SCURRENCY"]="\$";

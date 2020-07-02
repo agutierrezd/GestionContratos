@@ -9,11 +9,11 @@ $tdatatparam_tipo_ct_002[".OwnerID"] = "";
 $tdatatparam_tipo_ct_002[".OriginalTable"] = "tparam_tipo_ct_002";
 
 
-$tdatatparam_tipo_ct_002[".pagesByType"] = my_json_decode( "{}" );
+$tdatatparam_tipo_ct_002[".pagesByType"] = my_json_decode( "{\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"]}" );
 $tdatatparam_tipo_ct_002[".originalPagesByType"] = $tdatatparam_tipo_ct_002[".pagesByType"];
-$tdatatparam_tipo_ct_002[".pages"] = types2pages( my_json_decode( "{}" ) );
+$tdatatparam_tipo_ct_002[".pages"] = types2pages( my_json_decode( "{\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"]}" ) );
 $tdatatparam_tipo_ct_002[".originalPages"] = $tdatatparam_tipo_ct_002[".pages"];
-$tdatatparam_tipo_ct_002[".defaultPages"] = my_json_decode( "{}" );
+$tdatatparam_tipo_ct_002[".defaultPages"] = my_json_decode( "{\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\"}" );
 $tdatatparam_tipo_ct_002[".originalDefaultPages"] = $tdatatparam_tipo_ct_002[".defaultPages"];
 
 //	field labels

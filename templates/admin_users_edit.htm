@@ -1944,6 +1944,52 @@
 
 
 {END phone1_fieldblock}
+											
+{BEGIN usr_directivo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_directivo}  r-vertical-field" 
+	data-fieldname="usr_directivo" 
+	data-signal-error-for="usr_directivo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field80" {$item_integrated_edit_field80} data-pageid="{$pageid}" data-field="usr_directivo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_usr_directivo}">
+		{BEGIN usr_directivo_label}{$label admin_users usr_directivo }{END usr_directivo_label}
+	</label>
+	<div class="r-edit-field">
+		{$usr_directivo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="usr_directivo">
+		<div class="text-muted" >
+		{$tooltip admin_users usr_directivo }		</div>
+	</div>
+</div>
+
+
+{END usr_directivo_fieldblock}
+											
+{BEGIN usr_dep_sup_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_usr_dep_sup}  r-vertical-field" 
+	data-fieldname="usr_dep_sup" 
+	data-signal-error-for="usr_dep_sup{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field81" {$item_integrated_edit_field81} data-pageid="{$pageid}" data-field="usr_dep_sup" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_usr_dep_sup}">
+		{BEGIN usr_dep_sup_label}{$label admin_users usr_dep_sup }{END usr_dep_sup_label}
+	</label>
+	<div class="r-edit-field">
+		{$usr_dep_sup_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="usr_dep_sup">
+		<div class="text-muted" >
+		{$tooltip admin_users usr_dep_sup }		</div>
+	</div>
+</div>
+
+
+{END usr_dep_sup_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}

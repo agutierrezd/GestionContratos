@@ -9,11 +9,11 @@ $tdatacontrato_estados[".OwnerID"] = "";
 $tdatacontrato_estados[".OriginalTable"] = "contrato_estados";
 
 
-$tdatacontrato_estados[".pagesByType"] = my_json_decode( "{}" );
+$tdatacontrato_estados[".pagesByType"] = my_json_decode( "{\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"]}" );
 $tdatacontrato_estados[".originalPagesByType"] = $tdatacontrato_estados[".pagesByType"];
-$tdatacontrato_estados[".pages"] = types2pages( my_json_decode( "{}" ) );
+$tdatacontrato_estados[".pages"] = types2pages( my_json_decode( "{\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"]}" ) );
 $tdatacontrato_estados[".originalPages"] = $tdatacontrato_estados[".pages"];
-$tdatacontrato_estados[".defaultPages"] = my_json_decode( "{}" );
+$tdatacontrato_estados[".defaultPages"] = my_json_decode( "{\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\"}" );
 $tdatacontrato_estados[".originalDefaultPages"] = $tdatacontrato_estados[".defaultPages"];
 
 //	field labels

@@ -9,11 +9,11 @@ $tdatainterventor_periodos[".OwnerID"] = "";
 $tdatainterventor_periodos[".OriginalTable"] = "interventor_periodos";
 
 
-$tdatainterventor_periodos[".pagesByType"] = my_json_decode( "{}" );
+$tdatainterventor_periodos[".pagesByType"] = my_json_decode( "{\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"]}" );
 $tdatainterventor_periodos[".originalPagesByType"] = $tdatainterventor_periodos[".pagesByType"];
-$tdatainterventor_periodos[".pages"] = types2pages( my_json_decode( "{}" ) );
+$tdatainterventor_periodos[".pages"] = types2pages( my_json_decode( "{\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"]}" ) );
 $tdatainterventor_periodos[".originalPages"] = $tdatainterventor_periodos[".pages"];
-$tdatainterventor_periodos[".defaultPages"] = my_json_decode( "{}" );
+$tdatainterventor_periodos[".defaultPages"] = my_json_decode( "{\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\"}" );
 $tdatainterventor_periodos[".originalDefaultPages"] = $tdatainterventor_periodos[".defaultPages"];
 
 //	field labels
