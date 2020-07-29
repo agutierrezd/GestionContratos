@@ -3201,8 +3201,6 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "informe_intersup_estado" ] = "informe_intersup_estado";
 	$projectEntities[ "informe_tipo" ] = array( "url" => "informe_tipo", "type" => 0 );
 	$projectEntitiesReverse[ "informe_tipo" ] = "informe_tipo";
-	$projectEntities[ "informe_intersup_admin_copia" ] = array( "url" => "informe_intersup_admin_copia", "type" => 1 );
-	$projectEntitiesReverse[ "informe_intersup_admin_copia" ] = "informe_intersup_admin_copia";
 	$projectEntities[ "contrato_chart_tiporubro" ] = array( "url" => "contrato_chart_tiporubro", "type" => 3 );
 	$projectEntitiesReverse[ "contrato_chart_tiporubro" ] = "contrato_chart_tiporubro";
 	$projectEntities[ "contrato_chart_estado" ] = array( "url" => "contrato_chart_estado", "type" => 3 );
@@ -3213,6 +3211,12 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "contrato_chart_dependencia" ] = "contrato_chart_dependencia";
 	$projectEntities[ "contrato_chart_supjer" ] = array( "url" => "contrato_chart_supjer", "type" => 3 );
 	$projectEntitiesReverse[ "contrato_chart_supjer" ] = "contrato_chart_supjer";
+	$projectEntities[ "secop" ] = array( "url" => "secop", "type" => 0 );
+	$projectEntitiesReverse[ "secop" ] = "secop";
+	$projectEntities[ "tparam_tipo_ct_rubro" ] = array( "url" => "tparam_tipo_ct_rubro", "type" => 0 );
+	$projectEntitiesReverse[ "tparam_tipo_ct_rubro" ] = "tparam_tipo_ct_rubro";
+	$projectEntities[ "q_001_dashboard_info" ] = array( "url" => "q_001_dashboard_info", "type" => 1 );
+	$projectEntitiesReverse[ "q_001_dashboard_info" ] = "q_001_dashboard_info";
 }
 
 function findTable( $table ) {

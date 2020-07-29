@@ -26,7 +26,49 @@ pdfDocument = {
 	"content": [
 				
 								
-''
+{
+	table: {
+	
+				
+		location: 'above-grid',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"stack": [
+		
+				
+			 {BEGIN details_q_001_dashboard_info}
+			{$displayDetailTable_q_001_dashboard_info }
+		{END details_q_001_dashboard_info},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
 ,
 		
 								

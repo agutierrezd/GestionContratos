@@ -36,8 +36,6 @@ $dalTableq_001_dashboard["VALORI"] = array("type"=>5,"varname"=>"VALORI", "name"
 $dalTableq_001_dashboard["cont_fechaapertura"] = array("type"=>7,"varname"=>"cont_fechaapertura", "name" => "cont_fechaapertura");
 $dalTableq_001_dashboard["CDP"] = array("type"=>200,"varname"=>"CDP", "name" => "CDP");
 $dalTableq_001_dashboard["RP"] = array("type"=>200,"varname"=>"RP", "name" => "RP");
-$dalTableq_001_dashboard["cont_modalidad"] = array("type"=>3,"varname"=>"cont_modalidad", "name" => "cont_modalidad");
-$dalTableq_001_dashboard["des_mod_proceso"] = array("type"=>200,"varname"=>"des_mod_proceso", "name" => "des_mod_proceso");
 $dalTableq_001_dashboard["cont_tipoproceso"] = array("type"=>200,"varname"=>"cont_tipoproceso", "name" => "cont_tipoproceso");
 $dalTableq_001_dashboard["cont_periodicidad"] = array("type"=>3,"varname"=>"cont_periodicidad", "name" => "cont_periodicidad");
 $dalTableq_001_dashboard["periodo_name"] = array("type"=>200,"varname"=>"periodo_name", "name" => "periodo_name");
@@ -52,6 +50,14 @@ $dalTableq_001_dashboard["cont_valormensual"] = array("type"=>5,"varname"=>"cont
 $dalTableq_001_dashboard["iva_regimen"] = array("type"=>16,"varname"=>"iva_regimen", "name" => "iva_regimen");
 $dalTableq_001_dashboard["CONTVINCULADO"] = array("type"=>200,"varname"=>"CONTVINCULADO", "name" => "CONTVINCULADO");
 $dalTableq_001_dashboard["cont_paa_id"] = array("type"=>3,"varname"=>"cont_paa_id", "name" => "cont_paa_id");
+$dalTableq_001_dashboard["cont_tipoc"] = array("type"=>3,"varname"=>"cont_tipoc", "name" => "cont_tipoc");
+$dalTableq_001_dashboard["ct_tipo_nombre"] = array("type"=>200,"varname"=>"ct_tipo_nombre", "name" => "ct_tipo_nombre");
+$dalTableq_001_dashboard["cont_modalidad"] = array("type"=>3,"varname"=>"cont_modalidad", "name" => "cont_modalidad");
+$dalTableq_001_dashboard["des_mod_proceso"] = array("type"=>200,"varname"=>"des_mod_proceso", "name" => "des_mod_proceso");
+$dalTableq_001_dashboard["cont_causalc"] = array("type"=>3,"varname"=>"cont_causalc", "name" => "cont_causalc");
+$dalTableq_001_dashboard["ctb_tipo_nombre"] = array("type"=>200,"varname"=>"ctb_tipo_nombre", "name" => "ctb_tipo_nombre");
+$dalTableq_001_dashboard["cont_secop_enlace"] = array("type"=>200,"varname"=>"cont_secop_enlace", "name" => "cont_secop_enlace");
+$dalTableq_001_dashboard["cont_dep"] = array("type"=>3,"varname"=>"cont_dep", "name" => "cont_dep");
 
 $dal_info["dbct_at_localhost__q_001_dashboard"] = &$dalTableq_001_dashboard;
 ?>

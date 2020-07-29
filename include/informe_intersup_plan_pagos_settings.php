@@ -1916,6 +1916,7 @@ $proto27["m_columns"][] = "inf_valor_pago";
 $proto27["m_columns"][] = "dias_calculados";
 $proto27["m_columns"][] = "dias_fiscales";
 $proto27["m_columns"][] = "valor_a_pagar";
+$proto27["m_columns"][] = "inf_st";
 $obj = new SQLTable($proto27);
 
 $proto26["m_table"] = $obj;

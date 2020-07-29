@@ -1149,7 +1149,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel contrato cont_catalogo_presupuestal }","bold":true},{"text":{$cont_catalogo_presupuestal_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field21}","stack":[{"text":"{$jslabel contrato cont_tipo_rubro }","bold":true},{"text":{$cont_tipo_rubro_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -1160,6 +1160,60 @@ pdfDocument = {
 											],
 				{END row_section3_1}
 								{BEGIN row_section3_2}
+				[
+												{BEGIN cellblock_section3_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel contrato cont_catalogo_presupuestal }","bold":true},{"text":{$cont_catalogo_presupuestal_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section3_c2}
+																			{BEGIN cellblock_section3_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section3_c3}
+											],
+				{END row_section3_2}
+								{BEGIN row_section3_3}
 				[
 												{BEGIN cellblock_section3_c1}
 {
@@ -1214,8 +1268,8 @@ pdfDocument = {
 
 {END cellblock_section3_c}
 											],
-				{END row_section3_2}
-								{BEGIN row_section3_3}
+				{END row_section3_3}
+								{BEGIN row_section3_4}
 				[
 												{BEGIN cellblock_section3_c6}
 {
@@ -1270,8 +1324,8 @@ pdfDocument = {
 
 {END cellblock_section3_c7}
 											],
-				{END row_section3_3}
-								{BEGIN row_section3_4}
+				{END row_section3_4}
+								{BEGIN row_section3_5}
 				[
 												{BEGIN cellblock_section3_c12}
 {
@@ -1324,7 +1378,7 @@ pdfDocument = {
 
 {END cellblock_section3_c13}
 											],
-				{END row_section3_4}
+				{END row_section3_5}
 									]
 					}
 				}]

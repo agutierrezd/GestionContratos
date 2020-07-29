@@ -10,6 +10,7 @@ $dalTableinforme_intersup_plan_pagos["inf_valor_pago"] = array("type"=>5,"varnam
 $dalTableinforme_intersup_plan_pagos["dias_calculados"] = array("type"=>3,"varname"=>"dias_calculados", "name" => "dias_calculados");
 $dalTableinforme_intersup_plan_pagos["dias_fiscales"] = array("type"=>3,"varname"=>"dias_fiscales", "name" => "dias_fiscales");
 $dalTableinforme_intersup_plan_pagos["valor_a_pagar"] = array("type"=>5,"varname"=>"valor_a_pagar", "name" => "valor_a_pagar");
+$dalTableinforme_intersup_plan_pagos["inf_st"] = array("type"=>16,"varname"=>"inf_st", "name" => "inf_st");
 	$dalTableinforme_intersup_plan_pagos["inf_id"]["key"]=true;
 
 $dal_info["dbct_at_localhost__informe_intersup_plan_pagos"] = &$dalTableinforme_intersup_plan_pagos;

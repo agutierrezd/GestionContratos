@@ -187,6 +187,13 @@ function InitLookupLinks()
 			$lookupTableLinks["tipo_si_no"]["contrato.cont_vigencias_futuras"] = array();
 		}
 		$lookupTableLinks["tipo_si_no"]["contrato.cont_vigencias_futuras"]["edit"] = array("table" => "contrato", "field" => "cont_vigencias_futuras", "page" => "edit");
+		if( !isset( $lookupTableLinks["secop"] ) ) {
+			$lookupTableLinks["secop"] = array();
+		}
+		if( !isset( $lookupTableLinks["secop"]["contrato.cont_secop_enlace"] )) {
+			$lookupTableLinks["secop"]["contrato.cont_secop_enlace"] = array();
+		}
+		$lookupTableLinks["secop"]["contrato.cont_secop_enlace"]["edit"] = array("table" => "contrato", "field" => "cont_secop_enlace", "page" => "edit");
 		if( !isset( $lookupTableLinks["tipo_si_no"] ) ) {
 			$lookupTableLinks["tipo_si_no"] = array();
 		}
@@ -194,6 +201,13 @@ function InitLookupLinks()
 			$lookupTableLinks["tipo_si_no"]["contrato.cont_sigep"] = array();
 		}
 		$lookupTableLinks["tipo_si_no"]["contrato.cont_sigep"]["edit"] = array("table" => "contrato", "field" => "cont_sigep", "page" => "edit");
+		if( !isset( $lookupTableLinks["tparam_tipo_ct_rubro"] ) ) {
+			$lookupTableLinks["tparam_tipo_ct_rubro"] = array();
+		}
+		if( !isset( $lookupTableLinks["tparam_tipo_ct_rubro"]["contrato.cont_tipo_rubro"] )) {
+			$lookupTableLinks["tparam_tipo_ct_rubro"]["contrato.cont_tipo_rubro"] = array();
+		}
+		$lookupTableLinks["tparam_tipo_ct_rubro"]["contrato.cont_tipo_rubro"]["edit"] = array("table" => "contrato", "field" => "cont_tipo_rubro", "page" => "edit");
 		if( !isset( $lookupTableLinks["tipo_docidentidad"] ) ) {
 			$lookupTableLinks["tipo_docidentidad"] = array();
 		}
@@ -439,41 +453,13 @@ function InitLookupLinks()
 			$lookupTableLinks["informe_tipo"]["informe_intersup_admin.inf_incumplimiento"] = array();
 		}
 		$lookupTableLinks["informe_tipo"]["informe_intersup_admin.inf_incumplimiento"]["edit"] = array("table" => "informe_intersup_admin", "field" => "inf_incumplimiento", "page" => "edit");
-		if( !isset( $lookupTableLinks["q_001_dashboard"] ) ) {
-			$lookupTableLinks["q_001_dashboard"] = array();
+		if( !isset( $lookupTableLinks["tparam_tipo_ct_rubro"] ) ) {
+			$lookupTableLinks["tparam_tipo_ct_rubro"] = array();
 		}
-		if( !isset( $lookupTableLinks["q_001_dashboard"]["informe_intersup_admin_copia.id_cont_fk"] )) {
-			$lookupTableLinks["q_001_dashboard"]["informe_intersup_admin_copia.id_cont_fk"] = array();
+		if( !isset( $lookupTableLinks["tparam_tipo_ct_rubro"]["contrato_chart_tiporubro.cont_tipo_rubro"] )) {
+			$lookupTableLinks["tparam_tipo_ct_rubro"]["contrato_chart_tiporubro.cont_tipo_rubro"] = array();
 		}
-		$lookupTableLinks["q_001_dashboard"]["informe_intersup_admin_copia.id_cont_fk"]["edit"] = array("table" => "informe_intersup_admin_copia", "field" => "id_cont_fk", "page" => "edit");
-		if( !isset( $lookupTableLinks["informe_intersup_estado"] ) ) {
-			$lookupTableLinks["informe_intersup_estado"] = array();
-		}
-		if( !isset( $lookupTableLinks["informe_intersup_estado"]["informe_intersup_admin_copia.inf_estado"] )) {
-			$lookupTableLinks["informe_intersup_estado"]["informe_intersup_admin_copia.inf_estado"] = array();
-		}
-		$lookupTableLinks["informe_intersup_estado"]["informe_intersup_admin_copia.inf_estado"]["edit"] = array("table" => "informe_intersup_admin_copia", "field" => "inf_estado", "page" => "edit");
-		if( !isset( $lookupTableLinks["interventor_periodos"] ) ) {
-			$lookupTableLinks["interventor_periodos"] = array();
-		}
-		if( !isset( $lookupTableLinks["interventor_periodos"]["informe_intersup_admin_copia.inf_periodicidad"] )) {
-			$lookupTableLinks["interventor_periodos"]["informe_intersup_admin_copia.inf_periodicidad"] = array();
-		}
-		$lookupTableLinks["interventor_periodos"]["informe_intersup_admin_copia.inf_periodicidad"]["edit"] = array("table" => "informe_intersup_admin_copia", "field" => "inf_periodicidad", "page" => "edit");
-		if( !isset( $lookupTableLinks["informe_tipo"] ) ) {
-			$lookupTableLinks["informe_tipo"] = array();
-		}
-		if( !isset( $lookupTableLinks["informe_tipo"]["informe_intersup_admin_copia.inf_declarainconf"] )) {
-			$lookupTableLinks["informe_tipo"]["informe_intersup_admin_copia.inf_declarainconf"] = array();
-		}
-		$lookupTableLinks["informe_tipo"]["informe_intersup_admin_copia.inf_declarainconf"]["edit"] = array("table" => "informe_intersup_admin_copia", "field" => "inf_declarainconf", "page" => "edit");
-		if( !isset( $lookupTableLinks["informe_tipo"] ) ) {
-			$lookupTableLinks["informe_tipo"] = array();
-		}
-		if( !isset( $lookupTableLinks["informe_tipo"]["informe_intersup_admin_copia.inf_incumplimiento"] )) {
-			$lookupTableLinks["informe_tipo"]["informe_intersup_admin_copia.inf_incumplimiento"] = array();
-		}
-		$lookupTableLinks["informe_tipo"]["informe_intersup_admin_copia.inf_incumplimiento"]["edit"] = array("table" => "informe_intersup_admin_copia", "field" => "inf_incumplimiento", "page" => "edit");
+		$lookupTableLinks["tparam_tipo_ct_rubro"]["contrato_chart_tiporubro.cont_tipo_rubro"]["search"] = array("table" => "contrato_chart_tiporubro", "field" => "cont_tipo_rubro", "page" => "search");
 		if( !isset( $lookupTableLinks["vigencia"] ) ) {
 			$lookupTableLinks["vigencia"] = array();
 		}

@@ -212,6 +212,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_export_field15}","text":{$cont_unspsc_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_export_field31}","text":{$cont_tipo_rubro_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

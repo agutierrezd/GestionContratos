@@ -9,11 +9,11 @@ $tdatacontrato_chart_estado[".OwnerID"] = "";
 $tdatacontrato_chart_estado[".OriginalTable"] = "cert_status";
 
 
-$tdatacontrato_chart_estado[".pagesByType"] = my_json_decode( "{\"chart\":[\"chart\"],\"search\":[\"search\"]}" );
+$tdatacontrato_chart_estado[".pagesByType"] = my_json_decode( "{\"chart\":[\"chart\"],\"masterchart\":[\"masterchart\"],\"search\":[\"search\"]}" );
 $tdatacontrato_chart_estado[".originalPagesByType"] = $tdatacontrato_chart_estado[".pagesByType"];
-$tdatacontrato_chart_estado[".pages"] = types2pages( my_json_decode( "{\"chart\":[\"chart\"],\"search\":[\"search\"]}" ) );
+$tdatacontrato_chart_estado[".pages"] = types2pages( my_json_decode( "{\"chart\":[\"chart\"],\"masterchart\":[\"masterchart\"],\"search\":[\"search\"]}" ) );
 $tdatacontrato_chart_estado[".originalPages"] = $tdatacontrato_chart_estado[".pages"];
-$tdatacontrato_chart_estado[".defaultPages"] = my_json_decode( "{\"chart\":\"chart\",\"search\":\"search\"}" );
+$tdatacontrato_chart_estado[".defaultPages"] = my_json_decode( "{\"chart\":\"chart\",\"masterchart\":\"masterchart\",\"search\":\"search\"}" );
 $tdatacontrato_chart_estado[".originalDefaultPages"] = $tdatacontrato_chart_estado[".defaultPages"];
 
 //	field labels
@@ -778,6 +778,35 @@ $page_titles["contrato_chart_estado"] = &$pageTitlescontrato_chart_estado;
 // -----------------start  prepare master-details data arrays ------------------------------//
 // tables which are detail tables for current table (master)
 $detailsTablesData["contrato_chart_estado"] = array();
+//	q_001_dashboard_info
+	
+	
+
+		$dIndex = 0;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="q_001_dashboard_info";
+		$detailsParam["dOriginalTable"] = "q_001_dashboard";
+
+
+
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "q_001_dashboard_info";
+	$detailsParam["dCaptionTable"] = GetTableCaption("q_001_dashboard_info");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["contrato_chart_estado"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["contrato_chart_estado"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["contrato_chart_estado"][$dIndex]["masterKeys"][]="cont_estado";
+
+				$detailsTablesData["contrato_chart_estado"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["contrato_chart_estado"][$dIndex]["detailKeys"][]="cont_estado";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["contrato_chart_estado"] = array();

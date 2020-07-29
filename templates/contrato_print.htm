@@ -170,7 +170,7 @@ data-pagetype="print"
 	{$cell_grid_cell_field33}
 	{$recordattrs}
 	class="
-		r-align-right r-ori-vert				{$cont_secop_enlace_class}
+		r-align-right				{$cont_secop_enlace_class}
 			"
 
 			data-field="cont_secop_enlace"
@@ -185,6 +185,13 @@ data-pagetype="print"
 	{$label contrato cont_secop_enlace }	</span>
 {END cont_secop_enlace_fieldheadercolumn}
 
+	 
+		{BEGIN cont_tipo_rubro_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label19" {$item_grid_field_label19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo_rubro">
+	{$label contrato cont_tipo_rubro }	</span>
+{END cont_tipo_rubro_fieldheadercolumn}
+
 	
 	</td>
 	{END cellblock_grid_cell_field33}
@@ -195,7 +202,7 @@ data-pagetype="print"
 	{$cell_grid_cell_field34}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_secop_enlace_class}
+						{$cont_secop_enlace_class}
 			"
 
 			data-field="cont_secop_enlace"
@@ -208,7 +215,12 @@ data-pagetype="print"
 <span data-itemtype="grid_field" data-itemid="grid_field18" {$item_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_enlace" data-default-width >
 {$cont_secop_enlace_value}
 </span>
-{END cont_secop_enlace_fieldcolumn}	
+{END cont_secop_enlace_fieldcolumn}	 
+		{BEGIN cont_tipo_rubro_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field19" {$item_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo_rubro" data-default-width >
+{$cont_tipo_rubro_value}
+</span>
+{END cont_tipo_rubro_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field34}
 						 

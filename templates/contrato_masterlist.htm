@@ -905,11 +905,20 @@
 	{$cell_grid_cell_label6}
 	{$recordattrs}
 	class="
-		r-align-right r-ori-vert			"
+		r-align-right r-ori-vert				{$cont_tipo_rubro_class}
+			"
 
+			data-field="cont_tipo_rubro"
 	
 	data-cellId="grid_cell_label6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
+
+	 
+		{BEGIN cont_tipo_rubro_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label5" {$item_grid_field_label5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo_rubro">
+	{$label contrato cont_tipo_rubro }	</span>
+{END cont_tipo_rubro_fieldheadercolumn}
 
 	
 	</td>
@@ -921,13 +930,20 @@
 	{$cell_grid_cell_field6}
 	{$recordattrs}
 	class="
-		 r-ori-vert			"
+		 r-ori-vert				{$cont_tipo_rubro_class}
+			"
 
+			data-field="cont_tipo_rubro"
 	
 	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
-	
+	 
+		{BEGIN cont_tipo_rubro_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field5" {$item_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo_rubro" data-default-width >
+{$cont_tipo_rubro_value}
+</span>
+{END cont_tipo_rubro_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field6}
 												</tr>

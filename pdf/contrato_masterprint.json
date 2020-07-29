@@ -425,6 +425,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_simple_grid_field13}","text":"{$jslabel contrato contnumero }","bold":true},
 				
+				
+			{"hidden":"{$item_hide_grid_field_label4}","text":"{$jslabel contrato cont_tipo_rubro }","bold":true},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'right',
@@ -451,9 +454,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_simple_grid_field10}","text":{$contnumero_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_grid_field4}","text":{$cont_tipo_rubro_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
-          "alignment": '{$contnumero_align}',
+          "alignment": 'left',
   },
 
 {END cellblock_grid_cell_label33}

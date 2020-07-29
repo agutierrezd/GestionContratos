@@ -272,6 +272,24 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_search_field51}","text":{$cont_paa_id_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_integrated_search_field52}","text":{$cont_tipoc_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field53}","text":{$ct_tipo_nombre_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field54}","text":{$cont_causalc_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field55}","text":{$ctb_tipo_nombre_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field56}","text":{$cont_secop_enlace_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field57}","text":{$cont_dep_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

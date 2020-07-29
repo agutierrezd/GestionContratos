@@ -559,10 +559,6 @@ class AuditTrailTable
 		{
 			return false;
 		}
-		if($table=="informe_intersup_admin_copia")
-		{
-			return false;
-		}
 		if($table=="contrato_chart_tiporubro")
 		{
 			return false;
@@ -580,6 +576,18 @@ class AuditTrailTable
 			return false;
 		}
 		if($table=="contrato_chart_supjer")
+		{
+			return false;
+		}
+		if($table=="secop")
+		{
+			return false;
+		}
+		if($table=="tparam_tipo_ct_rubro")
+		{
+			return false;
+		}
+		if($table=="q_001_dashboard_info")
 		{
 			return false;
 		}
@@ -1148,10 +1156,6 @@ class AuditTrailFile
 		{
 			return false;
 		}
-		if($table=="informe_intersup_admin_copia")
-		{
-			return false;
-		}
 		if($table=="contrato_chart_tiporubro")
 		{
 			return false;
@@ -1169,6 +1173,18 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="contrato_chart_supjer")
+		{
+			return false;
+		}
+		if($table=="secop")
+		{
+			return false;
+		}
+		if($table=="tparam_tipo_ct_rubro")
+		{
+			return false;
+		}
+		if($table=="q_001_dashboard_info")
 		{
 			return false;
 		}

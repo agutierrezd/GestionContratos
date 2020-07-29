@@ -228,7 +228,7 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNode["pageId"] = "";
 	$menuNode["openType"] = "None";
 
-	$menuNode["icon"] = "glyphicon-signal";
+	$menuNode["icon"] = "glyphicon-dashboard";
 	$menuNode["iconType"] = "2";
 	$menuNode["iconShow"] = "1";
 

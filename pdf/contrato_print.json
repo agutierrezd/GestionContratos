@@ -357,6 +357,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_grid_field_label18}","text":"{$jslabel contrato cont_secop_enlace }","bold":true},
 				
+				
+			{"hidden":"{$item_hide_grid_field_label19}","text":"{$jslabel contrato cont_tipo_rubro }","bold":true},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'right',
@@ -383,9 +386,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_grid_field18}","text":{$cont_secop_enlace_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_grid_field19}","text":{$cont_tipo_rubro_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
-          "alignment": '{$cont_secop_enlace_align}',
+          "alignment": 'left',
   },
 
 {END cellblock_grid_cell_field34}

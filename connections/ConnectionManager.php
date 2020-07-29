@@ -499,12 +499,14 @@ class ConnectionManager
 		$connectionsIds["q_001_dashboard"] = "dbct_at_localhost";
 		$connectionsIds["informe_intersup_estado"] = "dbct_at_localhost";
 		$connectionsIds["informe_tipo"] = "dbct_at_localhost";
-		$connectionsIds["informe_intersup_admin_copia"] = "dbct_at_localhost";
 		$connectionsIds["contrato_chart_tiporubro"] = "dbct_at_localhost";
 		$connectionsIds["contrato_chart_estado"] = "dbct_at_localhost";
 		$connectionsIds["contrato_chart_tipocont"] = "dbct_at_localhost";
 		$connectionsIds["contrato_chart_dependencia"] = "dbct_at_localhost";
 		$connectionsIds["contrato_chart_supjer"] = "dbct_at_localhost";
+		$connectionsIds["secop"] = "sep2_at_localhost";
+		$connectionsIds["tparam_tipo_ct_rubro"] = "dbct_at_localhost";
+		$connectionsIds["q_001_dashboard_info"] = "dbct_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

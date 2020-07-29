@@ -592,8 +592,6 @@ class Chart
 			return true;
 		if("informe_tipo" == $this->chrt_array['tables'][0])
 			return true;
-		if("informe_intersup" == $this->chrt_array['tables'][0])
-			return true;
 		if("contrato" == $this->chrt_array['tables'][0])
 			return true;
 		if("cert_status" == $this->chrt_array['tables'][0])
@@ -603,6 +601,12 @@ class Chart
 		if("cert_status" == $this->chrt_array['tables'][0])
 			return true;
 		if("cert_status" == $this->chrt_array['tables'][0])
+			return true;
+		if("secop" == $this->chrt_array['tables'][0])
+			return true;
+		if("tparam_tipo_ct_rubro" == $this->chrt_array['tables'][0])
+			return true;
+		if("q_001_dashboard" == $this->chrt_array['tables'][0])
 			return true;
 		return false;
 	}

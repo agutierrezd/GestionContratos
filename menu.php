@@ -31,6 +31,8 @@ if (($_SESSION["MyURL"] == "") || (!isLoggedAsGuest())) {
 require_once('include/xtempl.php');
 require_once(getabspath("classes/cipherer.php"));
 
+include_once(getabspath("include/contrato_events.php"));
+$tableEvents["contrato"] = new eventclass_contrato;
 include_once(getabspath("include/contrato_attached_events.php"));
 $tableEvents["contrato_attached"] = new eventclass_contrato_attached;
 include_once(getabspath("include/informe_intersup_plan_pagos_events.php"));

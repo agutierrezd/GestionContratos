@@ -63,12 +63,14 @@ $nonAdminTablesArr[] = "informe_intersup_admin";
 $nonAdminTablesArr[] = "q_001_dashboard";
 $nonAdminTablesArr[] = "informe_intersup_estado";
 $nonAdminTablesArr[] = "informe_tipo";
-$nonAdminTablesArr[] = "informe_intersup_admin_copia";
 $nonAdminTablesArr[] = "contrato_chart_tiporubro";
 $nonAdminTablesArr[] = "contrato_chart_estado";
 $nonAdminTablesArr[] = "contrato_chart_tipocont";
 $nonAdminTablesArr[] = "contrato_chart_dependencia";
 $nonAdminTablesArr[] = "contrato_chart_supjer";
+$nonAdminTablesArr[] = "secop";
+$nonAdminTablesArr[] = "tparam_tipo_ct_rubro";
+$nonAdminTablesArr[] = "q_001_dashboard_info";
 
 $ug_connection = $cman->getForUserGroups();
 

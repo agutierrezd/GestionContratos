@@ -438,6 +438,7 @@ class DB
 			$dalTables[$conn->connId][] = array("name" => "tparam_tipo_ct_001", "varname" => "dbct_at_localhost__tparam_tipo_ct_001", "altvarname" => "tparam_tipo_ct_001", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 			$dalTables[$conn->connId][] = array("name" => "tparam_tipo_ct_002", "varname" => "dbct_at_localhost__tparam_tipo_ct_002", "altvarname" => "tparam_tipo_ct_002", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 			$dalTables[$conn->connId][] = array("name" => "tparam_tipo_ct_regimen_tribut", "varname" => "dbct_at_localhost__tparam_tipo_ct_regimen_tribut", "altvarname" => "tparam_tipo_ct_regimen_tribut", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
+			$dalTables[$conn->connId][] = array("name" => "tparam_tipo_ct_rubro", "varname" => "dbct_at_localhost__tparam_tipo_ct_rubro", "altvarname" => "tparam_tipo_ct_rubro", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 			$dalTables[$conn->connId][] = array("name" => "vigencia", "varname" => "dbct_at_localhost__vigencia", "altvarname" => "vigencia", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 		}
 		if( "dbusers_at_localhost" == $conn->connId )
@@ -462,6 +463,7 @@ class DB
 			$dalTables[$conn->connId][] = array("name" => "q_rubros", "varname" => "sep2_at_localhost__q_rubros", "altvarname" => "q_rubros", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
 			$dalTables[$conn->connId][] = array("name" => "q_usos", "varname" => "sep2_at_localhost__q_usos", "altvarname" => "q_usos", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
 			$dalTables[$conn->connId][] = array("name" => "rep_prg001_catalogopresupuestal", "varname" => "sep2_at_localhost__rep_prg001_catalogopresupuestal", "altvarname" => "rep_prg001_catalogopresupuestal", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
+			$dalTables[$conn->connId][] = array("name" => "secop", "varname" => "sep2_at_localhost__secop", "altvarname" => "secop", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
 		}
 		if( "edl_at_localhost" == $conn->connId )
 		{

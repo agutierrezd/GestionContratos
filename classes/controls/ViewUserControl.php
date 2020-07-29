@@ -27,13 +27,6 @@ class ViewUserControl extends ViewControl
 			$this->settings["option1"] = "value";
 $this->settings["option2"] = 0;;
 		}	
-		if($this->viewFormat == "ViewQRCode")
-		{
-			$this->AddJSFile("include/runnerJS/controls/ViewQRCode.js", 'include/runnerJS/viewControls/ViewControl.js');
-			$this->getJSControl();
-			foreach ($this->settings as $settingName => $settingValue)
-				$this->addJSControlSetting($settingName, $settingValue);
-		}
 	}
 
 	/**

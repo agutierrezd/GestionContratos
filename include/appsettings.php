@@ -646,9 +646,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "268_1593177038";
+$projectBuildKey = "321_1596023373";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "268";
+$projectBuildNumber = "321";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -720,12 +720,14 @@ $tableCaptions["Spanish"]["informe_intersup_admin"] = "Informe Intersup Admin";
 $tableCaptions["Spanish"]["q_001_dashboard"] = "Q 001 Dashboard";
 $tableCaptions["Spanish"]["informe_intersup_estado"] = "Informe Intersup Estado";
 $tableCaptions["Spanish"]["informe_tipo"] = "Informe Tipo";
-$tableCaptions["Spanish"]["informe_intersup_admin_copia"] = "Informe Intersup Admin Copia";
 $tableCaptions["Spanish"]["contrato_chart_tiporubro"] = "Contrato Chart Tiporubro";
 $tableCaptions["Spanish"]["contrato_chart_estado"] = "Contrato Chart Estado";
 $tableCaptions["Spanish"]["contrato_chart_tipocont"] = "Contrato Chart Tipocont";
 $tableCaptions["Spanish"]["contrato_chart_dependencia"] = "Contrato Chart Dependencia";
 $tableCaptions["Spanish"]["contrato_chart_supjer"] = "Contrato Chart Supjer";
+$tableCaptions["Spanish"]["secop"] = "Secop";
+$tableCaptions["Spanish"]["tparam_tipo_ct_rubro"] = "Tparam Tipo Ct Rubro";
+$tableCaptions["Spanish"]["q_001_dashboard_info"] = "Q 001 Dashboard Info";
 
 
 $globalEvents = new class_GlobalEvents;

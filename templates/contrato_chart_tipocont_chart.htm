@@ -297,6 +297,26 @@
 					<div class="r-above">
 										{BEGIN above-grid_block}
 <div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="leftbar" {$form_above-grid} data-pageid="{$pageid}" >		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	
+">
+		{BEGIN firstAboveGridCell}
+		 
+			<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" 
+	data-orders="q_001_dashboard_info"
+			data-details-q_001_dashboard_info	>
+		<span data-details-inside data-short-table="q_001_dashboard_info">
+			</span>
+		<div data-details-preview>
+	</div>
+</div>
+			{END firstAboveGridCell}	
+	</div>					</div>
 	</div>		
 {END above-grid_block}
 						</div>

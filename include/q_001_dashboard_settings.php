@@ -184,6 +184,24 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsq_001_dashboard["Spanish"]["cont_paa_id"] = "Cont Paa Id";
 	$fieldToolTipsq_001_dashboard["Spanish"]["cont_paa_id"] = "";
 	$placeHoldersq_001_dashboard["Spanish"]["cont_paa_id"] = "";
+	$fieldLabelsq_001_dashboard["Spanish"]["cont_tipoc"] = "Cont Tipoc";
+	$fieldToolTipsq_001_dashboard["Spanish"]["cont_tipoc"] = "";
+	$placeHoldersq_001_dashboard["Spanish"]["cont_tipoc"] = "";
+	$fieldLabelsq_001_dashboard["Spanish"]["ct_tipo_nombre"] = "Ct Tipo Nombre";
+	$fieldToolTipsq_001_dashboard["Spanish"]["ct_tipo_nombre"] = "";
+	$placeHoldersq_001_dashboard["Spanish"]["ct_tipo_nombre"] = "";
+	$fieldLabelsq_001_dashboard["Spanish"]["cont_causalc"] = "Cont Causalc";
+	$fieldToolTipsq_001_dashboard["Spanish"]["cont_causalc"] = "";
+	$placeHoldersq_001_dashboard["Spanish"]["cont_causalc"] = "";
+	$fieldLabelsq_001_dashboard["Spanish"]["ctb_tipo_nombre"] = "Ctb Tipo Nombre";
+	$fieldToolTipsq_001_dashboard["Spanish"]["ctb_tipo_nombre"] = "";
+	$placeHoldersq_001_dashboard["Spanish"]["ctb_tipo_nombre"] = "";
+	$fieldLabelsq_001_dashboard["Spanish"]["cont_secop_enlace"] = "Cont Secop Enlace";
+	$fieldToolTipsq_001_dashboard["Spanish"]["cont_secop_enlace"] = "";
+	$placeHoldersq_001_dashboard["Spanish"]["cont_secop_enlace"] = "";
+	$fieldLabelsq_001_dashboard["Spanish"]["cont_dep"] = "Cont Dep";
+	$fieldToolTipsq_001_dashboard["Spanish"]["cont_dep"] = "";
+	$placeHoldersq_001_dashboard["Spanish"]["cont_dep"] = "";
 	if (count($fieldToolTipsq_001_dashboard["Spanish"]))
 		$tdataq_001_dashboard[".isUseToolTips"] = true;
 }
@@ -342,8 +360,6 @@ $tdataq_001_dashboard[".googleLikeFields"][] = "VALORI";
 $tdataq_001_dashboard[".googleLikeFields"][] = "cont_fechaapertura";
 $tdataq_001_dashboard[".googleLikeFields"][] = "CDP";
 $tdataq_001_dashboard[".googleLikeFields"][] = "RP";
-$tdataq_001_dashboard[".googleLikeFields"][] = "cont_modalidad";
-$tdataq_001_dashboard[".googleLikeFields"][] = "des_mod_proceso";
 $tdataq_001_dashboard[".googleLikeFields"][] = "cont_tipoproceso";
 $tdataq_001_dashboard[".googleLikeFields"][] = "cont_periodicidad";
 $tdataq_001_dashboard[".googleLikeFields"][] = "periodo_name";
@@ -358,6 +374,14 @@ $tdataq_001_dashboard[".googleLikeFields"][] = "cont_valormensual";
 $tdataq_001_dashboard[".googleLikeFields"][] = "iva_regimen";
 $tdataq_001_dashboard[".googleLikeFields"][] = "CONTVINCULADO";
 $tdataq_001_dashboard[".googleLikeFields"][] = "cont_paa_id";
+$tdataq_001_dashboard[".googleLikeFields"][] = "cont_tipoc";
+$tdataq_001_dashboard[".googleLikeFields"][] = "ct_tipo_nombre";
+$tdataq_001_dashboard[".googleLikeFields"][] = "cont_modalidad";
+$tdataq_001_dashboard[".googleLikeFields"][] = "des_mod_proceso";
+$tdataq_001_dashboard[".googleLikeFields"][] = "cont_causalc";
+$tdataq_001_dashboard[".googleLikeFields"][] = "ctb_tipo_nombre";
+$tdataq_001_dashboard[".googleLikeFields"][] = "cont_secop_enlace";
+$tdataq_001_dashboard[".googleLikeFields"][] = "cont_dep";
 
 
 
@@ -392,7 +416,7 @@ $tdataq_001_dashboard[".strOrderBy"] = $tstrOrderBy;
 
 $tdataq_001_dashboard[".orderindexes"] = array();
 
-$tdataq_001_dashboard[".sqlHead"] = "SELECT id_cont,  	CONTRATOID,  	LOGINLEVEL,  	VIGENCIA,  	cont_hash,  	cont_estado,  	estado_nombre,  	estado_img,  	estado_lnk,  	contractor_type,  	DOCID,  	contractor_name,  	contractor_lname,  	contractor_nombresfull,  	contractor_email,  	contractor_email_mincit,  	contractor_phone,  	contractor_mobile,  	CODC,  	NUMC,  	cont_tipo,  	nombre,  	cont_codrubro,  	cont_tipopre,  	cont_catalogo_presupuestal,  	cont_fase,  	FECHAI,  	FECHAINICIO,  	FECHAF,  	FECHAFINAL,  	QTYDIAS,  	QTYMESES,  	VALORI,  	cont_fechaapertura,  	CDP,  	RP,  	cont_modalidad,  	des_mod_proceso,  	cont_tipoproceso,  	cont_periodicidad,  	periodo_name,  	periodo_value,  	periodo_dias,  	cont_informessug,  	periodo_meses,  	cont_objeto,  	cont_fechavigencia,  	VALORINICIAL,  	cont_valormensual,  	iva_regimen,  	CONTVINCULADO,  	cont_paa_id";
+$tdataq_001_dashboard[".sqlHead"] = "SELECT id_cont,  	CONTRATOID,  	LOGINLEVEL,  	VIGENCIA,  	cont_hash,  	cont_estado,  	estado_nombre,  	estado_img,  	estado_lnk,  	contractor_type,  	DOCID,  	contractor_name,  	contractor_lname,  	contractor_nombresfull,  	contractor_email,  	contractor_email_mincit,  	contractor_phone,  	contractor_mobile,  	CODC,  	NUMC,  	cont_tipo,  	nombre,  	cont_codrubro,  	cont_tipopre,  	cont_catalogo_presupuestal,  	cont_fase,  	FECHAI,  	FECHAINICIO,  	FECHAF,  	FECHAFINAL,  	QTYDIAS,  	QTYMESES,  	VALORI,  	cont_fechaapertura,  	CDP,  	RP,  	cont_tipoproceso,  	cont_periodicidad,  	periodo_name,  	periodo_value,  	periodo_dias,  	cont_informessug,  	periodo_meses,  	cont_objeto,  	cont_fechavigencia,  	VALORINICIAL,  	cont_valormensual,  	iva_regimen,  	CONTVINCULADO,  	cont_paa_id,  	cont_tipoc,  	ct_tipo_nombre,  	cont_modalidad,  	des_mod_proceso,  	cont_causalc,  	ctb_tipo_nombre,  	cont_secop_enlace,  	cont_dep";
 $tdataq_001_dashboard[".sqlFrom"] = "FROM q_001_dashboard";
 $tdataq_001_dashboard[".sqlWhereExpr"] = "";
 $tdataq_001_dashboard[".sqlTail"] = "";
@@ -5300,280 +5324,10 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 
 	$tdataq_001_dashboard["RP"] = $fdata;
 		$tdataq_001_dashboard[".searchableFields"][] = "RP";
-//	cont_modalidad
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 37;
-	$fdata["strName"] = "cont_modalidad";
-	$fdata["GoodName"] = "cont_modalidad";
-	$fdata["ownerTable"] = "q_001_dashboard";
-	$fdata["Label"] = GetFieldLabel("q_001_dashboard","cont_modalidad");
-	$fdata["FieldType"] = 3;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "cont_modalidad";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "cont_modalidad";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataq_001_dashboard["cont_modalidad"] = $fdata;
-		$tdataq_001_dashboard[".searchableFields"][] = "cont_modalidad";
-//	des_mod_proceso
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 38;
-	$fdata["strName"] = "des_mod_proceso";
-	$fdata["GoodName"] = "des_mod_proceso";
-	$fdata["ownerTable"] = "q_001_dashboard";
-	$fdata["Label"] = GetFieldLabel("q_001_dashboard","des_mod_proceso");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "des_mod_proceso";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "des_mod_proceso";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=500";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataq_001_dashboard["des_mod_proceso"] = $fdata;
-		$tdataq_001_dashboard[".searchableFields"][] = "des_mod_proceso";
 //	cont_tipoproceso
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 39;
+	$fdata["Index"] = 37;
 	$fdata["strName"] = "cont_tipoproceso";
 	$fdata["GoodName"] = "cont_tipoproceso";
 	$fdata["ownerTable"] = "q_001_dashboard";
@@ -5708,7 +5462,7 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 //	cont_periodicidad
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 40;
+	$fdata["Index"] = 38;
 	$fdata["strName"] = "cont_periodicidad";
 	$fdata["GoodName"] = "cont_periodicidad";
 	$fdata["ownerTable"] = "q_001_dashboard";
@@ -5843,7 +5597,7 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 //	periodo_name
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 41;
+	$fdata["Index"] = 39;
 	$fdata["strName"] = "periodo_name";
 	$fdata["GoodName"] = "periodo_name";
 	$fdata["ownerTable"] = "q_001_dashboard";
@@ -5978,7 +5732,7 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 //	periodo_value
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 42;
+	$fdata["Index"] = 40;
 	$fdata["strName"] = "periodo_value";
 	$fdata["GoodName"] = "periodo_value";
 	$fdata["ownerTable"] = "q_001_dashboard";
@@ -6113,7 +5867,7 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 //	periodo_dias
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 43;
+	$fdata["Index"] = 41;
 	$fdata["strName"] = "periodo_dias";
 	$fdata["GoodName"] = "periodo_dias";
 	$fdata["ownerTable"] = "q_001_dashboard";
@@ -6248,7 +6002,7 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 //	cont_informessug
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 44;
+	$fdata["Index"] = 42;
 	$fdata["strName"] = "cont_informessug";
 	$fdata["GoodName"] = "cont_informessug";
 	$fdata["ownerTable"] = "q_001_dashboard";
@@ -6383,7 +6137,7 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 //	periodo_meses
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 45;
+	$fdata["Index"] = 43;
 	$fdata["strName"] = "periodo_meses";
 	$fdata["GoodName"] = "periodo_meses";
 	$fdata["ownerTable"] = "q_001_dashboard";
@@ -6518,7 +6272,7 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 //	cont_objeto
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 46;
+	$fdata["Index"] = 44;
 	$fdata["strName"] = "cont_objeto";
 	$fdata["GoodName"] = "cont_objeto";
 	$fdata["ownerTable"] = "q_001_dashboard";
@@ -6655,7 +6409,7 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 //	cont_fechavigencia
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 47;
+	$fdata["Index"] = 45;
 	$fdata["strName"] = "cont_fechavigencia";
 	$fdata["GoodName"] = "cont_fechavigencia";
 	$fdata["ownerTable"] = "q_001_dashboard";
@@ -6790,7 +6544,7 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 //	VALORINICIAL
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 48;
+	$fdata["Index"] = 46;
 	$fdata["strName"] = "VALORINICIAL";
 	$fdata["GoodName"] = "VALORINICIAL";
 	$fdata["ownerTable"] = "q_001_dashboard";
@@ -6926,7 +6680,7 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 //	cont_valormensual
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 49;
+	$fdata["Index"] = 47;
 	$fdata["strName"] = "cont_valormensual";
 	$fdata["GoodName"] = "cont_valormensual";
 	$fdata["ownerTable"] = "q_001_dashboard";
@@ -7062,7 +6816,7 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 //	iva_regimen
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 50;
+	$fdata["Index"] = 48;
 	$fdata["strName"] = "iva_regimen";
 	$fdata["GoodName"] = "iva_regimen";
 	$fdata["ownerTable"] = "q_001_dashboard";
@@ -7197,7 +6951,7 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 //	CONTVINCULADO
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 51;
+	$fdata["Index"] = 49;
 	$fdata["strName"] = "CONTVINCULADO";
 	$fdata["GoodName"] = "CONTVINCULADO";
 	$fdata["ownerTable"] = "q_001_dashboard";
@@ -7332,7 +7086,7 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 //	cont_paa_id
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 52;
+	$fdata["Index"] = 50;
 	$fdata["strName"] = "cont_paa_id";
 	$fdata["GoodName"] = "cont_paa_id";
 	$fdata["ownerTable"] = "q_001_dashboard";
@@ -7464,6 +7218,1086 @@ $tdataq_001_dashboard[".hideMobileList"] = array();
 
 	$tdataq_001_dashboard["cont_paa_id"] = $fdata;
 		$tdataq_001_dashboard[".searchableFields"][] = "cont_paa_id";
+//	cont_tipoc
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 51;
+	$fdata["strName"] = "cont_tipoc";
+	$fdata["GoodName"] = "cont_tipoc";
+	$fdata["ownerTable"] = "q_001_dashboard";
+	$fdata["Label"] = GetFieldLabel("q_001_dashboard","cont_tipoc");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cont_tipoc";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cont_tipoc";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataq_001_dashboard["cont_tipoc"] = $fdata;
+		$tdataq_001_dashboard[".searchableFields"][] = "cont_tipoc";
+//	ct_tipo_nombre
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 52;
+	$fdata["strName"] = "ct_tipo_nombre";
+	$fdata["GoodName"] = "ct_tipo_nombre";
+	$fdata["ownerTable"] = "q_001_dashboard";
+	$fdata["Label"] = GetFieldLabel("q_001_dashboard","ct_tipo_nombre");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "ct_tipo_nombre";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "ct_tipo_nombre";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=255";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataq_001_dashboard["ct_tipo_nombre"] = $fdata;
+		$tdataq_001_dashboard[".searchableFields"][] = "ct_tipo_nombre";
+//	cont_modalidad
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 53;
+	$fdata["strName"] = "cont_modalidad";
+	$fdata["GoodName"] = "cont_modalidad";
+	$fdata["ownerTable"] = "q_001_dashboard";
+	$fdata["Label"] = GetFieldLabel("q_001_dashboard","cont_modalidad");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cont_modalidad";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cont_modalidad";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataq_001_dashboard["cont_modalidad"] = $fdata;
+		$tdataq_001_dashboard[".searchableFields"][] = "cont_modalidad";
+//	des_mod_proceso
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 54;
+	$fdata["strName"] = "des_mod_proceso";
+	$fdata["GoodName"] = "des_mod_proceso";
+	$fdata["ownerTable"] = "q_001_dashboard";
+	$fdata["Label"] = GetFieldLabel("q_001_dashboard","des_mod_proceso");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "des_mod_proceso";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "des_mod_proceso";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=500";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataq_001_dashboard["des_mod_proceso"] = $fdata;
+		$tdataq_001_dashboard[".searchableFields"][] = "des_mod_proceso";
+//	cont_causalc
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 55;
+	$fdata["strName"] = "cont_causalc";
+	$fdata["GoodName"] = "cont_causalc";
+	$fdata["ownerTable"] = "q_001_dashboard";
+	$fdata["Label"] = GetFieldLabel("q_001_dashboard","cont_causalc");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cont_causalc";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cont_causalc";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataq_001_dashboard["cont_causalc"] = $fdata;
+		$tdataq_001_dashboard[".searchableFields"][] = "cont_causalc";
+//	ctb_tipo_nombre
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 56;
+	$fdata["strName"] = "ctb_tipo_nombre";
+	$fdata["GoodName"] = "ctb_tipo_nombre";
+	$fdata["ownerTable"] = "q_001_dashboard";
+	$fdata["Label"] = GetFieldLabel("q_001_dashboard","ctb_tipo_nombre");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "ctb_tipo_nombre";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "ctb_tipo_nombre";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=255";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataq_001_dashboard["ctb_tipo_nombre"] = $fdata;
+		$tdataq_001_dashboard[".searchableFields"][] = "ctb_tipo_nombre";
+//	cont_secop_enlace
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 57;
+	$fdata["strName"] = "cont_secop_enlace";
+	$fdata["GoodName"] = "cont_secop_enlace";
+	$fdata["ownerTable"] = "q_001_dashboard";
+	$fdata["Label"] = GetFieldLabel("q_001_dashboard","cont_secop_enlace");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cont_secop_enlace";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cont_secop_enlace";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=255";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataq_001_dashboard["cont_secop_enlace"] = $fdata;
+		$tdataq_001_dashboard[".searchableFields"][] = "cont_secop_enlace";
+//	cont_dep
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 58;
+	$fdata["strName"] = "cont_dep";
+	$fdata["GoodName"] = "cont_dep";
+	$fdata["ownerTable"] = "q_001_dashboard";
+	$fdata["Label"] = GetFieldLabel("q_001_dashboard","cont_dep");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cont_dep";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cont_dep";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataq_001_dashboard["cont_dep"] = $fdata;
+		$tdataq_001_dashboard[".searchableFields"][] = "cont_dep";
 
 
 $tables_data["q_001_dashboard"]=&$tdataq_001_dashboard;
@@ -7499,7 +8333,7 @@ function createSqlQuery_q_001_dashboard()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id_cont,  	CONTRATOID,  	LOGINLEVEL,  	VIGENCIA,  	cont_hash,  	cont_estado,  	estado_nombre,  	estado_img,  	estado_lnk,  	contractor_type,  	DOCID,  	contractor_name,  	contractor_lname,  	contractor_nombresfull,  	contractor_email,  	contractor_email_mincit,  	contractor_phone,  	contractor_mobile,  	CODC,  	NUMC,  	cont_tipo,  	nombre,  	cont_codrubro,  	cont_tipopre,  	cont_catalogo_presupuestal,  	cont_fase,  	FECHAI,  	FECHAINICIO,  	FECHAF,  	FECHAFINAL,  	QTYDIAS,  	QTYMESES,  	VALORI,  	cont_fechaapertura,  	CDP,  	RP,  	cont_modalidad,  	des_mod_proceso,  	cont_tipoproceso,  	cont_periodicidad,  	periodo_name,  	periodo_value,  	periodo_dias,  	cont_informessug,  	periodo_meses,  	cont_objeto,  	cont_fechavigencia,  	VALORINICIAL,  	cont_valormensual,  	iva_regimen,  	CONTVINCULADO,  	cont_paa_id";
+$proto0["m_strFieldList"] = "id_cont,  	CONTRATOID,  	LOGINLEVEL,  	VIGENCIA,  	cont_hash,  	cont_estado,  	estado_nombre,  	estado_img,  	estado_lnk,  	contractor_type,  	DOCID,  	contractor_name,  	contractor_lname,  	contractor_nombresfull,  	contractor_email,  	contractor_email_mincit,  	contractor_phone,  	contractor_mobile,  	CODC,  	NUMC,  	cont_tipo,  	nombre,  	cont_codrubro,  	cont_tipopre,  	cont_catalogo_presupuestal,  	cont_fase,  	FECHAI,  	FECHAINICIO,  	FECHAF,  	FECHAFINAL,  	QTYDIAS,  	QTYMESES,  	VALORI,  	cont_fechaapertura,  	CDP,  	RP,  	cont_tipoproceso,  	cont_periodicidad,  	periodo_name,  	periodo_value,  	periodo_dias,  	cont_informessug,  	periodo_meses,  	cont_objeto,  	cont_fechavigencia,  	VALORINICIAL,  	cont_valormensual,  	iva_regimen,  	CONTVINCULADO,  	cont_paa_id,  	cont_tipoc,  	ct_tipo_nombre,  	cont_modalidad,  	des_mod_proceso,  	cont_causalc,  	ctb_tipo_nombre,  	cont_secop_enlace,  	cont_dep";
 $proto0["m_strFrom"] = "FROM q_001_dashboard";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -8045,12 +8879,12 @@ $obj = new SQLFieldListItem($proto76);
 $proto0["m_fieldlist"][]=$obj;
 						$proto78=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cont_modalidad",
+	"m_strName" => "cont_tipoproceso",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto78["m_sql"] = "cont_modalidad";
+$proto78["m_sql"] = "cont_tipoproceso";
 $proto78["m_srcTableName"] = "q_001_dashboard";
 $proto78["m_expr"]=$obj;
 $proto78["m_alias"] = "";
@@ -8059,12 +8893,12 @@ $obj = new SQLFieldListItem($proto78);
 $proto0["m_fieldlist"][]=$obj;
 						$proto80=array();
 			$obj = new SQLField(array(
-	"m_strName" => "des_mod_proceso",
+	"m_strName" => "cont_periodicidad",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto80["m_sql"] = "des_mod_proceso";
+$proto80["m_sql"] = "cont_periodicidad";
 $proto80["m_srcTableName"] = "q_001_dashboard";
 $proto80["m_expr"]=$obj;
 $proto80["m_alias"] = "";
@@ -8073,12 +8907,12 @@ $obj = new SQLFieldListItem($proto80);
 $proto0["m_fieldlist"][]=$obj;
 						$proto82=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cont_tipoproceso",
+	"m_strName" => "periodo_name",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto82["m_sql"] = "cont_tipoproceso";
+$proto82["m_sql"] = "periodo_name";
 $proto82["m_srcTableName"] = "q_001_dashboard";
 $proto82["m_expr"]=$obj;
 $proto82["m_alias"] = "";
@@ -8087,12 +8921,12 @@ $obj = new SQLFieldListItem($proto82);
 $proto0["m_fieldlist"][]=$obj;
 						$proto84=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cont_periodicidad",
+	"m_strName" => "periodo_value",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto84["m_sql"] = "cont_periodicidad";
+$proto84["m_sql"] = "periodo_value";
 $proto84["m_srcTableName"] = "q_001_dashboard";
 $proto84["m_expr"]=$obj;
 $proto84["m_alias"] = "";
@@ -8101,12 +8935,12 @@ $obj = new SQLFieldListItem($proto84);
 $proto0["m_fieldlist"][]=$obj;
 						$proto86=array();
 			$obj = new SQLField(array(
-	"m_strName" => "periodo_name",
+	"m_strName" => "periodo_dias",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto86["m_sql"] = "periodo_name";
+$proto86["m_sql"] = "periodo_dias";
 $proto86["m_srcTableName"] = "q_001_dashboard";
 $proto86["m_expr"]=$obj;
 $proto86["m_alias"] = "";
@@ -8115,12 +8949,12 @@ $obj = new SQLFieldListItem($proto86);
 $proto0["m_fieldlist"][]=$obj;
 						$proto88=array();
 			$obj = new SQLField(array(
-	"m_strName" => "periodo_value",
+	"m_strName" => "cont_informessug",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto88["m_sql"] = "periodo_value";
+$proto88["m_sql"] = "cont_informessug";
 $proto88["m_srcTableName"] = "q_001_dashboard";
 $proto88["m_expr"]=$obj;
 $proto88["m_alias"] = "";
@@ -8129,12 +8963,12 @@ $obj = new SQLFieldListItem($proto88);
 $proto0["m_fieldlist"][]=$obj;
 						$proto90=array();
 			$obj = new SQLField(array(
-	"m_strName" => "periodo_dias",
+	"m_strName" => "periodo_meses",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto90["m_sql"] = "periodo_dias";
+$proto90["m_sql"] = "periodo_meses";
 $proto90["m_srcTableName"] = "q_001_dashboard";
 $proto90["m_expr"]=$obj;
 $proto90["m_alias"] = "";
@@ -8143,12 +8977,12 @@ $obj = new SQLFieldListItem($proto90);
 $proto0["m_fieldlist"][]=$obj;
 						$proto92=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cont_informessug",
+	"m_strName" => "cont_objeto",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto92["m_sql"] = "cont_informessug";
+$proto92["m_sql"] = "cont_objeto";
 $proto92["m_srcTableName"] = "q_001_dashboard";
 $proto92["m_expr"]=$obj;
 $proto92["m_alias"] = "";
@@ -8157,12 +8991,12 @@ $obj = new SQLFieldListItem($proto92);
 $proto0["m_fieldlist"][]=$obj;
 						$proto94=array();
 			$obj = new SQLField(array(
-	"m_strName" => "periodo_meses",
+	"m_strName" => "cont_fechavigencia",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto94["m_sql"] = "periodo_meses";
+$proto94["m_sql"] = "cont_fechavigencia";
 $proto94["m_srcTableName"] = "q_001_dashboard";
 $proto94["m_expr"]=$obj;
 $proto94["m_alias"] = "";
@@ -8171,12 +9005,12 @@ $obj = new SQLFieldListItem($proto94);
 $proto0["m_fieldlist"][]=$obj;
 						$proto96=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cont_objeto",
+	"m_strName" => "VALORINICIAL",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto96["m_sql"] = "cont_objeto";
+$proto96["m_sql"] = "VALORINICIAL";
 $proto96["m_srcTableName"] = "q_001_dashboard";
 $proto96["m_expr"]=$obj;
 $proto96["m_alias"] = "";
@@ -8185,12 +9019,12 @@ $obj = new SQLFieldListItem($proto96);
 $proto0["m_fieldlist"][]=$obj;
 						$proto98=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cont_fechavigencia",
+	"m_strName" => "cont_valormensual",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto98["m_sql"] = "cont_fechavigencia";
+$proto98["m_sql"] = "cont_valormensual";
 $proto98["m_srcTableName"] = "q_001_dashboard";
 $proto98["m_expr"]=$obj;
 $proto98["m_alias"] = "";
@@ -8199,12 +9033,12 @@ $obj = new SQLFieldListItem($proto98);
 $proto0["m_fieldlist"][]=$obj;
 						$proto100=array();
 			$obj = new SQLField(array(
-	"m_strName" => "VALORINICIAL",
+	"m_strName" => "iva_regimen",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto100["m_sql"] = "VALORINICIAL";
+$proto100["m_sql"] = "iva_regimen";
 $proto100["m_srcTableName"] = "q_001_dashboard";
 $proto100["m_expr"]=$obj;
 $proto100["m_alias"] = "";
@@ -8213,12 +9047,12 @@ $obj = new SQLFieldListItem($proto100);
 $proto0["m_fieldlist"][]=$obj;
 						$proto102=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cont_valormensual",
+	"m_strName" => "CONTVINCULADO",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto102["m_sql"] = "cont_valormensual";
+$proto102["m_sql"] = "CONTVINCULADO";
 $proto102["m_srcTableName"] = "q_001_dashboard";
 $proto102["m_expr"]=$obj;
 $proto102["m_alias"] = "";
@@ -8227,12 +9061,12 @@ $obj = new SQLFieldListItem($proto102);
 $proto0["m_fieldlist"][]=$obj;
 						$proto104=array();
 			$obj = new SQLField(array(
-	"m_strName" => "iva_regimen",
+	"m_strName" => "cont_paa_id",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto104["m_sql"] = "iva_regimen";
+$proto104["m_sql"] = "cont_paa_id";
 $proto104["m_srcTableName"] = "q_001_dashboard";
 $proto104["m_expr"]=$obj;
 $proto104["m_alias"] = "";
@@ -8241,12 +9075,12 @@ $obj = new SQLFieldListItem($proto104);
 $proto0["m_fieldlist"][]=$obj;
 						$proto106=array();
 			$obj = new SQLField(array(
-	"m_strName" => "CONTVINCULADO",
+	"m_strName" => "cont_tipoc",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto106["m_sql"] = "CONTVINCULADO";
+$proto106["m_sql"] = "cont_tipoc";
 $proto106["m_srcTableName"] = "q_001_dashboard";
 $proto106["m_expr"]=$obj;
 $proto106["m_alias"] = "";
@@ -8255,100 +9089,190 @@ $obj = new SQLFieldListItem($proto106);
 $proto0["m_fieldlist"][]=$obj;
 						$proto108=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cont_paa_id",
+	"m_strName" => "ct_tipo_nombre",
 	"m_strTable" => "q_001_dashboard",
 	"m_srcTableName" => "q_001_dashboard"
 ));
 
-$proto108["m_sql"] = "cont_paa_id";
+$proto108["m_sql"] = "ct_tipo_nombre";
 $proto108["m_srcTableName"] = "q_001_dashboard";
 $proto108["m_expr"]=$obj;
 $proto108["m_alias"] = "";
 $obj = new SQLFieldListItem($proto108);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto110=array();
-$proto110["m_link"] = "SQLL_MAIN";
-			$proto111=array();
-$proto111["m_strName"] = "q_001_dashboard";
-$proto111["m_srcTableName"] = "q_001_dashboard";
-$proto111["m_columns"] = array();
-$proto111["m_columns"][] = "id_cont";
-$proto111["m_columns"][] = "CONTRATOID";
-$proto111["m_columns"][] = "LOGINLEVEL";
-$proto111["m_columns"][] = "VIGENCIA";
-$proto111["m_columns"][] = "cont_hash";
-$proto111["m_columns"][] = "cont_estado";
-$proto111["m_columns"][] = "estado_nombre";
-$proto111["m_columns"][] = "estado_img";
-$proto111["m_columns"][] = "estado_lnk";
-$proto111["m_columns"][] = "contractor_type";
-$proto111["m_columns"][] = "DOCID";
-$proto111["m_columns"][] = "contractor_name";
-$proto111["m_columns"][] = "contractor_lname";
-$proto111["m_columns"][] = "contractor_nombresfull";
-$proto111["m_columns"][] = "contractor_email";
-$proto111["m_columns"][] = "contractor_email_mincit";
-$proto111["m_columns"][] = "contractor_phone";
-$proto111["m_columns"][] = "contractor_mobile";
-$proto111["m_columns"][] = "CODC";
-$proto111["m_columns"][] = "NUMC";
-$proto111["m_columns"][] = "cont_tipo";
-$proto111["m_columns"][] = "nombre";
-$proto111["m_columns"][] = "cont_codrubro";
-$proto111["m_columns"][] = "cont_tipopre";
-$proto111["m_columns"][] = "cont_catalogo_presupuestal";
-$proto111["m_columns"][] = "cont_fase";
-$proto111["m_columns"][] = "FECHAI";
-$proto111["m_columns"][] = "FECHAINICIO";
-$proto111["m_columns"][] = "FECHAF";
-$proto111["m_columns"][] = "FECHAFINAL";
-$proto111["m_columns"][] = "QTYDIAS";
-$proto111["m_columns"][] = "QTYMESES";
-$proto111["m_columns"][] = "VALORI";
-$proto111["m_columns"][] = "cont_fechaapertura";
-$proto111["m_columns"][] = "CDP";
-$proto111["m_columns"][] = "RP";
-$proto111["m_columns"][] = "cont_modalidad";
-$proto111["m_columns"][] = "des_mod_proceso";
-$proto111["m_columns"][] = "cont_tipoproceso";
-$proto111["m_columns"][] = "cont_periodicidad";
-$proto111["m_columns"][] = "periodo_name";
-$proto111["m_columns"][] = "periodo_value";
-$proto111["m_columns"][] = "periodo_dias";
-$proto111["m_columns"][] = "cont_informessug";
-$proto111["m_columns"][] = "periodo_meses";
-$proto111["m_columns"][] = "cont_objeto";
-$proto111["m_columns"][] = "cont_fechavigencia";
-$proto111["m_columns"][] = "VALORINICIAL";
-$proto111["m_columns"][] = "cont_valormensual";
-$proto111["m_columns"][] = "iva_regimen";
-$proto111["m_columns"][] = "CONTVINCULADO";
-$proto111["m_columns"][] = "cont_paa_id";
-$obj = new SQLTable($proto111);
+						$proto110=array();
+			$obj = new SQLField(array(
+	"m_strName" => "cont_modalidad",
+	"m_strTable" => "q_001_dashboard",
+	"m_srcTableName" => "q_001_dashboard"
+));
 
-$proto110["m_table"] = $obj;
-$proto110["m_sql"] = "q_001_dashboard";
-$proto110["m_alias"] = "";
+$proto110["m_sql"] = "cont_modalidad";
 $proto110["m_srcTableName"] = "q_001_dashboard";
-$proto112=array();
-$proto112["m_sql"] = "";
-$proto112["m_uniontype"] = "SQLL_UNKNOWN";
+$proto110["m_expr"]=$obj;
+$proto110["m_alias"] = "";
+$obj = new SQLFieldListItem($proto110);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto112=array();
+			$obj = new SQLField(array(
+	"m_strName" => "des_mod_proceso",
+	"m_strTable" => "q_001_dashboard",
+	"m_srcTableName" => "q_001_dashboard"
+));
+
+$proto112["m_sql"] = "des_mod_proceso";
+$proto112["m_srcTableName"] = "q_001_dashboard";
+$proto112["m_expr"]=$obj;
+$proto112["m_alias"] = "";
+$obj = new SQLFieldListItem($proto112);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto114=array();
+			$obj = new SQLField(array(
+	"m_strName" => "cont_causalc",
+	"m_strTable" => "q_001_dashboard",
+	"m_srcTableName" => "q_001_dashboard"
+));
+
+$proto114["m_sql"] = "cont_causalc";
+$proto114["m_srcTableName"] = "q_001_dashboard";
+$proto114["m_expr"]=$obj;
+$proto114["m_alias"] = "";
+$obj = new SQLFieldListItem($proto114);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto116=array();
+			$obj = new SQLField(array(
+	"m_strName" => "ctb_tipo_nombre",
+	"m_strTable" => "q_001_dashboard",
+	"m_srcTableName" => "q_001_dashboard"
+));
+
+$proto116["m_sql"] = "ctb_tipo_nombre";
+$proto116["m_srcTableName"] = "q_001_dashboard";
+$proto116["m_expr"]=$obj;
+$proto116["m_alias"] = "";
+$obj = new SQLFieldListItem($proto116);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto118=array();
+			$obj = new SQLField(array(
+	"m_strName" => "cont_secop_enlace",
+	"m_strTable" => "q_001_dashboard",
+	"m_srcTableName" => "q_001_dashboard"
+));
+
+$proto118["m_sql"] = "cont_secop_enlace";
+$proto118["m_srcTableName"] = "q_001_dashboard";
+$proto118["m_expr"]=$obj;
+$proto118["m_alias"] = "";
+$obj = new SQLFieldListItem($proto118);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto120=array();
+			$obj = new SQLField(array(
+	"m_strName" => "cont_dep",
+	"m_strTable" => "q_001_dashboard",
+	"m_srcTableName" => "q_001_dashboard"
+));
+
+$proto120["m_sql"] = "cont_dep";
+$proto120["m_srcTableName"] = "q_001_dashboard";
+$proto120["m_expr"]=$obj;
+$proto120["m_alias"] = "";
+$obj = new SQLFieldListItem($proto120);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto122=array();
+$proto122["m_link"] = "SQLL_MAIN";
+			$proto123=array();
+$proto123["m_strName"] = "q_001_dashboard";
+$proto123["m_srcTableName"] = "q_001_dashboard";
+$proto123["m_columns"] = array();
+$proto123["m_columns"][] = "id_cont";
+$proto123["m_columns"][] = "CONTRATOID";
+$proto123["m_columns"][] = "LOGINLEVEL";
+$proto123["m_columns"][] = "VIGENCIA";
+$proto123["m_columns"][] = "cont_hash";
+$proto123["m_columns"][] = "cont_estado";
+$proto123["m_columns"][] = "estado_nombre";
+$proto123["m_columns"][] = "estado_img";
+$proto123["m_columns"][] = "estado_lnk";
+$proto123["m_columns"][] = "contractor_type";
+$proto123["m_columns"][] = "DOCID";
+$proto123["m_columns"][] = "contractor_name";
+$proto123["m_columns"][] = "contractor_lname";
+$proto123["m_columns"][] = "contractor_nombresfull";
+$proto123["m_columns"][] = "contractor_email";
+$proto123["m_columns"][] = "contractor_email_mincit";
+$proto123["m_columns"][] = "contractor_phone";
+$proto123["m_columns"][] = "contractor_mobile";
+$proto123["m_columns"][] = "CODC";
+$proto123["m_columns"][] = "NUMC";
+$proto123["m_columns"][] = "cont_tipo";
+$proto123["m_columns"][] = "nombre";
+$proto123["m_columns"][] = "cont_codrubro";
+$proto123["m_columns"][] = "cont_tipopre";
+$proto123["m_columns"][] = "cont_catalogo_presupuestal";
+$proto123["m_columns"][] = "cont_fase";
+$proto123["m_columns"][] = "FECHAI";
+$proto123["m_columns"][] = "FECHAINICIO";
+$proto123["m_columns"][] = "FECHAF";
+$proto123["m_columns"][] = "FECHAFINAL";
+$proto123["m_columns"][] = "QTYDIAS";
+$proto123["m_columns"][] = "QTYMESES";
+$proto123["m_columns"][] = "VALORI";
+$proto123["m_columns"][] = "cont_fechaapertura";
+$proto123["m_columns"][] = "CDP";
+$proto123["m_columns"][] = "RP";
+$proto123["m_columns"][] = "cont_tipoproceso";
+$proto123["m_columns"][] = "cont_periodicidad";
+$proto123["m_columns"][] = "periodo_name";
+$proto123["m_columns"][] = "periodo_value";
+$proto123["m_columns"][] = "periodo_dias";
+$proto123["m_columns"][] = "cont_informessug";
+$proto123["m_columns"][] = "periodo_meses";
+$proto123["m_columns"][] = "cont_objeto";
+$proto123["m_columns"][] = "cont_fechavigencia";
+$proto123["m_columns"][] = "VALORINICIAL";
+$proto123["m_columns"][] = "cont_valormensual";
+$proto123["m_columns"][] = "iva_regimen";
+$proto123["m_columns"][] = "CONTVINCULADO";
+$proto123["m_columns"][] = "cont_paa_id";
+$proto123["m_columns"][] = "cont_tipoc";
+$proto123["m_columns"][] = "ct_tipo_nombre";
+$proto123["m_columns"][] = "cont_modalidad";
+$proto123["m_columns"][] = "des_mod_proceso";
+$proto123["m_columns"][] = "cont_causalc";
+$proto123["m_columns"][] = "ctb_tipo_nombre";
+$proto123["m_columns"][] = "cont_secop_enlace";
+$proto123["m_columns"][] = "cont_dep";
+$obj = new SQLTable($proto123);
+
+$proto122["m_table"] = $obj;
+$proto122["m_sql"] = "q_001_dashboard";
+$proto122["m_alias"] = "";
+$proto122["m_srcTableName"] = "q_001_dashboard";
+$proto124=array();
+$proto124["m_sql"] = "";
+$proto124["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto112["m_column"]=$obj;
-$proto112["m_contained"] = array();
-$proto112["m_strCase"] = "";
-$proto112["m_havingmode"] = false;
-$proto112["m_inBrackets"] = false;
-$proto112["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto112);
+$proto124["m_column"]=$obj;
+$proto124["m_contained"] = array();
+$proto124["m_strCase"] = "";
+$proto124["m_havingmode"] = false;
+$proto124["m_inBrackets"] = false;
+$proto124["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto124);
 
-$proto110["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto110);
+$proto122["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto122);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -8364,7 +9288,7 @@ $queryData_q_001_dashboard = createSqlQuery_q_001_dashboard();
 	
 										;
 
-																																																				
+																																																										
 
 $tdataq_001_dashboard[".sqlquery"] = $queryData_q_001_dashboard;
 

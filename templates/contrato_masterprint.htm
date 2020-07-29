@@ -236,7 +236,7 @@
 	{$cell_grid_cell_label32}
 	{$recordattrs}
 	class="
-		r-align-right r-ori-vert				{$contnumero_class}
+		r-align-right				{$contnumero_class}
 			"
 
 			data-field="contnumero"
@@ -251,6 +251,13 @@
 	{$label contrato contnumero }	</span>
 {END contnumero_fieldheadercolumn}
 
+	 
+		{BEGIN cont_tipo_rubro_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label4" {$item_grid_field_label4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo_rubro">
+	{$label contrato cont_tipo_rubro }	</span>
+{END cont_tipo_rubro_fieldheadercolumn}
+
 	
 	</td>
 	{END cellblock_grid_cell_label32}
@@ -261,7 +268,7 @@
 	{$cell_grid_cell_label33}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$contnumero_class}
+						{$contnumero_class}
 			"
 
 			data-field="contnumero"
@@ -274,7 +281,12 @@
 <span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contnumero" data-default-width >
 {$contnumero_value}
 </span>
-{END contnumero_fieldcolumn}	
+{END contnumero_fieldcolumn}	 
+		{BEGIN cont_tipo_rubro_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field4" {$item_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo_rubro" data-default-width >
+{$cont_tipo_rubro_value}
+</span>
+{END cont_tipo_rubro_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_label33}
 												</tr>
