@@ -187,13 +187,6 @@ function InitLookupLinks()
 			$lookupTableLinks["tipo_si_no"]["contrato.cont_vigencias_futuras"] = array();
 		}
 		$lookupTableLinks["tipo_si_no"]["contrato.cont_vigencias_futuras"]["edit"] = array("table" => "contrato", "field" => "cont_vigencias_futuras", "page" => "edit");
-		if( !isset( $lookupTableLinks["secop"] ) ) {
-			$lookupTableLinks["secop"] = array();
-		}
-		if( !isset( $lookupTableLinks["secop"]["contrato.cont_secop_enlace"] )) {
-			$lookupTableLinks["secop"]["contrato.cont_secop_enlace"] = array();
-		}
-		$lookupTableLinks["secop"]["contrato.cont_secop_enlace"]["edit"] = array("table" => "contrato", "field" => "cont_secop_enlace", "page" => "edit");
 		if( !isset( $lookupTableLinks["tipo_si_no"] ) ) {
 			$lookupTableLinks["tipo_si_no"] = array();
 		}
@@ -208,6 +201,13 @@ function InitLookupLinks()
 			$lookupTableLinks["tparam_tipo_ct_rubro"]["contrato.cont_tipo_rubro"] = array();
 		}
 		$lookupTableLinks["tparam_tipo_ct_rubro"]["contrato.cont_tipo_rubro"]["edit"] = array("table" => "contrato", "field" => "cont_tipo_rubro", "page" => "edit");
+		if( !isset( $lookupTableLinks["q_divipola"] ) ) {
+			$lookupTableLinks["q_divipola"] = array();
+		}
+		if( !isset( $lookupTableLinks["q_divipola"]["contrato.cont_munejec"] )) {
+			$lookupTableLinks["q_divipola"]["contrato.cont_munejec"] = array();
+		}
+		$lookupTableLinks["q_divipola"]["contrato.cont_munejec"]["edit"] = array("table" => "contrato", "field" => "cont_munejec", "page" => "edit");
 		if( !isset( $lookupTableLinks["tipo_docidentidad"] ) ) {
 			$lookupTableLinks["tipo_docidentidad"] = array();
 		}
@@ -411,13 +411,41 @@ function InitLookupLinks()
 			$lookupTableLinks["contrato"]["informe_intersup_plan_pagos.id_cont_fk"] = array();
 		}
 		$lookupTableLinks["contrato"]["informe_intersup_plan_pagos.id_cont_fk"]["edit"] = array("table" => "informe_intersup_plan_pagos", "field" => "id_cont_fk", "page" => "edit");
-		if( !isset( $lookupTableLinks[""] ) ) {
-			$lookupTableLinks[""] = array();
+		if( !isset( $lookupTableLinks["q_000_control_informes"] ) ) {
+			$lookupTableLinks["q_000_control_informes"] = array();
 		}
-		if( !isset( $lookupTableLinks[""]["informe_intersup_plan_pagos.inf_consecutivo"] )) {
-			$lookupTableLinks[""]["informe_intersup_plan_pagos.inf_consecutivo"] = array();
+		if( !isset( $lookupTableLinks["q_000_control_informes"]["informe_intersup_plan_pagos.inf_consecutivo"] )) {
+			$lookupTableLinks["q_000_control_informes"]["informe_intersup_plan_pagos.inf_consecutivo"] = array();
 		}
-		$lookupTableLinks[""]["informe_intersup_plan_pagos.inf_consecutivo"]["edit"] = array("table" => "informe_intersup_plan_pagos", "field" => "inf_consecutivo", "page" => "edit");
+		$lookupTableLinks["q_000_control_informes"]["informe_intersup_plan_pagos.inf_consecutivo"]["add"] = array("table" => "informe_intersup_plan_pagos", "field" => "inf_consecutivo", "page" => "add");
+		if( !isset( $lookupTableLinks["q_000_control_informes"] ) ) {
+			$lookupTableLinks["q_000_control_informes"] = array();
+		}
+		if( !isset( $lookupTableLinks["q_000_control_informes"]["informe_intersup_plan_pagos.inf_consecutivo"] )) {
+			$lookupTableLinks["q_000_control_informes"]["informe_intersup_plan_pagos.inf_consecutivo"] = array();
+		}
+		$lookupTableLinks["q_000_control_informes"]["informe_intersup_plan_pagos.inf_consecutivo"]["search"] = array("table" => "informe_intersup_plan_pagos", "field" => "inf_consecutivo", "page" => "search");
+		if( !isset( $lookupTableLinks["informe_intersup_plan_pagos_st"] ) ) {
+			$lookupTableLinks["informe_intersup_plan_pagos_st"] = array();
+		}
+		if( !isset( $lookupTableLinks["informe_intersup_plan_pagos_st"]["informe_intersup_plan_pagos.inf_st"] )) {
+			$lookupTableLinks["informe_intersup_plan_pagos_st"]["informe_intersup_plan_pagos.inf_st"] = array();
+		}
+		$lookupTableLinks["informe_intersup_plan_pagos_st"]["informe_intersup_plan_pagos.inf_st"]["edit"] = array("table" => "informe_intersup_plan_pagos", "field" => "inf_st", "page" => "edit");
+		if( !isset( $lookupTableLinks["informe_intersup_plan_pagos_st"] ) ) {
+			$lookupTableLinks["informe_intersup_plan_pagos_st"] = array();
+		}
+		if( !isset( $lookupTableLinks["informe_intersup_plan_pagos_st"]["informe_intersup_plan_pagos.inf_st"] )) {
+			$lookupTableLinks["informe_intersup_plan_pagos_st"]["informe_intersup_plan_pagos.inf_st"] = array();
+		}
+		$lookupTableLinks["informe_intersup_plan_pagos_st"]["informe_intersup_plan_pagos.inf_st"]["add"] = array("table" => "informe_intersup_plan_pagos", "field" => "inf_st", "page" => "add");
+		if( !isset( $lookupTableLinks["informe_intersup_plan_pagos_st"] ) ) {
+			$lookupTableLinks["informe_intersup_plan_pagos_st"] = array();
+		}
+		if( !isset( $lookupTableLinks["informe_intersup_plan_pagos_st"]["informe_intersup_plan_pagos.inf_st"] )) {
+			$lookupTableLinks["informe_intersup_plan_pagos_st"]["informe_intersup_plan_pagos.inf_st"] = array();
+		}
+		$lookupTableLinks["informe_intersup_plan_pagos_st"]["informe_intersup_plan_pagos.inf_st"]["search"] = array("table" => "informe_intersup_plan_pagos", "field" => "inf_st", "page" => "search");
 		if( !isset( $lookupTableLinks["q_001_dashboard"] ) ) {
 			$lookupTableLinks["q_001_dashboard"] = array();
 		}
@@ -523,6 +551,188 @@ function InitLookupLinks()
 			$lookupTableLinks["dependencias_001"]["contrato_chart_supjer.contractor_sup_jerarquico"] = array();
 		}
 		$lookupTableLinks["dependencias_001"]["contrato_chart_supjer.contractor_sup_jerarquico"]["search"] = array("table" => "contrato_chart_supjer", "field" => "contractor_sup_jerarquico", "page" => "search");
+		if( !isset( $lookupTableLinks["contractor_master"] ) ) {
+			$lookupTableLinks["contractor_master"] = array();
+		}
+		if( !isset( $lookupTableLinks["contractor_master"]["q_bandejaentrada_supervisores.cont_nit_contra_taname"] )) {
+			$lookupTableLinks["contractor_master"]["q_bandejaentrada_supervisores.cont_nit_contra_taname"] = array();
+		}
+		$lookupTableLinks["contractor_master"]["q_bandejaentrada_supervisores.cont_nit_contra_taname"]["edit"] = array("table" => "q_bandejaentrada_supervisores", "field" => "cont_nit_contra_taname", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato_estados"] ) ) {
+			$lookupTableLinks["contrato_estados"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato_estados"]["q_bandejaentrada_supervisores.cont_estado"] )) {
+			$lookupTableLinks["contrato_estados"]["q_bandejaentrada_supervisores.cont_estado"] = array();
+		}
+		$lookupTableLinks["contrato_estados"]["q_bandejaentrada_supervisores.cont_estado"]["edit"] = array("table" => "q_bandejaentrada_supervisores", "field" => "cont_estado", "page" => "edit");
+		if( !isset( $lookupTableLinks["interventor_periodos"] ) ) {
+			$lookupTableLinks["interventor_periodos"] = array();
+		}
+		if( !isset( $lookupTableLinks["interventor_periodos"]["q_bandejaentrada_supervisores.cont_periodicidad"] )) {
+			$lookupTableLinks["interventor_periodos"]["q_bandejaentrada_supervisores.cont_periodicidad"] = array();
+		}
+		$lookupTableLinks["interventor_periodos"]["q_bandejaentrada_supervisores.cont_periodicidad"]["edit"] = array("table" => "q_bandejaentrada_supervisores", "field" => "cont_periodicidad", "page" => "edit");
+		if( !isset( $lookupTableLinks["cargo"] ) ) {
+			$lookupTableLinks["cargo"] = array();
+		}
+		if( !isset( $lookupTableLinks["cargo"]["q_bandejaentrada_supervisores.cargo_id"] )) {
+			$lookupTableLinks["cargo"]["q_bandejaentrada_supervisores.cargo_id"] = array();
+		}
+		$lookupTableLinks["cargo"]["q_bandejaentrada_supervisores.cargo_id"]["edit"] = array("table" => "q_bandejaentrada_supervisores", "field" => "cargo_id", "page" => "edit");
+		if( !isset( $lookupTableLinks["dependencia"] ) ) {
+			$lookupTableLinks["dependencia"] = array();
+		}
+		if( !isset( $lookupTableLinks["dependencia"]["q_bandejaentrada_supervisores.dependencia_id"] )) {
+			$lookupTableLinks["dependencia"]["q_bandejaentrada_supervisores.dependencia_id"] = array();
+		}
+		$lookupTableLinks["dependencia"]["q_bandejaentrada_supervisores.dependencia_id"]["edit"] = array("table" => "q_bandejaentrada_supervisores", "field" => "dependencia_id", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato"] ) ) {
+			$lookupTableLinks["contrato"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato"]["contrato_oe.id_cont_fk"] )) {
+			$lookupTableLinks["contrato"]["contrato_oe.id_cont_fk"] = array();
+		}
+		$lookupTableLinks["contrato"]["contrato_oe.id_cont_fk"]["edit"] = array("table" => "contrato_oe", "field" => "id_cont_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["q_oe_ordinal"] ) ) {
+			$lookupTableLinks["q_oe_ordinal"] = array();
+		}
+		if( !isset( $lookupTableLinks["q_oe_ordinal"]["contrato_oe.oe_ordinal"] )) {
+			$lookupTableLinks["q_oe_ordinal"]["contrato_oe.oe_ordinal"] = array();
+		}
+		$lookupTableLinks["q_oe_ordinal"]["contrato_oe.oe_ordinal"]["add"] = array("table" => "contrato_oe", "field" => "oe_ordinal", "page" => "add");
+		if( !isset( $lookupTableLinks["q_oe_ordinal"] ) ) {
+			$lookupTableLinks["q_oe_ordinal"] = array();
+		}
+		if( !isset( $lookupTableLinks["q_oe_ordinal"]["contrato_oe.oe_ordinal"] )) {
+			$lookupTableLinks["q_oe_ordinal"]["contrato_oe.oe_ordinal"] = array();
+		}
+		$lookupTableLinks["q_oe_ordinal"]["contrato_oe.oe_ordinal"]["search"] = array("table" => "contrato_oe", "field" => "oe_ordinal", "page" => "search");
+		if( !isset( $lookupTableLinks["contractor_master"] ) ) {
+			$lookupTableLinks["contractor_master"] = array();
+		}
+		if( !isset( $lookupTableLinks["contractor_master"]["q_bandejaentrada_supervisores1.cont_nit_contra_taname"] )) {
+			$lookupTableLinks["contractor_master"]["q_bandejaentrada_supervisores1.cont_nit_contra_taname"] = array();
+		}
+		$lookupTableLinks["contractor_master"]["q_bandejaentrada_supervisores1.cont_nit_contra_taname"]["edit"] = array("table" => "q_bandejaentrada_supervisores1", "field" => "cont_nit_contra_taname", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato_estados"] ) ) {
+			$lookupTableLinks["contrato_estados"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato_estados"]["q_bandejaentrada_supervisores1.cont_estado"] )) {
+			$lookupTableLinks["contrato_estados"]["q_bandejaentrada_supervisores1.cont_estado"] = array();
+		}
+		$lookupTableLinks["contrato_estados"]["q_bandejaentrada_supervisores1.cont_estado"]["edit"] = array("table" => "q_bandejaentrada_supervisores1", "field" => "cont_estado", "page" => "edit");
+		if( !isset( $lookupTableLinks["interventor_periodos"] ) ) {
+			$lookupTableLinks["interventor_periodos"] = array();
+		}
+		if( !isset( $lookupTableLinks["interventor_periodos"]["q_bandejaentrada_supervisores1.cont_periodicidad"] )) {
+			$lookupTableLinks["interventor_periodos"]["q_bandejaentrada_supervisores1.cont_periodicidad"] = array();
+		}
+		$lookupTableLinks["interventor_periodos"]["q_bandejaentrada_supervisores1.cont_periodicidad"]["edit"] = array("table" => "q_bandejaentrada_supervisores1", "field" => "cont_periodicidad", "page" => "edit");
+		if( !isset( $lookupTableLinks["cargo"] ) ) {
+			$lookupTableLinks["cargo"] = array();
+		}
+		if( !isset( $lookupTableLinks["cargo"]["q_bandejaentrada_supervisores1.cargo_id"] )) {
+			$lookupTableLinks["cargo"]["q_bandejaentrada_supervisores1.cargo_id"] = array();
+		}
+		$lookupTableLinks["cargo"]["q_bandejaentrada_supervisores1.cargo_id"]["edit"] = array("table" => "q_bandejaentrada_supervisores1", "field" => "cargo_id", "page" => "edit");
+		if( !isset( $lookupTableLinks["dependencia"] ) ) {
+			$lookupTableLinks["dependencia"] = array();
+		}
+		if( !isset( $lookupTableLinks["dependencia"]["q_bandejaentrada_supervisores1.dependencia_id"] )) {
+			$lookupTableLinks["dependencia"]["q_bandejaentrada_supervisores1.dependencia_id"] = array();
+		}
+		$lookupTableLinks["dependencia"]["q_bandejaentrada_supervisores1.dependencia_id"]["edit"] = array("table" => "q_bandejaentrada_supervisores1", "field" => "dependencia_id", "page" => "edit");
+		if( !isset( $lookupTableLinks["q_bandejaentrada_supervisores2"] ) ) {
+			$lookupTableLinks["q_bandejaentrada_supervisores2"] = array();
+		}
+		if( !isset( $lookupTableLinks["q_bandejaentrada_supervisores2"]["informe_intersup.id_cont_fk"] )) {
+			$lookupTableLinks["q_bandejaentrada_supervisores2"]["informe_intersup.id_cont_fk"] = array();
+		}
+		$lookupTableLinks["q_bandejaentrada_supervisores2"]["informe_intersup.id_cont_fk"]["edit"] = array("table" => "informe_intersup", "field" => "id_cont_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["informe_intersup_plan_pagos"] ) ) {
+			$lookupTableLinks["informe_intersup_plan_pagos"] = array();
+		}
+		if( !isset( $lookupTableLinks["informe_intersup_plan_pagos"]["informe_intersup.inf_consecutivo"] )) {
+			$lookupTableLinks["informe_intersup_plan_pagos"]["informe_intersup.inf_consecutivo"] = array();
+		}
+		$lookupTableLinks["informe_intersup_plan_pagos"]["informe_intersup.inf_consecutivo"]["edit"] = array("table" => "informe_intersup", "field" => "inf_consecutivo", "page" => "edit");
+		if( !isset( $lookupTableLinks["informe_intersup_estado"] ) ) {
+			$lookupTableLinks["informe_intersup_estado"] = array();
+		}
+		if( !isset( $lookupTableLinks["informe_intersup_estado"]["informe_intersup.inf_estado"] )) {
+			$lookupTableLinks["informe_intersup_estado"]["informe_intersup.inf_estado"] = array();
+		}
+		$lookupTableLinks["informe_intersup_estado"]["informe_intersup.inf_estado"]["edit"] = array("table" => "informe_intersup", "field" => "inf_estado", "page" => "edit");
+		if( !isset( $lookupTableLinks["tparam_sn"] ) ) {
+			$lookupTableLinks["tparam_sn"] = array();
+		}
+		if( !isset( $lookupTableLinks["tparam_sn"]["informe_intersup.inf_declarainconf"] )) {
+			$lookupTableLinks["tparam_sn"]["informe_intersup.inf_declarainconf"] = array();
+		}
+		$lookupTableLinks["tparam_sn"]["informe_intersup.inf_declarainconf"]["edit"] = array("table" => "informe_intersup", "field" => "inf_declarainconf", "page" => "edit");
+		if( !isset( $lookupTableLinks["tparam_sn"] ) ) {
+			$lookupTableLinks["tparam_sn"] = array();
+		}
+		if( !isset( $lookupTableLinks["tparam_sn"]["informe_intersup.inf_incumplimiento"] )) {
+			$lookupTableLinks["tparam_sn"]["informe_intersup.inf_incumplimiento"] = array();
+		}
+		$lookupTableLinks["tparam_sn"]["informe_intersup.inf_incumplimiento"]["edit"] = array("table" => "informe_intersup", "field" => "inf_incumplimiento", "page" => "edit");
+		if( !isset( $lookupTableLinks["contractor_master"] ) ) {
+			$lookupTableLinks["contractor_master"] = array();
+		}
+		if( !isset( $lookupTableLinks["contractor_master"]["q_bandejaentrada_supervisores2.cont_nit_contra_taname"] )) {
+			$lookupTableLinks["contractor_master"]["q_bandejaentrada_supervisores2.cont_nit_contra_taname"] = array();
+		}
+		$lookupTableLinks["contractor_master"]["q_bandejaentrada_supervisores2.cont_nit_contra_taname"]["edit"] = array("table" => "q_bandejaentrada_supervisores2", "field" => "cont_nit_contra_taname", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato_estados"] ) ) {
+			$lookupTableLinks["contrato_estados"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato_estados"]["q_bandejaentrada_supervisores2.cont_estado"] )) {
+			$lookupTableLinks["contrato_estados"]["q_bandejaentrada_supervisores2.cont_estado"] = array();
+		}
+		$lookupTableLinks["contrato_estados"]["q_bandejaentrada_supervisores2.cont_estado"]["edit"] = array("table" => "q_bandejaentrada_supervisores2", "field" => "cont_estado", "page" => "edit");
+		if( !isset( $lookupTableLinks["interventor_periodos"] ) ) {
+			$lookupTableLinks["interventor_periodos"] = array();
+		}
+		if( !isset( $lookupTableLinks["interventor_periodos"]["q_bandejaentrada_supervisores2.cont_periodicidad"] )) {
+			$lookupTableLinks["interventor_periodos"]["q_bandejaentrada_supervisores2.cont_periodicidad"] = array();
+		}
+		$lookupTableLinks["interventor_periodos"]["q_bandejaentrada_supervisores2.cont_periodicidad"]["edit"] = array("table" => "q_bandejaentrada_supervisores2", "field" => "cont_periodicidad", "page" => "edit");
+		if( !isset( $lookupTableLinks["cargo"] ) ) {
+			$lookupTableLinks["cargo"] = array();
+		}
+		if( !isset( $lookupTableLinks["cargo"]["q_bandejaentrada_supervisores2.cargo_id"] )) {
+			$lookupTableLinks["cargo"]["q_bandejaentrada_supervisores2.cargo_id"] = array();
+		}
+		$lookupTableLinks["cargo"]["q_bandejaentrada_supervisores2.cargo_id"]["edit"] = array("table" => "q_bandejaentrada_supervisores2", "field" => "cargo_id", "page" => "edit");
+		if( !isset( $lookupTableLinks["dependencia"] ) ) {
+			$lookupTableLinks["dependencia"] = array();
+		}
+		if( !isset( $lookupTableLinks["dependencia"]["q_bandejaentrada_supervisores2.dependencia_id"] )) {
+			$lookupTableLinks["dependencia"]["q_bandejaentrada_supervisores2.dependencia_id"] = array();
+		}
+		$lookupTableLinks["dependencia"]["q_bandejaentrada_supervisores2.dependencia_id"]["edit"] = array("table" => "q_bandejaentrada_supervisores2", "field" => "dependencia_id", "page" => "edit");
+		if( !isset( $lookupTableLinks["informe_intersup"] ) ) {
+			$lookupTableLinks["informe_intersup"] = array();
+		}
+		if( !isset( $lookupTableLinks["informe_intersup"]["informe_intersup_oe.inf_id_fk"] )) {
+			$lookupTableLinks["informe_intersup"]["informe_intersup_oe.inf_id_fk"] = array();
+		}
+		$lookupTableLinks["informe_intersup"]["informe_intersup_oe.inf_id_fk"]["edit"] = array("table" => "informe_intersup_oe", "field" => "inf_id_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato_oe"] ) ) {
+			$lookupTableLinks["contrato_oe"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato_oe"]["informe_intersup_oe.oe_id_fk"] )) {
+			$lookupTableLinks["contrato_oe"]["informe_intersup_oe.oe_id_fk"] = array();
+		}
+		$lookupTableLinks["contrato_oe"]["informe_intersup_oe.oe_id_fk"]["edit"] = array("table" => "informe_intersup_oe", "field" => "oe_id_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["tparam_sn_oe"] ) ) {
+			$lookupTableLinks["tparam_sn_oe"] = array();
+		}
+		if( !isset( $lookupTableLinks["tparam_sn_oe"]["informe_intersup_oe.sup_aprueba"] )) {
+			$lookupTableLinks["tparam_sn_oe"]["informe_intersup_oe.sup_aprueba"] = array();
+		}
+		$lookupTableLinks["tparam_sn_oe"]["informe_intersup_oe.sup_aprueba"]["edit"] = array("table" => "informe_intersup_oe", "field" => "sup_aprueba", "page" => "edit");
 }
 
 ?>

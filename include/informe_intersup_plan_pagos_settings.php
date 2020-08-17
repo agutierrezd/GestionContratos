@@ -41,12 +41,12 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldToolTipsinforme_intersup_plan_pagos["Spanish"]["inf_fecharep_i"] = "";
 	$placeHoldersinforme_intersup_plan_pagos["Spanish"]["inf_fecharep_i"] = "";
 	$fieldLabelsinforme_intersup_plan_pagos["Spanish"]["inf_fecharep_f"] = "Fecha Final";
-	$fieldToolTipsinforme_intersup_plan_pagos["Spanish"]["inf_fecharep_f"] = "";
-	$placeHoldersinforme_intersup_plan_pagos["Spanish"]["inf_fecharep_f"] = "";
+	$fieldToolTipsinforme_intersup_plan_pagos["Spanish"]["inf_fecharep_f"] = "Asegúrese de revisar esta fecha antes de continuar";
+	$placeHoldersinforme_intersup_plan_pagos["Spanish"]["inf_fecharep_f"] = "Asegúrese de revisar esta fecha antes de continuar";
 	$fieldLabelsinforme_intersup_plan_pagos["Spanish"]["inf_valorcontrato"] = "Valor del contrato";
 	$fieldToolTipsinforme_intersup_plan_pagos["Spanish"]["inf_valorcontrato"] = "";
 	$placeHoldersinforme_intersup_plan_pagos["Spanish"]["inf_valorcontrato"] = "";
-	$fieldLabelsinforme_intersup_plan_pagos["Spanish"]["inf_valor_pago"] = "Valor mensual a pagar";
+	$fieldLabelsinforme_intersup_plan_pagos["Spanish"]["inf_valor_pago"] = "Valor a pagar";
 	$fieldToolTipsinforme_intersup_plan_pagos["Spanish"]["inf_valor_pago"] = "";
 	$placeHoldersinforme_intersup_plan_pagos["Spanish"]["inf_valor_pago"] = "";
 	$fieldLabelsinforme_intersup_plan_pagos["Spanish"]["dias_calculados"] = "Dias Calculados";
@@ -58,6 +58,12 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsinforme_intersup_plan_pagos["Spanish"]["valor_a_pagar"] = "Valor a Pagar";
 	$fieldToolTipsinforme_intersup_plan_pagos["Spanish"]["valor_a_pagar"] = "";
 	$placeHoldersinforme_intersup_plan_pagos["Spanish"]["valor_a_pagar"] = "";
+	$fieldLabelsinforme_intersup_plan_pagos["Spanish"]["avgavance"] = "% avance";
+	$fieldToolTipsinforme_intersup_plan_pagos["Spanish"]["avgavance"] = "";
+	$placeHoldersinforme_intersup_plan_pagos["Spanish"]["avgavance"] = "";
+	$fieldLabelsinforme_intersup_plan_pagos["Spanish"]["inf_st"] = "Estado";
+	$fieldToolTipsinforme_intersup_plan_pagos["Spanish"]["inf_st"] = "";
+	$placeHoldersinforme_intersup_plan_pagos["Spanish"]["inf_st"] = "";
 	if (count($fieldToolTipsinforme_intersup_plan_pagos["Spanish"]))
 		$tdatainforme_intersup_plan_pagos[".isUseToolTips"] = true;
 }
@@ -160,7 +166,7 @@ $tdatainforme_intersup_plan_pagos[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatainforme_intersup_plan_pagos[".ajaxCodeSnippetAdded"] = false;
 
@@ -190,6 +196,8 @@ $tdatainforme_intersup_plan_pagos[".googleLikeFields"][] = "inf_valor_pago";
 $tdatainforme_intersup_plan_pagos[".googleLikeFields"][] = "dias_calculados";
 $tdatainforme_intersup_plan_pagos[".googleLikeFields"][] = "dias_fiscales";
 $tdatainforme_intersup_plan_pagos[".googleLikeFields"][] = "valor_a_pagar";
+$tdatainforme_intersup_plan_pagos[".googleLikeFields"][] = "avgavance";
+$tdatainforme_intersup_plan_pagos[".googleLikeFields"][] = "inf_st";
 
 
 
@@ -226,7 +234,7 @@ $tdatainforme_intersup_plan_pagos[".orderindexes"] = array();
 	$tdatainforme_intersup_plan_pagos[".orderindexes"][] = array(3, (1 ? "ASC" : "DESC"), "inf_consecutivo");
 
 
-$tdatainforme_intersup_plan_pagos[".sqlHead"] = "SELECT inf_id,  id_cont_fk,  inf_consecutivo,  inf_fecharep_i,  inf_fecharep_f,  inf_valorcontrato,  inf_valor_pago,  dias_calculados,  dias_fiscales,  valor_a_pagar";
+$tdatainforme_intersup_plan_pagos[".sqlHead"] = "SELECT inf_id,  id_cont_fk,  inf_consecutivo,  inf_fecharep_i,  inf_fecharep_f,  inf_valorcontrato,  inf_valor_pago,  dias_calculados,  dias_fiscales,  valor_a_pagar,  avgavance,  inf_st";
 $tdatainforme_intersup_plan_pagos[".sqlFrom"] = "FROM informe_intersup_plan_pagos";
 $tdatainforme_intersup_plan_pagos[".sqlWhereExpr"] = "";
 $tdatainforme_intersup_plan_pagos[".sqlTail"] = "";
@@ -502,6 +510,7 @@ $tdatainforme_intersup_plan_pagos[".hideMobileList"] = array();
 				//dependent dropdowns @deprecated data ?
 	$edata["DependentLookups"] = array();
 	$edata["DependentLookups"][] = "inf_consecutivo";
+				$edata["DependentLookups"][] = "inf_consecutivo";
 
 	
 	
@@ -627,11 +636,118 @@ $tdatainforme_intersup_plan_pagos[".hideMobileList"] = array();
 	$vdata["NumberOfChars"] = 80;
 
 	$fdata["ViewFormats"]["view"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["list"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["print"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["export"] = $vdata;
 //  End View Formats
 
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
 	$edata = array("EditFormat" => "Lookup wizard");
 
 	
@@ -643,12 +759,13 @@ $tdatainforme_intersup_plan_pagos[".hideMobileList"] = array();
 	
 
 // Begin Lookup settings
-				$edata["LookupType"] = 1;
-	$edata["LookupTable"] = "";
-	$edata["LookupConnId"] = "";
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "q_000_control_informes";
 			$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 4;
+		$edata["autoCompleteFields"][] = array('masterF'=>"inf_fecharep_i", 'lookupF'=>"ultimo_informe");
+	$edata["autoCompleteFields"][] = array('masterF'=>"inf_fecharep_f", 'lookupF'=>"ultimo_informeA");
+	$edata["LCType"] = 4;
 
 		$edata["HorizontalLookup"] = true;
 
@@ -668,8 +785,7 @@ $tdatainforme_intersup_plan_pagos[".hideMobileList"] = array();
 	$edata["categoryFields"][] = array( "main" => "id_cont_fk", "lookup" => "id_cont" );
 
 	
-		$edata["SimpleAdd"] = true;
-
+	
 
 	
 	
@@ -709,11 +825,87 @@ $tdatainforme_intersup_plan_pagos[".hideMobileList"] = array();
 	
 	
 	
-	$fdata["EditFormats"]["edit"] = $edata;
+	$fdata["EditFormats"]["add"] = $edata;
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "q_000_control_informes";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 4;
+
+		$edata["HorizontalLookup"] = true;
+
+		
+	$edata["LinkField"] = "csc_id";
+	$edata["LinkFieldType"] = 20;
+	$edata["DisplayField"] = "csc_id";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+		$edata["UseCategory"] = true;
+	$edata["categoryFields"] = array();
+	$edata["categoryFields"][] = array( "main" => "id_cont_fk", "lookup" => "id_cont" );
+
+	
+	
+
+	
+	
+	
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["search"] = $edata;
 //	End Edit Formats
 
 
-	$fdata["isSeparate"] = false;
+	$fdata["isSeparate"] = true;
 
 
 
@@ -1205,7 +1397,7 @@ $tdatainforme_intersup_plan_pagos[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Readonly");
+	$edata = array("EditFormat" => "Text field");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1231,15 +1423,19 @@ $tdatainforme_intersup_plan_pagos[".hideMobileList"] = array();
 	
 	
 	
-	
-	
+			$edata["HTML5InuptType"] = "number";
+
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-							
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Currency");
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
 	
 	//	End validation
 
@@ -1684,6 +1880,518 @@ $tdatainforme_intersup_plan_pagos[".hideMobileList"] = array();
 
 	$tdatainforme_intersup_plan_pagos["valor_a_pagar"] = $fdata;
 		$tdatainforme_intersup_plan_pagos[".searchableFields"][] = "valor_a_pagar";
+//	avgavance
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 11;
+	$fdata["strName"] = "avgavance";
+	$fdata["GoodName"] = "avgavance";
+	$fdata["ownerTable"] = "informe_intersup_plan_pagos";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_plan_pagos","avgavance");
+	$fdata["FieldType"] = 5;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "avgavance";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "avgavance";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Number");
+
+	
+	
+	
+	
+	
+	
+		$vdata["DecimalDigits"] = 2;
+
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_plan_pagos["avgavance"] = $fdata;
+		$tdatainforme_intersup_plan_pagos[".searchableFields"][] = "avgavance";
+//	inf_st
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 12;
+	$fdata["strName"] = "inf_st";
+	$fdata["GoodName"] = "inf_st";
+	$fdata["ownerTable"] = "informe_intersup_plan_pagos";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_plan_pagos","inf_st");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "inf_st";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "inf_st";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["list"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["print"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["export"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "informe_intersup_plan_pagos_st";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "st_id";
+	$edata["LinkFieldType"] = 16;
+	$edata["DisplayField"] = "st_name";
+
+				$edata["LookupWhereCode"] = true;
+
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "informe_intersup_plan_pagos_st";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "st_id";
+	$edata["LinkFieldType"] = 16;
+	$edata["DisplayField"] = "st_name";
+
+				$edata["LookupWhereCode"] = true;
+
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["add"] = $edata;
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "informe_intersup_plan_pagos_st";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "st_id";
+	$edata["LinkFieldType"] = 16;
+	$edata["DisplayField"] = "st_name";
+
+				$edata["LookupWhereCode"] = true;
+
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["search"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = true;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_plan_pagos["inf_st"] = $fdata;
+		$tdatainforme_intersup_plan_pagos[".searchableFields"][] = "inf_st";
 
 
 $tables_data["informe_intersup_plan_pagos"]=&$tdatainforme_intersup_plan_pagos;
@@ -1701,6 +2409,22 @@ $masterTablesData["informe_intersup_plan_pagos"] = array();
 
 
 
+	
+				$strOriginalDetailsTable="q_bandejaentrada_supervisores";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="q_bandejaentrada_supervisores";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "q_bandejaentrada_supervisores";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+
+	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["informe_intersup_plan_pagos"][0] = $masterParams;
+				$masterTablesData["informe_intersup_plan_pagos"][0]["masterKeys"] = array();
+	$masterTablesData["informe_intersup_plan_pagos"][0]["masterKeys"][]="id_cont";
+				$masterTablesData["informe_intersup_plan_pagos"][0]["detailKeys"] = array();
+	$masterTablesData["informe_intersup_plan_pagos"][0]["detailKeys"][]="id_cont_fk";
+		
 // -----------------end  prepare master-details data arrays ------------------------------//
 
 
@@ -1719,7 +2443,7 @@ function createSqlQuery_informe_intersup_plan_pagos()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "inf_id,  id_cont_fk,  inf_consecutivo,  inf_fecharep_i,  inf_fecharep_f,  inf_valorcontrato,  inf_valor_pago,  dias_calculados,  dias_fiscales,  valor_a_pagar";
+$proto0["m_strFieldList"] = "inf_id,  id_cont_fk,  inf_consecutivo,  inf_fecharep_i,  inf_fecharep_f,  inf_valorcontrato,  inf_valor_pago,  dias_calculados,  dias_fiscales,  valor_a_pagar,  avgavance,  inf_st";
 $proto0["m_strFrom"] = "FROM informe_intersup_plan_pagos";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "ORDER BY inf_consecutivo";
@@ -1899,62 +2623,91 @@ $proto24["m_alias"] = "";
 $obj = new SQLFieldListItem($proto24);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto26=array();
-$proto26["m_link"] = "SQLL_MAIN";
-			$proto27=array();
-$proto27["m_strName"] = "informe_intersup_plan_pagos";
-$proto27["m_srcTableName"] = "informe_intersup_plan_pagos";
-$proto27["m_columns"] = array();
-$proto27["m_columns"][] = "inf_id";
-$proto27["m_columns"][] = "id_cont_fk";
-$proto27["m_columns"][] = "inf_consecutivo";
-$proto27["m_columns"][] = "inf_fecharep_i";
-$proto27["m_columns"][] = "inf_fecharep_f";
-$proto27["m_columns"][] = "inf_valorcontrato";
-$proto27["m_columns"][] = "inf_valor_pago";
-$proto27["m_columns"][] = "dias_calculados";
-$proto27["m_columns"][] = "dias_fiscales";
-$proto27["m_columns"][] = "valor_a_pagar";
-$proto27["m_columns"][] = "inf_st";
-$obj = new SQLTable($proto27);
+						$proto26=array();
+			$obj = new SQLField(array(
+	"m_strName" => "avgavance",
+	"m_strTable" => "informe_intersup_plan_pagos",
+	"m_srcTableName" => "informe_intersup_plan_pagos"
+));
 
-$proto26["m_table"] = $obj;
-$proto26["m_sql"] = "informe_intersup_plan_pagos";
-$proto26["m_alias"] = "";
+$proto26["m_sql"] = "avgavance";
 $proto26["m_srcTableName"] = "informe_intersup_plan_pagos";
-$proto28=array();
-$proto28["m_sql"] = "";
-$proto28["m_uniontype"] = "SQLL_UNKNOWN";
+$proto26["m_expr"]=$obj;
+$proto26["m_alias"] = "";
+$obj = new SQLFieldListItem($proto26);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto28=array();
+			$obj = new SQLField(array(
+	"m_strName" => "inf_st",
+	"m_strTable" => "informe_intersup_plan_pagos",
+	"m_srcTableName" => "informe_intersup_plan_pagos"
+));
+
+$proto28["m_sql"] = "inf_st";
+$proto28["m_srcTableName"] = "informe_intersup_plan_pagos";
+$proto28["m_expr"]=$obj;
+$proto28["m_alias"] = "";
+$obj = new SQLFieldListItem($proto28);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto30=array();
+$proto30["m_link"] = "SQLL_MAIN";
+			$proto31=array();
+$proto31["m_strName"] = "informe_intersup_plan_pagos";
+$proto31["m_srcTableName"] = "informe_intersup_plan_pagos";
+$proto31["m_columns"] = array();
+$proto31["m_columns"][] = "inf_id";
+$proto31["m_columns"][] = "id_cont_fk";
+$proto31["m_columns"][] = "inf_consecutivo";
+$proto31["m_columns"][] = "inf_fecharep_i";
+$proto31["m_columns"][] = "inf_fecharep_f";
+$proto31["m_columns"][] = "inf_valorcontrato";
+$proto31["m_columns"][] = "inf_valor_pago";
+$proto31["m_columns"][] = "dias_calculados";
+$proto31["m_columns"][] = "dias_fiscales";
+$proto31["m_columns"][] = "valor_a_pagar";
+$proto31["m_columns"][] = "avgavance";
+$proto31["m_columns"][] = "inf_st";
+$obj = new SQLTable($proto31);
+
+$proto30["m_table"] = $obj;
+$proto30["m_sql"] = "informe_intersup_plan_pagos";
+$proto30["m_alias"] = "";
+$proto30["m_srcTableName"] = "informe_intersup_plan_pagos";
+$proto32=array();
+$proto32["m_sql"] = "";
+$proto32["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto28["m_column"]=$obj;
-$proto28["m_contained"] = array();
-$proto28["m_strCase"] = "";
-$proto28["m_havingmode"] = false;
-$proto28["m_inBrackets"] = false;
-$proto28["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto28);
+$proto32["m_column"]=$obj;
+$proto32["m_contained"] = array();
+$proto32["m_strCase"] = "";
+$proto32["m_havingmode"] = false;
+$proto32["m_inBrackets"] = false;
+$proto32["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto32);
 
-$proto26["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto26);
+$proto30["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto30);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
 $proto0["m_orderby"] = array();
-												$proto30=array();
+												$proto34=array();
 						$obj = new SQLField(array(
 	"m_strName" => "inf_consecutivo",
 	"m_strTable" => "informe_intersup_plan_pagos",
 	"m_srcTableName" => "informe_intersup_plan_pagos"
 ));
 
-$proto30["m_column"]=$obj;
-$proto30["m_bAsc"] = 1;
-$proto30["m_nColumn"] = 0;
-$obj = new SQLOrderByItem($proto30);
+$proto34["m_column"]=$obj;
+$proto34["m_bAsc"] = 1;
+$proto34["m_nColumn"] = 0;
+$obj = new SQLOrderByItem($proto34);
 
 $proto0["m_orderby"][]=$obj;					
 $proto0["m_srcTableName"]="informe_intersup_plan_pagos";		
@@ -1968,7 +2721,7 @@ $queryData_informe_intersup_plan_pagos = createSqlQuery_informe_intersup_plan_pa
 	
 										;
 
-										
+												
 
 $tdatainforme_intersup_plan_pagos[".sqlquery"] = $queryData_informe_intersup_plan_pagos;
 

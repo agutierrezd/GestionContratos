@@ -321,6 +321,28 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("q_001_dashboard_info" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
+	if ("q_bandejaentrada_supervisores" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("q_000_control_informes" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("informe_intersup_plan_pagos_st" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("contrato_oe" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("q_oe_ordinal" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("q_bandejaentrada_supervisores1" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("informe_intersup" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("q_bandejaentrada_supervisores2" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("q_divipola" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("informe_intersup_oe" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("tparam_sn_oe" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
 	return false;
 }
 
@@ -902,6 +924,105 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="q_001_dashboard_info";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_bandejaentrada_supervisores");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_bandejaentrada_supervisores";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_000_control_informes");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_000_control_informes";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("informe_intersup_plan_pagos_st");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="informe_intersup_plan_pagos_st";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contrato_oe");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contrato_oe";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_oe_ordinal");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_oe_ordinal";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_bandejaentrada_supervisores1");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_bandejaentrada_supervisores1";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("informe_intersup");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="informe_intersup";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_bandejaentrada_supervisores2");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_bandejaentrada_supervisores2";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_divipola");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_divipola";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("informe_intersup_oe");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="informe_intersup_oe";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("tparam_sn_oe");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="tparam_sn_oe";
+	}
 	return $arr;
 }
 
@@ -970,6 +1091,17 @@ function GetTablesListWithoutSecurity()
 	$arr[]="secop";
 	$arr[]="tparam_tipo_ct_rubro";
 	$arr[]="q_001_dashboard_info";
+	$arr[]="q_bandejaentrada_supervisores";
+	$arr[]="q_000_control_informes";
+	$arr[]="informe_intersup_plan_pagos_st";
+	$arr[]="contrato_oe";
+	$arr[]="q_oe_ordinal";
+	$arr[]="q_bandejaentrada_supervisores1";
+	$arr[]="informe_intersup";
+	$arr[]="q_bandejaentrada_supervisores2";
+	$arr[]="q_divipola";
+	$arr[]="informe_intersup_oe";
+	$arr[]="tparam_sn_oe";
 	return $arr;
 }
 
@@ -2036,6 +2168,61 @@ function GetUserPermissionsStatic( $table )
 //	default permissions
 		return "ADESPI".$extraPerm;
 	}
+	if( $table=="q_bandejaentrada_supervisores" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="q_000_control_informes" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="informe_intersup_plan_pagos_st" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="contrato_oe" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="q_oe_ordinal" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="q_bandejaentrada_supervisores1" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="informe_intersup" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="q_bandejaentrada_supervisores2" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="q_divipola" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="informe_intersup_oe" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="tparam_sn_oe" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
 	// grant nothing by default
 	return "";
 }
@@ -2154,6 +2341,11 @@ function SetAuthSessionData($pUsername, &$data, $password, &$pageObject = null, 
 	}
 
 
+		$_SESSION["OwnerID"] = $data["active"];
+	$_SESSION["_cargo_OwnerID"] = $data["active"];
+		$_SESSION["_q_bandejaentrada_supervisores_OwnerID"] = $data["idusrglobal"];
+		$_SESSION["_q_bandejaentrada_supervisores1_OwnerID"] = $data["idusrglobal"];
+		$_SESSION["_q_bandejaentrada_supervisores2_OwnerID"] = $data["idusrglobal"];
 
 	$_SESSION["UserData"] = $data;
 
@@ -2215,6 +2407,18 @@ function CheckSecurity($strValue, $strAction, $table = "")
 	$strPerm = GetUserPermissions();
 	if( strpos($strPerm, "M") === false )
 	{
+		if($table=="q_bandejaentrada_supervisores")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="q_bandejaentrada_supervisores1")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
 	}
 	if( Security::permissionsAvailable() )
 	{
@@ -2285,6 +2489,14 @@ function SecuritySQL($strAction, $table, $strPerm="")
 
 	if(strpos($strPerm,"M")===false)
 	{
+		if($table=="q_bandejaentrada_supervisores")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="q_bandejaentrada_supervisores1")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
 	}
 
 	if($strAction=="Edit" && !(strpos($strPerm, "E")===false) ||

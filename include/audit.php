@@ -591,6 +591,50 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="q_bandejaentrada_supervisores")
+		{
+			return false;
+		}
+		if($table=="q_000_control_informes")
+		{
+			return false;
+		}
+		if($table=="informe_intersup_plan_pagos_st")
+		{
+			return false;
+		}
+		if($table=="contrato_oe")
+		{
+			return false;
+		}
+		if($table=="q_oe_ordinal")
+		{
+			return false;
+		}
+		if($table=="q_bandejaentrada_supervisores1")
+		{
+			return false;
+		}
+		if($table=="informe_intersup")
+		{
+			return false;
+		}
+		if($table=="q_bandejaentrada_supervisores2")
+		{
+			return false;
+		}
+		if($table=="q_divipola")
+		{
+			return false;
+		}
+		if($table=="informe_intersup_oe")
+		{
+			return false;
+		}
+		if($table=="tparam_sn_oe")
+		{
+			return false;
+		}
 	}
 	
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -1185,6 +1229,50 @@ class AuditTrailFile
 			return false;
 		}
 		if($table=="q_001_dashboard_info")
+		{
+			return false;
+		}
+		if($table=="q_bandejaentrada_supervisores")
+		{
+			return false;
+		}
+		if($table=="q_000_control_informes")
+		{
+			return false;
+		}
+		if($table=="informe_intersup_plan_pagos_st")
+		{
+			return false;
+		}
+		if($table=="contrato_oe")
+		{
+			return false;
+		}
+		if($table=="q_oe_ordinal")
+		{
+			return false;
+		}
+		if($table=="q_bandejaentrada_supervisores1")
+		{
+			return false;
+		}
+		if($table=="informe_intersup")
+		{
+			return false;
+		}
+		if($table=="q_bandejaentrada_supervisores2")
+		{
+			return false;
+		}
+		if($table=="q_divipola")
+		{
+			return false;
+		}
+		if($table=="informe_intersup_oe")
+		{
+			return false;
+		}
+		if($table=="tparam_sn_oe")
 		{
 			return false;
 		}

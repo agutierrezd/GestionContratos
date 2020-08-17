@@ -348,20 +348,11 @@
 	{$cell_grid_cell_label16}
 	{$recordattrs}
 	class="
-		r-align-right r-ori-vert				{$cont_plazo_class}
-			"
+		r-align-right r-ori-vert			"
 
-			data-field="cont_plazo"
 	
 	data-cellId="grid_cell_label16" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
-
-	 
-		{BEGIN cont_plazo_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="grid_field_label1" {$item_grid_field_label1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazo">
-	{$label contrato cont_plazo }	</span>
-{END cont_plazo_fieldheadercolumn}
 
 	
 	</td>
@@ -373,20 +364,13 @@
 	{$cell_grid_cell_label17}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_plazo_class}
-			"
+		 r-ori-vert			"
 
-			data-field="cont_plazo"
 	
 	data-cellId="grid_cell_label17" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
-	 
-		{BEGIN cont_plazo_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazo" data-default-width >
-{$cont_plazo_value}
-</span>
-{END cont_plazo_fieldcolumn}	
+	
 	</td>
 	{END cellblock_grid_cell_label17}
 												</tr>
@@ -400,7 +384,7 @@
 	{$cell_grid_cell_label26}
 	{$recordattrs}
 	class="
-		r-align-right r-ori-vert				{$cont_nit_contra_ta_class}
+		r-align-right				{$cont_nit_contra_ta_class}
 			"
 
 			data-field="cont_nit_contra_ta"
@@ -415,6 +399,13 @@
 	{$label contrato cont_nit_contra_ta }	</span>
 {END cont_nit_contra_ta_fieldheadercolumn}
 
+	 
+		{BEGIN cont_munejec_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label1" {$item_grid_field_label1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_munejec">
+	{$label contrato cont_munejec }	</span>
+{END cont_munejec_fieldheadercolumn}
+
 	
 	</td>
 	{END cellblock_grid_cell_label26}
@@ -425,7 +416,7 @@
 	{$cell_grid_cell_label27}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_nit_contra_ta_class}
+						{$cont_nit_contra_ta_class}
 			"
 
 			data-field="cont_nit_contra_ta"
@@ -438,7 +429,12 @@
 <span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_nit_contra_ta" data-default-width >
 {$cont_nit_contra_ta_value}
 </span>
-{END cont_nit_contra_ta_fieldcolumn}	
+{END cont_nit_contra_ta_fieldcolumn}	 
+		{BEGIN cont_munejec_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_munejec" data-default-width >
+{$cont_munejec_value}
+</span>
+{END cont_munejec_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_label27}
 						 
@@ -448,7 +444,7 @@
 	{$cell_grid_cell_label28}
 	{$recordattrs}
 	class="
-		r-align-right r-ori-vert				{$nombre_cont_class}
+		r-align-right				{$nombre_cont_class}
 			"
 
 			data-field="nombre_cont"
@@ -463,6 +459,13 @@
 	{$label contrato nombre_cont }	</span>
 {END nombre_cont_fieldheadercolumn}
 
+	 
+		{BEGIN cont_fecha_aprobgarantia_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label5" {$item_grid_field_label5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_aprobgarantia">
+	{$label contrato cont_fecha_aprobgarantia }	</span>
+{END cont_fecha_aprobgarantia_fieldheadercolumn}
+
 	
 	</td>
 	{END cellblock_grid_cell_label28}
@@ -473,7 +476,7 @@
 	{$cell_grid_cell_label29}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$nombre_cont_class}
+						{$nombre_cont_class}
 			"
 
 			data-field="nombre_cont"
@@ -486,7 +489,12 @@
 <span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombre_cont" data-default-width >
 {$nombre_cont_value}
 </span>
-{END nombre_cont_fieldcolumn}	
+{END nombre_cont_fieldcolumn}	 
+		{BEGIN cont_fecha_aprobgarantia_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field5" {$item_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_aprobgarantia" data-default-width >
+{$cont_fecha_aprobgarantia_value}
+</span>
+{END cont_fecha_aprobgarantia_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_label29}
 												</tr>
@@ -584,7 +592,7 @@
 	{$cell_grid_cell_label34}
 	{$recordattrs}
 	class="
-		r-align-right r-ori-vert				{$cont_fecha_inicio_class}
+		r-align-right				{$cont_fecha_inicio_class}
 			"
 
 			data-field="cont_fecha_inicio"
@@ -599,6 +607,13 @@
 	{$label contrato cont_fecha_inicio }	</span>
 {END cont_fecha_inicio_fieldheadercolumn}
 
+	 
+		{BEGIN cont_numpoliza_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label6" {$item_grid_field_label6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_numpoliza">
+	{$label contrato cont_numpoliza }	</span>
+{END cont_numpoliza_fieldheadercolumn}
+
 	
 	</td>
 	{END cellblock_grid_cell_label34}
@@ -609,7 +624,7 @@
 	{$cell_grid_cell_label35}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_fecha_inicio_class}
+						{$cont_fecha_inicio_class}
 			"
 
 			data-field="cont_fecha_inicio"
@@ -622,7 +637,12 @@
 <span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_inicio" data-default-width >
 {$cont_fecha_inicio_value}
 </span>
-{END cont_fecha_inicio_fieldcolumn}	
+{END cont_fecha_inicio_fieldcolumn}	 
+		{BEGIN cont_numpoliza_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field6" {$item_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_numpoliza" data-default-width >
+{$cont_numpoliza_value}
+</span>
+{END cont_numpoliza_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_label35}
 						 

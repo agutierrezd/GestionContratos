@@ -245,6 +245,15 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_search_field33}","text":{$cont_tipo_rubro_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_integrated_search_field39}","text":{$cont_munejec_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field42}","text":{$cont_fecha_aprobgarantia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field43}","text":{$cont_numpoliza_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

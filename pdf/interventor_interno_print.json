@@ -85,12 +85,6 @@ pdfDocument = {
 										{BEGIN col_grid_8}
 					"%",
 					{END col_grid_8}
-										{BEGIN col_grid_9}
-					"%",
-					{END col_grid_9}
-										{BEGIN col_grid_10}
-					"%",
-					{END col_grid_10}
 															],
 							heights: [ // first height for header part
 					"%",
@@ -370,7 +364,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field18}","text":"{$jslabel interventor_interno sup_mailnot }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field16}","text":"{$jslabel interventor_interno sup_mailnot }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -396,7 +390,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field19}","text":"{$jslabel interventor_interno documento_id }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field17}","text":"{$jslabel interventor_interno documento_id }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -422,7 +416,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field20}","text":"{$jslabel interventor_interno nombres }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field18}","text":"{$jslabel interventor_interno nombres }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -448,7 +442,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field21}","text":"{$jslabel interventor_interno apellidos }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field19}","text":"{$jslabel interventor_interno apellidos }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -456,58 +450,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_field8}
-																			{BEGIN cellblock_grid_headcell_field9}
-{
-	cellId: 'headcell_field9',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field22}","text":"{$jslabel interventor_interno cargo_id }","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$cargo_id_align}',
-  },
-
-{END cellblock_grid_headcell_field9}
-																			{BEGIN cellblock_grid_headcell_field10}
-{
-	cellId: 'headcell_field10',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field23}","text":"{$jslabel interventor_interno dependencia_id }","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$dependencia_id_align}',
-  },
-
-{END cellblock_grid_headcell_field10}
 											],
 				{END row_grid_0}
 								
@@ -750,58 +692,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_field8}
-																			{BEGIN cellblock_grid_cell_field9}
-{
-	cellId: 'cell_field9',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field16}","text":{$cargo_id_pdfvalue}},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$cargo_id_align}',
-  },
-
-{END cellblock_grid_cell_field9}
-																			{BEGIN cellblock_grid_cell_field10}
-{
-	cellId: 'cell_field10',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field17}","text":{$dependencia_id_pdfvalue}},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$dependencia_id_align}',
-  },
-
-{END cellblock_grid_cell_field10}
 											],
 				{END row_grid_1}
 						{END grid_record}
@@ -1026,54 +916,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field8}
-																			{BEGIN cellblock_grid_footcell_field9}
-{
-	cellId: 'footcell_field9',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field9}
-																			{BEGIN cellblock_grid_footcell_field10}
-{
-	cellId: 'footcell_field10',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field10}
 											],
 				{END row_grid_2}
 							

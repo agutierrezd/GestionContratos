@@ -10,6 +10,8 @@ $dalTableinforme_intersup["inf_periodicidad"] = array("type"=>16,"varname"=>"inf
 $dalTableinforme_intersup["inf_fecharep_i"] = array("type"=>7,"varname"=>"inf_fecharep_i", "name" => "inf_fecharep_i");
 $dalTableinforme_intersup["inf_fecharep_f"] = array("type"=>7,"varname"=>"inf_fecharep_f", "name" => "inf_fecharep_f");
 $dalTableinforme_intersup["inf_numerocontrato"] = array("type"=>200,"varname"=>"inf_numerocontrato", "name" => "inf_numerocontrato");
+$dalTableinforme_intersup["inf_anio"] = array("type"=>2,"varname"=>"inf_anio", "name" => "inf_anio");
+$dalTableinforme_intersup["inf_prenum"] = array("type"=>200,"varname"=>"inf_prenum", "name" => "inf_prenum");
 $dalTableinforme_intersup["inf_doccontratista"] = array("type"=>200,"varname"=>"inf_doccontratista", "name" => "inf_doccontratista");
 $dalTableinforme_intersup["inf_nombrecontratista"] = array("type"=>200,"varname"=>"inf_nombrecontratista", "name" => "inf_nombrecontratista");
 $dalTableinforme_intersup["inf_valorcontrato"] = array("type"=>5,"varname"=>"inf_valorcontrato", "name" => "inf_valorcontrato");
@@ -29,15 +31,12 @@ $dalTableinforme_intersup["inf_intersup"] = array("type"=>200,"varname"=>"inf_in
 $dalTableinforme_intersup["inf_nombre"] = array("type"=>200,"varname"=>"inf_nombre", "name" => "inf_nombre");
 $dalTableinforme_intersup["inf_cargo"] = array("type"=>200,"varname"=>"inf_cargo", "name" => "inf_cargo");
 $dalTableinforme_intersup["inf_dependencia"] = array("type"=>200,"varname"=>"inf_dependencia", "name" => "inf_dependencia");
-$dalTableinforme_intersup["inf_poliza"] = array("type"=>16,"varname"=>"inf_poliza", "name" => "inf_poliza");
 $dalTableinforme_intersup["inf_avgejecucion"] = array("type"=>5,"varname"=>"inf_avgejecucion", "name" => "inf_avgejecucion");
 $dalTableinforme_intersup["inf_actividades"] = array("type"=>201,"varname"=>"inf_actividades", "name" => "inf_actividades");
 $dalTableinforme_intersup["inf_declarainconf"] = array("type"=>16,"varname"=>"inf_declarainconf", "name" => "inf_declarainconf");
 $dalTableinforme_intersup["inf_declarainconf_obs"] = array("type"=>201,"varname"=>"inf_declarainconf_obs", "name" => "inf_declarainconf_obs");
 $dalTableinforme_intersup["inf_incumplimiento"] = array("type"=>16,"varname"=>"inf_incumplimiento", "name" => "inf_incumplimiento");
 $dalTableinforme_intersup["inf_incumplimiento_obs"] = array("type"=>201,"varname"=>"inf_incumplimiento_obs", "name" => "inf_incumplimiento_obs");
-$dalTableinforme_intersup["inf_ssparafisfecha"] = array("type"=>7,"varname"=>"inf_ssparafisfecha", "name" => "inf_ssparafisfecha");
-$dalTableinforme_intersup["inf_ssparafisnplanilla"] = array("type"=>200,"varname"=>"inf_ssparafisnplanilla", "name" => "inf_ssparafisnplanilla");
 $dalTableinforme_intersup["inf_otrosaspectostecnicos"] = array("type"=>201,"varname"=>"inf_otrosaspectostecnicos", "name" => "inf_otrosaspectostecnicos");
 $dalTableinforme_intersup["inf_recomyobserva"] = array("type"=>201,"varname"=>"inf_recomyobserva", "name" => "inf_recomyobserva");
 $dalTableinforme_intersup["sign_date"] = array("type"=>7,"varname"=>"sign_date", "name" => "sign_date");
@@ -52,6 +51,11 @@ $dalTableinforme_intersup["cert_mail"] = array("type"=>200,"varname"=>"cert_mail
 $dalTableinforme_intersup["cert_compare"] = array("type"=>200,"varname"=>"cert_compare", "name" => "cert_compare");
 $dalTableinforme_intersup["inf_ultimopago"] = array("type"=>16,"varname"=>"inf_ultimopago", "name" => "inf_ultimopago");
 $dalTableinforme_intersup["sys_date"] = array("type"=>135,"varname"=>"sys_date", "name" => "sys_date");
+$dalTableinforme_intersup["inf_mail_a"] = array("type"=>200,"varname"=>"inf_mail_a", "name" => "inf_mail_a");
+$dalTableinforme_intersup["inf_mail_b"] = array("type"=>200,"varname"=>"inf_mail_b", "name" => "inf_mail_b");
+$dalTableinforme_intersup["url_secop"] = array("type"=>200,"varname"=>"url_secop", "name" => "url_secop");
+$dalTableinforme_intersup["num_poliza"] = array("type"=>200,"varname"=>"num_poliza", "name" => "num_poliza");
+$dalTableinforme_intersup["mun_ejec"] = array("type"=>200,"varname"=>"mun_ejec", "name" => "mun_ejec");
 	$dalTableinforme_intersup["inf_id"]["key"]=true;
 
 $dal_info["dbct_at_localhost__informe_intersup"] = &$dalTableinforme_intersup;

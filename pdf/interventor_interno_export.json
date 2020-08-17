@@ -131,12 +131,6 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_export_field15}","text":{$apellidos_pdfvalue}},
 				
-				
-			{"hidden":"{$item_hide_export_field16}","text":{$cargo_id_pdfvalue}},
-				
-				
-			{"hidden":"{$item_hide_export_field17}","text":{$dependencia_id_pdfvalue}},
-				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

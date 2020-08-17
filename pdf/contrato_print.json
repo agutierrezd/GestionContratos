@@ -412,8 +412,10 @@ pdfDocument = {
 	
 			"text": [
 		
-				'',
-	  ],
+				
+			{"hidden":"{$item_hide_grid_field_label15}","text":"{$jslabel contrato cont_munejec }","bold":true},
+				
+		  ],
   "border": [ false, false, false, false ],
           "alignment": 'right',
   },
@@ -436,10 +438,12 @@ pdfDocument = {
 	
 			"text": [
 		
-				'',
-	  ],
+				
+			{"hidden":"{$item_hide_grid_field15}","text":{$cont_munejec_pdfvalue}},
+				
+		  ],
   "border": [ false, false, false, false ],
-          "alignment": 'left',
+          "alignment": '{$cont_munejec_align}',
   },
 
 {END cellblock_grid_cell_field36}
@@ -519,6 +523,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_grid_field_label17}","text":"{$jslabel contrato cont_secop_proceso }","bold":true},
 				
+				
+			{"hidden":"{$item_hide_grid_field_label20}","text":"{$jslabel contrato cont_fecha_aprobgarantia }","bold":true},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'right',
@@ -545,9 +552,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_grid_field17}","text":{$cont_secop_proceso_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_grid_field20}","text":{$cont_fecha_aprobgarantia_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
-          "alignment": '{$cont_secop_proceso_align}',
+          "alignment": 'left',
   },
 
 {END cellblock_grid_cell_field28}
@@ -624,10 +634,8 @@ pdfDocument = {
 	
 			"text": [
 		
-				
-			{"hidden":"{$item_hide_grid_field_label15}","text":"{$jslabel contrato cont_plazo }","bold":true},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
           "alignment": 'right',
   },
@@ -650,12 +658,10 @@ pdfDocument = {
 	
 			"text": [
 		
-				
-			{"hidden":"{$item_hide_grid_field15}","text":{$cont_plazo_pdfvalue}},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
-          "alignment": '{$cont_plazo_align}',
+          "alignment": 'left',
   },
 
 {END cellblock_grid_cell_field17}
@@ -791,6 +797,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_grid_field_label16}","text":"{$jslabel contrato cont_vigencias_futuras }","bold":true},
 				
+				
+			{"hidden":"{$item_hide_grid_field_label21}","text":"{$jslabel contrato cont_numpoliza }","bold":true},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'right',
@@ -817,9 +826,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_grid_field16}","text":{$cont_vigencias_futuras_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_grid_field21}","text":{$cont_numpoliza_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
-          "alignment": '{$cont_vigencias_futuras_align}',
+          "alignment": 'left',
   },
 
 {END cellblock_grid_cell_field30}
@@ -1540,6 +1552,11 @@ pdfDocument = {
 			 {BEGIN details_ep_obligaciones}
 			{$displayDetailTable_ep_obligaciones }
 		{END details_ep_obligaciones},
+				
+				
+			 {BEGIN details_contrato_oe}
+			{$displayDetailTable_contrato_oe }
+		{END details_contrato_oe},
 				
 		  ],
   "border": [ false, false, false, false ],

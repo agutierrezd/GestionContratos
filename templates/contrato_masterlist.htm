@@ -75,6 +75,8 @@
 									 
 									 
 									 
+									 
+									 
 											
 					</tbody>
 				</table>
@@ -197,7 +199,7 @@
 	{$cell_grid_cell_field14}
 	{$recordattrs}
 	class="
-		r-align-right				{$pre_contnumero_class}
+		r-align-right r-ori-vert				{$pre_contnumero_class}
 			"
 
 			data-field="pre_contnumero"
@@ -212,13 +214,6 @@
 	{$label contrato pre_contnumero }	</span>
 {END pre_contnumero_fieldheadercolumn}
 
-	 
-		{BEGIN cont_plazo_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="grid_field_label2" {$item_grid_field_label2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazo">
-	{$label contrato cont_plazo }	</span>
-{END cont_plazo_fieldheadercolumn}
-
 	
 	</td>
 	{END cellblock_grid_cell_field14}
@@ -229,7 +224,7 @@
 	{$cell_grid_cell_field15}
 	{$recordattrs}
 	class="
-						{$pre_contnumero_class}
+		 r-ori-vert				{$pre_contnumero_class}
 			"
 
 			data-field="pre_contnumero"
@@ -242,12 +237,7 @@
 <span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="pre_contnumero" data-default-width >
 {$pre_contnumero_value}
 </span>
-{END pre_contnumero_fieldcolumn}	 
-		{BEGIN cont_plazo_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="grid_field2" {$item_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazo" data-default-width >
-{$cont_plazo_value}
-</span>
-{END cont_plazo_fieldcolumn}	
+{END pre_contnumero_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field15}
 						 
@@ -946,6 +936,190 @@
 {END cont_tipo_rubro_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field6}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label7}
+	<td
+	
+	{$cell_grid_cell_label7}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$cont_munejec_class}
+			"
+
+			data-field="cont_munejec"
+	
+	data-cellId="grid_cell_label7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_munejec_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label2" {$item_grid_field_label2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_munejec">
+	{$label contrato cont_munejec }	</span>
+{END cont_munejec_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label7}
+						 
+							{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_munejec_class}
+			"
+
+			data-field="cont_munejec"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_munejec_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field2" {$item_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_munejec" data-default-width >
+{$cont_munejec_value}
+</span>
+{END cont_munejec_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
+						 
+							{BEGIN cellblock_grid_cell_label8}
+	<td
+	
+	{$cell_grid_cell_label8}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$cont_fecha_aprobgarantia_class}
+			"
+
+			data-field="cont_fecha_aprobgarantia"
+	
+	data-cellId="grid_cell_label8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fecha_aprobgarantia_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label6" {$item_grid_field_label6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_aprobgarantia">
+	{$label contrato cont_fecha_aprobgarantia }	</span>
+{END cont_fecha_aprobgarantia_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label8}
+						 
+							{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fecha_aprobgarantia_class}
+			"
+
+			data-field="cont_fecha_aprobgarantia"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fecha_aprobgarantia_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field6" {$item_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_aprobgarantia" data-default-width >
+{$cont_fecha_aprobgarantia_value}
+</span>
+{END cont_fecha_aprobgarantia_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label9}
+	<td
+	
+	{$cell_grid_cell_label9}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$cont_numpoliza_class}
+			"
+
+			data-field="cont_numpoliza"
+	
+	data-cellId="grid_cell_label9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_numpoliza_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label7" {$item_grid_field_label7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_numpoliza">
+	{$label contrato cont_numpoliza }	</span>
+{END cont_numpoliza_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label9}
+						 
+							{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_numpoliza_class}
+			"
+
+			data-field="cont_numpoliza"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_numpoliza_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field7" {$item_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_numpoliza" data-default-width >
+{$cont_numpoliza_value}
+</span>
+{END cont_numpoliza_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+						 
+							{BEGIN cellblock_grid_cell_label10}
+	<td
+	
+	{$cell_grid_cell_label10}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label10}
+						 
+							{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field10}
 												</tr>
 									 
 											

@@ -37,6 +37,8 @@ include_once(getabspath("include/contrato_attached_events.php"));
 $tableEvents["contrato_attached"] = new eventclass_contrato_attached;
 include_once(getabspath("include/informe_intersup_plan_pagos_events.php"));
 $tableEvents["informe_intersup_plan_pagos"] = new eventclass_informe_intersup_plan_pagos;
+include_once(getabspath("include/informe_intersup_events.php"));
+$tableEvents["informe_intersup"] = new eventclass_informe_intersup;
 
 $xt = new Xtempl();
 

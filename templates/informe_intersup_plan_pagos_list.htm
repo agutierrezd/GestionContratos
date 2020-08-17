@@ -113,45 +113,58 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_inf_valor_pago}</span>
 						</div>
 		{END searchCtrlBlock_inf_valor_pago}
-																{BEGIN searchCtrlBlock_valor_a_pagar}
+																{BEGIN searchCtrlBlock_inf_st}
 
 
-		<div class="form-group srchPanelRow {$filterRow_class_valor_a_pagar}" {$filterRow_attrs_valor_a_pagar}>
-			<label>{$label informe_intersup_plan_pagos valor_a_pagar }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_valor_a_pagar}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_valor_a_pagar}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_valor_a_pagar}</span>
-						</div>
-		{END searchCtrlBlock_valor_a_pagar}
-																{BEGIN searchCtrlBlock_dias_fiscales}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_dias_fiscales}" {$filterRow_attrs_dias_fiscales}>
-			<label>{$label informe_intersup_plan_pagos dias_fiscales }</label>
+		<div class="form-group srchPanelRow {$filterRow_class_inf_st}" {$filterRow_attrs_inf_st}>
+			<label>{$label informe_intersup_plan_pagos inf_st }</label>
 
 							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_dias_fiscales}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_dias_fiscales}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_dias_fiscales}</span>
+								<span class="rnr-searchtype">{$searchtype_inf_st}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_st}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_st}</span>
 						</div>
-		{END searchCtrlBlock_dias_fiscales}
-																{BEGIN searchCtrlBlock_dias_calculados}
+		{END searchCtrlBlock_inf_st}
+																{BEGIN searchCtrlBlock_avgavance}
 
 
-		<div class="form-group srchPanelRow {$filterRow_class_dias_calculados}" {$filterRow_attrs_dias_calculados}>
-			<label>{$label informe_intersup_plan_pagos dias_calculados }</label>
+		<div class="form-group srchPanelRow {$filterRow_class_avgavance}" {$filterRow_attrs_avgavance}>
+			<label>{$label informe_intersup_plan_pagos avgavance }</label>
 
 							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_dias_calculados}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_dias_calculados}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_dias_calculados}</span>
+								<span class="rnr-searchtype">{$searchtype_avgavance}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_avgavance}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_avgavance}</span>
 						</div>
-		{END searchCtrlBlock_dias_calculados}
+		{END searchCtrlBlock_avgavance}
+																{BEGIN searchCtrlBlock_inf_valorcontrato}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_inf_valorcontrato}" {$filterRow_attrs_inf_valorcontrato}>
+			<label>{$label informe_intersup_plan_pagos inf_valorcontrato }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_inf_valorcontrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_inf_valorcontrato}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_inf_valorcontrato}</span>
+						</div>
+		{END searchCtrlBlock_inf_valorcontrato}
+																{BEGIN searchCtrlBlock_id_cont_fk}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_cont_fk}" {$filterRow_attrs_id_cont_fk}>
+			<label>{$label informe_intersup_plan_pagos id_cont_fk }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_cont_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_cont_fk}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_cont_fk}</span>
+						</div>
+		{END searchCtrlBlock_id_cont_fk}
 																{BEGIN searchCtrlBlock_inf_fecharep_i}
 
 
@@ -379,7 +392,12 @@
 	class=" r-ori-vert			col-md-12
 	
 ">
-			</div>					</div>
+		 
+		{BEGIN mastertable_block}
+<div data-itemtype="master_info" data-itemid="master_info" {$item_master_info} data-pageid="{$pageid}">
+	{$showmasterfile}
+</div>
+{END mastertable_block}		</div>					</div>
 	</div>		
 {END top_block}
 						</div>
@@ -404,13 +422,29 @@
 </span>
 {END add_link}
 	 
+		{BEGIN inlineadd_link}
+<span data-itemtype="inline_add" data-itemid="inline_add" {$item_inline_add} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$inlineaddlink_attrs} >
+							Añadir nuevo			</a>
+</span>
+{END inlineadd_link}
+	 
 		{BEGIN deleteselected_link}
 <span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-default   
+	<a type="button" title="" class="btn btn-danger   
 	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
-							Borrar artículos seleccionados			</a>
+							Borrar selección			</a>
 </span>
 {END deleteselected_link}
+	 
+		{BEGIN updateselected_link}
+<span data-itemtype="update_selected" data-itemid="update_selected" {$item_update_selected} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="informe_intersup_plan_pagos_edit.php" {$updateselectedlink_attrs} disabled >
+							Actualizar los seleccionados			</a>
+</span>
+{END updateselected_link}
 			{END firstAboveGridCell}	
 	</div>			 
 				<div 
@@ -522,14 +556,14 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_fecharep_f"]:before {
 		content: "{$label informe_intersup_plan_pagos inf_fecharep_f}";
 	}
-					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dias_calculados"]:before {
-		content: "{$label informe_intersup_plan_pagos dias_calculados}";
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_valor_pago"]:before {
+		content: "{$label informe_intersup_plan_pagos inf_valor_pago}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="dias_fiscales"]:before {
-		content: "{$label informe_intersup_plan_pagos dias_fiscales}";
+						[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="avgavance"]:before {
+		content: "{$label informe_intersup_plan_pagos avgavance}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="valor_a_pagar"]:before {
-		content: "{$label informe_intersup_plan_pagos valor_a_pagar}";
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_st"]:before {
+		content: "{$label informe_intersup_plan_pagos inf_st}";
 	}
 	}
 </style>
@@ -631,7 +665,7 @@
 	 
 		{BEGIN inf_fecharep_i_fieldheadercolumn}
 	{BEGIN inf_fecharep_i_fieldheader}
-	<SPAN {$inf_fecharep_i_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_fecharep_i">
+	<SPAN {$inf_fecharep_i_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_fecharep_i">
 	{$label informe_intersup_plan_pagos inf_fecharep_i }	{$arrow_icon_inf_fecharep_i}
 	</SPAN>
 	{END inf_fecharep_i_fieldheader}
@@ -658,7 +692,7 @@
 	 
 		{BEGIN inf_fecharep_f_fieldheadercolumn}
 	{BEGIN inf_fecharep_f_fieldheader}
-	<SPAN {$inf_fecharep_f_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_fecharep_f">
+	<SPAN {$inf_fecharep_f_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_fecharep_f">
 	{$label informe_intersup_plan_pagos inf_fecharep_f }	{$arrow_icon_inf_fecharep_f}
 	</SPAN>
 	{END inf_fecharep_f_fieldheader}
@@ -674,22 +708,22 @@
 	{$cell_grid_headcell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$dias_calculados_class}
+		 r-ori-vert				{$inf_valor_pago_class}
 			"
 
-			data-field="dias_calculados"
+			data-field="inf_valor_pago"
 	
 	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN dias_calculados_fieldheadercolumn}
-	{BEGIN dias_calculados_fieldheader}
-	<SPAN {$dias_calculados_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dias_calculados">
-	{$label informe_intersup_plan_pagos dias_calculados }	{$arrow_icon_dias_calculados}
+		{BEGIN inf_valor_pago_fieldheadercolumn}
+	{BEGIN inf_valor_pago_fieldheader}
+	<SPAN {$inf_valor_pago_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_valor_pago">
+	{$label informe_intersup_plan_pagos inf_valor_pago }	{$arrow_icon_inf_valor_pago}
 	</SPAN>
-	{END dias_calculados_fieldheader}
-{END dias_calculados_fieldheadercolumn}
+	{END inf_valor_pago_fieldheader}
+{END inf_valor_pago_fieldheadercolumn}
 
 	
 	</th>
@@ -701,22 +735,22 @@
 	{$cell_grid_headcell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$dias_fiscales_class}
+		 r-ori-vert				{$avgavance_class}
 			"
 
-			data-field="dias_fiscales"
+			data-field="avgavance"
 	
 	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN dias_fiscales_fieldheadercolumn}
-	{BEGIN dias_fiscales_fieldheader}
-	<SPAN {$dias_fiscales_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dias_fiscales">
-	{$label informe_intersup_plan_pagos dias_fiscales }	{$arrow_icon_dias_fiscales}
+		{BEGIN avgavance_fieldheadercolumn}
+	{BEGIN avgavance_fieldheader}
+	<SPAN {$avgavance_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="avgavance">
+	{$label informe_intersup_plan_pagos avgavance }	{$arrow_icon_avgavance}
 	</SPAN>
-	{END dias_fiscales_fieldheader}
-{END dias_fiscales_fieldheadercolumn}
+	{END avgavance_fieldheader}
+{END avgavance_fieldheadercolumn}
 
 	
 	</th>
@@ -728,22 +762,22 @@
 	{$cell_grid_headcell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$valor_a_pagar_class}
+		 r-ori-vert				{$inf_st_class}
 			"
 
-			data-field="valor_a_pagar"
+			data-field="inf_st"
 	
 	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN valor_a_pagar_fieldheadercolumn}
-	{BEGIN valor_a_pagar_fieldheader}
-	<SPAN {$valor_a_pagar_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="valor_a_pagar">
-	{$label informe_intersup_plan_pagos valor_a_pagar }	{$arrow_icon_valor_a_pagar}
+		{BEGIN inf_st_fieldheadercolumn}
+	{BEGIN inf_st_fieldheader}
+	<SPAN {$inf_st_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_st">
+	{$label informe_intersup_plan_pagos inf_st }	{$arrow_icon_inf_st}
 	</SPAN>
-	{END valor_a_pagar_fieldheader}
-{END valor_a_pagar_fieldheadercolumn}
+	{END inf_st_fieldheader}
+{END inf_st_fieldheadercolumn}
 
 	
 	</th>
@@ -781,21 +815,30 @@
 		{BEGIN edit_column}
 {BEGIN edit_link}
 <span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
-	<a type="button" title="Editar" class="btn-link   
-	 glyphicon glyphicon-pencil" href="informe_intersup_plan_pagos_edit.php?{$editlink}" {$editlink_attrs} title="Editar" data-popup >		
-				
-								</a>
+	<a type="button" title="Editar" class="btn btn-success   
+	" href="informe_intersup_plan_pagos_edit.php?{$editlink}" {$editlink_attrs} title="Editar" data-popup >
+					<span class="glyphicon glyphicon-pencil"></span>
+										</a>
 </span>
 {END edit_link}
 {END edit_column}
 	 
+		{BEGIN inline_cancel}
+<span data-itemtype="grid_inline_cancel" data-itemid="grid_inline_cancel" {$item_grid_inline_cancel} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<a type="button" title="Cancelar" class="btn-link   
+	 glyphicon glyphicon-remove" {$inlinerevertlink_attrs} title="Cancelar" >		
+				
+								</a>
+</span>
+{END inline_cancel}
+	 
 		{BEGIN view_column}
 {BEGIN view_link}
 <span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
-	<a type="button" title="Ver registro" class="btn-link   
-	 glyphicon glyphicon-search" href="informe_intersup_plan_pagos_view.php?{$editlink}" {$viewlink_attrs} title="Ver" data-popup >		
-				
-								</a>
+	<a type="button" title="Ver registro" class="btn btn-success   
+	" href="informe_intersup_plan_pagos_view.php?{$editlink}" {$viewlink_attrs} title="Ver" data-popup >
+					<span class="fa fa-search-plus"></span>
+										</a>
 </span>
 {END view_link}
 {END view_column}
@@ -902,20 +945,20 @@
 	{$cell_grid_cell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$dias_calculados_class}
+		 r-ori-vert				{$inf_valor_pago_class}
 			"
 
-			data-field="dias_calculados"
+			data-field="inf_valor_pago"
 	
 	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN dias_calculados_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dias_calculados" data-default-width >
-{$dias_calculados_value}
+		{BEGIN inf_valor_pago_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_valor_pago" data-default-width >
+{$inf_valor_pago_value}
 </span>
-{END dias_calculados_fieldcolumn}	
+{END inf_valor_pago_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field3}
 				 
@@ -925,20 +968,20 @@
 	{$cell_grid_cell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$dias_fiscales_class}
+		 r-ori-vert				{$avgavance_class}
 			"
 
-			data-field="dias_fiscales"
+			data-field="avgavance"
 	
 	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN dias_fiscales_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="dias_fiscales" data-default-width >
-{$dias_fiscales_value}
+		{BEGIN avgavance_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="avgavance" data-default-width >
+{$avgavance_value}
 </span>
-{END dias_fiscales_fieldcolumn}	
+{END avgavance_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field4}
 				 
@@ -948,20 +991,20 @@
 	{$cell_grid_cell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$valor_a_pagar_class}
+		 r-ori-vert				{$inf_st_class}
 			"
 
-			data-field="valor_a_pagar"
+			data-field="inf_st"
 	
 	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN valor_a_pagar_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="valor_a_pagar" data-default-width >
-{$valor_a_pagar_value}
+		{BEGIN inf_st_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_st" data-default-width >
+{$inf_st_value}
 </span>
-{END valor_a_pagar_fieldcolumn}	
+{END inf_st_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field5}
 							</tr>
@@ -1020,12 +1063,22 @@
 	{$cell_grid_footcell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert			"
+		 r-ori-vert				{$inf_consecutivo_class}
+			"
 
+			data-field="inf_consecutivo"
 	
-	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_plan_pagos_list"		data-control-cell
-	
+	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_plan_pagos_list"	
 	>
+
+	 
+		{BEGIN inf_consecutivo_fieldfootercolumn}
+{BEGIN inf_consecutivo_showtotal}
+<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_consecutivo">
+	Contar	{$inf_consecutivo_total}
+</span>
+{END inf_consecutivo_showtotal}
+{END inf_consecutivo_fieldfootercolumn}
 
 	
 	</td>
@@ -1040,8 +1093,7 @@
 		 r-ori-vert			"
 
 	
-	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_plan_pagos_list"		data-control-cell
-	
+	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_plan_pagos_list"	
 	>
 
 	
@@ -1057,8 +1109,7 @@
 		 r-ori-vert			"
 
 	
-	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_plan_pagos_list"		data-control-cell
-	
+	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_plan_pagos_list"	
 	>
 
 	
@@ -1071,12 +1122,22 @@
 	{$cell_grid_footcell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert			"
+		 r-ori-vert				{$inf_valor_pago_class}
+			"
 
+			data-field="inf_valor_pago"
 	
-	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_plan_pagos_list"		data-control-cell
-	
+	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_plan_pagos_list"	
 	>
+
+	 
+		{BEGIN inf_valor_pago_fieldfootercolumn}
+{BEGIN inf_valor_pago_showtotal}
+<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_valor_pago">
+	Total	{$inf_valor_pago_total}
+</span>
+{END inf_valor_pago_showtotal}
+{END inf_valor_pago_fieldfootercolumn}
 
 	
 	</td>
@@ -1091,8 +1152,7 @@
 		 r-ori-vert			"
 
 	
-	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_plan_pagos_list"		data-control-cell
-	
+	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_plan_pagos_list"	
 	>
 
 	
@@ -1105,22 +1165,11 @@
 	{$cell_grid_footcell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$valor_a_pagar_class}
-			"
+		 r-ori-vert			"
 
-			data-field="valor_a_pagar"
 	
 	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_plan_pagos_list"	
 	>
-
-	 
-		{BEGIN valor_a_pagar_fieldfootercolumn}
-{BEGIN valor_a_pagar_showtotal}
-<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="valor_a_pagar">
-	Total	{$valor_a_pagar_total}
-</span>
-{END valor_a_pagar_showtotal}
-{END valor_a_pagar_fieldfootercolumn}
 
 	
 	</td>

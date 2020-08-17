@@ -117,13 +117,10 @@ pdfDocument = {
 			{"hidden":"{$item_hide_export_field6}","text":{$inf_valor_pago_pdfvalue}},
 				
 				
-			{"hidden":"{$item_hide_export_field}","text":{$dias_calculados_pdfvalue}},
+			{"hidden":"{$item_hide_export_field}","text":{$avgavance_pdfvalue}},
 				
 				
-			{"hidden":"{$item_hide_export_field1}","text":{$dias_fiscales_pdfvalue}},
-				
-				
-			{"hidden":"{$item_hide_export_field5}","text":{$valor_a_pagar_pdfvalue}},
+			{"hidden":"{$item_hide_export_field1}","text":{$inf_st_pdfvalue}},
 				
 		  ],
   "border": [ false, false, false, false ],

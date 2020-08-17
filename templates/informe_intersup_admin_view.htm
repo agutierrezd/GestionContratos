@@ -28,8 +28,8 @@
 		>
 							{BEGIN top_block}
 <div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
-		data-v-width="2"
-	data-v-margin="0"
+		data-v-width="4"
+	data-v-margin="1"
 	
 >		
 	 
@@ -46,8 +46,8 @@
 {END top_block}
 									{BEGIN above-grid_block}
 <div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
-		data-v-width="2"
-	data-v-margin="0"
+		data-v-width="4"
+	data-v-margin="1"
 	
 >		
 	</div>		
@@ -1162,7 +1162,8 @@
 								</td>
 			{END cellblock_section1_c1}
 			 
-																
+		
+							
 
 {BEGIN cellblock_section1_c}
 <td
@@ -1176,29 +1177,7 @@
 		
 >
 	<div edit-form-cell class="clearfix">
-				
-{BEGIN inf_poliza_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_poliza}  r-vertical-field" data-fieldname="inf_poliza" data-signal-error-for="inf_poliza{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="inf_poliza" >
-
-		<div class="col-md-12">
-	
-	<label class="" for="{$labelfor_inf_poliza}">
-		
-		{BEGIN inf_poliza_label}{$label informe_intersup_admin inf_poliza }{END inf_poliza_label}
-	</label>
-	<div class="" >
-		{$inf_poliza_value}	</div>
-
-		</div>
-		
-</div>
-
-
-{END inf_poliza_fieldblock}
-	
-								</td>
+									</td>
 			{END cellblock_section1_c}
 								</tr>
 			</tbody></table>
@@ -1206,12 +1185,174 @@
 						</div>
 				</div>
 	</div>
-</div>  	
-				{END grid_block}
+</div>  											<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_anio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_anio}  r-vertical-field" data-fieldname="inf_anio" data-signal-error-for="inf_anio{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="inf_anio" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_inf_anio}">
+		
+		{BEGIN inf_anio_label}{$label informe_intersup_admin inf_anio }{END inf_anio_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$inf_anio_value}	</div>
+
+		
+</div>
+
+
+{END inf_anio_fieldblock}
+											
+{BEGIN inf_prenum_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_prenum}  r-vertical-field" data-fieldname="inf_prenum" data-signal-error-for="inf_prenum{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="inf_prenum" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_inf_prenum}">
+		
+		{BEGIN inf_prenum_label}{$label informe_intersup_admin inf_prenum }{END inf_prenum_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$inf_prenum_value}	</div>
+
+		
+</div>
+
+
+{END inf_prenum_fieldblock}
+											
+{BEGIN inf_mail_a_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_mail_a}  r-vertical-field" data-fieldname="inf_mail_a" data-signal-error-for="inf_mail_a{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="inf_mail_a" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_inf_mail_a}">
+		
+		{BEGIN inf_mail_a_label}{$label informe_intersup_admin inf_mail_a }{END inf_mail_a_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$inf_mail_a_value}	</div>
+
+		
+</div>
+
+
+{END inf_mail_a_fieldblock}
+											
+{BEGIN inf_mail_b_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_mail_b}  r-vertical-field" data-fieldname="inf_mail_b" data-signal-error-for="inf_mail_b{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field16" {$item_integrated_edit_field16} data-pageid="{$pageid}" data-field="inf_mail_b" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_inf_mail_b}">
+		
+		{BEGIN inf_mail_b_label}{$label informe_intersup_admin inf_mail_b }{END inf_mail_b_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$inf_mail_b_value}	</div>
+
+		
+</div>
+
+
+{END inf_mail_b_fieldblock}
+											
+{BEGIN url_secop_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_url_secop}  r-vertical-field" data-fieldname="url_secop" data-signal-error-for="url_secop{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field22" {$item_integrated_edit_field22} data-pageid="{$pageid}" data-field="url_secop" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_url_secop}">
+		
+		{BEGIN url_secop_label}{$label informe_intersup_admin url_secop }{END url_secop_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$url_secop_value}	</div>
+
+		
+</div>
+
+
+{END url_secop_fieldblock}
+											
+{BEGIN num_poliza_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_num_poliza}  r-vertical-field" data-fieldname="num_poliza" data-signal-error-for="num_poliza{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="num_poliza" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_num_poliza}">
+		
+		{BEGIN num_poliza_label}{$label informe_intersup_admin num_poliza }{END num_poliza_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$num_poliza_value}	</div>
+
+		
+</div>
+
+
+{END num_poliza_fieldblock}
+											
+{BEGIN mun_ejec_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_mun_ejec}  r-vertical-field" data-fieldname="mun_ejec" data-signal-error-for="mun_ejec{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field28" {$item_integrated_edit_field28} data-pageid="{$pageid}" data-field="mun_ejec" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_mun_ejec}">
+		
+		{BEGIN mun_ejec_label}{$label informe_intersup_admin mun_ejec }{END mun_ejec_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$mun_ejec_value}	</div>
+
+		
+</div>
+
+
+{END mun_ejec_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
 									{BEGIN below-grid_block}
 <div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
-		data-v-width="2"
-	data-v-margin="0"
+		data-v-width="4"
+	data-v-margin="1"
 	
 >		
 	 

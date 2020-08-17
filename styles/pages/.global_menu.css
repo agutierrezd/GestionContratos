@@ -14,5 +14,23 @@
   width: 100%;
   height: 530px;
 }
+[data-page=".global_menu"][data-itemid="welcome_item"] > .bs-welcome-header {
+  background-color: #DB7093;
+}
+[data-page=".global_menu"][data-itemid="welcome_item1"] > .bs-welcome-header {
+  background-color: #DB7093;
+}
+[data-page=".global_menu"][data-itemid="welcome_item2"] > .bs-welcome-header {
+  background-color: #8FBC8B;
+}
+[data-page=".global_menu"][data-itemid="welcome_item3"] > .bs-welcome-header {
+  background-color: #D2AF80;
+}
+[data-page=".global_menu"][data-itemid="welcome_item4"] > .bs-welcome-header {
+  background-color: #B22222;
+}
+[data-page=".global_menu"][data-itemid="welcome_item5"] > .bs-welcome-header {
+  background-color: #8FBC8B;
+}
 
 

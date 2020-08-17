@@ -125,6 +125,9 @@ pdfDocument = {
 									{BEGIN col_grid_0}
 						"*", 
 							{END col_grid_0}
+												{BEGIN col_grid_1}
+						"*", 
+							{END col_grid_1}
 					 ],	
 		
 			heights: [
@@ -133,11 +136,138 @@ pdfDocument = {
 			"%",
 						{END row_grid_0}
 			 
+								{BEGIN row_grid_1}
+						
+			"%",
+						{END row_grid_1}
+			 
+								{BEGIN row_grid_2}
+						
+			"%",
+						{END row_grid_2}
+			 
+								{BEGIN row_grid_3}
+						
+			"%",
+						{END row_grid_3}
+			 
 				],
 	
 		body: [
 				
 					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel informe_intersup_plan_pagos id_cont_fk }","bold":true},{"text":{$id_cont_fk_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c4}
+																			{BEGIN cellblock_grid_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel informe_intersup_plan_pagos inf_consecutivo }","bold":true},{"text":{$inf_consecutivo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c5}
+											],
+				{END row_grid_0}
+								{BEGIN row_grid_1}
+				[
+												{BEGIN cellblock_grid_c6}
+{
+	cellId: 'c6',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel informe_intersup_plan_pagos inf_fecharep_i }","bold":true},{"text":{$inf_fecharep_i_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c6}
+																			{BEGIN cellblock_grid_c7}
+{
+	cellId: 'c7',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel informe_intersup_plan_pagos inf_fecharep_f }","bold":true},{"text":{$inf_fecharep_f_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c7}
+											],
+				{END row_grid_1}
+								{BEGIN row_grid_2}
 				[
 												{BEGIN cellblock_grid_c3}
 {
@@ -157,17 +287,31 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel informe_intersup_plan_pagos id_cont_fk }","bold":true},{"text":{$id_cont_fk_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel informe_intersup_plan_pagos inf_fecharep_i }","bold":true},{"text":{$inf_fecharep_i_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel informe_intersup_plan_pagos inf_fecharep_f }","bold":true},{"text":{$inf_fecharep_f_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
 			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel informe_intersup_plan_pagos inf_valor_pago }","bold":true},{"text":{$inf_valor_pago_pdfvalue}}],"margin":[0,0,0,15]},
 				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c3}
+																			{BEGIN cellblock_grid_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
 				
 			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel informe_intersup_plan_pagos inf_valorcontrato }","bold":true},{"text":{$inf_valorcontrato_pdfvalue}}],"margin":[0,0,0,15]},
 				
@@ -176,9 +320,65 @@ pdfDocument = {
           "alignment": 'left',
   },
 
-{END cellblock_grid_c3}
+{END cellblock_grid_c}
 											],
-				{END row_grid_0}
+				{END row_grid_2}
+								{BEGIN row_grid_3}
+				[
+												{BEGIN cellblock_grid_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel informe_intersup_plan_pagos avgavance }","bold":true},{"text":{$avgavance_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c1}
+																			{BEGIN cellblock_grid_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel informe_intersup_plan_pagos inf_st }","bold":true},{"text":{$inf_st_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c2}
+											],
+				{END row_grid_3}
 					]
 	}
 }
@@ -217,6 +417,9 @@ pdfDocument = {
 		
 				
 			{"text":"","hidden":"{$item_hide_edit_save}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_update_records}"},
 				
 				
 			{"text":"","hidden":"{$item_hide_edit_back_list}"},

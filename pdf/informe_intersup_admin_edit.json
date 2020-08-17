@@ -1018,10 +1018,8 @@ pdfDocument = {
 	
 			"stack": [
 		
-				
-			{"hidden":"{$item_hide_integrated_edit_field28}","stack":[{"text":"{$jslabel informe_intersup_admin inf_poliza }","bold":true},{"text":{$inf_poliza_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },
@@ -1037,6 +1035,27 @@ pdfDocument = {
 		},
 		margin: [0,0,0,15],
 	},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel informe_intersup_admin inf_anio }","bold":true},{"text":{$inf_anio_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel informe_intersup_admin inf_prenum }","bold":true},{"text":{$inf_prenum_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel informe_intersup_admin inf_mail_a }","bold":true},{"text":{$inf_mail_a_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field16}","stack":[{"text":"{$jslabel informe_intersup_admin inf_mail_b }","bold":true},{"text":{$inf_mail_b_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel informe_intersup_admin url_secop }","bold":true},{"text":{$url_secop_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field23}","stack":[{"text":"{$jslabel informe_intersup_admin num_poliza }","bold":true},{"text":{$num_poliza_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field28}","stack":[{"text":"{$jslabel informe_intersup_admin mun_ejec }","bold":true},{"text":{$mun_ejec_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],

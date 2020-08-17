@@ -100,33 +100,7 @@
 				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
 		</div>
 		{END searchCtrlBlock}
-																		{BEGIN searchCtrlBlock_dependencia_id}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_dependencia_id}" {$filterRow_attrs_dependencia_id}>
-			<label>{$label interventor_interno dependencia_id }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_dependencia_id}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_dependencia_id}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_dependencia_id}</span>
-						</div>
-		{END searchCtrlBlock_dependencia_id}
-																{BEGIN searchCtrlBlock_cargo_id}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_cargo_id}" {$filterRow_attrs_cargo_id}>
-			<label>{$label interventor_interno cargo_id }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_cargo_id}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_cargo_id}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_cargo_id}</span>
-						</div>
-		{END searchCtrlBlock_cargo_id}
-																{BEGIN searchCtrlBlock_apellidos}
+																		{BEGIN searchCtrlBlock_apellidos}
 
 
 		<div class="form-group srchPanelRow {$filterRow_class_apellidos}" {$filterRow_attrs_apellidos}>
@@ -457,7 +431,7 @@
 <span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
 	<a type="button" title="" class="btn btn-primary   
 	" {$addlink_attrs} href="interventor_interno_add.php" data-popup >
-					<img src="{$file_url images/menuicons/User%20Add-01-WF.png}" />
+					<span class="fa fa-user-plus"></span>
 							Vincular supervisor			</a>
 </span>
 {END add_link}
@@ -472,9 +446,10 @@
 	 
 		{BEGIN deleteselected_link}
 <span data-itemtype="delete" data-itemid="delete" {$item_delete} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-default   
+	<a type="button" title="" class="btn btn-danger   
 	" {$deleteselectedlink_attrs} {$deleteselectedlink_span} disabled >
-							Borrar artículos seleccionados			</a>
+					<span class="fa fa-trash-o"></span>
+							Borrar registros seleccionados			</a>
 </span>
 {END deleteselected_link}
 			{END firstAboveGridCell}	

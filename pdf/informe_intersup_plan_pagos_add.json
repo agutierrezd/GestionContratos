@@ -146,6 +146,11 @@ pdfDocument = {
 			"%",
 						{END row_grid_2}
 			 
+								{BEGIN row_grid_3}
+						
+			"%",
+						{END row_grid_3}
+			 
 				],
 	
 		body: [
@@ -318,6 +323,62 @@ pdfDocument = {
 {END cellblock_grid_c}
 											],
 				{END row_grid_2}
+								{BEGIN row_grid_3}
+				[
+												{BEGIN cellblock_grid_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel informe_intersup_plan_pagos avgavance }","bold":true},{"text":{$avgavance_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c1}
+																			{BEGIN cellblock_grid_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel informe_intersup_plan_pagos inf_st }","bold":true},{"text":{$inf_st_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c2}
+											],
+				{END row_grid_3}
 					]
 	}
 }

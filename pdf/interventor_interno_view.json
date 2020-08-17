@@ -116,16 +116,6 @@ pdfDocument = {
 			"%",
 						{END row_grid_4}
 			 
-								{BEGIN row_grid_5}
-						
-			"%",
-						{END row_grid_5}
-			 
-								{BEGIN row_grid_6}
-						
-			"%",
-						{END row_grid_6}
-			 
 				],
 	
 		body: [
@@ -300,62 +290,6 @@ pdfDocument = {
 				{END row_grid_2}
 								{BEGIN row_grid_3}
 				[
-												{BEGIN cellblock_grid_c16}
-{
-	cellId: 'c16',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				
-			{"hidden":"{$item_hide_integrated_edit_field15}","stack":[{"text":"{$jslabel interventor_interno cargo_id }","bold":true},{"text":{$cargo_id_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_c16}
-																			{BEGIN cellblock_grid_c17}
-{
-	cellId: 'c17',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				
-			{"hidden":"{$item_hide_integrated_edit_field16}","stack":[{"text":"{$jslabel interventor_interno dependencia_id }","bold":true},{"text":{$dependencia_id_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_c17}
-											],
-				{END row_grid_3}
-								{BEGIN row_grid_4}
-				[
 												{BEGIN cellblock_grid_c12}
 {
 	cellId: 'c12',
@@ -409,8 +343,8 @@ pdfDocument = {
 
 {END cellblock_grid_c13}
 											],
-				{END row_grid_4}
-								{BEGIN row_grid_5}
+				{END row_grid_3}
+								{BEGIN row_grid_4}
 				[
 												{BEGIN cellblock_grid_c15}
 {
@@ -429,10 +363,8 @@ pdfDocument = {
 	
 			"stack": [
 		
-				
-			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel interventor_interno id_cont_fk }","bold":true},{"text":{$id_cont_fk_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },
@@ -465,61 +397,7 @@ pdfDocument = {
 
 {END cellblock_grid_c18}
 											],
-				{END row_grid_5}
-								{BEGIN row_grid_6}
-				[
-												{BEGIN cellblock_grid_c19}
-{
-	cellId: 'c19',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				
-			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel interventor_interno cont_hash_fk }","bold":true},{"text":{$cont_hash_fk_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_c19}
-																			{BEGIN cellblock_grid_c20}
-{
-	cellId: 'c20',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				'',
-	  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_c20}
-											],
-				{END row_grid_6}
+				{END row_grid_4}
 					]
 	}
 }

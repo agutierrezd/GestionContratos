@@ -174,9 +174,6 @@ pdfDocument = {
 			{"hidden":"{$item_hide_export_field28}","text":{$inf_dependencia_pdfvalue}},
 				
 				
-			{"hidden":"{$item_hide_export_field29}","text":{$inf_poliza_pdfvalue}},
-				
-				
 			{"hidden":"{$item_hide_export_field30}","text":{$inf_avgejecucion_pdfvalue}},
 				
 				
@@ -193,6 +190,27 @@ pdfDocument = {
 				
 				
 			{"hidden":"{$item_hide_export_field35}","text":{$inf_incumplimiento_obs_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field}","text":{$inf_anio_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field9}","text":{$inf_prenum_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field13}","text":{$inf_mail_a_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field17}","text":{$inf_mail_b_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field23}","text":{$url_secop_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field24}","text":{$num_poliza_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field29}","text":{$mun_ejec_pdfvalue}},
 				
 		  ],
   "border": [ false, false, false, false ],

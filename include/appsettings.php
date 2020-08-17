@@ -646,9 +646,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "321_1596023373";
+$projectBuildKey = "458_1597510907";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "321";
+$projectBuildNumber = "458";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -715,7 +715,7 @@ $tableCaptions["Spanish"]["tparam_tipo_ct_regimen_tribut"] = "Tparam Tipo Ct Reg
 $tableCaptions["Spanish"]["global_unspsc"] = "Global Unspsc";
 $tableCaptions["Spanish"]["cargo"] = "Cargo";
 $tableCaptions["Spanish"]["tparam_sn"] = "Tparam Sn";
-$tableCaptions["Spanish"]["informe_intersup_plan_pagos"] = "Plan de pago";
+$tableCaptions["Spanish"]["informe_intersup_plan_pagos"] = "PROGRAMACIÓN DE ENTREGA DE INFORMES Y PAGOS";
 $tableCaptions["Spanish"]["informe_intersup_admin"] = "Informe Intersup Admin";
 $tableCaptions["Spanish"]["q_001_dashboard"] = "Q 001 Dashboard";
 $tableCaptions["Spanish"]["informe_intersup_estado"] = "Informe Intersup Estado";
@@ -728,6 +728,17 @@ $tableCaptions["Spanish"]["contrato_chart_supjer"] = "Contrato Chart Supjer";
 $tableCaptions["Spanish"]["secop"] = "Secop";
 $tableCaptions["Spanish"]["tparam_tipo_ct_rubro"] = "Tparam Tipo Ct Rubro";
 $tableCaptions["Spanish"]["q_001_dashboard_info"] = "Q 001 Dashboard Info";
+$tableCaptions["Spanish"]["q_bandejaentrada_supervisores"] = "Q Bandejaentrada Supervisores";
+$tableCaptions["Spanish"]["q_000_control_informes"] = "Q 000 Control Informes";
+$tableCaptions["Spanish"]["informe_intersup_plan_pagos_st"] = "Informe Intersup Plan Pagos St";
+$tableCaptions["Spanish"]["contrato_oe"] = "OBLIGACIONES ESPECÍFICAS";
+$tableCaptions["Spanish"]["q_oe_ordinal"] = "Q Oe Ordinal";
+$tableCaptions["Spanish"]["q_bandejaentrada_supervisores1"] = "Supervisión";
+$tableCaptions["Spanish"]["informe_intersup"] = "Informe de supervisión";
+$tableCaptions["Spanish"]["q_bandejaentrada_supervisores2"] = "Q Bandejaentrada Supervisores2";
+$tableCaptions["Spanish"]["q_divipola"] = "Q Divipola";
+$tableCaptions["Spanish"]["informe_intersup_oe"] = "Obligaciones específicas";
+$tableCaptions["Spanish"]["tparam_sn_oe"] = "Tparam Sn Oe";
 
 
 $globalEvents = new class_GlobalEvents;

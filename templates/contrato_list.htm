@@ -113,6 +113,45 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_prenumero}</span>
 						</div>
 		{END searchCtrlBlock_prenumero}
+																{BEGIN searchCtrlBlock_cont_numpoliza}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_numpoliza}" {$filterRow_attrs_cont_numpoliza}>
+			<label>{$label contrato cont_numpoliza }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_numpoliza}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_numpoliza}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_numpoliza}</span>
+						</div>
+		{END searchCtrlBlock_cont_numpoliza}
+																{BEGIN searchCtrlBlock_cont_fecha_aprobgarantia}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_fecha_aprobgarantia}" {$filterRow_attrs_cont_fecha_aprobgarantia}>
+			<label>{$label contrato cont_fecha_aprobgarantia }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_fecha_aprobgarantia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_fecha_aprobgarantia}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_fecha_aprobgarantia}</span>
+						</div>
+		{END searchCtrlBlock_cont_fecha_aprobgarantia}
+																{BEGIN searchCtrlBlock_cont_munejec}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_munejec}" {$filterRow_attrs_cont_munejec}>
+			<label>{$label contrato cont_munejec }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_munejec}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_munejec}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_munejec}</span>
+						</div>
+		{END searchCtrlBlock_cont_munejec}
 																{BEGIN searchCtrlBlock_cont_tipo_rubro}
 
 
@@ -738,6 +777,13 @@
 					Obligaciones / Pagos				</label>
 			</div>
 			{END print_details_ep_obligaciones}
+														{BEGIN print_details_contrato_oe}
+			<div>
+				<label for="printDetailscontrato_oe{$id}">
+					<input type="checkbox" value="contrato_oe" id="printDetailscontrato_oe{$id}" checked>
+					OBLIGACIONES ESPECÍFICAS				</label>
+			</div>
+			{END print_details_contrato_oe}
 						</div>
 </div>
 {END print_details}
@@ -782,16 +828,6 @@
 		<a>
 		  	<div class="checkbox">
 				<label>
-					<input type="checkbox" id="hide_cont_formapago" checked="checked" value="1" data-field="cont_formapago">
-					<span>{$label contrato cont_formapago }</span>
-				</label>
-			</div>
-		</a>
-		</li>
-						<li>
-		<a>
-		  	<div class="checkbox">
-				<label>
 					<input type="checkbox" id="hide_cont_valormensual" checked="checked" value="1" data-field="cont_valormensual">
 					<span>{$label contrato cont_valormensual }</span>
 				</label>
@@ -804,16 +840,6 @@
 				<label>
 					<input type="checkbox" id="hide_cont_valorinicial" checked="checked" value="1" data-field="cont_valorinicial">
 					<span>{$label contrato cont_valorinicial }</span>
-				</label>
-			</div>
-		</a>
-		</li>
-						<li>
-		<a>
-		  	<div class="checkbox">
-				<label>
-					<input type="checkbox" id="hide_cont_periodicidad" checked="checked" value="1" data-field="cont_periodicidad">
-					<span>{$label contrato cont_periodicidad }</span>
 				</label>
 			</div>
 		</a>
@@ -902,8 +928,8 @@
 		<a>
 		  	<div class="checkbox">
 				<label>
-					<input type="checkbox" id="hide_cont_tipo_rubro" checked="checked" value="1" data-field="cont_tipo_rubro">
-					<span>{$label contrato cont_tipo_rubro }</span>
+					<input type="checkbox" id="hide_id_cont" checked="checked" value="1" data-field="id_cont">
+					<span>{$label contrato id_cont }</span>
 				</label>
 			</div>
 		</a>
@@ -914,6 +940,26 @@
 				<label>
 					<input type="checkbox" id="hide_pre_contnumero" checked="checked" value="1" data-field="pre_contnumero">
 					<span>{$label contrato pre_contnumero }</span>
+				</label>
+			</div>
+		</a>
+		</li>
+						<li>
+		<a>
+		  	<div class="checkbox">
+				<label>
+					<input type="checkbox" id="hide_cont_fecha_aprobgarantia" checked="checked" value="1" data-field="cont_fecha_aprobgarantia">
+					<span>{$label contrato cont_fecha_aprobgarantia }</span>
+				</label>
+			</div>
+		</a>
+		</li>
+						<li>
+		<a>
+		  	<div class="checkbox">
+				<label>
+					<input type="checkbox" id="hide_cont_numpoliza" checked="checked" value="1" data-field="cont_numpoliza">
+					<span>{$label contrato cont_numpoliza }</span>
 				</label>
 			</div>
 		</a>
@@ -935,6 +981,9 @@
 <div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
 {END message_block}	<style>
 @media screen and (max-width: 767px) {
+		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="id_cont"]:before {
+		content: "{$label contrato id_cont}";
+	}
 				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_ano"]:before {
 		content: "{$label contrato cont_ano}";
 	}
@@ -959,23 +1008,20 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_fechafinal"]:before {
 		content: "{$label contrato cont_fechafinal}";
 	}
-				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_periodicidad"]:before {
-		content: "{$label contrato cont_periodicidad}";
-	}
-					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valorinicial"]:before {
+							[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valorinicial"]:before {
 		content: "{$label contrato cont_valorinicial}";
 	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valormensual"]:before {
 		content: "{$label contrato cont_valormensual}";
 	}
-								[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_formapago"]:before {
-		content: "{$label contrato cont_formapago}";
-	}
-									[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_secop_enlace"]:before {
+															[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_secop_enlace"]:before {
 		content: "{$label contrato cont_secop_enlace}";
 	}
-								[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_tipo_rubro"]:before {
-		content: "{$label contrato cont_tipo_rubro}";
+										[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_fecha_aprobgarantia"]:before {
+		content: "{$label contrato cont_fecha_aprobgarantia}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_numpoliza"]:before {
+		content: "{$label contrato cont_numpoliza}";
 	}
 	}
 </style>
@@ -1055,22 +1101,22 @@
 	{$cell_grid_headcell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_estado_class}
+		 r-ori-vert				{$id_cont_class}
 			"
 
-			data-field="cont_estado"
+			data-field="id_cont"
 	
 	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN cont_estado_fieldheadercolumn}
-	{BEGIN cont_estado_fieldheader}
-	<SPAN {$cont_estado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_estado">
-	{$label contrato cont_estado }	{$arrow_icon_cont_estado}
+		{BEGIN id_cont_fieldheadercolumn}
+	{BEGIN id_cont_fieldheader}
+	<SPAN {$id_cont_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field2" {$item_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_cont">
+	{$label contrato id_cont }	{$arrow_icon_id_cont}
 	</SPAN>
-	{END cont_estado_fieldheader}
-{END cont_estado_fieldheadercolumn}
+	{END id_cont_fieldheader}
+{END id_cont_fieldheadercolumn}
 
 	
 	</th>
@@ -1174,7 +1220,7 @@
 	 
 		{BEGIN cont_secop_enlace_fieldheadercolumn}
 	{BEGIN cont_secop_enlace_fieldheader}
-	<SPAN {$cont_secop_enlace_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field2" {$item_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_enlace">
+	<SPAN {$cont_secop_enlace_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field3" {$item_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_enlace">
 	{$label contrato cont_secop_enlace }	{$arrow_icon_cont_secop_enlace}
 	</SPAN>
 	{END cont_secop_enlace_fieldheader}
@@ -1282,7 +1328,7 @@
 	 
 		{BEGIN cont_fechafinal_fieldheadercolumn}
 	{BEGIN cont_fechafinal_fieldheader}
-	<SPAN {$cont_fechafinal_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechafinal">
+	<SPAN {$cont_fechafinal_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechafinal">
 	{$label contrato cont_fechafinal }	{$arrow_icon_cont_fechafinal}
 	</SPAN>
 	{END cont_fechafinal_fieldheader}
@@ -1298,39 +1344,12 @@
 	{$cell_grid_headcell_field9}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_periodicidad_class}
-			"
-
-			data-field="cont_periodicidad"
-	
-	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN cont_periodicidad_fieldheadercolumn}
-	{BEGIN cont_periodicidad_fieldheader}
-	<SPAN {$cont_periodicidad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_periodicidad">
-	{$label contrato cont_periodicidad }	{$arrow_icon_cont_periodicidad}
-	</SPAN>
-	{END cont_periodicidad_fieldheader}
-{END cont_periodicidad_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field9}
-				 
-					{BEGIN cellblock_grid_headcell_field10}
-	<th
-	
-	{$cell_grid_headcell_field10}
-	{$recordattrs}
-	class="
 		 r-ori-vert				{$cont_valorinicial_class}
 			"
 
 			data-field="cont_valorinicial"
 	
-	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1344,12 +1363,12 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field10}
+	{END cellblock_grid_headcell_field9}
 				 
-					{BEGIN cellblock_grid_headcell_field11}
+					{BEGIN cellblock_grid_headcell_field10}
 	<th
 	
-	{$cell_grid_headcell_field11}
+	{$cell_grid_headcell_field10}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$cont_valormensual_class}
@@ -1357,7 +1376,7 @@
 
 			data-field="cont_valormensual"
 	
-	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1371,6 +1390,33 @@
 
 	
 	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_estado_class}
+			"
+
+			data-field="cont_estado"
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_estado_fieldheadercolumn}
+	{BEGIN cont_estado_fieldheader}
+	<SPAN {$cont_estado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_estado">
+	{$label contrato cont_estado }	{$arrow_icon_cont_estado}
+	</SPAN>
+	{END cont_estado_fieldheader}
+{END cont_estado_fieldheadercolumn}
+
+	
+	</th>
 	{END cellblock_grid_headcell_field11}
 				 
 					{BEGIN cellblock_grid_headcell_field12}
@@ -1379,22 +1425,22 @@
 	{$cell_grid_headcell_field12}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_formapago_class}
+		 r-ori-vert				{$cont_fecha_aprobgarantia_class}
 			"
 
-			data-field="cont_formapago"
+			data-field="cont_fecha_aprobgarantia"
 	
 	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN cont_formapago_fieldheadercolumn}
-	{BEGIN cont_formapago_fieldheader}
-	<SPAN {$cont_formapago_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field42" {$item_simple_grid_field42} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_formapago">
-	{$label contrato cont_formapago }	{$arrow_icon_cont_formapago}
+		{BEGIN cont_fecha_aprobgarantia_fieldheadercolumn}
+	{BEGIN cont_fecha_aprobgarantia_fieldheader}
+	<SPAN {$cont_fecha_aprobgarantia_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_aprobgarantia">
+	{$label contrato cont_fecha_aprobgarantia }	{$arrow_icon_cont_fecha_aprobgarantia}
 	</SPAN>
-	{END cont_formapago_fieldheader}
-{END cont_formapago_fieldheadercolumn}
+	{END cont_fecha_aprobgarantia_fieldheader}
+{END cont_fecha_aprobgarantia_fieldheadercolumn}
 
 	
 	</th>
@@ -1406,22 +1452,22 @@
 	{$cell_grid_headcell_field13}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_tipo_rubro_class}
+		 r-ori-vert				{$cont_numpoliza_class}
 			"
 
-			data-field="cont_tipo_rubro"
+			data-field="cont_numpoliza"
 	
 	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN cont_tipo_rubro_fieldheadercolumn}
-	{BEGIN cont_tipo_rubro_fieldheader}
-	<SPAN {$cont_tipo_rubro_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field3" {$item_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo_rubro">
-	{$label contrato cont_tipo_rubro }	{$arrow_icon_cont_tipo_rubro}
+		{BEGIN cont_numpoliza_fieldheadercolumn}
+	{BEGIN cont_numpoliza_fieldheader}
+	<SPAN {$cont_numpoliza_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_numpoliza">
+	{$label contrato cont_numpoliza }	{$arrow_icon_cont_numpoliza}
 	</SPAN>
-	{END cont_tipo_rubro_fieldheader}
-{END cont_tipo_rubro_fieldheadercolumn}
+	{END cont_numpoliza_fieldheader}
+{END cont_numpoliza_fieldheadercolumn}
 
 	
 	</th>
@@ -1460,9 +1506,9 @@
 		{BEGIN edit_column}
 {BEGIN edit_link}
 <span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
-	<a type="button" title="Editar documento" class="btn btn-primary  btn-xs 
+	<a type="button" title="Editar documento" class="btn btn-success   
 	" href="contrato_edit.php?{$editlink}" {$editlink_attrs} title="Editar" data-popup >
-					<img src="{$file_url images/menuicons/Folder%20setting-WF.png}" />
+					<span class="fa fa-edit"></span>
 										</a>
 </span>
 {END edit_link}
@@ -1471,9 +1517,9 @@
 		{BEGIN view_column}
 {BEGIN view_link}
 <span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
-	<a type="button" title="Ver registro" class="btn btn-primary  btn-xs 
+	<a type="button" title="Ver registro" class="btn btn-success   
 	" href="contrato_view.php?{$editlink}" {$viewlink_attrs} title="Ver" data-popup >
-					<img src="{$file_url images/menuicons/Search%20folder%20new-WF.png}" />
+					<span class="fa fa-search-plus"></span>
 										</a>
 </span>
 {END view_link}
@@ -1522,13 +1568,13 @@
 	 
 		{BEGIN dtables_link}
 	<a 
-		data-itemtype="grid_alldetails_link" data-itemid="grid_alldetails_link" {$item_grid_alldetails_link} data-pageid="{$pageid}" data-record-id="{$recId}" 
+		data-itemtype="grid_alldetails_link" data-itemid="grid_alldetails_link" {$item_grid_alldetails_link} data-pageid="{$pageid}" data-page="contrato_list" data-record-id="{$recId}" 
 		{$dtables_link_attrs} 
 		class="{$dtables_link_class}" 
 		title="Mostrar detalles"
 	>
-					<img src="{$file_url images/menuicons/321_a_Black%20List%20Folder-WF.png}" />
-					</a>
+					<span class="fa fa-angle-double-down"></span>
+				Detalle	</a>
 {END dtables_link}
 	 
 		
@@ -1582,20 +1628,20 @@
 	{$cell_grid_cell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_estado_class}
+		 r-ori-vert				{$id_cont_class}
 			"
 
-			data-field="cont_estado"
+			data-field="id_cont"
 	
 	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN cont_estado_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_estado" data-default-width >
-{$cont_estado_value}
+		{BEGIN id_cont_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_cont" data-default-width >
+{$id_cont_value}
 </span>
-{END cont_estado_fieldcolumn}	
+{END id_cont_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field}
 				 
@@ -1789,35 +1835,12 @@
 	{$cell_grid_cell_field9}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_periodicidad_class}
-			"
-
-			data-field="cont_periodicidad"
-	
-	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN cont_periodicidad_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_periodicidad" data-default-width >
-{$cont_periodicidad_value}
-</span>
-{END cont_periodicidad_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field9}
-				 
-					{BEGIN cellblock_grid_cell_field10}
-	<td
-	
-	{$cell_grid_cell_field10}
-	{$recordattrs}
-	class="
 		 r-ori-vert				{$cont_valorinicial_class}
 			"
 
 			data-field="cont_valorinicial"
 	
-	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1827,12 +1850,12 @@
 </span>
 {END cont_valorinicial_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field10}
+	{END cellblock_grid_cell_field9}
 				 
-					{BEGIN cellblock_grid_cell_field11}
+					{BEGIN cellblock_grid_cell_field10}
 	<td
 	
-	{$cell_grid_cell_field11}
+	{$cell_grid_cell_field10}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$cont_valormensual_class}
@@ -1840,7 +1863,7 @@
 
 			data-field="cont_valormensual"
 	
-	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1850,6 +1873,29 @@
 </span>
 {END cont_valormensual_fieldcolumn}	
 	</td>
+	{END cellblock_grid_cell_field10}
+				 
+					{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_estado_class}
+			"
+
+			data-field="cont_estado"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_estado_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_estado" data-default-width >
+{$cont_estado_value}
+</span>
+{END cont_estado_fieldcolumn}	
+	</td>
 	{END cellblock_grid_cell_field11}
 				 
 					{BEGIN cellblock_grid_cell_field12}
@@ -1858,20 +1904,20 @@
 	{$cell_grid_cell_field12}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_formapago_class}
+		 r-ori-vert				{$cont_fecha_aprobgarantia_class}
 			"
 
-			data-field="cont_formapago"
+			data-field="cont_fecha_aprobgarantia"
 	
 	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN cont_formapago_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field41" {$item_simple_grid_field41} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_formapago" data-default-width >
-{$cont_formapago_value}
+		{BEGIN cont_fecha_aprobgarantia_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_aprobgarantia" data-default-width >
+{$cont_fecha_aprobgarantia_value}
 </span>
-{END cont_formapago_fieldcolumn}	
+{END cont_fecha_aprobgarantia_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field12}
 				 
@@ -1881,20 +1927,20 @@
 	{$cell_grid_cell_field13}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_tipo_rubro_class}
+		 r-ori-vert				{$cont_numpoliza_class}
 			"
 
-			data-field="cont_tipo_rubro"
+			data-field="cont_numpoliza"
 	
 	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN cont_tipo_rubro_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_tipo_rubro" data-default-width >
-{$cont_tipo_rubro_value}
+		{BEGIN cont_numpoliza_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_numpoliza" data-default-width >
+{$cont_numpoliza_value}
 </span>
-{END cont_tipo_rubro_fieldcolumn}	
+{END cont_numpoliza_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field13}
 							</tr>
@@ -1916,9 +1962,9 @@
 	>
 
 	 
-									<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
-	data-orders="contrato_attached,interventor_interno,polizas_master,contrato_cdp,contrato_rp,ep_compromisos,ep_obligaciones"
-			data-details-contrato_attached			data-details-interventor_interno			data-details-polizas_master			data-details-contrato_cdp			data-details-contrato_rp			data-details-ep_compromisos			data-details-ep_obligaciones	>
+										<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="contrato_attached,interventor_interno,polizas_master,contrato_cdp,contrato_rp,ep_compromisos,ep_obligaciones,contrato_oe"
+			data-details-contrato_attached			data-details-interventor_interno			data-details-polizas_master			data-details-contrato_cdp			data-details-contrato_rp			data-details-ep_compromisos			data-details-ep_obligaciones			data-details-contrato_oe	>
 		<span data-details-inside data-short-table="contrato_attached">
 			</span>
 		<span data-details-inside data-short-table="interventor_interno">
@@ -1933,10 +1979,13 @@
 			</span>
 		<span data-details-inside data-short-table="ep_obligaciones">
 			</span>
+		<span data-details-inside data-short-table="contrato_oe">
+			</span>
 		<div data-details-preview>
 	</div>
 </div>
 	 
+			 
 			 
 			 
 			 

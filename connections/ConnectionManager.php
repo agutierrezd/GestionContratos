@@ -507,6 +507,17 @@ class ConnectionManager
 		$connectionsIds["secop"] = "sep2_at_localhost";
 		$connectionsIds["tparam_tipo_ct_rubro"] = "dbct_at_localhost";
 		$connectionsIds["q_001_dashboard_info"] = "dbct_at_localhost";
+		$connectionsIds["q_bandejaentrada_supervisores"] = "dbct_at_localhost";
+		$connectionsIds["q_000_control_informes"] = "dbct_at_localhost";
+		$connectionsIds["informe_intersup_plan_pagos_st"] = "dbct_at_localhost";
+		$connectionsIds["contrato_oe"] = "dbct_at_localhost";
+		$connectionsIds["q_oe_ordinal"] = "dbct_at_localhost";
+		$connectionsIds["q_bandejaentrada_supervisores1"] = "dbct_at_localhost";
+		$connectionsIds["informe_intersup"] = "dbct_at_localhost";
+		$connectionsIds["q_bandejaentrada_supervisores2"] = "dbct_at_localhost";
+		$connectionsIds["q_divipola"] = "dbusers_at_localhost";
+		$connectionsIds["informe_intersup_oe"] = "dbct_at_localhost";
+		$connectionsIds["tparam_sn_oe"] = "dbct_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

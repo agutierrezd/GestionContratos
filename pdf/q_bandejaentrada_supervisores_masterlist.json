@@ -1,0 +1,950 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+			},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+		{BEGIN body}
+		{BEGIN embedded_grid}
+		{
+			text: '{$jscaption q_bandejaentrada_supervisores}',
+		},
+		{END embedded_grid}
+		{ 
+			{BEGIN standalone_page}
+			pageBreak: 'before',
+			{END standalone_page}
+			{BEGIN embedded_grid}
+			embeddedPage: true,
+			{END embedded_grid}
+			layout: {
+				hLineWidth: function(i, node) { return 0; },
+				vLineWidth: function(i, node) { 
+					if( node.table.embeddedPage ) {
+						return (i === 0 || i === node.table.widths.length) ? 0 : 0;
+					} else  {
+						return 0; 
+					}
+				},
+				hLineColor: function(i, node) { return 'gray'; },
+				vLineColor: function(i, node) { return 'gray'; },
+			},
+			table: {
+				{BEGIN embedded_grid}
+				embeddedPage: true,
+				{END embedded_grid}
+				
+				tableForm: true,
+				headerRows: 0 + 1 {BEGIN embedded_grid} -1 {END embedded_grid} ,
+
+				widths: [
+														"*",
+															],
+							
+				body: [
+				{BEGIN standalone_page}
+					[
+						{
+							colSpan: 1,
+							border:[false, false,false,false],
+							stack: [
+
+																										
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+				
+			{"text":"{$jspagetitlelabel q_bandejaentrada_supervisores masterlist}","hidden":"{$item_hide_masterlist_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+								
+																										
+''
+,
+															]
+						},
+					],
+				{END standalone_page}
+
+																	
+	{BEGIN grid_row}
+	[ 
+	
+	{BEGIN grid_record}
+	{BEGIN grid_vrecord}
+	
+		{ 
+			layout: 'vrecord',
+			table: {
+				widths: ['*'],
+				body: [[
+					{
+						
+						table: {
+							tableForm: true,
+							widths: [
+																{BEGIN col_grid_0}
+								"%",
+								{END col_grid_0}
+																{BEGIN col_grid_1}
+								"%",
+								{END col_grid_1}
+																{BEGIN col_grid_2}
+								"%",
+								{END col_grid_2}
+																{BEGIN col_grid_3}
+								"%",
+								{END col_grid_3}
+															],
+													heights: [
+															{BEGIN row_grid_0}			
+								"%",
+								{END row_grid_0}
+															{BEGIN row_grid_1}			
+								"%",
+								{END row_grid_1}
+															{BEGIN row_grid_2}			
+								"%",
+								{END row_grid_2}
+															{BEGIN row_grid_3}			
+								"%",
+								{END row_grid_3}
+															{BEGIN row_grid_4}			
+								"%",
+								{END row_grid_4}
+															{BEGIN row_grid_5}			
+								"%",
+								{END row_grid_5}
+															{BEGIN row_grid_6}			
+								"%",
+								{END row_grid_6}
+															{BEGIN row_grid_7}			
+								"%",
+								{END row_grid_7}
+														],
+													
+							body: [
+									
+					{BEGIN row_grid_0}
+				[
+												{BEGIN cellblock_grid_cell_top}
+{
+	cellId: 'cell_top',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_top}
+			colSpan: {$colspan_grid_cell_top},
+			{END colspan_grid_cell_top}
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_top}
+																		{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_top',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+							],
+				{END row_grid_0}
+								{BEGIN row_grid_1}
+				[
+												{BEGIN cellblock_grid_cell_label}
+{
+	cellId: 'cell_label',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field}","text":"{$jslabel q_bandejaentrada_supervisores cont_nit_contra_ta }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label}
+																			{BEGIN cellblock_grid_cell_field}
+{
+	cellId: 'cell_field',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field1}","text":{$cont_nit_contra_ta_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_nit_contra_ta_align}',
+  },
+
+{END cellblock_grid_cell_field}
+																			{BEGIN cellblock_grid_cell_label1}
+{
+	cellId: 'cell_label1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field18}","text":"{$jslabel q_bandejaentrada_supervisores cont_fecha_inicio }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label1}
+																			{BEGIN cellblock_grid_cell_field1}
+{
+	cellId: 'cell_field1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field10}","text":{$cont_fecha_inicio_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_fecha_inicio_align}',
+  },
+
+{END cellblock_grid_cell_field1}
+											],
+				{END row_grid_1}
+								{BEGIN row_grid_2}
+				[
+												{BEGIN cellblock_grid_cell_label2}
+{
+	cellId: 'cell_label2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field5}","text":"{$jslabel q_bandejaentrada_supervisores cont_nit_contra_taname }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label2}
+																			{BEGIN cellblock_grid_cell_field2}
+{
+	cellId: 'cell_field2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field2}","text":{$cont_nit_contra_taname_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_nit_contra_taname_align}',
+  },
+
+{END cellblock_grid_cell_field2}
+																			{BEGIN cellblock_grid_cell_label3}
+{
+	cellId: 'cell_label3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field19}","text":"{$jslabel q_bandejaentrada_supervisores cont_fechafinal }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label3}
+																			{BEGIN cellblock_grid_cell_field3}
+{
+	cellId: 'cell_field3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field11}","text":{$cont_fechafinal_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_fechafinal_align}',
+  },
+
+{END cellblock_grid_cell_field3}
+											],
+				{END row_grid_2}
+								{BEGIN row_grid_3}
+				[
+												{BEGIN cellblock_grid_cell_label4}
+{
+	cellId: 'cell_label4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field6}","text":"{$jslabel q_bandejaentrada_supervisores cont_estado }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label4}
+																			{BEGIN cellblock_grid_cell_field4}
+{
+	cellId: 'cell_field4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field3}","text":{$cont_estado_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_estado_align}',
+  },
+
+{END cellblock_grid_cell_field4}
+																			{BEGIN cellblock_grid_cell_label5}
+{
+	cellId: 'cell_label5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field20}","text":"{$jslabel q_bandejaentrada_supervisores cont_periodicidad }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label5}
+																			{BEGIN cellblock_grid_cell_field5}
+{
+	cellId: 'cell_field5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field12}","text":{$cont_periodicidad_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_periodicidad_align}',
+  },
+
+{END cellblock_grid_cell_field5}
+											],
+				{END row_grid_3}
+								{BEGIN row_grid_4}
+				[
+												{BEGIN cellblock_grid_cell_label6}
+{
+	cellId: 'cell_label6',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field9}","text":"{$jslabel q_bandejaentrada_supervisores numcontrato }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label6}
+																			{BEGIN cellblock_grid_cell_field6}
+{
+	cellId: 'cell_field6',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field4}","text":{$numcontrato_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$numcontrato_align}',
+  },
+
+{END cellblock_grid_cell_field6}
+																			{BEGIN cellblock_grid_cell_label7}
+{
+	cellId: 'cell_label7',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field21}","text":"{$jslabel q_bandejaentrada_supervisores cont_valorinicial }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label7}
+																			{BEGIN cellblock_grid_cell_field7}
+{
+	cellId: 'cell_field7',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field13}","text":{$cont_valorinicial_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_valorinicial_align}',
+  },
+
+{END cellblock_grid_cell_field7}
+											],
+				{END row_grid_4}
+								{BEGIN row_grid_5}
+				[
+												{BEGIN cellblock_grid_cell_label8}
+{
+	cellId: 'cell_label8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field16}","text":"{$jslabel q_bandejaentrada_supervisores cont_ano }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label8}
+																			{BEGIN cellblock_grid_cell_field8}
+{
+	cellId: 'cell_field8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field7}","text":{$cont_ano_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_ano_align}',
+  },
+
+{END cellblock_grid_cell_field8}
+																			{BEGIN cellblock_grid_cell_label9}
+{
+	cellId: 'cell_label9',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field22}","text":"{$jslabel q_bandejaentrada_supervisores cont_valormensual }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label9}
+																			{BEGIN cellblock_grid_cell_field9}
+{
+	cellId: 'cell_field9',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field14}","text":{$cont_valormensual_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_valormensual_align}',
+  },
+
+{END cellblock_grid_cell_field9}
+											],
+				{END row_grid_5}
+								{BEGIN row_grid_6}
+				[
+												{BEGIN cellblock_grid_cell_label10}
+{
+	cellId: 'cell_label10',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field17}","text":"{$jslabel q_bandejaentrada_supervisores cont_codrubro }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label10}
+																			{BEGIN cellblock_grid_cell_field10}
+{
+	cellId: 'cell_field10',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field8}","text":{$cont_codrubro_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_codrubro_align}',
+  },
+
+{END cellblock_grid_cell_field10}
+																			{BEGIN cellblock_grid_cell_label11}
+{
+	cellId: 'cell_label11',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field23}","text":"{$jslabel q_bandejaentrada_supervisores cont_secop_enlace }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label11}
+																			{BEGIN cellblock_grid_cell_field11}
+{
+	cellId: 'cell_field11',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field15}","text":{$cont_secop_enlace_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_secop_enlace_align}',
+  },
+
+{END cellblock_grid_cell_field11}
+											],
+				{END row_grid_6}
+								{BEGIN row_grid_7}
+				[
+												{BEGIN cellblock_grid_cell_dpreview}
+{
+	cellId: 'cell_dpreview',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_cell_dpreview}
+			colSpan: {$colspan_grid_cell_dpreview},
+			{END colspan_grid_cell_dpreview}
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_dpreview}
+																		{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  2,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  3,
+				text: ''
+			},
+							],
+				{END row_grid_7}
+										]
+						}
+					}
+				]]
+			}
+		},
+	{END grid_vrecord}
+	{END grid_record}
+	]
+,
+	{END grid_row}
+	
+									]
+			
+			}
+		},
+		{END body}
+	]
+}

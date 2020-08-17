@@ -146,6 +146,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_search_field9}","text":{$valor_a_pagar_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_integrated_search_field10}","text":{$avgavance_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field11}","text":{$inf_st_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

@@ -347,6 +347,91 @@
 								</td>
 			{END cellblock_grid_c}
 								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_grid_c1}
+<td
+	{$cell_grid_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN avgavance_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_avgavance}  r-vertical-field" 
+	data-fieldname="avgavance" 
+	data-signal-error-for="avgavance{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="avgavance" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_avgavance}">
+		{BEGIN avgavance_label}{$label informe_intersup_plan_pagos avgavance }{END avgavance_label}
+	</label>
+	<div class="r-edit-field">
+		{$avgavance_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="avgavance">
+		<div class="text-muted" >
+		{$tooltip informe_intersup_plan_pagos avgavance }		</div>
+	</div>
+</div>
+
+
+{END avgavance_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c1}
+			 
+																
+
+{BEGIN cellblock_grid_c2}
+<td
+	{$cell_grid_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="grid_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_st_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_st}  r-vertical-field" 
+	data-fieldname="inf_st" 
+	data-signal-error-for="inf_st{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="inf_st" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_inf_st}">
+		{BEGIN inf_st_label}{$label informe_intersup_plan_pagos inf_st }{END inf_st_label}
+	</label>
+	<div class="r-edit-field">
+		{$inf_st_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="inf_st">
+		<div class="text-muted" >
+		{$tooltip informe_intersup_plan_pagos inf_st }		</div>
+	</div>
+</div>
+
+
+{END inf_st_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c2}
+								</tr>
 			</tbody></table>
 {END grid_block}
 									{BEGIN below-grid_block}

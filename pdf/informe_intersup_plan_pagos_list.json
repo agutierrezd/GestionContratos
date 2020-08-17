@@ -137,8 +137,12 @@ pdfDocument = {
 	
 			"text": [
 		
-				'',
-	  ],
+				
+			{BEGIN mastertable_block}
+			{$showmasterfile}
+		{END mastertable_block},
+				
+		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },
@@ -184,7 +188,13 @@ pdfDocument = {
 			{"text":"","hidden":"{$item_hide_add}"},
 				
 				
+			{"text":"","hidden":"{$item_hide_inline_add}"},
+				
+				
 			{"text":"","hidden":"{$item_hide_delete}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_update_selected}"},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -328,7 +338,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field7}","text":"{$jslabel informe_intersup_plan_pagos inf_fecharep_i }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field8}","text":"{$jslabel informe_intersup_plan_pagos inf_fecharep_i }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -354,7 +364,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field8}","text":"{$jslabel informe_intersup_plan_pagos inf_fecharep_f }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field9}","text":"{$jslabel informe_intersup_plan_pagos inf_fecharep_f }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -380,11 +390,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field9}","text":"{$jslabel informe_intersup_plan_pagos dias_calculados }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field10}","text":"{$jslabel informe_intersup_plan_pagos inf_valor_pago }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$dias_calculados_align}',
+          "alignment": '{$inf_valor_pago_align}',
   },
 
 {END cellblock_grid_headcell_field3}
@@ -406,11 +416,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field10}","text":"{$jslabel informe_intersup_plan_pagos dias_fiscales }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field12}","text":"{$jslabel informe_intersup_plan_pagos avgavance }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$dias_fiscales_align}',
+          "alignment": '{$avgavance_align}',
   },
 
 {END cellblock_grid_headcell_field4}
@@ -432,11 +442,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field11}","text":"{$jslabel informe_intersup_plan_pagos valor_a_pagar }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field13}","text":"{$jslabel informe_intersup_plan_pagos inf_st }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$valor_a_pagar_align}',
+          "alignment": '{$inf_st_align}',
   },
 
 {END cellblock_grid_headcell_field5}
@@ -467,6 +477,9 @@ pdfDocument = {
 		
 				
 			{"text":"","hidden":"{$item_hide_grid_edit}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_inline_cancel}"},
 				
 				
 			{"text":"","hidden":"{$item_hide_grid_view}"},
@@ -599,11 +612,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field}","text":{$dias_calculados_pdfvalue}},
+			{"hidden":"{$item_hide_simple_grid_field5}","text":{$inf_valor_pago_pdfvalue}},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$dias_calculados_align}',
+          "alignment": '{$inf_valor_pago_align}',
   },
 
 {END cellblock_grid_cell_field3}
@@ -625,11 +638,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field1}","text":{$dias_fiscales_pdfvalue}},
+			{"hidden":"{$item_hide_simple_grid_field}","text":{$avgavance_pdfvalue}},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$dias_fiscales_align}',
+          "alignment": '{$avgavance_align}',
   },
 
 {END cellblock_grid_cell_field4}
@@ -651,11 +664,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field5}","text":{$valor_a_pagar_pdfvalue}},
+			{"hidden":"{$item_hide_simple_grid_field1}","text":{$inf_st_pdfvalue}},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$valor_a_pagar_align}',
+          "alignment": '{$inf_st_align}',
   },
 
 {END cellblock_grid_cell_field5}
@@ -732,10 +745,17 @@ pdfDocument = {
 	
 			"text": [
 		
-				'',
-	  ],
+				
+			{BEGIN inf_consecutivo_fieldfootercolumn}
+			{BEGIN inf_consecutivo_showtotal}
+				{ text: 'Contar: ' },
+				{"hidden":"{$item_hide_simple_grid_field7}","text":{$inf_consecutivo_total}}
+			{END inf_consecutivo_showtotal}
+		{END inf_consecutivo_fieldfootercolumn},
+				
+		  ],
   "border": [ true, true, true, true ],
-          "alignment": 'left',
+          "alignment": '{$inf_consecutivo_align}',
   },
 
 {END cellblock_grid_footcell_field}
@@ -804,10 +824,17 @@ pdfDocument = {
 	
 			"text": [
 		
-				'',
-	  ],
+				
+			{BEGIN inf_valor_pago_fieldfootercolumn}
+			{BEGIN inf_valor_pago_showtotal}
+				{ text: 'Total: ' },
+				{"hidden":"{$item_hide_simple_grid_field11}","text":{$inf_valor_pago_total}}
+			{END inf_valor_pago_showtotal}
+		{END inf_valor_pago_fieldfootercolumn},
+				
+		  ],
   "border": [ true, true, true, true ],
-          "alignment": 'left',
+          "alignment": '{$inf_valor_pago_align}',
   },
 
 {END cellblock_grid_footcell_field3}
@@ -852,17 +879,10 @@ pdfDocument = {
 	
 			"text": [
 		
-				
-			{BEGIN valor_a_pagar_fieldfootercolumn}
-			{BEGIN valor_a_pagar_showtotal}
-				{ text: 'Total: ' },
-				{"hidden":"{$item_hide_simple_grid_field12}","text":{$valor_a_pagar_total}}
-			{END valor_a_pagar_showtotal}
-		{END valor_a_pagar_fieldfootercolumn},
-				
-		  ],
+				'',
+	  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$valor_a_pagar_align}',
+          "alignment": 'left',
   },
 
 {END cellblock_grid_footcell_field5}

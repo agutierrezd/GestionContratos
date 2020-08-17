@@ -195,9 +195,6 @@ pdfDocument = {
 			{"hidden":"{$item_hide_import_field24}","text":{$cont_obligaciones_pdfvalue}},
 				
 				
-			{"hidden":"{$item_hide_import_field25}","text":{$cont_plazo_pdfvalue}},
-				
-				
 			{"hidden":"{$item_hide_import_field28}","text":{$cont_vigencias_futuras_pdfvalue}},
 				
 				
@@ -205,6 +202,15 @@ pdfDocument = {
 				
 				
 			{"hidden":"{$item_hide_import_field}","text":{$cont_tipo_rubro_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field25}","text":{$cont_munejec_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field29}","text":{$cont_fecha_aprobgarantia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field30}","text":{$cont_numpoliza_pdfvalue}},
 				
 		  ],
   "border": [ false, false, false, false ],

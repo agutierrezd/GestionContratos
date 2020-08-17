@@ -608,6 +608,28 @@ class Chart
 			return true;
 		if("q_001_dashboard" == $this->chrt_array['tables'][0])
 			return true;
+		if("q_bandejaentrada_supervisores" == $this->chrt_array['tables'][0])
+			return true;
+		if("q_000_control_informes" == $this->chrt_array['tables'][0])
+			return true;
+		if("informe_intersup_plan_pagos_st" == $this->chrt_array['tables'][0])
+			return true;
+		if("contrato_oe" == $this->chrt_array['tables'][0])
+			return true;
+		if("q_oe_ordinal" == $this->chrt_array['tables'][0])
+			return true;
+		if("q_bandejaentrada_supervisores" == $this->chrt_array['tables'][0])
+			return true;
+		if("informe_intersup" == $this->chrt_array['tables'][0])
+			return true;
+		if("q_bandejaentrada_supervisores" == $this->chrt_array['tables'][0])
+			return true;
+		if("q_divipola" == $this->chrt_array['tables'][0])
+			return true;
+		if("informe_intersup_oe" == $this->chrt_array['tables'][0])
+			return true;
+		if("tparam_sn_oe" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

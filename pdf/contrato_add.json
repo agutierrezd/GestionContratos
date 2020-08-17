@@ -375,7 +375,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field14}","stack":[{"text":"{$jslabel contrato cont_unspsc }","bold":true},{"text":{$cont_unspsc_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field15}","stack":[{"text":"{$jslabel contrato cont_munejec }","bold":true},{"text":{$cont_munejec_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -386,6 +386,62 @@ pdfDocument = {
 											],
 				{END row_section_1}
 								{BEGIN row_section_2}
+				[
+												{BEGIN cellblock_section_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field13}","stack":[{"text":"{$jslabel contrato cont_tipopre }","bold":true},{"text":{$cont_tipopre_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c10}
+																			{BEGIN cellblock_section_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field14}","stack":[{"text":"{$jslabel contrato cont_unspsc }","bold":true},{"text":{$cont_unspsc_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c11}
+											],
+				{END row_section_2}
+								{BEGIN row_section_3}
 				[
 												{BEGIN cellblock_section_c6}
 {
@@ -440,8 +496,8 @@ pdfDocument = {
 
 {END cellblock_section_c7}
 											],
-				{END row_section_2}
-								{BEGIN row_section_3}
+				{END row_section_3}
+								{BEGIN row_section_4}
 				[
 												{BEGIN cellblock_section_c4}
 {
@@ -495,62 +551,6 @@ pdfDocument = {
   },
 
 {END cellblock_section_c5}
-											],
-				{END row_section_3}
-								{BEGIN row_section_4}
-				[
-												{BEGIN cellblock_section_c2}
-{
-	cellId: 'c2',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				
-			{"hidden":"{$item_hide_integrated_edit_field13}","stack":[{"text":"{$jslabel contrato cont_tipopre }","bold":true},{"text":{$cont_tipopre_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_section_c2}
-																			{BEGIN cellblock_section_c3}
-{
-	cellId: 'c3',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				
-			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel contrato cont_vigencias_futuras }","bold":true},{"text":{$cont_vigencias_futuras_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_section_c3}
 											],
 				{END row_section_4}
 									]
@@ -683,6 +683,118 @@ pdfDocument = {
 				{END row_section1_1}
 								{BEGIN row_section1_2}
 				[
+												{BEGIN cellblock_section1_c8}
+{
+	cellId: 'c8',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field48}","stack":[{"text":"{$jslabel contrato cont_acta_liquidacion }","bold":true},{"text":{$cont_acta_liquidacion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c8}
+																			{BEGIN cellblock_section1_c10}
+{
+	cellId: 'c10',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel contrato cont_vigencias_futuras }","bold":true},{"text":{$cont_vigencias_futuras_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c10}
+											],
+				{END row_section1_2}
+								{BEGIN row_section1_3}
+				[
+												{BEGIN cellblock_section1_c11}
+{
+	cellId: 'c11',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field23}","stack":[{"text":"{$jslabel contrato cont_numpoliza }","bold":true},{"text":{$cont_numpoliza_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c11}
+																			{BEGIN cellblock_section1_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field22}","stack":[{"text":"{$jslabel contrato cont_fecha_aprobgarantia }","bold":true},{"text":{$cont_fecha_aprobgarantia_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section1_c12}
+											],
+				{END row_section1_3}
+								{BEGIN row_section1_4}
+				[
 												{BEGIN cellblock_section1_c4}
 {
 	cellId: 'c4',
@@ -701,7 +813,7 @@ pdfDocument = {
 			"stack": [
 		
 				
-			{"hidden":"{$item_hide_integrated_edit_field48}","stack":[{"text":"{$jslabel contrato cont_acta_liquidacion }","bold":true},{"text":{$cont_acta_liquidacion_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field28}","stack":[{"text":"{$jslabel contrato cont_fechaapertura }","bold":true},{"text":{$cont_fechaapertura_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],
@@ -726,18 +838,16 @@ pdfDocument = {
 	
 			"stack": [
 		
-				
-			{"hidden":"{$item_hide_integrated_edit_field28}","stack":[{"text":"{$jslabel contrato cont_fechaapertura }","bold":true},{"text":{$cont_fechaapertura_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },
 
 {END cellblock_section1_c5}
 											],
-				{END row_section1_2}
-								{BEGIN row_section1_3}
+				{END row_section1_4}
+								{BEGIN row_section1_5}
 				[
 												{BEGIN cellblock_section1_c6}
 {
@@ -792,7 +902,7 @@ pdfDocument = {
 
 {END cellblock_section1_c7}
 											],
-				{END row_section1_3}
+				{END row_section1_5}
 									]
 					}
 				}]
@@ -1008,36 +1118,6 @@ pdfDocument = {
 {END cellblock_section2_c2}
 											],
 				{END row_section2_1}
-								{BEGIN row_section2_2}
-				[
-												{BEGIN cellblock_section2_c}
-{
-	cellId: 'c',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				
-			{"hidden":"{$item_hide_integrated_edit_field15}","stack":[{"text":"{$jslabel contrato cont_plazo }","bold":true},{"text":{$cont_plazo_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_section2_c}
-											],
-				{END row_section2_2}
 									]
 					}
 				}]

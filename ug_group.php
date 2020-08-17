@@ -71,6 +71,17 @@ $nonAdminTablesArr[] = "contrato_chart_supjer";
 $nonAdminTablesArr[] = "secop";
 $nonAdminTablesArr[] = "tparam_tipo_ct_rubro";
 $nonAdminTablesArr[] = "q_001_dashboard_info";
+$nonAdminTablesArr[] = "q_bandejaentrada_supervisores";
+$nonAdminTablesArr[] = "q_000_control_informes";
+$nonAdminTablesArr[] = "informe_intersup_plan_pagos_st";
+$nonAdminTablesArr[] = "contrato_oe";
+$nonAdminTablesArr[] = "q_oe_ordinal";
+$nonAdminTablesArr[] = "q_bandejaentrada_supervisores1";
+$nonAdminTablesArr[] = "informe_intersup";
+$nonAdminTablesArr[] = "q_bandejaentrada_supervisores2";
+$nonAdminTablesArr[] = "q_divipola";
+$nonAdminTablesArr[] = "informe_intersup_oe";
+$nonAdminTablesArr[] = "tparam_sn_oe";
 
 $ug_connection = $cman->getForUserGroups();
 

@@ -23,6 +23,8 @@ class class_GlobalEvents extends eventsBase
 	{
 	// fill list of events
 
+		$this->events["AfterSuccessfulLogin"]=true;
+
 
 //	onscreen events
 
@@ -39,6 +41,42 @@ class class_GlobalEvents extends eventsBase
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+				// After successful login
+function AfterSuccessfulLogin($username, $password, &$data, &$pageObject)
+{
+
+		$_SESSION["UID"]=$data["idusrglobal"];
+$_SESSION["UDOC"]=$data["usr_personalid"];
+$_SESSION["UMAIL"]=$data["usr_email"];
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;		
+} // function AfterSuccessfulLogin
+
 		
 		
 		

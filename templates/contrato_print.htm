@@ -230,11 +230,20 @@ data-pagetype="print"
 	{$cell_grid_cell_field35}
 	{$recordattrs}
 	class="
-		r-align-right r-ori-vert			"
+		r-align-right r-ori-vert				{$cont_munejec_class}
+			"
 
+			data-field="cont_munejec"
 	
 	data-cellId="grid_cell_field35" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
+
+	 
+		{BEGIN cont_munejec_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label15" {$item_grid_field_label15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_munejec">
+	{$label contrato cont_munejec }	</span>
+{END cont_munejec_fieldheadercolumn}
 
 	
 	</td>
@@ -246,13 +255,20 @@ data-pagetype="print"
 	{$cell_grid_cell_field36}
 	{$recordattrs}
 	class="
-		 r-ori-vert			"
+		 r-ori-vert				{$cont_munejec_class}
+			"
 
+			data-field="cont_munejec"
 	
 	data-cellId="grid_cell_field36" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
-	
+	 
+		{BEGIN cont_munejec_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field15" {$item_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_munejec" data-default-width >
+{$cont_munejec_value}
+</span>
+{END cont_munejec_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field36}
 												</tr>
@@ -314,7 +330,7 @@ data-pagetype="print"
 	{$cell_grid_cell_field27}
 	{$recordattrs}
 	class="
-		r-align-right r-ori-vert				{$cont_secop_proceso_class}
+		r-align-right				{$cont_secop_proceso_class}
 			"
 
 			data-field="cont_secop_proceso"
@@ -329,6 +345,13 @@ data-pagetype="print"
 	{$label contrato cont_secop_proceso }	</span>
 {END cont_secop_proceso_fieldheadercolumn}
 
+	 
+		{BEGIN cont_fecha_aprobgarantia_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label20" {$item_grid_field_label20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_aprobgarantia">
+	{$label contrato cont_fecha_aprobgarantia }	</span>
+{END cont_fecha_aprobgarantia_fieldheadercolumn}
+
 	
 	</td>
 	{END cellblock_grid_cell_field27}
@@ -339,7 +362,7 @@ data-pagetype="print"
 	{$cell_grid_cell_field28}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_secop_proceso_class}
+						{$cont_secop_proceso_class}
 			"
 
 			data-field="cont_secop_proceso"
@@ -352,7 +375,12 @@ data-pagetype="print"
 <span data-itemtype="grid_field" data-itemid="grid_field17" {$item_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_proceso" data-default-width >
 {$cont_secop_proceso_value}
 </span>
-{END cont_secop_proceso_fieldcolumn}	
+{END cont_secop_proceso_fieldcolumn}	 
+		{BEGIN cont_fecha_aprobgarantia_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field20" {$item_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_aprobgarantia" data-default-width >
+{$cont_fecha_aprobgarantia_value}
+</span>
+{END cont_fecha_aprobgarantia_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field28}
 												</tr>
@@ -414,20 +442,11 @@ data-pagetype="print"
 	{$cell_grid_cell_field16}
 	{$recordattrs}
 	class="
-		r-align-right r-ori-vert				{$cont_plazo_class}
-			"
+		r-align-right r-ori-vert			"
 
-			data-field="cont_plazo"
 	
 	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
-
-	 
-		{BEGIN cont_plazo_fieldheadercolumn}
- 
-	<span data-itemtype="grid_field_label" data-itemid="grid_field_label15" {$item_grid_field_label15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazo">
-	{$label contrato cont_plazo }	</span>
-{END cont_plazo_fieldheadercolumn}
 
 	
 	</td>
@@ -439,20 +458,13 @@ data-pagetype="print"
 	{$cell_grid_cell_field17}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_plazo_class}
-			"
+		 r-ori-vert			"
 
-			data-field="cont_plazo"
 	
 	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
-	 
-		{BEGIN cont_plazo_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="grid_field15" {$item_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_plazo" data-default-width >
-{$cont_plazo_value}
-</span>
-{END cont_plazo_fieldcolumn}	
+	
 	</td>
 	{END cellblock_grid_cell_field17}
 												</tr>
@@ -566,7 +578,7 @@ data-pagetype="print"
 	{$cell_grid_cell_field29}
 	{$recordattrs}
 	class="
-		r-align-right r-ori-vert				{$cont_vigencias_futuras_class}
+		r-align-right				{$cont_vigencias_futuras_class}
 			"
 
 			data-field="cont_vigencias_futuras"
@@ -581,6 +593,13 @@ data-pagetype="print"
 	{$label contrato cont_vigencias_futuras }	</span>
 {END cont_vigencias_futuras_fieldheadercolumn}
 
+	 
+		{BEGIN cont_numpoliza_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label21" {$item_grid_field_label21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_numpoliza">
+	{$label contrato cont_numpoliza }	</span>
+{END cont_numpoliza_fieldheadercolumn}
+
 	
 	</td>
 	{END cellblock_grid_cell_field29}
@@ -591,7 +610,7 @@ data-pagetype="print"
 	{$cell_grid_cell_field30}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_vigencias_futuras_class}
+						{$cont_vigencias_futuras_class}
 			"
 
 			data-field="cont_vigencias_futuras"
@@ -604,7 +623,12 @@ data-pagetype="print"
 <span data-itemtype="grid_field" data-itemid="grid_field16" {$item_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_vigencias_futuras" data-default-width >
 {$cont_vigencias_futuras_value}
 </span>
-{END cont_vigencias_futuras_fieldcolumn}	
+{END cont_vigencias_futuras_fieldcolumn}	 
+		{BEGIN cont_numpoliza_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field21" {$item_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_numpoliza" data-default-width >
+{$cont_numpoliza_value}
+</span>
+{END cont_numpoliza_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field30}
 						 
@@ -1236,6 +1260,10 @@ data-pagetype="print"
 {BEGIN details_ep_obligaciones}
 {$displayDetailTable_ep_obligaciones}
 {END details_ep_obligaciones}
+ 
+{BEGIN details_contrato_oe}
+{$displayDetailTable_contrato_oe}
+{END details_contrato_oe}
 	{END grid_record}
 
 

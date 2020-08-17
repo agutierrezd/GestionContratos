@@ -1,0 +1,234 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel q_bandejaentrada_supervisores2 export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_export_field1}","text":{$cont_nit_contra_ta_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field2}","text":{$cont_estado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field3}","text":{$numcontrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field6}","text":{$cont_ano_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field7}","text":{$cont_codrubro_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field8}","text":{$cont_catalogo_presupuestal_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field9}","text":{$cont_fecha_inicio_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field10}","text":{$cont_fechafinal_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field11}","text":{$cont_periodicidad_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field12}","text":{$cont_valorinicial_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field13}","text":{$cont_valormensual_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field14}","text":{$cont_secop_enlace_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field24}","text":{$cont_nit_contra_taname_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field}","text":{$contractor_name_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field4}","text":{$contractor_lname_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field5}","text":{$contractor_nombresfull_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field15}","text":{$contractor_email_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field16}","text":{$contractor_email_mincit_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field17}","text":{$prenumero_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field18}","text":{$numregistro_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field19}","text":{$cont_unspsc_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field20}","text":{$cont_tipo_rubro_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field21}","text":{$cont_tipopre_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field22}","text":{$cont_causalc_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field23}","text":{$cont_objeto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field25}","text":{$cont_obligaciones_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field26}","text":{$cont_plazo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field27}","text":{$ctb_tipo_nombre_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field28}","text":{$nombresupfull_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field29}","text":{$nombre_cargo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field30}","text":{$nombre_dependencia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field31}","text":{$Departamento_superior_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field32}","text":{$cont_numpoliza_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field33}","text":{$cont_secop_proceso_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field34}","text":{$cont_fecha_aprobgarantia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field35}","text":{$cont_fechaapertura_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field36}","text":{$cont_munejec_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field37}","text":{$PLAZO_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  

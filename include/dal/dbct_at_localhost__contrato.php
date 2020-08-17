@@ -10,6 +10,7 @@ $dalTablecontrato["numregistro"] = array("type"=>200,"varname"=>"numregistro", "
 $dalTablecontrato["pre_contnumero"] = array("type"=>200,"varname"=>"pre_contnumero", "name" => "pre_contnumero");
 $dalTablecontrato["contnumero"] = array("type"=>200,"varname"=>"contnumero", "name" => "contnumero");
 $dalTablecontrato["cont_unspsc"] = array("type"=>200,"varname"=>"cont_unspsc", "name" => "cont_unspsc");
+$dalTablecontrato["cont_munejec"] = array("type"=>200,"varname"=>"cont_munejec", "name" => "cont_munejec");
 $dalTablecontrato["cont_tipo"] = array("type"=>16,"varname"=>"cont_tipo", "name" => "cont_tipo");
 $dalTablecontrato["cont_ano"] = array("type"=>2,"varname"=>"cont_ano", "name" => "cont_ano");
 $dalTablecontrato["cont_codrubro"] = array("type"=>200,"varname"=>"cont_codrubro", "name" => "cont_codrubro");
@@ -70,6 +71,7 @@ $dalTablecontrato["vf_valor"] = array("type"=>5,"varname"=>"vf_valor", "name" =>
 $dalTablecontrato["cont_fechasistema"] = array("type"=>135,"varname"=>"cont_fechasistema", "name" => "cont_fechasistema");
 $dalTablecontrato["cont_cesion"] = array("type"=>16,"varname"=>"cont_cesion", "name" => "cont_cesion");
 $dalTablecontrato["cont_fase"] = array("type"=>200,"varname"=>"cont_fase", "name" => "cont_fase");
+$dalTablecontrato["cont_numpoliza"] = array("type"=>200,"varname"=>"cont_numpoliza", "name" => "cont_numpoliza");
 	$dalTablecontrato["id_cont"]["key"]=true;
 
 $dal_info["dbct_at_localhost__contrato"] = &$dalTablecontrato;

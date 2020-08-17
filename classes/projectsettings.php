@@ -3217,6 +3217,28 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "tparam_tipo_ct_rubro" ] = "tparam_tipo_ct_rubro";
 	$projectEntities[ "q_001_dashboard_info" ] = array( "url" => "q_001_dashboard_info", "type" => 1 );
 	$projectEntitiesReverse[ "q_001_dashboard_info" ] = "q_001_dashboard_info";
+	$projectEntities[ "q_bandejaentrada_supervisores" ] = array( "url" => "q_bandejaentrada_supervisores", "type" => 0 );
+	$projectEntitiesReverse[ "q_bandejaentrada_supervisores" ] = "q_bandejaentrada_supervisores";
+	$projectEntities[ "q_000_control_informes" ] = array( "url" => "q_000_control_informes", "type" => 0 );
+	$projectEntitiesReverse[ "q_000_control_informes" ] = "q_000_control_informes";
+	$projectEntities[ "informe_intersup_plan_pagos_st" ] = array( "url" => "informe_intersup_plan_pagos_st", "type" => 0 );
+	$projectEntitiesReverse[ "informe_intersup_plan_pagos_st" ] = "informe_intersup_plan_pagos_st";
+	$projectEntities[ "contrato_oe" ] = array( "url" => "contrato_oe", "type" => 0 );
+	$projectEntitiesReverse[ "contrato_oe" ] = "contrato_oe";
+	$projectEntities[ "q_oe_ordinal" ] = array( "url" => "q_oe_ordinal", "type" => 0 );
+	$projectEntitiesReverse[ "q_oe_ordinal" ] = "q_oe_ordinal";
+	$projectEntities[ "q_bandejaentrada_supervisores1" ] = array( "url" => "q_bandejaentrada_supervisores1", "type" => 1 );
+	$projectEntitiesReverse[ "q_bandejaentrada_supervisores1" ] = "q_bandejaentrada_supervisores1";
+	$projectEntities[ "informe_intersup" ] = array( "url" => "informe_intersup", "type" => 1 );
+	$projectEntitiesReverse[ "informe_intersup" ] = "informe_intersup";
+	$projectEntities[ "q_bandejaentrada_supervisores2" ] = array( "url" => "q_bandejaentrada_supervisores2", "type" => 1 );
+	$projectEntitiesReverse[ "q_bandejaentrada_supervisores2" ] = "q_bandejaentrada_supervisores2";
+	$projectEntities[ "q_divipola" ] = array( "url" => "q_divipola", "type" => 0 );
+	$projectEntitiesReverse[ "q_divipola" ] = "q_divipola";
+	$projectEntities[ "informe_intersup_oe" ] = array( "url" => "informe_intersup_oe", "type" => 0 );
+	$projectEntitiesReverse[ "informe_intersup_oe" ] = "informe_intersup_oe";
+	$projectEntities[ "tparam_sn_oe" ] = array( "url" => "tparam_sn_oe", "type" => 0 );
+	$projectEntitiesReverse[ "tparam_sn_oe" ] = "tparam_sn_oe";
 }
 
 function findTable( $table ) {

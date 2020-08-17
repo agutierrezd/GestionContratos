@@ -950,6 +950,26 @@ function GetLWWhere($field, $ptype, $table = "")
 		$strWhere = " global_rol_contratos = 3";
 		return $strWhere;
 	}
+		if($table=="informe_intersup_plan_pagos" && $field=="inf_st" && $ptype=="edit")
+	{
+		$strWhere = " st_id = 0";
+		return $strWhere;
+	}
+		if($table=="informe_intersup_plan_pagos" && $field=="inf_st" && $ptype=="add")
+	{
+		$strWhere = " st_id = 0";
+		return $strWhere;
+	}
+		if($table=="informe_intersup_plan_pagos" && $field=="inf_st" && $ptype=="search")
+	{
+		$strWhere = " st_id = 0";
+		return $strWhere;
+	}
+		if($table=="informe_intersup" && $field=="inf_consecutivo")
+	{
+		$strWhere = " inf_st = 0 ";
+		return $strWhere;
+	}
 	return "";
 }
 
@@ -1001,6 +1021,38 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
+				if($table=="informe_intersup_plan_pagos" && $field=="inf_st" && $ptype=="edit")
+	{
+		return 0;
+	}
+				if($table=="informe_intersup_plan_pagos" && $field=="inf_st" && $ptype=="add")
+	{
+		return 0;
+	}
+				if($table=="informe_intersup_plan_pagos" && $field=="inf_st" && $ptype=="search")
+	{
+		return 0;
+	}
+				if($table=="contrato_oe" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="informe_intersup" && $field=="inf_hash")
+	{
+		return $letra = (chr(rand(ord("A"), ord("Z")))).mt_rand(10000000,99999999); ;
+	}
+				if($table=="informe_intersup" && $field=="inf_fechapresenta")
+	{
+		return strftime("%Y-%m-%d");
+	}
+				if($table=="informe_intersup_oe" && $field=="sup_fecha")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="informe_intersup_oe" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
 	return "";
 }
 
@@ -1043,6 +1095,18 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 				if($table=="interventor_interno" && $field=="sup_fechanot")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="contrato_oe" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="informe_intersup_oe" && $field=="sup_fecha")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="informe_intersup_oe" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
 	}
 	return "";
 }

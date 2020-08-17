@@ -204,9 +204,6 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_search_field28}","text":{$inf_dependencia_pdfvalue}},
 				
 				
-			{"hidden":"{$item_hide_integrated_search_field29}","text":{$inf_poliza_pdfvalue}},
-				
-				
 			{"hidden":"{$item_hide_integrated_search_field30}","text":{$inf_avgejecucion_pdfvalue}},
 				
 				
@@ -223,12 +220,6 @@ pdfDocument = {
 				
 				
 			{"hidden":"{$item_hide_integrated_search_field35}","text":{$inf_incumplimiento_obs_pdfvalue}},
-				
-				
-			{"hidden":"{$item_hide_integrated_search_field36}","text":{$inf_ssparafisfecha_pdfvalue}},
-				
-				
-			{"hidden":"{$item_hide_integrated_search_field37}","text":{$inf_ssparafisnplanilla_pdfvalue}},
 				
 				
 			{"hidden":"{$item_hide_integrated_search_field38}","text":{$inf_otrosaspectostecnicos_pdfvalue}},
@@ -271,6 +262,27 @@ pdfDocument = {
 				
 				
 			{"hidden":"{$item_hide_integrated_search_field51}","text":{$sys_date_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field52}","text":{$inf_anio_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field53}","text":{$inf_prenum_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field54}","text":{$inf_mail_a_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field55}","text":{$inf_mail_b_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field56}","text":{$url_secop_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field29}","text":{$num_poliza_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field36}","text":{$mun_ejec_pdfvalue}},
 				
 		  ],
   "border": [ false, false, false, false ],

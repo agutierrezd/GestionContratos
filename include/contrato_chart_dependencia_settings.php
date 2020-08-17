@@ -937,6 +937,7 @@ $proto14["m_columns"][] = "numregistro";
 $proto14["m_columns"][] = "pre_contnumero";
 $proto14["m_columns"][] = "contnumero";
 $proto14["m_columns"][] = "cont_unspsc";
+$proto14["m_columns"][] = "cont_munejec";
 $proto14["m_columns"][] = "cont_tipo";
 $proto14["m_columns"][] = "cont_ano";
 $proto14["m_columns"][] = "cont_codrubro";
@@ -997,6 +998,7 @@ $proto14["m_columns"][] = "vf_valor";
 $proto14["m_columns"][] = "cont_fechasistema";
 $proto14["m_columns"][] = "cont_cesion";
 $proto14["m_columns"][] = "cont_fase";
+$proto14["m_columns"][] = "cont_numpoliza";
 $obj = new SQLTable($proto14);
 
 $proto13["m_table"] = $obj;
