@@ -70,9 +70,9 @@ $tdatatparam_tipo_ct_rubro[".listAjax"] = false;
 //	temporary
 $tdatatparam_tipo_ct_rubro[".listAjax"] = false;
 
-	$tdatatparam_tipo_ct_rubro[".audit"] = false;
+	$tdatatparam_tipo_ct_rubro[".audit"] = true;
 
-	$tdatatparam_tipo_ct_rubro[".locking"] = false;
+	$tdatatparam_tipo_ct_rubro[".locking"] = true;
 
 
 $pages = $tdatatparam_tipo_ct_rubro[".defaultPages"];
@@ -136,7 +136,7 @@ $tdatatparam_tipo_ct_rubro[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatatparam_tipo_ct_rubro[".ajaxCodeSnippetAdded"] = false;
 

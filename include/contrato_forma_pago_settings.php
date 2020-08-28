@@ -70,9 +70,9 @@ $tdatacontrato_forma_pago[".listAjax"] = false;
 //	temporary
 $tdatacontrato_forma_pago[".listAjax"] = false;
 
-	$tdatacontrato_forma_pago[".audit"] = false;
+	$tdatacontrato_forma_pago[".audit"] = true;
 
-	$tdatacontrato_forma_pago[".locking"] = false;
+	$tdatacontrato_forma_pago[".locking"] = true;
 
 
 $pages = $tdatacontrato_forma_pago[".defaultPages"];
@@ -136,7 +136,7 @@ $tdatacontrato_forma_pago[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatacontrato_forma_pago[".ajaxCodeSnippetAdded"] = false;
 

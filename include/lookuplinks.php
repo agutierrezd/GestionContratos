@@ -733,6 +733,62 @@ function InitLookupLinks()
 			$lookupTableLinks["tparam_sn_oe"]["informe_intersup_oe.sup_aprueba"] = array();
 		}
 		$lookupTableLinks["tparam_sn_oe"]["informe_intersup_oe.sup_aprueba"]["edit"] = array("table" => "informe_intersup_oe", "field" => "sup_aprueba", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato"] ) ) {
+			$lookupTableLinks["contrato"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato"]["contrato_modifica.id_cont_fk"] )) {
+			$lookupTableLinks["contrato"]["contrato_modifica.id_cont_fk"] = array();
+		}
+		$lookupTableLinks["contrato"]["contrato_modifica.id_cont_fk"]["edit"] = array("table" => "contrato_modifica", "field" => "id_cont_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato_modifica_type"] ) ) {
+			$lookupTableLinks["contrato_modifica_type"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato_modifica_type"]["contrato_modifica.mod_tipo"] )) {
+			$lookupTableLinks["contrato_modifica_type"]["contrato_modifica.mod_tipo"] = array();
+		}
+		$lookupTableLinks["contrato_modifica_type"]["contrato_modifica.mod_tipo"]["edit"] = array("table" => "contrato_modifica", "field" => "mod_tipo", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato"] ) ) {
+			$lookupTableLinks["contrato"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato"]["contrato_modifica_prorroga.id_cont_fk"] )) {
+			$lookupTableLinks["contrato"]["contrato_modifica_prorroga.id_cont_fk"] = array();
+		}
+		$lookupTableLinks["contrato"]["contrato_modifica_prorroga.id_cont_fk"]["edit"] = array("table" => "contrato_modifica_prorroga", "field" => "id_cont_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato_modifica_type"] ) ) {
+			$lookupTableLinks["contrato_modifica_type"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato_modifica_type"]["contrato_modifica_prorroga.mod_tipo"] )) {
+			$lookupTableLinks["contrato_modifica_type"]["contrato_modifica_prorroga.mod_tipo"] = array();
+		}
+		$lookupTableLinks["contrato_modifica_type"]["contrato_modifica_prorroga.mod_tipo"]["edit"] = array("table" => "contrato_modifica_prorroga", "field" => "mod_tipo", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato"] ) ) {
+			$lookupTableLinks["contrato"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato"]["contrato_modifica_cesion.id_cont_fk"] )) {
+			$lookupTableLinks["contrato"]["contrato_modifica_cesion.id_cont_fk"] = array();
+		}
+		$lookupTableLinks["contrato"]["contrato_modifica_cesion.id_cont_fk"]["edit"] = array("table" => "contrato_modifica_cesion", "field" => "id_cont_fk", "page" => "edit");
+		if( !isset( $lookupTableLinks["contrato_modifica_type"] ) ) {
+			$lookupTableLinks["contrato_modifica_type"] = array();
+		}
+		if( !isset( $lookupTableLinks["contrato_modifica_type"]["contrato_modifica_cesion.mod_tipo"] )) {
+			$lookupTableLinks["contrato_modifica_type"]["contrato_modifica_cesion.mod_tipo"] = array();
+		}
+		$lookupTableLinks["contrato_modifica_type"]["contrato_modifica_cesion.mod_tipo"]["edit"] = array("table" => "contrato_modifica_cesion", "field" => "mod_tipo", "page" => "edit");
+		if( !isset( $lookupTableLinks["contractor_master"] ) ) {
+			$lookupTableLinks["contractor_master"] = array();
+		}
+		if( !isset( $lookupTableLinks["contractor_master"]["contrato_modifica_cesion.mod_cedente"] )) {
+			$lookupTableLinks["contractor_master"]["contrato_modifica_cesion.mod_cedente"] = array();
+		}
+		$lookupTableLinks["contractor_master"]["contrato_modifica_cesion.mod_cedente"]["edit"] = array("table" => "contrato_modifica_cesion", "field" => "mod_cedente", "page" => "edit");
+		if( !isset( $lookupTableLinks["contractor_master"] ) ) {
+			$lookupTableLinks["contractor_master"] = array();
+		}
+		if( !isset( $lookupTableLinks["contractor_master"]["contrato_modifica_cesion.mod_cesionario"] )) {
+			$lookupTableLinks["contractor_master"]["contrato_modifica_cesion.mod_cesionario"] = array();
+		}
+		$lookupTableLinks["contractor_master"]["contrato_modifica_cesion.mod_cesionario"]["edit"] = array("table" => "contrato_modifica_cesion", "field" => "mod_cesionario", "page" => "edit");
 }
 
 ?>

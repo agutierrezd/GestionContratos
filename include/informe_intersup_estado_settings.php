@@ -70,9 +70,9 @@ $tdatainforme_intersup_estado[".listAjax"] = false;
 //	temporary
 $tdatainforme_intersup_estado[".listAjax"] = false;
 
-	$tdatainforme_intersup_estado[".audit"] = false;
+	$tdatainforme_intersup_estado[".audit"] = true;
 
-	$tdatainforme_intersup_estado[".locking"] = false;
+	$tdatainforme_intersup_estado[".locking"] = true;
 
 
 $pages = $tdatainforme_intersup_estado[".defaultPages"];
@@ -136,7 +136,7 @@ $tdatainforme_intersup_estado[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatainforme_intersup_estado[".ajaxCodeSnippetAdded"] = false;
 

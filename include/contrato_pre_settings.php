@@ -73,9 +73,9 @@ $tdatacontrato_pre[".listAjax"] = false;
 //	temporary
 $tdatacontrato_pre[".listAjax"] = false;
 
-	$tdatacontrato_pre[".audit"] = false;
+	$tdatacontrato_pre[".audit"] = true;
 
-	$tdatacontrato_pre[".locking"] = false;
+	$tdatacontrato_pre[".locking"] = true;
 
 
 $pages = $tdatacontrato_pre[".defaultPages"];
@@ -139,7 +139,7 @@ $tdatacontrato_pre[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatacontrato_pre[".ajaxCodeSnippetAdded"] = false;
 

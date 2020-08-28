@@ -70,9 +70,9 @@ $tdatainforme_intersup_plan_pagos_st[".listAjax"] = false;
 //	temporary
 $tdatainforme_intersup_plan_pagos_st[".listAjax"] = false;
 
-	$tdatainforme_intersup_plan_pagos_st[".audit"] = false;
+	$tdatainforme_intersup_plan_pagos_st[".audit"] = true;
 
-	$tdatainforme_intersup_plan_pagos_st[".locking"] = false;
+	$tdatainforme_intersup_plan_pagos_st[".locking"] = true;
 
 
 $pages = $tdatainforme_intersup_plan_pagos_st[".defaultPages"];
@@ -136,7 +136,7 @@ $tdatainforme_intersup_plan_pagos_st[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatainforme_intersup_plan_pagos_st[".ajaxCodeSnippetAdded"] = false;
 

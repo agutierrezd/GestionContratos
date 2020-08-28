@@ -79,9 +79,9 @@ $tdatapaa_master[".listAjax"] = false;
 //	temporary
 $tdatapaa_master[".listAjax"] = false;
 
-	$tdatapaa_master[".audit"] = false;
+	$tdatapaa_master[".audit"] = true;
 
-	$tdatapaa_master[".locking"] = false;
+	$tdatapaa_master[".locking"] = true;
 
 
 $pages = $tdatapaa_master[".defaultPages"];
@@ -145,7 +145,7 @@ $tdatapaa_master[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatapaa_master[".ajaxCodeSnippetAdded"] = false;
 

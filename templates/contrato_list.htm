@@ -113,6 +113,32 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_prenumero}</span>
 						</div>
 		{END searchCtrlBlock_prenumero}
+																{BEGIN searchCtrlBlock_cont_cesion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_cesion}" {$filterRow_attrs_cont_cesion}>
+			<label>{$label contrato cont_cesion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_cesion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_cesion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_cesion}</span>
+						</div>
+		{END searchCtrlBlock_cont_cesion}
+																{BEGIN searchCtrlBlock_cont_modifica}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_modifica}" {$filterRow_attrs_cont_modifica}>
+			<label>{$label contrato cont_modifica }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_modifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_modifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_modifica}</span>
+						</div>
+		{END searchCtrlBlock_cont_modifica}
 																{BEGIN searchCtrlBlock_cont_numpoliza}
 
 
@@ -784,6 +810,27 @@
 					OBLIGACIONES ESPECÍFICAS				</label>
 			</div>
 			{END print_details_contrato_oe}
+														{BEGIN print_details_contrato_modifica}
+			<div>
+				<label for="printDetailscontrato_modifica{$id}">
+					<input type="checkbox" value="contrato_modifica" id="printDetailscontrato_modifica{$id}" checked>
+					Adic | Reduc				</label>
+			</div>
+			{END print_details_contrato_modifica}
+														{BEGIN print_details_contrato_modifica_prorroga}
+			<div>
+				<label for="printDetailscontrato_modifica_prorroga{$id}">
+					<input type="checkbox" value="contrato_modifica_prorroga" id="printDetailscontrato_modifica_prorroga{$id}" checked>
+					Prórroga				</label>
+			</div>
+			{END print_details_contrato_modifica_prorroga}
+														{BEGIN print_details_contrato_modifica_cesion}
+			<div>
+				<label for="printDetailscontrato_modifica_cesion{$id}">
+					<input type="checkbox" value="contrato_modifica_cesion" id="printDetailscontrato_modifica_cesion{$id}" checked>
+					Cesión				</label>
+			</div>
+			{END print_details_contrato_modifica_cesion}
 						</div>
 </div>
 {END print_details}
@@ -811,6 +858,20 @@
 	<a type="button" title="" class="btn btn-primary   
 	" id="print_friendly_button{$id}" >
 							Imprimir			</a>
+</span>
+															 
+									<span data-itemtype="create_pdf" data-itemid="create_pdf" {$item_create_pdf} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" data-pdfpage="print" 
+data-scope="0" 
+data-split="0" 
+data-records="10" 
+data-orientation="portrait" 
+data-scale="100" 
+data-filename="Contrato.pdf" 
+data-pagetype="print" 
+ >
+							Crea PDF			</a>
 </span>
 				 
 					</li>
@@ -944,26 +1005,6 @@
 			</div>
 		</a>
 		</li>
-						<li>
-		<a>
-		  	<div class="checkbox">
-				<label>
-					<input type="checkbox" id="hide_cont_fecha_aprobgarantia" checked="checked" value="1" data-field="cont_fecha_aprobgarantia">
-					<span>{$label contrato cont_fecha_aprobgarantia }</span>
-				</label>
-			</div>
-		</a>
-		</li>
-						<li>
-		<a>
-		  	<div class="checkbox">
-				<label>
-					<input type="checkbox" id="hide_cont_numpoliza" checked="checked" value="1" data-field="cont_numpoliza">
-					<span>{$label contrato cont_numpoliza }</span>
-				</label>
-			</div>
-		</a>
-		</li>
 			</ul>
 </div>
 		</div>					</div>
@@ -1017,13 +1058,7 @@
 															[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_secop_enlace"]:before {
 		content: "{$label contrato cont_secop_enlace}";
 	}
-										[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_fecha_aprobgarantia"]:before {
-		content: "{$label contrato cont_fecha_aprobgarantia}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_numpoliza"]:before {
-		content: "{$label contrato cont_numpoliza}";
-	}
-	}
+												}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
 	cellpadding="0" 
@@ -1247,7 +1282,7 @@
 	 
 		{BEGIN cont_nit_contra_ta_fieldheadercolumn}
 	{BEGIN cont_nit_contra_ta_fieldheader}
-	<SPAN {$cont_nit_contra_ta_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_nit_contra_ta">
+	<SPAN {$cont_nit_contra_ta_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_nit_contra_ta">
 	{$label contrato cont_nit_contra_ta }	{$arrow_icon_cont_nit_contra_ta}
 	</SPAN>
 	{END cont_nit_contra_ta_fieldheader}
@@ -1274,7 +1309,7 @@
 	 
 		{BEGIN nombre_cont_fieldheadercolumn}
 	{BEGIN nombre_cont_fieldheader}
-	<SPAN {$nombre_cont_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombre_cont">
+	<SPAN {$nombre_cont_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombre_cont">
 	{$label contrato nombre_cont }	{$arrow_icon_nombre_cont}
 	</SPAN>
 	{END nombre_cont_fieldheader}
@@ -1409,7 +1444,7 @@
 	 
 		{BEGIN cont_estado_fieldheadercolumn}
 	{BEGIN cont_estado_fieldheader}
-	<SPAN {$cont_estado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_estado">
+	<SPAN {$cont_estado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_estado">
 	{$label contrato cont_estado }	{$arrow_icon_cont_estado}
 	</SPAN>
 	{END cont_estado_fieldheader}
@@ -1418,60 +1453,6 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field11}
-				 
-					{BEGIN cellblock_grid_headcell_field12}
-	<th
-	
-	{$cell_grid_headcell_field12}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$cont_fecha_aprobgarantia_class}
-			"
-
-			data-field="cont_fecha_aprobgarantia"
-	
-	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN cont_fecha_aprobgarantia_fieldheadercolumn}
-	{BEGIN cont_fecha_aprobgarantia_fieldheader}
-	<SPAN {$cont_fecha_aprobgarantia_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_aprobgarantia">
-	{$label contrato cont_fecha_aprobgarantia }	{$arrow_icon_cont_fecha_aprobgarantia}
-	</SPAN>
-	{END cont_fecha_aprobgarantia_fieldheader}
-{END cont_fecha_aprobgarantia_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field12}
-				 
-					{BEGIN cellblock_grid_headcell_field13}
-	<th
-	
-	{$cell_grid_headcell_field13}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$cont_numpoliza_class}
-			"
-
-			data-field="cont_numpoliza"
-	
-	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN cont_numpoliza_fieldheadercolumn}
-	{BEGIN cont_numpoliza_fieldheader}
-	<SPAN {$cont_numpoliza_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_numpoliza">
-	{$label contrato cont_numpoliza }	{$arrow_icon_cont_numpoliza}
-	</SPAN>
-	{END cont_numpoliza_fieldheader}
-{END cont_numpoliza_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field13}
 							</tr>
 					 
 					 
@@ -1489,8 +1470,7 @@
 								r-gridrow
 							">
 				 
-					{BEGIN cellblock_grid_cell_icons}
-	<td
+						<td
 	
 	{$cell_grid_cell_icons}
 	{$recordattrs}
@@ -1498,8 +1478,7 @@
 					"
 
 	
-	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"		data-control-cell
-	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
 	>
 
 	 
@@ -1514,20 +1493,63 @@
 {END edit_link}
 {END edit_column}
 	 
-		{BEGIN view_column}
+		<span data-itemtype="custom_button_container" data-itemid="custom_button_container" {$item_custom_button_container} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-success   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+						Modificaciones			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN view_column}
 {BEGIN view_link}
-<span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
-	<a type="button" title="Ver registro" class="btn btn-success   
-	" href="contrato_view.php?{$editlink}" {$viewlink_attrs} title="Ver" data-popup >
+	<li data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
+				<a  href="contrato_view.php?{$editlink}" {$viewlink_attrs} title="Ver" data-popup  title="Ver registro" >
 					<span class="fa fa-search-plus"></span>
-										</a>
-</span>
+				
+		Detalle		
+		</a>
+	</li>
 {END view_link}
 {END view_column}
+							{BEGIN edit_column}
+{BEGIN edit_link}
+	<li data-itemtype="grid_edit" data-itemid="grid_edit1" {$item_grid_edit1} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
+				<a  href="contrato_edit.php?page=edit1&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit1" data-popup data-popupwidth="960" data-popupheight="600"  title="Editar" >
+					<span class="fa fa-usd"></span>
+				
+		Adición | Reducción		
+		</a>
+	</li>
+{END edit_link}
+{END edit_column}
+							{BEGIN edit_column}
+{BEGIN edit_link}
+	<li data-itemtype="grid_edit" data-itemid="grid_edit2" {$item_grid_edit2} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
+				<a  href="contrato_edit.php?page=edit2&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit2" data-popup data-popupwidth="960" data-popupheight="600"  title="Prórroga" >
+					<span class="fa fa-clock-o"></span>
+				
+		Prórroga		
+		</a>
+	</li>
+{END edit_link}
+{END edit_column}
+							{BEGIN edit_column}
+{BEGIN edit_link}
+	<li data-itemtype="grid_edit" data-itemid="grid_edit3" {$item_grid_edit3} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
+				<a  href="contrato_edit.php?page=edit3&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit3" data-popup data-popupwidth="960" data-popupheight="640"  title="Editar" >
+					<span class="fa fa-user-times"></span>
+				
+		Cesión		
+		</a>
+	</li>
+{END edit_link}
+{END edit_column}
+					</ul>
+	</span>
+</span>
 	
 	</td>
-	{END cellblock_grid_cell_icons}
-				 
+					 
 					{BEGIN cellblock_grid_cell_checkbox}
 	<td
 	
@@ -1537,8 +1559,7 @@
 		 r-ori-vert			"
 
 	
-	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
-	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
 		data-checkbox-cell
 	>
 
@@ -1561,8 +1582,7 @@
 					"
 
 	
-	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"		data-control-cell
-	
+	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
 	>
 
 	 
@@ -1616,6 +1636,20 @@
 			</a>
 	</span>
 	{END ep_obligaciones_dtable_link}
+
+
+	 
+		
+		
+	{BEGIN contrato_modifica_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link3" {$item_grid_details_link3} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$contrato_modifica_link_attrs} data-short-details="contrato_modifica"
+		class="{$contrato_modifica_dlink_class}" 
+		title="{$caption contrato_modifica }"	>
+								
+			</a>
+	</span>
+	{END contrato_modifica_dtable_link}
 
 
 	
@@ -1897,52 +1931,6 @@
 {END cont_estado_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field11}
-				 
-					{BEGIN cellblock_grid_cell_field12}
-	<td
-	
-	{$cell_grid_cell_field12}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$cont_fecha_aprobgarantia_class}
-			"
-
-			data-field="cont_fecha_aprobgarantia"
-	
-	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN cont_fecha_aprobgarantia_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_aprobgarantia" data-default-width >
-{$cont_fecha_aprobgarantia_value}
-</span>
-{END cont_fecha_aprobgarantia_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field12}
-				 
-					{BEGIN cellblock_grid_cell_field13}
-	<td
-	
-	{$cell_grid_cell_field13}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$cont_numpoliza_class}
-			"
-
-			data-field="cont_numpoliza"
-	
-	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN cont_numpoliza_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_numpoliza" data-default-width >
-{$cont_numpoliza_value}
-</span>
-{END cont_numpoliza_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field13}
 							</tr>
 					 
 						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
@@ -1962,9 +1950,9 @@
 	>
 
 	 
-										<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
-	data-orders="contrato_attached,interventor_interno,polizas_master,contrato_cdp,contrato_rp,ep_compromisos,ep_obligaciones,contrato_oe"
-			data-details-contrato_attached			data-details-interventor_interno			data-details-polizas_master			data-details-contrato_cdp			data-details-contrato_rp			data-details-ep_compromisos			data-details-ep_obligaciones			data-details-contrato_oe	>
+													<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="contrato_attached,interventor_interno,polizas_master,contrato_cdp,contrato_rp,ep_compromisos,ep_obligaciones,contrato_oe,contrato_modifica_prorroga,contrato_modifica,contrato_modifica_cesion"
+			data-details-contrato_attached			data-details-interventor_interno			data-details-polizas_master			data-details-contrato_cdp			data-details-contrato_rp			data-details-ep_compromisos			data-details-ep_obligaciones			data-details-contrato_oe			data-details-contrato_modifica_prorroga			data-details-contrato_modifica			data-details-contrato_modifica_cesion	>
 		<span data-details-inside data-short-table="contrato_attached">
 			</span>
 		<span data-details-inside data-short-table="interventor_interno">
@@ -1981,10 +1969,19 @@
 			</span>
 		<span data-details-inside data-short-table="contrato_oe">
 			</span>
+		<span data-details-inside data-short-table="contrato_modifica_prorroga">
+			</span>
+		<span data-details-inside data-short-table="contrato_modifica">
+			</span>
+		<span data-details-inside data-short-table="contrato_modifica_cesion">
+			</span>
 		<div data-details-preview>
 	</div>
 </div>
 	 
+			 
+			 
+			 
 			 
 			 
 			 
@@ -2250,38 +2247,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field11}
-				 
-					{BEGIN cellblock_grid_footcell_field12}
-	<td
-	
-	{$cell_grid_footcell_field12}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field12}
-				 
-					{BEGIN cellblock_grid_footcell_field13}
-	<td
-	
-	{$cell_grid_footcell_field13}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field13}
 							</tr>
 					
 					</tfoot>

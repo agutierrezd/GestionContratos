@@ -106,9 +106,9 @@ $tdatainforme_intersup_oe[".listAjax"] = false;
 //	temporary
 $tdatainforme_intersup_oe[".listAjax"] = false;
 
-	$tdatainforme_intersup_oe[".audit"] = false;
+	$tdatainforme_intersup_oe[".audit"] = true;
 
-	$tdatainforme_intersup_oe[".locking"] = false;
+	$tdatainforme_intersup_oe[".locking"] = true;
 
 
 $pages = $tdatainforme_intersup_oe[".defaultPages"];
@@ -172,7 +172,7 @@ $tdatainforme_intersup_oe[".rowHighlite"] = true;
 
 
 
-						
+												
 
 $tdatainforme_intersup_oe[".ajaxCodeSnippetAdded"] = false;
 
@@ -1443,16 +1443,19 @@ $tdatainforme_intersup_oe[".hideMobileList"] = array();
 
 	
 	
-				$fdata["UploadFolder"] = "files";
+				$fdata["UploadFolder"] = "../GestionContratistas/anexos_oe/";
 
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "");
+	$vdata = array("ViewFormat" => "Document Download");
 
 	
 	
 	
+				$vdata["ShowThumbnail"] = true;
+					$vdata["ShowIcon"] = true;
+		
 	
 	
 	
@@ -1462,8 +1465,6 @@ $tdatainforme_intersup_oe[".hideMobileList"] = array();
 	
 	
 	
-		$vdata["NeedEncode"] = true;
-
 	
 		$vdata["truncateText"] = true;
 	$vdata["NumberOfChars"] = 80;
@@ -1474,7 +1475,7 @@ $tdatainforme_intersup_oe[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text area");
+	$edata = array("EditFormat" => "Document upload");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1498,9 +1499,7 @@ $tdatainforme_intersup_oe[".hideMobileList"] = array();
 	
 	
 	
-				$edata["nRows"] = 100;
-			$edata["nCols"] = 200;
-
+	
 	
 	
 		$edata["controlWidth"] = 200;

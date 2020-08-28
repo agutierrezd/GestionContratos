@@ -377,187 +377,187 @@ class AuditTrailTable
 		}
 		if($table=="contractor_master")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_docidentidad")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_banco")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_cta_banco")
 		{
-			return false;
+			return true;
 		}
 		if($table=="global_status")
 		{
-			return false;
+			return true;
 		}
 		if($table=="divipola")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contractor_master_vinc")
 		{
-			return false;
+			return true;
 		}
 		if($table=="paa_master")
 		{
-			return false;
+			return true;
 		}
 		if($table=="vigencia")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_tipo")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_rubros")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_usos")
 		{
-			return false;
+			return true;
 		}
 		if($table=="rep_prg001_catalogopresupuestal")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_tipo_unidad")
 		{
-			return false;
+			return true;
 		}
 		if($table=="interventor_periodos")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_tipo_ct_000")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_tipo_ct_001")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_tipo_ct_002")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_contrato")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_forma_pago")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_si_no")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_estados")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_pre")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_attached")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_attached_type")
 		{
-			return false;
+			return true;
 		}
 		if($table=="polizas_master")
 		{
-			return false;
+			return true;
 		}
 		if($table=="polizas_tipo")
 		{
-			return false;
+			return true;
 		}
 		if($table=="polizas_aseguradoras")
 		{
-			return false;
+			return true;
 		}
 		if($table=="info_secop")
 		{
-			return false;
+			return true;
 		}
 		if($table=="interventor_interno")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_habilita")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_cdp")
 		{
-			return false;
+			return true;
 		}
 		if($table=="dependencia")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_rp")
 		{
-			return false;
+			return true;
 		}
 		if($table=="dependencias_001")
 		{
-			return false;
+			return true;
 		}
 		if($table=="ep_compromisos")
 		{
-			return false;
+			return true;
 		}
 		if($table=="ep_obligaciones")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_tipo_ct_regimen_tribut")
 		{
-			return false;
+			return true;
 		}
 		if($table=="global_unspsc")
 		{
-			return false;
+			return true;
 		}
 		if($table=="cargo")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_sn")
 		{
-			return false;
+			return true;
 		}
 		if($table=="informe_intersup_plan_pagos")
 		{
-			return false;
+			return true;
 		}
 		if($table=="informe_intersup_admin")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_001_dashboard")
 		{
-			return false;
+			return true;
 		}
 		if($table=="informe_intersup_estado")
 		{
-			return false;
+			return true;
 		}
 		if($table=="informe_tipo")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_chart_tiporubro")
 		{
@@ -581,59 +581,75 @@ class AuditTrailTable
 		}
 		if($table=="secop")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_tipo_ct_rubro")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_001_dashboard_info")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_bandejaentrada_supervisores")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_000_control_informes")
 		{
-			return false;
+			return true;
 		}
 		if($table=="informe_intersup_plan_pagos_st")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_oe")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_oe_ordinal")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_bandejaentrada_supervisores1")
 		{
-			return false;
+			return true;
 		}
 		if($table=="informe_intersup")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_bandejaentrada_supervisores2")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_divipola")
 		{
-			return false;
+			return true;
 		}
 		if($table=="informe_intersup_oe")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_sn_oe")
 		{
-			return false;
+			return true;
+		}
+		if($table=="contrato_modifica")
+		{
+			return true;
+		}
+		if($table=="contrato_modifica_type")
+		{
+			return true;
+		}
+		if($table=="contrato_modifica_prorroga")
+		{
+			return true;
+		}
+		if($table=="contrato_modifica_cesion")
+		{
+			return true;
 		}
 	}
 	
@@ -1018,187 +1034,187 @@ class AuditTrailFile
 		}
 		if($table=="contractor_master")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_docidentidad")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_banco")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_cta_banco")
 		{
-			return false;
+			return true;
 		}
 		if($table=="global_status")
 		{
-			return false;
+			return true;
 		}
 		if($table=="divipola")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contractor_master_vinc")
 		{
-			return false;
+			return true;
 		}
 		if($table=="paa_master")
 		{
-			return false;
+			return true;
 		}
 		if($table=="vigencia")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_tipo")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_rubros")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_usos")
 		{
-			return false;
+			return true;
 		}
 		if($table=="rep_prg001_catalogopresupuestal")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_tipo_unidad")
 		{
-			return false;
+			return true;
 		}
 		if($table=="interventor_periodos")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_tipo_ct_000")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_tipo_ct_001")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_tipo_ct_002")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_contrato")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_forma_pago")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tipo_si_no")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_estados")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_pre")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_attached")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_attached_type")
 		{
-			return false;
+			return true;
 		}
 		if($table=="polizas_master")
 		{
-			return false;
+			return true;
 		}
 		if($table=="polizas_tipo")
 		{
-			return false;
+			return true;
 		}
 		if($table=="polizas_aseguradoras")
 		{
-			return false;
+			return true;
 		}
 		if($table=="info_secop")
 		{
-			return false;
+			return true;
 		}
 		if($table=="interventor_interno")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_habilita")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_cdp")
 		{
-			return false;
+			return true;
 		}
 		if($table=="dependencia")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_rp")
 		{
-			return false;
+			return true;
 		}
 		if($table=="dependencias_001")
 		{
-			return false;
+			return true;
 		}
 		if($table=="ep_compromisos")
 		{
-			return false;
+			return true;
 		}
 		if($table=="ep_obligaciones")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_tipo_ct_regimen_tribut")
 		{
-			return false;
+			return true;
 		}
 		if($table=="global_unspsc")
 		{
-			return false;
+			return true;
 		}
 		if($table=="cargo")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_sn")
 		{
-			return false;
+			return true;
 		}
 		if($table=="informe_intersup_plan_pagos")
 		{
-			return false;
+			return true;
 		}
 		if($table=="informe_intersup_admin")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_001_dashboard")
 		{
-			return false;
+			return true;
 		}
 		if($table=="informe_intersup_estado")
 		{
-			return false;
+			return true;
 		}
 		if($table=="informe_tipo")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_chart_tiporubro")
 		{
@@ -1222,59 +1238,75 @@ class AuditTrailFile
 		}
 		if($table=="secop")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_tipo_ct_rubro")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_001_dashboard_info")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_bandejaentrada_supervisores")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_000_control_informes")
 		{
-			return false;
+			return true;
 		}
 		if($table=="informe_intersup_plan_pagos_st")
 		{
-			return false;
+			return true;
 		}
 		if($table=="contrato_oe")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_oe_ordinal")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_bandejaentrada_supervisores1")
 		{
-			return false;
+			return true;
 		}
 		if($table=="informe_intersup")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_bandejaentrada_supervisores2")
 		{
-			return false;
+			return true;
 		}
 		if($table=="q_divipola")
 		{
-			return false;
+			return true;
 		}
 		if($table=="informe_intersup_oe")
 		{
-			return false;
+			return true;
 		}
 		if($table=="tparam_sn_oe")
 		{
-			return false;
+			return true;
+		}
+		if($table=="contrato_modifica")
+		{
+			return true;
+		}
+		if($table=="contrato_modifica_type")
+		{
+			return true;
+		}
+		if($table=="contrato_modifica_prorroga")
+		{
+			return true;
+		}
+		if($table=="contrato_modifica_cesion")
+		{
+			return true;
 		}
 	}
 	

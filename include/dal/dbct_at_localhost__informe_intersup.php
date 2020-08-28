@@ -20,7 +20,7 @@ $dalTableinforme_intersup["inf_cdp"] = array("type"=>200,"varname"=>"inf_cdp", "
 $dalTableinforme_intersup["inf_rp"] = array("type"=>200,"varname"=>"inf_rp", "name" => "inf_rp");
 $dalTableinforme_intersup["inf_rubrocode"] = array("type"=>200,"varname"=>"inf_rubrocode", "name" => "inf_rubrocode");
 $dalTableinforme_intersup["inf_rubroname"] = array("type"=>200,"varname"=>"inf_rubroname", "name" => "inf_rubroname");
-$dalTableinforme_intersup["inf_objeto"] = array("type"=>201,"varname"=>"inf_objeto", "name" => "inf_objeto");
+$dalTableinforme_intersup["inf_objeto"] = array("type"=>200,"varname"=>"inf_objeto", "name" => "inf_objeto");
 $dalTableinforme_intersup["inf_fechasuscripcion"] = array("type"=>7,"varname"=>"inf_fechasuscripcion", "name" => "inf_fechasuscripcion");
 $dalTableinforme_intersup["inf_fechacont_i"] = array("type"=>7,"varname"=>"inf_fechacont_i", "name" => "inf_fechacont_i");
 $dalTableinforme_intersup["inf_fechacont_f"] = array("type"=>7,"varname"=>"inf_fechacont_f", "name" => "inf_fechacont_f");
@@ -32,13 +32,13 @@ $dalTableinforme_intersup["inf_nombre"] = array("type"=>200,"varname"=>"inf_nomb
 $dalTableinforme_intersup["inf_cargo"] = array("type"=>200,"varname"=>"inf_cargo", "name" => "inf_cargo");
 $dalTableinforme_intersup["inf_dependencia"] = array("type"=>200,"varname"=>"inf_dependencia", "name" => "inf_dependencia");
 $dalTableinforme_intersup["inf_avgejecucion"] = array("type"=>5,"varname"=>"inf_avgejecucion", "name" => "inf_avgejecucion");
-$dalTableinforme_intersup["inf_actividades"] = array("type"=>201,"varname"=>"inf_actividades", "name" => "inf_actividades");
+$dalTableinforme_intersup["inf_actividades"] = array("type"=>200,"varname"=>"inf_actividades", "name" => "inf_actividades");
 $dalTableinforme_intersup["inf_declarainconf"] = array("type"=>16,"varname"=>"inf_declarainconf", "name" => "inf_declarainconf");
-$dalTableinforme_intersup["inf_declarainconf_obs"] = array("type"=>201,"varname"=>"inf_declarainconf_obs", "name" => "inf_declarainconf_obs");
+$dalTableinforme_intersup["inf_declarainconf_obs"] = array("type"=>200,"varname"=>"inf_declarainconf_obs", "name" => "inf_declarainconf_obs");
 $dalTableinforme_intersup["inf_incumplimiento"] = array("type"=>16,"varname"=>"inf_incumplimiento", "name" => "inf_incumplimiento");
-$dalTableinforme_intersup["inf_incumplimiento_obs"] = array("type"=>201,"varname"=>"inf_incumplimiento_obs", "name" => "inf_incumplimiento_obs");
-$dalTableinforme_intersup["inf_otrosaspectostecnicos"] = array("type"=>201,"varname"=>"inf_otrosaspectostecnicos", "name" => "inf_otrosaspectostecnicos");
-$dalTableinforme_intersup["inf_recomyobserva"] = array("type"=>201,"varname"=>"inf_recomyobserva", "name" => "inf_recomyobserva");
+$dalTableinforme_intersup["inf_incumplimiento_obs"] = array("type"=>200,"varname"=>"inf_incumplimiento_obs", "name" => "inf_incumplimiento_obs");
+$dalTableinforme_intersup["inf_otrosaspectostecnicos"] = array("type"=>200,"varname"=>"inf_otrosaspectostecnicos", "name" => "inf_otrosaspectostecnicos");
+$dalTableinforme_intersup["inf_recomyobserva"] = array("type"=>200,"varname"=>"inf_recomyobserva", "name" => "inf_recomyobserva");
 $dalTableinforme_intersup["sign_date"] = array("type"=>7,"varname"=>"sign_date", "name" => "sign_date");
 $dalTableinforme_intersup["sign_hash"] = array("type"=>200,"varname"=>"sign_hash", "name" => "sign_hash");
 $dalTableinforme_intersup["sign_file"] = array("type"=>200,"varname"=>"sign_file", "name" => "sign_file");

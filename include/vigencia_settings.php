@@ -70,9 +70,9 @@ $tdatavigencia[".listAjax"] = false;
 //	temporary
 $tdatavigencia[".listAjax"] = false;
 
-	$tdatavigencia[".audit"] = false;
+	$tdatavigencia[".audit"] = true;
 
-	$tdatavigencia[".locking"] = false;
+	$tdatavigencia[".locking"] = true;
 
 
 $pages = $tdatavigencia[".defaultPages"];
@@ -136,7 +136,7 @@ $tdatavigencia[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatavigencia[".ajaxCodeSnippetAdded"] = false;
 

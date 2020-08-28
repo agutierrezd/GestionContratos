@@ -79,9 +79,9 @@ $tdatadivipola[".listAjax"] = false;
 //	temporary
 $tdatadivipola[".listAjax"] = false;
 
-	$tdatadivipola[".audit"] = false;
+	$tdatadivipola[".audit"] = true;
 
-	$tdatadivipola[".locking"] = false;
+	$tdatadivipola[".locking"] = true;
 
 
 $pages = $tdatadivipola[".defaultPages"];
@@ -145,7 +145,7 @@ $tdatadivipola[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatadivipola[".ajaxCodeSnippetAdded"] = false;
 

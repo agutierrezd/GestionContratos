@@ -212,6 +212,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_import_field30}","text":{$cont_numpoliza_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_import_field31}","text":{$cont_modifica_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field32}","text":{$cont_cesion_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

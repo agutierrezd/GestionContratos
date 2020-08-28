@@ -232,9 +232,9 @@ $tdatainforme_intersup_admin[".listAjax"] = false;
 //	temporary
 $tdatainforme_intersup_admin[".listAjax"] = false;
 
-	$tdatainforme_intersup_admin[".audit"] = false;
+	$tdatainforme_intersup_admin[".audit"] = true;
 
-	$tdatainforme_intersup_admin[".locking"] = false;
+	$tdatainforme_intersup_admin[".locking"] = true;
 
 
 $pages = $tdatainforme_intersup_admin[".defaultPages"];
@@ -298,7 +298,7 @@ $tdatainforme_intersup_admin[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatainforme_intersup_admin[".ajaxCodeSnippetAdded"] = false;
 
@@ -3225,7 +3225,7 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_objeto";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_admin","inf_objeto");
-	$fdata["FieldType"] = 201;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -4822,7 +4822,7 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_actividades";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_admin","inf_actividades");
-	$fdata["FieldType"] = 201;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -5116,7 +5116,7 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_declarainconf_obs";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_admin","inf_declarainconf_obs");
-	$fdata["FieldType"] = 201;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -5161,7 +5161,7 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text area");
+	$edata = array("EditFormat" => "Text field");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -5185,11 +5185,11 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 	
 	
 	
-				$edata["nRows"] = 100;
-			$edata["nCols"] = 200;
+	
+			$edata["HTML5InuptType"] = "text";
 
-	
-	
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -5415,7 +5415,7 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_incumplimiento_obs";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_admin","inf_incumplimiento_obs");
-	$fdata["FieldType"] = 201;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -5460,7 +5460,7 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text area");
+	$edata = array("EditFormat" => "Text field");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -5484,11 +5484,11 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 	
 	
 	
-				$edata["nRows"] = 100;
-			$edata["nCols"] = 200;
+	
+			$edata["HTML5InuptType"] = "text";
 
-	
-	
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -5552,7 +5552,7 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_otrosaspectostecnicos";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_admin","inf_otrosaspectostecnicos");
-	$fdata["FieldType"] = 201;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -5597,7 +5597,7 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text area");
+	$edata = array("EditFormat" => "Text field");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -5621,11 +5621,11 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 	
 	
 	
-				$edata["nRows"] = 100;
-			$edata["nCols"] = 200;
+	
+			$edata["HTML5InuptType"] = "text";
 
-	
-	
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -5689,7 +5689,7 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_recomyobserva";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_admin","inf_recomyobserva");
-	$fdata["FieldType"] = 201;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -5734,7 +5734,7 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text area");
+	$edata = array("EditFormat" => "Text field");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -5758,11 +5758,11 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 	
 	
 	
-				$edata["nRows"] = 100;
-			$edata["nCols"] = 200;
+	
+			$edata["HTML5InuptType"] = "text";
 
-	
-	
+		$edata["EditParams"] = "";
+		
 		$edata["controlWidth"] = 200;
 
 //	Begin validation

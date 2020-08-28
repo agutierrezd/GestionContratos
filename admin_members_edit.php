@@ -23,7 +23,7 @@ EditPage::handleBrokenRequest();
 
 $layout = new TLayout("edit_bootstrap", "OfficeOffice", "MobileOffice");
 $layout->version = 3;
-	$layout->bootstrapTheme = "flatly";
+	$layout->bootstrapTheme = "default";
 		$layout->customCssPageName = "admin_members_edit";
 $layout->blocks["top"] = array();
 $layout->containers["editpage"] = array();
@@ -110,7 +110,7 @@ $page_layouts["admin_members_edit"] = $layout;
 
 $layout = new TLayout("list_bootstrap1", "OfficeOffice", "MobileOffice");
 $layout->version = 3;
-	$layout->bootstrapTheme = "flatly";
+	$layout->bootstrapTheme = "default";
 		$layout->customCssPageName = "admin_members_list";
 $layout->blocks["center"] = array();
 $layout->containers["gridcontrols"] = array();

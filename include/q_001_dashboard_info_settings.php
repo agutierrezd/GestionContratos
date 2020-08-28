@@ -199,9 +199,9 @@ $tdataq_001_dashboard_info[".listAjax"] = false;
 //	temporary
 $tdataq_001_dashboard_info[".listAjax"] = false;
 
-	$tdataq_001_dashboard_info[".audit"] = false;
+	$tdataq_001_dashboard_info[".audit"] = true;
 
-	$tdataq_001_dashboard_info[".locking"] = false;
+	$tdataq_001_dashboard_info[".locking"] = true;
 
 
 $pages = $tdataq_001_dashboard_info[".defaultPages"];
@@ -265,7 +265,7 @@ $tdataq_001_dashboard_info[".rowHighlite"] = true;
 
 
 
-												
+																								
 
 $tdataq_001_dashboard_info[".ajaxCodeSnippetAdded"] = false;
 

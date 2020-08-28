@@ -70,9 +70,9 @@ $tdataq_oe_ordinal[".listAjax"] = false;
 //	temporary
 $tdataq_oe_ordinal[".listAjax"] = false;
 
-	$tdataq_oe_ordinal[".audit"] = false;
+	$tdataq_oe_ordinal[".audit"] = true;
 
-	$tdataq_oe_ordinal[".locking"] = false;
+	$tdataq_oe_ordinal[".locking"] = true;
 
 
 $pages = $tdataq_oe_ordinal[".defaultPages"];
@@ -136,7 +136,7 @@ $tdataq_oe_ordinal[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdataq_oe_ordinal[".ajaxCodeSnippetAdded"] = false;
 

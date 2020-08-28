@@ -630,6 +630,14 @@ class Chart
 			return true;
 		if("tparam_sn_oe" == $this->chrt_array['tables'][0])
 			return true;
+		if("contrato_modifica" == $this->chrt_array['tables'][0])
+			return true;
+		if("contrato_modifica_type" == $this->chrt_array['tables'][0])
+			return true;
+		if("contrato_modifica" == $this->chrt_array['tables'][0])
+			return true;
+		if("contrato_modifica" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

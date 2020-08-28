@@ -82,6 +82,10 @@ $nonAdminTablesArr[] = "q_bandejaentrada_supervisores2";
 $nonAdminTablesArr[] = "q_divipola";
 $nonAdminTablesArr[] = "informe_intersup_oe";
 $nonAdminTablesArr[] = "tparam_sn_oe";
+$nonAdminTablesArr[] = "contrato_modifica";
+$nonAdminTablesArr[] = "contrato_modifica_type";
+$nonAdminTablesArr[] = "contrato_modifica_prorroga";
+$nonAdminTablesArr[] = "contrato_modifica_cesion";
 
 $ug_connection = $cman->getForUserGroups();
 

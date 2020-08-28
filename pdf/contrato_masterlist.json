@@ -194,6 +194,9 @@ pdfDocument = {
 															{BEGIN row_grid_12}			
 								"%",
 								{END row_grid_12}
+															{BEGIN row_grid_13}			
+								"%",
+								{END row_grid_13}
 														],
 													
 							body: [
@@ -1398,6 +1401,114 @@ pdfDocument = {
 				{END row_grid_11}
 								{BEGIN row_grid_12}
 				[
+												{BEGIN cellblock_grid_cell_label11}
+{
+	cellId: 'cell_label11',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label8}","text":"{$jslabel contrato cont_modifica }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label11}
+																			{BEGIN cellblock_grid_cell_field11}
+{
+	cellId: 'cell_field11',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field8}","text":{$cont_modifica_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_modifica_align}',
+  },
+
+{END cellblock_grid_cell_field11}
+																			{BEGIN cellblock_grid_cell_label12}
+{
+	cellId: 'cell_label12',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label9}","text":"{$jslabel contrato cont_cesion }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label12}
+																			{BEGIN cellblock_grid_cell_field12}
+{
+	cellId: 'cell_field12',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field9}","text":{$cont_cesion_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_cesion_align}',
+  },
+
+{END cellblock_grid_cell_field12}
+											],
+				{END row_grid_12}
+								{BEGIN row_grid_13}
+				[
 												{BEGIN cellblock_grid_cell_dpreview}
 {
 	cellId: 'cell_dpreview',
@@ -1444,7 +1555,7 @@ pdfDocument = {
 				text: ''
 			},
 							],
-				{END row_grid_12}
+				{END row_grid_13}
 										]
 						}
 					}

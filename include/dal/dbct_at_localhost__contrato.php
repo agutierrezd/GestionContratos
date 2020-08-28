@@ -32,8 +32,6 @@ $dalTablecontrato["cont_otrosi_type"] = array("type"=>16,"varname"=>"cont_otrosi
 $dalTablecontrato["cont_valorant"] = array("type"=>5,"varname"=>"cont_valorant", "name" => "cont_valorant");
 $dalTablecontrato["cont_valorinicial"] = array("type"=>5,"varname"=>"cont_valorinicial", "name" => "cont_valorinicial");
 $dalTablecontrato["cont_valormensual"] = array("type"=>5,"varname"=>"cont_valormensual", "name" => "cont_valormensual");
-$dalTablecontrato["cont_valoradic_fecha"] = array("type"=>7,"varname"=>"cont_valoradic_fecha", "name" => "cont_valoradic_fecha");
-$dalTablecontrato["cont_valoradic"] = array("type"=>5,"varname"=>"cont_valoradic", "name" => "cont_valoradic");
 $dalTablecontrato["cont_valorreduc_fecha"] = array("type"=>7,"varname"=>"cont_valorreduc_fecha", "name" => "cont_valorreduc_fecha");
 $dalTablecontrato["cont_valorreduc"] = array("type"=>200,"varname"=>"cont_valorreduc", "name" => "cont_valorreduc");
 $dalTablecontrato["cont_valorvigente"] = array("type"=>200,"varname"=>"cont_valorvigente", "name" => "cont_valorvigente");
@@ -69,9 +67,10 @@ $dalTablecontrato["vf_num_autorizacion"] = array("type"=>200,"varname"=>"vf_num_
 $dalTablecontrato["vf_fecha"] = array("type"=>7,"varname"=>"vf_fecha", "name" => "vf_fecha");
 $dalTablecontrato["vf_valor"] = array("type"=>5,"varname"=>"vf_valor", "name" => "vf_valor");
 $dalTablecontrato["cont_fechasistema"] = array("type"=>135,"varname"=>"cont_fechasistema", "name" => "cont_fechasistema");
-$dalTablecontrato["cont_cesion"] = array("type"=>16,"varname"=>"cont_cesion", "name" => "cont_cesion");
 $dalTablecontrato["cont_fase"] = array("type"=>200,"varname"=>"cont_fase", "name" => "cont_fase");
 $dalTablecontrato["cont_numpoliza"] = array("type"=>200,"varname"=>"cont_numpoliza", "name" => "cont_numpoliza");
+$dalTablecontrato["cont_cesion"] = array("type"=>16,"varname"=>"cont_cesion", "name" => "cont_cesion");
+$dalTablecontrato["cont_modifica"] = array("type"=>16,"varname"=>"cont_modifica", "name" => "cont_modifica");
 	$dalTablecontrato["id_cont"]["key"]=true;
 
 $dal_info["dbct_at_localhost__contrato"] = &$dalTablecontrato;

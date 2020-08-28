@@ -70,9 +70,9 @@ $tdataglobal_unspsc[".listAjax"] = false;
 //	temporary
 $tdataglobal_unspsc[".listAjax"] = false;
 
-	$tdataglobal_unspsc[".audit"] = false;
+	$tdataglobal_unspsc[".audit"] = true;
 
-	$tdataglobal_unspsc[".locking"] = false;
+	$tdataglobal_unspsc[".locking"] = true;
 
 
 $pages = $tdataglobal_unspsc[".defaultPages"];
@@ -136,7 +136,7 @@ $tdataglobal_unspsc[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdataglobal_unspsc[".ajaxCodeSnippetAdded"] = false;
 

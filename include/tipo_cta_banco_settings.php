@@ -73,9 +73,9 @@ $tdatatipo_cta_banco[".listAjax"] = false;
 //	temporary
 $tdatatipo_cta_banco[".listAjax"] = false;
 
-	$tdatatipo_cta_banco[".audit"] = false;
+	$tdatatipo_cta_banco[".audit"] = true;
 
-	$tdatatipo_cta_banco[".locking"] = false;
+	$tdatatipo_cta_banco[".locking"] = true;
 
 
 $pages = $tdatatipo_cta_banco[".defaultPages"];
@@ -139,7 +139,7 @@ $tdatatipo_cta_banco[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatatipo_cta_banco[".ajaxCodeSnippetAdded"] = false;
 

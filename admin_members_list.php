@@ -15,7 +15,7 @@ if( !Security::processAdminPageSecurity( false ) )
 
 $layout = new TLayout("admin_members_list_bootstrap", "OfficeOffice", "MobileOffice");
 $layout->version = 3;
-	$layout->bootstrapTheme = "flatly";
+	$layout->bootstrapTheme = "default";
 		$layout->customCssPageName = "_admin_members_list";
 $layout->blocks["top"] = array();
 $layout->containers["top"] = array();

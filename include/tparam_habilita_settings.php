@@ -70,9 +70,9 @@ $tdatatparam_habilita[".listAjax"] = false;
 //	temporary
 $tdatatparam_habilita[".listAjax"] = false;
 
-	$tdatatparam_habilita[".audit"] = false;
+	$tdatatparam_habilita[".audit"] = true;
 
-	$tdatatparam_habilita[".locking"] = false;
+	$tdatatparam_habilita[".locking"] = true;
 
 
 $pages = $tdatatparam_habilita[".defaultPages"];
@@ -136,7 +136,7 @@ $tdatatparam_habilita[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatatparam_habilita[".ajaxCodeSnippetAdded"] = false;
 

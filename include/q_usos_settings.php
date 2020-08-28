@@ -70,9 +70,9 @@ $tdataq_usos[".listAjax"] = false;
 //	temporary
 $tdataq_usos[".listAjax"] = false;
 
-	$tdataq_usos[".audit"] = false;
+	$tdataq_usos[".audit"] = true;
 
-	$tdataq_usos[".locking"] = false;
+	$tdataq_usos[".locking"] = true;
 
 
 $pages = $tdataq_usos[".defaultPages"];
@@ -136,7 +136,7 @@ $tdataq_usos[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdataq_usos[".ajaxCodeSnippetAdded"] = false;
 

@@ -70,9 +70,9 @@ $tdatatipo_docidentidad[".listAjax"] = false;
 //	temporary
 $tdatatipo_docidentidad[".listAjax"] = false;
 
-	$tdatatipo_docidentidad[".audit"] = false;
+	$tdatatipo_docidentidad[".audit"] = true;
 
-	$tdatatipo_docidentidad[".locking"] = false;
+	$tdatatipo_docidentidad[".locking"] = true;
 
 
 $pages = $tdatatipo_docidentidad[".defaultPages"];
@@ -136,7 +136,7 @@ $tdatatipo_docidentidad[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatatipo_docidentidad[".ajaxCodeSnippetAdded"] = false;
 

@@ -3239,6 +3239,14 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "informe_intersup_oe" ] = "informe_intersup_oe";
 	$projectEntities[ "tparam_sn_oe" ] = array( "url" => "tparam_sn_oe", "type" => 0 );
 	$projectEntitiesReverse[ "tparam_sn_oe" ] = "tparam_sn_oe";
+	$projectEntities[ "contrato_modifica" ] = array( "url" => "contrato_modifica", "type" => 0 );
+	$projectEntitiesReverse[ "contrato_modifica" ] = "contrato_modifica";
+	$projectEntities[ "contrato_modifica_type" ] = array( "url" => "contrato_modifica_type", "type" => 0 );
+	$projectEntitiesReverse[ "contrato_modifica_type" ] = "contrato_modifica_type";
+	$projectEntities[ "contrato_modifica_prorroga" ] = array( "url" => "contrato_modifica_prorroga", "type" => 1 );
+	$projectEntitiesReverse[ "contrato_modifica_prorroga" ] = "contrato_modifica_prorroga";
+	$projectEntities[ "contrato_modifica_cesion" ] = array( "url" => "contrato_modifica_cesion", "type" => 1 );
+	$projectEntitiesReverse[ "contrato_modifica_cesion" ] = "contrato_modifica_cesion";
 }
 
 function findTable( $table ) {

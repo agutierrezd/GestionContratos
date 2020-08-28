@@ -41,30 +41,6 @@ pdfDocument = {
 				
 					[
 												{
-	cellId: 'c',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	static colspan/rowspan
-		
-			
-	
-	
-			"text": [
-		
-				
-			{"text":{$pdf_image images/Logo_Coldeportes.png 0 0},"hidden":"{$item_hide_image}"},
-				
-		  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-											],
-								[
-												{
 	cellId: 'c1',
 	col:0,
 	row:0,
@@ -124,11 +100,6 @@ pdfDocument = {
 						
 			"%",
 						{END row_grid_1}
-			 
-								{BEGIN row_grid_2}
-						
-			"%",
-						{END row_grid_2}
 			 
 				],
 	
@@ -513,6 +484,62 @@ pdfDocument = {
 {END cellblock_section_c5}
 											],
 				{END row_section_4}
+								{BEGIN row_section_5}
+				[
+												{BEGIN cellblock_section_c12}
+{
+	cellId: 'c12',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field24}","stack":[{"text":"{$jslabel contrato cont_modifica }","bold":true},{"text":{$cont_modifica_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c12}
+																			{BEGIN cellblock_section_c13}
+{
+	cellId: 'c13',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field27}","stack":[{"text":"{$jslabel contrato cont_cesion }","bold":true},{"text":{$cont_cesion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section_c13}
+											],
+				{END row_section_5}
 									]
 					}
 				}]
@@ -1466,43 +1493,6 @@ pdfDocument = {
 			},
 							],
 				{END row_grid_1}
-								{BEGIN row_grid_2}
-				[
-												{BEGIN cellblock_grid_c5}
-{
-	cellId: 'c5',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-					{BEGIN colspan_grid_c5}
-			colSpan: {$colspan_grid_c5},
-			{END colspan_grid_c5}
-		
-						
-	
-	
-	
-			"stack": [
-		
-				'',
-	  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_c5}
-																		{ 
-				cellId: 'c5',
-				row:  0,
-				col:  1,
-				text: ''
-			},
-							],
-				{END row_grid_2}
 					]
 	}
 }

@@ -140,9 +140,9 @@ $tdataq_bandejaentrada_supervisores[".listAjax"] = false;
 //	temporary
 $tdataq_bandejaentrada_supervisores[".listAjax"] = false;
 
-	$tdataq_bandejaentrada_supervisores[".audit"] = false;
+	$tdataq_bandejaentrada_supervisores[".audit"] = true;
 
-	$tdataq_bandejaentrada_supervisores[".locking"] = false;
+	$tdataq_bandejaentrada_supervisores[".locking"] = true;
 
 
 $pages = $tdataq_bandejaentrada_supervisores[".defaultPages"];
@@ -206,7 +206,7 @@ $tdataq_bandejaentrada_supervisores[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdataq_bandejaentrada_supervisores[".ajaxCodeSnippetAdded"] = false;
 

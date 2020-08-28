@@ -70,9 +70,9 @@ $tdatatipo_si_no[".listAjax"] = false;
 //	temporary
 $tdatatipo_si_no[".listAjax"] = false;
 
-	$tdatatipo_si_no[".audit"] = false;
+	$tdatatipo_si_no[".audit"] = true;
 
-	$tdatatipo_si_no[".locking"] = false;
+	$tdatatipo_si_no[".locking"] = true;
 
 
 $pages = $tdatatipo_si_no[".defaultPages"];
@@ -136,7 +136,7 @@ $tdatatipo_si_no[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatatipo_si_no[".ajaxCodeSnippetAdded"] = false;
 

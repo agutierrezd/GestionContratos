@@ -172,9 +172,9 @@ $tdataep_compromisos[".listAjax"] = false;
 //	temporary
 $tdataep_compromisos[".listAjax"] = false;
 
-	$tdataep_compromisos[".audit"] = false;
+	$tdataep_compromisos[".audit"] = true;
 
-	$tdataep_compromisos[".locking"] = false;
+	$tdataep_compromisos[".locking"] = true;
 
 
 $pages = $tdataep_compromisos[".defaultPages"];
@@ -238,7 +238,7 @@ $tdataep_compromisos[".rowHighlite"] = true;
 
 
 
-						
+												
 
 $tdataep_compromisos[".ajaxCodeSnippetAdded"] = false;
 

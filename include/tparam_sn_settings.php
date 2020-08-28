@@ -70,9 +70,9 @@ $tdatatparam_sn[".listAjax"] = false;
 //	temporary
 $tdatatparam_sn[".listAjax"] = false;
 
-	$tdatatparam_sn[".audit"] = false;
+	$tdatatparam_sn[".audit"] = true;
 
-	$tdatatparam_sn[".locking"] = false;
+	$tdatatparam_sn[".locking"] = true;
 
 
 $pages = $tdatatparam_sn[".defaultPages"];
@@ -136,7 +136,7 @@ $tdatatparam_sn[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatatparam_sn[".ajaxCodeSnippetAdded"] = false;
 

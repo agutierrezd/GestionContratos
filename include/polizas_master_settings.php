@@ -106,9 +106,9 @@ $tdatapolizas_master[".listAjax"] = false;
 //	temporary
 $tdatapolizas_master[".listAjax"] = false;
 
-	$tdatapolizas_master[".audit"] = false;
+	$tdatapolizas_master[".audit"] = true;
 
-	$tdatapolizas_master[".locking"] = false;
+	$tdatapolizas_master[".locking"] = true;
 
 
 $pages = $tdatapolizas_master[".defaultPages"];
@@ -172,7 +172,7 @@ $tdatapolizas_master[".rowHighlite"] = true;
 
 
 
-						
+												
 
 $tdatapolizas_master[".ajaxCodeSnippetAdded"] = false;
 

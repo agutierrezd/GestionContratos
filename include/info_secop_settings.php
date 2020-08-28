@@ -205,9 +205,9 @@ $tdatainfo_secop[".listAjax"] = false;
 //	temporary
 $tdatainfo_secop[".listAjax"] = false;
 
-	$tdatainfo_secop[".audit"] = false;
+	$tdatainfo_secop[".audit"] = true;
 
-	$tdatainfo_secop[".locking"] = false;
+	$tdatainfo_secop[".locking"] = true;
 
 
 $pages = $tdatainfo_secop[".defaultPages"];
@@ -271,7 +271,7 @@ $tdatainfo_secop[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatainfo_secop[".ajaxCodeSnippetAdded"] = false;
 

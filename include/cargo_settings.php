@@ -94,9 +94,9 @@ $tdatacargo[".listAjax"] = false;
 //	temporary
 $tdatacargo[".listAjax"] = false;
 
-	$tdatacargo[".audit"] = false;
+	$tdatacargo[".audit"] = true;
 
-	$tdatacargo[".locking"] = false;
+	$tdatacargo[".locking"] = true;
 
 
 $pages = $tdatacargo[".defaultPages"];
@@ -160,7 +160,7 @@ $tdatacargo[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatacargo[".ajaxCodeSnippetAdded"] = false;
 

@@ -229,9 +229,9 @@ $tdatasecop[".listAjax"] = false;
 //	temporary
 $tdatasecop[".listAjax"] = false;
 
-	$tdatasecop[".audit"] = false;
+	$tdatasecop[".audit"] = true;
 
-	$tdatasecop[".locking"] = false;
+	$tdatasecop[".locking"] = true;
 
 
 $pages = $tdatasecop[".defaultPages"];
@@ -295,7 +295,7 @@ $tdatasecop[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatasecop[".ajaxCodeSnippetAdded"] = false;
 

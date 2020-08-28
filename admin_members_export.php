@@ -17,7 +17,7 @@ if( !Security::processPageSecurity( $strtablename, 'P' ) )
 
 $layout = new TLayout("export_bootstrap", "OfficeOffice", "MobileOffice");
 $layout->version = 3;
-	$layout->bootstrapTheme = "flatly";
+	$layout->bootstrapTheme = "default";
 		$layout->customCssPageName = "admin_members_export";
 $layout->blocks["top"] = array();
 $layout->containers["page"] = array();

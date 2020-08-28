@@ -125,9 +125,6 @@ pdfDocument = {
 									{BEGIN col_grid_0}
 						"*", 
 							{END col_grid_0}
-												{BEGIN col_grid_1}
-						"*", 
-							{END col_grid_1}
 					 ],	
 		
 			heights: [
@@ -136,73 +133,11 @@ pdfDocument = {
 			"%",
 						{END row_grid_0}
 			 
-								{BEGIN row_grid_1}
-						
-			"%",
-						{END row_grid_1}
-			 
-								{BEGIN row_grid_2}
-						
-			"%",
-						{END row_grid_2}
-			 
 				],
 	
 		body: [
 				
 					{BEGIN row_grid_0}
-				[
-												{BEGIN cellblock_grid_c3}
-{
-	cellId: 'c3',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				'',
-	  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_c3}
-																			{BEGIN cellblock_grid_c}
-{
-	cellId: 'c',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				'',
-	  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_c}
-											],
-				{END row_grid_0}
-								{BEGIN row_grid_1}
 				[
 												{BEGIN cellblock_grid_c4}
 {
@@ -214,9 +149,6 @@ pdfDocument = {
 		
 	//	dynamic colspan/rowspan
 
-					{BEGIN colspan_grid_c4}
-			colSpan: {$colspan_grid_c4},
-			{END colspan_grid_c4}
 		
 						
 	
@@ -1474,51 +1406,8 @@ pdfDocument = {
   },
 
 {END cellblock_grid_c4}
-																		{ 
-				cellId: 'c4',
-				row:  0,
-				col:  1,
-				text: ''
-			},
-							],
-				{END row_grid_1}
-								{BEGIN row_grid_2}
-				[
-												{BEGIN cellblock_grid_c5}
-{
-	cellId: 'c5',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-					{BEGIN colspan_grid_c5}
-			colSpan: {$colspan_grid_c5},
-			{END colspan_grid_c5}
-		
-						
-	
-	
-	
-			"stack": [
-		
-				'',
-	  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_c5}
-																		{ 
-				cellId: 'c5',
-				row:  0,
-				col:  1,
-				text: ''
-			},
-							],
-				{END row_grid_2}
+											],
+				{END row_grid_0}
 					]
 	}
 }

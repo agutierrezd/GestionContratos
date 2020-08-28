@@ -79,9 +79,9 @@ $tdatainterventor_periodos[".listAjax"] = false;
 //	temporary
 $tdatainterventor_periodos[".listAjax"] = false;
 
-	$tdatainterventor_periodos[".audit"] = false;
+	$tdatainterventor_periodos[".audit"] = true;
 
-	$tdatainterventor_periodos[".locking"] = false;
+	$tdatainterventor_periodos[".locking"] = true;
 
 
 $pages = $tdatainterventor_periodos[".defaultPages"];
@@ -145,7 +145,7 @@ $tdatainterventor_periodos[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatainterventor_periodos[".ajaxCodeSnippetAdded"] = false;
 

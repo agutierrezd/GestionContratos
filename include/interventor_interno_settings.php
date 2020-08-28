@@ -106,9 +106,9 @@ $tdatainterventor_interno[".listAjax"] = false;
 //	temporary
 $tdatainterventor_interno[".listAjax"] = false;
 
-	$tdatainterventor_interno[".audit"] = false;
+	$tdatainterventor_interno[".audit"] = true;
 
-	$tdatainterventor_interno[".locking"] = false;
+	$tdatainterventor_interno[".locking"] = true;
 
 
 $pages = $tdatainterventor_interno[".defaultPages"];
@@ -172,7 +172,7 @@ $tdatainterventor_interno[".rowHighlite"] = true;
 
 
 
-						
+												
 
 $tdatainterventor_interno[".ajaxCodeSnippetAdded"] = false;
 

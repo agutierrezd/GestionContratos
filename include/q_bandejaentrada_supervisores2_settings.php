@@ -214,9 +214,9 @@ $tdataq_bandejaentrada_supervisores2[".listAjax"] = false;
 //	temporary
 $tdataq_bandejaentrada_supervisores2[".listAjax"] = false;
 
-	$tdataq_bandejaentrada_supervisores2[".audit"] = false;
+	$tdataq_bandejaentrada_supervisores2[".audit"] = true;
 
-	$tdataq_bandejaentrada_supervisores2[".locking"] = false;
+	$tdataq_bandejaentrada_supervisores2[".locking"] = true;
 
 
 $pages = $tdataq_bandejaentrada_supervisores2[".defaultPages"];
@@ -280,7 +280,7 @@ $tdataq_bandejaentrada_supervisores2[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdataq_bandejaentrada_supervisores2[".ajaxCodeSnippetAdded"] = false;
 

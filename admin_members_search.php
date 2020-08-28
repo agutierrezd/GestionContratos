@@ -35,7 +35,7 @@ if(!$accessGranted)
 
 $layout = new TLayout("search_bootstrap", "OfficeOffice", "MobileOffice");
 $layout->version = 3;
-	$layout->bootstrapTheme = "flatly";
+	$layout->bootstrapTheme = "default";
 		$layout->customCssPageName = "admin_members_search";
 $layout->blocks["top"] = array();
 $layout->containers["searchpage"] = array();

@@ -121,9 +121,9 @@ $tdatacontractor_master[".listAjax"] = false;
 //	temporary
 $tdatacontractor_master[".listAjax"] = false;
 
-	$tdatacontractor_master[".audit"] = false;
+	$tdatacontractor_master[".audit"] = true;
 
-	$tdatacontractor_master[".locking"] = false;
+	$tdatacontractor_master[".locking"] = true;
 
 
 $pages = $tdatacontractor_master[".defaultPages"];
@@ -188,7 +188,7 @@ $tdatacontractor_master[".rowHighlite"] = true;
 
 
 		
-		
+					
 
 $tdatacontractor_master[".ajaxCodeSnippetAdded"] = false;
 

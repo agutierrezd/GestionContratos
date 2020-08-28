@@ -70,9 +70,9 @@ $tdatatparam_tipo_ct_regimen_tribut[".listAjax"] = false;
 //	temporary
 $tdatatparam_tipo_ct_regimen_tribut[".listAjax"] = false;
 
-	$tdatatparam_tipo_ct_regimen_tribut[".audit"] = false;
+	$tdatatparam_tipo_ct_regimen_tribut[".audit"] = true;
 
-	$tdatatparam_tipo_ct_regimen_tribut[".locking"] = false;
+	$tdatatparam_tipo_ct_regimen_tribut[".locking"] = true;
 
 
 $pages = $tdatatparam_tipo_ct_regimen_tribut[".defaultPages"];
@@ -136,7 +136,7 @@ $tdatatparam_tipo_ct_regimen_tribut[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatatparam_tipo_ct_regimen_tribut[".ajaxCodeSnippetAdded"] = false;
 

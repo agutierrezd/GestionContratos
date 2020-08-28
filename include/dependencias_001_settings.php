@@ -70,9 +70,9 @@ $tdatadependencias_001[".listAjax"] = false;
 //	temporary
 $tdatadependencias_001[".listAjax"] = false;
 
-	$tdatadependencias_001[".audit"] = false;
+	$tdatadependencias_001[".audit"] = true;
 
-	$tdatadependencias_001[".locking"] = false;
+	$tdatadependencias_001[".locking"] = true;
 
 
 $pages = $tdatadependencias_001[".defaultPages"];
@@ -136,7 +136,7 @@ $tdatadependencias_001[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatadependencias_001[".ajaxCodeSnippetAdded"] = false;
 

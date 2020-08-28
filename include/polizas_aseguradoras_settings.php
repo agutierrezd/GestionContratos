@@ -73,9 +73,9 @@ $tdatapolizas_aseguradoras[".listAjax"] = false;
 //	temporary
 $tdatapolizas_aseguradoras[".listAjax"] = false;
 
-	$tdatapolizas_aseguradoras[".audit"] = false;
+	$tdatapolizas_aseguradoras[".audit"] = true;
 
-	$tdatapolizas_aseguradoras[".locking"] = false;
+	$tdatapolizas_aseguradoras[".locking"] = true;
 
 
 $pages = $tdatapolizas_aseguradoras[".defaultPages"];
@@ -139,7 +139,7 @@ $tdatapolizas_aseguradoras[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatapolizas_aseguradoras[".ajaxCodeSnippetAdded"] = false;
 

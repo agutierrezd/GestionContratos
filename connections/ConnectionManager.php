@@ -518,6 +518,10 @@ class ConnectionManager
 		$connectionsIds["q_divipola"] = "dbusers_at_localhost";
 		$connectionsIds["informe_intersup_oe"] = "dbct_at_localhost";
 		$connectionsIds["tparam_sn_oe"] = "dbct_at_localhost";
+		$connectionsIds["contrato_modifica"] = "dbct_at_localhost";
+		$connectionsIds["contrato_modifica_type"] = "dbct_at_localhost";
+		$connectionsIds["contrato_modifica_prorroga"] = "dbct_at_localhost";
+		$connectionsIds["contrato_modifica_cesion"] = "dbct_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

@@ -23,7 +23,7 @@ AddPage::handleBrokenRequest();
 
 $layout = new TLayout("add_bootstrap", "OfficeOffice", "MobileOffice");
 $layout->version = 3;
-	$layout->bootstrapTheme = "flatly";
+	$layout->bootstrapTheme = "default";
 		$layout->customCssPageName = "admin_rights_add";
 $layout->blocks["top"] = array();
 $layout->containers["editpage"] = array();
@@ -100,7 +100,7 @@ $page_layouts["admin_rights_add"] = $layout;
 
 $layout = new TLayout("list_bootstrap1", "OfficeOffice", "MobileOffice");
 $layout->version = 3;
-	$layout->bootstrapTheme = "flatly";
+	$layout->bootstrapTheme = "default";
 		$layout->customCssPageName = "admin_rights_list";
 $layout->blocks["center"] = array();
 $layout->containers["gridcontrols"] = array();

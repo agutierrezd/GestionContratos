@@ -103,12 +103,6 @@ pdfDocument = {
 										{BEGIN col_grid_14}
 					"%",
 					{END col_grid_14}
-										{BEGIN col_grid_15}
-					"%",
-					{END col_grid_15}
-										{BEGIN col_grid_16}
-					"%",
-					{END col_grid_16}
 															],
 							heights: [ // first height for header part
 					"%",
@@ -118,7 +112,7 @@ pdfDocument = {
 					{END row_grid_0}
 					
 					{BEGIN row_grid_1}		
-					"%",
+					160,
 					{END row_grid_1}
 					
 					{BEGIN row_grid_2}		
@@ -452,7 +446,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field4}","text":"{$jslabel contrato cont_nit_contra_ta }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field13}","text":"{$jslabel contrato cont_nit_contra_ta }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -478,7 +472,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field6}","text":"{$jslabel contrato nombre_cont }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field14}","text":"{$jslabel contrato nombre_cont }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -608,7 +602,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field7}","text":"{$jslabel contrato cont_estado }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field15}","text":"{$jslabel contrato cont_estado }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -616,58 +610,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_field11}
-																			{BEGIN cellblock_grid_headcell_field12}
-{
-	cellId: 'headcell_field12',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field8}","text":"{$jslabel contrato cont_fecha_aprobgarantia }","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$cont_fecha_aprobgarantia_align}',
-  },
-
-{END cellblock_grid_headcell_field12}
-																			{BEGIN cellblock_grid_headcell_field13}
-{
-	cellId: 'headcell_field13',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field13}","text":"{$jslabel contrato cont_numpoliza }","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$cont_numpoliza_align}',
-  },
-
-{END cellblock_grid_headcell_field13}
 											],
 				{END row_grid_0}
 									
@@ -697,7 +639,7 @@ pdfDocument = {
 			{"text":"","hidden":"{$item_hide_grid_edit}"},
 				
 				
-			{"text":"","hidden":"{$item_hide_grid_view}"},
+			{"text":""},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -759,6 +701,9 @@ pdfDocument = {
 				
 				
 			{"text":"","hidden":"{$item_hide_grid_details_link2}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_details_link3}"},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1078,58 +1023,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_field11}
-																			{BEGIN cellblock_grid_cell_field12}
-{
-	cellId: 'cell_field12',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field}","text":{$cont_fecha_aprobgarantia_pdfvalue}},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$cont_fecha_aprobgarantia_align}',
-  },
-
-{END cellblock_grid_cell_field12}
-																			{BEGIN cellblock_grid_cell_field13}
-{
-	cellId: 'cell_field13',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field1}","text":{$cont_numpoliza_pdfvalue}},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$cont_numpoliza_align}',
-  },
-
-{END cellblock_grid_cell_field13}
 											],
 				{END row_grid_1}
 								{BEGIN row_grid_2}
@@ -1193,6 +1086,21 @@ pdfDocument = {
 			 {BEGIN details_contrato_oe}
 			{$displayDetailTable_contrato_oe }
 		{END details_contrato_oe},
+				
+				
+			 {BEGIN details_contrato_modifica_prorroga}
+			{$displayDetailTable_contrato_modifica_prorroga }
+		{END details_contrato_modifica_prorroga},
+				
+				
+			 {BEGIN details_contrato_modifica}
+			{$displayDetailTable_contrato_modifica }
+		{END details_contrato_modifica},
+				
+				
+			 {BEGIN details_contrato_modifica_cesion}
+			{$displayDetailTable_contrato_modifica_cesion }
+		{END details_contrato_modifica_cesion},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1282,18 +1190,6 @@ pdfDocument = {
 				cellId: 'cell_dpreview',
 				row:  0,
 				col:  14,
-				text: ''
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  15,
-				text: ''
-			},
-														{ 
-				cellId: 'cell_dpreview',
-				row:  0,
-				col:  16,
 				text: ''
 			},
 							],
@@ -1664,54 +1560,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field11}
-																			{BEGIN cellblock_grid_footcell_field12}
-{
-	cellId: 'footcell_field12',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field12}
-																			{BEGIN cellblock_grid_footcell_field13}
-{
-	cellId: 'footcell_field13',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field13}
 											],
 				{END row_grid_3}
 							

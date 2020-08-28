@@ -927,6 +927,11 @@ function fileCustomExpression($file, $data, $field, $ptype, $table )
 		;
 		return $value;
 	}
+				if($table=="informe_intersup_oe" && $field=="evidencia")
+	{
+		;
+		return $value;
+	}
 	return $value;
 }
 
@@ -968,6 +973,21 @@ function GetLWWhere($field, $ptype, $table = "")
 		if($table=="informe_intersup" && $field=="inf_consecutivo")
 	{
 		$strWhere = " inf_st = 0 ";
+		return $strWhere;
+	}
+		if($table=="contrato_modifica" && $field=="mod_tipo")
+	{
+		$strWhere = " modt_grupo = 1 ";
+		return $strWhere;
+	}
+		if($table=="contrato_modifica_prorroga" && $field=="mod_tipo")
+	{
+		$strWhere = " modt_id = 3 ";
+		return $strWhere;
+	}
+		if($table=="contrato_modifica_cesion" && $field=="mod_tipo")
+	{
+		$strWhere = " modt_id = 4 ";
 		return $strWhere;
 	}
 	return "";
@@ -1053,6 +1073,26 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return $_SESSION["UserID"];
 	}
+				if($table=="contrato_modifica" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="contrato_modifica_prorroga" && $field=="mod_tipo")
+	{
+		return 3;
+	}
+				if($table=="contrato_modifica_prorroga" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="contrato_modifica_cesion" && $field=="mod_tipo")
+	{
+		return 4;
+	}
+				if($table=="contrato_modifica_cesion" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
 	return "";
 }
 
@@ -1105,6 +1145,26 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 		return strftime("%Y-%m-%d %H:%M:%S");
 	}
 				if($table=="informe_intersup_oe" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="contrato_modifica" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="contrato_modifica_prorroga" && $field=="mod_tipo")
+	{
+		return 3;
+	}
+				if($table=="contrato_modifica_prorroga" && $field=="sys_user")
+	{
+		return $_SESSION["UserID"];
+	}
+				if($table=="contrato_modifica_cesion" && $field=="mod_tipo")
+	{
+		return 4;
+	}
+				if($table=="contrato_modifica_cesion" && $field=="sys_user")
 	{
 		return $_SESSION["UserID"];
 	}

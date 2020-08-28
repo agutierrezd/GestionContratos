@@ -139,7 +139,7 @@ $tdatacontrato_chart_dependencia[".isUseAjaxSuggest"] = true;
 
 
 
-			
+						
 
 $tdatacontrato_chart_dependencia[".ajaxCodeSnippetAdded"] = false;
 
@@ -959,8 +959,6 @@ $proto14["m_columns"][] = "cont_otrosi_type";
 $proto14["m_columns"][] = "cont_valorant";
 $proto14["m_columns"][] = "cont_valorinicial";
 $proto14["m_columns"][] = "cont_valormensual";
-$proto14["m_columns"][] = "cont_valoradic_fecha";
-$proto14["m_columns"][] = "cont_valoradic";
 $proto14["m_columns"][] = "cont_valorreduc_fecha";
 $proto14["m_columns"][] = "cont_valorreduc";
 $proto14["m_columns"][] = "cont_valorvigente";
@@ -996,9 +994,10 @@ $proto14["m_columns"][] = "vf_num_autorizacion";
 $proto14["m_columns"][] = "vf_fecha";
 $proto14["m_columns"][] = "vf_valor";
 $proto14["m_columns"][] = "cont_fechasistema";
-$proto14["m_columns"][] = "cont_cesion";
 $proto14["m_columns"][] = "cont_fase";
 $proto14["m_columns"][] = "cont_numpoliza";
+$proto14["m_columns"][] = "cont_cesion";
+$proto14["m_columns"][] = "cont_modifica";
 $obj = new SQLTable($proto14);
 
 $proto13["m_table"] = $obj;

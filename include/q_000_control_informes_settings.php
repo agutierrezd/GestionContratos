@@ -82,9 +82,9 @@ $tdataq_000_control_informes[".listAjax"] = false;
 //	temporary
 $tdataq_000_control_informes[".listAjax"] = false;
 
-	$tdataq_000_control_informes[".audit"] = false;
+	$tdataq_000_control_informes[".audit"] = true;
 
-	$tdataq_000_control_informes[".locking"] = false;
+	$tdataq_000_control_informes[".locking"] = true;
 
 
 $pages = $tdataq_000_control_informes[".defaultPages"];
@@ -148,7 +148,7 @@ $tdataq_000_control_informes[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdataq_000_control_informes[".ajaxCodeSnippetAdded"] = false;
 

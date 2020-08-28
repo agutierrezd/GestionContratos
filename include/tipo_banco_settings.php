@@ -82,9 +82,9 @@ $tdatatipo_banco[".listAjax"] = false;
 //	temporary
 $tdatatipo_banco[".listAjax"] = false;
 
-	$tdatatipo_banco[".audit"] = false;
+	$tdatatipo_banco[".audit"] = true;
 
-	$tdatatipo_banco[".locking"] = false;
+	$tdatatipo_banco[".locking"] = true;
 
 
 $pages = $tdatatipo_banco[".defaultPages"];
@@ -148,7 +148,7 @@ $tdatatipo_banco[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatatipo_banco[".ajaxCodeSnippetAdded"] = false;
 

@@ -76,9 +76,9 @@ $tdatacontrato_estados[".listAjax"] = false;
 //	temporary
 $tdatacontrato_estados[".listAjax"] = false;
 
-	$tdatacontrato_estados[".audit"] = false;
+	$tdatacontrato_estados[".audit"] = true;
 
-	$tdatacontrato_estados[".locking"] = false;
+	$tdatacontrato_estados[".locking"] = true;
 
 
 $pages = $tdatacontrato_estados[".defaultPages"];
@@ -142,7 +142,7 @@ $tdatacontrato_estados[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatacontrato_estados[".ajaxCodeSnippetAdded"] = false;
 

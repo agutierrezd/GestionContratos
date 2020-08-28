@@ -36,16 +36,6 @@
 		<div class="row">
 			 
 				<div 
-	data-cellId="top_c" data-pageid="{$pageid}"	{$cell_top_c}
-	class=" r-ori-vert			col-md-12
-	">
-	 
-		<img src="{$file_url images/Logo_Coldeportes.png}" data-itemtype="image" data-itemid="image" {$item_image} data-pageid="{$pageid}" />
-	</div>					</div>
-	 
-		<div class="row">
-			 
-				<div 
 	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
 	class=" r-ori-vert			col-md-12
 	">
@@ -566,6 +556,87 @@
 	
 								</td>
 			{END cellblock_section_c5}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c12}
+<td
+	{$cell_section_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c12" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_modifica_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_modifica}  r-vertical-field" data-fieldname="cont_modifica" data-signal-error-for="cont_modifica{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="cont_modifica" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_modifica}">
+		
+		{BEGIN cont_modifica_label}{$label contrato cont_modifica }{END cont_modifica_label}
+	</label>
+	<div class="" >
+		{$cont_modifica_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_modifica_fieldblock}
+	
+								</td>
+			{END cellblock_section_c12}
+			 
+																
+
+{BEGIN cellblock_section_c13}
+<td
+	{$cell_section_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c13" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_cesion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_cesion}  r-vertical-field" data-fieldname="cont_cesion" data-signal-error-for="cont_cesion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="cont_cesion" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_cesion}">
+		
+		{BEGIN cont_cesion_label}{$label contrato cont_cesion }{END cont_cesion_label}
+	</label>
+	<div class="" >
+		{$cont_cesion_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_cesion_fieldblock}
+	
+								</td>
+			{END cellblock_section_c13}
 								</tr>
 			</tbody></table>
 {END section_block}
@@ -1701,40 +1772,7 @@
 				</div>
 	</div>
 </div>  	
-				 
-	 
-		
-					<table 
-	data-body-align="center"
-	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
-	class="r-edit-form" cellpadding="0" cellspacing="0" 
-	{$grid_hiddenattr} 
-		data-form-width="2"
-		
-		data-v-width="2"
-	>
-	<tbody>
-						<tr>
-						
-
-{BEGIN cellblock_grid_c5}
-<td
-	{$cell_grid_c5}
-	class=" r-ori-vert"
-	
-			data-single
-				data-fullwidth
-		
-	ocolspan="2"		data-cellId="grid_c5" data-pageid="{$pageid}"
-		data-v-cell="2"
-		
->
-	<div edit-form-cell class="clearfix">
-									</td>
-			{END cellblock_grid_c5}
-								</tr>
-			</tbody></table>
-{END grid_block}
+				{END grid_block}
 									{BEGIN below-grid_block}
 <div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
 		data-v-width="2"

@@ -605,7 +605,7 @@ $globalSettings["CaptchaSettings"]["secretKey"] = "";
 $globalSettings["CaptchaSettings"]["captchaPassesCount"] = "5";
 
 
-$bsProjectTheme = "flatly";
+$bsProjectTheme = "default";
 $bsProjectSize = "normal";
 
 $wr_pagestylepath = "OfficeOffice";
@@ -646,9 +646,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "459_1597510907";
+$projectBuildKey = "498_1598573451";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "459";
+$projectBuildNumber = "498";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -739,6 +739,10 @@ $tableCaptions["Spanish"]["q_bandejaentrada_supervisores2"] = "Q Bandejaentrada 
 $tableCaptions["Spanish"]["q_divipola"] = "Q Divipola";
 $tableCaptions["Spanish"]["informe_intersup_oe"] = "Obligaciones específicas";
 $tableCaptions["Spanish"]["tparam_sn_oe"] = "Tparam Sn Oe";
+$tableCaptions["Spanish"]["contrato_modifica"] = "Adic | Reduc";
+$tableCaptions["Spanish"]["contrato_modifica_type"] = "Contrato Modifica Type";
+$tableCaptions["Spanish"]["contrato_modifica_prorroga"] = "Prórroga";
+$tableCaptions["Spanish"]["contrato_modifica_cesion"] = "Cesión";
 
 
 $globalEvents = new class_GlobalEvents;

@@ -1,0 +1,251 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-view" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel contrato_adicional view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN adic_id_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adic_id}  r-vertical-field" data-fieldname="adic_id" data-signal-error-for="adic_id{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="adic_id" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_adic_id}">
+		
+		{BEGIN adic_id_label}{$label contrato_adicional adic_id }{END adic_id_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$adic_id_value}	</div>
+
+		
+</div>
+
+
+{END adic_id_fieldblock}
+											
+{BEGIN id_cont_fk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_cont_fk}  r-vertical-field" data-fieldname="id_cont_fk" data-signal-error-for="id_cont_fk{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="id_cont_fk" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_cont_fk}">
+		
+		{BEGIN id_cont_fk_label}{$label contrato_adicional id_cont_fk }{END id_cont_fk_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_cont_fk_value}	</div>
+
+		
+</div>
+
+
+{END id_cont_fk_fieldblock}
+											
+{BEGIN adi_fecha_suscri_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adi_fecha_suscri}  r-vertical-field" data-fieldname="adi_fecha_suscri" data-signal-error-for="adi_fecha_suscri{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="adi_fecha_suscri" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_adi_fecha_suscri}">
+		
+		{BEGIN adi_fecha_suscri_label}{$label contrato_adicional adi_fecha_suscri }{END adi_fecha_suscri_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$adi_fecha_suscri_value}	</div>
+
+		
+</div>
+
+
+{END adi_fecha_suscri_fieldblock}
+											
+{BEGIN adi_fecha_ini_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adi_fecha_ini}  r-vertical-field" data-fieldname="adi_fecha_ini" data-signal-error-for="adi_fecha_ini{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="adi_fecha_ini" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_adi_fecha_ini}">
+		
+		{BEGIN adi_fecha_ini_label}{$label contrato_adicional adi_fecha_ini }{END adi_fecha_ini_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$adi_fecha_ini_value}	</div>
+
+		
+</div>
+
+
+{END adi_fecha_ini_fieldblock}
+											
+{BEGIN adi_observ_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adi_observ}  r-vertical-field" data-fieldname="adi_observ" data-signal-error-for="adi_observ{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="adi_observ" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_adi_observ}">
+		
+		{BEGIN adi_observ_label}{$label contrato_adicional adi_observ }{END adi_observ_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$adi_observ_value}	</div>
+
+		
+</div>
+
+
+{END adi_observ_fieldblock}
+											
+{BEGIN adi_valor_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_adi_valor}  r-vertical-field" data-fieldname="adi_valor" data-signal-error-for="adi_valor{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="adi_valor" >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_adi_valor}">
+		
+		{BEGIN adi_valor_label}{$label contrato_adicional adi_valor }{END adi_valor_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$adi_valor_value}	</div>
+
+		
+</div>
+
+
+{END adi_valor_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

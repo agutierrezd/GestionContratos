@@ -187,9 +187,9 @@ $tdataep_obligaciones[".listAjax"] = false;
 //	temporary
 $tdataep_obligaciones[".listAjax"] = false;
 
-	$tdataep_obligaciones[".audit"] = false;
+	$tdataep_obligaciones[".audit"] = true;
 
-	$tdataep_obligaciones[".locking"] = false;
+	$tdataep_obligaciones[".locking"] = true;
 
 
 $pages = $tdataep_obligaciones[".defaultPages"];
@@ -253,7 +253,7 @@ $tdataep_obligaciones[".rowHighlite"] = true;
 
 
 
-						
+												
 
 $tdataep_obligaciones[".ajaxCodeSnippetAdded"] = false;
 

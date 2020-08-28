@@ -100,9 +100,9 @@ $tdatacontrato_attached[".listAjax"] = false;
 //	temporary
 $tdatacontrato_attached[".listAjax"] = false;
 
-	$tdatacontrato_attached[".audit"] = false;
+	$tdatacontrato_attached[".audit"] = true;
 
-	$tdatacontrato_attached[".locking"] = false;
+	$tdatacontrato_attached[".locking"] = true;
 
 
 $pages = $tdatacontrato_attached[".defaultPages"];
@@ -166,7 +166,7 @@ $tdatacontrato_attached[".rowHighlite"] = true;
 
 
 
-						
+												
 
 $tdatacontrato_attached[".ajaxCodeSnippetAdded"] = false;
 

@@ -9,9 +9,9 @@ $tdatacontrato[".OwnerID"] = "";
 $tdatacontrato[".OriginalTable"] = "contrato";
 
 
-$tdatacontrato[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" );
+$tdatacontrato[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\",\"edit1\",\"edit2\",\"edit3\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" );
 $tdatacontrato[".originalPagesByType"] = $tdatacontrato[".pagesByType"];
-$tdatacontrato[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
+$tdatacontrato[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\",\"edit1\",\"edit2\",\"edit3\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
 $tdatacontrato[".originalPages"] = $tdatacontrato[".pages"];
 $tdatacontrato[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"import\":\"import\",\"list\":\"list\",\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\",\"print\":\"print\",\"search\":\"search\",\"view\":\"view\"}" );
 $tdatacontrato[".originalDefaultPages"] = $tdatacontrato[".defaultPages"];
@@ -91,7 +91,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscontrato["Spanish"]["cont_valorant"] = "Valor anterior";
 	$fieldToolTipscontrato["Spanish"]["cont_valorant"] = "";
 	$placeHolderscontrato["Spanish"]["cont_valorant"] = "";
-	$fieldLabelscontrato["Spanish"]["cont_valorinicial"] = "Valor inicial del contrato";
+	$fieldLabelscontrato["Spanish"]["cont_valorinicial"] = "Valor del contrato";
 	$fieldToolTipscontrato["Spanish"]["cont_valorinicial"] = "";
 	$placeHolderscontrato["Spanish"]["cont_valorinicial"] = "";
 	$fieldLabelscontrato["Spanish"]["cont_valormensual"] = "Valor mensual a pagar";
@@ -166,6 +166,12 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscontrato["Spanish"]["cont_numpoliza"] = "Número de póliza";
 	$fieldToolTipscontrato["Spanish"]["cont_numpoliza"] = "";
 	$placeHolderscontrato["Spanish"]["cont_numpoliza"] = "";
+	$fieldLabelscontrato["Spanish"]["cont_modifica"] = "Habilitar modificación";
+	$fieldToolTipscontrato["Spanish"]["cont_modifica"] = "";
+	$placeHolderscontrato["Spanish"]["cont_modifica"] = "";
+	$fieldLabelscontrato["Spanish"]["cont_cesion"] = "Habilitar Cesión";
+	$fieldToolTipscontrato["Spanish"]["cont_cesion"] = "";
+	$placeHolderscontrato["Spanish"]["cont_cesion"] = "";
 	$pageTitlescontrato["Spanish"]["view"] = "Contrato {%id_cont}{%pre_contnumero}{%contnumero}";
 	$pageTitlescontrato["Spanish"]["add"] = "Registrar un nuevo contrato";
 	if (count($fieldToolTipscontrato["Spanish"]))
@@ -270,7 +276,7 @@ $tdatacontrato[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatacontrato[".ajaxCodeSnippetAdded"] = false;
 
@@ -336,6 +342,8 @@ $tdatacontrato[".googleLikeFields"][] = "cont_tipo_rubro";
 $tdatacontrato[".googleLikeFields"][] = "cont_munejec";
 $tdatacontrato[".googleLikeFields"][] = "cont_fecha_aprobgarantia";
 $tdatacontrato[".googleLikeFields"][] = "cont_numpoliza";
+$tdatacontrato[".googleLikeFields"][] = "cont_modifica";
+$tdatacontrato[".googleLikeFields"][] = "cont_cesion";
 
 
 
@@ -372,7 +380,7 @@ $tdatacontrato[".strOrderBy"] = $tstrOrderBy;
 
 $tdatacontrato[".orderindexes"] = array();
 
-$tdatacontrato[".sqlHead"] = "SELECT id_cont,  cont_hash,  cont_ano,  cont_paa_id,  cont_nit_contra_ta,  cont_nit_contra_ta AS nombre_cont,  cont_estado,  prenumero,  numregistro,  pre_contnumero,  contnumero,  cont_tipo,  cont_codrubro,  cont_catalogo_presupuestal,  cont_tipopre,  cont_fechaapertura,  cont_fecha_inicio,  cont_fechafinal,  cont_fechavigencia,  cont_periodicidad,  cont_informessug,  cont_valorant,  cont_valorinicial,  cont_valormensual,  cont_tipoc,  cont_modalidad,  cont_causalc,  cont_objeto,  cont_tipoproceso,  cont_formapago,  cont_fechasistema,  cont_acta_liquidacion,  cont_obligaciones,  cont_plazo,  cont_vigencias_futuras,  cont_secop_proceso,  cont_secop_enlace,  cont_sigep,  vf_num_autorizacion,  vf_fecha,  vf_valor,  cont_unspsc,  cont_tipo_rubro,  cont_munejec,  cont_fecha_aprobgarantia,  cont_numpoliza";
+$tdatacontrato[".sqlHead"] = "SELECT id_cont,  cont_hash,  cont_ano,  cont_paa_id,  cont_nit_contra_ta,  cont_nit_contra_ta AS nombre_cont,  cont_estado,  prenumero,  numregistro,  pre_contnumero,  contnumero,  cont_tipo,  cont_codrubro,  cont_catalogo_presupuestal,  cont_tipopre,  cont_fechaapertura,  cont_fecha_inicio,  cont_fechafinal,  cont_fechavigencia,  cont_periodicidad,  cont_informessug,  cont_valorant,  cont_valorinicial,  cont_valormensual,  cont_tipoc,  cont_modalidad,  cont_causalc,  cont_objeto,  cont_tipoproceso,  cont_formapago,  cont_fechasistema,  cont_acta_liquidacion,  cont_obligaciones,  cont_plazo,  cont_vigencias_futuras,  cont_secop_proceso,  cont_secop_enlace,  cont_sigep,  vf_num_autorizacion,  vf_fecha,  vf_valor,  cont_unspsc,  cont_tipo_rubro,  cont_munejec,  cont_fecha_aprobgarantia,  cont_numpoliza,  cont_modifica,  cont_cesion";
 $tdatacontrato[".sqlFrom"] = "FROM contrato";
 $tdatacontrato[".sqlWhereExpr"] = "";
 $tdatacontrato[".sqlTail"] = "";
@@ -7251,6 +7259,272 @@ $tdatacontrato[".hideMobileList"] = array();
 
 	$tdatacontrato["cont_numpoliza"] = $fdata;
 		$tdatacontrato[".searchableFields"][] = "cont_numpoliza";
+//	cont_modifica
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 47;
+	$fdata["strName"] = "cont_modifica";
+	$fdata["GoodName"] = "cont_modifica";
+	$fdata["ownerTable"] = "contrato";
+	$fdata["Label"] = GetFieldLabel("contrato","cont_modifica");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cont_modifica";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cont_modifica";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Checkbox");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Checkbox");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatacontrato["cont_modifica"] = $fdata;
+		$tdatacontrato[".searchableFields"][] = "cont_modifica";
+//	cont_cesion
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 48;
+	$fdata["strName"] = "cont_cesion";
+	$fdata["GoodName"] = "cont_cesion";
+	$fdata["ownerTable"] = "contrato";
+	$fdata["Label"] = GetFieldLabel("contrato","cont_cesion");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cont_cesion";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cont_cesion";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Checkbox");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Checkbox");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatacontrato["cont_cesion"] = $fdata;
+		$tdatacontrato[".searchableFields"][] = "cont_cesion";
 
 
 $tables_data["contrato"]=&$tdatacontrato;
@@ -7494,6 +7768,93 @@ $detailsTablesData["contrato"] = array();
 				$detailsTablesData["contrato"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="id_cont_fk";
+//	contrato_modifica
+	
+	
+
+		$dIndex = 8;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="contrato_modifica";
+		$detailsParam["dOriginalTable"] = "contrato_modifica";
+
+
+
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "contrato_modifica";
+	$detailsParam["dCaptionTable"] = GetTableCaption("contrato_modifica");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["contrato"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["contrato"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["masterKeys"][]="id_cont";
+
+				$detailsTablesData["contrato"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="id_cont_fk";
+//	contrato_modifica_prorroga
+	
+	
+
+		$dIndex = 9;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="contrato_modifica_prorroga";
+		$detailsParam["dOriginalTable"] = "contrato_modifica";
+
+
+
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "contrato_modifica_prorroga";
+	$detailsParam["dCaptionTable"] = GetTableCaption("contrato_modifica_prorroga");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["contrato"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["contrato"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["masterKeys"][]="id_cont";
+
+				$detailsTablesData["contrato"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="id_cont_fk";
+//	contrato_modifica_cesion
+	
+	
+
+		$dIndex = 10;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="contrato_modifica_cesion";
+		$detailsParam["dOriginalTable"] = "contrato_modifica";
+
+
+
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "contrato_modifica_cesion";
+	$detailsParam["dCaptionTable"] = GetTableCaption("contrato_modifica_cesion");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["contrato"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["contrato"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["masterKeys"][]="id_cont";
+
+				$detailsTablesData["contrato"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="id_cont_fk";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["contrato"] = array();
@@ -7518,7 +7879,7 @@ function createSqlQuery_contrato()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id_cont,  cont_hash,  cont_ano,  cont_paa_id,  cont_nit_contra_ta,  cont_nit_contra_ta AS nombre_cont,  cont_estado,  prenumero,  numregistro,  pre_contnumero,  contnumero,  cont_tipo,  cont_codrubro,  cont_catalogo_presupuestal,  cont_tipopre,  cont_fechaapertura,  cont_fecha_inicio,  cont_fechafinal,  cont_fechavigencia,  cont_periodicidad,  cont_informessug,  cont_valorant,  cont_valorinicial,  cont_valormensual,  cont_tipoc,  cont_modalidad,  cont_causalc,  cont_objeto,  cont_tipoproceso,  cont_formapago,  cont_fechasistema,  cont_acta_liquidacion,  cont_obligaciones,  cont_plazo,  cont_vigencias_futuras,  cont_secop_proceso,  cont_secop_enlace,  cont_sigep,  vf_num_autorizacion,  vf_fecha,  vf_valor,  cont_unspsc,  cont_tipo_rubro,  cont_munejec,  cont_fecha_aprobgarantia,  cont_numpoliza";
+$proto0["m_strFieldList"] = "id_cont,  cont_hash,  cont_ano,  cont_paa_id,  cont_nit_contra_ta,  cont_nit_contra_ta AS nombre_cont,  cont_estado,  prenumero,  numregistro,  pre_contnumero,  contnumero,  cont_tipo,  cont_codrubro,  cont_catalogo_presupuestal,  cont_tipopre,  cont_fechaapertura,  cont_fecha_inicio,  cont_fechafinal,  cont_fechavigencia,  cont_periodicidad,  cont_informessug,  cont_valorant,  cont_valorinicial,  cont_valormensual,  cont_tipoc,  cont_modalidad,  cont_causalc,  cont_objeto,  cont_tipoproceso,  cont_formapago,  cont_fechasistema,  cont_acta_liquidacion,  cont_obligaciones,  cont_plazo,  cont_vigencias_futuras,  cont_secop_proceso,  cont_secop_enlace,  cont_sigep,  vf_num_autorizacion,  vf_fecha,  vf_valor,  cont_unspsc,  cont_tipo_rubro,  cont_munejec,  cont_fecha_aprobgarantia,  cont_numpoliza,  cont_modifica,  cont_cesion";
 $proto0["m_strFrom"] = "FROM contrato";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -8202,108 +8563,135 @@ $proto96["m_alias"] = "";
 $obj = new SQLFieldListItem($proto96);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto98=array();
-$proto98["m_link"] = "SQLL_MAIN";
-			$proto99=array();
-$proto99["m_strName"] = "contrato";
-$proto99["m_srcTableName"] = "contrato";
-$proto99["m_columns"] = array();
-$proto99["m_columns"][] = "id_cont";
-$proto99["m_columns"][] = "cont_hash";
-$proto99["m_columns"][] = "cont_nit_contra_ta";
-$proto99["m_columns"][] = "cont_paa_id";
-$proto99["m_columns"][] = "cont_estado";
-$proto99["m_columns"][] = "prenumero";
-$proto99["m_columns"][] = "numregistro";
-$proto99["m_columns"][] = "pre_contnumero";
-$proto99["m_columns"][] = "contnumero";
-$proto99["m_columns"][] = "cont_unspsc";
-$proto99["m_columns"][] = "cont_munejec";
-$proto99["m_columns"][] = "cont_tipo";
-$proto99["m_columns"][] = "cont_ano";
-$proto99["m_columns"][] = "cont_codrubro";
-$proto99["m_columns"][] = "cont_tipo_rubro";
-$proto99["m_columns"][] = "cont_reg_sigep";
-$proto99["m_columns"][] = "cont_catalogo_presupuestal";
-$proto99["m_columns"][] = "cont_tipopre";
-$proto99["m_columns"][] = "cont_fechaapertura";
-$proto99["m_columns"][] = "cont_plazoi";
-$proto99["m_columns"][] = "cont_fecha_inicio";
-$proto99["m_columns"][] = "cont_fechafinal";
-$proto99["m_columns"][] = "cont_valormensual_base";
-$proto99["m_columns"][] = "cont_valormensual_iva";
-$proto99["m_columns"][] = "cont_fechavigencia";
-$proto99["m_columns"][] = "cont_periodicidad";
-$proto99["m_columns"][] = "cont_informessug";
-$proto99["m_columns"][] = "cont_otrosi";
-$proto99["m_columns"][] = "cont_otrosi_type";
-$proto99["m_columns"][] = "cont_valorant";
-$proto99["m_columns"][] = "cont_valorinicial";
-$proto99["m_columns"][] = "cont_valormensual";
-$proto99["m_columns"][] = "cont_valoradic_fecha";
-$proto99["m_columns"][] = "cont_valoradic";
-$proto99["m_columns"][] = "cont_valorreduc_fecha";
-$proto99["m_columns"][] = "cont_valorreduc";
-$proto99["m_columns"][] = "cont_valorvigente";
-$proto99["m_columns"][] = "cont_valors";
-$proto99["m_columns"][] = "cont_lugar";
-$proto99["m_columns"][] = "cont_region";
-$proto99["m_columns"][] = "cont_requactaliq";
-$proto99["m_columns"][] = "cont_plazol";
-$proto99["m_columns"][] = "cont_tipoproceso";
-$proto99["m_columns"][] = "cont_formapago";
-$proto99["m_columns"][] = "cont_tipoc";
-$proto99["m_columns"][] = "cont_modalidad";
-$proto99["m_columns"][] = "cont_causalc";
-$proto99["m_columns"][] = "cont_funcion";
-$proto99["m_columns"][] = "cesion_estado";
-$proto99["m_columns"][] = "cont_acta_liquidacion";
-$proto99["m_columns"][] = "cont_fecha_aprobgarantia";
-$proto99["m_columns"][] = "cont_afilia_arl";
-$proto99["m_columns"][] = "cont_excluir_notificacion";
-$proto99["m_columns"][] = "cont_depsup";
-$proto99["m_columns"][] = "cont_dep";
-$proto99["m_columns"][] = "cont_lugar_prestacion";
-$proto99["m_columns"][] = "cont_objeto";
-$proto99["m_columns"][] = "cont_obligaciones";
-$proto99["m_columns"][] = "cont_plazo";
-$proto99["m_columns"][] = "cont_tipo_regimen";
-$proto99["m_columns"][] = "cont_fecha_firma";
-$proto99["m_columns"][] = "cont_secop_proceso";
-$proto99["m_columns"][] = "cont_secop_enlace";
-$proto99["m_columns"][] = "cont_sigep";
-$proto99["m_columns"][] = "cont_vigencias_futuras";
-$proto99["m_columns"][] = "vf_num_autorizacion";
-$proto99["m_columns"][] = "vf_fecha";
-$proto99["m_columns"][] = "vf_valor";
-$proto99["m_columns"][] = "cont_fechasistema";
-$proto99["m_columns"][] = "cont_cesion";
-$proto99["m_columns"][] = "cont_fase";
-$proto99["m_columns"][] = "cont_numpoliza";
-$obj = new SQLTable($proto99);
+						$proto98=array();
+			$obj = new SQLField(array(
+	"m_strName" => "cont_modifica",
+	"m_strTable" => "contrato",
+	"m_srcTableName" => "contrato"
+));
 
-$proto98["m_table"] = $obj;
-$proto98["m_sql"] = "contrato";
-$proto98["m_alias"] = "";
+$proto98["m_sql"] = "cont_modifica";
 $proto98["m_srcTableName"] = "contrato";
-$proto100=array();
-$proto100["m_sql"] = "";
-$proto100["m_uniontype"] = "SQLL_UNKNOWN";
+$proto98["m_expr"]=$obj;
+$proto98["m_alias"] = "";
+$obj = new SQLFieldListItem($proto98);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto100=array();
+			$obj = new SQLField(array(
+	"m_strName" => "cont_cesion",
+	"m_strTable" => "contrato",
+	"m_srcTableName" => "contrato"
+));
+
+$proto100["m_sql"] = "cont_cesion";
+$proto100["m_srcTableName"] = "contrato";
+$proto100["m_expr"]=$obj;
+$proto100["m_alias"] = "";
+$obj = new SQLFieldListItem($proto100);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto102=array();
+$proto102["m_link"] = "SQLL_MAIN";
+			$proto103=array();
+$proto103["m_strName"] = "contrato";
+$proto103["m_srcTableName"] = "contrato";
+$proto103["m_columns"] = array();
+$proto103["m_columns"][] = "id_cont";
+$proto103["m_columns"][] = "cont_hash";
+$proto103["m_columns"][] = "cont_nit_contra_ta";
+$proto103["m_columns"][] = "cont_paa_id";
+$proto103["m_columns"][] = "cont_estado";
+$proto103["m_columns"][] = "prenumero";
+$proto103["m_columns"][] = "numregistro";
+$proto103["m_columns"][] = "pre_contnumero";
+$proto103["m_columns"][] = "contnumero";
+$proto103["m_columns"][] = "cont_unspsc";
+$proto103["m_columns"][] = "cont_munejec";
+$proto103["m_columns"][] = "cont_tipo";
+$proto103["m_columns"][] = "cont_ano";
+$proto103["m_columns"][] = "cont_codrubro";
+$proto103["m_columns"][] = "cont_tipo_rubro";
+$proto103["m_columns"][] = "cont_reg_sigep";
+$proto103["m_columns"][] = "cont_catalogo_presupuestal";
+$proto103["m_columns"][] = "cont_tipopre";
+$proto103["m_columns"][] = "cont_fechaapertura";
+$proto103["m_columns"][] = "cont_plazoi";
+$proto103["m_columns"][] = "cont_fecha_inicio";
+$proto103["m_columns"][] = "cont_fechafinal";
+$proto103["m_columns"][] = "cont_valormensual_base";
+$proto103["m_columns"][] = "cont_valormensual_iva";
+$proto103["m_columns"][] = "cont_fechavigencia";
+$proto103["m_columns"][] = "cont_periodicidad";
+$proto103["m_columns"][] = "cont_informessug";
+$proto103["m_columns"][] = "cont_otrosi";
+$proto103["m_columns"][] = "cont_otrosi_type";
+$proto103["m_columns"][] = "cont_valorant";
+$proto103["m_columns"][] = "cont_valorinicial";
+$proto103["m_columns"][] = "cont_valormensual";
+$proto103["m_columns"][] = "cont_valorreduc_fecha";
+$proto103["m_columns"][] = "cont_valorreduc";
+$proto103["m_columns"][] = "cont_valorvigente";
+$proto103["m_columns"][] = "cont_valors";
+$proto103["m_columns"][] = "cont_lugar";
+$proto103["m_columns"][] = "cont_region";
+$proto103["m_columns"][] = "cont_requactaliq";
+$proto103["m_columns"][] = "cont_plazol";
+$proto103["m_columns"][] = "cont_tipoproceso";
+$proto103["m_columns"][] = "cont_formapago";
+$proto103["m_columns"][] = "cont_tipoc";
+$proto103["m_columns"][] = "cont_modalidad";
+$proto103["m_columns"][] = "cont_causalc";
+$proto103["m_columns"][] = "cont_funcion";
+$proto103["m_columns"][] = "cesion_estado";
+$proto103["m_columns"][] = "cont_acta_liquidacion";
+$proto103["m_columns"][] = "cont_fecha_aprobgarantia";
+$proto103["m_columns"][] = "cont_afilia_arl";
+$proto103["m_columns"][] = "cont_excluir_notificacion";
+$proto103["m_columns"][] = "cont_depsup";
+$proto103["m_columns"][] = "cont_dep";
+$proto103["m_columns"][] = "cont_lugar_prestacion";
+$proto103["m_columns"][] = "cont_objeto";
+$proto103["m_columns"][] = "cont_obligaciones";
+$proto103["m_columns"][] = "cont_plazo";
+$proto103["m_columns"][] = "cont_tipo_regimen";
+$proto103["m_columns"][] = "cont_fecha_firma";
+$proto103["m_columns"][] = "cont_secop_proceso";
+$proto103["m_columns"][] = "cont_secop_enlace";
+$proto103["m_columns"][] = "cont_sigep";
+$proto103["m_columns"][] = "cont_vigencias_futuras";
+$proto103["m_columns"][] = "vf_num_autorizacion";
+$proto103["m_columns"][] = "vf_fecha";
+$proto103["m_columns"][] = "vf_valor";
+$proto103["m_columns"][] = "cont_fechasistema";
+$proto103["m_columns"][] = "cont_fase";
+$proto103["m_columns"][] = "cont_numpoliza";
+$proto103["m_columns"][] = "cont_cesion";
+$proto103["m_columns"][] = "cont_modifica";
+$obj = new SQLTable($proto103);
+
+$proto102["m_table"] = $obj;
+$proto102["m_sql"] = "contrato";
+$proto102["m_alias"] = "";
+$proto102["m_srcTableName"] = "contrato";
+$proto104=array();
+$proto104["m_sql"] = "";
+$proto104["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto100["m_column"]=$obj;
-$proto100["m_contained"] = array();
-$proto100["m_strCase"] = "";
-$proto100["m_havingmode"] = false;
-$proto100["m_inBrackets"] = false;
-$proto100["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto100);
+$proto104["m_column"]=$obj;
+$proto104["m_contained"] = array();
+$proto104["m_strCase"] = "";
+$proto104["m_havingmode"] = false;
+$proto104["m_inBrackets"] = false;
+$proto104["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto104);
 
-$proto98["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto98);
+$proto102["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto102);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -8319,7 +8707,7 @@ $queryData_contrato = createSqlQuery_contrato();
 	
 										;
 
-																																														
+																																																
 
 $tdatacontrato[".sqlquery"] = $queryData_contrato;
 

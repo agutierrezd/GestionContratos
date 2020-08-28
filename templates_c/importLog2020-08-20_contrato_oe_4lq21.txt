@@ -1,0 +1,10 @@
+Importar en contrato_oe
+20/08/2020 3:22:08 p. m.
+
+4 registros de 5 procesados correctamente.
+4 registros añadidos.
+0 registros actualizados.
+1 registros procesados con errores:
+
+Duplicate entry '174-1' for key 'id_cont_fk'
+"174","3141122","1","Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc efficitur sem sed lacinia aliquam. Suspendisse elit risus, tristique et sem et, scelerisque pretium urna. Etiam at feugiat ipsum. Vestibulum ut nisi ante. Morbi orci orci, interdum ac augue at, euismod tempor quam. Ut imperdiet vulputate aliquet. Nulla elementum, nibh at facilisis suscipit, tortor nisi ultrices elit, sed ullamcorper lorem mi eu est."

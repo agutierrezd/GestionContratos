@@ -70,9 +70,9 @@ $tdataglobal_status[".listAjax"] = false;
 //	temporary
 $tdataglobal_status[".listAjax"] = false;
 
-	$tdataglobal_status[".audit"] = false;
+	$tdataglobal_status[".audit"] = true;
 
-	$tdataglobal_status[".locking"] = false;
+	$tdataglobal_status[".locking"] = true;
 
 
 $pages = $tdataglobal_status[".defaultPages"];
@@ -136,7 +136,7 @@ $tdataglobal_status[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdataglobal_status[".ajaxCodeSnippetAdded"] = false;
 

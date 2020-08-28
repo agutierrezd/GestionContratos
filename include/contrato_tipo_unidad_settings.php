@@ -73,9 +73,9 @@ $tdatacontrato_tipo_unidad[".listAjax"] = false;
 //	temporary
 $tdatacontrato_tipo_unidad[".listAjax"] = false;
 
-	$tdatacontrato_tipo_unidad[".audit"] = false;
+	$tdatacontrato_tipo_unidad[".audit"] = true;
 
-	$tdatacontrato_tipo_unidad[".locking"] = false;
+	$tdatacontrato_tipo_unidad[".locking"] = true;
 
 
 $pages = $tdatacontrato_tipo_unidad[".defaultPages"];
@@ -139,7 +139,7 @@ $tdatacontrato_tipo_unidad[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatacontrato_tipo_unidad[".ajaxCodeSnippetAdded"] = false;
 

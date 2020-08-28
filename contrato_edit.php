@@ -57,6 +57,18 @@ EditPage::handleBrokenRequest();
 					
 
 
+	
+					
+
+
+	
+					
+
+
+	
+					
+
+
 
 // parse control parameters
 $pageMode = EditPage::readEditModeFromRequest();

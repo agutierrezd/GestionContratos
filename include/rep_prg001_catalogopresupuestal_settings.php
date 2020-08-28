@@ -85,9 +85,9 @@ $tdatarep_prg001_catalogopresupuestal[".listAjax"] = false;
 //	temporary
 $tdatarep_prg001_catalogopresupuestal[".listAjax"] = false;
 
-	$tdatarep_prg001_catalogopresupuestal[".audit"] = false;
+	$tdatarep_prg001_catalogopresupuestal[".audit"] = true;
 
-	$tdatarep_prg001_catalogopresupuestal[".locking"] = false;
+	$tdatarep_prg001_catalogopresupuestal[".locking"] = true;
 
 
 $pages = $tdatarep_prg001_catalogopresupuestal[".defaultPages"];
@@ -151,7 +151,7 @@ $tdatarep_prg001_catalogopresupuestal[".rowHighlite"] = true;
 
 
 
-			
+						
 
 $tdatarep_prg001_catalogopresupuestal[".ajaxCodeSnippetAdded"] = false;
 
