@@ -266,6 +266,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_search_field49}","text":{$PLAZO_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_integrated_search_field50}","text":{$cont_cesion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field51}","text":{$cont_modifica_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

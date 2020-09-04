@@ -172,6 +172,12 @@ pdfDocument = {
 										{BEGIN col_grid_37}
 					"%",
 					{END col_grid_37}
+										{BEGIN col_grid_38}
+					"%",
+					{END col_grid_38}
+										{BEGIN col_grid_39}
+					"%",
+					{END col_grid_39}
 															],
 							heights: [ // first height for header part
 					"%",
@@ -319,7 +325,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field38}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_nit_contra_ta }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field40}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_nit_contra_ta }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -345,7 +351,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field39}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_estado }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field41}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_estado }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -371,7 +377,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field40}","text":"{$jslabel q_bandejaentrada_supervisores2 numcontrato }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field42}","text":"{$jslabel q_bandejaentrada_supervisores2 numcontrato }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -397,7 +403,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field41}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_ano }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field43}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_ano }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -423,7 +429,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field42}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_codrubro }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field44}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_codrubro }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -449,7 +455,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field43}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_catalogo_presupuestal }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field45}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_catalogo_presupuestal }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -475,7 +481,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field44}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_fecha_inicio }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field46}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_fecha_inicio }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -501,7 +507,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field45}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_fechafinal }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field47}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_fechafinal }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -527,7 +533,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field46}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_periodicidad }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field48}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_periodicidad }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -553,7 +559,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field47}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_valorinicial }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field49}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_valorinicial }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -579,7 +585,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field48}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_valormensual }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field50}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_valormensual }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -605,7 +611,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field49}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_secop_enlace }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field51}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_secop_enlace }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -631,7 +637,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field50}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_nit_contra_taname }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field52}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_nit_contra_taname }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -657,7 +663,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field51}","text":"{$jslabel q_bandejaentrada_supervisores2 contractor_name }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field53}","text":"{$jslabel q_bandejaentrada_supervisores2 contractor_name }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -683,7 +689,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field52}","text":"{$jslabel q_bandejaentrada_supervisores2 contractor_lname }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field54}","text":"{$jslabel q_bandejaentrada_supervisores2 contractor_lname }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -709,7 +715,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field53}","text":"{$jslabel q_bandejaentrada_supervisores2 contractor_nombresfull }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field55}","text":"{$jslabel q_bandejaentrada_supervisores2 contractor_nombresfull }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -735,7 +741,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field54}","text":"{$jslabel q_bandejaentrada_supervisores2 contractor_email }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field56}","text":"{$jslabel q_bandejaentrada_supervisores2 contractor_email }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -761,7 +767,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field55}","text":"{$jslabel q_bandejaentrada_supervisores2 contractor_email_mincit }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field57}","text":"{$jslabel q_bandejaentrada_supervisores2 contractor_email_mincit }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -787,7 +793,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field56}","text":"{$jslabel q_bandejaentrada_supervisores2 prenumero }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field58}","text":"{$jslabel q_bandejaentrada_supervisores2 prenumero }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -813,7 +819,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field57}","text":"{$jslabel q_bandejaentrada_supervisores2 numregistro }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field59}","text":"{$jslabel q_bandejaentrada_supervisores2 numregistro }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -839,7 +845,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field58}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_unspsc }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field60}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_unspsc }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -865,7 +871,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field59}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_tipo_rubro }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field61}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_tipo_rubro }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -891,7 +897,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field60}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_tipopre }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field62}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_tipopre }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -917,7 +923,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field61}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_causalc }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field63}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_causalc }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -943,7 +949,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field62}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_objeto }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field64}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_objeto }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -969,7 +975,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field63}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_obligaciones }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field65}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_obligaciones }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -995,7 +1001,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field64}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_plazo }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field66}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_plazo }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1021,7 +1027,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field65}","text":"{$jslabel q_bandejaentrada_supervisores2 ctb_tipo_nombre }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field67}","text":"{$jslabel q_bandejaentrada_supervisores2 ctb_tipo_nombre }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1047,7 +1053,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field66}","text":"{$jslabel q_bandejaentrada_supervisores2 nombresupfull }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field68}","text":"{$jslabel q_bandejaentrada_supervisores2 nombresupfull }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1073,7 +1079,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field67}","text":"{$jslabel q_bandejaentrada_supervisores2 nombre_cargo }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field69}","text":"{$jslabel q_bandejaentrada_supervisores2 nombre_cargo }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1099,7 +1105,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field68}","text":"{$jslabel q_bandejaentrada_supervisores2 nombre_dependencia }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field70}","text":"{$jslabel q_bandejaentrada_supervisores2 nombre_dependencia }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1125,7 +1131,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field69}","text":"{$jslabel q_bandejaentrada_supervisores2 Departamento_superior }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field71}","text":"{$jslabel q_bandejaentrada_supervisores2 Departamento_superior }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1151,7 +1157,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field70}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_numpoliza }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field72}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_numpoliza }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1177,7 +1183,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field71}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_secop_proceso }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field73}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_secop_proceso }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1203,7 +1209,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field72}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_fecha_aprobgarantia }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field74}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_fecha_aprobgarantia }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1229,7 +1235,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field73}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_fechaapertura }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field75}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_fechaapertura }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1255,7 +1261,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field74}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_munejec }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field76}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_munejec }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1281,7 +1287,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field75}","text":"{$jslabel q_bandejaentrada_supervisores2 PLAZO }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field77}","text":"{$jslabel q_bandejaentrada_supervisores2 PLAZO }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1289,6 +1295,58 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_field37}
+																			{BEGIN cellblock_grid_headcell_field38}
+{
+	cellId: 'headcell_field38',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field78}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_cesion }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$cont_cesion_align}',
+  },
+
+{END cellblock_grid_headcell_field38}
+																			{BEGIN cellblock_grid_headcell_field39}
+{
+	cellId: 'headcell_field39',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field79}","text":"{$jslabel q_bandejaentrada_supervisores2 cont_modifica }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$cont_modifica_align}',
+  },
+
+{END cellblock_grid_headcell_field39}
 											],
 				{END row_grid_0}
 									
@@ -2285,6 +2343,58 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_field37}
+																			{BEGIN cellblock_grid_cell_field38}
+{
+	cellId: 'cell_field38',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field38}","text":{$cont_cesion_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$cont_cesion_align}',
+  },
+
+{END cellblock_grid_cell_field38}
+																			{BEGIN cellblock_grid_cell_field39}
+{
+	cellId: 'cell_field39',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field39}","text":{$cont_modifica_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$cont_modifica_align}',
+  },
+
+{END cellblock_grid_cell_field39}
 											],
 				{END row_grid_1}
 								{BEGIN row_grid_2}
@@ -2545,6 +2655,18 @@ pdfDocument = {
 				cellId: 'cell_dpreview',
 				row:  0,
 				col:  37,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  38,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  39,
 				text: ''
 			},
 							],
@@ -3467,6 +3589,54 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field37}
+																			{BEGIN cellblock_grid_footcell_field38}
+{
+	cellId: 'footcell_field38',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field38}
+																			{BEGIN cellblock_grid_footcell_field39}
+{
+	cellId: 'footcell_field39',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field39}
 											],
 				{END row_grid_3}
 							

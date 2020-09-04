@@ -221,6 +221,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_import_field36}","text":{$mun_ejec_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_import_field13}","text":{$cont_cesion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field24}","text":{$cont_modifica_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

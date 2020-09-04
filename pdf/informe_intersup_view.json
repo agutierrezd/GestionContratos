@@ -586,6 +586,10 @@ pdfDocument = {
 								{BEGIN col_section3_0}
 								'*', 
 								{END col_section3_0}
+							 
+								{BEGIN col_section3_1}
+								'*', 
+								{END col_section3_1}
 													],
 						body: [
 								
@@ -601,6 +605,9 @@ pdfDocument = {
 		
 	//	dynamic colspan/rowspan
 
+					{BEGIN colspan_section3_c1}
+			colSpan: {$colspan_section3_c1},
+			{END colspan_section3_c1}
 		
 						
 	
@@ -617,9 +624,71 @@ pdfDocument = {
   },
 
 {END cellblock_section3_c1}
-											],
+																		{ 
+				cellId: 'c1',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+							],
 				{END row_section3_0}
 								{BEGIN row_section3_1}
+				[
+												{BEGIN cellblock_section3_c3}
+{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel informe_intersup cont_cesion }","bold":true},{"text":{$cont_cesion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section3_c3}
+																			{BEGIN cellblock_section3_c4}
+{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field23}","stack":[{"text":"{$jslabel informe_intersup cont_modifica }","bold":true},{"text":{$cont_modifica_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section3_c4}
+											],
+				{END row_section3_1}
+								{BEGIN row_section3_2}
 				[
 												{BEGIN cellblock_section3_c}
 {
@@ -631,6 +700,9 @@ pdfDocument = {
 		
 	//	dynamic colspan/rowspan
 
+					{BEGIN colspan_section3_c}
+			colSpan: {$colspan_section3_c},
+			{END colspan_section3_c}
 		
 						
 	
@@ -734,9 +806,15 @@ pdfDocument = {
   },
 
 {END cellblock_section3_c}
-											],
-				{END row_section3_1}
-								{BEGIN row_section3_2}
+																		{ 
+				cellId: 'c',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+							],
+				{END row_section3_2}
+								{BEGIN row_section3_3}
 				[
 												{BEGIN cellblock_section3_c2}
 {
@@ -748,6 +826,9 @@ pdfDocument = {
 		
 	//	dynamic colspan/rowspan
 
+					{BEGIN colspan_section3_c2}
+			colSpan: {$colspan_section3_c2},
+			{END colspan_section3_c2}
 		
 						
 	
@@ -851,8 +932,14 @@ pdfDocument = {
   },
 
 {END cellblock_section3_c2}
-											],
-				{END row_section3_2}
+																		{ 
+				cellId: 'c2',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+							],
+				{END row_section3_3}
 									]
 					}
 				}]

@@ -1057,6 +1057,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_edit_field28}","stack":[{"text":"{$jslabel informe_intersup_admin mun_ejec }","bold":true},{"text":{$mun_ejec_pdfvalue}}],"margin":[0,0,0,15]},
 				
+				
+			{"hidden":"{$item_hide_integrated_edit_field31}","stack":[{"text":"{$jslabel informe_intersup_admin cont_cesion }","bold":true},{"text":{$cont_cesion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field32}","stack":[{"text":"{$jslabel informe_intersup_admin cont_modifica }","bold":true},{"text":{$cont_modifica_pdfvalue}}],"margin":[0,0,0,15]},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

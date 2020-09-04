@@ -113,6 +113,32 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_cont_nit_contra_taname}</span>
 						</div>
 		{END searchCtrlBlock_cont_nit_contra_taname}
+																{BEGIN searchCtrlBlock_cont_modifica}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_modifica}" {$filterRow_attrs_cont_modifica}>
+			<label>{$label q_bandejaentrada_supervisores2 cont_modifica }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_modifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_modifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_modifica}</span>
+						</div>
+		{END searchCtrlBlock_cont_modifica}
+																{BEGIN searchCtrlBlock_cont_cesion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_cesion}" {$filterRow_attrs_cont_cesion}>
+			<label>{$label q_bandejaentrada_supervisores2 cont_cesion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_cesion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_cesion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_cesion}</span>
+						</div>
+		{END searchCtrlBlock_cont_cesion}
 																{BEGIN searchCtrlBlock_PLAZO}
 
 
@@ -1054,6 +1080,12 @@
 	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="PLAZO"]:before {
 		content: "{$label q_bandejaentrada_supervisores2 PLAZO}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_cesion"]:before {
+		content: "{$label q_bandejaentrada_supervisores2 cont_cesion}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_modifica"]:before {
+		content: "{$label q_bandejaentrada_supervisores2 cont_modifica}";
 	}
 	}
 </style>
@@ -2103,6 +2135,60 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field36}
+				 
+					{BEGIN cellblock_grid_headcell_field37}
+	<th
+	
+	{$cell_grid_headcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_cesion_class}
+			"
+
+			data-field="cont_cesion"
+	
+	data-cellId="grid_headcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_cesion_fieldheadercolumn}
+	{BEGIN cont_cesion_fieldheader}
+	<SPAN {$cont_cesion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field_label6" {$item_grid_field_label6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_cesion">
+	{$label q_bandejaentrada_supervisores2 cont_cesion }	{$arrow_icon_cont_cesion}
+	</SPAN>
+	{END cont_cesion_fieldheader}
+{END cont_cesion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field37}
+				 
+					{BEGIN cellblock_grid_headcell_field38}
+	<th
+	
+	{$cell_grid_headcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_modifica_class}
+			"
+
+			data-field="cont_modifica"
+	
+	data-cellId="grid_headcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_modifica_fieldheadercolumn}
+	{BEGIN cont_modifica_fieldheader}
+	<SPAN {$cont_modifica_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field_label7" {$item_grid_field_label7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_modifica">
+	{$label q_bandejaentrada_supervisores2 cont_modifica }	{$arrow_icon_cont_modifica}
+	</SPAN>
+	{END cont_modifica_fieldheader}
+{END cont_modifica_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field38}
 							</tr>
 					 
 					 
@@ -3064,6 +3150,52 @@
 {END PLAZO_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field36}
+				 
+					{BEGIN cellblock_grid_cell_field37}
+	<td
+	
+	{$cell_grid_cell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_cesion_class}
+			"
+
+			data-field="cont_cesion"
+	
+	data-cellId="grid_cell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_cesion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field6" {$item_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_cesion" data-default-width >
+{$cont_cesion_value}
+</span>
+{END cont_cesion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field37}
+				 
+					{BEGIN cellblock_grid_cell_field38}
+	<td
+	
+	{$cell_grid_cell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_modifica_class}
+			"
+
+			data-field="cont_modifica"
+	
+	data-cellId="grid_cell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_modifica_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field7" {$item_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_modifica" data-default-width >
+{$cont_modifica_value}
+</span>
+{END cont_modifica_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field38}
 							</tr>
 					 
 						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
@@ -3737,6 +3869,38 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field36}
+				 
+					{BEGIN cellblock_grid_footcell_field37}
+	<td
+	
+	{$cell_grid_footcell_field37}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field37" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="q_bandejaentrada_supervisores2_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field37}
+				 
+					{BEGIN cellblock_grid_footcell_field38}
+	<td
+	
+	{$cell_grid_footcell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field38" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="q_bandejaentrada_supervisores2_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field38}
 							</tr>
 					
 					</tfoot>

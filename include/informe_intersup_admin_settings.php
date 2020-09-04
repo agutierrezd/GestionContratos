@@ -196,6 +196,12 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsinforme_intersup_admin["Spanish"]["mun_ejec"] = "Mun Ejec";
 	$fieldToolTipsinforme_intersup_admin["Spanish"]["mun_ejec"] = "";
 	$placeHoldersinforme_intersup_admin["Spanish"]["mun_ejec"] = "";
+	$fieldLabelsinforme_intersup_admin["Spanish"]["cont_cesion"] = "Cont Cesion";
+	$fieldToolTipsinforme_intersup_admin["Spanish"]["cont_cesion"] = "";
+	$placeHoldersinforme_intersup_admin["Spanish"]["cont_cesion"] = "";
+	$fieldLabelsinforme_intersup_admin["Spanish"]["cont_modifica"] = "Cont Modifica";
+	$fieldToolTipsinforme_intersup_admin["Spanish"]["cont_modifica"] = "";
+	$placeHoldersinforme_intersup_admin["Spanish"]["cont_modifica"] = "";
 	if (count($fieldToolTipsinforme_intersup_admin["Spanish"]))
 		$tdatainforme_intersup_admin[".isUseToolTips"] = true;
 }
@@ -374,6 +380,8 @@ $tdatainforme_intersup_admin[".googleLikeFields"][] = "inf_mail_b";
 $tdatainforme_intersup_admin[".googleLikeFields"][] = "url_secop";
 $tdatainforme_intersup_admin[".googleLikeFields"][] = "num_poliza";
 $tdatainforme_intersup_admin[".googleLikeFields"][] = "mun_ejec";
+$tdatainforme_intersup_admin[".googleLikeFields"][] = "cont_cesion";
+$tdatainforme_intersup_admin[".googleLikeFields"][] = "cont_modifica";
 
 
 
@@ -409,7 +417,7 @@ $tdatainforme_intersup_admin[".strOrderBy"] = $tstrOrderBy;
 
 $tdatainforme_intersup_admin[".orderindexes"] = array();
 
-$tdatainforme_intersup_admin[".sqlHead"] = "SELECT inf_id,  	id_cont_fk,  	inf_consecutivo,  	inf_hash,  	inf_estado,  	inf_fechapresenta,  	inf_periodicidad,  	inf_fecharep_i,  	inf_fecharep_f,  	inf_numerocontrato,  	inf_anio,  	inf_prenum,  	inf_doccontratista,  	inf_nombrecontratista,  	inf_valorcontrato,  	inf_adicionreduc,  	inf_cdp,  	inf_rp,  	inf_rubrocode,  	inf_rubroname,  	inf_objeto,  	inf_fechasuscripcion,  	inf_fechacont_i,  	inf_fechacont_f,  	inf_plazo,  	inf_vigencia,  	inf_modificacionesplazo,  	inf_intersup,  	inf_nombre,  	inf_cargo,  	inf_dependencia,  	inf_avgejecucion,  	inf_actividades,  	inf_declarainconf,  	inf_declarainconf_obs,  	inf_incumplimiento,  	inf_incumplimiento_obs,  	inf_otrosaspectostecnicos,  	inf_recomyobserva,  	sign_date,  	sign_hash,  	sign_file,  	sign_mailnot,  	file_verifica,  	sign_verificacert,  	cert_date,  	cert_file,  	cert_mail,  	cert_compare,  	inf_ultimopago,  	sys_date,  	inf_mail_a,  	inf_mail_b,  	url_secop,  	num_poliza,  	mun_ejec";
+$tdatainforme_intersup_admin[".sqlHead"] = "SELECT inf_id,  	id_cont_fk,  	inf_consecutivo,  	inf_hash,  	inf_estado,  	inf_fechapresenta,  	inf_periodicidad,  	inf_fecharep_i,  	inf_fecharep_f,  	inf_numerocontrato,  	inf_anio,  	inf_prenum,  	inf_doccontratista,  	inf_nombrecontratista,  	inf_valorcontrato,  	inf_adicionreduc,  	inf_cdp,  	inf_rp,  	inf_rubrocode,  	inf_rubroname,  	inf_objeto,  	inf_fechasuscripcion,  	inf_fechacont_i,  	inf_fechacont_f,  	inf_plazo,  	inf_vigencia,  	inf_modificacionesplazo,  	inf_intersup,  	inf_nombre,  	inf_cargo,  	inf_dependencia,  	inf_avgejecucion,  	inf_actividades,  	inf_declarainconf,  	inf_declarainconf_obs,  	inf_incumplimiento,  	inf_incumplimiento_obs,  	inf_otrosaspectostecnicos,  	inf_recomyobserva,  	sign_date,  	sign_hash,  	sign_file,  	sign_mailnot,  	file_verifica,  	sign_verificacert,  	cert_date,  	cert_file,  	cert_mail,  	cert_compare,  	inf_ultimopago,  	sys_date,  	inf_mail_a,  	inf_mail_b,  	url_secop,  	num_poliza,  	mun_ejec,  	cont_cesion,  	cont_modifica";
 $tdatainforme_intersup_admin[".sqlFrom"] = "FROM informe_intersup";
 $tdatainforme_intersup_admin[".sqlWhereExpr"] = "";
 $tdatainforme_intersup_admin[".sqlTail"] = "";
@@ -4954,7 +4962,7 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_declarainconf";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_admin","inf_declarainconf");
-	$fdata["FieldType"] = 16;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -5253,7 +5261,7 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 	$fdata["GoodName"] = "inf_incumplimiento";
 	$fdata["ownerTable"] = "informe_intersup";
 	$fdata["Label"] = GetFieldLabel("informe_intersup_admin","inf_incumplimiento");
-	$fdata["FieldType"] = 16;
+	$fdata["FieldType"] = 200;
 
 	
 	
@@ -8113,6 +8121,276 @@ $tdatainforme_intersup_admin[".hideMobileList"] = array();
 
 	$tdatainforme_intersup_admin["mun_ejec"] = $fdata;
 		$tdatainforme_intersup_admin[".searchableFields"][] = "mun_ejec";
+//	cont_cesion
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 57;
+	$fdata["strName"] = "cont_cesion";
+	$fdata["GoodName"] = "cont_cesion";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_admin","cont_cesion");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cont_cesion";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cont_cesion";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_admin["cont_cesion"] = $fdata;
+		$tdatainforme_intersup_admin[".searchableFields"][] = "cont_cesion";
+//	cont_modifica
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 58;
+	$fdata["strName"] = "cont_modifica";
+	$fdata["GoodName"] = "cont_modifica";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup_admin","cont_modifica");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cont_modifica";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cont_modifica";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup_admin["cont_modifica"] = $fdata;
+		$tdatainforme_intersup_admin[".searchableFields"][] = "cont_modifica";
 
 
 $tables_data["informe_intersup_admin"]=&$tdatainforme_intersup_admin;
@@ -8148,7 +8426,7 @@ function createSqlQuery_informe_intersup_admin()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "inf_id,  	id_cont_fk,  	inf_consecutivo,  	inf_hash,  	inf_estado,  	inf_fechapresenta,  	inf_periodicidad,  	inf_fecharep_i,  	inf_fecharep_f,  	inf_numerocontrato,  	inf_anio,  	inf_prenum,  	inf_doccontratista,  	inf_nombrecontratista,  	inf_valorcontrato,  	inf_adicionreduc,  	inf_cdp,  	inf_rp,  	inf_rubrocode,  	inf_rubroname,  	inf_objeto,  	inf_fechasuscripcion,  	inf_fechacont_i,  	inf_fechacont_f,  	inf_plazo,  	inf_vigencia,  	inf_modificacionesplazo,  	inf_intersup,  	inf_nombre,  	inf_cargo,  	inf_dependencia,  	inf_avgejecucion,  	inf_actividades,  	inf_declarainconf,  	inf_declarainconf_obs,  	inf_incumplimiento,  	inf_incumplimiento_obs,  	inf_otrosaspectostecnicos,  	inf_recomyobserva,  	sign_date,  	sign_hash,  	sign_file,  	sign_mailnot,  	file_verifica,  	sign_verificacert,  	cert_date,  	cert_file,  	cert_mail,  	cert_compare,  	inf_ultimopago,  	sys_date,  	inf_mail_a,  	inf_mail_b,  	url_secop,  	num_poliza,  	mun_ejec";
+$proto0["m_strFieldList"] = "inf_id,  	id_cont_fk,  	inf_consecutivo,  	inf_hash,  	inf_estado,  	inf_fechapresenta,  	inf_periodicidad,  	inf_fecharep_i,  	inf_fecharep_f,  	inf_numerocontrato,  	inf_anio,  	inf_prenum,  	inf_doccontratista,  	inf_nombrecontratista,  	inf_valorcontrato,  	inf_adicionreduc,  	inf_cdp,  	inf_rp,  	inf_rubrocode,  	inf_rubroname,  	inf_objeto,  	inf_fechasuscripcion,  	inf_fechacont_i,  	inf_fechacont_f,  	inf_plazo,  	inf_vigencia,  	inf_modificacionesplazo,  	inf_intersup,  	inf_nombre,  	inf_cargo,  	inf_dependencia,  	inf_avgejecucion,  	inf_actividades,  	inf_declarainconf,  	inf_declarainconf_obs,  	inf_incumplimiento,  	inf_incumplimiento_obs,  	inf_otrosaspectostecnicos,  	inf_recomyobserva,  	sign_date,  	sign_hash,  	sign_file,  	sign_mailnot,  	file_verifica,  	sign_verificacert,  	cert_date,  	cert_file,  	cert_mail,  	cert_compare,  	inf_ultimopago,  	sys_date,  	inf_mail_a,  	inf_mail_b,  	url_secop,  	num_poliza,  	mun_ejec,  	cont_cesion,  	cont_modifica";
 $proto0["m_strFrom"] = "FROM informe_intersup";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -8972,92 +9250,122 @@ $proto116["m_alias"] = "";
 $obj = new SQLFieldListItem($proto116);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto118=array();
-$proto118["m_link"] = "SQLL_MAIN";
-			$proto119=array();
-$proto119["m_strName"] = "informe_intersup";
-$proto119["m_srcTableName"] = "informe_intersup_admin";
-$proto119["m_columns"] = array();
-$proto119["m_columns"][] = "inf_id";
-$proto119["m_columns"][] = "id_cont_fk";
-$proto119["m_columns"][] = "inf_consecutivo";
-$proto119["m_columns"][] = "inf_hash";
-$proto119["m_columns"][] = "inf_estado";
-$proto119["m_columns"][] = "inf_fechapresenta";
-$proto119["m_columns"][] = "inf_periodicidad";
-$proto119["m_columns"][] = "inf_fecharep_i";
-$proto119["m_columns"][] = "inf_fecharep_f";
-$proto119["m_columns"][] = "inf_numerocontrato";
-$proto119["m_columns"][] = "inf_anio";
-$proto119["m_columns"][] = "inf_prenum";
-$proto119["m_columns"][] = "inf_doccontratista";
-$proto119["m_columns"][] = "inf_nombrecontratista";
-$proto119["m_columns"][] = "inf_valorcontrato";
-$proto119["m_columns"][] = "inf_adicionreduc";
-$proto119["m_columns"][] = "inf_cdp";
-$proto119["m_columns"][] = "inf_rp";
-$proto119["m_columns"][] = "inf_rubrocode";
-$proto119["m_columns"][] = "inf_rubroname";
-$proto119["m_columns"][] = "inf_objeto";
-$proto119["m_columns"][] = "inf_fechasuscripcion";
-$proto119["m_columns"][] = "inf_fechacont_i";
-$proto119["m_columns"][] = "inf_fechacont_f";
-$proto119["m_columns"][] = "inf_plazo";
-$proto119["m_columns"][] = "inf_vigencia";
-$proto119["m_columns"][] = "inf_modificacionesplazo";
-$proto119["m_columns"][] = "inf_intersup";
-$proto119["m_columns"][] = "inf_nombre";
-$proto119["m_columns"][] = "inf_cargo";
-$proto119["m_columns"][] = "inf_dependencia";
-$proto119["m_columns"][] = "inf_avgejecucion";
-$proto119["m_columns"][] = "inf_actividades";
-$proto119["m_columns"][] = "inf_declarainconf";
-$proto119["m_columns"][] = "inf_declarainconf_obs";
-$proto119["m_columns"][] = "inf_incumplimiento";
-$proto119["m_columns"][] = "inf_incumplimiento_obs";
-$proto119["m_columns"][] = "inf_otrosaspectostecnicos";
-$proto119["m_columns"][] = "inf_recomyobserva";
-$proto119["m_columns"][] = "sign_date";
-$proto119["m_columns"][] = "sign_hash";
-$proto119["m_columns"][] = "sign_file";
-$proto119["m_columns"][] = "sign_mailnot";
-$proto119["m_columns"][] = "file_verifica";
-$proto119["m_columns"][] = "sign_verificacert";
-$proto119["m_columns"][] = "cert_date";
-$proto119["m_columns"][] = "cert_file";
-$proto119["m_columns"][] = "cert_mail";
-$proto119["m_columns"][] = "cert_compare";
-$proto119["m_columns"][] = "inf_ultimopago";
-$proto119["m_columns"][] = "sys_date";
-$proto119["m_columns"][] = "inf_mail_a";
-$proto119["m_columns"][] = "inf_mail_b";
-$proto119["m_columns"][] = "url_secop";
-$proto119["m_columns"][] = "num_poliza";
-$proto119["m_columns"][] = "mun_ejec";
-$obj = new SQLTable($proto119);
+						$proto118=array();
+			$obj = new SQLField(array(
+	"m_strName" => "cont_cesion",
+	"m_strTable" => "informe_intersup",
+	"m_srcTableName" => "informe_intersup_admin"
+));
 
-$proto118["m_table"] = $obj;
-$proto118["m_sql"] = "informe_intersup";
-$proto118["m_alias"] = "";
+$proto118["m_sql"] = "cont_cesion";
 $proto118["m_srcTableName"] = "informe_intersup_admin";
-$proto120=array();
-$proto120["m_sql"] = "";
-$proto120["m_uniontype"] = "SQLL_UNKNOWN";
+$proto118["m_expr"]=$obj;
+$proto118["m_alias"] = "";
+$obj = new SQLFieldListItem($proto118);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto120=array();
+			$obj = new SQLField(array(
+	"m_strName" => "cont_modifica",
+	"m_strTable" => "informe_intersup",
+	"m_srcTableName" => "informe_intersup_admin"
+));
+
+$proto120["m_sql"] = "cont_modifica";
+$proto120["m_srcTableName"] = "informe_intersup_admin";
+$proto120["m_expr"]=$obj;
+$proto120["m_alias"] = "";
+$obj = new SQLFieldListItem($proto120);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto122=array();
+$proto122["m_link"] = "SQLL_MAIN";
+			$proto123=array();
+$proto123["m_strName"] = "informe_intersup";
+$proto123["m_srcTableName"] = "informe_intersup_admin";
+$proto123["m_columns"] = array();
+$proto123["m_columns"][] = "inf_id";
+$proto123["m_columns"][] = "id_cont_fk";
+$proto123["m_columns"][] = "inf_consecutivo";
+$proto123["m_columns"][] = "inf_hash";
+$proto123["m_columns"][] = "inf_estado";
+$proto123["m_columns"][] = "inf_fechapresenta";
+$proto123["m_columns"][] = "inf_periodicidad";
+$proto123["m_columns"][] = "inf_fecharep_i";
+$proto123["m_columns"][] = "inf_fecharep_f";
+$proto123["m_columns"][] = "inf_numerocontrato";
+$proto123["m_columns"][] = "inf_anio";
+$proto123["m_columns"][] = "inf_prenum";
+$proto123["m_columns"][] = "inf_doccontratista";
+$proto123["m_columns"][] = "inf_nombrecontratista";
+$proto123["m_columns"][] = "inf_valorcontrato";
+$proto123["m_columns"][] = "inf_adicionreduc";
+$proto123["m_columns"][] = "inf_cdp";
+$proto123["m_columns"][] = "inf_rp";
+$proto123["m_columns"][] = "inf_rubrocode";
+$proto123["m_columns"][] = "inf_rubroname";
+$proto123["m_columns"][] = "inf_objeto";
+$proto123["m_columns"][] = "inf_fechasuscripcion";
+$proto123["m_columns"][] = "inf_fechacont_i";
+$proto123["m_columns"][] = "inf_fechacont_f";
+$proto123["m_columns"][] = "inf_plazo";
+$proto123["m_columns"][] = "inf_vigencia";
+$proto123["m_columns"][] = "inf_modificacionesplazo";
+$proto123["m_columns"][] = "inf_intersup";
+$proto123["m_columns"][] = "inf_nombre";
+$proto123["m_columns"][] = "inf_cargo";
+$proto123["m_columns"][] = "inf_dependencia";
+$proto123["m_columns"][] = "inf_avgejecucion";
+$proto123["m_columns"][] = "inf_actividades";
+$proto123["m_columns"][] = "inf_declarainconf";
+$proto123["m_columns"][] = "inf_declarainconf_obs";
+$proto123["m_columns"][] = "inf_incumplimiento";
+$proto123["m_columns"][] = "inf_incumplimiento_obs";
+$proto123["m_columns"][] = "inf_otrosaspectostecnicos";
+$proto123["m_columns"][] = "inf_recomyobserva";
+$proto123["m_columns"][] = "sign_date";
+$proto123["m_columns"][] = "sign_hash";
+$proto123["m_columns"][] = "sign_file";
+$proto123["m_columns"][] = "sign_mailnot";
+$proto123["m_columns"][] = "file_verifica";
+$proto123["m_columns"][] = "sign_verificacert";
+$proto123["m_columns"][] = "cert_date";
+$proto123["m_columns"][] = "cert_file";
+$proto123["m_columns"][] = "cert_mail";
+$proto123["m_columns"][] = "cert_compare";
+$proto123["m_columns"][] = "inf_ultimopago";
+$proto123["m_columns"][] = "sys_date";
+$proto123["m_columns"][] = "inf_mail_a";
+$proto123["m_columns"][] = "inf_mail_b";
+$proto123["m_columns"][] = "url_secop";
+$proto123["m_columns"][] = "num_poliza";
+$proto123["m_columns"][] = "mun_ejec";
+$proto123["m_columns"][] = "cont_cesion";
+$proto123["m_columns"][] = "cont_modifica";
+$obj = new SQLTable($proto123);
+
+$proto122["m_table"] = $obj;
+$proto122["m_sql"] = "informe_intersup";
+$proto122["m_alias"] = "";
+$proto122["m_srcTableName"] = "informe_intersup_admin";
+$proto124=array();
+$proto124["m_sql"] = "";
+$proto124["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto120["m_column"]=$obj;
-$proto120["m_contained"] = array();
-$proto120["m_strCase"] = "";
-$proto120["m_havingmode"] = false;
-$proto120["m_inBrackets"] = false;
-$proto120["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto120);
+$proto124["m_column"]=$obj;
+$proto124["m_contained"] = array();
+$proto124["m_strCase"] = "";
+$proto124["m_havingmode"] = false;
+$proto124["m_inBrackets"] = false;
+$proto124["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto124);
 
-$proto118["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto118);
+$proto122["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto122);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -9073,7 +9381,7 @@ $queryData_informe_intersup_admin = createSqlQuery_informe_intersup_admin();
 	
 										;
 
-																																																								
+																																																										
 
 $tdatainforme_intersup_admin[".sqlquery"] = $queryData_informe_intersup_admin;
 

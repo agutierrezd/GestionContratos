@@ -50,6 +50,8 @@ $dalTableq_bandejaentrada_supervisores["cont_secop_proceso"] = array("type"=>200
 $dalTableq_bandejaentrada_supervisores["cont_fecha_aprobgarantia"] = array("type"=>7,"varname"=>"cont_fecha_aprobgarantia", "name" => "cont_fecha_aprobgarantia");
 $dalTableq_bandejaentrada_supervisores["cont_fechaapertura"] = array("type"=>7,"varname"=>"cont_fechaapertura", "name" => "cont_fechaapertura");
 $dalTableq_bandejaentrada_supervisores["cont_munejec"] = array("type"=>200,"varname"=>"cont_munejec", "name" => "cont_munejec");
+$dalTableq_bandejaentrada_supervisores["cont_cesion"] = array("type"=>16,"varname"=>"cont_cesion", "name" => "cont_cesion");
+$dalTableq_bandejaentrada_supervisores["cont_modifica"] = array("type"=>16,"varname"=>"cont_modifica", "name" => "cont_modifica");
 
 $dal_info["dbct_at_localhost__q_bandejaentrada_supervisores"] = &$dalTableq_bandejaentrada_supervisores;
 ?>

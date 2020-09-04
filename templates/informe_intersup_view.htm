@@ -684,7 +684,7 @@
 	data-location="section3" id="form_section3_{$pageid}" data-makeup="small" {$form_section3} data-pageid="{$pageid}" 
 	class="r-edit-form" cellpadding="0" cellspacing="0" 
 	{$grid_hiddenattr} 
-		data-form-width="1"
+		data-form-width="2"
 		
 		data-v-width="4"
 	>
@@ -699,7 +699,7 @@
 	
 			data-single
 			
-			data-cellId="section3_c1" data-pageid="{$pageid}"
+	ocolspan="2"		data-cellId="section3_c1" data-pageid="{$pageid}"
 		data-v-cell="4"
 		
 >
@@ -710,14 +710,16 @@
 
 <div class="r-integrated-field form-group clearfix {$fielddispclass_inf_actividades}  r-vertical-field" data-fieldname="inf_actividades" data-signal-error-for="inf_actividades{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field30" {$item_integrated_edit_field30} data-pageid="{$pageid}" data-field="inf_actividades" >
 
+		<div class="col-md-12">
 	
-	<label class="col-md-offset-3 col-md-6" for="{$labelfor_inf_actividades}">
+	<label class="" for="{$labelfor_inf_actividades}">
 		
 		{BEGIN inf_actividades_label}{$label informe_intersup inf_actividades }{END inf_actividades_label}
 	</label>
-	<div class="col-md-offset-3 col-md-6" >
+	<div class="" >
 		{$inf_actividades_value}	</div>
 
+		</div>
 		
 </div>
 
@@ -726,6 +728,87 @@
 	
 								</td>
 			{END cellblock_section3_c1}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section3_c3}
+<td
+	{$cell_section3_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_cesion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_cesion}  r-vertical-field" data-fieldname="cont_cesion" data-signal-error-for="cont_cesion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field12" {$item_integrated_edit_field12} data-pageid="{$pageid}" data-field="cont_cesion" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_cesion}">
+		
+		{BEGIN cont_cesion_label}{$label informe_intersup cont_cesion }{END cont_cesion_label}
+	</label>
+	<div class="" >
+		{$cont_cesion_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_cesion_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c3}
+			 
+																
+
+{BEGIN cellblock_section3_c4}
+<td
+	{$cell_section3_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section3_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN cont_modifica_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_modifica}  r-vertical-field" data-fieldname="cont_modifica" data-signal-error-for="cont_modifica{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field23" {$item_integrated_edit_field23} data-pageid="{$pageid}" data-field="cont_modifica" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_modifica}">
+		
+		{BEGIN cont_modifica_label}{$label informe_intersup cont_modifica }{END cont_modifica_label}
+	</label>
+	<div class="" >
+		{$cont_modifica_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_modifica_fieldblock}
+	
+								</td>
+			{END cellblock_section3_c4}
 								</tr>
 	 
 	 

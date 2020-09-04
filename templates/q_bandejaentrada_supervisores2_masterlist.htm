@@ -85,6 +85,7 @@
 									 
 									 
 									 
+									 
 											
 					</tbody>
 				</table>
@@ -1955,11 +1956,20 @@
 	{$cell_grid_cell_label37}
 	{$recordattrs}
 	class="
-		r-align-right r-ori-vert			"
+		r-align-right r-ori-vert				{$cont_cesion_class}
+			"
 
+			data-field="cont_cesion"
 	
 	data-cellId="grid_cell_label37" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
+
+	 
+		{BEGIN cont_cesion_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label25" {$item_grid_field_label25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_cesion">
+	{$label q_bandejaentrada_supervisores2 cont_cesion }	</span>
+{END cont_cesion_fieldheadercolumn}
 
 	
 	</td>
@@ -1971,15 +1981,106 @@
 	{$cell_grid_cell_field37}
 	{$recordattrs}
 	class="
-		 r-ori-vert			"
+		 r-ori-vert				{$cont_cesion_class}
+			"
 
+			data-field="cont_cesion"
 	
 	data-cellId="grid_cell_field37" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
-	
+	 
+		{BEGIN cont_cesion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field25" {$item_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_cesion" data-default-width >
+{$cont_cesion_value}
+</span>
+{END cont_cesion_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field37}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label38}
+	<td
+	
+	{$cell_grid_cell_label38}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$cont_modifica_class}
+			"
+
+			data-field="cont_modifica"
+	
+	data-cellId="grid_cell_label38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_modifica_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label26" {$item_grid_field_label26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_modifica">
+	{$label q_bandejaentrada_supervisores2 cont_modifica }	</span>
+{END cont_modifica_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label38}
+						 
+							{BEGIN cellblock_grid_cell_field38}
+	<td
+	
+	{$cell_grid_cell_field38}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_modifica_class}
+			"
+
+			data-field="cont_modifica"
+	
+	data-cellId="grid_cell_field38" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_modifica_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field26" {$item_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_modifica" data-default-width >
+{$cont_modifica_value}
+</span>
+{END cont_modifica_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field38}
+						 
+							{BEGIN cellblock_grid_cell_label39}
+	<td
+	
+	{$cell_grid_cell_label39}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label39}
+						 
+							{BEGIN cellblock_grid_cell_field39}
+	<td
+	
+	{$cell_grid_cell_field39}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field39" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field39}
 												</tr>
 									 
 											

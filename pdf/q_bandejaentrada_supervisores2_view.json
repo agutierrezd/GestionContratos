@@ -642,6 +642,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_edit_field40}","stack":[{"text":"{$jslabel q_bandejaentrada_supervisores2 PLAZO }","bold":true},{"text":{$PLAZO_pdfvalue}}],"margin":[0,0,0,15]},
 				
+				
+			{"hidden":"{$item_hide_integrated_edit_field42}","stack":[{"text":"{$jslabel q_bandejaentrada_supervisores2 cont_modifica }","bold":true},{"text":{$cont_modifica_pdfvalue}}],"margin":[0,0,0,15]},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
@@ -706,6 +709,9 @@ pdfDocument = {
 				
 				
 			{"hidden":"{$item_hide_integrated_edit_field39}","stack":[{"text":"{$jslabel q_bandejaentrada_supervisores2 cont_munejec }","bold":true},{"text":{$cont_munejec_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field41}","stack":[{"text":"{$jslabel q_bandejaentrada_supervisores2 cont_cesion }","bold":true},{"text":{$cont_cesion_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],

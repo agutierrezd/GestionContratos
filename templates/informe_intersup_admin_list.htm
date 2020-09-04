@@ -113,6 +113,32 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_inf_valorcontrato}</span>
 						</div>
 		{END searchCtrlBlock_inf_valorcontrato}
+																{BEGIN searchCtrlBlock_cont_modifica}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_modifica}" {$filterRow_attrs_cont_modifica}>
+			<label>{$label informe_intersup_admin cont_modifica }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_modifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_modifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_modifica}</span>
+						</div>
+		{END searchCtrlBlock_cont_modifica}
+																{BEGIN searchCtrlBlock_cont_cesion}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_cesion}" {$filterRow_attrs_cont_cesion}>
+			<label>{$label informe_intersup_admin cont_cesion }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_cesion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_cesion}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_cesion}</span>
+						</div>
+		{END searchCtrlBlock_cont_cesion}
 																{BEGIN searchCtrlBlock_mun_ejec}
 
 
@@ -974,6 +1000,12 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="mun_ejec"]:before {
 		content: "{$label informe_intersup_admin mun_ejec}";
 	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_cesion"]:before {
+		content: "{$label informe_intersup_admin cont_cesion}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_modifica"]:before {
+		content: "{$label informe_intersup_admin cont_modifica}";
+	}
 	}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
@@ -1785,6 +1817,60 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field27}
+				 
+					{BEGIN cellblock_grid_headcell_field28}
+	<th
+	
+	{$cell_grid_headcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_cesion_class}
+			"
+
+			data-field="cont_cesion"
+	
+	data-cellId="grid_headcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_cesion_fieldheadercolumn}
+	{BEGIN cont_cesion_fieldheader}
+	<SPAN {$cont_cesion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field_label7" {$item_grid_field_label7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_cesion">
+	{$label informe_intersup_admin cont_cesion }	{$arrow_icon_cont_cesion}
+	</SPAN>
+	{END cont_cesion_fieldheader}
+{END cont_cesion_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field28}
+				 
+					{BEGIN cellblock_grid_headcell_field29}
+	<th
+	
+	{$cell_grid_headcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_modifica_class}
+			"
+
+			data-field="cont_modifica"
+	
+	data-cellId="grid_headcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_modifica_fieldheadercolumn}
+	{BEGIN cont_modifica_fieldheader}
+	<SPAN {$cont_modifica_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field_label8" {$item_grid_field_label8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_modifica">
+	{$label informe_intersup_admin cont_modifica }	{$arrow_icon_cont_modifica}
+	</SPAN>
+	{END cont_modifica_fieldheader}
+{END cont_modifica_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field29}
 							</tr>
 					 
 					 
@@ -2507,6 +2593,52 @@
 {END mun_ejec_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field27}
+				 
+					{BEGIN cellblock_grid_cell_field28}
+	<td
+	
+	{$cell_grid_cell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_cesion_class}
+			"
+
+			data-field="cont_cesion"
+	
+	data-cellId="grid_cell_field28" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_cesion_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field7" {$item_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_cesion" data-default-width >
+{$cont_cesion_value}
+</span>
+{END cont_cesion_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field28}
+				 
+					{BEGIN cellblock_grid_cell_field29}
+	<td
+	
+	{$cell_grid_cell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_modifica_class}
+			"
+
+			data-field="cont_modifica"
+	
+	data-cellId="grid_cell_field29" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_modifica_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field8" {$item_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_modifica" data-default-width >
+{$cont_modifica_value}
+</span>
+{END cont_modifica_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field29}
 							</tr>
 					 
 					
@@ -3002,6 +3134,38 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field27}
+				 
+					{BEGIN cellblock_grid_footcell_field28}
+	<td
+	
+	{$cell_grid_footcell_field28}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field28" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_admin_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field28}
+				 
+					{BEGIN cellblock_grid_footcell_field29}
+	<td
+	
+	{$cell_grid_footcell_field29}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field29" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_admin_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field29}
 							</tr>
 					
 					</tfoot>

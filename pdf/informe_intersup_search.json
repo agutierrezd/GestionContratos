@@ -284,6 +284,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_search_field36}","text":{$mun_ejec_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_integrated_search_field37}","text":{$cont_cesion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field57}","text":{$cont_modifica_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

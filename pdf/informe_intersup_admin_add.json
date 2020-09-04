@@ -264,6 +264,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_edit_field35}","stack":[{"text":"{$jslabel informe_intersup_admin mun_ejec }","bold":true},{"text":{$mun_ejec_pdfvalue}}],"margin":[0,0,0,15]},
 				
+				
+			{"hidden":"{$item_hide_integrated_edit_field36}","stack":[{"text":"{$jslabel informe_intersup_admin cont_cesion }","bold":true},{"text":{$cont_cesion_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field37}","stack":[{"text":"{$jslabel informe_intersup_admin cont_modifica }","bold":true},{"text":{$cont_modifica_pdfvalue}}],"margin":[0,0,0,15]},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
