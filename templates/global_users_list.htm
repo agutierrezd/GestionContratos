@@ -63,54 +63,18 @@
 			<div class="clearfix  r-ori-vert" data-cellId="left_c1" data-pageid="{$pageid}" data-itemid="search_panel" {$item_search_panel} data-topcell-item-type="search_panel" >
 				<!-- Begin Search panel content -->
 <div class="searchOptions panel panel-primary searchPanelContainer " {$srchOpt_attrs} data-itemtype="search_panel" data-itemid="search_panel" {$item_search_panel} data-pageid="{$pageid}" >
-
-	<div class="panel-heading">
-		<div class="btn-group" id="addSearchFieldButton{$id}">
-			<button id="showHideControlChooseMenu{$id}" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-			Búsqueda			<span class="caret"></span>
-			</button>
-		</div>
-
-
-		<div class="btn-group searchpanel-options" id="searchPanelOptions{$id}">
-			<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-				<span class="glyphicon glyphicon glyphicon-option-vertical"></span>
-			</button>
-			<ul class="dropdown-menu dropdown-left">
-				<li id="showHideSearchType{$id}" {$showHideCtrlsOpt_attrs}><a>Mostrar opciones</a></li>
-				<li role="separator" class="divider"></li>
-				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAll" {$all_checkbox}><label for="radioAll"><span class="glyphicon">&nbsp;</span>todas las condiciones</label></a></li>
-				<li class="srchCritTop" style="display: none;"><a><input type="radio" name="srchType{$id}" id="radioAny" {$any_checkbox}><label for="radioAny"><span class="glyphicon">&nbsp;</span>cualquier condición</label></a></li>
-				<li role="separator" class="divider"></li>
-				<li><a class="close-button"><span class="glyphicon glyphicon-remove">&nbsp;</span>esconder</a></li>
-			</ul>
-		</div>
-
-
-		</div>
 	<div class="panel-body controlsBlock" {$bottomSearchButt_attrs} >
 
 
-		
-		{BEGIN searchCtrlBlock}
-		<div class="srchPanelRow form-group" {$filterRow_attrs}>
-			<label>{$fLabel}</label>	{$delCtrlButt}
-				<span class="rnr-searchtype">{$searchtype}</span>
-				<span class="rnr-searchcontrol">{$searchcontrol}</span>
-				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
-		</div>
-		{END searchCtrlBlock}
 																		{BEGIN searchCtrlBlock_usr_personalid}
 
 
 		<div class="form-group srchPanelRow {$filterRow_class_usr_personalid}" {$filterRow_attrs_usr_personalid}>
 			<label>{$label global_users usr_personalid }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_personalid}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_personalid}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_personalid}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_personalid}</span>
 						</div>
 		{END searchCtrlBlock_usr_personalid}
 																{BEGIN searchCtrlBlock_usr_dep_sup}
@@ -119,11 +83,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_dep_sup}" {$filterRow_attrs_usr_dep_sup}>
 			<label>{$label global_users usr_dep_sup }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_dep_sup}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_dep_sup}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_dep_sup}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_dep_sup}</span>
 						</div>
 		{END searchCtrlBlock_usr_dep_sup}
 																{BEGIN searchCtrlBlock_usr_directivo}
@@ -132,11 +94,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_directivo}" {$filterRow_attrs_usr_directivo}>
 			<label>{$label global_users usr_directivo }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_directivo}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_directivo}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_directivo}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_directivo}</span>
 						</div>
 		{END searchCtrlBlock_usr_directivo}
 																{BEGIN searchCtrlBlock_phone1}
@@ -145,11 +105,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_phone1}" {$filterRow_attrs_phone1}>
 			<label>{$label global_users phone1 }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_phone1}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_phone1}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_phone1}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_phone1}</span>
 						</div>
 		{END searchCtrlBlock_phone1}
 																{BEGIN searchCtrlBlock_phone}
@@ -158,11 +116,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_phone}" {$filterRow_attrs_phone}>
 			<label>{$label global_users phone }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_phone}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_phone}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_phone}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_phone}</span>
 						</div>
 		{END searchCtrlBlock_phone}
 																{BEGIN searchCtrlBlock_upd_date}
@@ -171,11 +127,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_upd_date}" {$filterRow_attrs_upd_date}>
 			<label>{$label global_users upd_date }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_upd_date}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_upd_date}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_upd_date}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_upd_date}</span>
 						</div>
 		{END searchCtrlBlock_upd_date}
 																{BEGIN searchCtrlBlock_estado_vinculacion_mincit}
@@ -184,11 +138,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_estado_vinculacion_mincit}" {$filterRow_attrs_estado_vinculacion_mincit}>
 			<label>{$label global_users estado_vinculacion_mincit }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_estado_vinculacion_mincit}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_estado_vinculacion_mincit}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_estado_vinculacion_mincit}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_estado_vinculacion_mincit}</span>
 						</div>
 		{END searchCtrlBlock_estado_vinculacion_mincit}
 																{BEGIN searchCtrlBlock_habilita_almacen}
@@ -197,11 +149,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_habilita_almacen}" {$filterRow_attrs_habilita_almacen}>
 			<label>{$label global_users habilita_almacen }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_habilita_almacen}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_habilita_almacen}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_habilita_almacen}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_habilita_almacen}</span>
 						</div>
 		{END searchCtrlBlock_habilita_almacen}
 																{BEGIN searchCtrlBlock_groupid}
@@ -210,11 +160,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_groupid}" {$filterRow_attrs_groupid}>
 			<label>{$label global_users groupid }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_groupid}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_groupid}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_groupid}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_groupid}</span>
 						</div>
 		{END searchCtrlBlock_groupid}
 																{BEGIN searchCtrlBlock_active}
@@ -223,11 +171,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_active}" {$filterRow_attrs_active}>
 			<label>{$label global_users active }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_active}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_active}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_active}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_active}</span>
 						</div>
 		{END searchCtrlBlock_active}
 																{BEGIN searchCtrlBlock_usr_emergencia}
@@ -236,11 +182,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_emergencia}" {$filterRow_attrs_usr_emergencia}>
 			<label>{$label global_users usr_emergencia }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_emergencia}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_emergencia}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_emergencia}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_emergencia}</span>
 						</div>
 		{END searchCtrlBlock_usr_emergencia}
 																{BEGIN searchCtrlBlock_ctrl_contacto}
@@ -249,11 +193,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_ctrl_contacto}" {$filterRow_attrs_ctrl_contacto}>
 			<label>{$label global_users ctrl_contacto }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_ctrl_contacto}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_ctrl_contacto}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_ctrl_contacto}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_ctrl_contacto}</span>
 						</div>
 		{END searchCtrlBlock_ctrl_contacto}
 																{BEGIN searchCtrlBlock_ctrl_pedidoalmacen}
@@ -262,11 +204,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_ctrl_pedidoalmacen}" {$filterRow_attrs_ctrl_pedidoalmacen}>
 			<label>{$label global_users ctrl_pedidoalmacen }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_ctrl_pedidoalmacen}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_ctrl_pedidoalmacen}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_ctrl_pedidoalmacen}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_ctrl_pedidoalmacen}</span>
 						</div>
 		{END searchCtrlBlock_ctrl_pedidoalmacen}
 																{BEGIN searchCtrlBlock_usr_datebirth}
@@ -275,11 +215,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_datebirth}" {$filterRow_attrs_usr_datebirth}>
 			<label>{$label global_users usr_datebirth }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_datebirth}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_datebirth}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_datebirth}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_datebirth}</span>
 						</div>
 		{END searchCtrlBlock_usr_datebirth}
 																{BEGIN searchCtrlBlock_usr_piso}
@@ -288,11 +226,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_piso}" {$filterRow_attrs_usr_piso}>
 			<label>{$label global_users usr_piso }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_piso}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_piso}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_piso}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_piso}</span>
 						</div>
 		{END searchCtrlBlock_usr_piso}
 																{BEGIN searchCtrlBlock_usr_extension}
@@ -301,11 +237,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_extension}" {$filterRow_attrs_usr_extension}>
 			<label>{$label global_users usr_extension }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_extension}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_extension}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_extension}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_extension}</span>
 						</div>
 		{END searchCtrlBlock_usr_extension}
 																{BEGIN searchCtrlBlock_usr_regpago}
@@ -314,11 +248,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_regpago}" {$filterRow_attrs_usr_regpago}>
 			<label>{$label global_users usr_regpago }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_regpago}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_regpago}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_regpago}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_regpago}</span>
 						</div>
 		{END searchCtrlBlock_usr_regpago}
 																{BEGIN searchCtrlBlock_ctrl}
@@ -327,11 +259,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_ctrl}" {$filterRow_attrs_ctrl}>
 			<label>{$label global_users ctrl }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_ctrl}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_ctrl}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_ctrl}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_ctrl}</span>
 						</div>
 		{END searchCtrlBlock_ctrl}
 																{BEGIN searchCtrlBlock_sys_anio}
@@ -340,11 +270,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_sys_anio}" {$filterRow_attrs_sys_anio}>
 			<label>{$label global_users sys_anio }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_sys_anio}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_sys_anio}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_sys_anio}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_sys_anio}</span>
 						</div>
 		{END searchCtrlBlock_sys_anio}
 																{BEGIN searchCtrlBlock_usr_update_almacen}
@@ -353,11 +281,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_update_almacen}" {$filterRow_attrs_usr_update_almacen}>
 			<label>{$label global_users usr_update_almacen }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_update_almacen}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_update_almacen}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_update_almacen}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_update_almacen}</span>
 						</div>
 		{END searchCtrlBlock_usr_update_almacen}
 																{BEGIN searchCtrlBlock_sys_update_family_info}
@@ -366,11 +292,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_sys_update_family_info}" {$filterRow_attrs_sys_update_family_info}>
 			<label>{$label global_users sys_update_family_info }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_sys_update_family_info}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_sys_update_family_info}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_sys_update_family_info}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_sys_update_family_info}</span>
 						</div>
 		{END searchCtrlBlock_sys_update_family_info}
 																{BEGIN searchCtrlBlock_sys_update_info}
@@ -379,11 +303,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_sys_update_info}" {$filterRow_attrs_sys_update_info}>
 			<label>{$label global_users sys_update_info }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_sys_update_info}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_sys_update_info}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_sys_update_info}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_sys_update_info}</span>
 						</div>
 		{END searchCtrlBlock_sys_update_info}
 																{BEGIN searchCtrlBlock_sys_upd_time}
@@ -392,11 +314,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_sys_upd_time}" {$filterRow_attrs_sys_upd_time}>
 			<label>{$label global_users sys_upd_time }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_sys_upd_time}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_sys_upd_time}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_sys_upd_time}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_sys_upd_time}</span>
 						</div>
 		{END searchCtrlBlock_sys_upd_time}
 																{BEGIN searchCtrlBlock_sys_upd_user}
@@ -405,11 +325,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_sys_upd_user}" {$filterRow_attrs_sys_upd_user}>
 			<label>{$label global_users sys_upd_user }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_sys_upd_user}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_sys_upd_user}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_sys_upd_user}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_sys_upd_user}</span>
 						</div>
 		{END searchCtrlBlock_sys_upd_user}
 																{BEGIN searchCtrlBlock_sys_upd_fecha}
@@ -418,11 +336,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_sys_upd_fecha}" {$filterRow_attrs_sys_upd_fecha}>
 			<label>{$label global_users sys_upd_fecha }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_sys_upd_fecha}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_sys_upd_fecha}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_sys_upd_fecha}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_sys_upd_fecha}</span>
 						</div>
 		{END searchCtrlBlock_sys_upd_fecha}
 																{BEGIN searchCtrlBlock_sys_disabledate_usr}
@@ -431,11 +347,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_sys_disabledate_usr}" {$filterRow_attrs_sys_disabledate_usr}>
 			<label>{$label global_users sys_disabledate_usr }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_sys_disabledate_usr}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_sys_disabledate_usr}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_sys_disabledate_usr}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_sys_disabledate_usr}</span>
 						</div>
 		{END searchCtrlBlock_sys_disabledate_usr}
 																{BEGIN searchCtrlBlock_sys_expiration_usr}
@@ -444,11 +358,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_sys_expiration_usr}" {$filterRow_attrs_sys_expiration_usr}>
 			<label>{$label global_users sys_expiration_usr }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_sys_expiration_usr}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_sys_expiration_usr}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_sys_expiration_usr}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_sys_expiration_usr}</span>
 						</div>
 		{END searchCtrlBlock_sys_expiration_usr}
 																{BEGIN searchCtrlBlock_sys_registrationdate_usr}
@@ -457,11 +369,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_sys_registrationdate_usr}" {$filterRow_attrs_sys_registrationdate_usr}>
 			<label>{$label global_users sys_registrationdate_usr }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_sys_registrationdate_usr}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_sys_registrationdate_usr}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_sys_registrationdate_usr}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_sys_registrationdate_usr}</span>
 						</div>
 		{END searchCtrlBlock_sys_registrationdate_usr}
 																{BEGIN searchCtrlBlock_sys_ntries_usr}
@@ -470,11 +380,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_sys_ntries_usr}" {$filterRow_attrs_sys_ntries_usr}>
 			<label>{$label global_users sys_ntries_usr }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_sys_ntries_usr}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_sys_ntries_usr}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_sys_ntries_usr}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_sys_ntries_usr}</span>
 						</div>
 		{END searchCtrlBlock_sys_ntries_usr}
 																{BEGIN searchCtrlBlock_sys_time}
@@ -483,11 +391,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_sys_time}" {$filterRow_attrs_sys_time}>
 			<label>{$label global_users sys_time }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_sys_time}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_sys_time}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_sys_time}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_sys_time}</span>
 						</div>
 		{END searchCtrlBlock_sys_time}
 																{BEGIN searchCtrlBlock_sys_date}
@@ -496,11 +402,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_sys_date}" {$filterRow_attrs_sys_date}>
 			<label>{$label global_users sys_date }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_sys_date}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_sys_date}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_sys_date}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_sys_date}</span>
 						</div>
 		{END searchCtrlBlock_sys_date}
 																{BEGIN searchCtrlBlock_sys_user}
@@ -509,11 +413,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_sys_user}" {$filterRow_attrs_sys_user}>
 			<label>{$label global_users sys_user }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_sys_user}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_sys_user}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_sys_user}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_sys_user}</span>
 						</div>
 		{END searchCtrlBlock_sys_user}
 																{BEGIN searchCtrlBlock_global_rol_ciudadano_dep}
@@ -522,11 +424,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_ciudadano_dep}" {$filterRow_attrs_global_rol_ciudadano_dep}>
 			<label>{$label global_users global_rol_ciudadano_dep }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_ciudadano_dep}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_ciudadano_dep}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_ciudadano_dep}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_ciudadano_dep}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_ciudadano_dep}
 																{BEGIN searchCtrlBlock_global_rol_ciudadano}
@@ -535,11 +435,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_ciudadano}" {$filterRow_attrs_global_rol_ciudadano}>
 			<label>{$label global_users global_rol_ciudadano }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_ciudadano}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_ciudadano}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_ciudadano}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_ciudadano}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_ciudadano}
 																{BEGIN searchCtrlBlock_global_rol_gestion}
@@ -548,11 +446,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_gestion}" {$filterRow_attrs_global_rol_gestion}>
 			<label>{$label global_users global_rol_gestion }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_gestion}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_gestion}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_gestion}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_gestion}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_gestion}
 																{BEGIN searchCtrlBlock_global_rol_comacc}
@@ -561,11 +457,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_comacc}" {$filterRow_attrs_global_rol_comacc}>
 			<label>{$label global_users global_rol_comacc }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_comacc}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_comacc}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_comacc}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_comacc}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_comacc}
 																{BEGIN searchCtrlBlock_global_rol_procjur}
@@ -574,11 +468,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_procjur}" {$filterRow_attrs_global_rol_procjur}>
 			<label>{$label global_users global_rol_procjur }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_procjur}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_procjur}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_procjur}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_procjur}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_procjur}
 																{BEGIN searchCtrlBlock_globla_rol_ct}
@@ -587,11 +479,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_globla_rol_ct}" {$filterRow_attrs_globla_rol_ct}>
 			<label>{$label global_users globla_rol_ct }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_globla_rol_ct}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_globla_rol_ct}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_globla_rol_ct}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_globla_rol_ct}</span>
 						</div>
 		{END searchCtrlBlock_globla_rol_ct}
 																{BEGIN searchCtrlBlock_global_rol_cont}
@@ -600,11 +490,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_cont}" {$filterRow_attrs_global_rol_cont}>
 			<label>{$label global_users global_rol_cont }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_cont}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_cont}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_cont}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_cont}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_cont}
 																{BEGIN searchCtrlBlock_global_rol}
@@ -613,11 +501,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol}" {$filterRow_attrs_global_rol}>
 			<label>{$label global_users global_rol }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol}</span>
 						</div>
 		{END searchCtrlBlock_global_rol}
 																{BEGIN searchCtrlBlock_global_rol_sid}
@@ -626,11 +512,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_sid}" {$filterRow_attrs_global_rol_sid}>
 			<label>{$label global_users global_rol_sid }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_sid}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_sid}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_sid}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_sid}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_sid}
 																{BEGIN searchCtrlBlock_global_rol_th}
@@ -639,11 +523,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_th}" {$filterRow_attrs_global_rol_th}>
 			<label>{$label global_users global_rol_th }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_th}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_th}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_th}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_th}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_th}
 																{BEGIN searchCtrlBlock_global_rol_jc3}
@@ -652,11 +534,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_jc3}" {$filterRow_attrs_global_rol_jc3}>
 			<label>{$label global_users global_rol_jc3 }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_jc3}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_jc3}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_jc3}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_jc3}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_jc3}
 																{BEGIN searchCtrlBlock_global_rol_cej}
@@ -665,11 +545,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_cej}" {$filterRow_attrs_global_rol_cej}>
 			<label>{$label global_users global_rol_cej }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_cej}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_cej}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_cej}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_cej}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_cej}
 																{BEGIN searchCtrlBlock_global_rol_sipi}
@@ -678,11 +556,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_sipi}" {$filterRow_attrs_global_rol_sipi}>
 			<label>{$label global_users global_rol_sipi }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_sipi}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_sipi}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_sipi}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_sipi}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_sipi}
 																{BEGIN searchCtrlBlock_global_rol_zf}
@@ -691,11 +567,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_zf}" {$filterRow_attrs_global_rol_zf}>
 			<label>{$label global_users global_rol_zf }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_zf}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_zf}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_zf}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_zf}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_zf}
 																{BEGIN searchCtrlBlock_global_rol_dashboard}
@@ -704,11 +578,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_dashboard}" {$filterRow_attrs_global_rol_dashboard}>
 			<label>{$label global_users global_rol_dashboard }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_dashboard}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_dashboard}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_dashboard}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_dashboard}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_dashboard}
 																{BEGIN searchCtrlBlock_global_rol_cpanel}
@@ -717,11 +589,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_cpanel}" {$filterRow_attrs_global_rol_cpanel}>
 			<label>{$label global_users global_rol_cpanel }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_cpanel}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_cpanel}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_cpanel}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_cpanel}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_cpanel}
 																{BEGIN searchCtrlBlock_global_rol_siis}
@@ -730,11 +600,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_siis}" {$filterRow_attrs_global_rol_siis}>
 			<label>{$label global_users global_rol_siis }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_siis}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_siis}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_siis}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_siis}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_siis}
 																{BEGIN searchCtrlBlock_global_rol_inmuebles}
@@ -743,11 +611,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_inmuebles}" {$filterRow_attrs_global_rol_inmuebles}>
 			<label>{$label global_users global_rol_inmuebles }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_inmuebles}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_inmuebles}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_inmuebles}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_inmuebles}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_inmuebles}
 																{BEGIN searchCtrlBlock_global_rol_hojar}
@@ -756,11 +622,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_hojar}" {$filterRow_attrs_global_rol_hojar}>
 			<label>{$label global_users global_rol_hojar }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_hojar}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_hojar}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_hojar}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_hojar}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_hojar}
 																{BEGIN searchCtrlBlock_global_rol_contratos}
@@ -769,11 +633,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_contratos}" {$filterRow_attrs_global_rol_contratos}>
 			<label>{$label global_users global_rol_contratos }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_contratos}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_contratos}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_contratos}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_contratos}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_contratos}
 																{BEGIN searchCtrlBlock_global_rol_ci}
@@ -782,11 +644,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_ci}" {$filterRow_attrs_global_rol_ci}>
 			<label>{$label global_users global_rol_ci }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_ci}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_ci}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_ci}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_ci}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_ci}
 																{BEGIN searchCtrlBlock_global_rol_almacen}
@@ -795,11 +655,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_almacen}" {$filterRow_attrs_global_rol_almacen}>
 			<label>{$label global_users global_rol_almacen }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_almacen}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_almacen}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_almacen}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_almacen}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_almacen}
 																{BEGIN searchCtrlBlock_global_rol_gh}
@@ -808,11 +666,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_gh}" {$filterRow_attrs_global_rol_gh}>
 			<label>{$label global_users global_rol_gh }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_gh}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_gh}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_gh}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_gh}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_gh}
 																{BEGIN searchCtrlBlock_global_rol_me}
@@ -821,11 +677,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_global_rol_me}" {$filterRow_attrs_global_rol_me}>
 			<label>{$label global_users global_rol_me }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_global_rol_me}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_global_rol_me}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_global_rol_me}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_global_rol_me}</span>
 						</div>
 		{END searchCtrlBlock_global_rol_me}
 																{BEGIN searchCtrlBlock_usr_minequipo_grupo}
@@ -834,11 +688,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_minequipo_grupo}" {$filterRow_attrs_usr_minequipo_grupo}>
 			<label>{$label global_users usr_minequipo_grupo }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_minequipo_grupo}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_minequipo_grupo}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_minequipo_grupo}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_minequipo_grupo}</span>
 						</div>
 		{END searchCtrlBlock_usr_minequipo_grupo}
 																{BEGIN searchCtrlBlock_usr_minequipo_lider}
@@ -847,11 +699,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_minequipo_lider}" {$filterRow_attrs_usr_minequipo_lider}>
 			<label>{$label global_users usr_minequipo_lider }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_minequipo_lider}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_minequipo_lider}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_minequipo_lider}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_minequipo_lider}</span>
 						</div>
 		{END searchCtrlBlock_usr_minequipo_lider}
 																{BEGIN searchCtrlBlock_usr_jefe}
@@ -860,11 +710,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_jefe}" {$filterRow_attrs_usr_jefe}>
 			<label>{$label global_users usr_jefe }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_jefe}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_jefe}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_jefe}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_jefe}</span>
 						</div>
 		{END searchCtrlBlock_usr_jefe}
 																{BEGIN searchCtrlBlock_usr_not_msj}
@@ -873,11 +721,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_not_msj}" {$filterRow_attrs_usr_not_msj}>
 			<label>{$label global_users usr_not_msj }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_not_msj}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_not_msj}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_not_msj}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_not_msj}</span>
 						</div>
 		{END searchCtrlBlock_usr_not_msj}
 																{BEGIN searchCtrlBlock_usr_not}
@@ -886,11 +732,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_not}" {$filterRow_attrs_usr_not}>
 			<label>{$label global_users usr_not }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_not}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_not}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_not}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_not}</span>
 						</div>
 		{END searchCtrlBlock_usr_not}
 																{BEGIN searchCtrlBlock_usr_entidad}
@@ -899,11 +743,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_entidad}" {$filterRow_attrs_usr_entidad}>
 			<label>{$label global_users usr_entidad }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_entidad}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_entidad}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_entidad}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_entidad}</span>
 						</div>
 		{END searchCtrlBlock_usr_entidad}
 																{BEGIN searchCtrlBlock_user_dep}
@@ -912,11 +754,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_user_dep}" {$filterRow_attrs_user_dep}>
 			<label>{$label global_users user_dep }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_user_dep}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_user_dep}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_user_dep}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_user_dep}</span>
 						</div>
 		{END searchCtrlBlock_user_dep}
 																{BEGIN searchCtrlBlock_usr_dependencia}
@@ -925,11 +765,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_dependencia}" {$filterRow_attrs_usr_dependencia}>
 			<label>{$label global_users usr_dependencia }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_dependencia}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_dependencia}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_dependencia}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_dependencia}</span>
 						</div>
 		{END searchCtrlBlock_usr_dependencia}
 																{BEGIN searchCtrlBlock_usr_status_sol}
@@ -938,11 +776,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_status_sol}" {$filterRow_attrs_usr_status_sol}>
 			<label>{$label global_users usr_status_sol }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_status_sol}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_status_sol}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_status_sol}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_status_sol}</span>
 						</div>
 		{END searchCtrlBlock_usr_status_sol}
 																{BEGIN searchCtrlBlock_usr_type_vinculacion}
@@ -951,11 +787,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_type_vinculacion}" {$filterRow_attrs_usr_type_vinculacion}>
 			<label>{$label global_users usr_type_vinculacion }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_type_vinculacion}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_type_vinculacion}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_type_vinculacion}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_type_vinculacion}</span>
 						</div>
 		{END searchCtrlBlock_usr_type_vinculacion}
 																{BEGIN searchCtrlBlock_usr_type_vinc}
@@ -964,11 +798,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_type_vinc}" {$filterRow_attrs_usr_type_vinc}>
 			<label>{$label global_users usr_type_vinc }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_type_vinc}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_type_vinc}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_type_vinc}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_type_vinc}</span>
 						</div>
 		{END searchCtrlBlock_usr_type_vinc}
 																{BEGIN searchCtrlBlock_usr_rdnkey}
@@ -977,11 +809,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_rdnkey}" {$filterRow_attrs_usr_rdnkey}>
 			<label>{$label global_users usr_rdnkey }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_rdnkey}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_rdnkey}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_rdnkey}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_rdnkey}</span>
 						</div>
 		{END searchCtrlBlock_usr_rdnkey}
 																{BEGIN searchCtrlBlock_usr_status}
@@ -990,11 +820,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_status}" {$filterRow_attrs_usr_status}>
 			<label>{$label global_users usr_status }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_status}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_status}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_status}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_status}</span>
 						</div>
 		{END searchCtrlBlock_usr_status}
 																{BEGIN searchCtrlBlock_usr_status_nomina}
@@ -1003,11 +831,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_status_nomina}" {$filterRow_attrs_usr_status_nomina}>
 			<label>{$label global_users usr_status_nomina }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_status_nomina}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_status_nomina}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_status_nomina}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_status_nomina}</span>
 						</div>
 		{END searchCtrlBlock_usr_status_nomina}
 																{BEGIN searchCtrlBlock_usr_image}
@@ -1016,11 +842,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_image}" {$filterRow_attrs_usr_image}>
 			<label>{$label global_users usr_image }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_image}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_image}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_image}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_image}</span>
 						</div>
 		{END searchCtrlBlock_usr_image}
 																{BEGIN searchCtrlBlock_usr_sessini}
@@ -1029,11 +853,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_sessini}" {$filterRow_attrs_usr_sessini}>
 			<label>{$label global_users usr_sessini }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_sessini}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_sessini}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_sessini}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_sessini}</span>
 						</div>
 		{END searchCtrlBlock_usr_sessini}
 																{BEGIN searchCtrlBlock_usr_inicial}
@@ -1042,11 +864,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_inicial}" {$filterRow_attrs_usr_inicial}>
 			<label>{$label global_users usr_inicial }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_inicial}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_inicial}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_inicial}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_inicial}</span>
 						</div>
 		{END searchCtrlBlock_usr_inicial}
 																{BEGIN searchCtrlBlock_usr_lname}
@@ -1055,11 +875,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_lname}" {$filterRow_attrs_usr_lname}>
 			<label>{$label global_users usr_lname }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_lname}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_lname}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_lname}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_lname}</span>
 						</div>
 		{END searchCtrlBlock_usr_lname}
 																{BEGIN searchCtrlBlock_usr_name}
@@ -1068,11 +886,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_name}" {$filterRow_attrs_usr_name}>
 			<label>{$label global_users usr_name }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_name}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_name}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_name}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_name}</span>
 						</div>
 		{END searchCtrlBlock_usr_name}
 																{BEGIN searchCtrlBlock_Password}
@@ -1081,11 +897,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_Password}" {$filterRow_attrs_Password}>
 			<label>{$label global_users Password }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_Password}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_Password}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_Password}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_Password}</span>
 						</div>
 		{END searchCtrlBlock_Password}
 																{BEGIN searchCtrlBlock_id_fk}
@@ -1094,11 +908,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_id_fk}" {$filterRow_attrs_id_fk}>
 			<label>{$label global_users id_fk }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_id_fk}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_id_fk}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_id_fk}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_id_fk}</span>
 						</div>
 		{END searchCtrlBlock_id_fk}
 																{BEGIN searchCtrlBlock_idusrglobal}
@@ -1107,11 +919,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_idusrglobal}" {$filterRow_attrs_idusrglobal}>
 			<label>{$label global_users idusrglobal }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_idusrglobal}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_idusrglobal}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_idusrglobal}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_idusrglobal}</span>
 						</div>
 		{END searchCtrlBlock_idusrglobal}
 																{BEGIN searchCtrlBlock_usr_nombresfull}
@@ -1120,11 +930,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_nombresfull}" {$filterRow_attrs_usr_nombresfull}>
 			<label>{$label global_users usr_nombresfull }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_nombresfull}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_nombresfull}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_nombresfull}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_nombresfull}</span>
 						</div>
 		{END searchCtrlBlock_usr_nombresfull}
 																{BEGIN searchCtrlBlock_usr_email}
@@ -1133,11 +941,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_email}" {$filterRow_attrs_usr_email}>
 			<label>{$label global_users usr_email }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_email}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_email}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_email}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_email}</span>
 						</div>
 		{END searchCtrlBlock_usr_email}
 																{BEGIN searchCtrlBlock_usr_dep}
@@ -1146,11 +952,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_dep}" {$filterRow_attrs_usr_dep}>
 			<label>{$label global_users usr_dep }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_dep}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_dep}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_dep}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_dep}</span>
 						</div>
 		{END searchCtrlBlock_usr_dep}
 																{BEGIN searchCtrlBlock_usr_cargo}
@@ -1159,11 +963,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_usr_cargo}" {$filterRow_attrs_usr_cargo}>
 			<label>{$label global_users usr_cargo }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_usr_cargo}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_usr_cargo}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_usr_cargo}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_usr_cargo}</span>
 						</div>
 		{END searchCtrlBlock_usr_cargo}
 																{BEGIN searchCtrlBlock_Username}
@@ -1172,11 +974,9 @@
 		<div class="form-group srchPanelRow {$filterRow_class_Username}" {$filterRow_attrs_Username}>
 			<label>{$label global_users Username }</label>
 
-							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_Username}</span>
+								<span class="rnr-searchtype" style="display: none;">{$searchtype_Username}</span>
 								<span class="rnr-searchcontrol">{$searchcontrol_Username}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_Username}</span>
 						</div>
 		{END searchCtrlBlock_Username}
 		
@@ -1226,9 +1026,8 @@
 {END crumb}
 </ol>
 {END breadcrumb}			</span>
-							 
-							 
-				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
+		 
+				<span class="navbar-form  navbar-collapse" data-cellId="supertop_c1" data-pageid="{$pageid}" data-itemid="simple_search" {$item_simple_search} data-topcell-item-type="simple_search" >
 				<span data-itemtype="simple_search" data-itemid="simple_search" {$item_simple_search} data-pageid="{$pageid}" class="form-group">
 
 <div  class="input-group">
@@ -1250,7 +1049,8 @@
 </div>
 		
 </span>			</span>
-		 
+							 
+							 
 				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="list_options" {$item_list_options} data-topcell-item-type="list_options" >
 				<span data-itemtype="list_options" data-itemid="list_options" {$item_list_options} data-pageid="{$pageid}" data-small data-button-item>
 	<span class="dropdown ">
@@ -1406,16 +1206,10 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_personalid"]:before {
 		content: "{$label global_users usr_personalid}";
 	}
-																																																											[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_directivo"]:before {
-		content: "{$label global_users usr_directivo}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_dep"]:before {
+																																																												[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_dep"]:before {
 		content: "{$label global_users usr_dep}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_dep_sup"]:before {
-		content: "{$label global_users usr_dep_sup}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_cargo"]:before {
+				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="usr_cargo"]:before {
 		content: "{$label global_users usr_cargo}";
 	}
 															}
@@ -1474,7 +1268,7 @@
 	 
 		{BEGIN Username_fieldheadercolumn}
 	{BEGIN Username_fieldheader}
-	<SPAN {$Username_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Username">
+	<SPAN {$Username_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Username">
 	{$label global_users Username }	{$arrow_icon_Username}
 	</SPAN>
 	{END Username_fieldheader}
@@ -1618,60 +1412,6 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field5}
-				 
-					{BEGIN cellblock_grid_headcell_field6}
-	<th
-	
-	{$cell_grid_headcell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$usr_directivo_class}
-			"
-
-			data-field="usr_directivo"
-	
-	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN usr_directivo_fieldheadercolumn}
-	{BEGIN usr_directivo_fieldheader}
-	<SPAN {$usr_directivo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_directivo">
-	{$label global_users usr_directivo }	{$arrow_icon_usr_directivo}
-	</SPAN>
-	{END usr_directivo_fieldheader}
-{END usr_directivo_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field6}
-				 
-					{BEGIN cellblock_grid_headcell_field7}
-	<th
-	
-	{$cell_grid_headcell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$usr_dep_sup_class}
-			"
-
-			data-field="usr_dep_sup"
-	
-	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN usr_dep_sup_fieldheadercolumn}
-	{BEGIN usr_dep_sup_fieldheader}
-	<SPAN {$usr_dep_sup_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_dep_sup">
-	{$label global_users usr_dep_sup }	{$arrow_icon_usr_dep_sup}
-	</SPAN>
-	{END usr_dep_sup_fieldheader}
-{END usr_dep_sup_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field7}
 							</tr>
 					 
 					 
@@ -1849,52 +1589,6 @@
 {END usr_cargo_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field5}
-				 
-					{BEGIN cellblock_grid_cell_field6}
-	<td
-	
-	{$cell_grid_cell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$usr_directivo_class}
-			"
-
-			data-field="usr_directivo"
-	
-	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN usr_directivo_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_directivo" data-default-width >
-{$usr_directivo_value}
-</span>
-{END usr_directivo_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field6}
-				 
-					{BEGIN cellblock_grid_cell_field7}
-	<td
-	
-	{$cell_grid_cell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$usr_dep_sup_class}
-			"
-
-			data-field="usr_dep_sup"
-	
-	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN usr_dep_sup_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="usr_dep_sup" data-default-width >
-{$usr_dep_sup_value}
-</span>
-{END usr_dep_sup_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field7}
 							</tr>
 					 
 					
@@ -2022,38 +1716,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field5}
-				 
-					{BEGIN cellblock_grid_footcell_field6}
-	<td
-	
-	{$cell_grid_footcell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field6}
-				 
-					{BEGIN cellblock_grid_footcell_field7}
-	<td
-	
-	{$cell_grid_footcell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="global_users_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field7}
 							</tr>
 					
 					</tfoot>

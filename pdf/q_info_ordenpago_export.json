@@ -1,0 +1,162 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel q_info_ordenpago export}","hidden":"{$item_hide_export_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_export_field}","text":{$Numero_Documento_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field1}","text":{$Fecha_de_Registro_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field2}","text":{$vigencia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field3}","text":{$Fecha_de_pago_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field4}","text":{$Estado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field5}","text":{$Valor_Bruto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field6}","text":{$Valor_Deducciones_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field7}","text":{$Identificacion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field8}","text":{$Tesoreria_Pagadora_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field9}","text":{$Identificacion_Pagaduria_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field10}","text":{$Obligaciones_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field11}","text":{$Tipo_Doc_Soporte_Compromiso_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field12}","text":{$Num_Doc_Soporte_Compromiso_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field13}","text":{$Objeto_del_Compromiso_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  

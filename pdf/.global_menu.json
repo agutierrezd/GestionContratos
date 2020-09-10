@@ -173,8 +173,13 @@ pdfDocument = {
 	
 			"text": [
 		
-				'',
-	  ],
+				
+			{"text":"","background":"#B22222","hidden":"{$item_hide_welcome_item}"},
+				
+				
+			{"text":"","background":"#7B68EE","hidden":"{$item_hide_welcome_item1}"},
+				
+		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },

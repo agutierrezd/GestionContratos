@@ -570,10 +570,6 @@ class Chart
 			return true;
 		if("dependencias_001" == $this->chrt_array['tables'][0])
 			return true;
-		if("ep_compromisos" == $this->chrt_array['tables'][0])
-			return true;
-		if("ep_obligaciones" == $this->chrt_array['tables'][0])
-			return true;
 		if("tparam_tipo_ct_regimen_tribut" == $this->chrt_array['tables'][0])
 			return true;
 		if("global_unspsc" == $this->chrt_array['tables'][0])
@@ -637,6 +633,14 @@ class Chart
 		if("contrato_modifica" == $this->chrt_array['tables'][0])
 			return true;
 		if("contrato_modifica" == $this->chrt_array['tables'][0])
+			return true;
+		if("contrato_modifica_track" == $this->chrt_array['tables'][0])
+			return true;
+		if("q_info_registros" == $this->chrt_array['tables'][0])
+			return true;
+		if("q_info_obligacion" == $this->chrt_array['tables'][0])
+			return true;
+		if("q_info_ordenpago" == $this->chrt_array['tables'][0])
 			return true;
 		return false;
 	}

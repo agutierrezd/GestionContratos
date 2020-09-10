@@ -14,6 +14,8 @@
 	// fill list of events
 		$this->events["BeforeMoveNextList"]=true;
 
+		$this->events["AfterEdit"]=true;
+
 
 	}
 
@@ -78,6 +80,86 @@ DB::Exec( $sql );
 ;		
 } // function BeforeMoveNextList
 
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// After record updated
+function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, &$pageObject)
+{
+
+		//**********  Insert a record into another table  ************
+
+$data = array();
+$data["id_cont_fk"] = $oldvalues['id_cont'];
+$data["cont_nit_contra_ta"] = $oldvalues['cont_nit_contra_ta'];
+$data["cont_fecha_inicio"] = $oldvalues['cont_fecha_inicio'];
+$data["cont_fechafinal"] = $oldvalues['cont_fechafinal'];
+$data["cont_valorinicial"] = $oldvalues['cont_valorinicial'];
+$data["cont_valormensual"] = $oldvalues['cont_valormensual'];
+$data["cont_cesion"] = $values['cont_cesion'];
+$data["cont_modifica"] = $values['cont_modifica'];
+DB::Insert("contrato_modifica_track", $data );
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;		
+} // function AfterEdit
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		
 		

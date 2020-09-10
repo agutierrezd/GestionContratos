@@ -31,7 +31,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscontrato_modifica_cesion["Spanish"]["mod_id"] = "Mod Id";
 	$fieldToolTipscontrato_modifica_cesion["Spanish"]["mod_id"] = "";
 	$placeHolderscontrato_modifica_cesion["Spanish"]["mod_id"] = "";
-	$fieldLabelscontrato_modifica_cesion["Spanish"]["id_cont_fk"] = "Id Cont Fk";
+	$fieldLabelscontrato_modifica_cesion["Spanish"]["id_cont_fk"] = "Número interno";
 	$fieldToolTipscontrato_modifica_cesion["Spanish"]["id_cont_fk"] = "";
 	$placeHolderscontrato_modifica_cesion["Spanish"]["id_cont_fk"] = "";
 	$fieldLabelscontrato_modifica_cesion["Spanish"]["mod_tipo"] = "Tipo de modificación";

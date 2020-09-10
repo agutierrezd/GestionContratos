@@ -513,5 +513,9 @@ array( 'cell' => 'c2' ) ),
 'exportFormat' => 2,
 'exportDelimiter' => ',',
 'exportSelectDelimiter' => false,
-'exportSelectFields' => false );
+'exportSelectFields' => false,
+'fileTypes' => array( 'excel' => true,
+'word' => true,
+'csv' => true,
+'xml' => false ) );
 		?>

@@ -128,9 +128,6 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_export_field1}","text":{$Valor_Operaciones_pdfvalue}},
 				
-				
-			{"hidden":"{$item_hide_export_field3}","text":{$OID_pdfvalue}},
-				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

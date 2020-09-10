@@ -1,0 +1,391 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-search" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="search_header" data-itemid="search_header" {$item_search_header} data-pageid="{$pageid}" >{$pagetitlelabel contrato_modifica_track search}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="6"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="6"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN track_id_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_track_id}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="track_id" 
+	
+	data-signal-error-for="track_id{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field" {$item_integrated_search_field} data-pageid="{$pageid}" data-field="track_id" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_track_id}">
+		{$label contrato_modifica_track track_id }	</label>
+	<div class="r-search-option">
+		{$searchtype_track_id}
+	</div>
+	<div class="r-search-field">
+		{$track_id_editcontrol}	</div>
+	<div class="r-search-field">
+		{$track_id_editcontrol1}
+	</div>
+	
+</div>
+
+{END track_id_fieldblock}
+											
+{BEGIN id_cont_fk_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_cont_fk}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="id_cont_fk" 
+	
+	data-signal-error-for="id_cont_fk{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field1" {$item_integrated_search_field1} data-pageid="{$pageid}" data-field="id_cont_fk" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_id_cont_fk}">
+		{$label contrato_modifica_track id_cont_fk }	</label>
+	<div class="r-search-option">
+		{$searchtype_id_cont_fk}
+	</div>
+	<div class="r-search-field">
+		{$id_cont_fk_editcontrol}	</div>
+	<div class="r-search-field">
+		{$id_cont_fk_editcontrol1}
+	</div>
+	
+</div>
+
+{END id_cont_fk_fieldblock}
+											
+{BEGIN cont_nit_contra_ta_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_nit_contra_ta}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="cont_nit_contra_ta" 
+	
+	data-signal-error-for="cont_nit_contra_ta{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field2" {$item_integrated_search_field2} data-pageid="{$pageid}" data-field="cont_nit_contra_ta" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_nit_contra_ta}">
+		{$label contrato_modifica_track cont_nit_contra_ta }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_nit_contra_ta}
+	</div>
+	<div class="r-search-field">
+		{$cont_nit_contra_ta_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_nit_contra_ta_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_nit_contra_ta_fieldblock}
+											
+{BEGIN cont_fecha_inicio_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fecha_inicio}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="cont_fecha_inicio" 
+	
+	data-signal-error-for="cont_fecha_inicio{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field3" {$item_integrated_search_field3} data-pageid="{$pageid}" data-field="cont_fecha_inicio" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_fecha_inicio}">
+		{$label contrato_modifica_track cont_fecha_inicio }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_fecha_inicio}
+	</div>
+	<div class="r-search-field">
+		{$cont_fecha_inicio_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_fecha_inicio_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_fecha_inicio_fieldblock}
+											
+{BEGIN cont_fechafinal_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_fechafinal}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="cont_fechafinal" 
+	
+	data-signal-error-for="cont_fechafinal{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field4" {$item_integrated_search_field4} data-pageid="{$pageid}" data-field="cont_fechafinal" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_fechafinal}">
+		{$label contrato_modifica_track cont_fechafinal }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_fechafinal}
+	</div>
+	<div class="r-search-field">
+		{$cont_fechafinal_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_fechafinal_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_fechafinal_fieldblock}
+											
+{BEGIN cont_valorinicial_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valorinicial}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="cont_valorinicial" 
+	
+	data-signal-error-for="cont_valorinicial{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="cont_valorinicial" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_valorinicial}">
+		{$label contrato_modifica_track cont_valorinicial }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_valorinicial}
+	</div>
+	<div class="r-search-field">
+		{$cont_valorinicial_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_valorinicial_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_valorinicial_fieldblock}
+											
+{BEGIN cont_valormensual_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valormensual}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="cont_valormensual" 
+	
+	data-signal-error-for="cont_valormensual{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field6" {$item_integrated_search_field6} data-pageid="{$pageid}" data-field="cont_valormensual" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_valormensual}">
+		{$label contrato_modifica_track cont_valormensual }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_valormensual}
+	</div>
+	<div class="r-search-field">
+		{$cont_valormensual_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_valormensual_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_valormensual_fieldblock}
+											
+{BEGIN cont_cesion_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_cesion}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="cont_cesion" 
+	
+	data-signal-error-for="cont_cesion{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field7" {$item_integrated_search_field7} data-pageid="{$pageid}" data-field="cont_cesion" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_cesion}">
+		{$label contrato_modifica_track cont_cesion }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_cesion}
+	</div>
+	<div class="r-search-field">
+		{$cont_cesion_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_cesion_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_cesion_fieldblock}
+											
+{BEGIN cont_modifica_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_modifica}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="cont_modifica" 
+	
+	data-signal-error-for="cont_modifica{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field8" {$item_integrated_search_field8} data-pageid="{$pageid}" data-field="cont_modifica" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_cont_modifica}">
+		{$label contrato_modifica_track cont_modifica }	</label>
+	<div class="r-search-option">
+		{$searchtype_cont_modifica}
+	</div>
+	<div class="r-search-field">
+		{$cont_modifica_editcontrol}	</div>
+	<div class="r-search-field">
+		{$cont_modifica_editcontrol1}
+	</div>
+	
+</div>
+
+{END cont_modifica_fieldblock}
+											
+{BEGIN sys_last_upd_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sys_last_upd}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="sys_last_upd" 
+	
+	data-signal-error-for="sys_last_upd{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="sys_last_upd" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_sys_last_upd}">
+		{$label contrato_modifica_track sys_last_upd }	</label>
+	<div class="r-search-option">
+		{$searchtype_sys_last_upd}
+	</div>
+	<div class="r-search-field">
+		{$sys_last_upd_editcontrol}	</div>
+	<div class="r-search-field">
+		{$sys_last_upd_editcontrol1}
+	</div>
+	
+</div>
+
+{END sys_last_upd_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="6"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-12
+	">
+	 
+		<span data-itemtype="search_search" data-itemid="search_search" {$item_search_search} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-primary   
+	" {$searchbutton_attrs} >
+							Buscar			</a>
+</span>
+	 
+		<span data-itemtype="search_reset" data-itemid="search_reset" {$item_search_reset} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$resetbutton_attrs} >
+							Reiniciar			</a>
+</span>
+	 
+		{BEGIN back_button}
+<span data-itemtype="search_back_list" data-itemid="search_back_list" {$item_search_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN cancel_button}
+<span data-itemtype="search_cancel" data-itemid="search_cancel" {$item_search_cancel} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" id="cancelButton{$id}" >
+							Cancelar			</a>
+</span>
+{END cancel_button}
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

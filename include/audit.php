@@ -515,14 +515,6 @@ class AuditTrailTable
 		{
 			return true;
 		}
-		if($table=="ep_compromisos")
-		{
-			return true;
-		}
-		if($table=="ep_obligaciones")
-		{
-			return true;
-		}
 		if($table=="tparam_tipo_ct_regimen_tribut")
 		{
 			return true;
@@ -650,6 +642,22 @@ class AuditTrailTable
 		if($table=="contrato_modifica_cesion")
 		{
 			return true;
+		}
+		if($table=="contrato_modifica_track")
+		{
+			return false;
+		}
+		if($table=="q_info_registros")
+		{
+			return false;
+		}
+		if($table=="q_info_obligacion")
+		{
+			return false;
+		}
+		if($table=="q_info_ordenpago")
+		{
+			return false;
 		}
 	}
 	
@@ -1172,14 +1180,6 @@ class AuditTrailFile
 		{
 			return true;
 		}
-		if($table=="ep_compromisos")
-		{
-			return true;
-		}
-		if($table=="ep_obligaciones")
-		{
-			return true;
-		}
 		if($table=="tparam_tipo_ct_regimen_tribut")
 		{
 			return true;
@@ -1307,6 +1307,22 @@ class AuditTrailFile
 		if($table=="contrato_modifica_cesion")
 		{
 			return true;
+		}
+		if($table=="contrato_modifica_track")
+		{
+			return false;
+		}
+		if($table=="q_info_registros")
+		{
+			return false;
+		}
+		if($table=="q_info_obligacion")
+		{
+			return false;
+		}
+		if($table=="q_info_ordenpago")
+		{
+			return false;
 		}
 	}
 	

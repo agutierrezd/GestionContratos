@@ -7681,69 +7681,11 @@ $detailsTablesData["contrato"] = array();
 				$detailsTablesData["contrato"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="id_cont_FK";
-//	ep_compromisos
-	
-	
-
-		$dIndex = 5;
-	$detailsParam = array();
-	$detailsParam["dDataSourceTable"]="ep_compromisos";
-		$detailsParam["dOriginalTable"] = "ep_compromisos";
-
-
-
-				$detailsParam["dType"]=PAGE_LIST;
-	$detailsParam["dShortTable"] = "ep_compromisos";
-	$detailsParam["dCaptionTable"] = GetTableCaption("ep_compromisos");
-	$detailsParam["masterKeys"] =array();
-	$detailsParam["detailKeys"] =array();
-
-
-		
-	$detailsTablesData["contrato"][$dIndex] = $detailsParam;
-
-	
-		$detailsTablesData["contrato"][$dIndex]["masterKeys"] = array();
-
-	$detailsTablesData["contrato"][$dIndex]["masterKeys"][]="cont_nit_contra_ta";
-
-				$detailsTablesData["contrato"][$dIndex]["detailKeys"] = array();
-
-	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="Identificacion";
-//	ep_obligaciones
-	
-	
-
-		$dIndex = 6;
-	$detailsParam = array();
-	$detailsParam["dDataSourceTable"]="ep_obligaciones";
-		$detailsParam["dOriginalTable"] = "ep_obligaciones";
-
-
-
-				$detailsParam["dType"]=PAGE_LIST;
-	$detailsParam["dShortTable"] = "ep_obligaciones";
-	$detailsParam["dCaptionTable"] = GetTableCaption("ep_obligaciones");
-	$detailsParam["masterKeys"] =array();
-	$detailsParam["detailKeys"] =array();
-
-
-		
-	$detailsTablesData["contrato"][$dIndex] = $detailsParam;
-
-	
-		$detailsTablesData["contrato"][$dIndex]["masterKeys"] = array();
-
-	$detailsTablesData["contrato"][$dIndex]["masterKeys"][]="cont_nit_contra_ta";
-
-				$detailsTablesData["contrato"][$dIndex]["detailKeys"] = array();
-
-	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="Identificacion";
 //	contrato_oe
 	
 	
 
-		$dIndex = 7;
+		$dIndex = 5;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="contrato_oe";
 		$detailsParam["dOriginalTable"] = "contrato_oe";
@@ -7772,7 +7714,7 @@ $detailsTablesData["contrato"] = array();
 	
 	
 
-		$dIndex = 8;
+		$dIndex = 6;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="contrato_modifica";
 		$detailsParam["dOriginalTable"] = "contrato_modifica";
@@ -7801,7 +7743,7 @@ $detailsTablesData["contrato"] = array();
 	
 	
 
-		$dIndex = 9;
+		$dIndex = 7;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="contrato_modifica_prorroga";
 		$detailsParam["dOriginalTable"] = "contrato_modifica";
@@ -7830,7 +7772,7 @@ $detailsTablesData["contrato"] = array();
 	
 	
 
-		$dIndex = 10;
+		$dIndex = 8;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="contrato_modifica_cesion";
 		$detailsParam["dOriginalTable"] = "contrato_modifica";
@@ -7855,6 +7797,137 @@ $detailsTablesData["contrato"] = array();
 				$detailsTablesData["contrato"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="id_cont_fk";
+//	contrato_modifica_track
+	
+	
+
+		$dIndex = 9;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="contrato_modifica_track";
+		$detailsParam["dOriginalTable"] = "contrato_modifica_track";
+
+
+
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "contrato_modifica_track";
+	$detailsParam["dCaptionTable"] = GetTableCaption("contrato_modifica_track");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["contrato"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["contrato"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["masterKeys"][]="id_cont";
+
+				$detailsTablesData["contrato"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="id_cont_fk";
+//	q_info_registros
+	
+	
+
+		$dIndex = 10;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="q_info_registros";
+		$detailsParam["dOriginalTable"] = "q_info_registros";
+
+
+
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "q_info_registros";
+	$detailsParam["dCaptionTable"] = GetTableCaption("q_info_registros");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["contrato"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["contrato"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["masterKeys"][]="cont_nit_contra_ta";
+
+	$detailsTablesData["contrato"][$dIndex]["masterKeys"][]="cont_ano";
+
+				$detailsTablesData["contrato"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="Identificacion";
+
+		
+	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="vigencia";
+//	q_info_obligacion
+	
+	
+
+		$dIndex = 11;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="q_info_obligacion";
+		$detailsParam["dOriginalTable"] = "q_info_obligacion";
+
+
+
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "q_info_obligacion";
+	$detailsParam["dCaptionTable"] = GetTableCaption("q_info_obligacion");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["contrato"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["contrato"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["masterKeys"][]="cont_nit_contra_ta";
+
+	$detailsTablesData["contrato"][$dIndex]["masterKeys"][]="cont_ano";
+
+				$detailsTablesData["contrato"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="Identificacion";
+
+		
+	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="vigencia";
+//	q_info_ordenpago
+	
+	
+
+		$dIndex = 12;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="q_info_ordenpago";
+		$detailsParam["dOriginalTable"] = "q_info_ordenpago";
+
+
+
+				$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "q_info_ordenpago";
+	$detailsParam["dCaptionTable"] = GetTableCaption("q_info_ordenpago");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["contrato"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["contrato"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["masterKeys"][]="cont_nit_contra_ta";
+
+	$detailsTablesData["contrato"][$dIndex]["masterKeys"][]="cont_ano";
+
+				$detailsTablesData["contrato"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="Identificacion";
+
+		
+	$detailsTablesData["contrato"][$dIndex]["detailKeys"][]="vigencia";
 
 // tables which are master tables for current table (detail)
 $masterTablesData["contrato"] = array();

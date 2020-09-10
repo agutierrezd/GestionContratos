@@ -488,8 +488,6 @@ class ConnectionManager
 		$connectionsIds["dependencia"] = "edl_at_localhost";
 		$connectionsIds["contrato_rp"] = "dbct_at_localhost";
 		$connectionsIds["dependencias_001"] = "edl_at_localhost";
-		$connectionsIds["ep_compromisos"] = "sep2_at_localhost";
-		$connectionsIds["ep_obligaciones"] = "sep2_at_localhost";
 		$connectionsIds["tparam_tipo_ct_regimen_tribut"] = "dbct_at_localhost";
 		$connectionsIds["global_unspsc"] = "mincit_global_at_localhost";
 		$connectionsIds["cargo"] = "edl_at_localhost";
@@ -522,6 +520,10 @@ class ConnectionManager
 		$connectionsIds["contrato_modifica_type"] = "dbct_at_localhost";
 		$connectionsIds["contrato_modifica_prorroga"] = "dbct_at_localhost";
 		$connectionsIds["contrato_modifica_cesion"] = "dbct_at_localhost";
+		$connectionsIds["contrato_modifica_track"] = "dbct_at_localhost";
+		$connectionsIds["q_info_registros"] = "sep2_at_localhost";
+		$connectionsIds["q_info_obligacion"] = "sep2_at_localhost";
+		$connectionsIds["q_info_ordenpago"] = "sep2_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	

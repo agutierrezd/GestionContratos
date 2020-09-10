@@ -31,10 +31,10 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsinterventor_interno["Spanish"]["interventor_id"] = "Interventor Id";
 	$fieldToolTipsinterventor_interno["Spanish"]["interventor_id"] = "";
 	$placeHoldersinterventor_interno["Spanish"]["interventor_id"] = "";
-	$fieldLabelsinterventor_interno["Spanish"]["id_cont_fk"] = "Id Cont Fk";
+	$fieldLabelsinterventor_interno["Spanish"]["id_cont_fk"] = "Número interno";
 	$fieldToolTipsinterventor_interno["Spanish"]["id_cont_fk"] = "";
 	$placeHoldersinterventor_interno["Spanish"]["id_cont_fk"] = "";
-	$fieldLabelsinterventor_interno["Spanish"]["cont_hash_fk"] = "Usuario";
+	$fieldLabelsinterventor_interno["Spanish"]["cont_hash_fk"] = "Hash";
 	$fieldToolTipsinterventor_interno["Spanish"]["cont_hash_fk"] = "";
 	$placeHoldersinterventor_interno["Spanish"]["cont_hash_fk"] = "";
 	$fieldLabelsinterventor_interno["Spanish"]["idusrglobal_fk"] = "Supervisor";
@@ -46,7 +46,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsinterventor_interno["Spanish"]["sys_user"] = "Usuario";
 	$fieldToolTipsinterventor_interno["Spanish"]["sys_user"] = "";
 	$placeHoldersinterventor_interno["Spanish"]["sys_user"] = "";
-	$fieldLabelsinterventor_interno["Spanish"]["sup_status"] = "Habilitado";
+	$fieldLabelsinterventor_interno["Spanish"]["sup_status"] = "Estado de vinculación";
 	$fieldToolTipsinterventor_interno["Spanish"]["sup_status"] = "";
 	$placeHoldersinterventor_interno["Spanish"]["sup_status"] = "";
 	$fieldLabelsinterventor_interno["Spanish"]["sup_fechanot"] = "Fecha notificación";
@@ -479,7 +479,7 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Lookup wizard");
+	$edata = array("EditFormat" => "HiddenField");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -489,34 +489,6 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 	
 	
 
-// Begin Lookup settings
-				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "contrato";
-			$edata["autoCompleteFieldsOnEdit"] = 0;
-	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
-
-	
-		
-	$edata["LinkField"] = "id_cont";
-	$edata["LinkFieldType"] = 3;
-	$edata["DisplayField"] = "id_cont";
-
-	
-
-	
-	$edata["LookupOrderBy"] = "";
-
-	
-	
-	
-	
-
-	
-	
-		$edata["SelectSize"] = 1;
-
-// End Lookup Settings
 
 
 	
@@ -559,7 +531,7 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -784,7 +756,8 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 // Begin Lookup settings
 				$edata["LookupType"] = 2;
 	$edata["LookupTable"] = "global_users";
-			$edata["autoCompleteFieldsOnEdit"] = 0;
+		$edata["listPageId"] = "list";
+		$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
 		$edata["autoCompleteFields"][] = array('masterF'=>"documento_id", 'lookupF'=>"usr_personalid");
 	$edata["autoCompleteFields"][] = array('masterF'=>"nombres", 'lookupF'=>"usr_name");
@@ -792,7 +765,7 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 	$edata["autoCompleteFields"][] = array('masterF'=>"cargo_id", 'lookupF'=>"usr_cargo");
 	$edata["autoCompleteFields"][] = array('masterF'=>"dependencia_id", 'lookupF'=>"usr_dep");
 	$edata["autoCompleteFields"][] = array('masterF'=>"sup_mailnot", 'lookupF'=>"usr_email");
-	$edata["LCType"] = 1;
+	$edata["LCType"] = 2;
 
 	
 		

@@ -470,6 +470,9 @@ pdfDocument = {
 			"stack": [
 		
 				
+			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel interventor_interno cont_hash_fk }","bold":true},{"text":{$cont_hash_fk_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
 			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel interventor_interno id_cont_fk }","bold":true},{"text":{$id_cont_fk_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
@@ -525,10 +528,8 @@ pdfDocument = {
 	
 			"stack": [
 		
-				
-			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel interventor_interno cont_hash_fk }","bold":true},{"text":{$cont_hash_fk_pdfvalue}}],"margin":[0,0,0,15]},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },

@@ -113,19 +113,6 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_Valor_Oblig_no_Orden}</span>
 						</div>
 		{END searchCtrlBlock_Valor_Oblig_no_Orden}
-																{BEGIN searchCtrlBlock_OID}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_OID}" {$filterRow_attrs_OID}>
-			<label>{$label ep_obligaciones OID }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_OID}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_OID}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_OID}</span>
-						</div>
-		{END searchCtrlBlock_OID}
 																{BEGIN searchCtrlBlock_Valor_Operaciones}
 
 
@@ -510,9 +497,6 @@
 <div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
 {END message_block}	<style>
 @media screen and (max-width: 767px) {
-		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="OID"]:before {
-		content: "{$label ep_obligaciones OID}";
-	}
 					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Fecha_de_Creacion"]:before {
 		content: "{$label ep_obligaciones Fecha_de_Creacion}";
 	}
@@ -587,7 +571,7 @@
 	 
 		{BEGIN Fecha_de_Creacion_fieldheadercolumn}
 	{BEGIN Fecha_de_Creacion_fieldheader}
-	<SPAN {$Fecha_de_Creacion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Fecha_de_Creacion">
+	<SPAN {$Fecha_de_Creacion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Fecha_de_Creacion">
 	{$label ep_obligaciones Fecha_de_Creacion }	{$arrow_icon_Fecha_de_Creacion}
 	</SPAN>
 	{END Fecha_de_Creacion_fieldheader}
@@ -614,7 +598,7 @@
 	 
 		{BEGIN Valor_Actual_fieldheadercolumn}
 	{BEGIN Valor_Actual_fieldheader}
-	<SPAN {$Valor_Actual_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Actual">
+	<SPAN {$Valor_Actual_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Actual">
 	{$label ep_obligaciones Valor_Actual }	{$arrow_icon_Valor_Actual}
 	</SPAN>
 	{END Valor_Actual_fieldheader}
@@ -641,7 +625,7 @@
 	 
 		{BEGIN Valor_Deducciones_fieldheadercolumn}
 	{BEGIN Valor_Deducciones_fieldheader}
-	<SPAN {$Valor_Deducciones_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Deducciones">
+	<SPAN {$Valor_Deducciones_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Deducciones">
 	{$label ep_obligaciones Valor_Deducciones }	{$arrow_icon_Valor_Deducciones}
 	</SPAN>
 	{END Valor_Deducciones_fieldheader}
@@ -668,7 +652,7 @@
 	 
 		{BEGIN Valor_Operaciones_fieldheadercolumn}
 	{BEGIN Valor_Operaciones_fieldheader}
-	<SPAN {$Valor_Operaciones_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Operaciones">
+	<SPAN {$Valor_Operaciones_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Operaciones">
 	{$label ep_obligaciones Valor_Operaciones }	{$arrow_icon_Valor_Operaciones}
 	</SPAN>
 	{END Valor_Operaciones_fieldheader}
@@ -695,7 +679,7 @@
 	 
 		{BEGIN Valor_Oblig_no_Orden_fieldheadercolumn}
 	{BEGIN Valor_Oblig_no_Orden_fieldheader}
-	<SPAN {$Valor_Oblig_no_Orden_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Oblig_no_Orden">
+	<SPAN {$Valor_Oblig_no_Orden_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Oblig_no_Orden">
 	{$label ep_obligaciones Valor_Oblig_no_Orden }	{$arrow_icon_Valor_Oblig_no_Orden}
 	</SPAN>
 	{END Valor_Oblig_no_Orden_fieldheader}
@@ -749,7 +733,7 @@
 	 
 		{BEGIN Obligaciones_fieldheadercolumn}
 	{BEGIN Obligaciones_fieldheader}
-	<SPAN {$Obligaciones_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Obligaciones">
+	<SPAN {$Obligaciones_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Obligaciones">
 	{$label ep_obligaciones Obligaciones }	{$arrow_icon_Obligaciones}
 	</SPAN>
 	{END Obligaciones_fieldheader}
@@ -785,33 +769,6 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field7}
-				 
-					{BEGIN cellblock_grid_headcell_field8}
-	<th
-	
-	{$cell_grid_headcell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$OID_class}
-			"
-
-			data-field="OID"
-	
-	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN OID_fieldheadercolumn}
-	{BEGIN OID_fieldheader}
-	<SPAN {$OID_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="OID">
-	{$label ep_obligaciones OID }	{$arrow_icon_OID}
-	</SPAN>
-	{END OID_fieldheader}
-{END OID_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field8}
 							</tr>
 					 
 					 
@@ -1037,29 +994,6 @@
 {END Ordenes_de_Pago_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field7}
-				 
-					{BEGIN cellblock_grid_cell_field8}
-	<td
-	
-	{$cell_grid_cell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$OID_class}
-			"
-
-			data-field="OID"
-	
-	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN OID_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="OID" data-default-width >
-{$OID_value}
-</span>
-{END OID_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field8}
 							</tr>
 					 
 					
@@ -1127,7 +1061,7 @@
 	 
 		{BEGIN Valor_Actual_fieldfootercolumn}
 {BEGIN Valor_Actual_showtotal}
-<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Actual">
+<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Actual">
 	Total	{$Valor_Actual_total}
 </span>
 {END Valor_Actual_showtotal}
@@ -1154,7 +1088,7 @@
 	 
 		{BEGIN Valor_Deducciones_fieldfootercolumn}
 {BEGIN Valor_Deducciones_showtotal}
-<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Deducciones">
+<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Deducciones">
 	Total	{$Valor_Deducciones_total}
 </span>
 {END Valor_Deducciones_showtotal}
@@ -1181,7 +1115,7 @@
 	 
 		{BEGIN Valor_Operaciones_fieldfootercolumn}
 {BEGIN Valor_Operaciones_showtotal}
-<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Operaciones">
+<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Operaciones">
 	Total	{$Valor_Operaciones_total}
 </span>
 {END Valor_Operaciones_showtotal}
@@ -1208,7 +1142,7 @@
 	 
 		{BEGIN Valor_Oblig_no_Orden_fieldfootercolumn}
 {BEGIN Valor_Oblig_no_Orden_showtotal}
-<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Oblig_no_Orden">
+<span data-itemtype="grid_field_totals" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Oblig_no_Orden">
 	Total	{$Valor_Oblig_no_Orden_total}
 </span>
 {END Valor_Oblig_no_Orden_showtotal}
@@ -1265,22 +1199,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field7}
-				 
-					{BEGIN cellblock_grid_footcell_field8}
-	<td
-	
-	{$cell_grid_footcell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="ep_obligaciones_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field8}
 							</tr>
 					
 					</tfoot>

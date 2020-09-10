@@ -283,10 +283,6 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("dependencias_001" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
-	if ("ep_compromisos" == $shortTName && ($type===false || ($type!==false && $type == 0)))
-		return true;
-	if ("ep_obligaciones" == $shortTName && ($type===false || ($type!==false && $type == 0)))
-		return true;
 	if ("tparam_tipo_ct_regimen_tribut" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	if ("global_unspsc" == $shortTName && ($type===false || ($type!==false && $type == 0)))
@@ -350,6 +346,14 @@ function checkTableName($shortTName, $type=false)
 	if ("contrato_modifica_prorroga" == $shortTName && ($type===false || ($type!==false && $type == 1)))
 		return true;
 	if ("contrato_modifica_cesion" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("contrato_modifica_track" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("q_info_registros" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("q_info_obligacion" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("q_info_ordenpago" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
 	return false;
 }
@@ -763,24 +767,6 @@ function GetTablesList($pdfMode = false)
 	}
 	$tableAvailable = true;
 	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("ep_compromisos");
-		$tableAvailable = ( strpos($strPerm, "P") !== false
-			|| $pdfMode && strpos($strPerm, "S") !== false );
-	}
-	if( $tableAvailable ) {
-		$arr[]="ep_compromisos";
-	}
-	$tableAvailable = true;
-	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("ep_obligaciones");
-		$tableAvailable = ( strpos($strPerm, "P") !== false
-			|| $pdfMode && strpos($strPerm, "S") !== false );
-	}
-	if( $tableAvailable ) {
-		$arr[]="ep_obligaciones";
-	}
-	$tableAvailable = true;
-	if( $checkPermissions ) {
 		$strPerm = GetUserPermissions("tparam_tipo_ct_regimen_tribut");
 		$tableAvailable = ( strpos($strPerm, "P") !== false
 			|| $pdfMode && strpos($strPerm, "S") !== false );
@@ -1067,6 +1053,42 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="contrato_modifica_cesion";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contrato_modifica_track");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contrato_modifica_track";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_info_registros");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_info_registros";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_info_obligacion");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_info_obligacion";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_info_ordenpago");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_info_ordenpago";
+	}
 	return $arr;
 }
 
@@ -1116,8 +1138,6 @@ function GetTablesListWithoutSecurity()
 	$arr[]="dependencia";
 	$arr[]="contrato_rp";
 	$arr[]="dependencias_001";
-	$arr[]="ep_compromisos";
-	$arr[]="ep_obligaciones";
 	$arr[]="tparam_tipo_ct_regimen_tribut";
 	$arr[]="global_unspsc";
 	$arr[]="cargo";
@@ -1150,6 +1170,10 @@ function GetTablesListWithoutSecurity()
 	$arr[]="contrato_modifica_type";
 	$arr[]="contrato_modifica_prorroga";
 	$arr[]="contrato_modifica_cesion";
+	$arr[]="contrato_modifica_track";
+	$arr[]="q_info_registros";
+	$arr[]="q_info_obligacion";
+	$arr[]="q_info_ordenpago";
 	return $arr;
 }
 
@@ -2121,16 +2145,6 @@ function GetUserPermissionsStatic( $table )
 //	default permissions
 		return "ADESPI".$extraPerm;
 	}
-	if( $table=="ep_compromisos" )
-	{
-//	default permissions
-		return "ADESPI".$extraPerm;
-	}
-	if( $table=="ep_obligaciones" )
-	{
-//	default permissions
-		return "ADESPI".$extraPerm;
-	}
 	if( $table=="tparam_tipo_ct_regimen_tribut" )
 	{
 //	default permissions
@@ -2287,6 +2301,26 @@ function GetUserPermissionsStatic( $table )
 		return "ADESPI".$extraPerm;
 	}
 	if( $table=="contrato_modifica_cesion" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="contrato_modifica_track" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="q_info_registros" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="q_info_obligacion" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="q_info_ordenpago" )
 	{
 //	default permissions
 		return "ADESPI".$extraPerm;

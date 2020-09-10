@@ -697,13 +697,19 @@ pdfDocument = {
 			{"text":"","hidden":"{$item_hide_grid_details_link}"},
 				
 				
+			{"text":"","hidden":"{$item_hide_grid_details_link3}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_details_link4}"},
+				
+				
 			{"text":"","hidden":"{$item_hide_grid_details_link1}"},
 				
 				
 			{"text":"","hidden":"{$item_hide_grid_details_link2}"},
 				
 				
-			{"text":"","hidden":"{$item_hide_grid_details_link3}"},
+			{"text":"","hidden":"{$item_hide_grid_details_link5}"},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1073,16 +1079,6 @@ pdfDocument = {
 		{END details_contrato_rp},
 				
 				
-			 {BEGIN details_ep_compromisos}
-			{$displayDetailTable_ep_compromisos }
-		{END details_ep_compromisos},
-				
-				
-			 {BEGIN details_ep_obligaciones}
-			{$displayDetailTable_ep_obligaciones }
-		{END details_ep_obligaciones},
-				
-				
 			 {BEGIN details_contrato_oe}
 			{$displayDetailTable_contrato_oe }
 		{END details_contrato_oe},
@@ -1101,6 +1097,26 @@ pdfDocument = {
 			 {BEGIN details_contrato_modifica_cesion}
 			{$displayDetailTable_contrato_modifica_cesion }
 		{END details_contrato_modifica_cesion},
+				
+				
+			 {BEGIN details_contrato_modifica_track}
+			{$displayDetailTable_contrato_modifica_track }
+		{END details_contrato_modifica_track},
+				
+				
+			 {BEGIN details_q_info_registros}
+			{$displayDetailTable_q_info_registros }
+		{END details_q_info_registros},
+				
+				
+			 {BEGIN details_q_info_obligacion}
+			{$displayDetailTable_q_info_obligacion }
+		{END details_q_info_obligacion},
+				
+				
+			 {BEGIN details_q_info_ordenpago}
+			{$displayDetailTable_q_info_ordenpago }
+		{END details_q_info_ordenpago},
 				
 		  ],
   "border": [ true, true, true, true ],

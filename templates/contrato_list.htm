@@ -758,7 +758,7 @@
 			<div>
 				<label for="printDetailscontrato_attached{$id}">
 					<input type="checkbox" value="contrato_attached" id="printDetailscontrato_attached{$id}" checked>
-					ANEXOS				</label>
+					Anexos				</label>
 			</div>
 			{END print_details_contrato_attached}
 														{BEGIN print_details_polizas_master}
@@ -772,7 +772,7 @@
 			<div>
 				<label for="printDetailsinterventor_interno{$id}">
 					<input type="checkbox" value="interventor_interno" id="printDetailsinterventor_interno{$id}" checked>
-					SUPERVISIÓN				</label>
+					Supervisión				</label>
 			</div>
 			{END print_details_interventor_interno}
 														{BEGIN print_details_contrato_cdp}
@@ -789,20 +789,6 @@
 					RP				</label>
 			</div>
 			{END print_details_contrato_rp}
-														{BEGIN print_details_ep_compromisos}
-			<div>
-				<label for="printDetailsep_compromisos{$id}">
-					<input type="checkbox" value="ep_compromisos" id="printDetailsep_compromisos{$id}" checked>
-					Compromisos				</label>
-			</div>
-			{END print_details_ep_compromisos}
-														{BEGIN print_details_ep_obligaciones}
-			<div>
-				<label for="printDetailsep_obligaciones{$id}">
-					<input type="checkbox" value="ep_obligaciones" id="printDetailsep_obligaciones{$id}" checked>
-					Obligaciones / Pagos				</label>
-			</div>
-			{END print_details_ep_obligaciones}
 														{BEGIN print_details_contrato_oe}
 			<div>
 				<label for="printDetailscontrato_oe{$id}">
@@ -831,6 +817,34 @@
 					Cesión				</label>
 			</div>
 			{END print_details_contrato_modifica_cesion}
+														{BEGIN print_details_contrato_modifica_track}
+			<div>
+				<label for="printDetailscontrato_modifica_track{$id}">
+					<input type="checkbox" value="contrato_modifica_track" id="printDetailscontrato_modifica_track{$id}" checked>
+					Histórico de cambios				</label>
+			</div>
+			{END print_details_contrato_modifica_track}
+														{BEGIN print_details_q_info_registros}
+			<div>
+				<label for="printDetailsq_info_registros{$id}">
+					<input type="checkbox" value="q_info_registros" id="printDetailsq_info_registros{$id}" checked>
+					Compromisos				</label>
+			</div>
+			{END print_details_q_info_registros}
+														{BEGIN print_details_q_info_obligacion}
+			<div>
+				<label for="printDetailsq_info_obligacion{$id}">
+					<input type="checkbox" value="q_info_obligacion" id="printDetailsq_info_obligacion{$id}" checked>
+					Obligaciones				</label>
+			</div>
+			{END print_details_q_info_obligacion}
+														{BEGIN print_details_q_info_ordenpago}
+			<div>
+				<label for="printDetailsq_info_ordenpago{$id}">
+					<input type="checkbox" value="q_info_ordenpago" id="printDetailsq_info_ordenpago{$id}" checked>
+					Ordenes de pago				</label>
+			</div>
+			{END print_details_q_info_ordenpago}
 						</div>
 </div>
 {END print_details}
@@ -1613,34 +1627,6 @@ data-pagetype="print"
 	 
 		
 		
-	{BEGIN ep_compromisos_dtable_link}
-	<span data-itemtype="grid_details_link" data-itemid="grid_details_link1" {$item_grid_details_link1} data-pageid="{$pageid}" data-record-id="{$recId}">
-	<a  {$ep_compromisos_link_attrs} data-short-details="ep_compromisos"
-		class="{$ep_compromisos_dlink_class}" 
-		title="{$caption ep_compromisos }"	>
-								
-			</a>
-	</span>
-	{END ep_compromisos_dtable_link}
-
-
-	 
-		
-		
-	{BEGIN ep_obligaciones_dtable_link}
-	<span data-itemtype="grid_details_link" data-itemid="grid_details_link2" {$item_grid_details_link2} data-pageid="{$pageid}" data-record-id="{$recId}">
-	<a  {$ep_obligaciones_link_attrs} data-short-details="ep_obligaciones"
-		class="{$ep_obligaciones_dlink_class}" 
-		title="{$caption ep_obligaciones }"	>
-								
-			</a>
-	</span>
-	{END ep_obligaciones_dtable_link}
-
-
-	 
-		
-		
 	{BEGIN contrato_modifica_dtable_link}
 	<span data-itemtype="grid_details_link" data-itemid="grid_details_link3" {$item_grid_details_link3} data-pageid="{$pageid}" data-record-id="{$recId}">
 	<a  {$contrato_modifica_link_attrs} data-short-details="contrato_modifica"
@@ -1650,6 +1636,62 @@ data-pagetype="print"
 			</a>
 	</span>
 	{END contrato_modifica_dtable_link}
+
+
+	 
+		
+		
+	{BEGIN contrato_modifica_track_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link4" {$item_grid_details_link4} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$contrato_modifica_track_link_attrs} data-short-details="contrato_modifica_track"
+		class="{$contrato_modifica_track_dlink_class}" 
+		title="{$caption contrato_modifica_track }"	>
+								
+			</a>
+	</span>
+	{END contrato_modifica_track_dtable_link}
+
+
+	 
+		
+		
+	{BEGIN q_info_registros_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link1" {$item_grid_details_link1} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$q_info_registros_link_attrs} data-short-details="q_info_registros"
+		class="{$q_info_registros_dlink_class}" 
+		title="{$caption q_info_registros }"	>
+								
+			</a>
+	</span>
+	{END q_info_registros_dtable_link}
+
+
+	 
+		
+		
+	{BEGIN q_info_obligacion_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link2" {$item_grid_details_link2} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$q_info_obligacion_link_attrs} data-short-details="q_info_obligacion"
+		class="{$q_info_obligacion_dlink_class}" 
+		title="{$caption q_info_obligacion }"	>
+								
+			</a>
+	</span>
+	{END q_info_obligacion_dtable_link}
+
+
+	 
+		
+		
+	{BEGIN q_info_ordenpago_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link5" {$item_grid_details_link5} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$q_info_ordenpago_link_attrs} data-short-details="q_info_ordenpago"
+		class="{$q_info_ordenpago_dlink_class}" 
+		title="{$caption q_info_ordenpago }"	>
+								
+			</a>
+	</span>
+	{END q_info_ordenpago_dtable_link}
 
 
 	
@@ -1950,9 +1992,9 @@ data-pagetype="print"
 	>
 
 	 
-													<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
-	data-orders="contrato_attached,interventor_interno,polizas_master,contrato_cdp,contrato_rp,ep_compromisos,ep_obligaciones,contrato_oe,contrato_modifica_prorroga,contrato_modifica,contrato_modifica_cesion"
-			data-details-contrato_attached			data-details-interventor_interno			data-details-polizas_master			data-details-contrato_cdp			data-details-contrato_rp			data-details-ep_compromisos			data-details-ep_obligaciones			data-details-contrato_oe			data-details-contrato_modifica_prorroga			data-details-contrato_modifica			data-details-contrato_modifica_cesion	>
+															<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="contrato_attached,interventor_interno,polizas_master,contrato_cdp,contrato_rp,contrato_oe,contrato_modifica_prorroga,contrato_modifica,contrato_modifica_cesion,contrato_modifica_track,q_info_registros,q_info_obligacion,q_info_ordenpago"
+			data-details-contrato_attached			data-details-interventor_interno			data-details-polizas_master			data-details-contrato_cdp			data-details-contrato_rp			data-details-contrato_oe			data-details-contrato_modifica_prorroga			data-details-contrato_modifica			data-details-contrato_modifica_cesion			data-details-contrato_modifica_track			data-details-q_info_registros			data-details-q_info_obligacion			data-details-q_info_ordenpago	>
 		<span data-details-inside data-short-table="contrato_attached">
 			</span>
 		<span data-details-inside data-short-table="interventor_interno">
@@ -1963,10 +2005,6 @@ data-pagetype="print"
 			</span>
 		<span data-details-inside data-short-table="contrato_rp">
 			</span>
-		<span data-details-inside data-short-table="ep_compromisos">
-			</span>
-		<span data-details-inside data-short-table="ep_obligaciones">
-			</span>
 		<span data-details-inside data-short-table="contrato_oe">
 			</span>
 		<span data-details-inside data-short-table="contrato_modifica_prorroga">
@@ -1975,10 +2013,20 @@ data-pagetype="print"
 			</span>
 		<span data-details-inside data-short-table="contrato_modifica_cesion">
 			</span>
+		<span data-details-inside data-short-table="contrato_modifica_track">
+			</span>
+		<span data-details-inside data-short-table="q_info_registros">
+			</span>
+		<span data-details-inside data-short-table="q_info_obligacion">
+			</span>
+		<span data-details-inside data-short-table="q_info_ordenpago">
+			</span>
 		<div data-details-preview>
 	</div>
 </div>
 	 
+			 
+			 
 			 
 			 
 			 

@@ -79,12 +79,6 @@ pdfDocument = {
 										{BEGIN col_grid_6}
 					"%",
 					{END col_grid_6}
-										{BEGIN col_grid_7}
-					"%",
-					{END col_grid_7}
-										{BEGIN col_grid_8}
-					"%",
-					{END col_grid_8}
 															],
 							heights: [ // first height for header part
 					"%",
@@ -237,7 +231,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field3}","text":"{$jslabel global_users Username }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field}","text":"{$jslabel global_users Username }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -375,58 +369,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_field5}
-																			{BEGIN cellblock_grid_headcell_field6}
-{
-	cellId: 'headcell_field6',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field6}","text":"{$jslabel global_users usr_directivo }","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$usr_directivo_align}',
-  },
-
-{END cellblock_grid_headcell_field6}
-																			{BEGIN cellblock_grid_headcell_field7}
-{
-	cellId: 'headcell_field7',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field11}","text":"{$jslabel global_users usr_dep_sup }","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$usr_dep_sup_align}',
-  },
-
-{END cellblock_grid_headcell_field7}
 											],
 				{END row_grid_0}
 								
@@ -617,58 +559,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_field5}
-																			{BEGIN cellblock_grid_cell_field6}
-{
-	cellId: 'cell_field6',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field}","text":{$usr_directivo_pdfvalue}},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$usr_directivo_align}',
-  },
-
-{END cellblock_grid_cell_field6}
-																			{BEGIN cellblock_grid_cell_field7}
-{
-	cellId: 'cell_field7',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field1}","text":{$usr_dep_sup_pdfvalue}},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$usr_dep_sup_align}',
-  },
-
-{END cellblock_grid_cell_field7}
 											],
 				{END row_grid_1}
 						{END grid_record}
@@ -845,54 +735,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field5}
-																			{BEGIN cellblock_grid_footcell_field6}
-{
-	cellId: 'footcell_field6',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field6}
-																			{BEGIN cellblock_grid_footcell_field7}
-{
-	cellId: 'footcell_field7',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field7}
 											],
 				{END row_grid_2}
 							

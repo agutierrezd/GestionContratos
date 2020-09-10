@@ -341,13 +341,6 @@ function InitLookupLinks()
 			$lookupTableLinks["polizas_tipo"]["polizas_master.poli_codamparo"] = array();
 		}
 		$lookupTableLinks["polizas_tipo"]["polizas_master.poli_codamparo"]["edit"] = array("table" => "polizas_master", "field" => "poli_codamparo", "page" => "edit");
-		if( !isset( $lookupTableLinks["contrato"] ) ) {
-			$lookupTableLinks["contrato"] = array();
-		}
-		if( !isset( $lookupTableLinks["contrato"]["interventor_interno.id_cont_fk"] )) {
-			$lookupTableLinks["contrato"]["interventor_interno.id_cont_fk"] = array();
-		}
-		$lookupTableLinks["contrato"]["interventor_interno.id_cont_fk"]["edit"] = array("table" => "interventor_interno", "field" => "id_cont_fk", "page" => "edit");
 		if( !isset( $lookupTableLinks["global_users"] ) ) {
 			$lookupTableLinks["global_users"] = array();
 		}

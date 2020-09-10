@@ -82,9 +82,6 @@ pdfDocument = {
 										{BEGIN col_grid_7}
 					"%",
 					{END col_grid_7}
-										{BEGIN col_grid_8}
-					"%",
-					{END col_grid_8}
 															],
 							heights: [ // first height for header part
 					"%",
@@ -260,7 +257,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field7}","text":"{$jslabel ep_obligaciones Fecha_de_Creacion }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field3}","text":"{$jslabel ep_obligaciones Fecha_de_Creacion }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -286,7 +283,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field8}","text":"{$jslabel ep_obligaciones Valor_Actual }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field7}","text":"{$jslabel ep_obligaciones Valor_Actual }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -312,7 +309,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field9}","text":"{$jslabel ep_obligaciones Valor_Deducciones }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field8}","text":"{$jslabel ep_obligaciones Valor_Deducciones }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -338,7 +335,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field10}","text":"{$jslabel ep_obligaciones Valor_Oblig_no_Orden }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field9}","text":"{$jslabel ep_obligaciones Valor_Oblig_no_Orden }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -416,7 +413,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field11}","text":"{$jslabel ep_obligaciones Obligaciones }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field10}","text":"{$jslabel ep_obligaciones Obligaciones }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -442,7 +439,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field12}","text":"{$jslabel ep_obligaciones Valor_Operaciones }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field11}","text":"{$jslabel ep_obligaciones Valor_Operaciones }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -450,32 +447,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_field7}
-																			{BEGIN cellblock_grid_headcell_field8}
-{
-	cellId: 'headcell_field8',
-	col:0,
-	row:0,
-			style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field13}","text":"{$jslabel ep_obligaciones OID }","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$OID_align}',
-  },
-
-{END cellblock_grid_headcell_field8}
 											],
 				{END row_grid_0}
 								
@@ -692,32 +663,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_field7}
-																			{BEGIN cellblock_grid_cell_field8}
-{
-	cellId: 'cell_field8',
-	col:0,
-	row:0,
-			style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				
-			{"hidden":"{$item_hide_simple_grid_field3}","text":{$OID_pdfvalue}},
-				
-		  ],
-  "border": [ true, true, true, true ],
-          "alignment": '{$OID_align}',
-  },
-
-{END cellblock_grid_cell_field8}
 											],
 				{END row_grid_1}
 						{END grid_record}
@@ -918,30 +863,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field7}
-																			{BEGIN cellblock_grid_footcell_field8}
-{
-	cellId: 'footcell_field8',
-	col:0,
-	row:0,
-			style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_footcell_field8}
 											],
 				{END row_grid_2}
 							

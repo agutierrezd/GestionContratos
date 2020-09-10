@@ -52,8 +52,6 @@ $nonAdminTablesArr[] = "contrato_cdp";
 $nonAdminTablesArr[] = "dependencia";
 $nonAdminTablesArr[] = "contrato_rp";
 $nonAdminTablesArr[] = "dependencias_001";
-$nonAdminTablesArr[] = "ep_compromisos";
-$nonAdminTablesArr[] = "ep_obligaciones";
 $nonAdminTablesArr[] = "tparam_tipo_ct_regimen_tribut";
 $nonAdminTablesArr[] = "global_unspsc";
 $nonAdminTablesArr[] = "cargo";
@@ -86,6 +84,10 @@ $nonAdminTablesArr[] = "contrato_modifica";
 $nonAdminTablesArr[] = "contrato_modifica_type";
 $nonAdminTablesArr[] = "contrato_modifica_prorroga";
 $nonAdminTablesArr[] = "contrato_modifica_cesion";
+$nonAdminTablesArr[] = "contrato_modifica_track";
+$nonAdminTablesArr[] = "q_info_registros";
+$nonAdminTablesArr[] = "q_info_obligacion";
+$nonAdminTablesArr[] = "q_info_ordenpago";
 
 $ug_connection = $cman->getForUserGroups();
 

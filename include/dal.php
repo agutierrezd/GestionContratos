@@ -56,6 +56,7 @@ class tDAL
 	var $tbldbct_at_localhost__contrato_estados;
 	var $tbldbct_at_localhost__contrato_forma_pago;
 	var $tbldbct_at_localhost__contrato_modifica;
+	var $tbldbct_at_localhost__contrato_modifica_track;
 	var $tbldbct_at_localhost__contrato_modifica_type;
 	var $tbldbct_at_localhost__contrato_oe;
 	var $tbldbct_at_localhost__contrato_pre;
@@ -104,8 +105,9 @@ class tDAL
 	var $tbldbusers_at_localhost__q_divipola;
 	var $tblmincit_global_at_localhost__global_unspsc;
 	var $tblmincit_global_at_localhost__paa_master;
-	var $tblsep2_at_localhost__ep_compromisos;
-	var $tblsep2_at_localhost__ep_obligaciones;
+	var $tblsep2_at_localhost__q_info_obligacion;
+	var $tblsep2_at_localhost__q_info_ordenpago;
+	var $tblsep2_at_localhost__q_info_registros;
 	var $tblsep2_at_localhost__q_rubros;
 	var $tblsep2_at_localhost__q_usos;
 	var $tblsep2_at_localhost__rep_prg001_catalogopresupuestal;
@@ -131,6 +133,7 @@ class tDAL
 		$this->lstTables[] = array("name" => "contrato_estados", "varname" => "dbct_at_localhost__contrato_estados", "altvarname" => "contrato_estados", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 		$this->lstTables[] = array("name" => "contrato_forma_pago", "varname" => "dbct_at_localhost__contrato_forma_pago", "altvarname" => "contrato_forma_pago", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 		$this->lstTables[] = array("name" => "contrato_modifica", "varname" => "dbct_at_localhost__contrato_modifica", "altvarname" => "contrato_modifica", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
+		$this->lstTables[] = array("name" => "contrato_modifica_track", "varname" => "dbct_at_localhost__contrato_modifica_track", "altvarname" => "contrato_modifica_track", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 		$this->lstTables[] = array("name" => "contrato_modifica_type", "varname" => "dbct_at_localhost__contrato_modifica_type", "altvarname" => "contrato_modifica_type", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 		$this->lstTables[] = array("name" => "contrato_oe", "varname" => "dbct_at_localhost__contrato_oe", "altvarname" => "contrato_oe", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 		$this->lstTables[] = array("name" => "contrato_pre", "varname" => "dbct_at_localhost__contrato_pre", "altvarname" => "contrato_pre", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
@@ -179,8 +182,9 @@ class tDAL
 		$this->lstTables[] = array("name" => "q_divipola", "varname" => "dbusers_at_localhost__q_divipola", "altvarname" => "q_divipola", "connId" => "dbusers_at_localhost", "schema" => "", "connName" => "dbusers at localhost");
 		$this->lstTables[] = array("name" => "global_unspsc", "varname" => "mincit_global_at_localhost__global_unspsc", "altvarname" => "global_unspsc", "connId" => "mincit_global_at_localhost", "schema" => "", "connName" => "mincit_global at localhost");
 		$this->lstTables[] = array("name" => "paa_master", "varname" => "mincit_global_at_localhost__paa_master", "altvarname" => "paa_master", "connId" => "mincit_global_at_localhost", "schema" => "", "connName" => "mincit_global at localhost");
-		$this->lstTables[] = array("name" => "ep_compromisos", "varname" => "sep2_at_localhost__ep_compromisos", "altvarname" => "ep_compromisos", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
-		$this->lstTables[] = array("name" => "ep_obligaciones", "varname" => "sep2_at_localhost__ep_obligaciones", "altvarname" => "ep_obligaciones", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
+		$this->lstTables[] = array("name" => "q_info_obligacion", "varname" => "sep2_at_localhost__q_info_obligacion", "altvarname" => "q_info_obligacion", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
+		$this->lstTables[] = array("name" => "q_info_ordenpago", "varname" => "sep2_at_localhost__q_info_ordenpago", "altvarname" => "q_info_ordenpago", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
+		$this->lstTables[] = array("name" => "q_info_registros", "varname" => "sep2_at_localhost__q_info_registros", "altvarname" => "q_info_registros", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
 		$this->lstTables[] = array("name" => "q_rubros", "varname" => "sep2_at_localhost__q_rubros", "altvarname" => "q_rubros", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
 		$this->lstTables[] = array("name" => "q_usos", "varname" => "sep2_at_localhost__q_usos", "altvarname" => "q_usos", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");
 		$this->lstTables[] = array("name" => "rep_prg001_catalogopresupuestal", "varname" => "sep2_at_localhost__rep_prg001_catalogopresupuestal", "altvarname" => "rep_prg001_catalogopresupuestal", "connId" => "sep2_at_localhost", "schema" => "", "connName" => "sep2 at localhost");

@@ -3179,10 +3179,6 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "contrato_rp" ] = "contrato_rp";
 	$projectEntities[ "dependencias_001" ] = array( "url" => "dependencias_001", "type" => 0 );
 	$projectEntitiesReverse[ "dependencias_001" ] = "dependencias_001";
-	$projectEntities[ "ep_compromisos" ] = array( "url" => "ep_compromisos", "type" => 0 );
-	$projectEntitiesReverse[ "ep_compromisos" ] = "ep_compromisos";
-	$projectEntities[ "ep_obligaciones" ] = array( "url" => "ep_obligaciones", "type" => 0 );
-	$projectEntitiesReverse[ "ep_obligaciones" ] = "ep_obligaciones";
 	$projectEntities[ "tparam_tipo_ct_regimen_tribut" ] = array( "url" => "tparam_tipo_ct_regimen_tribut", "type" => 0 );
 	$projectEntitiesReverse[ "tparam_tipo_ct_regimen_tribut" ] = "tparam_tipo_ct_regimen_tribut";
 	$projectEntities[ "global_unspsc" ] = array( "url" => "global_unspsc", "type" => 0 );
@@ -3247,6 +3243,14 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "contrato_modifica_prorroga" ] = "contrato_modifica_prorroga";
 	$projectEntities[ "contrato_modifica_cesion" ] = array( "url" => "contrato_modifica_cesion", "type" => 1 );
 	$projectEntitiesReverse[ "contrato_modifica_cesion" ] = "contrato_modifica_cesion";
+	$projectEntities[ "contrato_modifica_track" ] = array( "url" => "contrato_modifica_track", "type" => 0 );
+	$projectEntitiesReverse[ "contrato_modifica_track" ] = "contrato_modifica_track";
+	$projectEntities[ "q_info_registros" ] = array( "url" => "q_info_registros", "type" => 0 );
+	$projectEntitiesReverse[ "q_info_registros" ] = "q_info_registros";
+	$projectEntities[ "q_info_obligacion" ] = array( "url" => "q_info_obligacion", "type" => 0 );
+	$projectEntitiesReverse[ "q_info_obligacion" ] = "q_info_obligacion";
+	$projectEntities[ "q_info_ordenpago" ] = array( "url" => "q_info_ordenpago", "type" => 0 );
+	$projectEntitiesReverse[ "q_info_ordenpago" ] = "q_info_ordenpago";
 }
 
 function findTable( $table ) {

@@ -527,7 +527,6 @@
 	{$cell_grid_c15}
 	class=" r-ori-vert"
 	
-			data-single
 			
 			data-cellId="grid_c15" data-pageid="{$pageid}"
 		data-v-cell="2"
@@ -535,6 +534,29 @@
 >
 	<div edit-form-cell class="clearfix">
 				
+{BEGIN cont_hash_fk_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_hash_fk}  r-vertical-field" 
+	data-fieldname="cont_hash_fk" 
+	data-signal-error-for="cont_hash_fk{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="cont_hash_fk" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_cont_hash_fk}">
+		{BEGIN cont_hash_fk_label}{$label interventor_interno cont_hash_fk }{END cont_hash_fk_label}
+	</label>
+	<div class="r-edit-field">
+		{$cont_hash_fk_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="cont_hash_fk">
+		<div class="text-muted" >
+		{$tooltip interventor_interno cont_hash_fk }		</div>
+	</div>
+</div>
+
+
+{END cont_hash_fk_fieldblock}
+											
 {BEGIN id_cont_fk_fieldblock}
 
 
@@ -604,8 +626,9 @@
 								</tr>
 	 
 	 
-														<tr>
-										
+		
+						<tr>
+						
 
 {BEGIN cellblock_grid_c19}
 <td
@@ -619,31 +642,7 @@
 		
 >
 	<div edit-form-cell class="clearfix">
-				
-{BEGIN cont_hash_fk_fieldblock}
-
-
-<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_hash_fk}  r-vertical-field" 
-	data-fieldname="cont_hash_fk" 
-	data-signal-error-for="cont_hash_fk{$id}" 
-	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="cont_hash_fk" >
-
-
-	<label class="r-edit-label control-label" for="{$labelfor_cont_hash_fk}">
-		{BEGIN cont_hash_fk_label}{$label interventor_interno cont_hash_fk }{END cont_hash_fk_label}
-	</label>
-	<div class="r-edit-field">
-		{$cont_hash_fk_editcontrol}	</div>
-	<div class="r-edit-tooltip" data-helpfor="cont_hash_fk">
-		<div class="text-muted" >
-		{$tooltip interventor_interno cont_hash_fk }		</div>
-	</div>
-</div>
-
-
-{END cont_hash_fk_fieldblock}
-	
-								</td>
+									</td>
 			{END cellblock_grid_c19}
 			 
 		
