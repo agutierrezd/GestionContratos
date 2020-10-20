@@ -488,7 +488,7 @@ if( pageEnabled($table, 'print') || pageEnabled($table, 'rprint') || pageEnabled
 	$mask .= "P";
 
 $pageMask[$table] = $mask;
-$tables[$table] = array("polizas_master", " " . "PÓLIZAS");
+$tables[$table] = array("polizas_master", " " . "Pólizas");
 $table = "polizas_tipo";
 $mask="";
 if( pageEnabled($table, 'add') || pageEnabled($table, 'inline_add') )
@@ -760,7 +760,7 @@ if( pageEnabled($table, 'print') || pageEnabled($table, 'rprint') || pageEnabled
 	$mask .= "P";
 
 $pageMask[$table] = $mask;
-$tables[$table] = array("q_001_dashboard", " " . "Q 001 Dashboard");
+$tables[$table] = array("q_001_dashboard", " " . "Reporte de prueba");
 $table = "informe_intersup_estado";
 $mask="";
 if( pageEnabled($table, 'add') || pageEnabled($table, 'inline_add') )
@@ -949,7 +949,7 @@ if( pageEnabled($table, 'print') || pageEnabled($table, 'rprint') || pageEnabled
 	$mask .= "P";
 
 $pageMask[$table] = $mask;
-$tables[$table] = array("contrato_oe", " " . "OBLIGACIONES ESPECÍFICAS");
+$tables[$table] = array("contrato_oe", " " . "Obligaciones específicas");
 $table = "q_oe_ordinal";
 $mask="";
 if( pageEnabled($table, 'add') || pageEnabled($table, 'inline_add') )
@@ -1206,6 +1206,75 @@ if( pageEnabled($table, 'print') || pageEnabled($table, 'rprint') || pageEnabled
 
 $pageMask[$table] = $mask;
 $tables[$table] = array("q_info_ordenpago", " " . "Ordenes de pago");
+$table = "q_bandejaentrada_supervisores3";
+$mask="";
+if( pageEnabled($table, 'add') || pageEnabled($table, 'inline_add') )
+	$mask .= "A";
+if( pageEnabled($table, 'edit') || pageEnabled($table, 'inline_edit') )
+	$mask .= "E";
+if( pageEnabled($table, 'delete') )
+	$mask .= "D";
+if( pageEnabled($table, 'import') )
+	$mask .= "I";
+if( pageEnabled($table, 'view') || pageEnabled($table, 'list') || pageEnabled($table, 'chart') || pageEnabled($table, 'report') || pageEnabled($table, 'dashboard') )
+	$mask .= "S";
+if( pageEnabled($table, 'print') || pageEnabled($table, 'rprint') || pageEnabled($table, 'export')  )
+	$mask .= "P";
+$mask .= "M";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("q_bandejaentrada_supervisores3", " " . "Q Bandejaentrada Supervisores3");
+$table = "informe_intersup3";
+$mask="";
+if( pageEnabled($table, 'add') || pageEnabled($table, 'inline_add') )
+	$mask .= "A";
+if( pageEnabled($table, 'edit') || pageEnabled($table, 'inline_edit') )
+	$mask .= "E";
+if( pageEnabled($table, 'delete') )
+	$mask .= "D";
+if( pageEnabled($table, 'import') )
+	$mask .= "I";
+if( pageEnabled($table, 'view') || pageEnabled($table, 'list') || pageEnabled($table, 'chart') || pageEnabled($table, 'report') || pageEnabled($table, 'dashboard') )
+	$mask .= "S";
+if( pageEnabled($table, 'print') || pageEnabled($table, 'rprint') || pageEnabled($table, 'export')  )
+	$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("informe_intersup3", " " . "Firmar informe de supervisión");
+$table = "contrato_dependencia";
+$mask="";
+if( pageEnabled($table, 'add') || pageEnabled($table, 'inline_add') )
+	$mask .= "A";
+if( pageEnabled($table, 'edit') || pageEnabled($table, 'inline_edit') )
+	$mask .= "E";
+if( pageEnabled($table, 'delete') )
+	$mask .= "D";
+if( pageEnabled($table, 'import') )
+	$mask .= "I";
+if( pageEnabled($table, 'view') || pageEnabled($table, 'list') || pageEnabled($table, 'chart') || pageEnabled($table, 'report') || pageEnabled($table, 'dashboard') )
+	$mask .= "S";
+if( pageEnabled($table, 'print') || pageEnabled($table, 'rprint') || pageEnabled($table, 'export')  )
+	$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("contrato_dependencia", " " . "Dependencias asociadas");
+$table = "global_users_sup";
+$mask="";
+if( pageEnabled($table, 'add') || pageEnabled($table, 'inline_add') )
+	$mask .= "A";
+if( pageEnabled($table, 'edit') || pageEnabled($table, 'inline_edit') )
+	$mask .= "E";
+if( pageEnabled($table, 'delete') )
+	$mask .= "D";
+if( pageEnabled($table, 'import') )
+	$mask .= "I";
+if( pageEnabled($table, 'view') || pageEnabled($table, 'list') || pageEnabled($table, 'chart') || pageEnabled($table, 'report') || pageEnabled($table, 'dashboard') )
+	$mask .= "S";
+if( pageEnabled($table, 'print') || pageEnabled($table, 'rprint') || pageEnabled($table, 'export')  )
+	$mask .= "P";
+
+$pageMask[$table] = $mask;
+$tables[$table] = array("global_users_sup", " " . "Global Users Sup");
 
 require_once('include/xtempl.php');
 require_once('classes/listpage.php');

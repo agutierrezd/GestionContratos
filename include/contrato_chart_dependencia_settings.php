@@ -1073,6 +1073,7 @@ $proto18["m_columns"][] = "dem_genero";
 $proto18["m_columns"][] = "dem_ocupacion";
 $proto18["m_columns"][] = "dem_profesion";
 $proto18["m_columns"][] = "ct_fecha_nacimiento";
+$proto18["m_columns"][] = "ct_fecha_nacimiento_mun";
 $proto18["m_columns"][] = "ct_nacionalidad";
 $proto18["m_columns"][] = "dem_edad";
 $proto18["m_columns"][] = "dem_educacion";

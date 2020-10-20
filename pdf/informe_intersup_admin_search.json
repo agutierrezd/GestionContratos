@@ -290,6 +290,15 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_search_field57}","text":{$cont_modifica_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_integrated_search_field58}","text":{$qty_inf_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field59}","text":{$qty_inf_compare_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field60}","text":{$qty_inf_verifica_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

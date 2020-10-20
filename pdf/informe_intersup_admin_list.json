@@ -154,6 +154,15 @@ pdfDocument = {
 										{BEGIN col_grid_31}
 					"%",
 					{END col_grid_31}
+										{BEGIN col_grid_32}
+					"%",
+					{END col_grid_32}
+										{BEGIN col_grid_33}
+					"%",
+					{END col_grid_33}
+										{BEGIN col_grid_34}
+					"%",
+					{END col_grid_34}
 															],
 							heights: [ // first height for header part
 					"%",
@@ -1136,6 +1145,84 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_field29}
+																			{BEGIN cellblock_grid_headcell_field30}
+{
+	cellId: 'headcell_field30',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label9}","text":"{$jslabel informe_intersup_admin qty_inf }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$qty_inf_align}',
+  },
+
+{END cellblock_grid_headcell_field30}
+																			{BEGIN cellblock_grid_headcell_field31}
+{
+	cellId: 'headcell_field31',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label10}","text":"{$jslabel informe_intersup_admin qty_inf_compare }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$qty_inf_compare_align}',
+  },
+
+{END cellblock_grid_headcell_field31}
+																			{BEGIN cellblock_grid_headcell_field32}
+{
+	cellId: 'headcell_field32',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label11}","text":"{$jslabel informe_intersup_admin qty_inf_verifica }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$qty_inf_verifica_align}',
+  },
+
+{END cellblock_grid_headcell_field32}
 											],
 				{END row_grid_0}
 								
@@ -1979,6 +2066,84 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_field29}
+																			{BEGIN cellblock_grid_cell_field30}
+{
+	cellId: 'cell_field30',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field9}","text":{$qty_inf_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$qty_inf_align}',
+  },
+
+{END cellblock_grid_cell_field30}
+																			{BEGIN cellblock_grid_cell_field31}
+{
+	cellId: 'cell_field31',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field10}","text":{$qty_inf_compare_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$qty_inf_compare_align}',
+  },
+
+{END cellblock_grid_cell_field31}
+																			{BEGIN cellblock_grid_cell_field32}
+{
+	cellId: 'cell_field32',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field11}","text":{$qty_inf_verifica_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$qty_inf_verifica_align}',
+  },
+
+{END cellblock_grid_cell_field32}
 											],
 				{END row_grid_1}
 						{END grid_record}
@@ -2755,6 +2920,78 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field29}
+																			{BEGIN cellblock_grid_footcell_field30}
+{
+	cellId: 'footcell_field30',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field30}
+																			{BEGIN cellblock_grid_footcell_field31}
+{
+	cellId: 'footcell_field31',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field31}
+																			{BEGIN cellblock_grid_footcell_field32}
+{
+	cellId: 'footcell_field32',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field32}
 											],
 				{END row_grid_2}
 							

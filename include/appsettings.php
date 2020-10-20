@@ -517,12 +517,13 @@ $globalSettings["useBuiltInMailer"] = false;
 
 $globalSettings["useCustomSMTPSettings"] = true;
 
-$globalSettings["strSMTPUser"] = "";
-$globalSettings["strSMTPServer"] = "localhost";
-$globalSettings["strSMTPPort"] = "25";
-$globalSettings["strSMTPPassword"] = "";
-$globalSettings["strFromEmail"] = "";
+$globalSettings["strSMTPUser"] = "notificacionsiseg@mindeporte.gov.co";
+$globalSettings["strSMTPServer"] = "smtp.office365.com";
+$globalSettings["strSMTPPort"] = "587";
+$globalSettings["strSMTPPassword"] = "Convenio.2020";
+$globalSettings["strFromEmail"] = "notificacionsiseg@mindeporte.gov.co";
 
+$globalSettings["SMTPSecure"] = "tls";
 //
 
 
@@ -646,9 +647,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "537_1599693999";
+$projectBuildKey = "679_1602089855";
 $wizardBuildKey = "34656";
-$projectBuildNumber = "537";
+$projectBuildNumber = "679";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -699,7 +700,7 @@ $tableCaptions["Spanish"]["contrato_estados"] = "Contrato Estados";
 $tableCaptions["Spanish"]["contrato_pre"] = "Contrato Pre";
 $tableCaptions["Spanish"]["contrato_attached"] = "Anexos";
 $tableCaptions["Spanish"]["contrato_attached_type"] = "Contrato Attached Type";
-$tableCaptions["Spanish"]["polizas_master"] = "PÓLIZAS";
+$tableCaptions["Spanish"]["polizas_master"] = "Pólizas";
 $tableCaptions["Spanish"]["polizas_tipo"] = "Polizas Tipo";
 $tableCaptions["Spanish"]["polizas_aseguradoras"] = "Polizas Aseguradoras";
 $tableCaptions["Spanish"]["info_secop"] = "Info Secop";
@@ -715,7 +716,7 @@ $tableCaptions["Spanish"]["cargo"] = "Cargo";
 $tableCaptions["Spanish"]["tparam_sn"] = "Tparam Sn";
 $tableCaptions["Spanish"]["informe_intersup_plan_pagos"] = "PROGRAMACIÓN DE ENTREGA DE INFORMES Y PAGOS";
 $tableCaptions["Spanish"]["informe_intersup_admin"] = "Informe Intersup Admin";
-$tableCaptions["Spanish"]["q_001_dashboard"] = "Q 001 Dashboard";
+$tableCaptions["Spanish"]["q_001_dashboard"] = "Reporte de prueba";
 $tableCaptions["Spanish"]["informe_intersup_estado"] = "Informe Intersup Estado";
 $tableCaptions["Spanish"]["informe_tipo"] = "Informe Tipo";
 $tableCaptions["Spanish"]["contrato_chart_tiporubro"] = "Contrato Chart Tiporubro";
@@ -729,7 +730,7 @@ $tableCaptions["Spanish"]["q_001_dashboard_info"] = "Q 001 Dashboard Info";
 $tableCaptions["Spanish"]["q_bandejaentrada_supervisores"] = "Q Bandejaentrada Supervisores";
 $tableCaptions["Spanish"]["q_000_control_informes"] = "Q 000 Control Informes";
 $tableCaptions["Spanish"]["informe_intersup_plan_pagos_st"] = "Informe Intersup Plan Pagos St";
-$tableCaptions["Spanish"]["contrato_oe"] = "OBLIGACIONES ESPECÍFICAS";
+$tableCaptions["Spanish"]["contrato_oe"] = "Obligaciones específicas";
 $tableCaptions["Spanish"]["q_oe_ordinal"] = "Q Oe Ordinal";
 $tableCaptions["Spanish"]["q_bandejaentrada_supervisores1"] = "Supervisión";
 $tableCaptions["Spanish"]["informe_intersup"] = "Informe de supervisión";
@@ -745,6 +746,10 @@ $tableCaptions["Spanish"]["contrato_modifica_track"] = "Histórico de cambios";
 $tableCaptions["Spanish"]["q_info_registros"] = "Compromisos";
 $tableCaptions["Spanish"]["q_info_obligacion"] = "Obligaciones";
 $tableCaptions["Spanish"]["q_info_ordenpago"] = "Ordenes de pago";
+$tableCaptions["Spanish"]["q_bandejaentrada_supervisores3"] = "Q Bandejaentrada Supervisores3";
+$tableCaptions["Spanish"]["informe_intersup3"] = "Firmar informe de supervisión";
+$tableCaptions["Spanish"]["contrato_dependencia"] = "Dependencias asociadas";
+$tableCaptions["Spanish"]["global_users_sup"] = "Global Users Sup";
 
 
 $globalEvents = new class_GlobalEvents;

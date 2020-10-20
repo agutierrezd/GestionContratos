@@ -1,0 +1,2 @@
+
+Runner.pages.PageSettings.addPageEvent('informe_intersup3',Runner.pages.constants.PAGE_ADD,"afterPageReady",function(pageObj,proxy,pageid,inlineRow,inlineObject,row){var ctrlcesion=Runner.getControl(pageid,'cont_cesion');ctrlcesion.makeReadonly();var ctrlmod=Runner.getControl(pageid,'cont_modifica');ctrlmod.makeReadonly();});

@@ -218,6 +218,15 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_export_field37}","text":{$cont_modifica_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_export_field38}","text":{$qty_inf_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field39}","text":{$qty_inf_compare_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field40}","text":{$qty_inf_verifica_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

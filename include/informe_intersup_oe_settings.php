@@ -172,7 +172,7 @@ $tdatainforme_intersup_oe[".rowHighlite"] = true;
 
 
 
-												
+																		
 
 $tdatainforme_intersup_oe[".ajaxCodeSnippetAdded"] = false;
 
@@ -2287,6 +2287,22 @@ $masterTablesData["informe_intersup_oe"] = array();
 	$masterTablesData["informe_intersup_oe"][0]["detailKeys"][]="inf_id_fk";
 				$masterTablesData["informe_intersup_oe"][0]["detailKeys"][]="id_cont_fk";
 		
+	
+				$strOriginalDetailsTable="informe_intersup";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="informe_intersup3";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "informe_intersup3";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+
+	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["informe_intersup_oe"][1] = $masterParams;
+				$masterTablesData["informe_intersup_oe"][1]["masterKeys"] = array();
+	$masterTablesData["informe_intersup_oe"][1]["masterKeys"][]="inf_id";
+				$masterTablesData["informe_intersup_oe"][1]["detailKeys"] = array();
+	$masterTablesData["informe_intersup_oe"][1]["detailKeys"][]="inf_id_fk";
+		
 // -----------------end  prepare master-details data arrays ------------------------------//
 
 
@@ -2604,7 +2620,8 @@ $queryData_informe_intersup_oe = createSqlQuery_informe_intersup_oe();
 
 $tdatainforme_intersup_oe[".sqlquery"] = $queryData_informe_intersup_oe;
 
-$tableEvents["informe_intersup_oe"] = new eventsBase;
-$tdatainforme_intersup_oe[".hasEvents"] = false;
+include_once(getabspath("include/informe_intersup_oe_events.php"));
+$tableEvents["informe_intersup_oe"] = new eventclass_informe_intersup_oe;
+$tdatainforme_intersup_oe[".hasEvents"] = true;
 
 ?>

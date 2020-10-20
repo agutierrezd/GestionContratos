@@ -434,6 +434,56 @@
 </div>
 
 {END dependencia_id_fieldblock}
+											
+{BEGIN fecha_inicio_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_inicio}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="fecha_inicio" 
+	
+	data-signal-error-for="fecha_inicio{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field5" {$item_integrated_search_field5} data-pageid="{$pageid}" data-field="fecha_inicio" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fecha_inicio}">
+		{$label interventor_interno fecha_inicio }	</label>
+	<div class="r-search-option">
+		{$searchtype_fecha_inicio}
+	</div>
+	<div class="r-search-field">
+		{$fecha_inicio_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fecha_inicio_editcontrol1}
+	</div>
+	
+</div>
+
+{END fecha_inicio_fieldblock}
+											
+{BEGIN fecha_fin_fieldblock}
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_fin}  r-horizontal-field form-horizontal" 
+	
+		data-fieldname="fecha_fin" 
+	
+	data-signal-error-for="fecha_fin{$id}" 
+	data-itemtype="integrated_search_field" data-itemid="integrated_search_field9" {$item_integrated_search_field9} data-pageid="{$pageid}" data-field="fecha_fin" >
+
+
+	<label class="r-search-label control-label" for="{$labelfor_fecha_fin}">
+		{$label interventor_interno fecha_fin }	</label>
+	<div class="r-search-option">
+		{$searchtype_fecha_fin}
+	</div>
+	<div class="r-search-field">
+		{$fecha_fin_editcontrol}	</div>
+	<div class="r-search-field">
+		{$fecha_fin_editcontrol1}
+	</div>
+	
+</div>
+
+{END fecha_fin_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c3}

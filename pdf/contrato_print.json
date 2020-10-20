@@ -285,6 +285,9 @@ pdfDocument = {
 															{BEGIN row_grid_13}			
 								"%",
 								{END row_grid_13}
+															{BEGIN row_grid_14}			
+								"%",
+								{END row_grid_14}
 														],
 													
 							body: [
@@ -1609,6 +1612,110 @@ pdfDocument = {
 				{END row_grid_12}
 								{BEGIN row_grid_13}
 				[
+												{BEGIN cellblock_grid_cell_label13}
+{
+	cellId: 'cell_label13',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label24}","text":"{$jslabel contrato cont_valorvigente }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label13}
+																			{BEGIN cellblock_grid_cell_field13}
+{
+	cellId: 'cell_field13',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field24}","text":{$cont_valorvigente_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_valorvigente_align}',
+  },
+
+{END cellblock_grid_cell_field13}
+																			{BEGIN cellblock_grid_cell_label14}
+{
+	cellId: 'cell_label14',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label14}
+																			{BEGIN cellblock_grid_cell_field22}
+{
+	cellId: 'cell_field22',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field22}
+											],
+				{END row_grid_13}
+								{BEGIN row_grid_14}
+				[
 												{BEGIN cellblock_grid_cell_dpreview}
 {
 	cellId: 'cell_dpreview',
@@ -1694,6 +1801,11 @@ pdfDocument = {
 			{$displayDetailTable_q_info_ordenpago }
 		{END details_q_info_ordenpago},
 				
+				
+			 {BEGIN details_contrato_dependencia}
+			{$displayDetailTable_contrato_dependencia }
+		{END details_contrato_dependencia},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
@@ -1719,7 +1831,7 @@ pdfDocument = {
 				text: ''
 			},
 							],
-				{END row_grid_13}
+				{END row_grid_14}
 										]
 						}
 					}

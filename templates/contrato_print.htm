@@ -149,6 +149,7 @@ data-pagetype="print"
 									 
 									 
 									 
+									 
 											
 					</tbody>
 				</table>
@@ -1318,6 +1319,90 @@ data-pagetype="print"
 	{END cellblock_grid_cell_field12}
 												</tr>
 									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label13}
+	<td
+	
+	{$cell_grid_cell_label13}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$cont_valorvigente_class}
+			"
+
+			data-field="cont_valorvigente"
+	
+	data-cellId="grid_cell_label13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorvigente_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="grid_field_label24" {$item_grid_field_label24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorvigente">
+	{$label contrato cont_valorvigente }	</span>
+{END cont_valorvigente_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label13}
+						 
+							{BEGIN cellblock_grid_cell_field13}
+	<td
+	
+	{$cell_grid_cell_field13}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valorvigente_class}
+			"
+
+			data-field="cont_valorvigente"
+	
+	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorvigente_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field24" {$item_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorvigente" data-default-width >
+{$cont_valorvigente_value}
+</span>
+{END cont_valorvigente_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field13}
+						 
+							{BEGIN cellblock_grid_cell_label14}
+	<td
+	
+	{$cell_grid_cell_label14}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label14" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label14}
+						 
+							{BEGIN cellblock_grid_cell_field22}
+	<td
+	
+	{$cell_grid_cell_field22}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field22" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field22}
+												</tr>
+									 
 											
 					</tbody>
 				</table>
@@ -1385,6 +1470,10 @@ data-pagetype="print"
 {BEGIN details_q_info_ordenpago}
 {$displayDetailTable_q_info_ordenpago}
 {END details_q_info_ordenpago}
+ 
+{BEGIN details_contrato_dependencia}
+{$displayDetailTable_contrato_dependencia}
+{END details_contrato_dependencia}
 	{END grid_record}
 
 

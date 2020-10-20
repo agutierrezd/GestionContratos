@@ -15,6 +15,12 @@
 		$this->events["AfterAdd"]=true;
 
 
+		$this->events["IsRecordEditable"]=true;
+
+		$this->events["BeforeShowEdit"]=true;
+
+		$this->events["AfterEdit"]=true;
+
 
 
 	}
@@ -84,6 +90,30 @@ dbct.q_oe_informe.oe
 FROM
 dbct.q_oe_informe");
 DB::Exec( $sql );
+
+$sql = DB::prepareSQL("UPDATE
+dbct.informe_intersup
+INNER JOIN dbct.q_qty_info_inf ON dbct.informe_intersup.inf_id = dbct.q_qty_info_inf.inf_id_fk
+SET
+dbct.informe_intersup.qty_inf = dbct.q_qty_info_inf.qty;");
+DB::Exec( $sql );
+//**********  Send email with new data  ************
+
+$email=$values['inf_mail_a'].",".$values['inf_mail_b'];
+$from="notificacionsiseg@mindeporte.gov.co";
+$fromName="SISEG | INFORMES SUPERVISIÓN ";
+$msg="Se ha habilitado un nuevo informe para su gestión con el código de verificación: ".$values['inf_hash']." revisa tu bandeja de entrada en el módulo de contratistas"."\r\n";
+$subject="Nuevo informe de supervisión | Persona Natural :: Código de verificación: ".$values['inf_hash'];
+
+$msg.= "Número de nforme: ".$values['inf_consecutivo']."\r\n";
+$msg.= "Periodo: ".$values['inf_fecharep_i']." al ".$values['inf_fecharep_f']."\r\n";
+//$msg.= "Asunto: ".$values['hr_asunto']."\r\n";
+$msg.= "Para atender este requerimiento ingrese a: https://sisecg.mindeporte.gov.co/athena/GestionContratistas"."\r\n";
+//$msg.= "Age: ".$values["age"]."\r\n";
+
+$ret=runner_mail(array('to' => $email, 'cc' => 'dito73@gmail.com', 'subject' => $subject, 'body' => $msg, 'fromName'=> $fromName, 'from'=>$from));
+if(!$ret["mailed"])
+	echo $ret["message"];
 
 
 // Place event code here.
@@ -156,6 +186,234 @@ DB::Exec( $sql );
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// Is Record Editable
+function IsRecordEditable($values, $isEditable)
+{
+
+		if ($values['inf_estado'] == 2 and $values['qty_inf'] == $values['qty_inf_verifica'])
+return true;
+else
+return false;
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+
+return $isEditable;
+;		
+} // function IsRecordEditable
+
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// Before display
+function BeforeShowEdit(&$xt, &$templatefile, $values, &$pageObject)
+{
+
+		$pageObject->hideField("sign_hash");
+$pageObject->hideField("sign_date");
+$pageObject->hideField("sign_file");
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;		
+} // function BeforeShowEdit
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+				// After record updated
+function AfterEdit(&$values, $where, &$oldvalues, &$keys, $inline, &$pageObject)
+{
+
+		$email=$values['sign_mailnot'];
+$from="notificacionsiseg@mindeporte.gov.co";
+$fromName="SISEG | CLAVE DINÁMICA ";
+$msg="Usted está solicitando el instrumento de clave dinámica, con este podrá continuar con el trámite, </br> conforme con las condiciones que establece el acuerdo; si está de acuerdo, suministre el siguiente código para validación de informe de supervisión:<strong> ".$values['sign_hash']." </strong> cópielo y peguelo en el campo correspondiente de validación"."\r\n";
+$subject="Se informa clave dinámica - código para validación de informe | Persona Natural";
+
+//$msg.= "Número de nforme: ".$values['inf_consecutivo']."\r\n";
+//$msg.= "Periodo: ".$values['inf_fecharep_i']." al ".$values['inf_fecharep_f']."\r\n";
+//$msg.= "Asunto: ".$values['hr_asunto']."\r\n";
+$msg.= "Para atender este requerimiento ingrese a: https://sisecg.mindeporte.gov.co/athena/GestionContratos/\r\n";
+//$msg.= "Age: ".$values["age"]."\r\n";
+
+$ret=runner_mail(array('to' => $email, 'cc' => 'dito73@gmail.com', 'subject' => $subject, 'htmlbody' => $msg, 'fromName'=> $fromName, 'from'=>$from));
+if(!$ret["mailed"])
+	echo $ret["message"];
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+;		
+} // function AfterEdit
+
 		
 		
 		

@@ -1,6 +1,7 @@
 <?php
 			$optionsArray = array( 'pdf' => array( 'pdfView' => false ),
-'master' => array( 'informe_intersup' => array( 'preview' => false ) ),
+'master' => array( 'informe_intersup' => array( 'preview' => false ),
+'informe_intersup3' => array( 'preview' => false ) ),
 'fields' => array( 'gridFields' => array( 'sup_obs',
 'oe_ordinal',
 'oe',

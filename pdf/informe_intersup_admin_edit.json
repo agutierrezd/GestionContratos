@@ -1063,6 +1063,15 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_edit_field32}","stack":[{"text":"{$jslabel informe_intersup_admin cont_modifica }","bold":true},{"text":{$cont_modifica_pdfvalue}}],"margin":[0,0,0,15]},
 				
+				
+			{"hidden":"{$item_hide_integrated_edit_field33}","stack":[{"text":"{$jslabel informe_intersup_admin qty_inf }","bold":true},{"text":{$qty_inf_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field34}","stack":[{"text":"{$jslabel informe_intersup_admin qty_inf_compare }","bold":true},{"text":{$qty_inf_compare_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field35}","stack":[{"text":"{$jslabel informe_intersup_admin qty_inf_verifica }","bold":true},{"text":{$qty_inf_verifica_pdfvalue}}],"margin":[0,0,0,15]},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

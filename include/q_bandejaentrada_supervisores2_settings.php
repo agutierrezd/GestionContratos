@@ -8463,6 +8463,7 @@ $proto111["m_columns"][] = "cont_fechaapertura";
 $proto111["m_columns"][] = "cont_munejec";
 $proto111["m_columns"][] = "cont_cesion";
 $proto111["m_columns"][] = "cont_modifica";
+$proto111["m_columns"][] = "Username";
 $obj = new SQLTable($proto111);
 
 $proto110["m_table"] = $obj;

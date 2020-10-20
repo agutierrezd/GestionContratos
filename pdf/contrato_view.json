@@ -101,6 +101,11 @@ pdfDocument = {
 			"%",
 						{END row_grid_1}
 			 
+								{BEGIN row_grid_2}
+						
+			"%",
+						{END row_grid_2}
+			 
 				],
 	
 		body: [
@@ -1493,6 +1498,45 @@ pdfDocument = {
 			},
 							],
 				{END row_grid_1}
+								{BEGIN row_grid_2}
+				[
+												{BEGIN cellblock_grid_c5}
+{
+	cellId: 'c5',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+					{BEGIN colspan_grid_c5}
+			colSpan: {$colspan_grid_c5},
+			{END colspan_grid_c5}
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field31}","stack":[{"text":"{$jslabel contrato cont_valorvigente }","bold":true},{"text":{$cont_valorvigente_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c5}
+																		{ 
+				cellId: 'c5',
+				row:  0,
+				col:  1,
+				text: ''
+			},
+							],
+				{END row_grid_2}
 					]
 	}
 }

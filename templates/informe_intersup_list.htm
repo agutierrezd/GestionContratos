@@ -113,6 +113,45 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_url_secop}</span>
 						</div>
 		{END searchCtrlBlock_url_secop}
+																{BEGIN searchCtrlBlock_qty_inf_verifica}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_qty_inf_verifica}" {$filterRow_attrs_qty_inf_verifica}>
+			<label>{$label informe_intersup qty_inf_verifica }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_qty_inf_verifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_qty_inf_verifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_qty_inf_verifica}</span>
+						</div>
+		{END searchCtrlBlock_qty_inf_verifica}
+																{BEGIN searchCtrlBlock_qty_inf_compare}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_qty_inf_compare}" {$filterRow_attrs_qty_inf_compare}>
+			<label>{$label informe_intersup qty_inf_compare }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_qty_inf_compare}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_qty_inf_compare}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_qty_inf_compare}</span>
+						</div>
+		{END searchCtrlBlock_qty_inf_compare}
+																{BEGIN searchCtrlBlock_qty_inf}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_qty_inf}" {$filterRow_attrs_qty_inf}>
+			<label>{$label informe_intersup qty_inf }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_qty_inf}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_qty_inf}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_qty_inf}</span>
+						</div>
+		{END searchCtrlBlock_qty_inf}
 																{BEGIN searchCtrlBlock_cont_modifica}
 
 
@@ -1016,13 +1055,7 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_fecharep_f"]:before {
 		content: "{$label informe_intersup inf_fecharep_f}";
 	}
-																																																		[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_cesion"]:before {
-		content: "{$label informe_intersup cont_cesion}";
-	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_modifica"]:before {
-		content: "{$label informe_intersup cont_modifica}";
-	}
-	}
+																																																					}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
 	cellpadding="0" 
@@ -1111,7 +1144,7 @@
 	 
 		{BEGIN inf_hash_fieldheadercolumn}
 	{BEGIN inf_hash_fieldheader}
-	<SPAN {$inf_hash_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_hash">
+	<SPAN {$inf_hash_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_hash">
 	{$label informe_intersup inf_hash }	{$arrow_icon_inf_hash}
 	</SPAN>
 	{END inf_hash_fieldheader}
@@ -1138,7 +1171,7 @@
 	 
 		{BEGIN inf_consecutivo_fieldheadercolumn}
 	{BEGIN inf_consecutivo_fieldheader}
-	<SPAN {$inf_consecutivo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_consecutivo">
+	<SPAN {$inf_consecutivo_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_consecutivo">
 	{$label informe_intersup inf_consecutivo }	{$arrow_icon_inf_consecutivo}
 	</SPAN>
 	{END inf_consecutivo_fieldheader}
@@ -1165,7 +1198,7 @@
 	 
 		{BEGIN inf_estado_fieldheadercolumn}
 	{BEGIN inf_estado_fieldheader}
-	<SPAN {$inf_estado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_estado">
+	<SPAN {$inf_estado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_estado">
 	{$label informe_intersup inf_estado }	{$arrow_icon_inf_estado}
 	</SPAN>
 	{END inf_estado_fieldheader}
@@ -1192,7 +1225,7 @@
 	 
 		{BEGIN inf_fecharep_i_fieldheadercolumn}
 	{BEGIN inf_fecharep_i_fieldheader}
-	<SPAN {$inf_fecharep_i_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_fecharep_i">
+	<SPAN {$inf_fecharep_i_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_fecharep_i">
 	{$label informe_intersup inf_fecharep_i }	{$arrow_icon_inf_fecharep_i}
 	</SPAN>
 	{END inf_fecharep_i_fieldheader}
@@ -1219,7 +1252,7 @@
 	 
 		{BEGIN inf_fecharep_f_fieldheadercolumn}
 	{BEGIN inf_fecharep_f_fieldheader}
-	<SPAN {$inf_fecharep_f_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_fecharep_f">
+	<SPAN {$inf_fecharep_f_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="inf_fecharep_f">
 	{$label informe_intersup inf_fecharep_f }	{$arrow_icon_inf_fecharep_f}
 	</SPAN>
 	{END inf_fecharep_f_fieldheader}
@@ -1228,60 +1261,6 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field4}
-				 
-					{BEGIN cellblock_grid_headcell_field5}
-	<th
-	
-	{$cell_grid_headcell_field5}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$cont_cesion_class}
-			"
-
-			data-field="cont_cesion"
-	
-	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN cont_cesion_fieldheadercolumn}
-	{BEGIN cont_cesion_fieldheader}
-	<SPAN {$cont_cesion_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_cesion">
-	{$label informe_intersup cont_cesion }	{$arrow_icon_cont_cesion}
-	</SPAN>
-	{END cont_cesion_fieldheader}
-{END cont_cesion_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field5}
-				 
-					{BEGIN cellblock_grid_headcell_field6}
-	<th
-	
-	{$cell_grid_headcell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$cont_modifica_class}
-			"
-
-			data-field="cont_modifica"
-	
-	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN cont_modifica_fieldheadercolumn}
-	{BEGIN cont_modifica_fieldheader}
-	<SPAN {$cont_modifica_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_modifica">
-	{$label informe_intersup cont_modifica }	{$arrow_icon_cont_modifica}
-	</SPAN>
-	{END cont_modifica_fieldheader}
-{END cont_modifica_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field6}
 							</tr>
 					 
 					 
@@ -1316,10 +1295,10 @@
 		{BEGIN edit_column}
 {BEGIN edit_link}
 <span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
-	<a type="button" title="Editar" class="btn btn-warning   
-	" href="informe_intersup_edit.php?{$editlink}" {$editlink_attrs} title="Editar" >
-					<span class="fa fa-edit"></span>
-										</a>
+	<a type="button" title="Solicitar clave dinámica" class="btn btn-success   
+	" href="informe_intersup_edit.php?{$editlink}" {$editlink_attrs} title="Editar" data-popup >
+					<span class="fa fa-key"></span>
+							Clave dinámica			</a>
 </span>
 {END edit_link}
 {END edit_column}
@@ -1336,10 +1315,10 @@
 		{BEGIN view_column}
 {BEGIN view_link}
 <span data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
-	<a type="button" title="Ver registro" class="btn btn-success   
+	<a type="button" title="Ver registro" class="btn btn-info   
 	" href="informe_intersup_view.php?{$editlink}" {$viewlink_attrs} title="Ver" >
 					<span class="fa fa-search-plus"></span>
-										</a>
+							Ver			</a>
 </span>
 {END view_link}
 {END view_column}
@@ -1520,52 +1499,6 @@
 {END inf_fecharep_f_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field4}
-				 
-					{BEGIN cellblock_grid_cell_field5}
-	<td
-	
-	{$cell_grid_cell_field5}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$cont_cesion_class}
-			"
-
-			data-field="cont_cesion"
-	
-	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN cont_cesion_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_cesion" data-default-width >
-{$cont_cesion_value}
-</span>
-{END cont_cesion_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field5}
-				 
-					{BEGIN cellblock_grid_cell_field6}
-	<td
-	
-	{$cell_grid_cell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert				{$cont_modifica_class}
-			"
-
-			data-field="cont_modifica"
-	
-	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN cont_modifica_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_modifica" data-default-width >
-{$cont_modifica_value}
-</span>
-{END cont_modifica_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field6}
 							</tr>
 					 
 						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
@@ -1740,38 +1673,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field4}
-				 
-					{BEGIN cellblock_grid_footcell_field5}
-	<td
-	
-	{$cell_grid_footcell_field5}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field5}
-				 
-					{BEGIN cellblock_grid_footcell_field6}
-	<td
-	
-	{$cell_grid_footcell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field6}
 							</tr>
 					
 					</tfoot>

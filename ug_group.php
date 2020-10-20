@@ -88,6 +88,10 @@ $nonAdminTablesArr[] = "contrato_modifica_track";
 $nonAdminTablesArr[] = "q_info_registros";
 $nonAdminTablesArr[] = "q_info_obligacion";
 $nonAdminTablesArr[] = "q_info_ordenpago";
+$nonAdminTablesArr[] = "q_bandejaentrada_supervisores3";
+$nonAdminTablesArr[] = "informe_intersup3";
+$nonAdminTablesArr[] = "contrato_dependencia";
+$nonAdminTablesArr[] = "global_users_sup";
 
 $ug_connection = $cman->getForUserGroups();
 

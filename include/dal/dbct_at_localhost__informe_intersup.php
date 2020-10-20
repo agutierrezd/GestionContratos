@@ -39,16 +39,7 @@ $dalTableinforme_intersup["inf_incumplimiento"] = array("type"=>200,"varname"=>"
 $dalTableinforme_intersup["inf_incumplimiento_obs"] = array("type"=>200,"varname"=>"inf_incumplimiento_obs", "name" => "inf_incumplimiento_obs");
 $dalTableinforme_intersup["inf_otrosaspectostecnicos"] = array("type"=>200,"varname"=>"inf_otrosaspectostecnicos", "name" => "inf_otrosaspectostecnicos");
 $dalTableinforme_intersup["inf_recomyobserva"] = array("type"=>200,"varname"=>"inf_recomyobserva", "name" => "inf_recomyobserva");
-$dalTableinforme_intersup["sign_date"] = array("type"=>7,"varname"=>"sign_date", "name" => "sign_date");
-$dalTableinforme_intersup["sign_hash"] = array("type"=>200,"varname"=>"sign_hash", "name" => "sign_hash");
-$dalTableinforme_intersup["sign_file"] = array("type"=>200,"varname"=>"sign_file", "name" => "sign_file");
-$dalTableinforme_intersup["sign_mailnot"] = array("type"=>200,"varname"=>"sign_mailnot", "name" => "sign_mailnot");
 $dalTableinforme_intersup["file_verifica"] = array("type"=>200,"varname"=>"file_verifica", "name" => "file_verifica");
-$dalTableinforme_intersup["sign_verificacert"] = array("type"=>16,"varname"=>"sign_verificacert", "name" => "sign_verificacert");
-$dalTableinforme_intersup["cert_date"] = array("type"=>7,"varname"=>"cert_date", "name" => "cert_date");
-$dalTableinforme_intersup["cert_file"] = array("type"=>200,"varname"=>"cert_file", "name" => "cert_file");
-$dalTableinforme_intersup["cert_mail"] = array("type"=>200,"varname"=>"cert_mail", "name" => "cert_mail");
-$dalTableinforme_intersup["cert_compare"] = array("type"=>200,"varname"=>"cert_compare", "name" => "cert_compare");
 $dalTableinforme_intersup["inf_ultimopago"] = array("type"=>16,"varname"=>"inf_ultimopago", "name" => "inf_ultimopago");
 $dalTableinforme_intersup["sys_date"] = array("type"=>135,"varname"=>"sys_date", "name" => "sys_date");
 $dalTableinforme_intersup["inf_mail_a"] = array("type"=>200,"varname"=>"inf_mail_a", "name" => "inf_mail_a");
@@ -58,6 +49,18 @@ $dalTableinforme_intersup["num_poliza"] = array("type"=>200,"varname"=>"num_poli
 $dalTableinforme_intersup["mun_ejec"] = array("type"=>200,"varname"=>"mun_ejec", "name" => "mun_ejec");
 $dalTableinforme_intersup["cont_cesion"] = array("type"=>16,"varname"=>"cont_cesion", "name" => "cont_cesion");
 $dalTableinforme_intersup["cont_modifica"] = array("type"=>16,"varname"=>"cont_modifica", "name" => "cont_modifica");
+$dalTableinforme_intersup["qty_inf"] = array("type"=>3,"varname"=>"qty_inf", "name" => "qty_inf");
+$dalTableinforme_intersup["qty_inf_compare"] = array("type"=>3,"varname"=>"qty_inf_compare", "name" => "qty_inf_compare");
+$dalTableinforme_intersup["qty_inf_verifica"] = array("type"=>3,"varname"=>"qty_inf_verifica", "name" => "qty_inf_verifica");
+$dalTableinforme_intersup["cert_mail"] = array("type"=>200,"varname"=>"cert_mail", "name" => "cert_mail");
+$dalTableinforme_intersup["cert_file"] = array("type"=>200,"varname"=>"cert_file", "name" => "cert_file");
+$dalTableinforme_intersup["cert_date"] = array("type"=>7,"varname"=>"cert_date", "name" => "cert_date");
+$dalTableinforme_intersup["cert_compare"] = array("type"=>200,"varname"=>"cert_compare", "name" => "cert_compare");
+$dalTableinforme_intersup["sign_hash"] = array("type"=>200,"varname"=>"sign_hash", "name" => "sign_hash");
+$dalTableinforme_intersup["sign_date"] = array("type"=>135,"varname"=>"sign_date", "name" => "sign_date");
+$dalTableinforme_intersup["sign_mailnot"] = array("type"=>200,"varname"=>"sign_mailnot", "name" => "sign_mailnot");
+$dalTableinforme_intersup["sign_verificacert"] = array("type"=>200,"varname"=>"sign_verificacert", "name" => "sign_verificacert");
+$dalTableinforme_intersup["sign_file"] = array("type"=>16,"varname"=>"sign_file", "name" => "sign_file");
 	$dalTableinforme_intersup["inf_id"]["key"]=true;
 
 $dal_info["dbct_at_localhost__informe_intersup"] = &$dalTableinforme_intersup;

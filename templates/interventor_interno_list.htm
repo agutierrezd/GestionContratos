@@ -113,6 +113,32 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_apellidos}</span>
 						</div>
 		{END searchCtrlBlock_apellidos}
+																{BEGIN searchCtrlBlock_fecha_fin}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_fin}" {$filterRow_attrs_fecha_fin}>
+			<label>{$label interventor_interno fecha_fin }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_fin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_fin}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_fin}</span>
+						</div>
+		{END searchCtrlBlock_fecha_fin}
+																{BEGIN searchCtrlBlock_fecha_inicio}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fecha_inicio}" {$filterRow_attrs_fecha_inicio}>
+			<label>{$label interventor_interno fecha_inicio }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fecha_inicio}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fecha_inicio}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fecha_inicio}</span>
+						</div>
+		{END searchCtrlBlock_fecha_inicio}
 																{BEGIN searchCtrlBlock_nombres}
 
 
@@ -572,6 +598,12 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="sup_mailnot"]:before {
 		content: "{$label interventor_interno sup_mailnot}";
 	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="fecha_inicio"]:before {
+		content: "{$label interventor_interno fecha_inicio}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="fecha_fin"]:before {
+		content: "{$label interventor_interno fecha_fin}";
+	}
 	}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
@@ -789,6 +821,60 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field5}
+				 
+					{BEGIN cellblock_grid_headcell_field6}
+	<th
+	
+	{$cell_grid_headcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_inicio_class}
+			"
+
+			data-field="fecha_inicio"
+	
+	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_inicio_fieldheadercolumn}
+	{BEGIN fecha_inicio_fieldheader}
+	<SPAN {$fecha_inicio_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field_label" {$item_grid_field_label} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_inicio">
+	{$label interventor_interno fecha_inicio }	{$arrow_icon_fecha_inicio}
+	</SPAN>
+	{END fecha_inicio_fieldheader}
+{END fecha_inicio_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field6}
+				 
+					{BEGIN cellblock_grid_headcell_field7}
+	<th
+	
+	{$cell_grid_headcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_fin_class}
+			"
+
+			data-field="fecha_fin"
+	
+	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_fin_fieldheadercolumn}
+	{BEGIN fecha_fin_fieldheader}
+	<SPAN {$fecha_fin_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field_label1" {$item_grid_field_label1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_fin">
+	{$label interventor_interno fecha_fin }	{$arrow_icon_fecha_fin}
+	</SPAN>
+	{END fecha_fin_fieldheader}
+{END fecha_fin_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field7}
 							</tr>
 					 
 					 
@@ -1014,6 +1100,52 @@
 {END sup_fechanot_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field5}
+				 
+					{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_inicio_class}
+			"
+
+			data-field="fecha_inicio"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_inicio_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_inicio" data-default-width >
+{$fecha_inicio_value}
+</span>
+{END fecha_inicio_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+				 
+					{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$fecha_fin_class}
+			"
+
+			data-field="fecha_fin"
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fecha_fin_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fecha_fin" data-default-width >
+{$fecha_fin_value}
+</span>
+{END fecha_fin_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field7}
 							</tr>
 					 
 					
@@ -1157,6 +1289,38 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field5}
+				 
+					{BEGIN cellblock_grid_footcell_field6}
+	<td
+	
+	{$cell_grid_footcell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="interventor_interno_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field6}
+				 
+					{BEGIN cellblock_grid_footcell_field7}
+	<td
+	
+	{$cell_grid_footcell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="interventor_interno_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field7}
 							</tr>
 					
 					</tfoot>

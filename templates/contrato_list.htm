@@ -113,6 +113,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_prenumero}</span>
 						</div>
 		{END searchCtrlBlock_prenumero}
+																{BEGIN searchCtrlBlock_cont_valorvigente}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_cont_valorvigente}" {$filterRow_attrs_cont_valorvigente}>
+			<label>{$label contrato cont_valorvigente }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_cont_valorvigente}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_cont_valorvigente}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_cont_valorvigente}</span>
+						</div>
+		{END searchCtrlBlock_cont_valorvigente}
 																{BEGIN searchCtrlBlock_cont_cesion}
 
 
@@ -765,7 +778,7 @@
 			<div>
 				<label for="printDetailspolizas_master{$id}">
 					<input type="checkbox" value="polizas_master" id="printDetailspolizas_master{$id}" checked>
-					PÓLIZAS				</label>
+					Pólizas				</label>
 			</div>
 			{END print_details_polizas_master}
 														{BEGIN print_details_interventor_interno}
@@ -793,7 +806,7 @@
 			<div>
 				<label for="printDetailscontrato_oe{$id}">
 					<input type="checkbox" value="contrato_oe" id="printDetailscontrato_oe{$id}" checked>
-					OBLIGACIONES ESPECÍFICAS				</label>
+					Obligaciones específicas				</label>
 			</div>
 			{END print_details_contrato_oe}
 														{BEGIN print_details_contrato_modifica}
@@ -845,6 +858,13 @@
 					Ordenes de pago				</label>
 			</div>
 			{END print_details_q_info_ordenpago}
+														{BEGIN print_details_contrato_dependencia}
+			<div>
+				<label for="printDetailscontrato_dependencia{$id}">
+					<input type="checkbox" value="contrato_dependencia" id="printDetailscontrato_dependencia{$id}" checked>
+					Dependencias asociadas				</label>
+			</div>
+			{END print_details_contrato_dependencia}
 						</div>
 </div>
 {END print_details}
@@ -1019,9 +1039,89 @@ data-pagetype="print"
 			</div>
 		</a>
 		</li>
+						<li>
+		<a>
+		  	<div class="checkbox">
+				<label>
+					<input type="checkbox" id="hide_cont_valorvigente" checked="checked" value="1" data-field="cont_valorvigente">
+					<span>{$label contrato cont_valorvigente }</span>
+				</label>
+			</div>
+		</a>
+		</li>
 			</ul>
 </div>
 		</div>					</div>
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c3" data-pageid="{$pageid}"	{$cell_above-grid_c3}
+	class=" r-ori-vert			col-md-6
+	
+">
+		 
+		<span data-itemtype="custom_button_container" data-itemid="custom_button_container" {$item_custom_button_container} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-success   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+						Modificaciones			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN view_column}
+{BEGIN view_link}
+	<li data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-small >
+				<a  href="contrato_view.php?{$editlink}" {$viewlink_attrs} title="Ver" data-popup  title="Ver registro" >
+					<span class="fa fa-search-plus"></span>
+				
+		Detalle		
+		</a>
+	</li>
+{END view_link}
+{END view_column}
+							{BEGIN edit_column}
+{BEGIN edit_link}
+	<li data-itemtype="grid_edit" data-itemid="grid_edit1" {$item_grid_edit1} data-pageid="{$pageid}" data-small >
+				<a  href="contrato_edit.php?page=edit1&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit1" data-popup data-popupwidth="960" data-popupheight="600"  title="Editar" >
+					<span class="fa fa-usd"></span>
+				
+		Adición | Reducción		
+		</a>
+	</li>
+{END edit_link}
+{END edit_column}
+							{BEGIN edit_column}
+{BEGIN edit_link}
+	<li data-itemtype="grid_edit" data-itemid="grid_edit2" {$item_grid_edit2} data-pageid="{$pageid}" data-small >
+				<a  href="contrato_edit.php?page=edit2&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit2" data-popup data-popupwidth="960" data-popupheight="600"  title="Prórroga" >
+					<span class="fa fa-clock-o"></span>
+				
+		Prórroga		
+		</a>
+	</li>
+{END edit_link}
+{END edit_column}
+							{BEGIN edit_column}
+{BEGIN edit_link}
+	<li data-itemtype="grid_edit" data-itemid="grid_edit3" {$item_grid_edit3} data-pageid="{$pageid}" data-small >
+				<a  href="contrato_edit.php?page=edit3&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit3" data-popup data-popupwidth="960" data-popupheight="640"  title="Editar" >
+					<span class="fa fa-user-times"></span>
+				
+		Cesión		
+		</a>
+	</li>
+{END edit_link}
+{END edit_column}
+					</ul>
+	</span>
+</span>
+		</div>			 
+				<div 
+	data-cellId="above-grid_c4" data-pageid="{$pageid}"	{$cell_above-grid_c4}
+	class="r-align-right r-ori-vert			col-md-6
+	
+">
+			</div>					</div>
 	</div>		
 {END above-grid_block}
 						</div>
@@ -1072,7 +1172,10 @@ data-pagetype="print"
 															[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_secop_enlace"]:before {
 		content: "{$label contrato cont_secop_enlace}";
 	}
-												}
+														[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_valorvigente"]:before {
+		content: "{$label contrato cont_valorvigente}";
+	}
+			}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
 	cellpadding="0" 
@@ -1215,7 +1318,7 @@ data-pagetype="print"
 	 
 		{BEGIN contnumero_fieldheadercolumn}
 	{BEGIN contnumero_fieldheader}
-	<SPAN {$contnumero_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contnumero">
+	<SPAN {$contnumero_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="contnumero">
 	{$label contrato contnumero }	{$arrow_icon_contnumero}
 	</SPAN>
 	{END contnumero_fieldheader}
@@ -1296,7 +1399,7 @@ data-pagetype="print"
 	 
 		{BEGIN cont_nit_contra_ta_fieldheadercolumn}
 	{BEGIN cont_nit_contra_ta_fieldheader}
-	<SPAN {$cont_nit_contra_ta_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_nit_contra_ta">
+	<SPAN {$cont_nit_contra_ta_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_nit_contra_ta">
 	{$label contrato cont_nit_contra_ta }	{$arrow_icon_cont_nit_contra_ta}
 	</SPAN>
 	{END cont_nit_contra_ta_fieldheader}
@@ -1323,7 +1426,7 @@ data-pagetype="print"
 	 
 		{BEGIN nombre_cont_fieldheadercolumn}
 	{BEGIN nombre_cont_fieldheader}
-	<SPAN {$nombre_cont_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombre_cont">
+	<SPAN {$nombre_cont_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="nombre_cont">
 	{$label contrato nombre_cont }	{$arrow_icon_nombre_cont}
 	</SPAN>
 	{END nombre_cont_fieldheader}
@@ -1420,12 +1523,39 @@ data-pagetype="print"
 	{$cell_grid_headcell_field10}
 	{$recordattrs}
 	class="
+		 r-ori-vert				{$cont_valorvigente_class}
+			"
+
+			data-field="cont_valorvigente"
+	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valorvigente_fieldheadercolumn}
+	{BEGIN cont_valorvigente_fieldheader}
+	<SPAN {$cont_valorvigente_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field7" {$item_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorvigente">
+	{$label contrato cont_valorvigente }	{$arrow_icon_cont_valorvigente}
+	</SPAN>
+	{END cont_valorvigente_fieldheader}
+{END cont_valorvigente_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field10}
+				 
+					{BEGIN cellblock_grid_headcell_field11}
+	<th
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
 		 r-ori-vert				{$cont_valormensual_class}
 			"
 
 			data-field="cont_valormensual"
 	
-	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1439,12 +1569,12 @@ data-pagetype="print"
 
 	
 	</th>
-	{END cellblock_grid_headcell_field10}
+	{END cellblock_grid_headcell_field11}
 				 
-					{BEGIN cellblock_grid_headcell_field11}
+					{BEGIN cellblock_grid_headcell_field12}
 	<th
 	
-	{$cell_grid_headcell_field11}
+	{$cell_grid_headcell_field12}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$cont_estado_class}
@@ -1452,13 +1582,13 @@ data-pagetype="print"
 
 			data-field="cont_estado"
 	
-	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
 		{BEGIN cont_estado_fieldheadercolumn}
 	{BEGIN cont_estado_fieldheader}
-	<SPAN {$cont_estado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_estado">
+	<SPAN {$cont_estado_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_estado">
 	{$label contrato cont_estado }	{$arrow_icon_cont_estado}
 	</SPAN>
 	{END cont_estado_fieldheader}
@@ -1466,7 +1596,7 @@ data-pagetype="print"
 
 	
 	</th>
-	{END cellblock_grid_headcell_field11}
+	{END cellblock_grid_headcell_field12}
 							</tr>
 					 
 					 
@@ -1484,15 +1614,17 @@ data-pagetype="print"
 								r-gridrow
 							">
 				 
-						<td
+					{BEGIN cellblock_grid_cell_icons}
+	<td
 	
 	{$cell_grid_cell_icons}
 	{$recordattrs}
 	class="
-					"
+		 r-ori-vert			"
 
 	
-	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"		data-control-cell
+	
 	>
 
 	 
@@ -1506,64 +1638,10 @@ data-pagetype="print"
 </span>
 {END edit_link}
 {END edit_column}
-	 
-		<span data-itemtype="custom_button_container" data-itemid="custom_button_container" {$item_custom_button_container} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
-	<span class="dropdown ">
-		<button type="button" title="" class="btn btn-success   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
-							<span class="glyphicon glyphicon-menu-hamburger"></span>
-						Modificaciones			<span class="caret"></span>
-		</button>
-		<ul class="dropdown-menu">
-							{BEGIN view_column}
-{BEGIN view_link}
-	<li data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
-				<a  href="contrato_view.php?{$editlink}" {$viewlink_attrs} title="Ver" data-popup  title="Ver registro" >
-					<span class="fa fa-search-plus"></span>
-				
-		Detalle		
-		</a>
-	</li>
-{END view_link}
-{END view_column}
-							{BEGIN edit_column}
-{BEGIN edit_link}
-	<li data-itemtype="grid_edit" data-itemid="grid_edit1" {$item_grid_edit1} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
-				<a  href="contrato_edit.php?page=edit1&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit1" data-popup data-popupwidth="960" data-popupheight="600"  title="Editar" >
-					<span class="fa fa-usd"></span>
-				
-		Adición | Reducción		
-		</a>
-	</li>
-{END edit_link}
-{END edit_column}
-							{BEGIN edit_column}
-{BEGIN edit_link}
-	<li data-itemtype="grid_edit" data-itemid="grid_edit2" {$item_grid_edit2} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
-				<a  href="contrato_edit.php?page=edit2&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit2" data-popup data-popupwidth="960" data-popupheight="600"  title="Prórroga" >
-					<span class="fa fa-clock-o"></span>
-				
-		Prórroga		
-		</a>
-	</li>
-{END edit_link}
-{END edit_column}
-							{BEGIN edit_column}
-{BEGIN edit_link}
-	<li data-itemtype="grid_edit" data-itemid="grid_edit3" {$item_grid_edit3} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
-				<a  href="contrato_edit.php?page=edit3&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit3" data-popup data-popupwidth="960" data-popupheight="640"  title="Editar" >
-					<span class="fa fa-user-times"></span>
-				
-		Cesión		
-		</a>
-	</li>
-{END edit_link}
-{END edit_column}
-					</ul>
-	</span>
-</span>
 	
 	</td>
-					 
+	{END cellblock_grid_cell_icons}
+				 
 					{BEGIN cellblock_grid_cell_checkbox}
 	<td
 	
@@ -1573,7 +1651,8 @@ data-pagetype="print"
 		 r-ori-vert			"
 
 	
-	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
+	
 		data-checkbox-cell
 	>
 
@@ -1596,7 +1675,8 @@ data-pagetype="print"
 					"
 
 	
-	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"		data-control-cell
+	
 	>
 
 	 
@@ -1692,6 +1772,20 @@ data-pagetype="print"
 			</a>
 	</span>
 	{END q_info_ordenpago_dtable_link}
+
+
+	 
+		
+		
+	{BEGIN contrato_dependencia_dtable_link}
+	<span data-itemtype="grid_details_link" data-itemid="grid_details_link6" {$item_grid_details_link6} data-pageid="{$pageid}" data-record-id="{$recId}">
+	<a  {$contrato_dependencia_link_attrs} data-short-details="contrato_dependencia"
+		class="{$contrato_dependencia_dlink_class}" 
+		title="{$caption contrato_dependencia }"	>
+								
+			</a>
+	</span>
+	{END contrato_dependencia_dtable_link}
 
 
 	
@@ -1934,20 +2028,20 @@ data-pagetype="print"
 	{$cell_grid_cell_field10}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_valormensual_class}
+		 r-ori-vert				{$cont_valorvigente_class}
 			"
 
-			data-field="cont_valormensual"
+			data-field="cont_valorvigente"
 	
 	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN cont_valormensual_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valormensual" data-default-width >
-{$cont_valormensual_value}
+		{BEGIN cont_valorvigente_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field6" {$item_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorvigente" data-default-width >
+{$cont_valorvigente_value}
 </span>
-{END cont_valormensual_fieldcolumn}	
+{END cont_valorvigente_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field10}
 				 
@@ -1957,12 +2051,35 @@ data-pagetype="print"
 	{$cell_grid_cell_field11}
 	{$recordattrs}
 	class="
+		 r-ori-vert				{$cont_valormensual_class}
+			"
+
+			data-field="cont_valormensual"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valormensual_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valormensual" data-default-width >
+{$cont_valormensual_value}
+</span>
+{END cont_valormensual_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+				 
+					{BEGIN cellblock_grid_cell_field12}
+	<td
+	
+	{$cell_grid_cell_field12}
+	{$recordattrs}
+	class="
 		 r-ori-vert				{$cont_estado_class}
 			"
 
 			data-field="cont_estado"
 	
-	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1972,7 +2089,7 @@ data-pagetype="print"
 </span>
 {END cont_estado_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field11}
+	{END cellblock_grid_cell_field12}
 							</tr>
 					 
 						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
@@ -1992,9 +2109,9 @@ data-pagetype="print"
 	>
 
 	 
-															<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
-	data-orders="contrato_attached,interventor_interno,polizas_master,contrato_cdp,contrato_rp,contrato_oe,contrato_modifica_prorroga,contrato_modifica,contrato_modifica_cesion,contrato_modifica_track,q_info_registros,q_info_obligacion,q_info_ordenpago"
-			data-details-contrato_attached			data-details-interventor_interno			data-details-polizas_master			data-details-contrato_cdp			data-details-contrato_rp			data-details-contrato_oe			data-details-contrato_modifica_prorroga			data-details-contrato_modifica			data-details-contrato_modifica_cesion			data-details-contrato_modifica_track			data-details-q_info_registros			data-details-q_info_obligacion			data-details-q_info_ordenpago	>
+																<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="contrato_attached,interventor_interno,polizas_master,contrato_cdp,contrato_rp,contrato_oe,contrato_modifica_prorroga,contrato_modifica,contrato_modifica_cesion,contrato_modifica_track,q_info_registros,q_info_obligacion,q_info_ordenpago,contrato_dependencia"
+			data-details-contrato_attached			data-details-interventor_interno			data-details-polizas_master			data-details-contrato_cdp			data-details-contrato_rp			data-details-contrato_oe			data-details-contrato_modifica_prorroga			data-details-contrato_modifica			data-details-contrato_modifica_cesion			data-details-contrato_modifica_track			data-details-q_info_registros			data-details-q_info_obligacion			data-details-q_info_ordenpago			data-details-contrato_dependencia	>
 		<span data-details-inside data-short-table="contrato_attached">
 			</span>
 		<span data-details-inside data-short-table="interventor_interno">
@@ -2021,10 +2138,13 @@ data-pagetype="print"
 			</span>
 		<span data-details-inside data-short-table="q_info_ordenpago">
 			</span>
+		<span data-details-inside data-short-table="contrato_dependencia">
+			</span>
 		<div data-details-preview>
 	</div>
 </div>
 	 
+			 
 			 
 			 
 			 
@@ -2295,6 +2415,22 @@ data-pagetype="print"
 	
 	</td>
 	{END cellblock_grid_footcell_field11}
+				 
+					{BEGIN cellblock_grid_footcell_field12}
+	<td
+	
+	{$cell_grid_footcell_field12}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field12}
 							</tr>
 					
 					</tfoot>

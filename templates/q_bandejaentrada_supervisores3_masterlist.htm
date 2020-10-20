@@ -1,0 +1,577 @@
+<div class="panel panel-primary">
+		<div class="panel-heading">
+						{BEGIN top_block}
+<div class="panel-title r-panel-top row" data-location="top" id="form_top_{$pageid}" data-makeup="panel-only" {$form_top} data-pageid="{$pageid}" >		
+	 
+		 
+			<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class="			col-md-12
+	
+">
+		 
+		<span data-itemtype="back_master" data-itemid="back_master" {$item_back_master} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-link  btn-xs 
+	" {$backtomasterlink_attrs} >
+							Regresar a la tabla principal			</a>
+</span>
+	 
+		<h3 class="panel-title" data-itemtype="masterlist_header" data-itemid="masterlist_header" {$item_masterlist_header} data-pageid="{$pageid}" >{$pagetitlelabel q_bandejaentrada_supervisores3 masterlist}</h3>
+		</div>			</div>		
+{END top_block}
+			</div>
+		<div class="panel-body">
+							{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="panel-only" {$form_above-grid} data-pageid="{$pageid}" >		
+	</div>		
+{END above-grid_block}
+								{BEGIN grid_block}
+{BEGIN grid_tabs}
+  <ul class="nav nav-tabs bsgrid_tabs">
+	{$grid_tabs_content}
+  </ul>
+{END grid_tabs}
+{BEGIN message_block}
+<div data-grid-message data-pageid="{$pageid}" class="alert {$message_class}" role="alert" {$grid_message_attrs}>{$message}</div>
+{END message_block}<div  data-location="grid" id="form_grid_{$pageid}" data-makeup="panel-only" {$form_grid} data-pageid="{$pageid}" >
+{BEGIN grid_row}
+	<div class="r-grid-columns {$rowclass}" {$rowattrs} {$rowstyle}>
+	{BEGIN grid_record}
+		{BEGIN grid_vrecord}
+		<div class="panel panel-default" {$recordattrs}>
+									
+			{BEGIN grid_recordheader}
+			<div class="panel-heading">
+						
+				<table data-location="grid" class="header-table">
+					<tbody>
+				 
+												
+						<tr >
+						 
+							{BEGIN cellblock_grid_cell_top}
+	<th
+	
+	{$cell_grid_cell_top}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_top" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_cell_top}
+												</tr>
+									 
+									 
+									 
+									 
+									 
+									 
+											
+					</tbody>
+				</table>
+
+					</div>
+		{END grid_recordheader}
+												
+			<div class="panel-body">					
+						
+				<table data-location="grid" class="bs-fieldsgrid table">
+					<tbody>
+				 
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label}
+	<td
+	
+	{$cell_grid_cell_label}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$cont_nit_contra_ta_class}
+			"
+
+			data-field="cont_nit_contra_ta"
+	
+	data-cellId="grid_cell_label" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_nit_contra_ta_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_nit_contra_ta">
+	{$label q_bandejaentrada_supervisores3 cont_nit_contra_ta }	</span>
+{END cont_nit_contra_ta_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label}
+						 
+							{BEGIN cellblock_grid_cell_field}
+	<td
+	
+	{$cell_grid_cell_field}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_nit_contra_ta_class}
+			"
+
+			data-field="cont_nit_contra_ta"
+	
+	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_nit_contra_ta_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_nit_contra_ta" data-default-width >
+{$cont_nit_contra_ta_value}
+</span>
+{END cont_nit_contra_ta_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field}
+						 
+							{BEGIN cellblock_grid_cell_label1}
+	<td
+	
+	{$cell_grid_cell_label1}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$cont_fecha_inicio_class}
+			"
+
+			data-field="cont_fecha_inicio"
+	
+	data-cellId="grid_cell_label1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fecha_inicio_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_inicio">
+	{$label q_bandejaentrada_supervisores3 cont_fecha_inicio }	</span>
+{END cont_fecha_inicio_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label1}
+						 
+							{BEGIN cellblock_grid_cell_field1}
+	<td
+	
+	{$cell_grid_cell_field1}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fecha_inicio_class}
+			"
+
+			data-field="cont_fecha_inicio"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fecha_inicio_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_inicio" data-default-width >
+{$cont_fecha_inicio_value}
+</span>
+{END cont_fecha_inicio_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label2}
+	<td
+	
+	{$cell_grid_cell_label2}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$cont_nit_contra_taname_class}
+			"
+
+			data-field="cont_nit_contra_taname"
+	
+	data-cellId="grid_cell_label2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_nit_contra_taname_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_nit_contra_taname">
+	{$label q_bandejaentrada_supervisores3 cont_nit_contra_taname }	</span>
+{END cont_nit_contra_taname_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label2}
+						 
+							{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_nit_contra_taname_class}
+			"
+
+			data-field="cont_nit_contra_taname"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_nit_contra_taname_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_nit_contra_taname" data-default-width >
+{$cont_nit_contra_taname_value}
+</span>
+{END cont_nit_contra_taname_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field2}
+						 
+							{BEGIN cellblock_grid_cell_label3}
+	<td
+	
+	{$cell_grid_cell_label3}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$cont_fechafinal_class}
+			"
+
+			data-field="cont_fechafinal"
+	
+	data-cellId="grid_cell_label3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fechafinal_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechafinal">
+	{$label q_bandejaentrada_supervisores3 cont_fechafinal }	</span>
+{END cont_fechafinal_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label3}
+						 
+							{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_fechafinal_class}
+			"
+
+			data-field="cont_fechafinal"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_fechafinal_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechafinal" data-default-width >
+{$cont_fechafinal_value}
+</span>
+{END cont_fechafinal_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label6}
+	<td
+	
+	{$cell_grid_cell_label6}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$numcontrato_class}
+			"
+
+			data-field="numcontrato"
+	
+	data-cellId="grid_cell_label6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN numcontrato_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="numcontrato">
+	{$label q_bandejaentrada_supervisores3 numcontrato }	</span>
+{END numcontrato_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label6}
+						 
+							{BEGIN cellblock_grid_cell_field6}
+	<td
+	
+	{$cell_grid_cell_field6}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$numcontrato_class}
+			"
+
+			data-field="numcontrato"
+	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN numcontrato_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="numcontrato" data-default-width >
+{$numcontrato_value}
+</span>
+{END numcontrato_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field6}
+						 
+							{BEGIN cellblock_grid_cell_label7}
+	<td
+	
+	{$cell_grid_cell_label7}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label7}
+						 
+							{BEGIN cellblock_grid_cell_field7}
+	<td
+	
+	{$cell_grid_cell_field7}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field7}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label8}
+	<td
+	
+	{$cell_grid_cell_label8}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$cont_ano_class}
+			"
+
+			data-field="cont_ano"
+	
+	data-cellId="grid_cell_label8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_ano_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_ano">
+	{$label q_bandejaentrada_supervisores3 cont_ano }	</span>
+{END cont_ano_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label8}
+						 
+							{BEGIN cellblock_grid_cell_field8}
+	<td
+	
+	{$cell_grid_cell_field8}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_ano_class}
+			"
+
+			data-field="cont_ano"
+	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_ano_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_ano" data-default-width >
+{$cont_ano_value}
+</span>
+{END cont_ano_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+						 
+							{BEGIN cellblock_grid_cell_label9}
+	<td
+	
+	{$cell_grid_cell_label9}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$cont_valormensual_class}
+			"
+
+			data-field="cont_valormensual"
+	
+	data-cellId="grid_cell_label9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valormensual_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valormensual">
+	{$label q_bandejaentrada_supervisores3 cont_valormensual }	</span>
+{END cont_valormensual_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label9}
+						 
+							{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_valormensual_class}
+			"
+
+			data-field="cont_valormensual"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_valormensual_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valormensual" data-default-width >
+{$cont_valormensual_value}
+</span>
+{END cont_valormensual_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field9}
+												</tr>
+									 
+												
+						<tr class="{$rowclass}">
+						 
+							{BEGIN cellblock_grid_cell_label10}
+	<td
+	
+	{$cell_grid_cell_label10}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert			"
+
+	
+	data-cellId="grid_cell_label10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_label10}
+						 
+							{BEGIN cellblock_grid_cell_field10}
+	<td
+	
+	{$cell_grid_cell_field10}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_cell_field10}
+						 
+							{BEGIN cellblock_grid_cell_label11}
+	<td
+	
+	{$cell_grid_cell_label11}
+	{$recordattrs}
+	class="
+		r-align-right r-ori-vert				{$cont_secop_enlace_class}
+			"
+
+			data-field="cont_secop_enlace"
+	
+	data-cellId="grid_cell_label11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_secop_enlace_fieldheadercolumn}
+ 
+	<span data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_enlace">
+	{$label q_bandejaentrada_supervisores3 cont_secop_enlace }	</span>
+{END cont_secop_enlace_fieldheadercolumn}
+
+	
+	</td>
+	{END cellblock_grid_cell_label11}
+						 
+							{BEGIN cellblock_grid_cell_field11}
+	<td
+	
+	{$cell_grid_cell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$cont_secop_enlace_class}
+			"
+
+			data-field="cont_secop_enlace"
+	
+	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN cont_secop_enlace_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_secop_enlace" data-default-width >
+{$cont_secop_enlace_value}
+</span>
+{END cont_secop_enlace_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field11}
+												</tr>
+									 
+											
+					</tbody>
+				</table>
+
+				
+			</div>				
+									
+		</div>
+		{END grid_vrecord}
+	{END grid_record}
+	</div>
+
+<div style="clear: both;"></div>
+ 
+	{BEGIN grid_record}
+			{END grid_record}
+
+
+{END grid_row}
+</div>			
+{END grid_block}
+								</div>
+</div>

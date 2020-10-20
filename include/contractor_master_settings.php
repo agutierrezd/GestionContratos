@@ -3446,6 +3446,7 @@ $proto45["m_columns"][] = "dem_genero";
 $proto45["m_columns"][] = "dem_ocupacion";
 $proto45["m_columns"][] = "dem_profesion";
 $proto45["m_columns"][] = "ct_fecha_nacimiento";
+$proto45["m_columns"][] = "ct_fecha_nacimiento_mun";
 $proto45["m_columns"][] = "ct_nacionalidad";
 $proto45["m_columns"][] = "dem_edad";
 $proto45["m_columns"][] = "dem_educacion";

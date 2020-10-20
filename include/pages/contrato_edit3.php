@@ -24,6 +24,8 @@
 'q_info_obligacion' => array( 'displayPreview' => 2,
 'previewPageId' => '' ),
 'q_info_ordenpago' => array( 'displayPreview' => 2,
+'previewPageId' => '' ),
+'contrato_dependencia' => array( 'displayPreview' => 2,
 'previewPageId' => '' ) ),
 'captcha' => array( 'captcha' => false ),
 'fields' => array( 'gridFields' => array( 'cont_nit_contra_ta',

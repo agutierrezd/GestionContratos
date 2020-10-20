@@ -396,6 +396,60 @@ pdfDocument = {
 				{END row_grid_3}
 								{BEGIN row_grid_4}
 				[
+												{BEGIN cellblock_grid_c21}
+{
+	cellId: 'c21',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel interventor_interno fecha_fin }","bold":true},{"text":{$fecha_fin_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c21}
+																			{BEGIN cellblock_grid_c22}
+{
+	cellId: 'c22',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_c22}
+											],
+				{END row_grid_4}
+								{BEGIN row_grid_5}
+				[
 												{BEGIN cellblock_grid_c12}
 {
 	cellId: 'c12',
@@ -449,8 +503,8 @@ pdfDocument = {
 
 {END cellblock_grid_c13}
 											],
-				{END row_grid_4}
-								{BEGIN row_grid_5}
+				{END row_grid_5}
+								{BEGIN row_grid_6}
 				[
 												{BEGIN cellblock_grid_c15}
 {
@@ -507,58 +561,6 @@ pdfDocument = {
   },
 
 {END cellblock_grid_c18}
-											],
-				{END row_grid_5}
-								{BEGIN row_grid_6}
-				[
-												{BEGIN cellblock_grid_c19}
-{
-	cellId: 'c19',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				'',
-	  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_c19}
-																			{BEGIN cellblock_grid_c20}
-{
-	cellId: 'c20',
-	col:0,
-	row:0,
-			style: 'cell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-						
-	
-	
-	
-			"stack": [
-		
-				'',
-	  ],
-  "border": [ false, false, false, false ],
-          "alignment": 'left',
-  },
-
-{END cellblock_grid_c20}
 											],
 				{END row_grid_6}
 					]

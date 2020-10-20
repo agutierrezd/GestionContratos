@@ -3251,6 +3251,14 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "q_info_obligacion" ] = "q_info_obligacion";
 	$projectEntities[ "q_info_ordenpago" ] = array( "url" => "q_info_ordenpago", "type" => 0 );
 	$projectEntitiesReverse[ "q_info_ordenpago" ] = "q_info_ordenpago";
+	$projectEntities[ "q_bandejaentrada_supervisores3" ] = array( "url" => "q_bandejaentrada_supervisores3", "type" => 1 );
+	$projectEntitiesReverse[ "q_bandejaentrada_supervisores3" ] = "q_bandejaentrada_supervisores3";
+	$projectEntities[ "informe_intersup3" ] = array( "url" => "informe_intersup3", "type" => 1 );
+	$projectEntitiesReverse[ "informe_intersup3" ] = "informe_intersup3";
+	$projectEntities[ "contrato_dependencia" ] = array( "url" => "contrato_dependencia", "type" => 0 );
+	$projectEntitiesReverse[ "contrato_dependencia" ] = "contrato_dependencia";
+	$projectEntities[ "global_users_sup" ] = array( "url" => "global_users_sup", "type" => 1 );
+	$projectEntitiesReverse[ "global_users_sup" ] = "global_users_sup";
 }
 
 function findTable( $table ) {

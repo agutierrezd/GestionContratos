@@ -93,9 +93,25 @@ $this->settings["option2"] = 0;;
 			$field = $dashFields[$field][0]["field"];
 		}
 	}
-				if($tName=="interventor_interno" && $field=="sys_date")
+				if($tName=="interventor_interno" && $field=="sys_user")
 	{
-		$this->settings["option1"] = strftime("%Y-%m-%d");
+		$this->settings["option1"] = $_SESSION["UserID"];
+$this->settings["option2"] = $_SESSION["UserID"];;
+		return;
+	}	
+	$tName = $this->pageObject->tName;
+	$field = $this->field;
+	if( $this->pageObject->pSet ) {
+		if($this->pageObject->pageType == PAGE_SEARCH && $this->pageObject->pSet->getTableType() == PAGE_DASHBOARD)
+		{
+			$dashFields = $this->pageObject->pSet->getDashboardSearchFields();
+			$tName = $dashFields[$field][0]["table"];
+			$field = $dashFields[$field][0]["field"];
+		}
+	}
+				if($tName=="informe_intersup" && $field=="sign_hash" && $this->pageObject->pageType=="edit")
+	{
+		$this->settings["option1"] = "value";
 $this->settings["option2"] = 0;;
 		return;
 	}	
@@ -109,10 +125,74 @@ $this->settings["option2"] = 0;;
 			$field = $dashFields[$field][0]["field"];
 		}
 	}
-				if($tName=="interventor_interno" && $field=="sys_user")
+				if($tName=="informe_intersup" && $field=="sign_hash" && $this->pageObject->pageType=="add")
 	{
-		$this->settings["option1"] = $_SESSION["UserID"];
-$this->settings["option2"] = $_SESSION["UserID"];;
+		$this->settings["option1"] = "value"
+$this->settings["option2"] = 0;;
+		return;
+	}	
+	$tName = $this->pageObject->tName;
+	$field = $this->field;
+	if( $this->pageObject->pSet ) {
+		if($this->pageObject->pageType == PAGE_SEARCH && $this->pageObject->pSet->getTableType() == PAGE_DASHBOARD)
+		{
+			$dashFields = $this->pageObject->pSet->getDashboardSearchFields();
+			$tName = $dashFields[$field][0]["table"];
+			$field = $dashFields[$field][0]["field"];
+		}
+	}
+				if($tName=="informe_intersup" && $field=="sign_hash" && $this->pageObject->pageType=="search")
+	{
+		$this->settings["option1"] = "value"
+$this->settings["option2"] = 0;;
+		return;
+	}	
+	$tName = $this->pageObject->tName;
+	$field = $this->field;
+	if( $this->pageObject->pSet ) {
+		if($this->pageObject->pageType == PAGE_SEARCH && $this->pageObject->pSet->getTableType() == PAGE_DASHBOARD)
+		{
+			$dashFields = $this->pageObject->pSet->getDashboardSearchFields();
+			$tName = $dashFields[$field][0]["table"];
+			$field = $dashFields[$field][0]["field"];
+		}
+	}
+				if($tName=="informe_intersup3" && $field=="sign_hash" && $this->pageObject->pageType=="edit")
+	{
+		$this->settings["option1"] = "value";
+$this->settings["option2"] = 0;;
+		return;
+	}	
+	$tName = $this->pageObject->tName;
+	$field = $this->field;
+	if( $this->pageObject->pSet ) {
+		if($this->pageObject->pageType == PAGE_SEARCH && $this->pageObject->pSet->getTableType() == PAGE_DASHBOARD)
+		{
+			$dashFields = $this->pageObject->pSet->getDashboardSearchFields();
+			$tName = $dashFields[$field][0]["table"];
+			$field = $dashFields[$field][0]["field"];
+		}
+	}
+				if($tName=="informe_intersup3" && $field=="sign_hash" && $this->pageObject->pageType=="add")
+	{
+		$this->settings["option1"] = "value"
+$this->settings["option2"] = 0;;
+		return;
+	}	
+	$tName = $this->pageObject->tName;
+	$field = $this->field;
+	if( $this->pageObject->pSet ) {
+		if($this->pageObject->pageType == PAGE_SEARCH && $this->pageObject->pSet->getTableType() == PAGE_DASHBOARD)
+		{
+			$dashFields = $this->pageObject->pSet->getDashboardSearchFields();
+			$tName = $dashFields[$field][0]["table"];
+			$field = $dashFields[$field][0]["field"];
+		}
+	}
+				if($tName=="informe_intersup3" && $field=="sign_hash" && $this->pageObject->pageType=="search")
+	{
+		$this->settings["option1"] = "value"
+$this->settings["option2"] = 0;;
 		return;
 	}	
 	}

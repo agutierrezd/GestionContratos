@@ -34,7 +34,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsinforme_intersup["Spanish"]["id_cont_fk"] = "ID";
 	$fieldToolTipsinforme_intersup["Spanish"]["id_cont_fk"] = "";
 	$placeHoldersinforme_intersup["Spanish"]["id_cont_fk"] = "";
-	$fieldLabelsinforme_intersup["Spanish"]["inf_consecutivo"] = "Número de informe";
+	$fieldLabelsinforme_intersup["Spanish"]["inf_consecutivo"] = "No. de Pago";
 	$fieldToolTipsinforme_intersup["Spanish"]["inf_consecutivo"] = "";
 	$placeHoldersinforme_intersup["Spanish"]["inf_consecutivo"] = "";
 	$fieldLabelsinforme_intersup["Spanish"]["inf_hash"] = "Código de verificación";
@@ -49,10 +49,10 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsinforme_intersup["Spanish"]["inf_periodicidad"] = "Inf Periodicidad";
 	$fieldToolTipsinforme_intersup["Spanish"]["inf_periodicidad"] = "";
 	$placeHoldersinforme_intersup["Spanish"]["inf_periodicidad"] = "";
-	$fieldLabelsinforme_intersup["Spanish"]["inf_fecharep_i"] = "Fecha inicial del informe";
+	$fieldLabelsinforme_intersup["Spanish"]["inf_fecharep_i"] = "Fecha inicial";
 	$fieldToolTipsinforme_intersup["Spanish"]["inf_fecharep_i"] = "";
 	$placeHoldersinforme_intersup["Spanish"]["inf_fecharep_i"] = "";
-	$fieldLabelsinforme_intersup["Spanish"]["inf_fecharep_f"] = "Fecha final del informe";
+	$fieldLabelsinforme_intersup["Spanish"]["inf_fecharep_f"] = "Fecha final";
 	$fieldToolTipsinforme_intersup["Spanish"]["inf_fecharep_f"] = "";
 	$placeHoldersinforme_intersup["Spanish"]["inf_fecharep_f"] = "";
 	$fieldLabelsinforme_intersup["Spanish"]["inf_numerocontrato"] = "Número de contrato";
@@ -145,11 +145,11 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsinforme_intersup["Spanish"]["sign_hash"] = "Sign Hash";
 	$fieldToolTipsinforme_intersup["Spanish"]["sign_hash"] = "";
 	$placeHoldersinforme_intersup["Spanish"]["sign_hash"] = "";
-	$fieldLabelsinforme_intersup["Spanish"]["sign_file"] = "Sign File";
+	$fieldLabelsinforme_intersup["Spanish"]["sign_file"] = "Sign";
 	$fieldToolTipsinforme_intersup["Spanish"]["sign_file"] = "";
 	$placeHoldersinforme_intersup["Spanish"]["sign_file"] = "";
-	$fieldLabelsinforme_intersup["Spanish"]["sign_mailnot"] = "Sign Mailnot";
-	$fieldToolTipsinforme_intersup["Spanish"]["sign_mailnot"] = "";
+	$fieldLabelsinforme_intersup["Spanish"]["sign_mailnot"] = "Correo";
+	$fieldToolTipsinforme_intersup["Spanish"]["sign_mailnot"] = "La clave será notificada al siguiente correo electrónico";
 	$placeHoldersinforme_intersup["Spanish"]["sign_mailnot"] = "";
 	$fieldLabelsinforme_intersup["Spanish"]["file_verifica"] = "File Verifica";
 	$fieldToolTipsinforme_intersup["Spanish"]["file_verifica"] = "";
@@ -202,6 +202,15 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsinforme_intersup["Spanish"]["cont_modifica"] = "Modificación";
 	$fieldToolTipsinforme_intersup["Spanish"]["cont_modifica"] = "";
 	$placeHoldersinforme_intersup["Spanish"]["cont_modifica"] = "";
+	$fieldLabelsinforme_intersup["Spanish"]["qty_inf"] = "Programados";
+	$fieldToolTipsinforme_intersup["Spanish"]["qty_inf"] = "";
+	$placeHoldersinforme_intersup["Spanish"]["qty_inf"] = "";
+	$fieldLabelsinforme_intersup["Spanish"]["qty_inf_compare"] = "Gestionados";
+	$fieldToolTipsinforme_intersup["Spanish"]["qty_inf_compare"] = "";
+	$placeHoldersinforme_intersup["Spanish"]["qty_inf_compare"] = "";
+	$fieldLabelsinforme_intersup["Spanish"]["qty_inf_verifica"] = "Aprobados";
+	$fieldToolTipsinforme_intersup["Spanish"]["qty_inf_verifica"] = "";
+	$placeHoldersinforme_intersup["Spanish"]["qty_inf_verifica"] = "";
 	$pageTitlesinforme_intersup["Spanish"]["add"] = "Crear nuevo informe de supervisón";
 	if (count($fieldToolTipsinforme_intersup["Spanish"]))
 		$tdatainforme_intersup[".isUseToolTips"] = true;
@@ -364,16 +373,7 @@ $tdatainforme_intersup[".googleLikeFields"][] = "inf_incumplimiento";
 $tdatainforme_intersup[".googleLikeFields"][] = "inf_incumplimiento_obs";
 $tdatainforme_intersup[".googleLikeFields"][] = "inf_otrosaspectostecnicos";
 $tdatainforme_intersup[".googleLikeFields"][] = "inf_recomyobserva";
-$tdatainforme_intersup[".googleLikeFields"][] = "sign_date";
-$tdatainforme_intersup[".googleLikeFields"][] = "sign_hash";
-$tdatainforme_intersup[".googleLikeFields"][] = "sign_file";
-$tdatainforme_intersup[".googleLikeFields"][] = "sign_mailnot";
 $tdatainforme_intersup[".googleLikeFields"][] = "file_verifica";
-$tdatainforme_intersup[".googleLikeFields"][] = "sign_verificacert";
-$tdatainforme_intersup[".googleLikeFields"][] = "cert_date";
-$tdatainforme_intersup[".googleLikeFields"][] = "cert_file";
-$tdatainforme_intersup[".googleLikeFields"][] = "cert_mail";
-$tdatainforme_intersup[".googleLikeFields"][] = "cert_compare";
 $tdatainforme_intersup[".googleLikeFields"][] = "inf_ultimopago";
 $tdatainforme_intersup[".googleLikeFields"][] = "sys_date";
 $tdatainforme_intersup[".googleLikeFields"][] = "inf_mail_a";
@@ -383,6 +383,18 @@ $tdatainforme_intersup[".googleLikeFields"][] = "num_poliza";
 $tdatainforme_intersup[".googleLikeFields"][] = "mun_ejec";
 $tdatainforme_intersup[".googleLikeFields"][] = "cont_cesion";
 $tdatainforme_intersup[".googleLikeFields"][] = "cont_modifica";
+$tdatainforme_intersup[".googleLikeFields"][] = "qty_inf";
+$tdatainforme_intersup[".googleLikeFields"][] = "qty_inf_compare";
+$tdatainforme_intersup[".googleLikeFields"][] = "qty_inf_verifica";
+$tdatainforme_intersup[".googleLikeFields"][] = "cert_mail";
+$tdatainforme_intersup[".googleLikeFields"][] = "cert_file";
+$tdatainforme_intersup[".googleLikeFields"][] = "cert_date";
+$tdatainforme_intersup[".googleLikeFields"][] = "cert_compare";
+$tdatainforme_intersup[".googleLikeFields"][] = "sign_hash";
+$tdatainforme_intersup[".googleLikeFields"][] = "sign_date";
+$tdatainforme_intersup[".googleLikeFields"][] = "sign_mailnot";
+$tdatainforme_intersup[".googleLikeFields"][] = "sign_verificacert";
+$tdatainforme_intersup[".googleLikeFields"][] = "sign_file";
 
 
 
@@ -417,7 +429,7 @@ $tdatainforme_intersup[".strOrderBy"] = $tstrOrderBy;
 
 $tdatainforme_intersup[".orderindexes"] = array();
 
-$tdatainforme_intersup[".sqlHead"] = "SELECT inf_id,  	id_cont_fk,  	inf_consecutivo,  	inf_hash,  	inf_estado,  	inf_fechapresenta,  	inf_periodicidad,  	inf_fecharep_i,  	inf_fecharep_f,  	inf_numerocontrato,  	inf_anio,  	inf_prenum,  	inf_doccontratista,  	inf_nombrecontratista,  	inf_valorcontrato,  	inf_adicionreduc,  	inf_cdp,  	inf_rp,  	inf_rubrocode,  	inf_rubroname,  	inf_objeto,  	inf_fechasuscripcion,  	inf_fechacont_i,  	inf_fechacont_f,  	inf_plazo,  	inf_vigencia,  	inf_modificacionesplazo,  	inf_intersup,  	inf_nombre,  	inf_cargo,  	inf_dependencia,  	inf_avgejecucion,  	inf_actividades,  	inf_declarainconf,  	inf_declarainconf_obs,  	inf_incumplimiento,  	inf_incumplimiento_obs,  	inf_otrosaspectostecnicos,  	inf_recomyobserva,  	sign_date,  	sign_hash,  	sign_file,  	sign_mailnot,  	file_verifica,  	sign_verificacert,  	cert_date,  	cert_file,  	cert_mail,  	cert_compare,  	inf_ultimopago,  	sys_date,  	inf_mail_a,  	inf_mail_b,  	url_secop,  	num_poliza,  	mun_ejec,  	cont_cesion,  	cont_modifica";
+$tdatainforme_intersup[".sqlHead"] = "SELECT inf_id,  	id_cont_fk,  	inf_consecutivo,  	inf_hash,  	inf_estado,  	inf_fechapresenta,  	inf_periodicidad,  	inf_fecharep_i,  	inf_fecharep_f,  	inf_numerocontrato,  	inf_anio,  	inf_prenum,  	inf_doccontratista,  	inf_nombrecontratista,  	inf_valorcontrato,  	inf_adicionreduc,  	inf_cdp,  	inf_rp,  	inf_rubrocode,  	inf_rubroname,  	inf_objeto,  	inf_fechasuscripcion,  	inf_fechacont_i,  	inf_fechacont_f,  	inf_plazo,  	inf_vigencia,  	inf_modificacionesplazo,  	inf_intersup,  	inf_nombre,  	inf_cargo,  	inf_dependencia,  	inf_avgejecucion,  	inf_actividades,  	inf_declarainconf,  	inf_declarainconf_obs,  	inf_incumplimiento,  	inf_incumplimiento_obs,  	inf_otrosaspectostecnicos,  	inf_recomyobserva,  	file_verifica,  	inf_ultimopago,  	sys_date,  	inf_mail_a,  	inf_mail_b,  	url_secop,  	num_poliza,  	mun_ejec,  	cont_cesion,  	cont_modifica,  	qty_inf,  	qty_inf_compare,  	qty_inf_verifica,  	cert_mail,  	cert_file,  	cert_date,  	cert_compare,  	sign_hash,  	sign_date,  	sign_mailnot,  	sign_verificacert,  	sign_file";
 $tdatainforme_intersup[".sqlFrom"] = "FROM informe_intersup";
 $tdatainforme_intersup[".sqlWhereExpr"] = "";
 $tdatainforme_intersup[".sqlTail"] = "";
@@ -719,6 +731,7 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 				//dependent dropdowns @deprecated data ?
 	$edata["DependentLookups"] = array();
 	$edata["DependentLookups"][] = "inf_consecutivo";
+				$edata["DependentLookups"][] = "inf_consecutivo";
 
 	
 	
@@ -842,11 +855,160 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 	$vdata["NumberOfChars"] = 80;
 
 	$fdata["ViewFormats"]["view"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["list"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["print"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["export"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["masterlist"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["masterprint"] = $vdata;
 //  End View Formats
 
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
 	$edata = array("EditFormat" => "Lookup wizard");
 
 	
@@ -926,11 +1088,88 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 	
 	
 	
-	$fdata["EditFormats"]["edit"] = $edata;
+	$fdata["EditFormats"]["add"] = $edata;
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "informe_intersup_plan_pagos";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "inf_consecutivo";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "inf_consecutivo";
+
+				$edata["LookupWhereCode"] = true;
+
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+		$edata["UseCategory"] = true;
+	$edata["categoryFields"] = array();
+	$edata["categoryFields"][] = array( "main" => "id_cont_fk", "lookup" => "id_cont_fk" );
+
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["search"] = $edata;
 //	End Edit Formats
 
 
-	$fdata["isSeparate"] = false;
+	$fdata["isSeparate"] = true;
 
 
 
@@ -1011,6 +1250,111 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 	$vdata["NumberOfChars"] = 80;
 
 	$fdata["ViewFormats"]["view"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["list"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["print"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["export"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["masterlist"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["masterprint"] = $vdata;
 //  End View Formats
 
 //	Begin Edit Formats
@@ -1059,10 +1403,96 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 	
 	
 	$fdata["EditFormats"]["edit"] = $edata;
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["add"] = $edata;
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["search"] = $edata;
 //	End Edit Formats
 
 
-	$fdata["isSeparate"] = false;
+	$fdata["isSeparate"] = true;
 
 
 
@@ -1143,11 +1573,160 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 	$vdata["NumberOfChars"] = 80;
 
 	$fdata["ViewFormats"]["view"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["list"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["print"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["export"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["masterlist"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["masterprint"] = $vdata;
 //  End View Formats
 
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
 	$edata = array("EditFormat" => "Lookup wizard");
 
 	
@@ -1220,11 +1799,56 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 	
 	
 	
-	$fdata["EditFormats"]["edit"] = $edata;
+	$fdata["EditFormats"]["add"] = $edata;
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+		$edata["autoUpdatable"] = true;
+
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["search"] = $edata;
 //	End Edit Formats
 
 
-	$fdata["isSeparate"] = false;
+	$fdata["isSeparate"] = true;
 
 
 
@@ -5842,550 +6466,10 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 
 	$tdatainforme_intersup["inf_recomyobserva"] = $fdata;
 		$tdatainforme_intersup[".searchableFields"][] = "inf_recomyobserva";
-//	sign_date
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 40;
-	$fdata["strName"] = "sign_date";
-	$fdata["GoodName"] = "sign_date";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup","sign_date");
-	$fdata["FieldType"] = 7;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "sign_date";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "sign_date";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Short Date");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Date");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
-
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup["sign_date"] = $fdata;
-		$tdatainforme_intersup[".searchableFields"][] = "sign_date";
-//	sign_hash
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 41;
-	$fdata["strName"] = "sign_hash";
-	$fdata["GoodName"] = "sign_hash";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup","sign_hash");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "sign_hash";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "sign_hash";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=20";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup["sign_hash"] = $fdata;
-		$tdatainforme_intersup[".searchableFields"][] = "sign_hash";
-//	sign_file
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 42;
-	$fdata["strName"] = "sign_file";
-	$fdata["GoodName"] = "sign_file";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup","sign_file");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "sign_file";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "sign_file";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=50";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup["sign_file"] = $fdata;
-		$tdatainforme_intersup[".searchableFields"][] = "sign_file";
-//	sign_mailnot
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 43;
-	$fdata["strName"] = "sign_mailnot";
-	$fdata["GoodName"] = "sign_mailnot";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup","sign_mailnot");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "sign_mailnot";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "sign_mailnot";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=100";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup["sign_mailnot"] = $fdata;
-		$tdatainforme_intersup[".searchableFields"][] = "sign_mailnot";
 //	file_verifica
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 44;
+	$fdata["Index"] = 40;
 	$fdata["strName"] = "file_verifica";
 	$fdata["GoodName"] = "file_verifica";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -6517,685 +6601,10 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 
 	$tdatainforme_intersup["file_verifica"] = $fdata;
 		$tdatainforme_intersup[".searchableFields"][] = "file_verifica";
-//	sign_verificacert
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 45;
-	$fdata["strName"] = "sign_verificacert";
-	$fdata["GoodName"] = "sign_verificacert";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup","sign_verificacert");
-	$fdata["FieldType"] = 16;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "sign_verificacert";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "sign_verificacert";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup["sign_verificacert"] = $fdata;
-		$tdatainforme_intersup[".searchableFields"][] = "sign_verificacert";
-//	cert_date
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 46;
-	$fdata["strName"] = "cert_date";
-	$fdata["GoodName"] = "cert_date";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup","cert_date");
-	$fdata["FieldType"] = 7;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "cert_date";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "cert_date";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Short Date");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Date");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-		$edata["DateEditType"] = 13;
-	$edata["InitialYearFactor"] = 100;
-	$edata["LastYearFactor"] = 10;
-
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Equals";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup["cert_date"] = $fdata;
-		$tdatainforme_intersup[".searchableFields"][] = "cert_date";
-//	cert_file
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 47;
-	$fdata["strName"] = "cert_file";
-	$fdata["GoodName"] = "cert_file";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup","cert_file");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "cert_file";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "cert_file";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=100";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup["cert_file"] = $fdata;
-		$tdatainforme_intersup[".searchableFields"][] = "cert_file";
-//	cert_mail
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 48;
-	$fdata["strName"] = "cert_mail";
-	$fdata["GoodName"] = "cert_mail";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup","cert_mail");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "cert_mail";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "cert_mail";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=100";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup["cert_mail"] = $fdata;
-		$tdatainforme_intersup[".searchableFields"][] = "cert_mail";
-//	cert_compare
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 49;
-	$fdata["strName"] = "cert_compare";
-	$fdata["GoodName"] = "cert_compare";
-	$fdata["ownerTable"] = "informe_intersup";
-	$fdata["Label"] = GetFieldLabel("informe_intersup","cert_compare");
-	$fdata["FieldType"] = 200;
-
-	
-	
-	
-			
-
-		$fdata["strField"] = "cert_compare";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "cert_compare";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypes"] = ".+$";
-		$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=100";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-	//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatainforme_intersup["cert_compare"] = $fdata;
-		$tdatainforme_intersup[".searchableFields"][] = "cert_compare";
 //	inf_ultimopago
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 50;
+	$fdata["Index"] = 41;
 	$fdata["strName"] = "inf_ultimopago";
 	$fdata["GoodName"] = "inf_ultimopago";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -7330,7 +6739,7 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 //	sys_date
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 51;
+	$fdata["Index"] = 42;
 	$fdata["strName"] = "sys_date";
 	$fdata["GoodName"] = "sys_date";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -7465,7 +6874,7 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 //	inf_mail_a
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 52;
+	$fdata["Index"] = 43;
 	$fdata["strName"] = "inf_mail_a";
 	$fdata["GoodName"] = "inf_mail_a";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -7598,7 +7007,7 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 //	inf_mail_b
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 53;
+	$fdata["Index"] = 44;
 	$fdata["strName"] = "inf_mail_b";
 	$fdata["GoodName"] = "inf_mail_b";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -7730,7 +7139,7 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 //	url_secop
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 54;
+	$fdata["Index"] = 45;
 	$fdata["strName"] = "url_secop";
 	$fdata["GoodName"] = "url_secop";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -7754,7 +7163,17 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 //  Begin View Formats
 	$fdata["ViewFormats"] = array();
 
-	$vdata = array("ViewFormat" => "");
+	$vdata = array("ViewFormat" => "Hyperlink");
+
+	
+	
+	
+	
+				$vdata["hlNewWindow"] = true;
+	$vdata["hlType"] = 0;
+	$vdata["hlLinkWordNameType"] = "Text";
+	$vdata["hlLinkWordText"] = "Link";
+	$vdata["hlTitleField"] = "";
 
 	
 	
@@ -7764,12 +7183,6 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 	
 	
 	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
 	
 		$vdata["truncateText"] = true;
 	$vdata["NumberOfChars"] = 80;
@@ -7780,7 +7193,7 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -7792,8 +7205,7 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -7806,19 +7218,15 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=300";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+	
 	
 	//	End validation
 
@@ -7867,7 +7275,7 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 //	num_poliza
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 55;
+	$fdata["Index"] = 46;
 	$fdata["strName"] = "num_poliza";
 	$fdata["GoodName"] = "num_poliza";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -8002,7 +7410,7 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 //	mun_ejec
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 56;
+	$fdata["Index"] = 47;
 	$fdata["strName"] = "mun_ejec";
 	$fdata["GoodName"] = "mun_ejec";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -8137,7 +7545,7 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 //	cont_cesion
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 57;
+	$fdata["Index"] = 48;
 	$fdata["strName"] = "cont_cesion";
 	$fdata["GoodName"] = "cont_cesion";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -8268,7 +7676,7 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 //	cont_modifica
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 58;
+	$fdata["Index"] = 49;
 	$fdata["strName"] = "cont_modifica";
 	$fdata["GoodName"] = "cont_modifica";
 	$fdata["ownerTable"] = "informe_intersup";
@@ -8396,6 +7804,2196 @@ $tdatainforme_intersup[".hideMobileList"] = array();
 
 	$tdatainforme_intersup["cont_modifica"] = $fdata;
 		$tdatainforme_intersup[".searchableFields"][] = "cont_modifica";
+//	qty_inf
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 50;
+	$fdata["strName"] = "qty_inf";
+	$fdata["GoodName"] = "qty_inf";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup","qty_inf");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "qty_inf";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "qty_inf";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup["qty_inf"] = $fdata;
+		$tdatainforme_intersup[".searchableFields"][] = "qty_inf";
+//	qty_inf_compare
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 51;
+	$fdata["strName"] = "qty_inf_compare";
+	$fdata["GoodName"] = "qty_inf_compare";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup","qty_inf_compare");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "qty_inf_compare";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "qty_inf_compare";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup["qty_inf_compare"] = $fdata;
+		$tdatainforme_intersup[".searchableFields"][] = "qty_inf_compare";
+//	qty_inf_verifica
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 52;
+	$fdata["strName"] = "qty_inf_verifica";
+	$fdata["GoodName"] = "qty_inf_verifica";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup","qty_inf_verifica");
+	$fdata["FieldType"] = 3;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "qty_inf_verifica";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "qty_inf_verifica";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+		
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup["qty_inf_verifica"] = $fdata;
+		$tdatainforme_intersup[".searchableFields"][] = "qty_inf_verifica";
+//	cert_mail
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 53;
+	$fdata["strName"] = "cert_mail";
+	$fdata["GoodName"] = "cert_mail";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup","cert_mail");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cert_mail";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cert_mail";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=100";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup["cert_mail"] = $fdata;
+		$tdatainforme_intersup[".searchableFields"][] = "cert_mail";
+//	cert_file
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 54;
+	$fdata["strName"] = "cert_file";
+	$fdata["GoodName"] = "cert_file";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup","cert_file");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cert_file";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cert_file";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=100";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup["cert_file"] = $fdata;
+		$tdatainforme_intersup[".searchableFields"][] = "cert_file";
+//	cert_date
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 55;
+	$fdata["strName"] = "cert_date";
+	$fdata["GoodName"] = "cert_date";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup","cert_date");
+	$fdata["FieldType"] = 7;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cert_date";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cert_date";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Date");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+		$edata["DateEditType"] = 13;
+	$edata["InitialYearFactor"] = 100;
+	$edata["LastYearFactor"] = 10;
+
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup["cert_date"] = $fdata;
+		$tdatainforme_intersup[".searchableFields"][] = "cert_date";
+//	cert_compare
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 56;
+	$fdata["strName"] = "cert_compare";
+	$fdata["GoodName"] = "cert_compare";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup","cert_compare");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "cert_compare";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "cert_compare";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=100";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup["cert_compare"] = $fdata;
+		$tdatainforme_intersup[".searchableFields"][] = "cert_compare";
+//	sign_hash
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 57;
+	$fdata["strName"] = "sign_hash";
+	$fdata["GoodName"] = "sign_hash";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup","sign_hash");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "sign_hash";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "sign_hash";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["list"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["print"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["export"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["masterlist"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["masterprint"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+		$edata["autoUpdatable"] = true;
+
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["add"] = $edata;
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["search"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = true;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup["sign_hash"] = $fdata;
+		$tdatainforme_intersup[".searchableFields"][] = "sign_hash";
+//	sign_date
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 58;
+	$fdata["strName"] = "sign_date";
+	$fdata["GoodName"] = "sign_date";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup","sign_date");
+	$fdata["FieldType"] = 135;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "sign_date";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "sign_date";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["list"] = $vdata;
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["print"] = $vdata;
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["export"] = $vdata;
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["masterlist"] = $vdata;
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["masterprint"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+		$edata["autoUpdatable"] = true;
+
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["add"] = $edata;
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["search"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = true;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup["sign_date"] = $fdata;
+		$tdatainforme_intersup[".searchableFields"][] = "sign_date";
+//	sign_mailnot
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 59;
+	$fdata["strName"] = "sign_mailnot";
+	$fdata["GoodName"] = "sign_mailnot";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup","sign_mailnot");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "sign_mailnot";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "sign_mailnot";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["list"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["print"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["export"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["masterlist"] = $vdata;
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["masterprint"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+		$edata["autoUpdatable"] = true;
+
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["add"] = $edata;
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["search"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = true;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup["sign_mailnot"] = $fdata;
+		$tdatainforme_intersup[".searchableFields"][] = "sign_mailnot";
+//	sign_verificacert
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 60;
+	$fdata["strName"] = "sign_verificacert";
+	$fdata["GoodName"] = "sign_verificacert";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup","sign_verificacert");
+	$fdata["FieldType"] = 200;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "sign_verificacert";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "sign_verificacert";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=20";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup["sign_verificacert"] = $fdata;
+		$tdatainforme_intersup[".searchableFields"][] = "sign_verificacert";
+//	sign_file
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 61;
+	$fdata["strName"] = "sign_file";
+	$fdata["GoodName"] = "sign_file";
+	$fdata["ownerTable"] = "informe_intersup";
+	$fdata["Label"] = GetFieldLabel("informe_intersup","sign_file");
+	$fdata["FieldType"] = 16;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "sign_file";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "sign_file";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Readonly");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+		$edata["autoUpdatable"] = true;
+
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainforme_intersup["sign_file"] = $fdata;
+		$tdatainforme_intersup[".searchableFields"][] = "sign_file";
 
 
 $tables_data["informe_intersup"]=&$tdatainforme_intersup;
@@ -8481,7 +10079,7 @@ function createSqlQuery_informe_intersup()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "inf_id,  	id_cont_fk,  	inf_consecutivo,  	inf_hash,  	inf_estado,  	inf_fechapresenta,  	inf_periodicidad,  	inf_fecharep_i,  	inf_fecharep_f,  	inf_numerocontrato,  	inf_anio,  	inf_prenum,  	inf_doccontratista,  	inf_nombrecontratista,  	inf_valorcontrato,  	inf_adicionreduc,  	inf_cdp,  	inf_rp,  	inf_rubrocode,  	inf_rubroname,  	inf_objeto,  	inf_fechasuscripcion,  	inf_fechacont_i,  	inf_fechacont_f,  	inf_plazo,  	inf_vigencia,  	inf_modificacionesplazo,  	inf_intersup,  	inf_nombre,  	inf_cargo,  	inf_dependencia,  	inf_avgejecucion,  	inf_actividades,  	inf_declarainconf,  	inf_declarainconf_obs,  	inf_incumplimiento,  	inf_incumplimiento_obs,  	inf_otrosaspectostecnicos,  	inf_recomyobserva,  	sign_date,  	sign_hash,  	sign_file,  	sign_mailnot,  	file_verifica,  	sign_verificacert,  	cert_date,  	cert_file,  	cert_mail,  	cert_compare,  	inf_ultimopago,  	sys_date,  	inf_mail_a,  	inf_mail_b,  	url_secop,  	num_poliza,  	mun_ejec,  	cont_cesion,  	cont_modifica";
+$proto0["m_strFieldList"] = "inf_id,  	id_cont_fk,  	inf_consecutivo,  	inf_hash,  	inf_estado,  	inf_fechapresenta,  	inf_periodicidad,  	inf_fecharep_i,  	inf_fecharep_f,  	inf_numerocontrato,  	inf_anio,  	inf_prenum,  	inf_doccontratista,  	inf_nombrecontratista,  	inf_valorcontrato,  	inf_adicionreduc,  	inf_cdp,  	inf_rp,  	inf_rubrocode,  	inf_rubroname,  	inf_objeto,  	inf_fechasuscripcion,  	inf_fechacont_i,  	inf_fechacont_f,  	inf_plazo,  	inf_vigencia,  	inf_modificacionesplazo,  	inf_intersup,  	inf_nombre,  	inf_cargo,  	inf_dependencia,  	inf_avgejecucion,  	inf_actividades,  	inf_declarainconf,  	inf_declarainconf_obs,  	inf_incumplimiento,  	inf_incumplimiento_obs,  	inf_otrosaspectostecnicos,  	inf_recomyobserva,  	file_verifica,  	inf_ultimopago,  	sys_date,  	inf_mail_a,  	inf_mail_b,  	url_secop,  	num_poliza,  	mun_ejec,  	cont_cesion,  	cont_modifica,  	qty_inf,  	qty_inf_compare,  	qty_inf_verifica,  	cert_mail,  	cert_file,  	cert_date,  	cert_compare,  	sign_hash,  	sign_date,  	sign_mailnot,  	sign_verificacert,  	sign_file";
 $proto0["m_strFrom"] = "FROM informe_intersup";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -9069,12 +10667,12 @@ $obj = new SQLFieldListItem($proto82);
 $proto0["m_fieldlist"][]=$obj;
 						$proto84=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sign_date",
+	"m_strName" => "file_verifica",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto84["m_sql"] = "sign_date";
+$proto84["m_sql"] = "file_verifica";
 $proto84["m_srcTableName"] = "informe_intersup";
 $proto84["m_expr"]=$obj;
 $proto84["m_alias"] = "";
@@ -9083,12 +10681,12 @@ $obj = new SQLFieldListItem($proto84);
 $proto0["m_fieldlist"][]=$obj;
 						$proto86=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sign_hash",
+	"m_strName" => "inf_ultimopago",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto86["m_sql"] = "sign_hash";
+$proto86["m_sql"] = "inf_ultimopago";
 $proto86["m_srcTableName"] = "informe_intersup";
 $proto86["m_expr"]=$obj;
 $proto86["m_alias"] = "";
@@ -9097,12 +10695,12 @@ $obj = new SQLFieldListItem($proto86);
 $proto0["m_fieldlist"][]=$obj;
 						$proto88=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sign_file",
+	"m_strName" => "sys_date",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto88["m_sql"] = "sign_file";
+$proto88["m_sql"] = "sys_date";
 $proto88["m_srcTableName"] = "informe_intersup";
 $proto88["m_expr"]=$obj;
 $proto88["m_alias"] = "";
@@ -9111,12 +10709,12 @@ $obj = new SQLFieldListItem($proto88);
 $proto0["m_fieldlist"][]=$obj;
 						$proto90=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sign_mailnot",
+	"m_strName" => "inf_mail_a",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto90["m_sql"] = "sign_mailnot";
+$proto90["m_sql"] = "inf_mail_a";
 $proto90["m_srcTableName"] = "informe_intersup";
 $proto90["m_expr"]=$obj;
 $proto90["m_alias"] = "";
@@ -9125,12 +10723,12 @@ $obj = new SQLFieldListItem($proto90);
 $proto0["m_fieldlist"][]=$obj;
 						$proto92=array();
 			$obj = new SQLField(array(
-	"m_strName" => "file_verifica",
+	"m_strName" => "inf_mail_b",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto92["m_sql"] = "file_verifica";
+$proto92["m_sql"] = "inf_mail_b";
 $proto92["m_srcTableName"] = "informe_intersup";
 $proto92["m_expr"]=$obj;
 $proto92["m_alias"] = "";
@@ -9139,12 +10737,12 @@ $obj = new SQLFieldListItem($proto92);
 $proto0["m_fieldlist"][]=$obj;
 						$proto94=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sign_verificacert",
+	"m_strName" => "url_secop",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto94["m_sql"] = "sign_verificacert";
+$proto94["m_sql"] = "url_secop";
 $proto94["m_srcTableName"] = "informe_intersup";
 $proto94["m_expr"]=$obj;
 $proto94["m_alias"] = "";
@@ -9153,12 +10751,12 @@ $obj = new SQLFieldListItem($proto94);
 $proto0["m_fieldlist"][]=$obj;
 						$proto96=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cert_date",
+	"m_strName" => "num_poliza",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto96["m_sql"] = "cert_date";
+$proto96["m_sql"] = "num_poliza";
 $proto96["m_srcTableName"] = "informe_intersup";
 $proto96["m_expr"]=$obj;
 $proto96["m_alias"] = "";
@@ -9167,12 +10765,12 @@ $obj = new SQLFieldListItem($proto96);
 $proto0["m_fieldlist"][]=$obj;
 						$proto98=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cert_file",
+	"m_strName" => "mun_ejec",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto98["m_sql"] = "cert_file";
+$proto98["m_sql"] = "mun_ejec";
 $proto98["m_srcTableName"] = "informe_intersup";
 $proto98["m_expr"]=$obj;
 $proto98["m_alias"] = "";
@@ -9181,12 +10779,12 @@ $obj = new SQLFieldListItem($proto98);
 $proto0["m_fieldlist"][]=$obj;
 						$proto100=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cert_mail",
+	"m_strName" => "cont_cesion",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto100["m_sql"] = "cert_mail";
+$proto100["m_sql"] = "cont_cesion";
 $proto100["m_srcTableName"] = "informe_intersup";
 $proto100["m_expr"]=$obj;
 $proto100["m_alias"] = "";
@@ -9195,12 +10793,12 @@ $obj = new SQLFieldListItem($proto100);
 $proto0["m_fieldlist"][]=$obj;
 						$proto102=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cert_compare",
+	"m_strName" => "cont_modifica",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto102["m_sql"] = "cert_compare";
+$proto102["m_sql"] = "cont_modifica";
 $proto102["m_srcTableName"] = "informe_intersup";
 $proto102["m_expr"]=$obj;
 $proto102["m_alias"] = "";
@@ -9209,12 +10807,12 @@ $obj = new SQLFieldListItem($proto102);
 $proto0["m_fieldlist"][]=$obj;
 						$proto104=array();
 			$obj = new SQLField(array(
-	"m_strName" => "inf_ultimopago",
+	"m_strName" => "qty_inf",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto104["m_sql"] = "inf_ultimopago";
+$proto104["m_sql"] = "qty_inf";
 $proto104["m_srcTableName"] = "informe_intersup";
 $proto104["m_expr"]=$obj;
 $proto104["m_alias"] = "";
@@ -9223,12 +10821,12 @@ $obj = new SQLFieldListItem($proto104);
 $proto0["m_fieldlist"][]=$obj;
 						$proto106=array();
 			$obj = new SQLField(array(
-	"m_strName" => "sys_date",
+	"m_strName" => "qty_inf_compare",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto106["m_sql"] = "sys_date";
+$proto106["m_sql"] = "qty_inf_compare";
 $proto106["m_srcTableName"] = "informe_intersup";
 $proto106["m_expr"]=$obj;
 $proto106["m_alias"] = "";
@@ -9237,12 +10835,12 @@ $obj = new SQLFieldListItem($proto106);
 $proto0["m_fieldlist"][]=$obj;
 						$proto108=array();
 			$obj = new SQLField(array(
-	"m_strName" => "inf_mail_a",
+	"m_strName" => "qty_inf_verifica",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto108["m_sql"] = "inf_mail_a";
+$proto108["m_sql"] = "qty_inf_verifica";
 $proto108["m_srcTableName"] = "informe_intersup";
 $proto108["m_expr"]=$obj;
 $proto108["m_alias"] = "";
@@ -9251,12 +10849,12 @@ $obj = new SQLFieldListItem($proto108);
 $proto0["m_fieldlist"][]=$obj;
 						$proto110=array();
 			$obj = new SQLField(array(
-	"m_strName" => "inf_mail_b",
+	"m_strName" => "cert_mail",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto110["m_sql"] = "inf_mail_b";
+$proto110["m_sql"] = "cert_mail";
 $proto110["m_srcTableName"] = "informe_intersup";
 $proto110["m_expr"]=$obj;
 $proto110["m_alias"] = "";
@@ -9265,12 +10863,12 @@ $obj = new SQLFieldListItem($proto110);
 $proto0["m_fieldlist"][]=$obj;
 						$proto112=array();
 			$obj = new SQLField(array(
-	"m_strName" => "url_secop",
+	"m_strName" => "cert_file",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto112["m_sql"] = "url_secop";
+$proto112["m_sql"] = "cert_file";
 $proto112["m_srcTableName"] = "informe_intersup";
 $proto112["m_expr"]=$obj;
 $proto112["m_alias"] = "";
@@ -9279,12 +10877,12 @@ $obj = new SQLFieldListItem($proto112);
 $proto0["m_fieldlist"][]=$obj;
 						$proto114=array();
 			$obj = new SQLField(array(
-	"m_strName" => "num_poliza",
+	"m_strName" => "cert_date",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto114["m_sql"] = "num_poliza";
+$proto114["m_sql"] = "cert_date";
 $proto114["m_srcTableName"] = "informe_intersup";
 $proto114["m_expr"]=$obj;
 $proto114["m_alias"] = "";
@@ -9293,12 +10891,12 @@ $obj = new SQLFieldListItem($proto114);
 $proto0["m_fieldlist"][]=$obj;
 						$proto116=array();
 			$obj = new SQLField(array(
-	"m_strName" => "mun_ejec",
+	"m_strName" => "cert_compare",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto116["m_sql"] = "mun_ejec";
+$proto116["m_sql"] = "cert_compare";
 $proto116["m_srcTableName"] = "informe_intersup";
 $proto116["m_expr"]=$obj;
 $proto116["m_alias"] = "";
@@ -9307,12 +10905,12 @@ $obj = new SQLFieldListItem($proto116);
 $proto0["m_fieldlist"][]=$obj;
 						$proto118=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cont_cesion",
+	"m_strName" => "sign_hash",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto118["m_sql"] = "cont_cesion";
+$proto118["m_sql"] = "sign_hash";
 $proto118["m_srcTableName"] = "informe_intersup";
 $proto118["m_expr"]=$obj;
 $proto118["m_alias"] = "";
@@ -9321,106 +10919,151 @@ $obj = new SQLFieldListItem($proto118);
 $proto0["m_fieldlist"][]=$obj;
 						$proto120=array();
 			$obj = new SQLField(array(
-	"m_strName" => "cont_modifica",
+	"m_strName" => "sign_date",
 	"m_strTable" => "informe_intersup",
 	"m_srcTableName" => "informe_intersup"
 ));
 
-$proto120["m_sql"] = "cont_modifica";
+$proto120["m_sql"] = "sign_date";
 $proto120["m_srcTableName"] = "informe_intersup";
 $proto120["m_expr"]=$obj;
 $proto120["m_alias"] = "";
 $obj = new SQLFieldListItem($proto120);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto122=array();
-$proto122["m_link"] = "SQLL_MAIN";
-			$proto123=array();
-$proto123["m_strName"] = "informe_intersup";
-$proto123["m_srcTableName"] = "informe_intersup";
-$proto123["m_columns"] = array();
-$proto123["m_columns"][] = "inf_id";
-$proto123["m_columns"][] = "id_cont_fk";
-$proto123["m_columns"][] = "inf_consecutivo";
-$proto123["m_columns"][] = "inf_hash";
-$proto123["m_columns"][] = "inf_estado";
-$proto123["m_columns"][] = "inf_fechapresenta";
-$proto123["m_columns"][] = "inf_periodicidad";
-$proto123["m_columns"][] = "inf_fecharep_i";
-$proto123["m_columns"][] = "inf_fecharep_f";
-$proto123["m_columns"][] = "inf_numerocontrato";
-$proto123["m_columns"][] = "inf_anio";
-$proto123["m_columns"][] = "inf_prenum";
-$proto123["m_columns"][] = "inf_doccontratista";
-$proto123["m_columns"][] = "inf_nombrecontratista";
-$proto123["m_columns"][] = "inf_valorcontrato";
-$proto123["m_columns"][] = "inf_adicionreduc";
-$proto123["m_columns"][] = "inf_cdp";
-$proto123["m_columns"][] = "inf_rp";
-$proto123["m_columns"][] = "inf_rubrocode";
-$proto123["m_columns"][] = "inf_rubroname";
-$proto123["m_columns"][] = "inf_objeto";
-$proto123["m_columns"][] = "inf_fechasuscripcion";
-$proto123["m_columns"][] = "inf_fechacont_i";
-$proto123["m_columns"][] = "inf_fechacont_f";
-$proto123["m_columns"][] = "inf_plazo";
-$proto123["m_columns"][] = "inf_vigencia";
-$proto123["m_columns"][] = "inf_modificacionesplazo";
-$proto123["m_columns"][] = "inf_intersup";
-$proto123["m_columns"][] = "inf_nombre";
-$proto123["m_columns"][] = "inf_cargo";
-$proto123["m_columns"][] = "inf_dependencia";
-$proto123["m_columns"][] = "inf_avgejecucion";
-$proto123["m_columns"][] = "inf_actividades";
-$proto123["m_columns"][] = "inf_declarainconf";
-$proto123["m_columns"][] = "inf_declarainconf_obs";
-$proto123["m_columns"][] = "inf_incumplimiento";
-$proto123["m_columns"][] = "inf_incumplimiento_obs";
-$proto123["m_columns"][] = "inf_otrosaspectostecnicos";
-$proto123["m_columns"][] = "inf_recomyobserva";
-$proto123["m_columns"][] = "sign_date";
-$proto123["m_columns"][] = "sign_hash";
-$proto123["m_columns"][] = "sign_file";
-$proto123["m_columns"][] = "sign_mailnot";
-$proto123["m_columns"][] = "file_verifica";
-$proto123["m_columns"][] = "sign_verificacert";
-$proto123["m_columns"][] = "cert_date";
-$proto123["m_columns"][] = "cert_file";
-$proto123["m_columns"][] = "cert_mail";
-$proto123["m_columns"][] = "cert_compare";
-$proto123["m_columns"][] = "inf_ultimopago";
-$proto123["m_columns"][] = "sys_date";
-$proto123["m_columns"][] = "inf_mail_a";
-$proto123["m_columns"][] = "inf_mail_b";
-$proto123["m_columns"][] = "url_secop";
-$proto123["m_columns"][] = "num_poliza";
-$proto123["m_columns"][] = "mun_ejec";
-$proto123["m_columns"][] = "cont_cesion";
-$proto123["m_columns"][] = "cont_modifica";
-$obj = new SQLTable($proto123);
+						$proto122=array();
+			$obj = new SQLField(array(
+	"m_strName" => "sign_mailnot",
+	"m_strTable" => "informe_intersup",
+	"m_srcTableName" => "informe_intersup"
+));
 
-$proto122["m_table"] = $obj;
-$proto122["m_sql"] = "informe_intersup";
-$proto122["m_alias"] = "";
+$proto122["m_sql"] = "sign_mailnot";
 $proto122["m_srcTableName"] = "informe_intersup";
-$proto124=array();
-$proto124["m_sql"] = "";
-$proto124["m_uniontype"] = "SQLL_UNKNOWN";
+$proto122["m_expr"]=$obj;
+$proto122["m_alias"] = "";
+$obj = new SQLFieldListItem($proto122);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto124=array();
+			$obj = new SQLField(array(
+	"m_strName" => "sign_verificacert",
+	"m_strTable" => "informe_intersup",
+	"m_srcTableName" => "informe_intersup"
+));
+
+$proto124["m_sql"] = "sign_verificacert";
+$proto124["m_srcTableName"] = "informe_intersup";
+$proto124["m_expr"]=$obj;
+$proto124["m_alias"] = "";
+$obj = new SQLFieldListItem($proto124);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto126=array();
+			$obj = new SQLField(array(
+	"m_strName" => "sign_file",
+	"m_strTable" => "informe_intersup",
+	"m_srcTableName" => "informe_intersup"
+));
+
+$proto126["m_sql"] = "sign_file";
+$proto126["m_srcTableName"] = "informe_intersup";
+$proto126["m_expr"]=$obj;
+$proto126["m_alias"] = "";
+$obj = new SQLFieldListItem($proto126);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto128=array();
+$proto128["m_link"] = "SQLL_MAIN";
+			$proto129=array();
+$proto129["m_strName"] = "informe_intersup";
+$proto129["m_srcTableName"] = "informe_intersup";
+$proto129["m_columns"] = array();
+$proto129["m_columns"][] = "inf_id";
+$proto129["m_columns"][] = "id_cont_fk";
+$proto129["m_columns"][] = "inf_consecutivo";
+$proto129["m_columns"][] = "inf_hash";
+$proto129["m_columns"][] = "inf_estado";
+$proto129["m_columns"][] = "inf_fechapresenta";
+$proto129["m_columns"][] = "inf_periodicidad";
+$proto129["m_columns"][] = "inf_fecharep_i";
+$proto129["m_columns"][] = "inf_fecharep_f";
+$proto129["m_columns"][] = "inf_numerocontrato";
+$proto129["m_columns"][] = "inf_anio";
+$proto129["m_columns"][] = "inf_prenum";
+$proto129["m_columns"][] = "inf_doccontratista";
+$proto129["m_columns"][] = "inf_nombrecontratista";
+$proto129["m_columns"][] = "inf_valorcontrato";
+$proto129["m_columns"][] = "inf_adicionreduc";
+$proto129["m_columns"][] = "inf_cdp";
+$proto129["m_columns"][] = "inf_rp";
+$proto129["m_columns"][] = "inf_rubrocode";
+$proto129["m_columns"][] = "inf_rubroname";
+$proto129["m_columns"][] = "inf_objeto";
+$proto129["m_columns"][] = "inf_fechasuscripcion";
+$proto129["m_columns"][] = "inf_fechacont_i";
+$proto129["m_columns"][] = "inf_fechacont_f";
+$proto129["m_columns"][] = "inf_plazo";
+$proto129["m_columns"][] = "inf_vigencia";
+$proto129["m_columns"][] = "inf_modificacionesplazo";
+$proto129["m_columns"][] = "inf_intersup";
+$proto129["m_columns"][] = "inf_nombre";
+$proto129["m_columns"][] = "inf_cargo";
+$proto129["m_columns"][] = "inf_dependencia";
+$proto129["m_columns"][] = "inf_avgejecucion";
+$proto129["m_columns"][] = "inf_actividades";
+$proto129["m_columns"][] = "inf_declarainconf";
+$proto129["m_columns"][] = "inf_declarainconf_obs";
+$proto129["m_columns"][] = "inf_incumplimiento";
+$proto129["m_columns"][] = "inf_incumplimiento_obs";
+$proto129["m_columns"][] = "inf_otrosaspectostecnicos";
+$proto129["m_columns"][] = "inf_recomyobserva";
+$proto129["m_columns"][] = "file_verifica";
+$proto129["m_columns"][] = "inf_ultimopago";
+$proto129["m_columns"][] = "sys_date";
+$proto129["m_columns"][] = "inf_mail_a";
+$proto129["m_columns"][] = "inf_mail_b";
+$proto129["m_columns"][] = "url_secop";
+$proto129["m_columns"][] = "num_poliza";
+$proto129["m_columns"][] = "mun_ejec";
+$proto129["m_columns"][] = "cont_cesion";
+$proto129["m_columns"][] = "cont_modifica";
+$proto129["m_columns"][] = "qty_inf";
+$proto129["m_columns"][] = "qty_inf_compare";
+$proto129["m_columns"][] = "qty_inf_verifica";
+$proto129["m_columns"][] = "cert_mail";
+$proto129["m_columns"][] = "cert_file";
+$proto129["m_columns"][] = "cert_date";
+$proto129["m_columns"][] = "cert_compare";
+$proto129["m_columns"][] = "sign_hash";
+$proto129["m_columns"][] = "sign_date";
+$proto129["m_columns"][] = "sign_mailnot";
+$proto129["m_columns"][] = "sign_verificacert";
+$proto129["m_columns"][] = "sign_file";
+$obj = new SQLTable($proto129);
+
+$proto128["m_table"] = $obj;
+$proto128["m_sql"] = "informe_intersup";
+$proto128["m_alias"] = "";
+$proto128["m_srcTableName"] = "informe_intersup";
+$proto130=array();
+$proto130["m_sql"] = "";
+$proto130["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto124["m_column"]=$obj;
-$proto124["m_contained"] = array();
-$proto124["m_strCase"] = "";
-$proto124["m_havingmode"] = false;
-$proto124["m_inBrackets"] = false;
-$proto124["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto124);
+$proto130["m_column"]=$obj;
+$proto130["m_contained"] = array();
+$proto130["m_strCase"] = "";
+$proto130["m_havingmode"] = false;
+$proto130["m_inBrackets"] = false;
+$proto130["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto130);
 
-$proto122["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto122);
+$proto128["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto128);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -9436,7 +11079,7 @@ $queryData_informe_intersup = createSqlQuery_informe_intersup();
 	
 										;
 
-																																																										
+																																																													
 
 $tdatainforme_intersup[".sqlquery"] = $queryData_informe_intersup;
 

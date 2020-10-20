@@ -103,6 +103,9 @@ pdfDocument = {
 										{BEGIN col_grid_14}
 					"%",
 					{END col_grid_14}
+										{BEGIN col_grid_15}
+					"%",
+					{END col_grid_15}
 															],
 							heights: [ // first height for header part
 					"%",
@@ -112,7 +115,7 @@ pdfDocument = {
 					{END row_grid_0}
 					
 					{BEGIN row_grid_1}		
-					160,
+					"%",
 					{END row_grid_1}
 					
 					{BEGIN row_grid_2}		
@@ -205,6 +208,50 @@ pdfDocument = {
 			{"text":"","hidden":"{$item_hide_columns_control}"},
 				
 		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+											],
+								[
+												{
+	cellId: 'c3',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":""},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+																			{
+	cellId: 'c4',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				'',
+	  ],
   "border": [ false, false, false, false ],
           "alignment": 'right',
   },
@@ -368,7 +415,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field10}","text":"{$jslabel contrato contnumero }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field}","text":"{$jslabel contrato contnumero }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -446,7 +493,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field13}","text":"{$jslabel contrato cont_nit_contra_ta }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field4}","text":"{$jslabel contrato cont_nit_contra_ta }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -472,7 +519,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field14}","text":"{$jslabel contrato nombre_cont }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field6}","text":"{$jslabel contrato nombre_cont }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -576,11 +623,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field29}","text":"{$jslabel contrato cont_valormensual }","bold":true},
+			{"hidden":"{$item_hide_grid_field7}","text":"{$jslabel contrato cont_valorvigente }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-          "alignment": '{$cont_valormensual_align}',
+          "alignment": '{$cont_valorvigente_align}',
   },
 
 {END cellblock_grid_headcell_field10}
@@ -602,14 +649,40 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field15}","text":"{$jslabel contrato cont_estado }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field29}","text":"{$jslabel contrato cont_valormensual }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$cont_valormensual_align}',
+  },
+
+{END cellblock_grid_headcell_field11}
+																			{BEGIN cellblock_grid_headcell_field12}
+{
+	cellId: 'headcell_field12',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field7}","text":"{$jslabel contrato cont_estado }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
           "alignment": '{$cont_estado_align}',
   },
 
-{END cellblock_grid_headcell_field11}
+{END cellblock_grid_headcell_field12}
 											],
 				{END row_grid_0}
 									
@@ -637,9 +710,6 @@ pdfDocument = {
 		
 				
 			{"text":"","hidden":"{$item_hide_grid_edit}"},
-				
-				
-			{"text":""},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -710,6 +780,9 @@ pdfDocument = {
 				
 				
 			{"text":"","hidden":"{$item_hide_grid_details_link5}"},
+				
+				
+			{"text":"","hidden":"{$item_hide_grid_details_link6}"},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -995,6 +1068,32 @@ pdfDocument = {
 			"text": [
 		
 				
+			{"hidden":"{$item_hide_grid_field6}","text":{$cont_valorvigente_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$cont_valorvigente_align}',
+  },
+
+{END cellblock_grid_cell_field10}
+																			{BEGIN cellblock_grid_cell_field11}
+{
+	cellId: 'cell_field11',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
 			{"hidden":"{$item_hide_simple_grid_field27}","text":{$cont_valormensual_pdfvalue}},
 				
 		  ],
@@ -1002,10 +1101,10 @@ pdfDocument = {
           "alignment": '{$cont_valormensual_align}',
   },
 
-{END cellblock_grid_cell_field10}
-																			{BEGIN cellblock_grid_cell_field11}
+{END cellblock_grid_cell_field11}
+																			{BEGIN cellblock_grid_cell_field12}
 {
-	cellId: 'cell_field11',
+	cellId: 'cell_field12',
 	col:0,
 	row:0,
 			style: 'bodycell',
@@ -1028,7 +1127,7 @@ pdfDocument = {
           "alignment": '{$cont_estado_align}',
   },
 
-{END cellblock_grid_cell_field11}
+{END cellblock_grid_cell_field12}
 											],
 				{END row_grid_1}
 								{BEGIN row_grid_2}
@@ -1118,6 +1217,11 @@ pdfDocument = {
 			{$displayDetailTable_q_info_ordenpago }
 		{END details_q_info_ordenpago},
 				
+				
+			 {BEGIN details_contrato_dependencia}
+			{$displayDetailTable_contrato_dependencia }
+		{END details_contrato_dependencia},
+				
 		  ],
   "border": [ true, true, true, true ],
           "alignment": 'left',
@@ -1206,6 +1310,12 @@ pdfDocument = {
 				cellId: 'cell_dpreview',
 				row:  0,
 				col:  14,
+				text: ''
+			},
+														{ 
+				cellId: 'cell_dpreview',
+				row:  0,
+				col:  15,
 				text: ''
 			},
 							],
@@ -1576,6 +1686,30 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field11}
+																			{BEGIN cellblock_grid_footcell_field12}
+{
+	cellId: 'footcell_field12',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field12}
 											],
 				{END row_grid_3}
 							

@@ -575,9 +575,8 @@
 								</tr>
 	 
 	 
-		
-						<tr>
-						
+														<tr>
+										
 
 {BEGIN cellblock_grid_c19}
 <td
@@ -591,11 +590,32 @@
 		
 >
 	<div edit-form-cell class="clearfix">
-									</td>
+				
+{BEGIN fecha_fin_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_fin}  r-vertical-field" data-fieldname="fecha_fin" data-signal-error-for="fecha_fin{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="fecha_fin" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_fecha_fin}">
+		
+		{BEGIN fecha_fin_label}{$label interventor_interno fecha_fin }{END fecha_fin_label}
+	</label>
+	<div class="" >
+		{$fecha_fin_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END fecha_fin_fieldblock}
+	
+								</td>
 			{END cellblock_grid_c19}
 			 
-		
-							
+																
 
 {BEGIN cellblock_grid_c20}
 <td
@@ -609,7 +629,29 @@
 		
 >
 	<div edit-form-cell class="clearfix">
-									</td>
+				
+{BEGIN fecha_inicio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fecha_inicio}  r-vertical-field" data-fieldname="fecha_inicio" data-signal-error-for="fecha_inicio{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="fecha_inicio" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_fecha_inicio}">
+		
+		{BEGIN fecha_inicio_label}{$label interventor_interno fecha_inicio }{END fecha_inicio_label}
+	</label>
+	<div class="" >
+		{$fecha_inicio_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END fecha_inicio_fieldblock}
+	
+								</td>
 			{END cellblock_grid_c20}
 								</tr>
 			</tbody></table>

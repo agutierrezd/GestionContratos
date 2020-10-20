@@ -642,6 +642,14 @@ class Chart
 			return true;
 		if("q_info_ordenpago" == $this->chrt_array['tables'][0])
 			return true;
+		if("q_bandejaentrada_supervisores" == $this->chrt_array['tables'][0])
+			return true;
+		if("informe_intersup" == $this->chrt_array['tables'][0])
+			return true;
+		if("contrato_dependencia" == $this->chrt_array['tables'][0])
+			return true;
+		if("global_users" == $this->chrt_array['tables'][0])
+			return true;
 		return false;
 	}
 	

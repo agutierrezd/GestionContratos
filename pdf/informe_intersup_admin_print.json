@@ -172,6 +172,15 @@ pdfDocument = {
 										{BEGIN col_grid_37}
 					"%",
 					{END col_grid_37}
+										{BEGIN col_grid_38}
+					"%",
+					{END col_grid_38}
+										{BEGIN col_grid_39}
+					"%",
+					{END col_grid_39}
+										{BEGIN col_grid_40}
+					"%",
+					{END col_grid_40}
 															],
 							heights: [ // first height for header part
 					"%",
@@ -315,7 +324,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field38}","text":"{$jslabel informe_intersup_admin id_cont_fk }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field41}","text":"{$jslabel informe_intersup_admin id_cont_fk }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -341,7 +350,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field39}","text":"{$jslabel informe_intersup_admin inf_consecutivo }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field42}","text":"{$jslabel informe_intersup_admin inf_consecutivo }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -367,7 +376,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field40}","text":"{$jslabel informe_intersup_admin inf_hash }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field43}","text":"{$jslabel informe_intersup_admin inf_hash }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -393,7 +402,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field41}","text":"{$jslabel informe_intersup_admin inf_estado }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field44}","text":"{$jslabel informe_intersup_admin inf_estado }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -419,7 +428,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field42}","text":"{$jslabel informe_intersup_admin inf_fechapresenta }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field45}","text":"{$jslabel informe_intersup_admin inf_fechapresenta }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -445,7 +454,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field43}","text":"{$jslabel informe_intersup_admin inf_periodicidad }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field46}","text":"{$jslabel informe_intersup_admin inf_periodicidad }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -471,7 +480,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field44}","text":"{$jslabel informe_intersup_admin inf_fecharep_i }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field47}","text":"{$jslabel informe_intersup_admin inf_fecharep_i }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -497,7 +506,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field45}","text":"{$jslabel informe_intersup_admin inf_fecharep_f }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field48}","text":"{$jslabel informe_intersup_admin inf_fecharep_f }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -523,7 +532,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field46}","text":"{$jslabel informe_intersup_admin inf_doccontratista }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field49}","text":"{$jslabel informe_intersup_admin inf_doccontratista }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -549,7 +558,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field47}","text":"{$jslabel informe_intersup_admin inf_nombrecontratista }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field50}","text":"{$jslabel informe_intersup_admin inf_nombrecontratista }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -575,7 +584,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field48}","text":"{$jslabel informe_intersup_admin inf_valorcontrato }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field51}","text":"{$jslabel informe_intersup_admin inf_valorcontrato }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -601,7 +610,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field49}","text":"{$jslabel informe_intersup_admin inf_cdp }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field52}","text":"{$jslabel informe_intersup_admin inf_cdp }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -627,7 +636,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field50}","text":"{$jslabel informe_intersup_admin inf_rp }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field53}","text":"{$jslabel informe_intersup_admin inf_rp }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -653,7 +662,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field51}","text":"{$jslabel informe_intersup_admin inf_rubrocode }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field54}","text":"{$jslabel informe_intersup_admin inf_rubrocode }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -679,7 +688,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field52}","text":"{$jslabel informe_intersup_admin inf_objeto }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field55}","text":"{$jslabel informe_intersup_admin inf_objeto }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -705,7 +714,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field53}","text":"{$jslabel informe_intersup_admin inf_fechasuscripcion }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field56}","text":"{$jslabel informe_intersup_admin inf_fechasuscripcion }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -731,7 +740,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field54}","text":"{$jslabel informe_intersup_admin inf_fechacont_i }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field57}","text":"{$jslabel informe_intersup_admin inf_fechacont_i }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -757,7 +766,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field55}","text":"{$jslabel informe_intersup_admin inf_fechacont_f }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field58}","text":"{$jslabel informe_intersup_admin inf_fechacont_f }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -783,7 +792,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field56}","text":"{$jslabel informe_intersup_admin inf_plazo }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field59}","text":"{$jslabel informe_intersup_admin inf_plazo }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -809,7 +818,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field57}","text":"{$jslabel informe_intersup_admin inf_intersup }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field60}","text":"{$jslabel informe_intersup_admin inf_intersup }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -835,7 +844,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field58}","text":"{$jslabel informe_intersup_admin inf_nombre }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field61}","text":"{$jslabel informe_intersup_admin inf_nombre }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -861,7 +870,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field59}","text":"{$jslabel informe_intersup_admin inf_cargo }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field62}","text":"{$jslabel informe_intersup_admin inf_cargo }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -887,7 +896,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field60}","text":"{$jslabel informe_intersup_admin inf_dependencia }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field63}","text":"{$jslabel informe_intersup_admin inf_dependencia }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -913,7 +922,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field61}","text":"{$jslabel informe_intersup_admin inf_avgejecucion }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field64}","text":"{$jslabel informe_intersup_admin inf_avgejecucion }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -939,7 +948,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field62}","text":"{$jslabel informe_intersup_admin inf_actividades }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field65}","text":"{$jslabel informe_intersup_admin inf_actividades }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -965,7 +974,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field63}","text":"{$jslabel informe_intersup_admin inf_declarainconf }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field66}","text":"{$jslabel informe_intersup_admin inf_declarainconf }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -991,7 +1000,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field64}","text":"{$jslabel informe_intersup_admin inf_declarainconf_obs }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field67}","text":"{$jslabel informe_intersup_admin inf_declarainconf_obs }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1017,7 +1026,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field65}","text":"{$jslabel informe_intersup_admin inf_incumplimiento }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field68}","text":"{$jslabel informe_intersup_admin inf_incumplimiento }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1043,7 +1052,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field66}","text":"{$jslabel informe_intersup_admin inf_incumplimiento_obs }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field69}","text":"{$jslabel informe_intersup_admin inf_incumplimiento_obs }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1069,7 +1078,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field67}","text":"{$jslabel informe_intersup_admin inf_anio }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field70}","text":"{$jslabel informe_intersup_admin inf_anio }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1095,7 +1104,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field68}","text":"{$jslabel informe_intersup_admin inf_prenum }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field71}","text":"{$jslabel informe_intersup_admin inf_prenum }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1121,7 +1130,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field69}","text":"{$jslabel informe_intersup_admin inf_mail_a }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field72}","text":"{$jslabel informe_intersup_admin inf_mail_a }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1147,7 +1156,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field70}","text":"{$jslabel informe_intersup_admin inf_mail_b }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field73}","text":"{$jslabel informe_intersup_admin inf_mail_b }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1173,7 +1182,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field71}","text":"{$jslabel informe_intersup_admin url_secop }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field74}","text":"{$jslabel informe_intersup_admin url_secop }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1199,7 +1208,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field72}","text":"{$jslabel informe_intersup_admin num_poliza }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field75}","text":"{$jslabel informe_intersup_admin num_poliza }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1225,7 +1234,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field73}","text":"{$jslabel informe_intersup_admin mun_ejec }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field76}","text":"{$jslabel informe_intersup_admin mun_ejec }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1251,7 +1260,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field74}","text":"{$jslabel informe_intersup_admin cont_cesion }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field77}","text":"{$jslabel informe_intersup_admin cont_cesion }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1277,7 +1286,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"hidden":"{$item_hide_simple_grid_field75}","text":"{$jslabel informe_intersup_admin cont_modifica }","bold":true},
+			{"hidden":"{$item_hide_simple_grid_field78}","text":"{$jslabel informe_intersup_admin cont_modifica }","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -1285,6 +1294,84 @@ pdfDocument = {
   },
 
 {END cellblock_grid_headcell_field37}
+																			{BEGIN cellblock_grid_headcell_field38}
+{
+	cellId: 'headcell_field38',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field79}","text":"{$jslabel informe_intersup_admin qty_inf }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$qty_inf_align}',
+  },
+
+{END cellblock_grid_headcell_field38}
+																			{BEGIN cellblock_grid_headcell_field39}
+{
+	cellId: 'headcell_field39',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field80}","text":"{$jslabel informe_intersup_admin qty_inf_compare }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$qty_inf_compare_align}',
+  },
+
+{END cellblock_grid_headcell_field39}
+																			{BEGIN cellblock_grid_headcell_field40}
+{
+	cellId: 'headcell_field40',
+	col:0,
+	row:0,
+			style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field81}","text":"{$jslabel informe_intersup_admin qty_inf_verifica }","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$qty_inf_verifica_align}',
+  },
+
+{END cellblock_grid_headcell_field40}
 											],
 				{END row_grid_0}
 								
@@ -2281,6 +2368,84 @@ pdfDocument = {
   },
 
 {END cellblock_grid_cell_field37}
+																			{BEGIN cellblock_grid_cell_field38}
+{
+	cellId: 'cell_field38',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field38}","text":{$qty_inf_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$qty_inf_align}',
+  },
+
+{END cellblock_grid_cell_field38}
+																			{BEGIN cellblock_grid_cell_field39}
+{
+	cellId: 'cell_field39',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field39}","text":{$qty_inf_compare_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$qty_inf_compare_align}',
+  },
+
+{END cellblock_grid_cell_field39}
+																			{BEGIN cellblock_grid_cell_field40}
+{
+	cellId: 'cell_field40',
+	col:0,
+	row:0,
+			style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_simple_grid_field40}","text":{$qty_inf_verifica_pdfvalue}},
+				
+		  ],
+  "border": [ true, true, true, true ],
+          "alignment": '{$qty_inf_verifica_align}',
+  },
+
+{END cellblock_grid_cell_field40}
 											],
 				{END row_grid_1}
 						{END grid_record}
@@ -3201,6 +3366,78 @@ pdfDocument = {
   },
 
 {END cellblock_grid_footcell_field37}
+																			{BEGIN cellblock_grid_footcell_field38}
+{
+	cellId: 'footcell_field38',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field38}
+																			{BEGIN cellblock_grid_footcell_field39}
+{
+	cellId: 'footcell_field39',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field39}
+																			{BEGIN cellblock_grid_footcell_field40}
+{
+	cellId: 'footcell_field40',
+	col:0,
+	row:0,
+			style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_footcell_field40}
 											],
 				{END row_grid_2}
 							

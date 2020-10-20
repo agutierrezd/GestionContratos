@@ -9,11 +9,11 @@ $tdataq_001_dashboard[".OwnerID"] = "";
 $tdataq_001_dashboard[".OriginalTable"] = "q_001_dashboard";
 
 
-$tdataq_001_dashboard[".pagesByType"] = my_json_decode( "{\"search\":[\"search\"]}" );
+$tdataq_001_dashboard[".pagesByType"] = my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"search\":[\"search\"]}" );
 $tdataq_001_dashboard[".originalPagesByType"] = $tdataq_001_dashboard[".pagesByType"];
-$tdataq_001_dashboard[".pages"] = types2pages( my_json_decode( "{\"search\":[\"search\"]}" ) );
+$tdataq_001_dashboard[".pages"] = types2pages( my_json_decode( "{\"export\":[\"export\"],\"list\":[\"list\"],\"search\":[\"search\"]}" ) );
 $tdataq_001_dashboard[".originalPages"] = $tdataq_001_dashboard[".pages"];
-$tdataq_001_dashboard[".defaultPages"] = my_json_decode( "{\"search\":\"search\"}" );
+$tdataq_001_dashboard[".defaultPages"] = my_json_decode( "{\"export\":\"export\",\"list\":\"list\",\"search\":\"search\"}" );
 $tdataq_001_dashboard[".originalDefaultPages"] = $tdataq_001_dashboard[".defaultPages"];
 
 //	field labels
@@ -234,7 +234,7 @@ $popupPagesLayoutNames = array();
 $tdataq_001_dashboard[".popupPagesLayoutNames"] = $popupPagesLayoutNames;
 
 
-$tdataq_001_dashboard[".listAjax"] = false;
+	$tdataq_001_dashboard[".listAjax"] = true;
 //	temporary
 $tdataq_001_dashboard[".listAjax"] = false;
 
@@ -398,6 +398,7 @@ $tdataq_001_dashboard[".geocodingEnabled"] = false;
 
 
 
+$tdataq_001_dashboard[".isResizeColumns"] = true;
 
 
 

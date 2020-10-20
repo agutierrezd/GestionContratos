@@ -659,6 +659,22 @@ class AuditTrailTable
 		{
 			return false;
 		}
+		if($table=="q_bandejaentrada_supervisores3")
+		{
+			return true;
+		}
+		if($table=="informe_intersup3")
+		{
+			return true;
+		}
+		if($table=="contrato_dependencia")
+		{
+			return false;
+		}
+		if($table=="global_users_sup")
+		{
+			return true;
+		}
 	}
 	
 	protected function insert($datetime, $ip, $user, $table, $action, $description)
@@ -1323,6 +1339,22 @@ class AuditTrailFile
 		if($table=="q_info_ordenpago")
 		{
 			return false;
+		}
+		if($table=="q_bandejaentrada_supervisores3")
+		{
+			return true;
+		}
+		if($table=="informe_intersup3")
+		{
+			return true;
+		}
+		if($table=="contrato_dependencia")
+		{
+			return false;
+		}
+		if($table=="global_users_sup")
+		{
+			return true;
 		}
 	}
 	

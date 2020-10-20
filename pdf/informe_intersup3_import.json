@@ -1,0 +1,252 @@
+
+pdfDocument = {
+{BEGIN backgroundImage}
+	background: {
+		image: {$backgroundImage},
+		{BEGIN bgWidth}
+		imgWidth: {$bgWidth},
+		imgHeight: {$bgHeight},
+		{END bgWidth}
+	},
+{END backgroundImage}
+	styles: {
+				bodycell: {
+			fontSize:12,
+		},
+		headcell: {
+			fontSize:12,
+			bold: true
+		},
+
+	
+	},
+	defaultStyle: {
+		fontSize: 14,
+	},
+	"content": [
+								
+{
+	table: {
+	
+				
+		location: 'top',
+		
+		
+		widths: [
+								"*", 
+					 ],	
+		
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"text":"{$jspagetitlelabel informe_intersup3 import}","hidden":"{$item_hide_import_header}","fontSize":30},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+				
+								
+{
+	table: {
+	
+				
+		location: 'grid',
+		
+		
+		widths: [
+								"%", 
+					 ],	
+		
+			heights: [
+								
+			"%",
+			 
+				],
+	
+		body: [
+				
+					[
+												{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	static colspan/rowspan
+		
+			
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_import_field1}","text":{$id_cont_fk_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field2}","text":{$inf_consecutivo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field3}","text":{$inf_hash_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field4}","text":{$inf_estado_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field5}","text":{$inf_fechapresenta_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field6}","text":{$inf_periodicidad_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field7}","text":{$inf_fecharep_i_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field8}","text":{$inf_fecharep_f_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field9}","text":{$inf_numerocontrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field10}","text":{$inf_doccontratista_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field11}","text":{$inf_nombrecontratista_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field12}","text":{$inf_valorcontrato_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field14}","text":{$inf_cdp_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field15}","text":{$inf_rp_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field16}","text":{$inf_rubrocode_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field17}","text":{$inf_rubroname_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field18}","text":{$inf_objeto_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field19}","text":{$inf_fechasuscripcion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field20}","text":{$inf_fechacont_i_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field21}","text":{$inf_fechacont_f_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field22}","text":{$inf_plazo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field23}","text":{$inf_vigencia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field25}","text":{$inf_intersup_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field26}","text":{$inf_nombre_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field27}","text":{$inf_cargo_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field28}","text":{$inf_dependencia_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field30}","text":{$inf_avgejecucion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field31}","text":{$inf_actividades_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field32}","text":{$inf_declarainconf_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field33}","text":{$inf_declarainconf_obs_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field34}","text":{$inf_incumplimiento_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field35}","text":{$inf_incumplimiento_obs_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field}","text":{$inf_anio_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field52}","text":{$inf_prenum_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field53}","text":{$inf_mail_a_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field54}","text":{$inf_mail_b_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field55}","text":{$url_secop_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field29}","text":{$num_poliza_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field36}","text":{$mun_ejec_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field13}","text":{$cont_cesion_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field24}","text":{$cont_modifica_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field37}","text":{$qty_inf_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field38}","text":{$qty_inf_compare_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_import_field39}","text":{$qty_inf_verifica_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+											],
+					]
+	}
+}
+,
+		
+					]
+}
+  

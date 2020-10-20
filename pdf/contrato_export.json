@@ -227,6 +227,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_export_field37}","text":{$cont_cesion_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_export_field38}","text":{$cont_valorvigente_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

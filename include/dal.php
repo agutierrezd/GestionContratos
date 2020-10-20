@@ -53,6 +53,7 @@ class tDAL
 	var $tbldbct_at_localhost__contrato_attached;
 	var $tbldbct_at_localhost__contrato_attached_type;
 	var $tbldbct_at_localhost__contrato_cdp;
+	var $tbldbct_at_localhost__contrato_dependencia;
 	var $tbldbct_at_localhost__contrato_estados;
 	var $tbldbct_at_localhost__contrato_forma_pago;
 	var $tbldbct_at_localhost__contrato_modifica;
@@ -130,6 +131,7 @@ class tDAL
 		$this->lstTables[] = array("name" => "contrato_attached", "varname" => "dbct_at_localhost__contrato_attached", "altvarname" => "contrato_attached", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 		$this->lstTables[] = array("name" => "contrato_attached_type", "varname" => "dbct_at_localhost__contrato_attached_type", "altvarname" => "contrato_attached_type", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 		$this->lstTables[] = array("name" => "contrato_cdp", "varname" => "dbct_at_localhost__contrato_cdp", "altvarname" => "contrato_cdp", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
+		$this->lstTables[] = array("name" => "contrato_dependencia", "varname" => "dbct_at_localhost__contrato_dependencia", "altvarname" => "contrato_dependencia", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 		$this->lstTables[] = array("name" => "contrato_estados", "varname" => "dbct_at_localhost__contrato_estados", "altvarname" => "contrato_estados", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 		$this->lstTables[] = array("name" => "contrato_forma_pago", "varname" => "dbct_at_localhost__contrato_forma_pago", "altvarname" => "contrato_forma_pago", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");
 		$this->lstTables[] = array("name" => "contrato_modifica", "varname" => "dbct_at_localhost__contrato_modifica", "altvarname" => "contrato_modifica", "connId" => "dbct_at_localhost", "schema" => "", "connName" => "dbct at localhost");

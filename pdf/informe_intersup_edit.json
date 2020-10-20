@@ -167,10 +167,138 @@ pdfDocument = {
 		
 		table: {
 			tableForm: true,
+			location: 'section6',
+			widths: ['*'],
+			body: [
+				[{text: 'Clave dinámica', style: 'tableHeader'}],
+				[{
+					table: {
+						tableForm: true,
+						widths: [
+							 
+								{BEGIN col_section6_0}
+								'*', 
+								{END col_section6_0}
+													],
+						body: [
+								
+					{BEGIN row_section6_0}
+				[
+												{BEGIN cellblock_section6_c}
+{
+	cellId: 'c',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"text":"<div class=\"alert alert-warning\" role=\"alert\">\n  A continuación se enviará a su correo la clave dinámica, con esta clave usted podrá firmar y validar el informe de supervisión.</div>","hidden":"{$item_hide_text}","isHtml":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section6_c}
+											],
+				{END row_section6_0}
+								{BEGIN row_section6_1}
+				[
+												{BEGIN cellblock_section6_c1}
+{
+	cellId: 'c1',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_integrated_edit_field36}","stack":[{"text":"{$jslabel informe_intersup sign_hash }","bold":true},{"text":{$sign_hash_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field37}","stack":[{"text":"{$jslabel informe_intersup sign_date }","bold":true},{"text":{$sign_date_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section6_c1}
+											],
+				{END row_section6_1}
+								{BEGIN row_section6_2}
+				[
+												{BEGIN cellblock_section6_c2}
+{
+	cellId: 'c2',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"stack": [
+		
+				
+			{"hidden":"{$item_hide_edit_field_label}","text":"{$jslabel informe_intersup sign_mailnot }","bold":true},
+				
+				
+			{"hidden":"{$item_hide_edit_field_tooltip}","text":{$sign_mailnot_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field38}","text":{$sign_mailnot_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_section6_c2}
+											],
+				{END row_section6_2}
+									]
+					}
+				}]
+
+			]
+		},
+		margin: [0,0,0,15],
+	},
+ 
+		{
+		layout: 'panel',
+		
+		table: {
+			tableForm: true,
 			location: 'section',
 			widths: ['*'],
 			body: [
-				[{text: '1. CONTRATISTA', style: 'tableHeader'}],
+				[{text: 'Informe', style: 'tableHeader'}],
 				[{
 					table: {
 						tableForm: true,
@@ -617,7 +745,7 @@ pdfDocument = {
 			location: 'section3',
 			widths: ['*'],
 			body: [
-				[{text: '2.DESARROLLO DE ACTIVIDADES', style: 'tableHeader'}],
+				[{text: 'Actividades', style: 'tableHeader'}],
 				[{
 					table: {
 						tableForm: true,
@@ -997,7 +1125,7 @@ pdfDocument = {
 			location: 'section2',
 			widths: ['*'],
 			body: [
-				[{text: '3. INF. SUPERVISOR', style: 'tableHeader'}],
+				[{text: 'Supervisor', style: 'tableHeader'}],
 				[{
 					table: {
 						tableForm: true,
@@ -1758,6 +1886,9 @@ pdfDocument = {
 		},
 		margin: [0,0,0,15],
 	},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field39}","stack":[{"text":"{$jslabel informe_intersup sign_file }","bold":true},{"text":{$sign_file_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],

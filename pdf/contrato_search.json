@@ -260,6 +260,15 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_search_field45}","text":{$cont_cesion_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_integrated_search_field46}","text":{$cont_valorvigente_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field48}","text":{$cont_depsup_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field50}","text":{$cont_dep_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

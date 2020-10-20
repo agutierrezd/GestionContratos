@@ -1,6 +1,0 @@
-Importar en contrato_oe
-18/08/2020 4:23:44 p. m.
-
-4 registros de 4 procesados correctamente.
-4 registros añadidos.
-0 registros actualizados.

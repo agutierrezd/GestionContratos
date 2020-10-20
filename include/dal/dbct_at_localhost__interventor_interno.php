@@ -18,6 +18,8 @@ $dalTableinterventor_interno["sup_horanot"] = array("type"=>134,"varname"=>"sup_
 $dalTableinterventor_interno["sup_mailnot"] = array("type"=>200,"varname"=>"sup_mailnot", "name" => "sup_mailnot");
 $dalTableinterventor_interno["sup_fechanot2"] = array("type"=>7,"varname"=>"sup_fechanot2", "name" => "sup_fechanot2");
 $dalTableinterventor_interno["sup_mailnot2"] = array("type"=>200,"varname"=>"sup_mailnot2", "name" => "sup_mailnot2");
+$dalTableinterventor_interno["fecha_inicio"] = array("type"=>7,"varname"=>"fecha_inicio", "name" => "fecha_inicio");
+$dalTableinterventor_interno["fecha_fin"] = array("type"=>7,"varname"=>"fecha_fin", "name" => "fecha_fin");
 	$dalTableinterventor_interno["interventor_id"]["key"]=true;
 
 $dal_info["dbct_at_localhost__interventor_interno"] = &$dalTableinterventor_interno;

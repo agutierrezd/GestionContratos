@@ -568,7 +568,7 @@
 			<div>
 				<label for="printDetailscontrato_oe{$id}">
 					<input type="checkbox" value="contrato_oe" id="printDetailscontrato_oe{$id}" checked>
-					OBLIGACIONES ESPECÍFICAS				</label>
+					Obligaciones específicas				</label>
 			</div>
 			{END print_details_contrato_oe}
 						</div>
@@ -634,10 +634,7 @@
 					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_ano"]:before {
 		content: "{$label q_bandejaentrada_supervisores cont_ano}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_codrubro"]:before {
-		content: "{$label q_bandejaentrada_supervisores cont_codrubro}";
-	}
-				[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_fecha_inicio"]:before {
+					[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_fecha_inicio"]:before {
 		content: "{$label q_bandejaentrada_supervisores cont_fecha_inicio}";
 	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_fechafinal"]:before {
@@ -803,7 +800,7 @@
 	 
 		{BEGIN cont_ano_fieldheadercolumn}
 	{BEGIN cont_ano_fieldheader}
-	<SPAN {$cont_ano_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_ano">
+	<SPAN {$cont_ano_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_ano">
 	{$label q_bandejaentrada_supervisores cont_ano }	{$arrow_icon_cont_ano}
 	</SPAN>
 	{END cont_ano_fieldheader}
@@ -846,22 +843,22 @@
 	{$cell_grid_headcell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_codrubro_class}
+		 r-ori-vert				{$cont_fecha_inicio_class}
 			"
 
-			data-field="cont_codrubro"
+			data-field="cont_fecha_inicio"
 	
 	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN cont_codrubro_fieldheadercolumn}
-	{BEGIN cont_codrubro_fieldheader}
-	<SPAN {$cont_codrubro_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_codrubro">
-	{$label q_bandejaentrada_supervisores cont_codrubro }	{$arrow_icon_cont_codrubro}
+		{BEGIN cont_fecha_inicio_fieldheadercolumn}
+	{BEGIN cont_fecha_inicio_fieldheader}
+	<SPAN {$cont_fecha_inicio_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_inicio">
+	{$label q_bandejaentrada_supervisores cont_fecha_inicio }	{$arrow_icon_cont_fecha_inicio}
 	</SPAN>
-	{END cont_codrubro_fieldheader}
-{END cont_codrubro_fieldheadercolumn}
+	{END cont_fecha_inicio_fieldheader}
+{END cont_fecha_inicio_fieldheadercolumn}
 
 	
 	</th>
@@ -873,22 +870,22 @@
 	{$cell_grid_headcell_field6}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_fecha_inicio_class}
+		 r-ori-vert				{$cont_fechafinal_class}
 			"
 
-			data-field="cont_fecha_inicio"
+			data-field="cont_fechafinal"
 	
 	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN cont_fecha_inicio_fieldheadercolumn}
-	{BEGIN cont_fecha_inicio_fieldheader}
-	<SPAN {$cont_fecha_inicio_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fecha_inicio">
-	{$label q_bandejaentrada_supervisores cont_fecha_inicio }	{$arrow_icon_cont_fecha_inicio}
+		{BEGIN cont_fechafinal_fieldheadercolumn}
+	{BEGIN cont_fechafinal_fieldheader}
+	<SPAN {$cont_fechafinal_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechafinal">
+	{$label q_bandejaentrada_supervisores cont_fechafinal }	{$arrow_icon_cont_fechafinal}
 	</SPAN>
-	{END cont_fecha_inicio_fieldheader}
-{END cont_fecha_inicio_fieldheadercolumn}
+	{END cont_fechafinal_fieldheader}
+{END cont_fechafinal_fieldheadercolumn}
 
 	
 	</th>
@@ -900,22 +897,22 @@
 	{$cell_grid_headcell_field7}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_fechafinal_class}
+		 r-ori-vert				{$cont_periodicidad_class}
 			"
 
-			data-field="cont_fechafinal"
+			data-field="cont_periodicidad"
 	
 	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN cont_fechafinal_fieldheadercolumn}
-	{BEGIN cont_fechafinal_fieldheader}
-	<SPAN {$cont_fechafinal_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_fechafinal">
-	{$label q_bandejaentrada_supervisores cont_fechafinal }	{$arrow_icon_cont_fechafinal}
+		{BEGIN cont_periodicidad_fieldheadercolumn}
+	{BEGIN cont_periodicidad_fieldheader}
+	<SPAN {$cont_periodicidad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_periodicidad">
+	{$label q_bandejaentrada_supervisores cont_periodicidad }	{$arrow_icon_cont_periodicidad}
 	</SPAN>
-	{END cont_fechafinal_fieldheader}
-{END cont_fechafinal_fieldheadercolumn}
+	{END cont_periodicidad_fieldheader}
+{END cont_periodicidad_fieldheadercolumn}
 
 	
 	</th>
@@ -927,22 +924,22 @@
 	{$cell_grid_headcell_field8}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_periodicidad_class}
+		 r-ori-vert				{$cont_valorinicial_class}
 			"
 
-			data-field="cont_periodicidad"
+			data-field="cont_valorinicial"
 	
 	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN cont_periodicidad_fieldheadercolumn}
-	{BEGIN cont_periodicidad_fieldheader}
-	<SPAN {$cont_periodicidad_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_periodicidad">
-	{$label q_bandejaentrada_supervisores cont_periodicidad }	{$arrow_icon_cont_periodicidad}
+		{BEGIN cont_valorinicial_fieldheadercolumn}
+	{BEGIN cont_valorinicial_fieldheader}
+	<SPAN {$cont_valorinicial_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorinicial">
+	{$label q_bandejaentrada_supervisores cont_valorinicial }	{$arrow_icon_cont_valorinicial}
 	</SPAN>
-	{END cont_periodicidad_fieldheader}
-{END cont_periodicidad_fieldheadercolumn}
+	{END cont_valorinicial_fieldheader}
+{END cont_valorinicial_fieldheadercolumn}
 
 	
 	</th>
@@ -954,22 +951,22 @@
 	{$cell_grid_headcell_field9}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_valorinicial_class}
+		 r-ori-vert				{$cont_valormensual_class}
 			"
 
-			data-field="cont_valorinicial"
+			data-field="cont_valormensual"
 	
 	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN cont_valorinicial_fieldheadercolumn}
-	{BEGIN cont_valorinicial_fieldheader}
-	<SPAN {$cont_valorinicial_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valorinicial">
-	{$label q_bandejaentrada_supervisores cont_valorinicial }	{$arrow_icon_cont_valorinicial}
+		{BEGIN cont_valormensual_fieldheadercolumn}
+	{BEGIN cont_valormensual_fieldheader}
+	<SPAN {$cont_valormensual_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valormensual">
+	{$label q_bandejaentrada_supervisores cont_valormensual }	{$arrow_icon_cont_valormensual}
 	</SPAN>
-	{END cont_valorinicial_fieldheader}
-{END cont_valorinicial_fieldheadercolumn}
+	{END cont_valormensual_fieldheader}
+{END cont_valormensual_fieldheadercolumn}
 
 	
 	</th>
@@ -981,39 +978,12 @@
 	{$cell_grid_headcell_field10}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_valormensual_class}
-			"
-
-			data-field="cont_valormensual"
-	
-	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN cont_valormensual_fieldheadercolumn}
-	{BEGIN cont_valormensual_fieldheader}
-	<SPAN {$cont_valormensual_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_valormensual">
-	{$label q_bandejaentrada_supervisores cont_valormensual }	{$arrow_icon_cont_valormensual}
-	</SPAN>
-	{END cont_valormensual_fieldheader}
-{END cont_valormensual_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field10}
-				 
-					{BEGIN cellblock_grid_headcell_field11}
-	<th
-	
-	{$cell_grid_headcell_field11}
-	{$recordattrs}
-	class="
 		 r-ori-vert				{$cont_estado_class}
 			"
 
 			data-field="cont_estado"
 	
-	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1027,7 +997,7 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field11}
+	{END cellblock_grid_headcell_field10}
 							</tr>
 					 
 					 
@@ -1260,35 +1230,12 @@
 	{$cell_grid_cell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert				{$cont_codrubro_class}
-			"
-
-			data-field="cont_codrubro"
-	
-	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN cont_codrubro_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="cont_codrubro" data-default-width >
-{$cont_codrubro_value}
-</span>
-{END cont_codrubro_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field5}
-				 
-					{BEGIN cellblock_grid_cell_field6}
-	<td
-	
-	{$cell_grid_cell_field6}
-	{$recordattrs}
-	class="
 		 r-ori-vert				{$cont_fecha_inicio_class}
 			"
 
 			data-field="cont_fecha_inicio"
 	
-	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1298,12 +1245,12 @@
 </span>
 {END cont_fecha_inicio_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field6}
+	{END cellblock_grid_cell_field5}
 				 
-					{BEGIN cellblock_grid_cell_field7}
+					{BEGIN cellblock_grid_cell_field6}
 	<td
 	
-	{$cell_grid_cell_field7}
+	{$cell_grid_cell_field6}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$cont_fechafinal_class}
@@ -1311,7 +1258,7 @@
 
 			data-field="cont_fechafinal"
 	
-	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1321,12 +1268,12 @@
 </span>
 {END cont_fechafinal_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field7}
+	{END cellblock_grid_cell_field6}
 				 
-					{BEGIN cellblock_grid_cell_field8}
+					{BEGIN cellblock_grid_cell_field7}
 	<td
 	
-	{$cell_grid_cell_field8}
+	{$cell_grid_cell_field7}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$cont_periodicidad_class}
@@ -1334,7 +1281,7 @@
 
 			data-field="cont_periodicidad"
 	
-	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1344,12 +1291,12 @@
 </span>
 {END cont_periodicidad_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field8}
+	{END cellblock_grid_cell_field7}
 				 
-					{BEGIN cellblock_grid_cell_field9}
+					{BEGIN cellblock_grid_cell_field8}
 	<td
 	
-	{$cell_grid_cell_field9}
+	{$cell_grid_cell_field8}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$cont_valorinicial_class}
@@ -1357,7 +1304,7 @@
 
 			data-field="cont_valorinicial"
 	
-	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1367,12 +1314,12 @@
 </span>
 {END cont_valorinicial_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field9}
+	{END cellblock_grid_cell_field8}
 				 
-					{BEGIN cellblock_grid_cell_field10}
+					{BEGIN cellblock_grid_cell_field9}
 	<td
 	
-	{$cell_grid_cell_field10}
+	{$cell_grid_cell_field9}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$cont_valormensual_class}
@@ -1380,7 +1327,7 @@
 
 			data-field="cont_valormensual"
 	
-	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1390,12 +1337,12 @@
 </span>
 {END cont_valormensual_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field10}
+	{END cellblock_grid_cell_field9}
 				 
-					{BEGIN cellblock_grid_cell_field11}
+					{BEGIN cellblock_grid_cell_field10}
 	<td
 	
-	{$cell_grid_cell_field11}
+	{$cell_grid_cell_field10}
 	{$recordattrs}
 	class="
 		 r-ori-vert				{$cont_estado_class}
@@ -1403,7 +1350,7 @@
 
 			data-field="cont_estado"
 	
-	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1413,7 +1360,7 @@
 </span>
 {END cont_estado_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field11}
+	{END cellblock_grid_cell_field10}
 							</tr>
 					 
 						<tr {$rowattrs} {$row_grid_2} class="{$rowclass} 
@@ -1671,22 +1618,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field10}
-				 
-					{BEGIN cellblock_grid_footcell_field11}
-	<td
-	
-	{$cell_grid_footcell_field11}
-	{$recordattrs}
-	class="
-		 r-ori-vert			"
-
-	
-	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="q_bandejaentrada_supervisores_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field11}
 							</tr>
 					
 					</tfoot>

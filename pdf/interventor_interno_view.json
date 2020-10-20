@@ -488,8 +488,10 @@ pdfDocument = {
 	
 			"stack": [
 		
-				'',
-	  ],
+				
+			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel interventor_interno fecha_fin }","bold":true},{"text":{$fecha_fin_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },
@@ -512,8 +514,10 @@ pdfDocument = {
 	
 			"stack": [
 		
-				'',
-	  ],
+				
+			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel interventor_interno fecha_inicio }","bold":true},{"text":{$fecha_inicio_pdfvalue}}],"margin":[0,0,0,15]},
+				
+		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },

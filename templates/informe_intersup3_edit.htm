@@ -1,0 +1,991 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+	</head>
+
+	<body class="{$stylename} function-edit" {$bodyattrs}>
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="edit_header" data-itemid="edit_header" {$item_edit_header} data-pageid="{$pageid}" >{$pagetitlelabel informe_intersup3 edit}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<div data-itemtype="edit_message" data-itemid="edit_message" {$item_edit_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
+<h5>{$message}</h5>
+<div>
+{BEGIN back_button}
+			<button class="btn btn-sm btn-default" {$backbutton_attrs}>Volver a la lista</button>
+	{END back_button}
+{BEGIN view_page_button}
+	<button class="btn btn-sm btn-default" {$view_page_button_attrs}>Ver</button>
+{END view_page_button}
+</div>
+</div>
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<div class="panel with-tabs panel-default form-tabs" data-itemtype="tabs" data-itemid="tabs" {$item_tabs} data-pageid="{$pageid}">
+	<div class="panel-heading">
+		<ul class="nav nav-tabs" role="tablist">
+									<li role="presentation" class="active">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section{$pageid}">
+					1. VERIFICA FIRMA				</a>
+			</li>
+										<li role="presentation" class="">
+				<a aria-controls="settings" role="tab" data-toggle="tab" href="#tab_section2{$pageid}">
+					3. SUPERVISOR				</a>
+			</li>
+									</ul>
+	</div>
+	<div class="panel-body">
+		<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active" id="tab_section{$pageid}"> 
+			{BEGIN section_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section" id="form_section_{$pageid}" data-makeup="small" {$form_section} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section_c15}
+<td
+	{$cell_section_c15}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c15" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				<span data-itemtype="text" data-itemid="text" {$item_text} data-pageid="{$pageid}" data-small > 
+	<div class="alert alert-warning" role="alert">
+  Escriba la clave dinámica enviada a su correo electrónico para formalizar la firma del presente informe
+</div></span>
+	
+								</td>
+			{END cellblock_section_c15}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c13}
+<td
+	{$cell_section_c13}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c13" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sign_verificacert_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sign_verificacert}  r-vertical-field" 
+	data-fieldname="sign_verificacert" 
+	data-signal-error-for="sign_verificacert{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field39" {$item_integrated_edit_field39} data-pageid="{$pageid}" data-field="sign_verificacert" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sign_verificacert}">
+		{BEGIN sign_verificacert_label}{$label informe_intersup3 sign_verificacert }{END sign_verificacert_label}
+	</label>
+	<div class="r-edit-field">
+		{$sign_verificacert_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sign_verificacert">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 sign_verificacert }		</div>
+	</div>
+</div>
+
+
+{END sign_verificacert_fieldblock}
+	
+								</td>
+			{END cellblock_section_c13}
+			 
+																
+
+{BEGIN cellblock_section_c14}
+<td
+	{$cell_section_c14}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c14" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_estado_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_estado}  r-vertical-field" 
+	data-fieldname="inf_estado" 
+	data-signal-error-for="inf_estado{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="inf_estado" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_inf_estado}">
+		{BEGIN inf_estado_label}{$label informe_intersup3 inf_estado }{END inf_estado_label}
+	</label>
+	<div class="r-edit-field">
+		{$inf_estado_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="inf_estado">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 inf_estado }		</div>
+	</div>
+</div>
+
+
+{END inf_estado_fieldblock}
+	
+								</td>
+			{END cellblock_section_c14}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c16}
+<td
+	{$cell_section_c16}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c16" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_consecutivo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_consecutivo}  r-vertical-field" 
+	data-fieldname="inf_consecutivo" 
+	data-signal-error-for="inf_consecutivo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="inf_consecutivo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_inf_consecutivo}">
+		{BEGIN inf_consecutivo_label}{$label informe_intersup3 inf_consecutivo }{END inf_consecutivo_label}
+	</label>
+	<div class="r-edit-field">
+		{$inf_consecutivo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="inf_consecutivo">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 inf_consecutivo }		</div>
+	</div>
+</div>
+
+
+{END inf_consecutivo_fieldblock}
+	
+								</td>
+			{END cellblock_section_c16}
+			 
+		
+							
+
+{BEGIN cellblock_section_c17}
+<td
+	{$cell_section_c17}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c17" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section_c17}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c11}
+<td
+	{$cell_section_c11}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c11" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_hash_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_hash}  r-vertical-field" 
+	data-fieldname="inf_hash" 
+	data-signal-error-for="inf_hash{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="inf_hash" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_inf_hash}">
+		{BEGIN inf_hash_label}{$label informe_intersup3 inf_hash }{END inf_hash_label}
+	</label>
+	<div class="r-edit-field">
+		{$inf_hash_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="inf_hash">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 inf_hash }		</div>
+	</div>
+</div>
+
+
+{END inf_hash_fieldblock}
+	
+								</td>
+			{END cellblock_section_c11}
+			 
+																
+
+{BEGIN cellblock_section_c12}
+<td
+	{$cell_section_c12}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c12" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_fechapresenta_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_fechapresenta}  r-vertical-field" 
+	data-fieldname="inf_fechapresenta" 
+	data-signal-error-for="inf_fechapresenta{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="inf_fechapresenta" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_inf_fechapresenta}">
+		{BEGIN inf_fechapresenta_label}{$label informe_intersup3 inf_fechapresenta }{END inf_fechapresenta_label}
+	</label>
+	<div class="r-edit-field">
+		{$inf_fechapresenta_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="inf_fechapresenta">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 inf_fechapresenta }		</div>
+	</div>
+</div>
+
+
+{END inf_fechapresenta_fieldblock}
+	
+								</td>
+			{END cellblock_section_c12}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c8}
+<td
+	{$cell_section_c8}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c8" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_numerocontrato_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_numerocontrato}  r-vertical-field" 
+	data-fieldname="inf_numerocontrato" 
+	data-signal-error-for="inf_numerocontrato{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="inf_numerocontrato" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_inf_numerocontrato}">
+		{BEGIN inf_numerocontrato_label}{$label informe_intersup3 inf_numerocontrato }{END inf_numerocontrato_label}
+	</label>
+	<div class="r-edit-field">
+		{$inf_numerocontrato_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="inf_numerocontrato">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 inf_numerocontrato }		</div>
+	</div>
+</div>
+
+
+{END inf_numerocontrato_fieldblock}
+	
+								</td>
+			{END cellblock_section_c8}
+			 
+																
+
+{BEGIN cellblock_section_c9}
+<td
+	{$cell_section_c9}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c9" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_doccontratista_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_doccontratista}  r-vertical-field" 
+	data-fieldname="inf_doccontratista" 
+	data-signal-error-for="inf_doccontratista{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="inf_doccontratista" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_inf_doccontratista}">
+		{BEGIN inf_doccontratista_label}{$label informe_intersup3 inf_doccontratista }{END inf_doccontratista_label}
+	</label>
+	<div class="r-edit-field">
+		{$inf_doccontratista_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="inf_doccontratista">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 inf_doccontratista }		</div>
+	</div>
+</div>
+
+
+{END inf_doccontratista_fieldblock}
+	
+								</td>
+			{END cellblock_section_c9}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c10}
+<td
+	{$cell_section_c10}
+	class=" r-ori-vert"
+	
+			data-single
+			
+	ocolspan="2"		data-cellId="section_c10" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_nombrecontratista_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_nombrecontratista}  r-vertical-field" 
+	data-fieldname="inf_nombrecontratista" 
+	data-signal-error-for="inf_nombrecontratista{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="inf_nombrecontratista" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_inf_nombrecontratista}">
+		{BEGIN inf_nombrecontratista_label}{$label informe_intersup3 inf_nombrecontratista }{END inf_nombrecontratista_label}
+	</label>
+	<div class="r-edit-field">
+		{$inf_nombrecontratista_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="inf_nombrecontratista">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 inf_nombrecontratista }		</div>
+	</div>
+</div>
+
+
+{END inf_nombrecontratista_fieldblock}
+	
+								</td>
+			{END cellblock_section_c10}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section_c1}
+<td
+	{$cell_section_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_fecharep_i_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_fecharep_i}  r-vertical-field" 
+	data-fieldname="inf_fecharep_i" 
+	data-signal-error-for="inf_fecharep_i{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="inf_fecharep_i" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_inf_fecharep_i}">
+		{BEGIN inf_fecharep_i_label}{$label informe_intersup3 inf_fecharep_i }{END inf_fecharep_i_label}
+	</label>
+	<div class="r-edit-field">
+		{$inf_fecharep_i_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="inf_fecharep_i">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 inf_fecharep_i }		</div>
+	</div>
+</div>
+
+
+{END inf_fecharep_i_fieldblock}
+	
+								</td>
+			{END cellblock_section_c1}
+			 
+																
+
+{BEGIN cellblock_section_c}
+<td
+	{$cell_section_c}
+	class=" r-ori-vert"
+	
+			
+			data-cellId="section_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_fecharep_f_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_fecharep_f}  r-vertical-field" 
+	data-fieldname="inf_fecharep_f" 
+	data-signal-error-for="inf_fecharep_f{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="inf_fecharep_f" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_inf_fecharep_f}">
+		{BEGIN inf_fecharep_f_label}{$label informe_intersup3 inf_fecharep_f }{END inf_fecharep_f_label}
+	</label>
+	<div class="r-edit-field">
+		{$inf_fecharep_f_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="inf_fecharep_f">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 inf_fecharep_f }		</div>
+	</div>
+</div>
+
+
+{END inf_fecharep_f_fieldblock}
+											
+{BEGIN sign_hash_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sign_hash}  r-vertical-field" 
+	data-fieldname="sign_hash" 
+	data-signal-error-for="sign_hash{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="sign_hash" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sign_hash}">
+		{BEGIN sign_hash_label}{$label informe_intersup3 sign_hash }{END sign_hash_label}
+	</label>
+	<div class="r-edit-field">
+		{$sign_hash_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sign_hash">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 sign_hash }		</div>
+	</div>
+</div>
+
+
+{END sign_hash_fieldblock}
+	
+								</td>
+			{END cellblock_section_c}
+								</tr>
+			</tbody></table>
+{END section_block}
+						</div>
+					<div role="tabpanel" class="tab-pane " id="tab_section2{$pageid}"> 
+			{BEGIN section2_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="section2" id="form_section2_{$pageid}" data-makeup="small" {$form_section2} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="2"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_section2_c1}
+<td
+	{$cell_section2_c1}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c1" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_intersup_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_intersup}  r-vertical-field" 
+	data-fieldname="inf_intersup" 
+	data-signal-error-for="inf_intersup{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field24" {$item_integrated_edit_field24} data-pageid="{$pageid}" data-field="inf_intersup" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_inf_intersup}">
+		{BEGIN inf_intersup_label}{$label informe_intersup3 inf_intersup }{END inf_intersup_label}
+	</label>
+	<div class="r-edit-field">
+		{$inf_intersup_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="inf_intersup">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 inf_intersup }		</div>
+	</div>
+</div>
+
+
+{END inf_intersup_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c1}
+			 
+																
+
+{BEGIN cellblock_section2_c}
+<td
+	{$cell_section2_c}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_nombre_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_nombre}  r-vertical-field" 
+	data-fieldname="inf_nombre" 
+	data-signal-error-for="inf_nombre{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field25" {$item_integrated_edit_field25} data-pageid="{$pageid}" data-field="inf_nombre" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_inf_nombre}">
+		{BEGIN inf_nombre_label}{$label informe_intersup3 inf_nombre }{END inf_nombre_label}
+	</label>
+	<div class="r-edit-field">
+		{$inf_nombre_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="inf_nombre">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 inf_nombre }		</div>
+	</div>
+</div>
+
+
+{END inf_nombre_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c}
+								</tr>
+	 
+	 
+														<tr>
+										
+
+{BEGIN cellblock_section2_c4}
+<td
+	{$cell_section2_c4}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c4" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_cargo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_cargo}  r-vertical-field" 
+	data-fieldname="inf_cargo" 
+	data-signal-error-for="inf_cargo{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field26" {$item_integrated_edit_field26} data-pageid="{$pageid}" data-field="inf_cargo" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_inf_cargo}">
+		{BEGIN inf_cargo_label}{$label informe_intersup3 inf_cargo }{END inf_cargo_label}
+	</label>
+	<div class="r-edit-field">
+		{$inf_cargo_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="inf_cargo">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 inf_cargo }		</div>
+	</div>
+</div>
+
+
+{END inf_cargo_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c4}
+			 
+																
+
+{BEGIN cellblock_section2_c5}
+<td
+	{$cell_section2_c5}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c5" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN inf_dependencia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_inf_dependencia}  r-vertical-field" 
+	data-fieldname="inf_dependencia" 
+	data-signal-error-for="inf_dependencia{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field27" {$item_integrated_edit_field27} data-pageid="{$pageid}" data-field="inf_dependencia" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_inf_dependencia}">
+		{BEGIN inf_dependencia_label}{$label informe_intersup3 inf_dependencia }{END inf_dependencia_label}
+	</label>
+	<div class="r-edit-field">
+		{$inf_dependencia_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="inf_dependencia">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 inf_dependencia }		</div>
+	</div>
+</div>
+
+
+{END inf_dependencia_fieldblock}
+	
+								</td>
+			{END cellblock_section2_c5}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_section2_c2}
+<td
+	{$cell_section2_c2}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c2" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section2_c2}
+			 
+		
+							
+
+{BEGIN cellblock_section2_c3}
+<td
+	{$cell_section2_c3}
+	class=" r-ori-vert"
+	
+			data-single
+			
+			data-cellId="section2_c3" data-pageid="{$pageid}"
+		data-v-cell="2"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_section2_c3}
+								</tr>
+			</tbody></table>
+{END section2_block}
+						</div>
+				</div>
+	</div>
+</div>  											<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr>
+										
+
+{BEGIN cellblock_grid_c4}
+<td
+	{$cell_grid_c4}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c4" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN sign_file_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_sign_file}  r-vertical-field" 
+	data-fieldname="sign_file" 
+	data-signal-error-for="sign_file{$id}" 
+	data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="sign_file" >
+
+
+	<label class="r-edit-label control-label" for="{$labelfor_sign_file}">
+		{BEGIN sign_file_label}{$label informe_intersup3 sign_file }{END sign_file_label}
+	</label>
+	<div class="r-edit-field">
+		{$sign_file_editcontrol}	</div>
+	<div class="r-edit-tooltip" data-helpfor="sign_file">
+		<div class="text-muted" >
+		{$tooltip informe_intersup3 sign_file }		</div>
+	</div>
+</div>
+
+
+{END sign_file_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c4}
+								</tr>
+	 
+	 
+		
+						<tr>
+						
+
+{BEGIN cellblock_grid_c6}
+<td
+	{$cell_grid_c6}
+	class=" r-ori-vert"
+	
+			data-single
+				data-fullwidth
+		
+			data-cellId="grid_c6" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+									</td>
+			{END cellblock_grid_c6}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN save_edit}
+<span data-itemtype="edit_save" data-itemid="edit_save" {$item_edit_save} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-success  btn-lg 
+	" {$savebutton_attrs} >
+					<span class="glyphicon glyphicon-ok-sign"></span>
+							Validar y firmar			</a>
+</span>
+{END save_edit}
+	 
+		{BEGIN back_button}
+<span data-itemtype="edit_back_list" data-itemid="edit_back_list" {$item_edit_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="edit_close" data-itemid="edit_close" {$item_edit_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-info  btn-lg 
+	" {$closebutton_attrs} >
+					<span class="fa fa-times-circle-o"></span>
+							Cancelar			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+									<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+								<li data-itemtype="edit_reset" data-itemid="edit_reset" {$item_edit_reset} data-pageid="{$pageid}" data-small >
+				<a  {$resetbutton_attrs}  title="" >
+				
+		Reiniciar		
+		</a>
+	</li>
+							{BEGIN view_page_button}
+	<li data-itemtype="edit_view" data-itemid="edit_view" {$item_edit_view} data-pageid="{$pageid}" data-small >
+				<a  {$view_page_button_attrs}  title="" >
+				
+		Ver		
+		</a>
+	</li>
+{END view_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -355,6 +355,14 @@ function checkTableName($shortTName, $type=false)
 		return true;
 	if ("q_info_ordenpago" == $shortTName && ($type===false || ($type!==false && $type == 0)))
 		return true;
+	if ("q_bandejaentrada_supervisores3" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("informe_intersup3" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
+	if ("contrato_dependencia" == $shortTName && ($type===false || ($type!==false && $type == 0)))
+		return true;
+	if ("global_users_sup" == $shortTName && ($type===false || ($type!==false && $type == 1)))
+		return true;
 	return false;
 }
 
@@ -1089,6 +1097,42 @@ function GetTablesList($pdfMode = false)
 	if( $tableAvailable ) {
 		$arr[]="q_info_ordenpago";
 	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("q_bandejaentrada_supervisores3");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="q_bandejaentrada_supervisores3";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("informe_intersup3");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="informe_intersup3";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("contrato_dependencia");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="contrato_dependencia";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("global_users_sup");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="global_users_sup";
+	}
 	return $arr;
 }
 
@@ -1174,6 +1218,10 @@ function GetTablesListWithoutSecurity()
 	$arr[]="q_info_registros";
 	$arr[]="q_info_obligacion";
 	$arr[]="q_info_ordenpago";
+	$arr[]="q_bandejaentrada_supervisores3";
+	$arr[]="informe_intersup3";
+	$arr[]="contrato_dependencia";
+	$arr[]="global_users_sup";
 	return $arr;
 }
 
@@ -2325,6 +2373,26 @@ function GetUserPermissionsStatic( $table )
 //	default permissions
 		return "ADESPI".$extraPerm;
 	}
+	if( $table=="q_bandejaentrada_supervisores3" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="informe_intersup3" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="contrato_dependencia" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="global_users_sup" )
+	{
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
 	// grant nothing by default
 	return "";
 }
@@ -2448,6 +2516,7 @@ function SetAuthSessionData($pUsername, &$data, $password, &$pageObject = null, 
 		$_SESSION["_q_bandejaentrada_supervisores_OwnerID"] = $data["idusrglobal"];
 		$_SESSION["_q_bandejaentrada_supervisores1_OwnerID"] = $data["idusrglobal"];
 		$_SESSION["_q_bandejaentrada_supervisores2_OwnerID"] = $data["idusrglobal"];
+		$_SESSION["_q_bandejaentrada_supervisores3_OwnerID"] = $data["idusrglobal"];
 
 	$_SESSION["UserData"] = $data;
 
@@ -2516,6 +2585,12 @@ function CheckSecurity($strValue, $strAction, $table = "")
 				return false;
 		}
 		if($table=="q_bandejaentrada_supervisores1")
+		{
+
+				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
+				return false;
+		}
+		if($table=="q_bandejaentrada_supervisores3")
 		{
 
 				if(!($pSet->getCaseSensitiveUsername((string)$_SESSION["_".$table."_OwnerID"])===$pSet->getCaseSensitiveUsername((string)$strValue)))
@@ -2596,6 +2671,10 @@ function SecuritySQL($strAction, $table, $strPerm="")
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}
 		if($table=="q_bandejaentrada_supervisores1")
+		{
+				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
+		}
+		if($table=="q_bandejaentrada_supervisores3")
 		{
 				$ret = GetFullFieldName($pSet->getTableOwnerID(), $table, false)."=".make_db_value($pSet->getTableOwnerID(), $ownerid, "", "", $table);
 		}

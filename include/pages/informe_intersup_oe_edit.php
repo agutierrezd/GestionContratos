@@ -1,5 +1,6 @@
 <?php
-			$optionsArray = array( 'master' => array( 'informe_intersup' => array( 'preview' => false ) ),
+			$optionsArray = array( 'master' => array( 'informe_intersup' => array( 'preview' => false ),
+'informe_intersup3' => array( 'preview' => false ) ),
 'captcha' => array( 'captcha' => false ),
 'fields' => array( 'gridFields' => array( 'sup_obs',
 'sup_aprueba' ),

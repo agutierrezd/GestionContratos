@@ -1,6 +1,7 @@
 <?php
 			$optionsArray = array( 'pdf' => array( 'pdfView' => false ),
-'master' => array( 'informe_intersup' => array( 'preview' => true ) ),
+'master' => array( 'informe_intersup' => array( 'preview' => true ),
+'informe_intersup3' => array( 'preview' => false ) ),
 'totals' => array( 'isoe_id' => array( 'totalsType' => '' ),
 'inf_id_fk' => array( 'totalsType' => '' ),
 'oe_id_fk' => array( 'totalsType' => '' ),

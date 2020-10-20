@@ -44,6 +44,7 @@ $dalTablecontractor_master["dem_genero"] = array("type"=>200,"varname"=>"dem_gen
 $dalTablecontractor_master["dem_ocupacion"] = array("type"=>3,"varname"=>"dem_ocupacion", "name" => "dem_ocupacion");
 $dalTablecontractor_master["dem_profesion"] = array("type"=>200,"varname"=>"dem_profesion", "name" => "dem_profesion");
 $dalTablecontractor_master["ct_fecha_nacimiento"] = array("type"=>7,"varname"=>"ct_fecha_nacimiento", "name" => "ct_fecha_nacimiento");
+$dalTablecontractor_master["ct_fecha_nacimiento_mun"] = array("type"=>200,"varname"=>"ct_fecha_nacimiento_mun", "name" => "ct_fecha_nacimiento_mun");
 $dalTablecontractor_master["ct_nacionalidad"] = array("type"=>200,"varname"=>"ct_nacionalidad", "name" => "ct_nacionalidad");
 $dalTablecontractor_master["dem_edad"] = array("type"=>3,"varname"=>"dem_edad", "name" => "dem_edad");
 $dalTablecontractor_master["dem_educacion"] = array("type"=>3,"varname"=>"dem_educacion", "name" => "dem_educacion");

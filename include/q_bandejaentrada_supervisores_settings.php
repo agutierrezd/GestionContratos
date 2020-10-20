@@ -4385,6 +4385,7 @@ $proto57["m_columns"][] = "cont_fechaapertura";
 $proto57["m_columns"][] = "cont_munejec";
 $proto57["m_columns"][] = "cont_cesion";
 $proto57["m_columns"][] = "cont_modifica";
+$proto57["m_columns"][] = "Username";
 $obj = new SQLTable($proto57);
 
 $proto56["m_table"] = $obj;

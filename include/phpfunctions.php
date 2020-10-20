@@ -950,11 +950,6 @@ function GetLWWhere($field, $ptype, $table = "")
 		$strWhere = " att_type = 1";
 		return $strWhere;
 	}
-		if($table=="interventor_interno" && $field=="idusrglobal_fk")
-	{
-		$strWhere = " global_rol_contratos = 3";
-		return $strWhere;
-	}
 		if($table=="informe_intersup_plan_pagos" && $field=="inf_st" && $ptype=="edit")
 	{
 		$strWhere = " st_id = 0";
@@ -970,7 +965,12 @@ function GetLWWhere($field, $ptype, $table = "")
 		$strWhere = " st_id = 0";
 		return $strWhere;
 	}
-		if($table=="informe_intersup" && $field=="inf_consecutivo")
+		if($table=="informe_intersup" && $field=="inf_consecutivo" && $ptype=="add")
+	{
+		$strWhere = " inf_st = 0 ";
+		return $strWhere;
+	}
+		if($table=="informe_intersup" && $field=="inf_consecutivo" && $ptype=="search")
 	{
 		$strWhere = " inf_st = 0 ";
 		return $strWhere;
@@ -988,6 +988,21 @@ function GetLWWhere($field, $ptype, $table = "")
 		if($table=="contrato_modifica_cesion" && $field=="mod_tipo")
 	{
 		$strWhere = " modt_id = 4 ";
+		return $strWhere;
+	}
+		if($table=="informe_intersup3" && $field=="inf_consecutivo" && $ptype=="add")
+	{
+		$strWhere = " inf_st = 0 ";
+		return $strWhere;
+	}
+		if($table=="informe_intersup3" && $field=="inf_consecutivo" && $ptype=="search")
+	{
+		$strWhere = " inf_st = 0 ";
+		return $strWhere;
+	}
+		if($table=="informe_intersup3" && $field=="inf_estado")
+	{
+		$strWhere = " estadoi_id = 4 ";
 		return $strWhere;
 	}
 	return "";
@@ -1027,7 +1042,7 @@ function GetDefaultValue($field, $ptype, $table="")
 	}
 				if($table=="interventor_interno" && $field=="cont_hash_fk")
 	{
-		return $letra = (chr(rand(ord("A"), ord("Z")))).mt_rand(10000000,99999999); ;
+		return (chr(rand(ord("A"), ord("Z")))).mt_rand(10000000,99999999); ;
 	}
 				if($table=="interventor_interno" && $field=="sys_date")
 	{
@@ -1057,13 +1072,49 @@ function GetDefaultValue($field, $ptype, $table="")
 	{
 		return $_SESSION["UserID"];
 	}
-				if($table=="informe_intersup" && $field=="inf_hash")
+				if($table=="informe_intersup" && $field=="inf_hash" && $ptype=="edit")
 	{
 		return $letra = (chr(rand(ord("A"), ord("Z")))).mt_rand(10000000,99999999); ;
+	}
+				if($table=="informe_intersup" && $field=="inf_hash" && $ptype=="add")
+	{
+		return $letra = (chr(rand(ord("A"), ord("Z")))).mt_rand(10000000,99999999); ;
+	}
+				if($table=="informe_intersup" && $field=="inf_hash" && $ptype=="search")
+	{
+		return $letra = (chr(rand(ord("A"), ord("Z")))).mt_rand(10000000,99999999); ;
+	}
+				if($table=="informe_intersup" && $field=="inf_estado" && $ptype=="edit")
+	{
+		return 3;
+	}
+				if($table=="informe_intersup" && $field=="inf_estado" && $ptype=="search")
+	{
+		return 3;
 	}
 				if($table=="informe_intersup" && $field=="inf_fechapresenta")
 	{
 		return strftime("%Y-%m-%d");
+	}
+				if($table=="informe_intersup" && $field=="sign_date" && $ptype=="edit")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="informe_intersup" && $field=="sign_date" && $ptype=="search")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="informe_intersup" && $field=="sign_mailnot" && $ptype=="edit")
+	{
+		return $_SESSION["UMAIL"];
+	}
+				if($table=="informe_intersup" && $field=="sign_mailnot" && $ptype=="search")
+	{
+		return $_SESSION["UMAIL"];
+	}
+				if($table=="informe_intersup" && $field=="sign_file")
+	{
+		return 1;
 	}
 				if($table=="informe_intersup_oe" && $field=="sup_fecha")
 	{
@@ -1092,6 +1143,42 @@ function GetDefaultValue($field, $ptype, $table="")
 				if($table=="contrato_modifica_cesion" && $field=="sys_user")
 	{
 		return $_SESSION["UserID"];
+	}
+				if($table=="informe_intersup3" && $field=="inf_hash" && $ptype=="edit")
+	{
+		return $letra = (chr(rand(ord("A"), ord("Z")))).mt_rand(10000000,99999999); ;
+	}
+				if($table=="informe_intersup3" && $field=="inf_hash" && $ptype=="add")
+	{
+		return $letra = (chr(rand(ord("A"), ord("Z")))).mt_rand(10000000,99999999); ;
+	}
+				if($table=="informe_intersup3" && $field=="inf_hash" && $ptype=="search")
+	{
+		return $letra = (chr(rand(ord("A"), ord("Z")))).mt_rand(10000000,99999999); ;
+	}
+				if($table=="informe_intersup3" && $field=="inf_estado")
+	{
+		return 4;
+	}
+				if($table=="informe_intersup3" && $field=="sign_date" && $ptype=="edit")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="informe_intersup3" && $field=="sign_date" && $ptype=="search")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="informe_intersup3" && $field=="sign_mailnot" && $ptype=="edit")
+	{
+		return $_SESSION["UMAIL"];
+	}
+				if($table=="informe_intersup3" && $field=="sign_mailnot" && $ptype=="search")
+	{
+		return $_SESSION["UMAIL"];
+	}
+				if($table=="informe_intersup3" && $field=="sign_file")
+	{
+		return 2;
 	}
 	return "";
 }
@@ -1140,6 +1227,26 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 	{
 		return $_SESSION["UserID"];
 	}
+				if($table=="informe_intersup" && $field=="inf_estado" && $ptype=="search")
+	{
+		return 3;
+	}
+				if($table=="informe_intersup" && $field=="sign_hash" && $ptype=="edit")
+	{
+		return (chr(rand(ord("A"), ord("Z")))).(chr(rand(ord("A"), ord("Z")))).strftime("%y").mt_rand(30000000000,99999999999); ;
+	}
+				if($table=="informe_intersup" && $field=="sign_date" && $ptype=="edit")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="informe_intersup" && $field=="sign_mailnot" && $ptype=="edit")
+	{
+		return $_SESSION["UMAIL"];
+	}
+				if($table=="informe_intersup" && $field=="sign_file")
+	{
+		return 1;
+	}
 				if($table=="informe_intersup_oe" && $field=="sup_fecha")
 	{
 		return strftime("%Y-%m-%d %H:%M:%S");
@@ -1167,6 +1274,22 @@ function GetAutoUpdateValue($field, $ptype, $table="")
 				if($table=="contrato_modifica_cesion" && $field=="sys_user")
 	{
 		return $_SESSION["UserID"];
+	}
+				if($table=="informe_intersup3" && $field=="inf_estado")
+	{
+		return 4;
+	}
+				if($table=="informe_intersup3" && $field=="sign_date" && $ptype=="edit")
+	{
+		return strftime("%Y-%m-%d %H:%M:%S");
+	}
+				if($table=="informe_intersup3" && $field=="sign_mailnot" && $ptype=="edit")
+	{
+		return $_SESSION["UMAIL"];
+	}
+				if($table=="informe_intersup3" && $field=="sign_file")
+	{
+		return 2;
 	}
 	return "";
 }

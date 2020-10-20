@@ -1980,7 +1980,8 @@ $queryData_contrato_modifica = createSqlQuery_contrato_modifica();
 
 $tdatacontrato_modifica[".sqlquery"] = $queryData_contrato_modifica;
 
-$tableEvents["contrato_modifica"] = new eventsBase;
-$tdatacontrato_modifica[".hasEvents"] = false;
+include_once(getabspath("include/contrato_modifica_events.php"));
+$tableEvents["contrato_modifica"] = new eventclass_contrato_modifica;
+$tdatacontrato_modifica[".hasEvents"] = true;
 
 ?>

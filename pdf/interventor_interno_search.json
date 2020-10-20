@@ -158,6 +158,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_search_field17}","text":{$dependencia_id_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_integrated_search_field5}","text":{$fecha_inicio_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_integrated_search_field9}","text":{$fecha_fin_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

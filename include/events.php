@@ -29,6 +29,8 @@ class class_GlobalEvents extends eventsBase
 //	onscreen events
 
 
+		$this->events["IsRecordEditable"]["informe_intersup"] = true;
+		$this->events["IsRecordEditable"]["informe_intersup_oe"] = true;
 
 		}
 
@@ -99,5 +101,36 @@ $_SESSION["UMAIL"]=$data["usr_email"];
 
 
 
+	function IsRecordEditable($values, $isEditable, $table = "")
+	{
+		global $strTableName;
+		if($table == "")
+			$table = $strTableName;
+		if($table == "informe_intersup")
+		{
+			if ($values['inf_estado'] == 2 and $values['qty_inf'] == $values['qty_inf_verifica'])
+return true;
+else
+return false;
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+
+return $isEditable;;
+		}
+		if($table == "informe_intersup_oe")
+		{
+			if ($values['sup_aprueba'] == 1)
+return true;
+else
+return false;
+
+// Place event code here.
+// Use "Add Action" button to add code snippets.
+
+return $isEditable;;
+		}
+		return $isEditable;
+	}
 }
 ?>

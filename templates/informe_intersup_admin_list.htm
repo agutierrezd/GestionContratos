@@ -113,6 +113,45 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_inf_valorcontrato}</span>
 						</div>
 		{END searchCtrlBlock_inf_valorcontrato}
+																{BEGIN searchCtrlBlock_qty_inf_verifica}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_qty_inf_verifica}" {$filterRow_attrs_qty_inf_verifica}>
+			<label>{$label informe_intersup_admin qty_inf_verifica }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_qty_inf_verifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_qty_inf_verifica}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_qty_inf_verifica}</span>
+						</div>
+		{END searchCtrlBlock_qty_inf_verifica}
+																{BEGIN searchCtrlBlock_qty_inf_compare}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_qty_inf_compare}" {$filterRow_attrs_qty_inf_compare}>
+			<label>{$label informe_intersup_admin qty_inf_compare }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_qty_inf_compare}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_qty_inf_compare}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_qty_inf_compare}</span>
+						</div>
+		{END searchCtrlBlock_qty_inf_compare}
+																{BEGIN searchCtrlBlock_qty_inf}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_qty_inf}" {$filterRow_attrs_qty_inf}>
+			<label>{$label informe_intersup_admin qty_inf }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_qty_inf}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_qty_inf}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_qty_inf}</span>
+						</div>
+		{END searchCtrlBlock_qty_inf}
 																{BEGIN searchCtrlBlock_cont_modifica}
 
 
@@ -985,7 +1024,7 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_dependencia"]:before {
 		content: "{$label informe_intersup_admin inf_dependencia}";
 	}
-																							[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_mail_a"]:before {
+														[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_mail_a"]:before {
 		content: "{$label informe_intersup_admin inf_mail_a}";
 	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="inf_mail_b"]:before {
@@ -1006,7 +1045,16 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="cont_modifica"]:before {
 		content: "{$label informe_intersup_admin cont_modifica}";
 	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="qty_inf"]:before {
+		content: "{$label informe_intersup_admin qty_inf}";
 	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="qty_inf_compare"]:before {
+		content: "{$label informe_intersup_admin qty_inf_compare}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="qty_inf_verifica"]:before {
+		content: "{$label informe_intersup_admin qty_inf_verifica}";
+	}
+										}
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table {$grid_classes}  r-flexgrid rnr-b-grid rnr-gridtable" 
 	cellpadding="0" 
@@ -1871,6 +1919,87 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field29}
+				 
+					{BEGIN cellblock_grid_headcell_field30}
+	<th
+	
+	{$cell_grid_headcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$qty_inf_class}
+			"
+
+			data-field="qty_inf"
+	
+	data-cellId="grid_headcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN qty_inf_fieldheadercolumn}
+	{BEGIN qty_inf_fieldheader}
+	<SPAN {$qty_inf_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field_label9" {$item_grid_field_label9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="qty_inf">
+	{$label informe_intersup_admin qty_inf }	{$arrow_icon_qty_inf}
+	</SPAN>
+	{END qty_inf_fieldheader}
+{END qty_inf_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field30}
+				 
+					{BEGIN cellblock_grid_headcell_field31}
+	<th
+	
+	{$cell_grid_headcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$qty_inf_compare_class}
+			"
+
+			data-field="qty_inf_compare"
+	
+	data-cellId="grid_headcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN qty_inf_compare_fieldheadercolumn}
+	{BEGIN qty_inf_compare_fieldheader}
+	<SPAN {$qty_inf_compare_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field_label10" {$item_grid_field_label10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="qty_inf_compare">
+	{$label informe_intersup_admin qty_inf_compare }	{$arrow_icon_qty_inf_compare}
+	</SPAN>
+	{END qty_inf_compare_fieldheader}
+{END qty_inf_compare_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field31}
+				 
+					{BEGIN cellblock_grid_headcell_field32}
+	<th
+	
+	{$cell_grid_headcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$qty_inf_verifica_class}
+			"
+
+			data-field="qty_inf_verifica"
+	
+	data-cellId="grid_headcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN qty_inf_verifica_fieldheadercolumn}
+	{BEGIN qty_inf_verifica_fieldheader}
+	<SPAN {$qty_inf_verifica_orderlinkattrs} data-itemtype="grid_field_label" data-itemid="grid_field_label11" {$item_grid_field_label11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="qty_inf_verifica">
+	{$label informe_intersup_admin qty_inf_verifica }	{$arrow_icon_qty_inf_verifica}
+	</SPAN>
+	{END qty_inf_verifica_fieldheader}
+{END qty_inf_verifica_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field32}
 							</tr>
 					 
 					 
@@ -2639,6 +2768,75 @@
 {END cont_modifica_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field29}
+				 
+					{BEGIN cellblock_grid_cell_field30}
+	<td
+	
+	{$cell_grid_cell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$qty_inf_class}
+			"
+
+			data-field="qty_inf"
+	
+	data-cellId="grid_cell_field30" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN qty_inf_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field9" {$item_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="qty_inf" data-default-width >
+{$qty_inf_value}
+</span>
+{END qty_inf_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field30}
+				 
+					{BEGIN cellblock_grid_cell_field31}
+	<td
+	
+	{$cell_grid_cell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$qty_inf_compare_class}
+			"
+
+			data-field="qty_inf_compare"
+	
+	data-cellId="grid_cell_field31" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN qty_inf_compare_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field10" {$item_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="qty_inf_compare" data-default-width >
+{$qty_inf_compare_value}
+</span>
+{END qty_inf_compare_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field31}
+				 
+					{BEGIN cellblock_grid_cell_field32}
+	<td
+	
+	{$cell_grid_cell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert				{$qty_inf_verifica_class}
+			"
+
+			data-field="qty_inf_verifica"
+	
+	data-cellId="grid_cell_field32" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN qty_inf_verifica_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field11" {$item_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="qty_inf_verifica" data-default-width >
+{$qty_inf_verifica_value}
+</span>
+{END qty_inf_verifica_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field32}
 							</tr>
 					 
 					
@@ -3166,6 +3364,54 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field29}
+				 
+					{BEGIN cellblock_grid_footcell_field30}
+	<td
+	
+	{$cell_grid_footcell_field30}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field30" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_admin_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field30}
+				 
+					{BEGIN cellblock_grid_footcell_field31}
+	<td
+	
+	{$cell_grid_footcell_field31}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field31" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_admin_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field31}
+				 
+					{BEGIN cellblock_grid_footcell_field32}
+	<td
+	
+	{$cell_grid_footcell_field32}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_field32" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="informe_intersup_admin_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field32}
 							</tr>
 					
 					</tfoot>

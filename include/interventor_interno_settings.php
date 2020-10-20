@@ -70,6 +70,12 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsinterventor_interno["Spanish"]["dependencia_id"] = "Dependencia";
 	$fieldToolTipsinterventor_interno["Spanish"]["dependencia_id"] = "";
 	$placeHoldersinterventor_interno["Spanish"]["dependencia_id"] = "";
+	$fieldLabelsinterventor_interno["Spanish"]["fecha_inicio"] = "Fecha inicio de supervisión";
+	$fieldToolTipsinterventor_interno["Spanish"]["fecha_inicio"] = "";
+	$placeHoldersinterventor_interno["Spanish"]["fecha_inicio"] = "";
+	$fieldLabelsinterventor_interno["Spanish"]["fecha_fin"] = "Fecha final de supervisión";
+	$fieldToolTipsinterventor_interno["Spanish"]["fecha_fin"] = "";
+	$placeHoldersinterventor_interno["Spanish"]["fecha_fin"] = "";
 	if (count($fieldToolTipsinterventor_interno["Spanish"]))
 		$tdatainterventor_interno[".isUseToolTips"] = true;
 }
@@ -206,6 +212,8 @@ $tdatainterventor_interno[".googleLikeFields"][] = "sys_user";
 $tdatainterventor_interno[".googleLikeFields"][] = "sup_status";
 $tdatainterventor_interno[".googleLikeFields"][] = "sup_fechanot";
 $tdatainterventor_interno[".googleLikeFields"][] = "sup_mailnot";
+$tdatainterventor_interno[".googleLikeFields"][] = "fecha_inicio";
+$tdatainterventor_interno[".googleLikeFields"][] = "fecha_fin";
 
 
 
@@ -240,7 +248,7 @@ $tdatainterventor_interno[".strOrderBy"] = $tstrOrderBy;
 
 $tdatainterventor_interno[".orderindexes"] = array();
 
-$tdatainterventor_interno[".sqlHead"] = "SELECT interventor_id,  id_cont_fk,  cont_hash_fk,  idusrglobal_fk,  documento_id,  nombres,  apellidos,  cargo_id,  dependencia_id,  sys_date,  sys_user,  sup_status,  sup_fechanot,  sup_mailnot";
+$tdatainterventor_interno[".sqlHead"] = "SELECT interventor_id,  id_cont_fk,  cont_hash_fk,  idusrglobal_fk,  documento_id,  nombres,  apellidos,  cargo_id,  dependencia_id,  sys_date,  sys_user,  sup_status,  sup_fechanot,  sup_mailnot,  fecha_inicio,  fecha_fin";
 $tdatainterventor_interno[".sqlFrom"] = "FROM interventor_interno";
 $tdatainterventor_interno[".sqlWhereExpr"] = "";
 $tdatainterventor_interno[".sqlTail"] = "";
@@ -479,7 +487,7 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "HiddenField");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -755,7 +763,7 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 
 // Begin Lookup settings
 				$edata["LookupType"] = 2;
-	$edata["LookupTable"] = "global_users";
+	$edata["LookupTable"] = "global_users_sup";
 		$edata["listPageId"] = "list";
 		$edata["autoCompleteFieldsOnEdit"] = 0;
 	$edata["autoCompleteFields"] = array();
@@ -765,7 +773,7 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 	$edata["autoCompleteFields"][] = array('masterF'=>"cargo_id", 'lookupF'=>"usr_cargo");
 	$edata["autoCompleteFields"][] = array('masterF'=>"dependencia_id", 'lookupF'=>"usr_dep");
 	$edata["autoCompleteFields"][] = array('masterF'=>"sup_mailnot", 'lookupF'=>"usr_email");
-	$edata["LCType"] = 2;
+	$edata["LCType"] = 1;
 
 	
 		
@@ -773,8 +781,7 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 	$edata["LinkFieldType"] = 0;
 	$edata["DisplayField"] = "usr_nombresfull";
 
-				$edata["LookupWhereCode"] = true;
-
+	
 
 	
 	$edata["LookupOrderBy"] = "";
@@ -1308,7 +1315,7 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "HiddenField");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1440,7 +1447,7 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "HiddenField");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1572,7 +1579,7 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "HiddenField");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
@@ -1606,8 +1613,7 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+							
 		$edata["autoUpdatable"] = true;
 
 	//	End validation
@@ -1707,7 +1713,7 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "HiddenField");
+	$edata = array("EditFormat" => "Readonly");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -2215,6 +2221,280 @@ $tdatainterventor_interno[".hideMobileList"] = array();
 
 	$tdatainterventor_interno["sup_mailnot"] = $fdata;
 		$tdatainterventor_interno[".searchableFields"][] = "sup_mailnot";
+//	fecha_inicio
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 15;
+	$fdata["strName"] = "fecha_inicio";
+	$fdata["GoodName"] = "fecha_inicio";
+	$fdata["ownerTable"] = "interventor_interno";
+	$fdata["Label"] = GetFieldLabel("interventor_interno","fecha_inicio");
+	$fdata["FieldType"] = 7;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "fecha_inicio";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "fecha_inicio";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Date");
+
+	
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+		$edata["DateEditType"] = 2;
+	$edata["InitialYearFactor"] = 100;
+	$edata["LastYearFactor"] = 10;
+
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainterventor_interno["fecha_inicio"] = $fdata;
+		$tdatainterventor_interno[".searchableFields"][] = "fecha_inicio";
+//	fecha_fin
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 16;
+	$fdata["strName"] = "fecha_fin";
+	$fdata["GoodName"] = "fecha_fin";
+	$fdata["ownerTable"] = "interventor_interno";
+	$fdata["Label"] = GetFieldLabel("interventor_interno","fecha_fin");
+	$fdata["FieldType"] = 7;
+
+	
+	
+	
+			
+
+		$fdata["strField"] = "fecha_fin";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "fecha_fin";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "Short Date");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Date");
+
+	
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+		$edata["IsRequired"] = true;
+
+	
+	
+	
+			$edata["acceptFileTypes"] = ".+$";
+		$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+		$edata["DateEditType"] = 2;
+	$edata["InitialYearFactor"] = 100;
+	$edata["LastYearFactor"] = 10;
+
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+						$edata["validateAs"]["basicValidate"][] = "IsRequired";
+		
+	
+	//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Equals", "More than", "Less than", "Between", EMPTY_SEARCH, NOT_EMPTY );
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatainterventor_interno["fecha_fin"] = $fdata;
+		$tdatainterventor_interno[".searchableFields"][] = "fecha_fin";
 
 
 $tables_data["interventor_interno"]=&$tdatainterventor_interno;
@@ -2266,7 +2546,7 @@ function createSqlQuery_interventor_interno()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "interventor_id,  id_cont_fk,  cont_hash_fk,  idusrglobal_fk,  documento_id,  nombres,  apellidos,  cargo_id,  dependencia_id,  sys_date,  sys_user,  sup_status,  sup_fechanot,  sup_mailnot";
+$proto0["m_strFieldList"] = "interventor_id,  id_cont_fk,  cont_hash_fk,  idusrglobal_fk,  documento_id,  nombres,  apellidos,  cargo_id,  dependencia_id,  sys_date,  sys_user,  sup_status,  sup_fechanot,  sup_mailnot,  fecha_inicio,  fecha_fin";
 $proto0["m_strFrom"] = "FROM interventor_interno";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -2502,54 +2782,84 @@ $proto32["m_alias"] = "";
 $obj = new SQLFieldListItem($proto32);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto34=array();
-$proto34["m_link"] = "SQLL_MAIN";
-			$proto35=array();
-$proto35["m_strName"] = "interventor_interno";
-$proto35["m_srcTableName"] = "interventor_interno";
-$proto35["m_columns"] = array();
-$proto35["m_columns"][] = "interventor_id";
-$proto35["m_columns"][] = "id_cont_fk";
-$proto35["m_columns"][] = "cont_hash_fk";
-$proto35["m_columns"][] = "idusrglobal_fk";
-$proto35["m_columns"][] = "documento_id";
-$proto35["m_columns"][] = "nombres";
-$proto35["m_columns"][] = "apellidos";
-$proto35["m_columns"][] = "cargo_id";
-$proto35["m_columns"][] = "dependencia_id";
-$proto35["m_columns"][] = "sys_date";
-$proto35["m_columns"][] = "sys_time";
-$proto35["m_columns"][] = "sys_user";
-$proto35["m_columns"][] = "sup_status";
-$proto35["m_columns"][] = "sup_fechanot";
-$proto35["m_columns"][] = "sup_horanot";
-$proto35["m_columns"][] = "sup_mailnot";
-$proto35["m_columns"][] = "sup_fechanot2";
-$proto35["m_columns"][] = "sup_mailnot2";
-$obj = new SQLTable($proto35);
+						$proto34=array();
+			$obj = new SQLField(array(
+	"m_strName" => "fecha_inicio",
+	"m_strTable" => "interventor_interno",
+	"m_srcTableName" => "interventor_interno"
+));
 
-$proto34["m_table"] = $obj;
-$proto34["m_sql"] = "interventor_interno";
-$proto34["m_alias"] = "";
+$proto34["m_sql"] = "fecha_inicio";
 $proto34["m_srcTableName"] = "interventor_interno";
-$proto36=array();
-$proto36["m_sql"] = "";
-$proto36["m_uniontype"] = "SQLL_UNKNOWN";
+$proto34["m_expr"]=$obj;
+$proto34["m_alias"] = "";
+$obj = new SQLFieldListItem($proto34);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto36=array();
+			$obj = new SQLField(array(
+	"m_strName" => "fecha_fin",
+	"m_strTable" => "interventor_interno",
+	"m_srcTableName" => "interventor_interno"
+));
+
+$proto36["m_sql"] = "fecha_fin";
+$proto36["m_srcTableName"] = "interventor_interno";
+$proto36["m_expr"]=$obj;
+$proto36["m_alias"] = "";
+$obj = new SQLFieldListItem($proto36);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto38=array();
+$proto38["m_link"] = "SQLL_MAIN";
+			$proto39=array();
+$proto39["m_strName"] = "interventor_interno";
+$proto39["m_srcTableName"] = "interventor_interno";
+$proto39["m_columns"] = array();
+$proto39["m_columns"][] = "interventor_id";
+$proto39["m_columns"][] = "id_cont_fk";
+$proto39["m_columns"][] = "cont_hash_fk";
+$proto39["m_columns"][] = "idusrglobal_fk";
+$proto39["m_columns"][] = "documento_id";
+$proto39["m_columns"][] = "nombres";
+$proto39["m_columns"][] = "apellidos";
+$proto39["m_columns"][] = "cargo_id";
+$proto39["m_columns"][] = "dependencia_id";
+$proto39["m_columns"][] = "sys_date";
+$proto39["m_columns"][] = "sys_time";
+$proto39["m_columns"][] = "sys_user";
+$proto39["m_columns"][] = "sup_status";
+$proto39["m_columns"][] = "sup_fechanot";
+$proto39["m_columns"][] = "sup_horanot";
+$proto39["m_columns"][] = "sup_mailnot";
+$proto39["m_columns"][] = "sup_fechanot2";
+$proto39["m_columns"][] = "sup_mailnot2";
+$proto39["m_columns"][] = "fecha_inicio";
+$proto39["m_columns"][] = "fecha_fin";
+$obj = new SQLTable($proto39);
+
+$proto38["m_table"] = $obj;
+$proto38["m_sql"] = "interventor_interno";
+$proto38["m_alias"] = "";
+$proto38["m_srcTableName"] = "interventor_interno";
+$proto40=array();
+$proto40["m_sql"] = "";
+$proto40["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto36["m_column"]=$obj;
-$proto36["m_contained"] = array();
-$proto36["m_strCase"] = "";
-$proto36["m_havingmode"] = false;
-$proto36["m_inBrackets"] = false;
-$proto36["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto36);
+$proto40["m_column"]=$obj;
+$proto40["m_contained"] = array();
+$proto40["m_strCase"] = "";
+$proto40["m_havingmode"] = false;
+$proto40["m_inBrackets"] = false;
+$proto40["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto40);
 
-$proto34["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto34);
+$proto38["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto38);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -2565,7 +2875,7 @@ $queryData_interventor_interno = createSqlQuery_interventor_interno();
 	
 										;
 
-														
+																
 
 $tdatainterventor_interno[".sqlquery"] = $queryData_interventor_interno;
 

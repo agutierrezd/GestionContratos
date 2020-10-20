@@ -131,6 +131,12 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_export_field15}","text":{$apellidos_pdfvalue}},
 				
+				
+			{"hidden":"{$item_hide_export_field}","text":{$fecha_inicio_pdfvalue}},
+				
+				
+			{"hidden":"{$item_hide_export_field1}","text":{$fecha_fin_pdfvalue}},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

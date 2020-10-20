@@ -524,6 +524,10 @@ class ConnectionManager
 		$connectionsIds["q_info_registros"] = "sep2_at_localhost";
 		$connectionsIds["q_info_obligacion"] = "sep2_at_localhost";
 		$connectionsIds["q_info_ordenpago"] = "sep2_at_localhost";
+		$connectionsIds["q_bandejaentrada_supervisores3"] = "dbct_at_localhost";
+		$connectionsIds["informe_intersup3"] = "dbct_at_localhost";
+		$connectionsIds["contrato_dependencia"] = "dbct_at_localhost";
+		$connectionsIds["global_users_sup"] = "dbusers_at_localhost";
 		$this->_tablesConnectionIds = $connectionsIds;
 	}
 	
