@@ -1060,62 +1060,7 @@ data-pagetype="print"
 	class=" r-ori-vert			col-md-6
 	
 ">
-		 
-		<span data-itemtype="custom_button_container" data-itemid="custom_button_container" {$item_custom_button_container} data-pageid="{$pageid}" data-small data-button-item>
-	<span class="dropdown ">
-		<button type="button" title="" class="btn btn-success   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
-							<span class="glyphicon glyphicon-menu-hamburger"></span>
-						Modificaciones			<span class="caret"></span>
-		</button>
-		<ul class="dropdown-menu">
-							{BEGIN view_column}
-{BEGIN view_link}
-	<li data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-small >
-				<a  href="contrato_view.php?{$editlink}" {$viewlink_attrs} title="Ver" data-popup  title="Ver registro" >
-					<span class="fa fa-search-plus"></span>
-				
-		Detalle		
-		</a>
-	</li>
-{END view_link}
-{END view_column}
-							{BEGIN edit_column}
-{BEGIN edit_link}
-	<li data-itemtype="grid_edit" data-itemid="grid_edit1" {$item_grid_edit1} data-pageid="{$pageid}" data-small >
-				<a  href="contrato_edit.php?page=edit1&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit1" data-popup data-popupwidth="960" data-popupheight="600"  title="Editar" >
-					<span class="fa fa-usd"></span>
-				
-		Adición | Reducción		
-		</a>
-	</li>
-{END edit_link}
-{END edit_column}
-							{BEGIN edit_column}
-{BEGIN edit_link}
-	<li data-itemtype="grid_edit" data-itemid="grid_edit2" {$item_grid_edit2} data-pageid="{$pageid}" data-small >
-				<a  href="contrato_edit.php?page=edit2&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit2" data-popup data-popupwidth="960" data-popupheight="600"  title="Prórroga" >
-					<span class="fa fa-clock-o"></span>
-				
-		Prórroga		
-		</a>
-	</li>
-{END edit_link}
-{END edit_column}
-							{BEGIN edit_column}
-{BEGIN edit_link}
-	<li data-itemtype="grid_edit" data-itemid="grid_edit3" {$item_grid_edit3} data-pageid="{$pageid}" data-small >
-				<a  href="contrato_edit.php?page=edit3&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit3" data-popup data-popupwidth="960" data-popupheight="640"  title="Editar" >
-					<span class="fa fa-user-times"></span>
-				
-		Cesión		
-		</a>
-	</li>
-{END edit_link}
-{END edit_column}
-					</ul>
-	</span>
-</span>
-		</div>			 
+			</div>			 
 				<div 
 	data-cellId="above-grid_c4" data-pageid="{$pageid}"	{$cell_above-grid_c4}
 	class="r-align-right r-ori-vert			col-md-6
@@ -1614,17 +1559,15 @@ data-pagetype="print"
 								r-gridrow
 							">
 				 
-					{BEGIN cellblock_grid_cell_icons}
-	<td
+						<td
 	
 	{$cell_grid_cell_icons}
 	{$recordattrs}
 	class="
-		 r-ori-vert			"
+					"
 
 	
-	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"		data-control-cell
-	
+	data-cellId="grid_cell_icons" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
 	>
 
 	 
@@ -1638,10 +1581,64 @@ data-pagetype="print"
 </span>
 {END edit_link}
 {END edit_column}
+	 
+		<span data-itemtype="custom_button_container" data-itemid="custom_button_container" {$item_custom_button_container} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
+	<span class="dropdown ">
+		<button type="button" title="" class="btn btn-success   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+							<span class="glyphicon glyphicon-menu-hamburger"></span>
+						Modificaciones			<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN view_column}
+{BEGIN view_link}
+	<li data-itemtype="grid_view" data-itemid="grid_view" {$item_grid_view} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
+				<a  href="contrato_view.php?{$editlink}" {$viewlink_attrs} title="Ver" data-popup  title="Ver registro" >
+					<span class="fa fa-search-plus"></span>
+				
+		Detalle		
+		</a>
+	</li>
+{END view_link}
+{END view_column}
+							{BEGIN edit_column}
+{BEGIN edit_link}
+	<li data-itemtype="grid_edit" data-itemid="grid_edit1" {$item_grid_edit1} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
+				<a  href="contrato_edit.php?page=edit1&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit1" data-popup data-popupwidth="960" data-popupheight="600"  title="Editar" >
+					<span class="fa fa-usd"></span>
+				
+		Adición | Reducción		
+		</a>
+	</li>
+{END edit_link}
+{END edit_column}
+							{BEGIN edit_column}
+{BEGIN edit_link}
+	<li data-itemtype="grid_edit" data-itemid="grid_edit2" {$item_grid_edit2} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
+				<a  href="contrato_edit.php?page=edit2&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit2" data-popup data-popupwidth="960" data-popupheight="600"  title="Prórroga" >
+					<span class="fa fa-clock-o"></span>
+				
+		Prórroga		
+		</a>
+	</li>
+{END edit_link}
+{END edit_column}
+							{BEGIN edit_column}
+{BEGIN edit_link}
+	<li data-itemtype="grid_edit" data-itemid="grid_edit3" {$item_grid_edit3} data-pageid="{$pageid}" data-record-id="{$recId}" data-small >
+				<a  href="contrato_edit.php?page=edit3&{$editlink}" {$editlink_attrs} title="Editar" data-page="edit3" data-popup data-popupwidth="960" data-popupheight="640"  title="Editar" >
+					<span class="fa fa-user-times"></span>
+				
+		Cesión		
+		</a>
+	</li>
+{END edit_link}
+{END edit_column}
+					</ul>
+	</span>
+</span>
 	
 	</td>
-	{END cellblock_grid_cell_icons}
-				 
+					 
 					{BEGIN cellblock_grid_cell_checkbox}
 	<td
 	
@@ -1651,8 +1648,7 @@ data-pagetype="print"
 		 r-ori-vert			"
 
 	
-	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"		data-control-cell
-	
+	data-cellId="grid_cell_checkbox" data-pageid="{$pageid}" data-record-id="{$recId}"	
 		data-checkbox-cell
 	>
 
@@ -1675,8 +1671,7 @@ data-pagetype="print"
 					"
 
 	
-	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"		data-control-cell
-	
+	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="contrato_list"	
 	>
 
 	 

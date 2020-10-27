@@ -20,7 +20,7 @@ function getMenuNodes_main($menuNodesObject)
 	$menuNode["pageId"] = "";
 	$menuNode["openType"] = "None";
 
-	$menuNode["icon"] = "glyphicon-th";
+	$menuNode["icon"] = "glyphicon-screenshot";
 	$menuNode["iconType"] = "2";
 	$menuNode["iconShow"] = "1";
 

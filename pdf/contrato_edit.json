@@ -1400,6 +1400,9 @@ pdfDocument = {
 		margin: [0,0,0,15],
 	},
 				
+				
+			{"hidden":"{$item_hide_integrated_edit_field24}","stack":[{"text":"{$jslabel contrato cont_valorant }","bold":true},{"text":{$cont_valorant_pdfvalue}}],"margin":[0,0,0,15]},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',

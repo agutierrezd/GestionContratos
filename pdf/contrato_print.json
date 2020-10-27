@@ -288,6 +288,9 @@ pdfDocument = {
 															{BEGIN row_grid_14}			
 								"%",
 								{END row_grid_14}
+															{BEGIN row_grid_15}			
+								"%",
+								{END row_grid_15}
 														],
 													
 							body: [
@@ -1716,6 +1719,110 @@ pdfDocument = {
 				{END row_grid_13}
 								{BEGIN row_grid_14}
 				[
+												{BEGIN cellblock_grid_cell_label15}
+{
+	cellId: 'cell_label15',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field_label25}","text":"{$jslabel contrato cont_valorant }","bold":true},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label15}
+																			{BEGIN cellblock_grid_cell_field23}
+{
+	cellId: 'cell_field23',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				
+			{"hidden":"{$item_hide_grid_field25}","text":{$cont_valorant_pdfvalue}},
+				
+		  ],
+  "border": [ false, false, false, false ],
+          "alignment": '{$cont_valorant_align}',
+  },
+
+{END cellblock_grid_cell_field23}
+																			{BEGIN cellblock_grid_cell_label16}
+{
+	cellId: 'cell_label16',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'right',
+  },
+
+{END cellblock_grid_cell_label16}
+																			{BEGIN cellblock_grid_cell_field24}
+{
+	cellId: 'cell_field24',
+	col:0,
+	row:0,
+			style: 'cell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+						
+	
+	
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ false, false, false, false ],
+          "alignment": 'left',
+  },
+
+{END cellblock_grid_cell_field24}
+											],
+				{END row_grid_14}
+								{BEGIN row_grid_15}
+				[
 												{BEGIN cellblock_grid_cell_dpreview}
 {
 	cellId: 'cell_dpreview',
@@ -1831,7 +1938,7 @@ pdfDocument = {
 				text: ''
 			},
 							],
-				{END row_grid_14}
+				{END row_grid_15}
 										]
 						}
 					}

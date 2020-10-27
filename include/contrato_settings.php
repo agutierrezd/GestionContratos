@@ -88,10 +88,10 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscontrato["Spanish"]["cont_informessug"] = "Informes sugeridos";
 	$fieldToolTipscontrato["Spanish"]["cont_informessug"] = "";
 	$placeHolderscontrato["Spanish"]["cont_informessug"] = "";
-	$fieldLabelscontrato["Spanish"]["cont_valorant"] = "Valor anterior";
+	$fieldLabelscontrato["Spanish"]["cont_valorant"] = "Valor total del contrato";
 	$fieldToolTipscontrato["Spanish"]["cont_valorant"] = "";
 	$placeHolderscontrato["Spanish"]["cont_valorant"] = "";
-	$fieldLabelscontrato["Spanish"]["cont_valorinicial"] = "Valor del contrato";
+	$fieldLabelscontrato["Spanish"]["cont_valorinicial"] = "Valor inicial del contrato";
 	$fieldToolTipscontrato["Spanish"]["cont_valorinicial"] = "";
 	$placeHolderscontrato["Spanish"]["cont_valorinicial"] = "";
 	$fieldLabelscontrato["Spanish"]["cont_valormensual"] = "Valor mensual a pagar";

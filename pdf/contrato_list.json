@@ -115,7 +115,7 @@ pdfDocument = {
 					{END row_grid_0}
 					
 					{BEGIN row_grid_1}		
-					"%",
+					150,
 					{END row_grid_1}
 					
 					{BEGIN row_grid_2}		
@@ -228,10 +228,8 @@ pdfDocument = {
 	
 			"text": [
 		
-				
-			{"text":""},
-				
-		  ],
+				'',
+	  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
   },
@@ -710,6 +708,9 @@ pdfDocument = {
 		
 				
 			{"text":"","hidden":"{$item_hide_grid_edit}"},
+				
+				
+			{"text":""},
 				
 		  ],
   "border": [ true, true, true, true ],

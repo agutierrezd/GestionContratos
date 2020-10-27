@@ -1792,7 +1792,6 @@
 	{$cell_grid_c5}
 	class=" r-ori-vert"
 	
-			data-single
 				data-fullwidth
 		
 	ocolspan="2"		data-cellId="grid_c5" data-pageid="{$pageid}"
@@ -1821,6 +1820,27 @@
 
 
 {END cont_valorvigente_fieldblock}
+											
+{BEGIN cont_valorant_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_cont_valorant}  r-vertical-field" data-fieldname="cont_valorant" data-signal-error-for="cont_valorant{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field32" {$item_integrated_edit_field32} data-pageid="{$pageid}" data-field="cont_valorant" >
+
+		<div class="col-md-12">
+	
+	<label class="" for="{$labelfor_cont_valorant}">
+		
+		{BEGIN cont_valorant_label}{$label contrato cont_valorant }{END cont_valorant_label}
+	</label>
+	<div class="" >
+		{$cont_valorant_value}	</div>
+
+		</div>
+		
+</div>
+
+
+{END cont_valorant_fieldblock}
 	
 								</td>
 			{END cellblock_grid_c5}

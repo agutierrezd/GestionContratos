@@ -1523,6 +1523,9 @@ pdfDocument = {
 				
 			{"hidden":"{$item_hide_integrated_edit_field31}","stack":[{"text":"{$jslabel contrato cont_valorvigente }","bold":true},{"text":{$cont_valorvigente_pdfvalue}}],"margin":[0,0,0,15]},
 				
+				
+			{"hidden":"{$item_hide_integrated_edit_field32}","stack":[{"text":"{$jslabel contrato cont_valorant }","bold":true},{"text":{$cont_valorant_pdfvalue}}],"margin":[0,0,0,15]},
+				
 		  ],
   "border": [ false, false, false, false ],
           "alignment": 'left',
